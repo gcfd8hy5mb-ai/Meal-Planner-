@@ -74,6 +74,17 @@ async function krogerToken(env, params) {
   if (!res.ok || !response.access_token) throw Error('Kroger authorization failed');
   return response;
 }
+async function userAccessToken(env, uid) {
+ const encrypted=await env.KROGER_KV.get('token:'+uid);
+ if(!encrypted)return null;
+ const saved=await decrypt(env,encrypted);
+ if(saved.expires>Date.now()+30000)return saved.access_token;
+ if(!saved.refresh_token)throw Error('Reconnect required');
+ const renewed=await krogerToken(env,{grant_type:'refresh_token',refresh_token:saved.refresh_token});
+ const next={...saved,access_token:renewed.access_token,refresh_token:renewed.refresh_token||saved.refresh_token,expires:Date.now()+Math.max(0,(Number(renewed.expires_in)||0)-60)*1000};
+ await env.KROGER_KV.put('token:'+uid,await encrypt(env,next));
+ return next.access_token;
+}
 function redirectBack(outcome) {
   const url = new URL(APP_RETURN);
   url.searchParams.set('kroger', outcome);
@@ -116,7 +127,7 @@ export default {
         return redirectBack('connected');
       } catch { return redirectBack('failed'); }
     }
-    if (!['/connect', '/status', '/disconnect'].includes(path))
+    if (!['/connect', '/status', '/disconnect', '/products', '/cart/add'].includes(path))
       return json({error: 'Not found'}, 404, cors);
     if (origin && origin !== APP_ORIGIN)
       return json({error: 'Origin not allowed'}, 403);
@@ -133,6 +144,32 @@ export default {
       } catch {
         return json({error: 'Saved Kroger connection is unavailable. Reconnect your account.'}, 409, cors);
       }
+    }
+    if(path==='/products'&&request.method==='GET'){
+      const term=(url.searchParams.get('term')||'').trim();
+      if(term.length<2||term.length>90)return json({error:'Invalid search'},400,cors);
+      try{
+        const clientToken=await krogerToken(env,{grant_type:'client_credentials',scope:'product.compact'});
+        const q=new URLSearchParams({'filter.term':term,'filter.limit':'10'});
+        const response=await fetch(KROGER_BASE+'/v1/products?'+q,{headers:{Authorization:'Bearer '+clientToken.access_token,Accept:'application/json'}});
+        if(!response.ok)return json({error:'Product search unavailable'},502,cors);
+        const data=await response.json();
+        return json({products:(data.data||[]).slice(0,10).map(p=>({name:p.description||'',upc:p.upc||'',brand:p.brand||''})).filter(p=>/^\\d{8,14}$/.test(p.upc))},200,cors);
+      }catch{return json({error:'Product search unavailable'},502,cors)}
+    }
+    if(path==='/cart/add'&&request.method==='POST'){
+      let data;
+      try{data=await request.json()}catch{return json({error:'Invalid request'},400,cors)}
+      const items=data?.items;
+      if(!Array.isArray(items)||!items.length||items.length>20||items.some(x=>!x||!/^\\d{8,14}$/.test(x.upc)||!Number.isInteger(x.quantity)||x.quantity<1||x.quantity>30))
+        return json({error:'Choose products and quantities first'},400,cors);
+      try{
+        const access=await userAccessToken(env,uid);
+        if(!access)return json({error:'Connect Kroger first'},409,cors);
+        const response=await fetch(KROGER_BASE+'/v1/cart/add',{method:'PUT',headers:{Authorization:'Bearer '+access,'Content-Type':'application/json'},body:JSON.stringify({items:items.map(x=>({upc:x.upc,quantity:x.quantity,modality:'PICKUP'}))})});
+        if(!response.ok)return json({error:'Kroger cart request failed'},502,cors);
+        return json({added:true,count:items.length,message:'Review your cart on Kroger before checkout.'},200,cors);
+      }catch{return json({error:'Kroger connection expired or unavailable'},409,cors)}
     }
     if (path === '/disconnect' && request.method === 'POST') {
       await env.KROGER_KV.delete('token:' + uid);
