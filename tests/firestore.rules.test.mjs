@@ -54,8 +54,9 @@ test('meal types, grocery checkmarks and sides survive simulated second-device r
     custom: [{ id: 'family-meal', name: 'Family Recipe', ingredients: [['Chicken', 6, 'oz']] }],
     servings: 4,
   };
-  await assertSucceeds(setDoc(doc(firstDevice, path), original));
+  await assertSucceeds(setDoc(doc(firstDevice, path), {...original, custom: JSON.stringify(original.custom)}));
   const restored = (await assertSucceeds(getDoc(doc(secondDevice, path)))).data();
+  restored.custom = JSON.parse(restored.custom);
   assert.deepEqual(restored.mealTypes, original.mealTypes);
   assert.deepEqual(restored.checked, original.checked);
   assert.deepEqual(restored.dinnerSides, original.dinnerSides);
@@ -63,12 +64,14 @@ test('meal types, grocery checkmarks and sides survive simulated second-device r
   assert.deepEqual(restored.custom, original.custom);
 
   const updated = { ...restored, mealTypes: ['Dinner'], checked: { ...restored.checked, 'cube steak|oz': true } };
-  await assertSucceeds(setDoc(doc(secondDevice, path), updated));
+  await assertSucceeds(setDoc(doc(secondDevice, path), {...updated, custom: JSON.stringify(updated.custom)}));
   const reloaded = (await assertSucceeds(getDoc(doc(firstDevice, path)))).data();
+  reloaded.custom = JSON.parse(reloaded.custom);
   assert.deepEqual(reloaded.mealTypes, ['Dinner']);
   assert.equal(reloaded.checked['black beans|cup'], true);
   assert.equal(reloaded.checked['cube steak|oz'], true);
   assert.deepEqual(reloaded.plan, original.plan);
   assert.deepEqual(reloaded.dinnerSides, original.dinnerSides);
+  assert.deepEqual(reloaded.custom, original.custom);
   await assertFails(getDoc(doc(env.authenticatedContext('different-user').firestore(), path)));
 });
