@@ -51,3 +51,16 @@ test('invalid callback is redirected without touching KV', async () => {
 test('unknown paths respond 404', async () => {
   assert.equal((await send('/not-a-route')).status, 404);
 });
+
+test('product and cart endpoints require Firebase authentication', async () => {
+  const search = await send('/products?term=milk',{headers:{Origin:origin}});
+  assert.equal(search.status,401);
+  const cart = await send('/cart/add',{method:'POST',headers:{Origin:origin,'Content-Type':'application/json'},body:JSON.stringify({items:[{upc:'0001111040101',quantity:1}]})});
+  assert.equal(cart.status,401);
+});
+test('new endpoints reject disallowed origins', async () => {
+  for(const path of ['/products?term=milk','/cart/add']){
+    const response=await send(path,{method:path.startsWith('/cart')?'POST':'GET',headers:{Origin:'https://attacker.invalid'}});
+    assert.equal(response.status,403);
+  }
+});
