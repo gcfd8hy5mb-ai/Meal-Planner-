@@ -1,0 +1,11 @@
+{
+  "name": "tablewise-security-tests",
+  "private": true,
+  "scripts": {
+    "test:rules": "firebase emulators:exec --only firestore \"node --test tests/firestore.rules.test.mjs\""
+  },
+  "devDependencies": {
+    "@firebase/rules-unit-testing": "^4.0.1",
+    "firebase-tools": "^14.0.0"
+  }
+}
