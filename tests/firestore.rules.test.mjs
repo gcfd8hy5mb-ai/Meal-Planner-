@@ -4,7 +4,7 @@ import { initializeTestEnvironment, assertSucceeds, assertFails } from '@firebas
 import { doc, getDoc, setDoc, deleteDoc } from 'firebase/firestore';
 let env;
 before(async () => {
-  env = await initializeTestEnvironment({ projectId: 'tablewise-rules-test', firestore: { host: '127.0.0.1', port: 8080 } });
+  env = await initializeTestEnvironment({ projectId: 'demo-tablewise-rules-test', firestore: { host: '127.0.0.1', port: 8080 } });
 });
 after(async () => { if (env) await env.cleanup(); });
 test('owner can read and write own meal data', async () => {
