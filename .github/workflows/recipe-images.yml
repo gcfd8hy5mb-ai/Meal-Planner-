@@ -4,6 +4,7 @@ on:
     paths:
       - index.html
       - tests/recipe-images.test.mjs
+      - tests/recipe-lookup.test.mjs
       - .github/workflows/recipe-images.yml
   pull_request:
     paths:
@@ -20,4 +21,4 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - run: node --test tests/recipe-images.test.mjs
+      - run: node --test tests/recipe-images.test.mjs tests/recipe-lookup.test.mjs
