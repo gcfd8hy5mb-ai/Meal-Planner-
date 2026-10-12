@@ -38,3 +38,37 @@ test('authenticated users cannot access unrelated collections', async () => {
   await assertFails(setDoc(doc(a, 'admin/secrets'), { enabled: true }));
   await assertFails(getDoc(doc(a, 'admin/secrets')));
 });
+
+test('meal types, grocery checkmarks and sides survive simulated second-device reload', async () => {
+  const firstDevice = env.authenticatedContext('meal-sync-user').firestore();
+  const secondDevice = env.authenticatedContext('meal-sync-user').firestore();
+  const path = 'users/meal-sync-user';
+  const original = {
+    goals: { cal: 2200, p: 140 },
+    preferences: { style: 'Anything', avoid: '' },
+    mealTypes: ['Lunch', 'Dinner'],
+    mealScope: 'all',
+    plan: { '0': ['oats', 'sandwich', 'homeCfs', 'apple'] },
+    checked: { 'black beans|cup': true, 'cube steak|oz': false },
+    dinnerSides: { '0': ['beans', 'corn'] },
+    custom: [{ id: 'family-meal', name: 'Family Recipe', ingredients: [['Chicken', 6, 'oz']] }],
+    servings: 4,
+  };
+  await assertSucceeds(setDoc(doc(firstDevice, path), original));
+  const restored = (await assertSucceeds(getDoc(doc(secondDevice, path)))).data();
+  assert.deepEqual(restored.mealTypes, original.mealTypes);
+  assert.deepEqual(restored.checked, original.checked);
+  assert.deepEqual(restored.dinnerSides, original.dinnerSides);
+  assert.deepEqual(restored.plan, original.plan);
+  assert.deepEqual(restored.custom, original.custom);
+
+  const updated = { ...restored, mealTypes: ['Dinner'], checked: { ...restored.checked, 'cube steak|oz': true } };
+  await assertSucceeds(setDoc(doc(secondDevice, path), updated));
+  const reloaded = (await assertSucceeds(getDoc(doc(firstDevice, path)))).data();
+  assert.deepEqual(reloaded.mealTypes, ['Dinner']);
+  assert.equal(reloaded.checked['black beans|cup'], true);
+  assert.equal(reloaded.checked['cube steak|oz'], true);
+  assert.deepEqual(reloaded.plan, original.plan);
+  assert.deepEqual(reloaded.dinnerSides, original.dinnerSides);
+  await assertFails(getDoc(doc(env.authenticatedContext('different-user').firestore(), path)));
+});
