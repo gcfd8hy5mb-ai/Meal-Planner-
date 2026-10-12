@@ -1,0 +1,12 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "tablewise-kroger",
+  "main": "cloudflare/kroger/worker.js",
+  "compatibility_date": "2026-10-12",
+  "kv_namespaces": [
+    {
+      "binding": "KROGER_KV",
+      "id": "c06851ca156e47ee887b91c235a9d0d4"
+    }
+  ]
+}
