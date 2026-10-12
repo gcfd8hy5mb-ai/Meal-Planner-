@@ -1,0 +1,23 @@
+name: Recipe image integrity
+on:
+  push:
+    paths:
+      - index.html
+      - tests/recipe-images.test.mjs
+      - .github/workflows/recipe-images.yml
+  pull_request:
+    paths:
+      - index.html
+      - tests/recipe-images.test.mjs
+  workflow_dispatch:
+jobs:
+  recipe-images:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --test tests/recipe-images.test.mjs
