@@ -187,14 +187,14 @@ export default {
         const response=await fetch(KROGER_BASE+'/v1/products?'+q,{headers:{Authorization:'Bearer '+clientToken.access_token,Accept:'application/json'}});
         if(!response.ok)return json({error:'Product search unavailable'},502,cors);
         const data=await response.json();
-        return json({products:(data.data||[]).slice(0,10).map(p=>({name:p.description||'',upc:p.upc||'',brand:p.brand||''})).filter(p=>/^\\d{8,14}$/.test(p.upc))},200,cors);
+        return json({products:(data.data||[]).slice(0,10).map(p=>({name:p.description||'',upc:p.upc||'',brand:p.brand||''})).filter(p=>/^\d{8,14}$/.test(p.upc))},200,cors);
       }catch{return json({error:'Product search unavailable'},502,cors)}
     }
     if(path==='/cart/add'&&request.method==='POST'){
       let data;
       try{data=await request.json()}catch{return json({error:'Invalid request'},400,cors)}
       const items=data?.items;
-      if(!Array.isArray(items)||!items.length||items.length>20||items.some(x=>!x||!/^\\d{8,14}$/.test(x.upc)||!Number.isInteger(x.quantity)||x.quantity<1||x.quantity>30))
+      if(!Array.isArray(items)||!items.length||items.length>20||items.some(x=>!x||!/^\d{8,14}$/.test(x.upc)||!Number.isInteger(x.quantity)||x.quantity<1||x.quantity>30))
         return json({error:'Choose products and quantities first'},400,cors);
       try{
         const access=await userAccessToken(env,uid);
