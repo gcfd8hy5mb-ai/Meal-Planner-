@@ -59,7 +59,7 @@ async function krogerCall(path,options={}){
   if(!auth.currentUser)throw Error('Sign in to your meal planner first.');
   const send=async forceRefresh=>{
     const token=await auth.currentUser.getIdToken(forceRefresh);
-    const response=await fetch(KROGER_API+path,{...options,cache:'no-store',headers:{Authorization:'Bearer '+token,'Cache-Control':'no-cache',...(options.body?{'Content-Type':'application/json'}:{})}});
+    const response=await fetch(KROGER_API+path,{...options,cache:'no-store',headers:{Authorization:'Bearer '+token,...(options.body?{'Content-Type':'application/json'}:{})}});
     const data=await response.json().catch(()=>({}));
     return {response,data};
   };
