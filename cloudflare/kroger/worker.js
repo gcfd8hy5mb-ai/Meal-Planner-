@@ -3,7 +3,7 @@ const APP_ORIGIN = 'https://gcfd8hy5mb-ai.github.io';
 const APP_RETURN = 'https://gcfd8hy5mb-ai.github.io/Meal-Planner-/';
 const FIREBASE_PROJECT = 'meal-planner-a478e';
 // Default to the existing certification credentials until an explicit, coordinated cutover.
-const KROGER_ENVIRONMENT = 'certification';
+const KROGER_ENVIRONMENT = 'production';
 const KROGER_BASE = KROGER_ENVIRONMENT === 'production'
   ? 'https://api.kroger.com'
   : 'https://api-ce.kroger.com';
