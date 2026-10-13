@@ -66,3 +66,26 @@ test('new endpoints reject disallowed origins', async () => {
     assert.equal(response.status,403);
   }
 });
+
+test('callback diagnoses rejected OAuth code without exposing Kroger response or tokens', async () => {
+  const state = 's'.repeat(43);
+  const env = goodConfig();
+  env.KROGER_KV.get = async () => ({uid: 'test-user', expires: Date.now() + 30000, redirectUri: base + '/auth/kroger/callback'});
+  const originalFetch = globalThis.fetch;
+  globalThis.fetch = async () => new Response(JSON.stringify({error: 'invalid_grant', access_token: 'should-never-leak'}), {status:400,headers:{'Content-Type':'application/json'}});
+  try {
+    const response = await send('/auth/kroger/callback?state='+state+'&code=sample-code', {}, env);
+    assert.equal(response.status, 303);
+    const redirect = new URL(response.headers.get('location'));
+    assert.equal(redirect.searchParams.get('kroger'), 'failed');
+    assert.equal(redirect.searchParams.get('kroger_reason'), 'token_rejected');
+    assert.doesNotMatch(redirect.href, /invalid_grant|should-never-leak|sample-code/);
+  } finally {globalThis.fetch = originalFetch;}
+});
+test('callback distinguishes user denial and expired OAuth state', async () => {
+  const state = 's'.repeat(43);
+  const denied = await send('/auth/kroger/callback?state='+state+'&error=access_denied');
+  assert.equal(new URL(denied.headers.get('location')).searchParams.get('kroger_reason'),'oauth_denied');
+  const expired = await send('/auth/kroger/callback?state='+state+'&code=sample');
+  assert.equal(new URL(expired.headers.get('location')).searchParams.get('kroger_reason'),'state_expired');
+});
