@@ -1,0 +1,36 @@
+name: Tablewise startup JavaScript syntax
+on:
+  pull_request:
+    paths:
+      - 'index.html'
+      - '.github/workflows/app-syntax.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - '.github/workflows/app-syntax.yml'
+jobs:
+  syntax:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check inline JavaScript syntax
+        run: |
+          node --input-type=module <<'NODE'
+          import { readFileSync } from 'node:fs';
+          import { spawnSync } from 'node:child_process';
+          const html = readFileSync('index.html', 'utf8');
+          const scripts = [...html.matchAll(/<script\b[^>]*>([\s\S]*?)<\/script>/gi)];
+          if (!scripts.length) throw Error('No inline scripts found');
+          for (const [i, match] of scripts.entries()) {
+            const result = spawnSync('node', ['--check', '--input-type=module'], { input: match[1], encoding: 'utf8' });
+            if (result.status !== 0) {
+              process.stderr.write('Inline script ' + (i + 1) + ': ' + result.stderr);
+              process.exit(1);
+            }
+          }
+          console.log('All ' + scripts.length + ' inline scripts parsed');
+          NODE
