@@ -2,7 +2,11 @@
 const APP_ORIGIN = 'https://gcfd8hy5mb-ai.github.io';
 const APP_RETURN = 'https://gcfd8hy5mb-ai.github.io/Meal-Planner-/';
 const FIREBASE_PROJECT = 'meal-planner-a478e';
-const KROGER_BASE = 'https://api-ce.kroger.com';
+// Default to the existing certification credentials until an explicit, coordinated cutover.
+const KROGER_ENVIRONMENT = 'certification';
+const KROGER_BASE = KROGER_ENVIRONMENT === 'production'
+  ? 'https://api.kroger.com'
+  : 'https://api-ce.kroger.com';
 const CALLBACK_PATH = '/auth/kroger/callback';
 const encoder = new TextEncoder();
 const json = (value, status = 200, origin = '') => new Response(JSON.stringify(value), {
@@ -104,7 +108,7 @@ export default {
       }});
     }
     if (path === '/health' && request.method === 'GET')
-      return json({service: 'tablewise-kroger', ready: validConfig(env), environment: 'certification'});
+      return json({service: 'tablewise-kroger', ready: validConfig(env), environment: KROGER_ENVIRONMENT});
     if (!validConfig(env))
       return json({error: 'Backend configuration incomplete'}, 503, cors);
     if (path === CALLBACK_PATH && request.method === 'GET') {
