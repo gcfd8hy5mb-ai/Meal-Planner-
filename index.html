@@ -57,11 +57,20 @@ async function restoreKrogerConnection(){
 }
 async function krogerCall(path,options={}){
   if(!auth.currentUser)throw Error('Sign in to your meal planner first.');
-  const token=await auth.currentUser.getIdToken();
-  const response=await fetch(KROGER_API+path,{...options,headers:{Authorization:'Bearer '+token,...(options.body?{'Content-Type':'application/json'}:{})}});
-  const data=await response.json().catch(()=>({}));
-  if(!response.ok)throw Error(data.error||'Kroger request failed');
-  return data;
+  const send=async forceRefresh=>{
+    const token=await auth.currentUser.getIdToken(forceRefresh);
+    const response=await fetch(KROGER_API+path,{...options,cache:'no-store',headers:{Authorization:'Bearer '+token,'Cache-Control':'no-cache',...(options.body?{'Content-Type':'application/json'}:{})}});
+    const data=await response.json().catch(()=>({}));
+    return {response,data};
+  };
+  let result;
+  try{result=await send(false)}
+  catch(error){throw Error('Unable to reach Kroger right now. Check your connection and try again.')}
+  if(result.response.status===401){
+    try{result=await send(true)}catch(error){throw Error('Your Tablewise session needs to be refreshed. Reload the page and try again.')}
+  }
+  if(!result.response.ok)throw Error(result.data.error||('Kroger request failed ('+result.response.status+'). Please try again.'));
+  return result.data;
 }
 let bulkKrogerItems=[],bulkKrogerBusy=false,bulkKrogerMessage='';
 let krogerStoreZip='',krogerStoreId='',krogerStoreName='',krogerStores=[],krogerStoreBusy=false;
@@ -176,7 +185,16 @@ document.addEventListener('click',async event=>{
  if(btn.dataset.bulkAction==='stores'){
   const zip=document.getElementById('krogerStoreZip')?.value.trim()||'';
   if(!/^\d{5}$/.test(zip))throw Error('Enter a valid five-digit ZIP code.');
-  krogerStoreZip=zip;const result=await krogerCall('/locations?zip='+encodeURIComponent(zip));krogerStores=result.locations||[];if(!krogerStores.some(x=>x.id===krogerStoreId)){krogerStoreId='';krogerStoreName='';rememberKrogerStore(null);}bulkKrogerItems=[];bulkKrogerMessage=krogerStores.length?'Choose your Kroger store above.':'No Kroger stores found near that ZIP code.';
+  krogerStoreZip=zip;
+  try{
+   const result=await krogerCall('/locations?zip='+encodeURIComponent(zip));
+   krogerStores=result.locations||[];
+   if(!krogerStores.some(x=>x.id===krogerStoreId)){krogerStoreId='';krogerStoreName='';rememberKrogerStore(null);}
+   bulkKrogerItems=[];
+   bulkKrogerMessage=krogerStores.length?'Choose your Kroger store above.':'No Kroger stores found near that ZIP code.';
+  }catch(error){
+   bulkKrogerMessage=(krogerStoreId?'Your saved Kroger store is still selected. ':'')+(error.message||'Store lookup failed.')+' Tap Find nearby stores to retry.';
+  }
  }else if(btn.dataset.bulkAction==='prepare'){
   if(!krogerConnected)throw Error('Connect your Kroger account first.');
   const list=window.tablewiseBulkGroceries||[];
@@ -238,7 +256,7 @@ document.addEventListener('click',async event=>{
    try{await krogerCall('/cart/add',{method:'POST',body:JSON.stringify({items:batch})});completed+=batch.length}
    catch(error){throw Error(completed+' products were accepted before Kroger reported an error. Check your Kroger cart before retrying to avoid duplicates. '+error.message)}
   }
-  bulkKrogerMessage='Kroger accepted '+completed+' products. Please verify they appear in your Kroger cart before checkout.';
+  bulkKrogerMessage='Kroger accepted '+completed+' products. Open your Kroger cart to confirm they appear before checkout. If the cart is unchanged, refresh Kroger once before retrying to avoid duplicates.';
   bulkKrogerItems=[];
  }
  }catch(err){bulkKrogerMessage=err.message||'Unable to prepare Kroger cart.'}
