@@ -64,18 +64,36 @@ async function krogerCall(path,options={}){
   return data;
 }
 let bulkKrogerItems=[],bulkKrogerBusy=false,bulkKrogerMessage='';
+function estimatedKrogerPackages(item,product){
+ const amount=Number(item.qty),unit=String(item.unit||'').toLowerCase().trim();
+ const label=String(product?.size||'').toLowerCase().replace(/,/g,'').trim();
+ const match=label.match(/(\d+(?:\.\d+)?)\s*(fl\s*oz|fluid ounces?|ounces?|oz|lbs?|pounds?|grams?|g|kg|kilograms?|ml|milliliters?|liters?|l|ct|count|each|ea)\b/i);
+ if(!Number.isFinite(amount)||amount<=0||!match)return {count:1,verified:false};
+ const n=Number(match[1]),sizeUnit=match[2].replace(/\s+/g,' ');
+ const mass={oz:1,ounce:1,ounces:1,lb:16,lbs:16,pound:16,pounds:16,g:1/28.3495,gram:1/28.3495,grams:1/28.3495,kg:35.274,kilogram:35.274,kilograms:35.274};
+ const volume={cup:8,cups:8,tbsp:0.5,tablespoon:0.5,tablespoons:0.5,tsp:1/6,teaspoon:1/6,teaspoons:1/6,ml:1/29.5735,milliliter:1/29.5735,milliliters:1/29.5735,l:33.814,liter:33.814,liters:33.814,'fl oz':1,'fluid ounce':1,'fluid ounces':1};
+ const count={each:1,ea:1,ct:1,count:1,egg:1,eggs:1};
+ let need,available;
+ if(mass[unit]&&mass[sizeUnit]){need=amount*mass[unit];available=n*mass[sizeUnit]}
+ else if(volume[unit]&&volume[sizeUnit]){need=amount*volume[unit];available=n*volume[sizeUnit]}
+ else if(count[unit]&&count[sizeUnit]){need=amount*count[unit];available=n*count[sizeUnit]}
+ else return {count:1,verified:false};
+ const packages=Math.ceil(need/available);
+ return Number.isFinite(packages)&&packages>=1&&packages<=30?{count:packages,verified:true}:{count:1,verified:false};
+}
+
 function bulkKrogerReview(){
  return '<div class="card"><h3>Review your grocery list</h3><p class="muted">This list includes everything needed for your planned meals. You may already have some ingredients at home. Review your pantry and remove anything you do not need before adding products to your Kroger cart.</p>'+
  '<p class="tiny">We suggest Kroger matches for you. Open Review or change matched products only if you want to adjust them.</p>'+
  '<button class="primary" data-bulk-action="prepare" '+(bulkKrogerBusy?'disabled':'')+'>Find my Kroger groceries</button>'+
  '<p role="status" data-bulk-status aria-live="polite">'+e(bulkKrogerMessage)+'</p>'+
- (bulkKrogerItems.length?'<details class="groceryGroup"><summary>Review or change matched products</summary>'+bulkKrogerItems.map((item,i)=>'<div class="meal shoppingLabel"><label><input type="checkbox" data-bulk-include="'+i+'" '+(item.include?'checked':'')+'> '+e(item.name)+'</label><span class="tiny">'+e(item.qty+' '+item.unit)+'</span><div><select class="field" data-bulk-product="'+i+'" aria-label="Kroger product for '+e(item.name)+'"><option value="">Choose product</option>'+item.products.map((p,j)=>'<option value="'+j+'" '+(item.selected===j?'selected':'')+'>'+e(p.name+' · '+(p.brand||'')+' · '+p.upc)+'</option>').join('')+'</select><label class="tiny">Packages <input class="field" type="number" min="1" max="30" step="1" data-bulk-qty="'+i+'" value="'+item.packages+'"></label></div></div>').join('')+'</details><button class="primary" data-bulk-action="send" '+(bulkKrogerBusy?'disabled':'')+'>Add reviewed items to Kroger cart</button>':'')+'</div>';
+ (bulkKrogerItems.length?'<details class="groceryGroup"><summary>Review or change matched products</summary>'+bulkKrogerItems.map((item,i)=>'<div class="meal shoppingLabel"><label><input type="checkbox" data-bulk-include="'+i+'" '+(item.include?'checked':'')+'> '+e(item.name)+'</label><span class="tiny">'+e(item.qty+' '+item.unit)+'</span><div><select class="field" data-bulk-product="'+i+'" aria-label="Kroger product for '+e(item.name)+'"><option value="">Choose product</option>'+item.products.map((p,j)=>'<option value="'+j+'" '+(item.selected===j?'selected':'')+'>'+e(p.name+' · '+(p.brand||'')+' · '+p.upc)+'</option>').join('')+'</select><label class="tiny">Packages (check amount) <input class="field" type="number" min="1" max="30" step="1" data-bulk-qty="'+i+'" value="'+item.packages+'"></label></div></div>').join('')+'</details><button class="primary" data-bulk-action="send" '+(bulkKrogerBusy?'disabled':'')+'>Add reviewed items to Kroger cart</button>':'')+'</div>';
 }
 document.addEventListener('change',event=>{
  const t=event.target;if(!t)return;const i=Number(t.dataset.bulkInclude??t.dataset.bulkProduct??t.dataset.bulkQty);
  if(!Number.isInteger(i)||!bulkKrogerItems[i])return;
  if(t.hasAttribute('data-bulk-include'))bulkKrogerItems[i].include=t.checked;
- if(t.hasAttribute('data-bulk-product'))bulkKrogerItems[i].selected=t.value===''?-1:Number(t.value);
+ if(t.hasAttribute('data-bulk-product')){bulkKrogerItems[i].selected=t.value===''?-1:Number(t.value);const estimate=estimatedKrogerPackages(bulkKrogerItems[i],bulkKrogerItems[i].products[bulkKrogerItems[i].selected]);bulkKrogerItems[i].packages=estimate.count;bulkKrogerItems[i].estimated=estimate.verified;view();}
  if(t.hasAttribute('data-bulk-qty'))bulkKrogerItems[i].packages=Number(t.value);
 });
 document.addEventListener('click',async event=>{
@@ -94,14 +112,14 @@ document.addEventListener('click',async event=>{
    const matches=await Promise.all(batch.map(async item=>{
     try{
      const result=await krogerCall('/products?term='+encodeURIComponent(item.name));
-     return {...item,products:(result.products||[]).filter(p=>p.upc&&p.name).slice(0,8),selected:(result.products||[]).some(p=>p.upc&&p.name)?0:-1,packages:1,include:(result.products||[]).some(p=>p.upc&&p.name)};
+     return {...item,products:(result.products||[]).filter(p=>p.upc&&p.name).slice(0,8),selected:products.length?0:-1,packages:products.length?estimatedKrogerPackages(item,products[0]).count:1,estimated:products.length?estimatedKrogerPackages(item,products[0]).verified:false,include:!!products.length};
     }catch(error){return {...item,products:[],selected:-1,packages:1,include:false,lookupError:true}}
    }));
    bulkKrogerItems.push(...matches);
    bulkKrogerMessage='Found results for '+bulkKrogerItems.length+' of '+list.length+' items…';
    if(status)status.textContent=bulkKrogerMessage;
   }
-  bulkKrogerMessage='Review each product and package quantity. Unmatched items are excluded until you select a product.';
+  bulkKrogerMessage='Suggested package counts are estimated when Kroger provides a compatible size. Review quantities before adding to cart.';
  }else{
   const chosen=bulkKrogerItems.filter(x=>x.include);
   if(!chosen.length)throw Error('Select at least one item.');
