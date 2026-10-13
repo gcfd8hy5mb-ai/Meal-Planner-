@@ -65,7 +65,9 @@ async function krogerCall(path,options={}){
 }
 let bulkKrogerItems=[],bulkKrogerBusy=false,bulkKrogerMessage='';
 let krogerStoreZip='',krogerStoreId='',krogerStoreName='',krogerStores=[],krogerStoreBusy=false;
-const krogerMoney=n=>Number.isFinite(Number(n))?'
+const krogerMoney=n=>Number.isFinite(Number(n))?'$'+Number(n).toFixed(2):'—';
+function krogerPrice(p){return Number(p?.promo)>0&&Number(p.promo)<Number(p.regular)?Number(p.promo):Number(p?.regular)||Infinity;}
+function krogerSavings(p){return Number(p?.promo)>0&&Number(p.promo)<Number(p.regular)?Number(p.regular)-Number(p.promo):0;}
 function estimatedKrogerPackages(item,product){
  const amount=Number(item.qty),unit=String(item.unit||'').toLowerCase().trim();
  const label=String(product?.size||'').toLowerCase().replace(/,/g,'').trim();
