@@ -99,6 +99,13 @@ function estimatedKrogerPackages(item,product){
  return Number.isFinite(packages)&&packages>=1&&packages<=30?{count:packages,verified:true}:{count:1,verified:false};
 }
 
+function krogerMatchConfidence(ingredient,product){
+ const ignored=new Set(['fresh','frozen','organic','large','small','medium','whole','sliced','diced','chopped','raw','boneless','skinless','the','and','of','for','with','a','an']);
+ const words=text=>String(text||'').toLowerCase().replace(/[^a-z0-9 ]/g,' ').split(/\s+/).filter(w=>w.length>2&&!ignored.has(w));
+ const wanted=words(ingredient.name),found=new Set(words(product.name));
+ if(!wanted.length)return 0;
+ return wanted.filter(w=>found.has(w)||[...found].some(f=>f.startsWith(w)||w.startsWith(f))).length/wanted.length;
+}
 function bulkKrogerReview(){
  return '<div class="card"><h3>Review your grocery list</h3><p class="muted">This list includes everything needed for your planned meals. You may already have some ingredients at home. Review your pantry and remove anything you do not need before adding products to your Kroger cart.</p>'+
  '<p class="tiny">We suggest Kroger matches for you. Open Review or change matched products only if you want to adjust them.</p>'+
@@ -143,10 +150,14 @@ document.addEventListener('click',async event=>{
       const price=krogerPrice(product);
       return {index,estimate,total:estimate.verified&&Number.isFinite(price)?price*estimate.count:Infinity};
      });
-     const verified=options.filter(x=>Number.isFinite(x.total));
+     // Compare prices only among reasonably similar ingredient matches.
+     const confidence=products.map(product=>krogerMatchConfidence(item,product));
+     const strongest=Math.max(0,...confidence);
+     const eligible=options.filter(x=>confidence[x.index]>=Math.max(0.5,strongest-0.2));
+     const verified=eligible.filter(x=>Number.isFinite(x.total));
      const best=verified.length?verified.reduce((a,b)=>b.total<a.total?b:a):null;
      // Preserve the existing Kroger search order when quantities cannot be compared.
-     const selected=best?best.index:(products.length?0:-1);
+     const selected=best?best.index:(products.length?confidence.indexOf(strongest):-1);
      const estimate=selected>=0?estimatedKrogerPackages(item,products[selected]):{count:1,verified:false};
      return {...item,products,selected,packages:estimate.count,estimated:estimate.verified,include:!!products.length,smartSavingsVerified:!!best};
     }catch(error){return {...item,products:[],selected:-1,packages:1,include:false,lookupError:true}}
