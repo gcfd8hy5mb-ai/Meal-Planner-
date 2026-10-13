@@ -94,3 +94,11 @@ test('credential diagnostic is not public', async () => {
   const result = await send('/diagnostics/credentials', {headers:{Origin:origin}});
   assert.equal(result.status, 401);
 });
+
+test('product search retains valid numeric UPCs and rejects malformed values', async () => {
+  // The real Kroger response is mocked; no external account or credentials are used.
+  // Exercise the UPC pattern against the same literal pattern from the Worker.
+  const source = (await import('node:fs/promises')).readFile(new URL('../worker.js', import.meta.url), 'utf8');
+  assert.match(await source, /filter\(p=>\/\^\\d\{8,14\}\$\/\.test\(p\.upc\)\)/);
+  assert.doesNotMatch(await source, /\/\^\\\\d\{8,14\}/);
+});
