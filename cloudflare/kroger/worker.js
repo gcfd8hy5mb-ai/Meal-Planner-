@@ -178,16 +178,31 @@ export default {
         return json({error: 'Saved Kroger connection is unavailable. Reconnect your account.'}, 409, cors);
       }
     }
+    if(path==='/locations'&&request.method==='GET'){
+      const zip=(url.searchParams.get('zip')||'').trim();
+      if(!/^\d{5}$/.test(zip))return json({error:'Invalid ZIP code'},400,cors);
+      try{
+        const token=await krogerToken(env,{grant_type:'client_credentials',scope:'product.compact'});
+        const q=new URLSearchParams({'filter.zipCode.near':zip,'filter.limit':'10','filter.radiusInMiles':'25'});
+        const response=await fetch(KROGER_BASE+'/v1/locations?'+q,{headers:{Authorization:'Bearer '+token.access_token,Accept:'application/json'}});
+        if(!response.ok)return json({error:'Store lookup unavailable'},502,cors);
+        const data=await response.json();
+        return json({locations:(data.data||[]).map(x=>({id:x.locationId||'',name:x.name||'Kroger',address:[x.address?.addressLine1,x.address?.city,x.address?.state].filter(Boolean).join(', ')})).filter(x=>/^\d{8}$/.test(x.id))},200,cors);
+      }catch{return json({error:'Store lookup unavailable'},502,cors)}
+    }
     if(path==='/products'&&request.method==='GET'){
       const term=(url.searchParams.get('term')||'').trim();
       if(term.length<2||term.length>90)return json({error:'Invalid search'},400,cors);
       try{
         const clientToken=await krogerToken(env,{grant_type:'client_credentials',scope:'product.compact'});
+        const locationId=(url.searchParams.get('locationId')||'').trim();
+        if(locationId&&!/^\d{8}$/.test(locationId))return json({error:'Invalid store'},400,cors);
         const q=new URLSearchParams({'filter.term':term,'filter.limit':'10'});
+        if(locationId)q.set('filter.locationId',locationId);
         const response=await fetch(KROGER_BASE+'/v1/products?'+q,{headers:{Authorization:'Bearer '+clientToken.access_token,Accept:'application/json'}});
         if(!response.ok)return json({error:'Product search unavailable'},502,cors);
         const data=await response.json();
-        return json({products:(data.data||[]).slice(0,10).map(p=>({name:p.description||'',upc:p.upc||'',brand:p.brand||'',size:p.items?.[0]?.size||''})).filter(p=>/^\d{8,14}$/.test(p.upc))},200,cors);
+        return json({products:(data.data||[]).slice(0,10).map(p=>({name:p.description||'',upc:p.upc||'',brand:p.brand||'',size:p.items?.[0]?.size||'',regular:p.items?.[0]?.price?.regular??null,promo:p.items?.[0]?.price?.promo??null})).filter(p=>/^\d{8,14}$/.test(p.upc))},200,cors);
       }catch{return json({error:'Product search unavailable'},502,cors)}
     }
     if(path==='/cart/add'&&request.method==='POST'){
