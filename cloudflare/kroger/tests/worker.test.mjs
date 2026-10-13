@@ -89,3 +89,8 @@ test('callback distinguishes user denial and expired OAuth state', async () => {
   const expired = await send('/auth/kroger/callback?state='+state+'&code=sample');
   assert.equal(new URL(expired.headers.get('location')).searchParams.get('kroger_reason'),'state_expired');
 });
+
+test('credential diagnostic is not public', async () => {
+  const result = await send('/diagnostics/credentials', {headers:{Origin:origin}});
+  assert.equal(result.status, 401);
+});

@@ -148,13 +148,25 @@ export default {
       }
       return redirectBack('connected');
     }
-    if (!['/connect', '/status', '/disconnect', '/products', '/cart/add'].includes(path))
+    if (!['/connect', '/status', '/disconnect', '/products', '/cart/add', '/diagnostics/credentials'].includes(path))
       return json({error: 'Not found'}, 404, cors);
     if (origin && origin !== APP_ORIGIN)
       return json({error: 'Origin not allowed'}, 403);
     let uid;
     try { uid = await firebaseUser(request); }
     catch { return json({error: 'Valid Tablewise sign-in required'}, 401, cors); }
+    if (path === '/diagnostics/credentials' && request.method === 'GET') {
+      // A scoped, authenticated check of credentials without returning an access token.
+      // Kroger is the authority: 401 means the configured pair was not accepted.
+      try {
+        await krogerToken(env, {grant_type: 'client_credentials', scope: 'product.compact'});
+        return json({valid: true, message: 'Production credentials accepted by Kroger.'}, 200, cors);
+      } catch (error) {
+        if (error.oauthReason === 'client_rejected')
+          return json({valid: false, reason: 'client_rejected', message: 'Kroger rejected the configured production credentials (HTTP 401).'}, 200, cors);
+        return json({valid: false, reason: 'other', message: 'Kroger credential check was inconclusive. The production token request did not succeed.'}, 200, cors);
+      }
+    }
     if (path === '/status' && request.method === 'GET') {
       const stored = await env.KROGER_KV.get('token:' + uid);
       if (!stored) return json({connected: false}, 200, cors);
