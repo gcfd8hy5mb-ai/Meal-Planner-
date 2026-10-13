@@ -65,6 +65,19 @@ async function krogerCall(path,options={}){
 }
 let bulkKrogerItems=[],bulkKrogerBusy=false,bulkKrogerMessage='';
 let krogerStoreZip='',krogerStoreId='',krogerStoreName='',krogerStores=[],krogerStoreBusy=false;
+try{
+ const saved=JSON.parse(localStorage.getItem('tablewise-kroger-store-v1')||'null');
+ if(saved&&/^\d{8}$/.test(saved.id||'')&&/^\d{5}$/.test(saved.zip||'')){
+  krogerStoreZip=saved.zip;krogerStoreId=saved.id;krogerStoreName=saved.name||'Your Kroger store';
+  krogerStores=[{id:saved.id,name:krogerStoreName,address:saved.address||''}];
+ }
+}catch(error){console.warn('Kroger store preference unavailable',error)}
+function rememberKrogerStore(store){
+ try{
+  if(store&&krogerStoreZip)localStorage.setItem('tablewise-kroger-store-v1',JSON.stringify({zip:krogerStoreZip,id:store.id,name:store.name,address:store.address||''}));
+  else localStorage.removeItem('tablewise-kroger-store-v1');
+ }catch(error){console.warn('Could not save Kroger store preference',error)}
+}
 const krogerMoney=n=>Number.isFinite(Number(n))?'$'+Number(n).toFixed(2):'—';
 function krogerPrice(p){return Number(p?.promo)>0&&Number(p.promo)<Number(p.regular)?Number(p.promo):Number(p?.regular)||Infinity;}
 function krogerSavings(p){return Number(p?.promo)>0&&Number(p.promo)<Number(p.regular)?Number(p.regular)-Number(p.promo):0;}
@@ -89,14 +102,14 @@ function estimatedKrogerPackages(item,product){
 function bulkKrogerReview(){
  return '<div class="card"><h3>Review your grocery list</h3><p class="muted">This list includes everything needed for your planned meals. You may already have some ingredients at home. Review your pantry and remove anything you do not need before adding products to your Kroger cart.</p>'+
  '<p class="tiny">We suggest Kroger matches for you. Open Review or change matched products only if you want to adjust them.</p>'+
- '<div class="notice"><strong>Smart Savings</strong><p class="tiny">Enter your Kroger store ZIP code to compare local regular and sale prices. Digital coupons must be checked and clipped in Kroger when eligible.</p><label>Store ZIP <input class="field" id="krogerStoreZip" inputmode="numeric" maxlength="5" placeholder="ZIP code" value="'+e(krogerStoreZip)+'"></label><button class="secondary" data-bulk-action="stores" '+(bulkKrogerBusy?'disabled':'')+'>Find nearby stores</button>'+(krogerStores.length?'<label>Choose your store<select class="field" id="krogerStoreChoice"><option value="">Select store</option>'+krogerStores.map(p=>'<option value="'+e(p.id)+'" '+(krogerStoreId===p.id?'selected':'')+'>'+e(p.name+' — '+p.address)+'</option>').join('')+'</select></label>':'')+(krogerStoreId?'<p class="tiny">Using '+e(krogerStoreName)+' for local sale prices.</p>':'')+'</div>'+ 
+ '<div class="notice"><strong>Smart Savings</strong><p class="tiny">Your chosen Kroger store stays saved on this device until you change it. Digital coupons must be checked and clipped in Kroger when eligible.</p><label>Store ZIP <input class="field" id="krogerStoreZip" inputmode="numeric" maxlength="5" placeholder="ZIP code" value="'+e(krogerStoreZip)+'"></label><button class="secondary" data-bulk-action="stores" '+(bulkKrogerBusy?'disabled':'')+'>Find nearby stores</button>'+(krogerStores.length?'<label>Choose your store<select class="field" id="krogerStoreChoice"><option value="">Select store</option>'+krogerStores.map(p=>'<option value="'+e(p.id)+'" '+(krogerStoreId===p.id?'selected':'')+'>'+e(p.name+' — '+p.address)+'</option>').join('')+'</select></label>':'')+(krogerStoreId?'<p class="tiny">Using '+e(krogerStoreName)+' for local sale prices.</p>':'')+'</div>'+ 
 '<button class="primary" data-bulk-action="prepare" '+(bulkKrogerBusy?'disabled':'')+'>Find my Kroger groceries</button>'+
- '<p role="status" data-bulk-status aria-live="polite">'+e(bulkKrogerMessage)+'</p>'+ (bulkKrogerItems.length&&krogerStoreId?'<p class="tiny">Estimated sale savings: '+krogerMoney(bulkKrogerItems.filter(x=>x.include).reduce((total,x)=>total+krogerSavings(x.products[x.selected])*x.packages,0))+'. Prices are estimates, not coupon guarantees.</p>':'')+
+ '<p role="status" data-bulk-status aria-live="polite">'+e(bulkKrogerMessage)+'</p>'+ (bulkKrogerItems.length?'<div class="notice"><strong>'+bulkKrogerItems.filter(x=>x.include).length+' matched · '+bulkKrogerItems.filter(x=>!x.products.length).length+' need attention</strong>'+(bulkKrogerItems.some(x=>!x.products.length)?'<p class="tiny">Not automatically selected: '+bulkKrogerItems.filter(x=>!x.products.length).map(x=>e(x.name)+(x.lookupError?' (search unavailable)':' (no Kroger match)')).join(', ')+'. These items will not be added to your Kroger cart.</p>':'')+'</div>':'')+ (bulkKrogerItems.length&&krogerStoreId?'<p class="tiny">Estimated sale savings: '+krogerMoney(bulkKrogerItems.filter(x=>x.include).reduce((total,x)=>total+krogerSavings(x.products[x.selected])*x.packages,0))+'. Prices are estimates, not coupon guarantees.</p>':'')+
  (bulkKrogerItems.length?'<details class="groceryGroup"><summary>Review or change matched products</summary>'+bulkKrogerItems.map((item,i)=>'<div class="meal shoppingLabel"><label><input type="checkbox" data-bulk-include="'+i+'" '+(item.include?'checked':'')+'> '+e(item.name)+'</label><span class="tiny">'+e(item.qty+' '+item.unit)+'</span><div><select class="field" data-bulk-product="'+i+'" aria-label="Kroger product for '+e(item.name)+'"><option value="">Choose product</option>'+item.products.map((p,j)=>'<option value="'+j+'" '+(item.selected===j?'selected':'')+'>'+e(p.name+' · '+(p.brand||'')+' · '+(Number.isFinite(krogerPrice(p))?krogerMoney(krogerPrice(p)):'Price unavailable')+(krogerSavings(p)?' · Save '+krogerMoney(krogerSavings(p)):'')+' · '+p.upc)+'</option>').join('')+'</select><label class="tiny">Packages (check amount) <input class="field" type="number" min="1" max="30" step="1" data-bulk-qty="'+i+'" value="'+item.packages+'"></label></div></div>').join('')+'</details><button class="primary" data-bulk-action="send" '+(bulkKrogerBusy?'disabled':'')+'>Add reviewed items to Kroger cart</button>':'')+'</div>';
 }
 document.addEventListener('change',event=>{
  const t=event.target;if(!t)return;
- if(t.id==='krogerStoreChoice'){const store=krogerStores.find(x=>x.id===t.value);krogerStoreId=store?.id||'';krogerStoreName=store?.name||'';bulkKrogerItems=[];bulkKrogerMessage='Store selected. Find groceries to compare local prices.';view();return;}const i=Number(t.dataset.bulkInclude??t.dataset.bulkProduct??t.dataset.bulkQty);
+ if(t.id==='krogerStoreChoice'){const store=krogerStores.find(x=>x.id===t.value);krogerStoreId=store?.id||'';krogerStoreName=store?.name||'';rememberKrogerStore(store);bulkKrogerItems=[];bulkKrogerMessage='Store selected. Find groceries to compare local prices.';view();return;}const i=Number(t.dataset.bulkInclude??t.dataset.bulkProduct??t.dataset.bulkQty);
  if(!Number.isInteger(i)||!bulkKrogerItems[i])return;
  if(t.hasAttribute('data-bulk-include'))bulkKrogerItems[i].include=t.checked;
  if(t.hasAttribute('data-bulk-product')){bulkKrogerItems[i].selected=t.value===''?-1:Number(t.value);const estimate=estimatedKrogerPackages(bulkKrogerItems[i],bulkKrogerItems[i].products[bulkKrogerItems[i].selected]);bulkKrogerItems[i].packages=estimate.count;bulkKrogerItems[i].estimated=estimate.verified;view();}
@@ -109,7 +122,7 @@ document.addEventListener('click',async event=>{
  if(btn.dataset.bulkAction==='stores'){
   const zip=document.getElementById('krogerStoreZip')?.value.trim()||'';
   if(!/^\d{5}$/.test(zip))throw Error('Enter a valid five-digit ZIP code.');
-  krogerStoreZip=zip;const result=await krogerCall('/locations?zip='+encodeURIComponent(zip));krogerStores=result.locations||[];krogerStoreId='';krogerStoreName='';bulkKrogerItems=[];bulkKrogerMessage=krogerStores.length?'Choose your Kroger store above.':'No Kroger stores found near that ZIP code.';
+  krogerStoreZip=zip;const result=await krogerCall('/locations?zip='+encodeURIComponent(zip));krogerStores=result.locations||[];if(!krogerStores.some(x=>x.id===krogerStoreId)){krogerStoreId='';krogerStoreName='';rememberKrogerStore(null);}bulkKrogerItems=[];bulkKrogerMessage=krogerStores.length?'Choose your Kroger store above.':'No Kroger stores found near that ZIP code.';
  }else if(btn.dataset.bulkAction==='prepare'){
   if(!krogerConnected)throw Error('Connect your Kroger account first.');
   const list=window.tablewiseBulkGroceries||[];
