@@ -18,6 +18,8 @@ test('health succeeds and reports readiness without disclosing secrets', async (
   const response = await send('/health');
   assert.equal(response.status, 200);
   assert.equal((await body(response)).ready, true);
+  const environment = await body(await send('/health'));
+  assert.equal(environment.environment, 'production');
   assert.equal(response.headers.get('cache-control'), 'no-store');
 });
 test('missing bindings fail closed', async () => {
