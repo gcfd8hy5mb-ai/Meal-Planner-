@@ -99,6 +99,32 @@ function estimatedKrogerPackages(item,product){
  return Number.isFinite(packages)&&packages>=1&&packages<=30?{count:packages,verified:true}:{count:1,verified:false};
 }
 
+function krogerPackageMix(item,products,eligible){
+ // Only propose a mixed cart when sizes can be converted to the ingredient's unit.
+ const amount=Number(item.qty),unit=String(item.unit||'').toLowerCase().trim();
+ const factors={oz:1,ounce:1,ounces:1,lb:16,lbs:16,pound:16,pounds:16,g:1/28.3495,grams:1/28.3495,kg:35.274,cup:8,cups:8,'fl oz':1,ml:1/29.5735,l:33.814,each:1,ea:1,ct:1,count:1,eggs:1,egg:1};
+ const group=u=>['oz','ounce','ounces','lb','lbs','pound','pounds','g','grams','kg'].includes(u)?'mass':['cup','cups','fl oz','ml','l'].includes(u)?'volume':['each','ea','ct','count','eggs','egg'].includes(u)?'count':'';
+ if(!group(unit)||!Number.isFinite(amount)||amount<=0)return null;
+ const options=eligible.map(index=>{
+  const p=products[index],m=String(p.size||'').toLowerCase().match(/(\d+(?:\.\d+)?)\s*(fl\s*oz|ounces?|oz|lbs?|pounds?|grams?|g|kg|ml|l|ct|count|each|ea)\b/);
+  if(!m)return null;
+  const u=m[2].replace(/\s+/g,' '),price=krogerPrice(p);
+  if(group(u)!==group(unit)||!factors[u]||!Number.isFinite(price)||price<=0)return null;
+  return {index,quantity:Number(m[1])*factors[u],price};
+ }).filter(Boolean);
+ const need=amount*factors[unit];let best=null;
+ for(let i=0;i<options.length;i++)for(let j=i+1;j<options.length;j++){
+  const a=options[i],b=options[j];
+  for(let n=1;n<=30;n++){
+   const rest=need-n*a.quantity;
+   const m=Math.max(1,Math.ceil(rest/b.quantity-1e-9));
+   if(m>30||n*a.quantity+m*b.quantity+1e-9<need)continue;
+   const total=n*a.price+m*b.price;
+   if(!best||total<best.total)best={items:[{index:a.index,count:n},{index:b.index,count:m}],total};
+  }
+ }
+ return best;
+}
 function krogerMatchConfidence(ingredient,product){
  const ignored=new Set(['fresh','frozen','organic','large','small','medium','whole','sliced','diced','chopped','raw','boneless','skinless','the','and','of','for','with','a','an']);
  const words=text=>String(text||'').toLowerCase().replace(/[^a-z0-9 ]/g,' ').split(/\s+/).filter(w=>w.length>2&&!ignored.has(w));
@@ -111,7 +137,7 @@ function bulkKrogerReview(){
  '<p class="tiny">We suggest Kroger matches for you. Open Review or change matched products only if you want to adjust them.</p>'+
  '<div class="notice"><strong>Smart Savings</strong><p class="tiny">Your chosen Kroger store stays saved on this device until you change it. Digital coupons must be checked and clipped in Kroger when eligible.</p><label>Store ZIP <input class="field" id="krogerStoreZip" inputmode="numeric" maxlength="5" placeholder="ZIP code" value="'+e(krogerStoreZip)+'"></label><button class="secondary" data-bulk-action="stores" '+(bulkKrogerBusy?'disabled':'')+'>Find nearby stores</button>'+(krogerStores.length?'<label>Choose your store<select class="field" id="krogerStoreChoice"><option value="">Select store</option>'+krogerStores.map(p=>'<option value="'+e(p.id)+'" '+(krogerStoreId===p.id?'selected':'')+'>'+e(p.name+' — '+p.address)+'</option>').join('')+'</select></label>':'')+(krogerStoreId?'<p class="tiny">Using '+e(krogerStoreName)+' for local sale prices.</p>':'')+'</div>'+ 
 '<button class="primary" data-bulk-action="prepare" '+(bulkKrogerBusy?'disabled':'')+'>Find my Kroger groceries</button>'+
- '<p role="status" data-bulk-status aria-live="polite">'+e(bulkKrogerMessage)+'</p>'+ (bulkKrogerItems.some(x=>x.include)?'<p class="tiny">You may have Kroger digital coupons available. Check for eligible coupons and clip them in Kroger before checkout.</p>':'')+ (bulkKrogerItems.length?'<div class="notice"><strong>'+bulkKrogerItems.filter(x=>x.include).length+' matched · '+bulkKrogerItems.filter(x=>!x.products.length).length+' need attention</strong>'+(bulkKrogerItems.some(x=>!x.products.length)?'<p class="tiny">Not automatically selected: '+bulkKrogerItems.filter(x=>!x.products.length).map(x=>e(x.name)+(x.lookupError?' (search unavailable)':' (no Kroger match)')).join(', ')+'. These items will not be added to your Kroger cart.</p>':'')+'</div>':'')+ (bulkKrogerItems.some(x=>x.smartSavingsVerified)?'<p class="tiny">Smart Savings compared package quantities and selected the lowest estimated total for '+bulkKrogerItems.filter(x=>x.smartSavingsVerified).length+' groceries with comparable sizes. Verify the suggested products before checkout.</p>':'')+ (bulkKrogerItems.length&&krogerStoreId?'<p class="tiny">Estimated sale savings: '+krogerMoney(bulkKrogerItems.filter(x=>x.include).reduce((total,x)=>total+krogerSavings(x.products[x.selected])*x.packages,0))+'. Prices are estimates, not coupon guarantees.</p>':'')+
+ '<p role="status" data-bulk-status aria-live="polite">'+e(bulkKrogerMessage)+'</p>'+ (bulkKrogerItems.some(x=>x.combo)?'<p class="tiny">Best-value package combinations found for '+bulkKrogerItems.filter(x=>x.combo).length+' items. Changing a product or package quantity uses your manual selection instead.</p>':'')+ (bulkKrogerItems.some(x=>x.include)?'<p class="tiny">You may have Kroger digital coupons available. Check for eligible coupons and clip them in Kroger before checkout.</p>':'')+ (bulkKrogerItems.length?'<div class="notice"><strong>'+bulkKrogerItems.filter(x=>x.include).length+' matched · '+bulkKrogerItems.filter(x=>!x.products.length).length+' need attention</strong>'+(bulkKrogerItems.some(x=>!x.products.length)?'<p class="tiny">Not automatically selected: '+bulkKrogerItems.filter(x=>!x.products.length).map(x=>e(x.name)+(x.lookupError?' (search unavailable)':' (no Kroger match)')).join(', ')+'. These items will not be added to your Kroger cart.</p>':'')+'</div>':'')+ (bulkKrogerItems.some(x=>x.smartSavingsVerified)?'<p class="tiny">Smart Savings compared package quantities and selected the lowest estimated total for '+bulkKrogerItems.filter(x=>x.smartSavingsVerified).length+' groceries with comparable sizes. Verify the suggested products before checkout.</p>':'')+ (bulkKrogerItems.length&&krogerStoreId?'<p class="tiny">Estimated sale savings: '+krogerMoney(bulkKrogerItems.filter(x=>x.include).reduce((total,x)=>total+krogerSavings(x.products[x.selected])*x.packages,0))+'. Prices are estimates, not coupon guarantees.</p>':'')+
  (bulkKrogerItems.length?'<details class="groceryGroup"><summary>Review or change matched products</summary>'+bulkKrogerItems.map((item,i)=>'<div class="meal shoppingLabel"><label><input type="checkbox" data-bulk-include="'+i+'" '+(item.include?'checked':'')+'> '+e(item.name)+'</label><span class="tiny">'+e(item.qty+' '+item.unit)+'</span><div><select class="field" data-bulk-product="'+i+'" aria-label="Kroger product for '+e(item.name)+'"><option value="">Choose product</option>'+item.products.map((p,j)=>'<option value="'+j+'" '+(item.selected===j?'selected':'')+'>'+e(p.name+' · '+(p.brand||'')+' · '+(Number.isFinite(krogerPrice(p))?krogerMoney(krogerPrice(p)):'Price unavailable')+(krogerSavings(p)?' · Save '+krogerMoney(krogerSavings(p)):'')+' · '+p.upc)+'</option>').join('')+'</select><label class="tiny">Packages (check amount) <input class="field" type="number" min="1" max="30" step="1" data-bulk-qty="'+i+'" value="'+item.packages+'"></label></div></div>').join('')+'</details><button class="primary" data-bulk-action="send" '+(bulkKrogerBusy?'disabled':'')+'>Add reviewed items to Kroger cart</button>':'')+'</div>';
 }
 document.addEventListener('change',event=>{
@@ -119,8 +145,8 @@ document.addEventListener('change',event=>{
  if(t.id==='krogerStoreChoice'){const store=krogerStores.find(x=>x.id===t.value);krogerStoreId=store?.id||'';krogerStoreName=store?.name||'';rememberKrogerStore(store);bulkKrogerItems=[];bulkKrogerMessage='Store selected. Find groceries to compare local prices.';view();return;}const i=Number(t.dataset.bulkInclude??t.dataset.bulkProduct??t.dataset.bulkQty);
  if(!Number.isInteger(i)||!bulkKrogerItems[i])return;
  if(t.hasAttribute('data-bulk-include'))bulkKrogerItems[i].include=t.checked;
- if(t.hasAttribute('data-bulk-product')){bulkKrogerItems[i].selected=t.value===''?-1:Number(t.value);const estimate=estimatedKrogerPackages(bulkKrogerItems[i],bulkKrogerItems[i].products[bulkKrogerItems[i].selected]);bulkKrogerItems[i].packages=estimate.count;bulkKrogerItems[i].estimated=estimate.verified;view();}
- if(t.hasAttribute('data-bulk-qty'))bulkKrogerItems[i].packages=Number(t.value);
+ if(t.hasAttribute('data-bulk-product')){bulkKrogerItems[i].combo=null;bulkKrogerItems[i].selected=t.value===''?-1:Number(t.value);const estimate=estimatedKrogerPackages(bulkKrogerItems[i],bulkKrogerItems[i].products[bulkKrogerItems[i].selected]);bulkKrogerItems[i].packages=estimate.count;bulkKrogerItems[i].estimated=estimate.verified;view();}
+ if(t.hasAttribute('data-bulk-qty')){bulkKrogerItems[i].combo=null;bulkKrogerItems[i].packages=Number(t.value);}
 });
 document.addEventListener('click',async event=>{
  const btn=event.target.closest('[data-bulk-action]');if(!btn||bulkKrogerBusy)return;
@@ -158,8 +184,10 @@ document.addEventListener('click',async event=>{
      const best=verified.length?verified.reduce((a,b)=>b.total<a.total?b:a):null;
      // Preserve the existing Kroger search order when quantities cannot be compared.
      const selected=best?best.index:(products.length?confidence.indexOf(strongest):-1);
+     const mix=krogerPackageMix(item,products,eligible.map(x=>x.index));
+     const combo=mix&&best&&mix.total+0.01<best.total?mix.items:null;
      const estimate=selected>=0?estimatedKrogerPackages(item,products[selected]):{count:1,verified:false};
-     return {...item,products,selected,packages:estimate.count,estimated:estimate.verified,include:!!products.length,smartSavingsVerified:!!best};
+     return {...item,products,selected,packages:estimate.count,estimated:estimate.verified,include:!!products.length,smartSavingsVerified:!!best,combo};
     }catch(error){return {...item,products:[],selected:-1,packages:1,include:false,lookupError:true}}
    }));
    bulkKrogerItems.push(...matches);
@@ -173,7 +201,10 @@ document.addEventListener('click',async event=>{
   if(chosen.some(x=>!x.products[x.selected]))throw Error('Some items need a Kroger product. Open Review or change matched products.');
   if(chosen.some(x=>!Number.isInteger(x.packages)||x.packages<1||x.packages>30))throw Error('Enter a package quantity between 1 and 30.');
   const grouped=new Map();
-  chosen.forEach(x=>{const upc=x.products[x.selected].upc;grouped.set(upc,(grouped.get(upc)||0)+x.packages)});
+  chosen.forEach(x=>{
+   const parts=x.combo&&x.estimated?x.combo:[{index:x.selected,count:x.packages}];
+   parts.forEach(part=>{const upc=x.products[part.index].upc;grouped.set(upc,(grouped.get(upc)||0)+part.count)});
+  });
   const items=[...grouped].map(([upc,quantity])=>({upc,quantity}));
   if(items.some(x=>x.quantity>30))throw Error('Combined quantities exceed 30 for a product. Adjust packages.');
   if(!confirm('Add '+items.length+' reviewed Kroger products to your cart? This will not place an order.'))return;
