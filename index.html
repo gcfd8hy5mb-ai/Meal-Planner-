@@ -66,7 +66,7 @@ async function krogerCall(path,options={}){
 function krogerPanel(){
   return '<div class="card" id="krogerPanel"><h3>Kroger cart</h3><p class="tiny">Select an exact Kroger product before adding it. Adding does not place an order.</p>'+
     '<p id="krogerMessage" role="status">'+e(krogerMessage)+'</p>'+
-    '<div class="controls"><button class="secondary" data-kroger-action="status">Check connection</button>'+
+    '<div class="controls"><button class="secondary" data-kroger-action="status">Check connection</button><button class="secondary" data-kroger-action="diagnose">Test Kroger credentials</button>'+
     (krogerConnected?'<button class="secondary" data-kroger-action="disconnect">Disconnect Kroger</button>':'<button class="primary" data-kroger-action="connect">Connect Kroger</button>')+'</div>'+
     (krogerConnected?'<label for="krogerTerm">Find a grocery product</label><input class="field" id="krogerTerm" maxlength="90" placeholder="Example: milk, eggs, rice"><button class="secondary" data-kroger-action="search">Search Kroger</button>'+
     '<div id="krogerProducts">'+krogerResults.map((p,i)=>'<div class="meal"><span>'+e(p.name)+' <small>'+e(p.brand)+' · UPC '+e(p.upc)+'</small></span><button class="secondary" data-kroger-select="'+i+'">Choose</button></div>').join('')+'</div>'+
@@ -83,6 +83,7 @@ document.addEventListener('click',async event=>{
     if(select){krogerSelection=krogerResults[Number(select.dataset.krogerSelect)]||null;krogerMessage='Review the product and quantity before submitting.';view();return}
     const name=action.dataset.krogerAction;
     action.disabled=true;
+    if(name==='diagnose'){const result=await krogerCall('/diagnostics/credentials');krogerMessage=result.message||'Credential check unavailable.';}
     if(name==='status'){const result=await krogerCall('/status');krogerConnected=!!result.connected;krogerMessage=krogerConnected?'Kroger connected.':'Kroger not connected.'}
     if(name==='connect'){const result=await krogerCall('/connect',{method:'POST'});if(!['https://api.kroger.com','https://api-ce.kroger.com'].includes((()=>{try{const u=new URL(result.authorizationUrl);return u.protocol==='https:'&&u.pathname==='/v1/connect/oauth2/authorize'?u.origin:''}catch{return ''}})()))throw Error('Unexpected authorization URL');window.location.assign(result.authorizationUrl);return}
     if(name==='disconnect'){if(!confirm('Disconnect Kroger from your meal planner?'))return;await krogerCall('/disconnect',{method:'POST'});krogerConnected=false;krogerSelection=null;krogerResults=[];krogerMessage='Kroger disconnected.'}
