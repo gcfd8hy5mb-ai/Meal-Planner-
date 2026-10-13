@@ -112,14 +112,16 @@ document.addEventListener('click',async event=>{
    const matches=await Promise.all(batch.map(async item=>{
     try{
      const result=await krogerCall('/products?term='+encodeURIComponent(item.name));
-     return {...item,products:(result.products||[]).filter(p=>p.upc&&p.name).slice(0,8),selected:products.length?0:-1,packages:products.length?estimatedKrogerPackages(item,products[0]).count:1,estimated:products.length?estimatedKrogerPackages(item,products[0]).verified:false,include:!!products.length};
+     const products=(result.products||[]).filter(p=>p.upc&&p.name).slice(0,8);
+     const estimate=products.length?estimatedKrogerPackages(item,products[0]):{count:1,verified:false};
+     return {...item,products,selected:products.length?0:-1,packages:estimate.count,estimated:estimate.verified,include:!!products.length};
     }catch(error){return {...item,products:[],selected:-1,packages:1,include:false,lookupError:true}}
    }));
    bulkKrogerItems.push(...matches);
    bulkKrogerMessage='Found results for '+bulkKrogerItems.length+' of '+list.length+' items…';
    if(status)status.textContent=bulkKrogerMessage;
   }
-  bulkKrogerMessage='Suggested package counts are estimated when Kroger provides a compatible size. Review quantities before adding to cart.';
+  bulkKrogerMessage=bulkKrogerItems.some(x=>x.include)?'Kroger suggestions are ready. Review the suggested products and package quantities before adding to cart.':'No Kroger products could be matched. Try searching for a product manually or check your Kroger connection.';
  }else{
   const chosen=bulkKrogerItems.filter(x=>x.include);
   if(!chosen.length)throw Error('Select at least one item.');
