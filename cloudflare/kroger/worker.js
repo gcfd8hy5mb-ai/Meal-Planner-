@@ -75,7 +75,14 @@ async function krogerToken(env, params) {
     body: new URLSearchParams(params)
   });
   const response = await res.json().catch(() => ({}));
-  if (!res.ok || !response.access_token) throw Error('Kroger authorization failed');
+  if (!res.ok || !response.access_token) {
+    const error = new Error('Kroger authorization failed');
+    // Only an allowlisted failure category may reach the browser. Never include Kroger response text.
+    error.oauthReason = !res.ok
+      ? (res.status === 400 ? 'token_rejected' : res.status === 401 ? 'client_rejected' : res.status === 403 ? 'access_denied' : 'token_service')
+      : 'token_missing';
+    throw error;
+  }
   return response;
 }
 async function userAccessToken(env, uid) {
@@ -89,9 +96,11 @@ async function userAccessToken(env, uid) {
  await env.KROGER_KV.put('token:'+uid,await encrypt(env,next));
  return next.access_token;
 }
-function redirectBack(outcome) {
+function redirectBack(outcome, reason = '') {
   const url = new URL(APP_RETURN);
   url.searchParams.set('kroger', outcome);
+  if (['oauth_denied','invalid_callback','state_expired','token_rejected','client_rejected','access_denied','token_service','token_missing','token_network','storage_failed'].includes(reason))
+    url.searchParams.set('kroger_reason', reason);
   return Response.redirect(url.href, 303);
 }
 export default {
@@ -114,22 +123,30 @@ export default {
     if (path === CALLBACK_PATH && request.method === 'GET') {
       const state = url.searchParams.get('state') || '';
       const code = url.searchParams.get('code') || '';
-      if (!/^[a-zA-Z0-9_-]{32,128}$/.test(state) || !code || code.length > 4096 || url.searchParams.has('error'))
-        return redirectBack('failed');
+      if (url.searchParams.has('error')) return redirectBack('failed', 'oauth_denied');
+      if (!/^[a-zA-Z0-9_-]{32,128}$/.test(state) || !code || code.length > 4096)
+        return redirectBack('failed', 'invalid_callback');
       const saved = await env.KROGER_KV.get('oauth:' + state, 'json');
       if (!saved || saved.expires < Date.now() || !saved.uid || saved.redirectUri !== redirectUri(request))
-        return redirectBack('expired');
+        return redirectBack('expired', 'state_expired');
       await env.KROGER_KV.delete('oauth:' + state);
+      let result;
       try {
-        const result = await krogerToken(env, {grant_type: 'authorization_code', code, redirect_uri: saved.redirectUri});
+        result = await krogerToken(env, {grant_type: 'authorization_code', code, redirect_uri: saved.redirectUri});
+      } catch (error) {
+        return redirectBack('failed', error.oauthReason || 'token_network');
+      }
+      try {
         await env.KROGER_KV.put('token:' + saved.uid, await encrypt(env, {
           access_token: result.access_token, refresh_token: result.refresh_token || null,
           scope: result.scope || '',
           expires: Date.now() + Math.max(0, (Number(result.expires_in) || 0) - 60) * 1000,
           connectedAt: Date.now()
         }));
-        return redirectBack('connected');
-      } catch { return redirectBack('failed'); }
+      } catch {
+        return redirectBack('failed', 'storage_failed');
+      }
+      return redirectBack('connected');
     }
     if (!['/connect', '/status', '/disconnect', '/products', '/cart/add'].includes(path))
       return json({error: 'Not found'}, 404, cors);
