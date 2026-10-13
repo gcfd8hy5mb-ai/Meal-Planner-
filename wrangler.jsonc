@@ -1,3 +1,4 @@
+// Trigger guarded Kroger Production Worker build from the verified main branch.
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "tablewise-kroger",
