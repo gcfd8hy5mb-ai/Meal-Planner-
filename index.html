@@ -20,19 +20,35 @@ window.__tablewiseReady=true;
 const firebase=initializeApp(firebaseConfig),auth=getAuth(firebase),db=getFirestore(firebase);
 const KROGER_API='https://tablewise-kroger.gcfd8hy5mb.workers.dev';
 let krogerConnected=false,krogerResults=[],krogerSelection=null,krogerMessage='Connect Kroger to select exact grocery products.';
-const krogerReturnResult=new URLSearchParams(window.location.search).get('kroger');
+const krogerReturnParams=new URLSearchParams(window.location.search);
+const krogerReturnResult=krogerReturnParams.get('kroger');
+const krogerReturnReason=krogerReturnParams.get('kroger_reason');
+const krogerFailureMessages={
+  oauth_denied:'Kroger did not approve the authorization request.',
+  invalid_callback:'Kroger returned an incomplete authorization response.',
+  state_expired:'The authorization session expired or could not be found.',
+  token_rejected:'Kroger rejected the authorization code (HTTP 400).',
+  client_rejected:'Kroger rejected the app credentials during token exchange (HTTP 401).',
+  access_denied:'Kroger denied the token exchange (HTTP 403).',
+  token_service:'Kroger token service returned an error.',
+  token_missing:'Kroger returned no access token.',
+  token_network:'The token exchange could not be completed.',
+  storage_failed:'The Kroger connection could not be saved.'
+};
+const krogerFailureDetail=Object.prototype.hasOwnProperty.call(krogerFailureMessages,krogerReturnReason)?' '+krogerFailureMessages[krogerReturnReason]:'';
 if(['connected','failed','expired'].includes(krogerReturnResult)){
   const cleanUrl=new URL(window.location.href);
   cleanUrl.searchParams.delete('kroger');
+  cleanUrl.searchParams.delete('kroger_reason');
   history.replaceState(history.state,'',cleanUrl.href);
-  krogerMessage=krogerReturnResult==='connected'?'Kroger authorization returned successfully. Checking your connection…':krogerReturnResult==='expired'?'Kroger authorization expired. Please reconnect.':'Kroger authorization was not completed. Please reconnect.';
+  krogerMessage=krogerReturnResult==='connected'?'Kroger authorization returned successfully. Checking your connection…':krogerReturnResult==='expired'?'Kroger authorization expired. Please reconnect.':'Kroger authorization was not completed.'+krogerFailureDetail+' Please reconnect.';
 }
 async function restoreKrogerConnection(){
   if(!auth.currentUser)return;
   try{
     const result=await krogerCall('/status');
     krogerConnected=!!result.connected;
-    krogerMessage=krogerConnected?'Kroger connected.':krogerReturnResult==='connected'?'Kroger authorization returned, but no active connection was found. Try reconnecting.':krogerReturnResult==='failed'?'Kroger authorization failed. Try reconnecting.':krogerReturnResult==='expired'?'Kroger authorization expired. Try reconnecting.':'Kroger not connected.';
+    krogerMessage=krogerConnected?'Kroger connected.':krogerReturnResult==='connected'?'Kroger authorization returned, but no active connection was found. Try reconnecting.':krogerReturnResult==='failed'?'Kroger authorization failed.'+krogerFailureDetail+' Try reconnecting.':krogerReturnResult==='expired'?'Kroger authorization expired. Try reconnecting.':'Kroger not connected.';
   }catch(error){
     krogerConnected=false;
     krogerMessage='Unable to check Kroger connection: '+(error.message||'Please try again.');
