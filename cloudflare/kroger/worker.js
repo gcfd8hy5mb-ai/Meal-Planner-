@@ -148,7 +148,7 @@ export default {
       }
       return redirectBack('connected');
     }
-    if (!['/connect', '/status', '/disconnect', '/products', '/cart/add', '/diagnostics/credentials'].includes(path))
+    if (!['/connect', '/status', '/disconnect', '/products', '/locations', '/cart/add', '/diagnostics/credentials'].includes(path))
       return json({error: 'Not found'}, 404, cors);
     if (origin && origin !== APP_ORIGIN)
       return json({error: 'Origin not allowed'}, 403);
