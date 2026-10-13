@@ -68,7 +68,7 @@ function bulkKrogerReview(){
  return '<div class="card"><h3>Review your grocery list</h3><p class="muted">This list includes everything needed for your planned meals. You may already have some ingredients at home. Review your pantry and remove anything you do not need before adding products to your Kroger cart.</p>'+
  '<p class="tiny">Products are suggestions, not guaranteed matches. Check package sizes and quantities before confirming.</p>'+
  '<button class="primary" data-bulk-action="prepare" '+(bulkKrogerBusy?'disabled':'')+'>Find my Kroger groceries</button>'+
- '<p role="status">'+e(bulkKrogerMessage)+'</p>'+
+ '<p role="status" data-bulk-status aria-live="polite">'+e(bulkKrogerMessage)+'</p>'+
  (bulkKrogerItems.length?'<div class="groceryGroup">'+bulkKrogerItems.map((item,i)=>'<div class="meal shoppingLabel"><label><input type="checkbox" data-bulk-include="'+i+'" '+(item.include?'checked':'')+'> '+e(item.name)+'</label><span class="tiny">'+e(item.qty+' '+item.unit)+'</span><div><select class="field" data-bulk-product="'+i+'" aria-label="Kroger product for '+e(item.name)+'"><option value="">Choose product</option>'+item.products.map((p,j)=>'<option value="'+j+'" '+(item.selected===j?'selected':'')+'>'+e(p.name+' · '+(p.brand||'')+' · '+p.upc)+'</option>').join('')+'</select><label class="tiny">Packages <input class="field" type="number" min="1" max="30" step="1" data-bulk-qty="'+i+'" value="'+item.packages+'"></label></div></div>').join('')+'</div><button class="primary" data-bulk-action="send" '+(bulkKrogerBusy?'disabled':'')+'>Add reviewed items to Kroger cart</button>':'')+'</div>';
 }
 document.addEventListener('change',event=>{
@@ -86,13 +86,22 @@ document.addEventListener('click',async event=>{
   if(!krogerConnected)throw Error('Connect your Kroger account first.');
   const list=window.tablewiseBulkGroceries||[];
   if(!list.length)throw Error('There are no unpurchased groceries to add.');
-  bulkKrogerItems=[];bulkKrogerMessage='Finding products. Please review each match.';
-  for(const item of list){
-   const result=await krogerCall('/products?term='+encodeURIComponent(item.name));
-   const products=(result.products||[]).filter(p=>p.upc&&p.name).slice(0,8);
-   bulkKrogerItems.push({...item,products,selected:-1,packages:1,include:true});
+  bulkKrogerItems=[];bulkKrogerMessage='Searching Kroger for '+list.length+' grocery items…';
+  const status=document.querySelector('[data-bulk-status]');
+  if(status)status.textContent=bulkKrogerMessage;
+  for(let offset=0;offset<list.length;offset+=4){
+   const batch=list.slice(offset,offset+4);
+   const matches=await Promise.all(batch.map(async item=>{
+    try{
+     const result=await krogerCall('/products?term='+encodeURIComponent(item.name));
+     return {...item,products:(result.products||[]).filter(p=>p.upc&&p.name).slice(0,8),selected:-1,packages:1,include:true};
+    }catch(error){return {...item,products:[],selected:-1,packages:1,include:false,lookupError:true}}
+   }));
+   bulkKrogerItems.push(...matches);
+   bulkKrogerMessage='Found results for '+bulkKrogerItems.length+' of '+list.length+' items…';
+   if(status)status.textContent=bulkKrogerMessage;
   }
-  bulkKrogerMessage='Choose an exact Kroger product for each item you want to add. Items without a selection will not be sent.';
+  bulkKrogerMessage='Review each product and package quantity. Unmatched items are excluded until you select a product.';
  }else{
   const chosen=bulkKrogerItems.filter(x=>x.include);
   if(!chosen.length)throw Error('Select at least one item.');
