@@ -113,8 +113,13 @@ function krogerPackageMix(item,products,eligible){
   return {index,quantity:Number(m[1])*factors[u],price};
  }).filter(Boolean);
  const need=amount*factors[unit];let best=null;
+ const sameProduct=(a,b)=>{
+  const clean=p=>String(p.name||'').toLowerCase().replace(/\b\d+(?:\.\d+)?\s*(?:fl\s*oz|oz|lb|lbs|g|kg|ml|l|ct|count)\b/g,'').replace(/[^a-z ]/g,' ').replace(/\s+/g,' ').trim();
+  return clean(products[a.index])===clean(products[b.index])&&String(products[a.index].brand||'').toLowerCase()===String(products[b.index].brand||'').toLowerCase();
+ };
  for(let i=0;i<options.length;i++)for(let j=i+1;j<options.length;j++){
   const a=options[i],b=options[j];
+  if(!sameProduct(a,b))continue;
   for(let n=1;n<=30;n++){
    const rest=need-n*a.quantity;
    const m=Math.max(1,Math.ceil(rest/b.quantity-1e-9));
@@ -203,6 +208,7 @@ document.addEventListener('click',async event=>{
   const grouped=new Map();
   chosen.forEach(x=>{
    const parts=x.combo&&x.estimated?x.combo:[{index:x.selected,count:x.packages}];
+   if(parts.some(part=>!x.products[part.index]||!Number.isInteger(part.count)||part.count<1||part.count>30))throw Error('Invalid package selection. Review Kroger products and quantities.');
    parts.forEach(part=>{const upc=x.products[part.index].upc;grouped.set(upc,(grouped.get(upc)||0)+part.count)});
   });
   const items=[...grouped].map(([upc,quantity])=>({upc,quantity}));
