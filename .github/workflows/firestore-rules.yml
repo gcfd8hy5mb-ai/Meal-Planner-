@@ -21,5 +21,7 @@ jobs:
         with:
           distribution: temurin
           java-version: '21'
-      - run: npm install --no-audit --no-fund
+      - name: Install Firebase test dependencies
+        timeout-minutes: 8
+        run: npm install --no-audit --no-fund --fetch-retries=1 --fetch-timeout=30000
       - run: npm run test:rules

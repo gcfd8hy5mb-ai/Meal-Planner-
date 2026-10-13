@@ -19,7 +19,7 @@ const firebaseConfig={apiKey:'AIzaSyBETYaxuDmBR6_dNDCu62d_ciDph3AqKjI',authDomai
 window.__tablewiseReady=true;
 const firebase=initializeApp(firebaseConfig),auth=getAuth(firebase),db=getFirestore(firebase);
 const KROGER_API='https://tablewise-kroger.gcfd8hy5mb.workers.dev';
-let krogerConnected=false,krogerResults=[],krogerSelection=null,krogerMessage='Connect Kroger to select exact grocery products.';
+let krogerConnected=false,krogerResults=[],krogerSelection=null,krogerSearchTerm='',krogerMessage='Connect Kroger to select exact grocery products.';
 const krogerReturnParams=new URLSearchParams(window.location.search);
 const krogerReturnResult=krogerReturnParams.get('kroger');
 const krogerReturnReason=krogerReturnParams.get('kroger_reason');
@@ -68,11 +68,12 @@ function krogerPanel(){
     '<p id="krogerMessage" role="status">'+e(krogerMessage)+'</p>'+
     '<div class="controls"><button class="secondary" data-kroger-action="status">Check connection</button><button class="secondary" data-kroger-action="diagnose">Test Kroger credentials</button>'+
     (krogerConnected?'<button class="secondary" data-kroger-action="disconnect">Disconnect Kroger</button>':'<button class="primary" data-kroger-action="connect">Connect Kroger</button>')+'</div>'+
-    (krogerConnected?'<label for="krogerTerm">Find a grocery product</label><input class="field" id="krogerTerm" maxlength="90" placeholder="Example: milk, eggs, rice"><button class="secondary" data-kroger-action="search">Search Kroger</button>'+
+    (krogerConnected?'<label for="krogerTerm">Find a grocery product</label><input class="field" id="krogerTerm" maxlength="90" value="'+e(krogerSearchTerm)+'" placeholder="Example: milk, eggs, rice"><button class="secondary" data-kroger-action="search">Search Kroger</button>'+
     '<div id="krogerProducts">'+krogerResults.map((p,i)=>'<div class="meal"><span>'+e(p.name)+' <small>'+e(p.brand)+' · UPC '+e(p.upc)+'</small></span><button class="secondary" data-kroger-select="'+i+'">Choose</button></div>').join('')+'</div>'+
     (krogerSelection?'<div class="notice"><strong>Selected: '+e(krogerSelection.name)+'</strong><p>UPC: '+e(krogerSelection.upc)+'</p><label>Quantity <input id="krogerQty" class="field" type="number" min="1" max="30" step="1" value="1"></label><button class="primary" data-kroger-action="add">Confirm add to Kroger cart</button></div>':''):'')+
     '</div>';
 }
+document.addEventListener('input',event=>{if(event.target?.id==='krogerTerm')krogerSearchTerm=event.target.value;});
 document.addEventListener('click',async event=>{
   const select=event.target.closest('[data-kroger-select]');
   const action=event.target.closest('[data-kroger-action]');
@@ -87,7 +88,7 @@ document.addEventListener('click',async event=>{
     if(name==='status'){const result=await krogerCall('/status');krogerConnected=!!result.connected;krogerMessage=krogerConnected?'Kroger connected.':'Kroger not connected.'}
     if(name==='connect'){const result=await krogerCall('/connect',{method:'POST'});if(!['https://api.kroger.com','https://api-ce.kroger.com'].includes((()=>{try{const u=new URL(result.authorizationUrl);return u.protocol==='https:'&&u.pathname==='/v1/connect/oauth2/authorize'?u.origin:''}catch{return ''}})()))throw Error('Unexpected authorization URL');window.location.assign(result.authorizationUrl);return}
     if(name==='disconnect'){if(!confirm('Disconnect Kroger from your meal planner?'))return;await krogerCall('/disconnect',{method:'POST'});krogerConnected=false;krogerSelection=null;krogerResults=[];krogerMessage='Kroger disconnected.'}
-    if(name==='search'){const term=document.getElementById('krogerTerm')?.value.trim()||'';if(term.length<2)throw Error('Enter at least two letters.');const result=await krogerCall('/products?term='+encodeURIComponent(term));krogerResults=result.products||[];krogerSelection=null;krogerMessage=krogerResults.length?'Choose the correct Kroger product.':'No matching products were returned.'}
+    if(name==='search'){const term=(document.getElementById('krogerTerm')?.value||krogerSearchTerm).trim();krogerSearchTerm=term;if(term.length<2)throw Error('Enter at least two letters.');const result=await krogerCall('/products?term='+encodeURIComponent(term));krogerResults=result.products||[];krogerSelection=null;krogerMessage=krogerResults.length?'Choose the correct Kroger product.':'No matching products were returned.'}
     if(name==='add'){if(!krogerSelection)throw Error('Select a product first.');const quantity=Number(document.getElementById('krogerQty')?.value);if(!Number.isInteger(quantity)||quantity<1||quantity>30)throw Error('Enter a quantity from 1 to 30.');if(!confirm('Add '+quantity+' × '+krogerSelection.name+' to your Kroger cart?'))return;await krogerCall('/cart/add',{method:'POST',body:JSON.stringify({items:[{upc:krogerSelection.upc,quantity}]})});krogerMessage='Sent to Kroger. Review your Kroger cart to confirm availability and quantity.';krogerSelection=null}
     view();
   }catch(error){krogerMessage=error.message||'Kroger request failed.';view()}
