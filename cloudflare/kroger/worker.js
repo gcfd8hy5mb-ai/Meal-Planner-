@@ -187,7 +187,7 @@ export default {
         const response=await fetch(KROGER_BASE+'/v1/products?'+q,{headers:{Authorization:'Bearer '+clientToken.access_token,Accept:'application/json'}});
         if(!response.ok)return json({error:'Product search unavailable'},502,cors);
         const data=await response.json();
-        return json({products:(data.data||[]).slice(0,10).map(p=>({name:p.description||'',upc:p.upc||'',brand:p.brand||''})).filter(p=>/^\d{8,14}$/.test(p.upc))},200,cors);
+        return json({products:(data.data||[]).slice(0,10).map(p=>({name:p.description||'',upc:p.upc||'',brand:p.brand||'',size:p.items?.[0]?.size||''})).filter(p=>/^\d{8,14}$/.test(p.upc))},200,cors);
       }catch{return json({error:'Product search unavailable'},502,cors)}
     }
     if(path==='/cart/add'&&request.method==='POST'){
