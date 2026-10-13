@@ -8,5 +8,12 @@
       "binding": "KROGER_KV",
       "id": "c06851ca156e47ee887b91c235a9d0d4"
     }
-  ]
+  ],
+  "secrets": {
+    "required": [
+      "KROGER_CLIENT_ID",
+      "KROGER_CLIENT_SECRET",
+      "KROGER_TOKEN_ENCRYPTION_KEY"
+    ]
+  }
 }
