@@ -8,7 +8,8 @@ assert.match(html, /<style>[\s\S]*<\/style>/i, 'Own CSS is required');
 assert.match(html, /<main>[\s\S]*<\/main>/i, 'Own layout is required');
 assert.doesNotMatch(html, /<link[^>]+rel=["']stylesheet["']/i, 'No shared or external stylesheets');
 assert.doesNotMatch(html, /@import|<iframe\b|<object\b|<embed\b/i, 'No embedded legacy presentation');
-assert.doesNotMatch(html, /<script[^>]+src=/i, 'No legacy scripts');
+assert.doesNotMatch(html, /<script[^>]+src=["'](?!\.\/live\.js)/i, 'No legacy scripts');
+assert.match(html, /<script type="module" src="\.\/live\.js"><\/script>/, 'Read-only account adapter must be loaded');
 // Photo assets are shared content, not legacy visual styles or scripts.
 for (const match of html.matchAll(/(?:src|href)=["']\.\.\/([^"']+)/gi)) {
  assert.match(match[1], /^assets\/meal-photos\/[a-zA-Z0-9_-]+\.webp$/, 'Only verified recipe images may be shared');
