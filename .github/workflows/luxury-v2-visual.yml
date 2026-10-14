@@ -1,0 +1,29 @@
+name: Luxury v2 iPhone visual isolation
+on:
+  pull_request:
+    paths:
+      - 'luxury-v2/**'
+      - 'tests/luxury-v2-visual.spec.cjs'
+      - '.github/workflows/luxury-v2-visual.yml'
+  push:
+    paths:
+      - 'luxury-v2/**'
+      - 'tests/luxury-v2-visual.spec.cjs'
+      - '.github/workflows/luxury-v2-visual.yml'
+jobs:
+  iphone-visual:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-save --package-lock=false @playwright/test
+      - run: npx playwright install --with-deps chromium
+      - name: Run mobile isolation screenshots
+        run: npx playwright test tests/luxury-v2-visual.spec.cjs --project=chromium
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: luxury-v2-iphone-screenshots
+          path: test-results/
