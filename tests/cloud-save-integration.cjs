@@ -65,3 +65,7 @@ assert.match(html,/if\(cloudResetCommitted\)[\s\S]*return\}state=previous;/,'Old
 
 assert.match(html,/import \{ clearResetBackup \} from '\.\/reset-backup\.mjs'/,'Reset uses tested backup cleanup helper');
 assert.match(html,/const backupCleanup=clearResetBackup\(localStorage,uid\)/,'Committed reset cleanup must use marker-first guard');
+
+assert.match(html,/if\(!localBackupSaved\)\{cloudConflictBlocked=true;lastSaveError=new Error\('Device backup failed/,'Failed pending backup must block cloud writes');
+assert.match(html,/Device backup unavailable — cloud saving paused\. Export your draft before leaving\./,'User must see a draft recovery message on storage failure');
+assert.match(html,/retryButton\.style\.display='none';return\}status\.textContent='Saving…'/,'Backup failure must return before queuing transaction');
