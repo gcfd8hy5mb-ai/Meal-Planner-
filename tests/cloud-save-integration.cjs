@@ -18,14 +18,14 @@ assert.match(html,/err instanceof CloudSaveConflict/,'Cloud conflicts must be vi
 console.log('Production-save migration structural safety checks passed');
 
 assert.match(html,/if\(cloudConflictBlocked\)throw new CloudSaveConflict\(\)/,'Previously observed conflicts must stop later queued writes');
-assert.match(html,/if\(err instanceof CloudSaveConflict\)cloudConflictBlocked=true/,'Conflict state must latch');
+assert.match(html,/if\(err instanceof CloudSaveConflict\)\{cloudConflictBlocked=true;refreshDraftRecovery\(\)\}/,'Conflict state must latch');
 assert.match(html,/if\(recovered\)\{confirmedCloudDocument=null;cloudConflictBlocked=true;\}/,'Recovered draft must block automatic cloud writes');
 assert.match(html,/cloudConflictBlocked=false;refreshDraftRecovery\(\);state=defaults\(\)/,'Switching accounts must clear previous conflict state');
 
 assert.match(html,/id="downloadCloudDraft"[^>]*style="display:none"/,'Backup export must be hidden by default');
 assert.match(html,/draftButton.onclick=\(\)=>\{if\(!cloudConflictBlocked\|\|!activeUid\|\|auth.currentUser\?\.uid!==activeUid/,'Backup export must be tied to authenticated owner and active conflict');
 assert.match(html,/download='tablewise-unsaved-plan-'/,'Conflict backup must be a downloadable file');
-assert.match(html,/if\(err instanceof CloudSaveConflict\)cloudConflictBlocked=true;refreshDraftRecovery\(\)/,'Conflict must expose recovery action');
+assert.match(html,/if\(err instanceof CloudSaveConflict\)\{cloudConflictBlocked=true;refreshDraftRecovery\(\)\}/,'Conflict must expose recovery action');
 assert.match(html,/if\(recovered\)\{confirmedCloudDocument=null;cloudConflictBlocked=true;\}refreshDraftRecovery\(\)/,'Recovered draft must expose recovery action');
 
 assert.match(html,/import \{ serializeUnsavedPlan \} from '\.\/draft-export\.mjs'/,'Backup uses validated serializer');
@@ -56,3 +56,5 @@ assert.match(html,/const uid=activeUid,sessionEpoch=authEpoch,previousState=stat
 assert.match(html,/catch\(storageError\)\{stillPending=true;console\.warn\('Cannot read pending backup marker'/,'Unreadable backup status must prevent premature logout');
 assert.match(html,/authEpoch!==sessionEpoch\)throw new Error\('Account changed during sign out/,'Queued sign-out must recheck session');
 assert.match(html,/authEpoch===\(signOutStarted\?sessionEpoch\+1:sessionEpoch\)/,'Sign-out failure cannot restore a previous account session');
+
+assert.match(html,/\.catch\(err=>\{if\(activeUid===uid&&authEpoch===sessionEpoch\)\{if\(err instanceof CloudSaveConflict\)\{cloudConflictBlocked=true;refreshDraftRecovery\(\)\}if\(sequence===saveSequence\)/,'An older conflicting save must latch before latest-sequence-only UI handling');
