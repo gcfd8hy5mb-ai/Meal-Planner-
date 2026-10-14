@@ -78,3 +78,7 @@ assert.match(html,/if\(recovered\|\|pendingDraftUnavailable\)\{confirmedCloudDoc
 assert.match(html,/const integrity=inspectPendingDraft\(marker,draft\);pending=integrity\.pending;pendingDraftMismatch=integrity\.mismatch/,'Reload must check marker and backup match');
 assert.match(html,/if\(pending&&draft&&!pendingDraftMismatch\)/,'Outdated partial draft must not replace cloud state');
 assert.match(html,/Pending edits were detected, but their device backup is missing, outdated or unreadable/,'Mismatch warning must be visible');
+
+assert.match(html,/stillPending=inspectPendingDraft\(localStorage\.getItem\('tablewise-pending-'\+uid\),localStorage\.getItem\('tablewise-v1-'\+uid\)\)\.pending/,'Sign-out must detect both legacy and versioned pending backups');
+assert.doesNotMatch(html,/stillPending=localStorage\.getItem\('tablewise-pending-'\+uid\)==='1'/,'Logout cannot use legacy-only marker check');
+assert.match(html,/\}else if\(draft&&!pendingDraftMismatch\)\{/,'Missing cloud document cannot restore a mismatched or outdated draft');
