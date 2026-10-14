@@ -69,3 +69,6 @@ assert.match(html,/const backupCleanup=clearResetBackup\(localStorage,uid\)/,'Co
 assert.match(html,/if\(!localBackupSaved\)\{cloudConflictBlocked=true;lastSaveError=new Error\('Device backup failed/,'Failed pending backup must block cloud writes');
 assert.match(html,/Device backup unavailable — cloud saving paused\. Export your draft before leaving\./,'User must see a draft recovery message on storage failure');
 assert.match(html,/retryButton\.style\.display='none';return\}status\.textContent='Saving…'/,'Backup failure must return before queuing transaction');
+
+assert.match(html,/import \{ savePendingDraft \} from '\.\/pending-draft\.mjs'/,'Draft writes must use marker-first backup helper');
+assert.match(html,/const backupResult=savePendingDraft\(localStorage,uid,payload\)/,'Cloud save must record a pending marker before writing draft');
