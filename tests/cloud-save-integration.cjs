@@ -30,3 +30,10 @@ assert.match(html,/if\(recovered\)\{confirmedCloudDocument=null;cloudConflictBlo
 
 assert.match(html,/import \{ serializeUnsavedPlan \} from '\.\/draft-export\.mjs'/,'Backup uses validated serializer');
 assert.match(html,/const backup=serializeUnsavedPlan\(state\)/,'Backup must serialize current unsaved state');
+
+assert.match(html,/const uid=activeUid,sessionEpoch=authEpoch,sequence=\+\+saveSequence/,'Save must capture its authentication session');
+assert.match(html,/authEpoch!==sessionEpoch\)return;if\(cloudConflictBlocked\)/,'Old queued session must not execute');
+assert.match(html,/authEpoch===sessionEpoch&&auth\.currentUser\?\.uid===activeUid&&!signingOut/,'Transaction must validate original authentication session');
+assert.match(html,/if\(activeUid===uid&&authEpoch===sessionEpoch\)confirmedCloudDocument=committed/,'Old session cannot replace new baseline');
+assert.match(html,/const uid=activeUid,sessionEpoch=authEpoch,previous=state/,'Fresh-start must capture session');
+assert.match(html,/getUid:\(\)=>epoch===authEpoch\?auth\.currentUser\?\.uid:null,initialDocument/,'Account creation must validate current session');
