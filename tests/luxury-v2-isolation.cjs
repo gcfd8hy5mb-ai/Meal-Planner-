@@ -9,7 +9,10 @@ assert.match(html, /<main>[\s\S]*<\/main>/i, 'Own layout is required');
 assert.doesNotMatch(html, /<link[^>]+rel=["']stylesheet["']/i, 'No shared or external stylesheets');
 assert.doesNotMatch(html, /@import|<iframe\b|<object\b|<embed\b/i, 'No embedded legacy presentation');
 assert.doesNotMatch(html, /<script[^>]+src=/i, 'No legacy scripts');
-assert.doesNotMatch(html, /(?:src|href)=["']\.\.\//i, 'No relative imports from legacy app');
+// Photo assets are shared content, not legacy visual styles or scripts.
+for (const match of html.matchAll(/(?:src|href)=["']\.\.\/([^"']+)/gi)) {
+ assert.match(match[1], /^assets\/meal-photos\/[a-zA-Z0-9_-]+\.webp$/, 'Only verified recipe images may be shared');
+}
 assert.doesNotMatch(html, /\b(primaryNav|navMoreMenu|groceryGroup|mealDialog|recipegrid|foodWeekItem)\b/, 'No legacy layout classes');
 for (const legacyRule of ['.primaryNav{', '.navMoreMenu{', '.recipegrid .card{', '.shoppingHeading{']) {
  assert.ok(legacy.includes(legacyRule), 'Expected baseline legacy rule is missing: '+legacyRule);
