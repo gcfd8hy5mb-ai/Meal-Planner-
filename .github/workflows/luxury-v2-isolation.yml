@@ -10,6 +10,7 @@ on:
       - 'tests/luxury-v2-meal-preview.test.mjs'
       - 'tests/luxury-v2-save-guard.test.mjs'
       - 'tests/luxury-v2-save-transaction.test.mjs'
+      - 'tests/luxury-v2-cloud-write-gate.cjs'
   push:
     paths:
       - 'luxury-v2/**'
@@ -20,6 +21,7 @@ on:
       - 'tests/luxury-v2-meal-preview.test.mjs'
       - 'tests/luxury-v2-save-guard.test.mjs'
       - 'tests/luxury-v2-save-transaction.test.mjs'
+      - 'tests/luxury-v2-cloud-write-gate.cjs'
 jobs:
   no-legacy-leak:
     runs-on: ubuntu-latest
@@ -37,6 +39,8 @@ jobs:
         run: node tests/luxury-v2-save-guard.test.mjs
       - name: Verify isolated transaction safety without live writes
         run: node tests/luxury-v2-save-transaction.test.mjs
+      - name: Block cross-version unsafe cloud writes
+        run: node tests/luxury-v2-cloud-write-gate.cjs
       - name: Verify isolated JavaScript module syntax
         run: |
           node --input-type=module --check < luxury-v2/live.js
