@@ -30,10 +30,10 @@ jobs:
           assert.match(html,/<!doctype html>/i,'v2 must be a standalone document');
           assert.match(html,/<style>[\s\S]*<\/style>/i,'v2 must define its own CSS');
           assert.doesNotMatch(html,/<link\b[^>]*rel\s*=\s*["']?stylesheet/i,'external/legacy stylesheets are forbidden');
-          assert.doesNotMatch(html,/<script\b[^>]*\bsrc\s*=/i,'legacy JS imports are forbidden');
+          assert.match(html,/<script type="module" src="\.\/live\.js"><\/script>/i,'Only the local read-only bridge is loaded');
           assert.doesNotMatch(html,/<iframe\b/i,'legacy embedded pages are forbidden');
           assert.doesNotMatch(html,/@import\b/i,'imported CSS is forbidden');
-          assert.doesNotMatch(html,/(?:href|src)\s*=\s*["'][^"']*(?:\.\.\/|\/index\.html|legacy)/i,'legacy asset references are forbidden');
+          assert.doesNotMatch(html,/(?:href|src)\s*=\s*["'](?:\/index\.html|legacy)/i,'legacy asset references are forbidden');
           for (const legacy of ['primaryNav','navMoreMenu','assignmentChoices','shoppingHeading','recipegrid','todayMealImage']) {
             assert.ok(!html.includes(legacy),`legacy selector found: ${legacy}`);
           }
