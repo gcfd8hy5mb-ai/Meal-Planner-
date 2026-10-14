@@ -3,12 +3,16 @@ on:
   push:
     paths:
       - index.html
+      - assets/meal-photos/**
+      - docs/meal-photo-prompts/**
       - tests/recipe-images.test.mjs
       - tests/recipe-lookup.test.mjs
       - .github/workflows/recipe-images.yml
   pull_request:
     paths:
       - index.html
+      - assets/meal-photos/**
+      - docs/meal-photo-prompts/**
       - tests/recipe-images.test.mjs
   workflow_dispatch:
 jobs:
