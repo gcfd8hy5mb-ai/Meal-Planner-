@@ -51,3 +51,8 @@ assert.match(html,/pendingCleared\?'Saved to cloud ✓':'Cloud saved, but device
 
 assert.match(html,/if\(authEpoch!==sessionEpoch\|\|activeUid!==uid\|\|auth\.currentUser\?\.uid!==uid\)return;confirmedCloudDocument=confirmed/,'Reset success must not apply to a later session');
 assert.match(html,/catch\(err\)\{if\(authEpoch!==sessionEpoch\|\|activeUid!==uid\|\|auth\.currentUser\?\.uid!==uid\)\{console\.warn\('Reset was cancelled after account change'/,'Reset failure must not restore another account state');
+
+assert.match(html,/const uid=activeUid,sessionEpoch=authEpoch,previousState=state;let stillPending=false,signOutStarted=false/,'Sign-out must capture original session');
+assert.match(html,/catch\(storageError\)\{stillPending=true;console\.warn\('Cannot read pending backup marker'/,'Unreadable backup status must prevent premature logout');
+assert.match(html,/authEpoch!==sessionEpoch\)throw new Error\('Account changed during sign out/,'Queued sign-out must recheck session');
+assert.match(html,/authEpoch===\(signOutStarted\?sessionEpoch\+1:sessionEpoch\)/,'Sign-out failure cannot restore a previous account session');
