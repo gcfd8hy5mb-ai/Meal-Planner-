@@ -21,3 +21,9 @@ assert.match(html,/if\(cloudConflictBlocked\)throw new CloudSaveConflict\(\)/,'P
 assert.match(html,/if\(err instanceof CloudSaveConflict\)cloudConflictBlocked=true/,'Conflict state must latch');
 assert.match(html,/if\(recovered\)\{confirmedCloudDocument=null;cloudConflictBlocked=true;\}/,'Recovered draft must block automatic cloud writes');
 assert.match(html,/cloudConflictBlocked=false;state=defaults\(\)/,'Switching accounts must clear previous conflict state');
+
+assert.match(html,/id="downloadCloudDraft"[^>]*style="display:none"/,'Backup export must be hidden by default');
+assert.match(html,/draftButton.onclick=\(\)=>\{if\(!cloudConflictBlocked\|\|!activeUid\|\|auth.currentUser\?\.uid!==activeUid/,'Backup export must be tied to authenticated owner and active conflict');
+assert.match(html,/download='tablewise-unsaved-plan-'/,'Conflict backup must be a downloadable file');
+assert.match(html,/if\(err instanceof CloudSaveConflict\)cloudConflictBlocked=true;refreshDraftRecovery\(\)/,'Conflict must expose recovery action');
+assert.match(html,/if\(recovered\)\{confirmedCloudDocument=null;cloudConflictBlocked=true;\}refreshDraftRecovery\(\)/,'Recovered draft must expose recovery action');
