@@ -4,15 +4,19 @@ on:
     paths:
       - 'luxury-v2/**'
       - '.github/workflows/luxury-v2-isolation.yml'
+      - 'tests/luxury-v2-isolation.cjs'
   push:
     paths:
       - 'luxury-v2/**'
       - '.github/workflows/luxury-v2-isolation.yml'
+      - 'tests/luxury-v2-isolation.cjs'
 jobs:
   no-legacy-leak:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Run standalone legacy-leak regression test
+        run: node tests/luxury-v2-isolation.cjs
       - name: Verify v2 cannot inherit legacy layout or styling
         run: |
           node <<'NODE'
