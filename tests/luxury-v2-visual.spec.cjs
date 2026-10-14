@@ -112,7 +112,9 @@ test('network interruption and reload never reveal legacy layout', async ({ brow
   const context = await browser.newContext({ viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true });
   const page = await context.newPage();
   await page.goto(url, { waitUntil: 'domcontentloaded' });
-  await context.setOffline(true);
+  // Simulate remote Firebase/CDN failure while retaining the local app document.
+  // A fully offline browser would also block our localhost test server.
+  await page.route(/^https:\/\//, route => route.abort('internetdisconnected'));
   await page.reload({ waitUntil: 'domcontentloaded' });
   for (const screen of ['today', 'week', 'groceries', 'cook']) {
     await page.locator('[data-nav="' + screen + '"]').click();
