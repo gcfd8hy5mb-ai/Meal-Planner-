@@ -57,6 +57,19 @@ test('real Firebase Auth SDK emulator: two disposable users, device restore, iso
   await transaction(A2,refA2,latest,{...latest,servings:4},uidA,()=>true);
   assert.equal((await getDoc(refA1)).data().servings,4,'Current session may write');
   assert.deepEqual((await getDoc(refB)).data(),other,'Account B unchanged');
+  // Reuse the same second-device Firebase app across A -> B -> A changes.
+  const A2Last=(await getDoc(refA2)).data();
+  await signOut(A2.auth);
+  await signInWithEmailAndPassword(A2.auth,bEmail,pass);
+  assert.equal(A2.auth.currentUser.uid,uidB,'Same browser is now B');
+  await assert.rejects(getDoc(refA2),e=>e.code==='permission-denied','Browser B cannot read A cached route');
+  assert.deepEqual((await getDoc(doc(A2.db,'users',uidB))).data(),other,'Browser B retrieves only B meal plan');
+  await assert.rejects(transaction(A2,refA2,A2Last,{...A2Last,servings:99},uidA,()=>true),CloudSaveConflict,'Old A write cannot run under B');
+  await signOut(A2.auth);
+  await signInWithEmailAndPassword(A2.auth,aEmail,pass);
+  const A2Restored=(await getDoc(refA2)).data();
+  assert.equal(A2Restored.servings,4,'Return to A restores latest A cloud plan');
+  assert.deepEqual((await getDoc(refB)).data(),other,'Switching back did not modify B');
   await signOut(A1.auth);
   assert.equal(A1.auth.currentUser,null);
   await signInWithEmailAndPassword(A1.auth,aEmail,pass);
