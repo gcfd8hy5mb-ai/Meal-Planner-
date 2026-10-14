@@ -1,0 +1,27 @@
+name: Conflict-safe original planner
+on:
+  push:
+    paths:
+      - 'index.html'
+      - 'cloud-save-guard.mjs'
+      - 'tests/cloud-save-guard.test.mjs'
+      - 'tests/cloud-save-integration.cjs'
+      - '.github/workflows/conflict-safe-save.yml'
+  pull_request:
+    paths:
+      - 'index.html'
+      - 'cloud-save-guard.mjs'
+      - 'tests/cloud-save-guard.test.mjs'
+      - 'tests/cloud-save-integration.cjs'
+      - '.github/workflows/conflict-safe-save.yml'
+jobs:
+  save-guard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Unit test cloud conflict handling
+        run: node tests/cloud-save-guard.test.mjs
+      - name: Verify planner wiring without live account access
+        run: node tests/cloud-save-integration.cjs
+      - name: Parse safe-save module
+        run: node --check cloud-save-guard.mjs
