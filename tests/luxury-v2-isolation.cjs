@@ -36,3 +36,8 @@ for (const text of ['original planner', 'original app', 'legacy app']) {
 // Sample week rotations must not impersonate a user's saved plan.
 assert.doesNotMatch(html, /const demoMeals\s*=|function renderDays\s*\(/, 'Demo week rotation must not render in luxury v2');
 assert.match(html, /Sign in to view your saved two-week plan/, 'Signed-out week must explain the absence of saved plan data');
+
+// No sample grocery entries or invented cooking directions may be shown before account data loads.
+assert.doesNotMatch(html, /const groceryDemo\s*=|const cookSteps\s*=|const demoMeals\s*=/, 'No hard-coded demo food data');
+assert.doesNotMatch(html, /Preview recipe · 4 servings|Creamy Garlic Chicken<\/h2>/, 'No pretend saved meal in the hero');
+assert.match(html, /No recipe selected/, 'Cook page must have a truthful empty state');
