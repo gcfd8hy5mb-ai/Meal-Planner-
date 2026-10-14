@@ -18,3 +18,9 @@ for(const field of ['plan','alternateWeek','activePlanningWeek','mealServings','
 assert.equal(preparePlanPatch(original,same,{},previewAccount).ok,false);
 assert.equal(checkPlanConflict(null,same).ok,false);
 console.log('Cloud save conflict preflight checks passed — no cloud writes made');
+
+const previous={...structuredClone(original),mealServings:{'0-2':6},dinnerSides:{0:['mashedpotatoes']}};
+const cleared=preparePlanPatch(previous,structuredClone(previous),preview,previewAccount);
+assert.deepEqual(cleared.fields.mealServings,{},'Replaced dinner must clear saved per-meal serving override');
+assert.deepEqual(cleared.fields.dinnerSides,{},'Replaced dinner must clear saved side selections');
+assert.equal(previous.mealServings['0-2'],6,'Transaction preflight must not modify source');
