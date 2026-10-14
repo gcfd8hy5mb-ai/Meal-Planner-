@@ -1,0 +1,37 @@
+name: Luxury v2 design isolation
+on:
+  pull_request:
+    paths:
+      - 'luxury-v2/**'
+      - '.github/workflows/luxury-v2-isolation.yml'
+  push:
+    paths:
+      - 'luxury-v2/**'
+      - '.github/workflows/luxury-v2-isolation.yml'
+jobs:
+  no-legacy-leak:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify v2 cannot inherit legacy layout or styling
+        run: |
+          node <<'NODE'
+          const fs=require('node:fs');
+          const assert=require('node:assert/strict');
+          const html=fs.readFileSync('luxury-v2/index.html','utf8');
+          assert.match(html,/<!doctype html>/i,'v2 must be a standalone document');
+          assert.match(html,/<style>[\s\S]*<\/style>/i,'v2 must define its own CSS');
+          assert.doesNotMatch(html,/<link\b[^>]*rel\s*=\s*["']?stylesheet/i,'external/legacy stylesheets are forbidden');
+          assert.doesNotMatch(html,/<script\b[^>]*\bsrc\s*=/i,'legacy JS imports are forbidden');
+          assert.doesNotMatch(html,/<iframe\b/i,'legacy embedded pages are forbidden');
+          assert.doesNotMatch(html,/@import\b/i,'imported CSS is forbidden');
+          assert.doesNotMatch(html,/(?:href|src)\s*=\s*["'][^"']*(?:\.\.\/|\/index\.html|legacy)/i,'legacy asset references are forbidden');
+          for (const legacy of ['primaryNav','navMoreMenu','assignmentChoices','shoppingHeading','recipegrid','todayMealImage']) {
+            assert.ok(!html.includes(legacy),`legacy selector found: ${legacy}`);
+          }
+          assert.match(html,/data-page="today"/);
+          assert.match(html,/data-page="week"/);
+          assert.match(html,/data-page="groceries"/);
+          assert.match(html,/data-page="cook"/);
+          console.log('PASS: luxury v2 standalone HTML, no legacy CSS/JS/markup dependencies');
+          NODE
