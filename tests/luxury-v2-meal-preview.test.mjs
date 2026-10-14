@@ -18,3 +18,11 @@ assert.equal(groceryTotals(view,lookup,[1,2]).find(r=>r.name==='Beans')?.quantit
 assert.deepEqual(previewAccount(account,{}),account,'Discard preview restores saved plan content');
 assert.throws(()=>replacePreviewMeal(account,{},3,0,2,'beans'),'Invalid week refused');
 console.log('Luxury meal preview and grocery recalculation passed');
+
+const withOverrides={activePlanningWeek:1,servings:2,plan:{0:[null,null,'rice',null]},mealServings:{'0-2':6},dinnerSides:{0:['mashedpotatoes']},alternateWeek:{plan:{}}};
+const replaced=previewAccount(withOverrides,{'1-0-2':'beans'});
+assert.equal(replaced.mealServings['0-2'],undefined,'Replacing meal clears stale serving override in preview');
+assert.equal(replaced.dinnerSides[0],undefined,'Replacing dinner clears stale selected sides in preview');
+assert.equal(withOverrides.mealServings['0-2'],6,'Stored serving override remains intact');
+assert.deepEqual(withOverrides.dinnerSides[0],['mashedpotatoes'],'Stored sides remain intact');
+assert.equal(groceryTotals(replaced,lookup,[1]).find(x=>x.name==='Beans')?.quantity,4,'Replacement uses current default servings rather than stale six-serving override');
