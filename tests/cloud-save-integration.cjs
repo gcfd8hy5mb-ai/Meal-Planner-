@@ -5,7 +5,7 @@ assert.match(html,/import \{ guardedSave, CloudSaveConflict, createOnlyAccount \
 assert.match(html,/import \{ getFirestore, doc, getDoc, setDoc, runTransaction \}/);
 assert.match(html,/const committed=await guardedSave\(/,'Save uses guarded transaction');
 assert.doesNotMatch(html,/await setDoc\(doc\(db,'users',uid\),\{\.\.\.payload/,'Unconditional full-document save is forbidden');
-assert.match(html,/if\(recovered\)\{confirmedCloudDocument=null;cloudConflictBlocked=true;\}/,'Recovered drafts cannot overwrite cloud silently');
+assert.match(html,/if\(recovered\|\|pendingDraftUnavailable\)\{confirmedCloudDocument=null;cloudConflictBlocked=true;\}/,'Recovered drafts cannot overwrite cloud silently');
 assert.match(html,/confirmedCloudDocument=snapshot\.data\(\)/,'Last-confirmed cloud snapshot must be initialized');
 assert.match(html,/confirmedCloudDocument=committed/,'Successful writes advance baseline');
 assert.match(html,/confirmedCloudDocument=null;cloudConflictBlocked=false;refreshDraftRecovery\(\);state=defaults\(\)/,'Sign-out clears baseline');
@@ -19,14 +19,14 @@ console.log('Production-save migration structural safety checks passed');
 
 assert.match(html,/if\(cloudConflictBlocked\)throw new CloudSaveConflict\(\)/,'Previously observed conflicts must stop later queued writes');
 assert.match(html,/if\(err instanceof CloudSaveConflict\)\{cloudConflictBlocked=true;refreshDraftRecovery\(\)\}/,'Conflict state must latch');
-assert.match(html,/if\(recovered\)\{confirmedCloudDocument=null;cloudConflictBlocked=true;\}/,'Recovered draft must block automatic cloud writes');
+assert.match(html,/if\(recovered\|\|pendingDraftUnavailable\)\{confirmedCloudDocument=null;cloudConflictBlocked=true;\}/,'Recovered draft must block automatic cloud writes');
 assert.match(html,/cloudConflictBlocked=false;refreshDraftRecovery\(\);state=defaults\(\)/,'Switching accounts must clear previous conflict state');
 
 assert.match(html,/id="downloadCloudDraft"[^>]*style="display:none"/,'Backup export must be hidden by default');
 assert.match(html,/draftButton.onclick=\(\)=>\{if\(!cloudConflictBlocked\|\|!activeUid\|\|auth.currentUser\?\.uid!==activeUid/,'Backup export must be tied to authenticated owner and active conflict');
 assert.match(html,/download='tablewise-unsaved-plan-'/,'Conflict backup must be a downloadable file');
 assert.match(html,/if\(err instanceof CloudSaveConflict\)\{cloudConflictBlocked=true;refreshDraftRecovery\(\)\}/,'Conflict must expose recovery action');
-assert.match(html,/if\(recovered\)\{confirmedCloudDocument=null;cloudConflictBlocked=true;\}refreshDraftRecovery\(\)/,'Recovered draft must expose recovery action');
+assert.match(html,/if\(recovered\|\|pendingDraftUnavailable\)\{confirmedCloudDocument=null;cloudConflictBlocked=true;\}refreshDraftRecovery\(\)/,'Recovered draft must expose recovery action');
 
 assert.match(html,/import \{ serializeUnsavedPlan \} from '\.\/draft-export\.mjs'/,'Backup uses validated serializer');
 assert.match(html,/const backup=serializeUnsavedPlan\(state\)/,'Backup must serialize current unsaved state');
@@ -72,3 +72,7 @@ assert.match(html,/retryButton\.style\.display='none';return\}status\.textConten
 
 assert.match(html,/import \{ savePendingDraft \} from '\.\/pending-draft\.mjs'/,'Draft writes must use marker-first backup helper');
 assert.match(html,/const backupResult=savePendingDraft\(localStorage,uid,payload\)/,'Cloud save must record a pending marker before writing draft');
+
+assert.match(html,/const pendingDraftUnavailable=pending&&!recovered/,'A missing or unreadable pending draft must be recognized on reload');
+assert.match(html,/if\(recovered\|\|pendingDraftUnavailable\)\{confirmedCloudDocument=null;cloudConflictBlocked=true;\}/,'Both recovered and unreadable pending drafts must lock cloud writes');
+assert.match(html,/Pending edits were detected, but their device backup is missing or unreadable/,'Unavailable backup state must not display Cloud connected');
