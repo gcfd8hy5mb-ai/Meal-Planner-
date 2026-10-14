@@ -2,10 +2,9 @@ const { test, expect } = require('@playwright/test');
 const fs = require('node:fs');
 const path = require('node:path');
 const root = path.resolve(__dirname, '..');
-const url = 'file://' + path.join(root, 'luxury-v2/index.html');
+const url = 'http://127.0.0.1:8765/luxury-v2/index.html';
 const legacy = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
 const forbidden = ['primaryNav','navMoreMenu','assignmentChoices','shoppingHeading','recipegrid','todayMealImage'];
-const legacyFonts = [...legacy.matchAll(/font-family\s*:\s*([^;}]+)/gi)].map(x => x[1].trim());
 test('luxury v2 is visually and structurally isolated on iPhone', async ({ page }) => {
   const errors = [];
   page.on('pageerror', error => errors.push(error.message));
