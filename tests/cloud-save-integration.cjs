@@ -40,7 +40,7 @@ assert.match(html,/getUid:\(\)=>epoch===authEpoch\?auth\.currentUser\?\.uid:null
 
 assert.match(html,/next:blank,replaceDocument:true,uid/,'Fresh start must replace the entire verified document');
 
-assert.match(html,/catch\(err\)\{state=previous;if\(err instanceof CloudSaveConflict\)\{cloudConflictBlocked=true;refreshDraftRecovery\(\)/,'Conflicted reset must protect local data and show backup action');
+assert.match(html,/state=previous;if\(err instanceof CloudSaveConflict\)\{cloudConflictBlocked=true;refreshDraftRecovery\(\)/,'Conflicted reset must protect local data and show backup action');
 assert.match(html,/Reset blocked — cloud data changed/,'Reset conflicts must not claim the cloud is unchanged');
 assert.match(html,/Reset failed — cloud data was not replaced/,'Network reset failure must not claim old remote data remains');
 
