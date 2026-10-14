@@ -5,7 +5,7 @@ import { getFirestore, getDoc, doc } from 'https://www.gstatic.com/firebasejs/11
 import { recipes, verifiedRecipePhotos } from './catalog.js';
 
 const firebaseConfig={apiKey:'AIzaSyBETYaxuDmBR6_dNDCu62d_ciDph3AqKjI',authDomain:'meal-planner-a478e.firebaseapp.com',projectId:'meal-planner-a478e',storageBucket:'meal-planner-a478e.firebasestorage.app',messagingSenderId:'695296765702',appId:'1:695296765702:web:bfd3f88f4253c56038b887'};
-const firebase=initializeApp(firebaseConfig,'tablewise-luxury-v2-preview');
+const firebase=initializeApp(firebaseConfig);
 const auth=getAuth(firebase),db=getFirestore(firebase);
 const baseRecipes=new Map(recipes.map(r=>[r.id,r]));
 let account=null,liveWeek=1,currentRecipe=null,step=0,authEpoch=0;
