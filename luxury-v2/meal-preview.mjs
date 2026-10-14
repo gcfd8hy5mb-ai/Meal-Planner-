@@ -9,6 +9,7 @@ export function replacePreviewMeal(savedAccount, preview, week, day, slot, recip
 }
 export function previewAccount(savedAccount, preview) {
  if (!savedAccount) return null;
+ if (!preview || Object.keys(preview).length===0) return savedAccount;
  const active=savedAccount.activePlanningWeek===2?2:1;
  const copyWeek=(bundle,week)=>{
    const plan={...(bundle?.plan||{})};
