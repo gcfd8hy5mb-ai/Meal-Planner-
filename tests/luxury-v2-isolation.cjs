@@ -32,3 +32,7 @@ for (const text of ['original planner', 'original app', 'legacy app']) {
  assert.ok(!html.toLowerCase().includes(text), 'Legacy wording in luxury document: '+text);
  assert.ok(!luxuryAdapter.toLowerCase().includes(text), 'Legacy wording in luxury data adapter: '+text);
 }
+
+// Sample week rotations must not impersonate a user's saved plan.
+assert.doesNotMatch(html, /const demoMeals\s*=|function renderDays\s*\(/, 'Demo week rotation must not render in luxury v2');
+assert.match(html, /Sign in to view your saved two-week plan/, 'Signed-out week must explain the absence of saved plan data');
