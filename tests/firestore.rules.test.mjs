@@ -117,3 +117,19 @@ test('emulator: guarded account save cannot access another owner or recreate del
  await createOnlyAccount({runTransaction:cb=>runTransaction(owner,cb),reference:doc(owner,path),uid:'isolated-plan-owner',getUid:()=> 'isolated-plan-owner',initialDocument:source});
  await assert.rejects(createOnlyAccount({runTransaction:cb=>runTransaction(owner,cb),reference:doc(owner,path),uid:'isolated-plan-owner',getUid:()=> 'isolated-plan-owner',initialDocument:source}),CloudSaveConflict,'Second create-only cannot overwrite existing plan');
 });
+
+test('emulator: Start Fresh fully replaces old fields but refuses a stale reset',async()=>{
+ const db=env.authenticatedContext('reset-safe-account').firestore();
+ const path='users/reset-safe-account',ref=doc(db,path);
+ const original={plan:{'0':[null,null,'old',null]},preferences:{style:'Any'},goals:{type:'bulk'},retiredRecipes:['old'],manualGroceries:{milk:2}};
+ await setDoc(ref,original);
+ const baseline=(await getDoc(ref)).data();
+ const call=(confirmed,next)=>guardedSave({runTransaction:cb=>runTransaction(db,cb),reference:ref,confirmed,next,replaceDocument:true,uid:'reset-safe-account',getUid:()=> 'reset-safe-account'});
+ await setDoc(ref,{...original,manualGroceries:{milk:4}});
+ await assert.rejects(call(baseline,{plan:{},preferences:{},goals:{}}),CloudSaveConflict);
+ assert.equal((await getDoc(ref)).data().manualGroceries.milk,4);
+ const freshBaseline=(await getDoc(ref)).data();
+ await call(freshBaseline,{plan:{},preferences:{},goals:{},custom:'[]'});
+ const result=(await getDoc(ref)).data();
+ assert.deepEqual(result,{plan:{},preferences:{},goals:{},custom:'[]'},'Reset must remove all leftover fields');
+});
