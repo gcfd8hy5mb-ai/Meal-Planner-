@@ -89,4 +89,36 @@ document.querySelectorAll('[data-grocery-week]').forEach(b=>b.addEventListener('
   renderIngredients();
 }));
 document.querySelectorAll('[data-week]').forEach(b=>b.addEventListener('click',()=>{if(account)renderWeek(b.dataset.week)}));
-onAuthStateChanged(auth,async user=>{const epoch=++authEpoch;account=null;accountUid=null;previewEdits={};refreshDiscard();document.querySelector('#luxuryMealPicker').hidden=true;renderIngredients();if(!user){label('Read-only preview. Sign in to Tablewise in this browser first, then return here to see your saved meals.');return}label('Loading your saved plan securely…');try{const snapshot=await getDoc(doc(db,'users',user.uid));if(epoch!==authEpoch)return;if(!snapshot.exists()){label('Your saved cloud plan was not found. Nothing has been modified. Your account needs recovery before this preview can display saved meals.');return}account=snapshot.data();accountUid=user.uid;if(!account.preferences){label('Your saved preferences need recovery. No data has been changed.');return}label('Connected to your saved Tablewise plan. You can preview changes without saving them.');liveWeek=account.activePlanningWeek===2?2:1;document.querySelectorAll('[data-week]').forEach(b=>b.classList.toggle('active',Number(b.dataset.week)===liveWeek));setHero();renderWeek(liveWeek);const weekHint=document.querySelector('[data-page="week"]>.muted');if(weekHint)weekHint.textContent='Choose Change to preview a different dinner. Preview changes are not saved.';const meals=document.querySelectorAll('.simple .meal-row');for(let i=0;i<meals.length;i++){const recipe=dayMeal(liveWeek,new Date().getDay(),i);const small=meals[i].querySelector('small');if(small)small.textContent=recipe?.name||'Not planned';meals[i].onclick=()=>recipe?openRecipe(recipe):showPage('week')}renderIngredients()}catch(error){if(epoch!==authEpoch)return;label('Could not read your saved plan. No changes were made. Check your connection and try again.');console.error('Luxury preview read failed',error)}});
+const resetPrivateView=()=>{
+ // Clear all previous account content synchronously, before any next-account fetch.
+ account=null;accountUid=null;currentRecipe=null;step=0;previewEdits={};liveWeek=1;groceryWeek='both';
+ refreshDiscard();
+ const picker=document.querySelector('#luxuryMealPicker');picker.hidden=true;
+ document.querySelector('#luxuryMealChoices').replaceChildren();
+ document.querySelector('#days').replaceChildren();
+ const placeholder=document.createElement('p');placeholder.className='notice';placeholder.textContent='Sign in to view your saved two-week plan.';
+ document.querySelector('#days').append(placeholder);
+ document.querySelector('.hero-copy h2').textContent='No dinner selected';
+ document.querySelector('.hero-copy .muted').textContent='Sign in to see your saved dinner.';
+ document.querySelector('.hero-photo').style.backgroundImage='none';
+ const cookButton=document.querySelector('.hero .primary');cookButton.onclick=()=>showPage('week');
+ document.querySelector('.cook-photo').removeAttribute('src');
+ document.querySelector('.cook-photo').hidden=true;
+ document.querySelector('#stepCount').textContent='No recipe selected';
+ document.querySelector('#cookStepTitle').textContent='Select a meal';
+ document.querySelector('#cookStepBody').textContent='Open a saved recipe to see its cooking instructions.';
+ document.querySelector('#previousStep').disabled=true;
+ document.querySelector('#nextStep').disabled=true;
+ for(const card of document.querySelectorAll('.simple .meal-row')){
+   card.querySelector('small').textContent='Sign in to view this meal';
+   card.onclick=()=>showPage('week');
+ }
+ for(const button of document.querySelectorAll('[data-week]')){
+   const active=button.dataset.week==='1';button.classList.toggle('active',active);button.setAttribute('aria-pressed',String(active));
+ }
+ for(const button of document.querySelectorAll('[data-grocery-week]')){
+   const active=button.dataset.groceryWeek==='both';button.classList.toggle('active',active);button.setAttribute('aria-pressed',String(active));
+ }
+ renderIngredients();
+};
+onAuthStateChanged(auth,async user=>{const epoch=++authEpoch;resetPrivateView();if(!user){label('Read-only preview. Sign in to Tablewise in this browser first, then return here to see your saved meals.');return}label('Loading your saved plan securely…');try{const snapshot=await getDoc(doc(db,'users',user.uid));if(epoch!==authEpoch)return;if(!snapshot.exists()){label('Your saved cloud plan was not found. Nothing has been modified. Your account needs recovery before this preview can display saved meals.');return}const loaded=snapshot.data();if(!loaded.preferences){label('Your saved preferences need recovery. No data has been changed.');return}account=loaded;accountUid=user.uid;label('Connected to your saved Tablewise plan. You can preview changes without saving them.');liveWeek=account.activePlanningWeek===2?2:1;document.querySelectorAll('[data-week]').forEach(b=>b.classList.toggle('active',Number(b.dataset.week)===liveWeek));setHero();renderWeek(liveWeek);const weekHint=document.querySelector('[data-page="week"]>.muted');if(weekHint)weekHint.textContent='Choose Change to preview a different dinner. Preview changes are not saved.';const meals=document.querySelectorAll('.simple .meal-row');for(let i=0;i<meals.length;i++){const recipe=dayMeal(liveWeek,new Date().getDay(),i);const small=meals[i].querySelector('small');if(small)small.textContent=recipe?.name||'Not planned';meals[i].onclick=()=>recipe?openRecipe(recipe):showPage('week')}renderIngredients()}catch(error){if(epoch!==authEpoch)return;label('Could not read your saved plan. No changes were made. Check your connection and try again.');console.error('Luxury preview read failed',error)}});
