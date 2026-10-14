@@ -25,3 +25,10 @@ for (const screen of ['today', 'week', 'groceries', 'cook']) {
 }
 assert.doesNotMatch(legacy, /luxury-v2\/index\.html|feature\/luxury-v2-isolated-shell/, 'Legacy app is not redirected or replaced');
 console.log('Luxury v2 visual isolation checks passed');
+
+// No user-facing copy may point users back to the legacy interface.
+const luxuryAdapter = fs.readFileSync('luxury-v2/live.js', 'utf8');
+for (const text of ['original planner', 'original app', 'legacy app']) {
+ assert.ok(!html.toLowerCase().includes(text), 'Legacy wording in luxury document: '+text);
+ assert.ok(!luxuryAdapter.toLowerCase().includes(text), 'Legacy wording in luxury data adapter: '+text);
+}
