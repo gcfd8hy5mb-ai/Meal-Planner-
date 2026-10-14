@@ -8,7 +8,7 @@ assert.doesNotMatch(html,/await setDoc\(doc\(db,'users',uid\),\{\.\.\.payload/,'
 assert.match(html,/if\(recovered\)\{confirmedCloudDocument=null;cloudConflictBlocked=true;\}/,'Recovered drafts cannot overwrite cloud silently');
 assert.match(html,/confirmedCloudDocument=snapshot\.data\(\)/,'Last-confirmed cloud snapshot must be initialized');
 assert.match(html,/confirmedCloudDocument=committed/,'Successful writes advance baseline');
-assert.match(html,/confirmedCloudDocument=null;cloudConflictBlocked=false;state=defaults\(\)/,'Sign-out clears baseline');
+assert.match(html,/confirmedCloudDocument=null;cloudConflictBlocked=false;refreshDraftRecovery\(\);state=defaults\(\)/,'Sign-out clears baseline');
 assert.match(html,/const initialDocument=\{\.\.\.state,custom:'\[\]',onboardingInitialized:true\}/,'New accounts retain explicit registration flow');
 assert.match(html,/await createOnlyAccount\(/,'Account creation must be create-only');
 assert.doesNotMatch(html,/await setDoc\(/,'No unrestricted writes including reset and registration');
@@ -20,7 +20,7 @@ console.log('Production-save migration structural safety checks passed');
 assert.match(html,/if\(cloudConflictBlocked\)throw new CloudSaveConflict\(\)/,'Previously observed conflicts must stop later queued writes');
 assert.match(html,/if\(err instanceof CloudSaveConflict\)cloudConflictBlocked=true/,'Conflict state must latch');
 assert.match(html,/if\(recovered\)\{confirmedCloudDocument=null;cloudConflictBlocked=true;\}/,'Recovered draft must block automatic cloud writes');
-assert.match(html,/cloudConflictBlocked=false;state=defaults\(\)/,'Switching accounts must clear previous conflict state');
+assert.match(html,/cloudConflictBlocked=false;refreshDraftRecovery\(\);state=defaults\(\)/,'Switching accounts must clear previous conflict state');
 
 assert.match(html,/id="downloadCloudDraft"[^>]*style="display:none"/,'Backup export must be hidden by default');
 assert.match(html,/draftButton.onclick=\(\)=>\{if\(!cloudConflictBlocked\|\|!activeUid\|\|auth.currentUser\?\.uid!==activeUid/,'Backup export must be tied to authenticated owner and active conflict');
