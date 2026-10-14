@@ -2,7 +2,7 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {initializeApp,deleteApp} from 'firebase/app';
 import {getAuth,connectAuthEmulator,createUserWithEmailAndPassword,signInWithEmailAndPassword,signOut} from 'firebase/auth';
-import {getFirestore,connectFirestoreEmulator,doc,getDoc,setDoc,runTransaction} from 'firebase/firestore';
+import {getFirestore,connectFirestoreEmulator,doc,getDoc,setDoc,runTransaction,disableNetwork,enableNetwork} from 'firebase/firestore';
 import {guardedSave,CloudSaveConflict} from '../cloud-save-guard.mjs';
 
 const projectId='demo-tablewise-auth-test';
@@ -70,9 +70,20 @@ test('real Firebase Auth SDK emulator: two disposable users, device restore, iso
   const A2Restored=(await getDoc(refA2)).data();
   assert.equal(A2Restored.servings,4,'Return to A restores latest A cloud plan');
   assert.deepEqual((await getDoc(refB)).data(),other,'Switching back did not modify B');
+  // Firestore transactions must fail safely during loss of connectivity and recover on explicit retry.
+  const beforeOutage=(await getDoc(refA2)).data();
+  await disableNetwork(A2.db);
+  try{
+   await assert.rejects(transaction(A2,refA2,beforeOutage,{...beforeOutage,servings:6},uidA,()=>true),
+    error=>Boolean(error),'Offline transaction must report an error rather than claim success');
+  }finally{await enableNetwork(A2.db)}
+  assert.equal((await getDoc(refA1)).data().servings,4,'Offline attempt must not modify cloud plan');
+  const retryBaseline=(await getDoc(refA2)).data();
+  await transaction(A2,refA2,retryBaseline,{...retryBaseline,servings:6},uidA,()=>true);
+  assert.equal((await getDoc(refA1)).data().servings,6,'Explicit online retry saves successfully');
   await signOut(A1.auth);
   assert.equal(A1.auth.currentUser,null);
   await signInWithEmailAndPassword(A1.auth,aEmail,pass);
-  assert.equal((await getDoc(refA1)).data().servings,4,'Sign-out/in restores data');
+  assert.equal((await getDoc(refA1)).data().servings,6,'Sign-out/in restores data after offline retry');
  }finally{await Promise.allSettled(clients.map(c=>deleteApp(c.app)));}
 });
