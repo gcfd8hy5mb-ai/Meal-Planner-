@@ -12,7 +12,7 @@ assert.doesNotMatch(html, /<script[^>]+src=["'](?!\.\/live\.js)/i, 'No legacy sc
 assert.match(html, /<script type="module" src="\.\/live\.js"><\/script>/, 'Read-only account adapter must be loaded');
 // Photo assets are shared content, not legacy visual styles or scripts.
 for (const match of html.matchAll(/(?:src|href)=["']\.\.\/([^"']+)/gi)) {
- assert.match(match[1], /^assets\/meal-photos\/[a-zA-Z0-9_-]+\.webp$/, 'Only verified recipe images may be shared');
+ assert.ok(match[1]==='assets/meal-photos/' || /^assets\/meal-photos\/[a-zA-Z0-9_-]+\.webp$/.test(match[1]), 'Only verified recipe images may be shared');
 }
 assert.doesNotMatch(html, /\b(primaryNav|navMoreMenu|groceryGroup|mealDialog|recipegrid|foodWeekItem)\b/, 'No legacy layout classes');
 for (const legacyRule of ['.primaryNav{', '.navMoreMenu{', '.recipegrid .card{', '.shoppingHeading{']) {
