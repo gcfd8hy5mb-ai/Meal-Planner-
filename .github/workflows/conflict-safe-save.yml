@@ -6,6 +6,8 @@ on:
       - 'cloud-save-guard.mjs'
       - 'tests/cloud-save-guard.test.mjs'
       - 'tests/cloud-save-concurrency.test.mjs'
+      - 'pending-draft.mjs'
+      - 'tests/pending-draft.test.mjs'
       - 'reset-backup.mjs'
       - 'tests/reset-backup.test.mjs'
       - 'draft-export.mjs'
@@ -18,6 +20,8 @@ on:
       - 'cloud-save-guard.mjs'
       - 'tests/cloud-save-guard.test.mjs'
       - 'tests/cloud-save-concurrency.test.mjs'
+      - 'pending-draft.mjs'
+      - 'tests/pending-draft.test.mjs'
       - 'reset-backup.mjs'
       - 'tests/reset-backup.test.mjs'
       - 'draft-export.mjs'
@@ -35,6 +39,8 @@ jobs:
         run: node tests/cloud-save-concurrency.test.mjs
       - name: Verify unsaved-plan backup completeness
         run: node tests/draft-export.test.mjs
+      - name: Verify marker-first unsaved draft recovery
+        run: node tests/pending-draft.test.mjs
       - name: Verify reset device-backup cleanup under storage errors
         run: node tests/reset-backup.test.mjs
       - name: Verify planner wiring without live account access
