@@ -44,7 +44,7 @@ assert.match(html,/state=previous;if\(err instanceof CloudSaveConflict\)\{cloudC
 assert.match(html,/Reset blocked — cloud data changed/,'Reset conflicts must not claim the cloud is unchanged');
 assert.match(html,/Reset failed — cloud data was not replaced/,'Network reset failure must not claim old remote data remains');
 
-assert.match(html,/const uid=activeUid,previousState=state;let stillPending=false;/,'Backup marker flag must outlive sign-out try block');
+assert.match(html,/const uid=activeUid,sessionEpoch=authEpoch,previousState=state;let stillPending=false,signOutStarted=false/,'Backup marker flag must outlive sign-out try block');
 assert.doesNotMatch(html,/try\{await writeChain;let stillPending=false;/,'Pending marker may not be scoped exclusively inside try');
 assert.match(html,/if\(cloudConflictBlocked\)\{refreshDraftRecovery\(\);retryButton\.style\.display='none'\}/,'Sign-out failure with conflict must show draft export, not retry');
 assert.match(html,/pendingCleared\?'Saved to cloud ✓':'Cloud saved, but device backup status could not be cleared/,'Storage cleanup failure cannot be displayed as fully saved');
