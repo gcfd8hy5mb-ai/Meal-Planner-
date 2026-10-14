@@ -60,6 +60,6 @@ assert.match(html,/authEpoch===\(signOutStarted\?sessionEpoch\+1:sessionEpoch\)/
 assert.match(html,/\.catch\(err=>\{if\(activeUid===uid&&authEpoch===sessionEpoch\)\{if\(err instanceof CloudSaveConflict\)\{cloudConflictBlocked=true;refreshDraftRecovery\(\)\}if\(sequence===saveSequence\)/,'An older conflicting save must latch before latest-sequence-only UI handling');
 
 assert.match(html,/confirmedCloudDocument=confirmed;cloudResetCommitted=true;state=defaults\(\)/,'Cloud reset is marked committed before local cleanup');
-assert.match(html,/try\{localStorage\.removeItem\('tablewise-v1-'\+uid\);localStorage\.removeItem\('tablewise-pending-'\+uid\)\}catch\(storageError\)\{backupCleanupOk=false/,'Device backup cleanup cannot throw after a successful cloud reset');
+assert.match(html,/try\{localStorage\.removeItem\('tablewise-pending-'\+uid\);localStorage\.removeItem\('tablewise-v1-'\+uid\)\}catch\(storageError\)\{backupCleanupOk=false/,'Cloud reset clears pending recovery marker before its outdated draft');
 assert.match(html,/if\(cloudResetCommitted\)\{document\.getElementById\('cloudStatus'\)\.textContent='Cloud reset completed/,'After a committed reset failure cannot restore stale account data');
 assert.match(html,/if\(cloudResetCommitted\)[\s\S]*return\}state=previous;/,'Old local draft can only be restored if cloud transaction never committed');
