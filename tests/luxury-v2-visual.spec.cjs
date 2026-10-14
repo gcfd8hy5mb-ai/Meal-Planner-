@@ -107,3 +107,27 @@ for (const width of [320, 390, 430]) {
     await context.close();
   });
 }
+
+test('network interruption and reload never reveal legacy layout', async ({ browser }) => {
+  const context = await browser.newContext({ viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true });
+  const page = await context.newPage();
+  await page.goto(url, { waitUntil: 'domcontentloaded' });
+  await context.setOffline(true);
+  await page.reload({ waitUntil: 'domcontentloaded' });
+  for (const screen of ['today', 'week', 'groceries', 'cook']) {
+    await page.locator('[data-nav="' + screen + '"]').click();
+    await expect(page.locator('[data-page="' + screen + '"]')).toBeVisible();
+    const styles = await page.evaluate(() => ({
+      root: getComputedStyle(document.documentElement).backgroundColor,
+      heading: getComputedStyle(document.querySelector('[data-page]:not([hidden]) h1')).fontFamily,
+      forbidden: !!document.querySelector('link[rel="stylesheet"], iframe, object, embed, .primaryNav, .navMoreMenu, .recipegrid, .shoppingHeading'),
+      overflow: document.documentElement.scrollWidth > innerWidth
+    }));
+    expect(styles.root).toBe('rgb(248, 243, 234)');
+    expect(styles.heading).toContain('Georgia');
+    expect(styles.forbidden).toBe(false);
+    expect(styles.overflow).toBe(false);
+    await page.screenshot({ path: 'test-results/offline-' + screen + '.png', fullPage: true });
+  }
+  await context.close();
+});
