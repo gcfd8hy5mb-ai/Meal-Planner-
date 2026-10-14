@@ -1,0 +1,184 @@
+# Tablewise meal image coverage
+
+Generated from main recipe catalog. Catalog entries: 166. Existing photo mappings: 41. Catalog entries lacking a mapping: 125.
+
+This is a mapping audit, **not visual confirmation** that every existing photo shows the correct dish. Verify each image visually, confirm its reuse rights, and check the direct URL loads before adding a new mapping.
+
+## Missing image mappings
+
+- `wrap`
+- `pasta`
+- `tofu`
+- `noodles`
+- `greekwrap`
+- `medbowl`
+- `burgers`
+- `sesameChicken`
+- `beefNoodles`
+- `sweetSour`
+- `chickenQuesa`
+- `steakFajitaBowl`
+- `tacoSalad`
+- `homeCfs`
+- `homeBurgers`
+- `homeTaterTot`
+- `southSmotheredPork`
+- `southFriedChicken`
+- `southChickenDumplings`
+- `southChickenGravy`
+- `southChickenRice`
+- `southChickenSpaghetti`
+- `southBroccoliRice`
+- `southPotPie`
+- `southDressingBake`
+- `southRanchChicken`
+- `southBbqChicken`
+- `southTendersGravy`
+- `southBeefTips`
+- `southSalisbury`
+- `southMeatloaf`
+- `southHamburgerSteak`
+- `southCubeSteak`
+- `southPotRoast`
+- `southMississippiRoast`
+- `southBeefStew`
+- `southGroundBeefGravy`
+- `southHamburgerPotato`
+- `southCowboyCass`
+- `southSloppyJoe`
+- `southBaconBurger`
+- `southTacoCass`
+- `southTacoSoup`
+- `southBakedSpaghetti`
+- `southLasagna`
+- `southGoulash`
+- `southSausagePotato`
+- `southRedBeans`
+- `southJambalaya`
+- `southDirtyRice`
+- `southShrimpGrits`
+- `southFriedCatfish`
+- `southBlackenedCatfish`
+- `southPulledPork`
+- `southPorkChops`
+- `southBeansCornbread`
+- `lunchChickenSalad`
+- `lunchChickenCroissant`
+- `lunchPimento`
+- `lunchPimentoBacon`
+- `lunchHamBiscuit`
+- `lunchHotHam`
+- `lunchBLT`
+- `lunchBologna`
+- `lunchPattyMelt`
+- `lunchGrilledCheeseSoup`
+- `lunchPulledPork`
+- `lunchBbqChicken`
+- `lunchFriedChickenSand`
+- `lunchTenderWrap`
+- `lunchBaconRanchWrap`
+- `lunchMeatloafSand`
+- `lunchCfsSand`
+- `lunchCatfishSand`
+- `lunchLoadedPotato`
+- `lunchPotatoSoup`
+- `southPorkGravy`
+- `southFriedPork`
+- `southPorkTenderloin`
+- `southCountryRibs`
+- `southBbqRibs`
+- `southHamMac`
+- `southHamPotato`
+- `southBlackEyed`
+- `southBeansRice`
+- `southVegPlate`
+- `southSausageMac`
+- `southBbqPotato`
+- `southChiliCornbread`
+- `southRoastChicken`
+- `southChickenBiscuit`
+- `southBaconRanchBake`
+- `southCajunChickenPasta`
+- `southChickenBaconPasta`
+- `southCreamyGarlicChicken`
+- `southChickenTacos`
+- `southChickenBurritoBowl`
+- `southTeriyakiChicken`
+- `southOrangeChicken`
+- `southBeefStroganoff`
+- `southCheeseburgerCass`
+- `southChiliBurger`
+- `southBeefEnchiladas`
+- `southBeefBurritoBowl`
+- `southBeefyMac`
+- `southStuffedPeppers`
+- `southStuffedPepperCass`
+- `southSausagePeppers`
+- `southSausageGravyBake`
+- `southCajunSausagePasta`
+- `southCajunShrimpRice`
+- `southGarlicShrimp`
+- `lunchHamCheese`
+- `lunchTurkeyCheese`
+- `lunchClub`
+- `lunchBuffaloWrap`
+- `lunchTurkeyRanch`
+- `lunchHamWrap`
+- `lunchCheeseburger`
+- `lunchChiliBurger`
+- `lunchSloppyJoe`
+- `lunchChickenDumpling`
+- `lunchVegBeefSoup`
+- `lunchChili`
+- `lunchTenderBasket`
+
+## Existing mapped recipe IDs
+
+- `oats`
+- `eggs`
+- `chicken`
+- `frenchtoast`
+- `smoothie`
+- `pancakes`
+- `spaghetti`
+- `salad`
+- `tacos`
+- `sandwich`
+- `waffles`
+- `burrito`
+- `parfait`
+- `yogurt`
+- `cereal`
+- `breakfastsand`
+- `omelet`
+- `scramble`
+- `nuts`
+- `friedrice`
+- `fajitas`
+- `shrimpTacos`
+- `chickenparm`
+- `soup`
+- `beefbroccoli`
+- `quesadilla`
+- `dumpling`
+- `salmon`
+- `bowlmex`
+- `orangeChicken`
+- `stirfry`
+- `apple`
+- `bagel`
+- `enchiladas`
+- `teriyaki`
+- `kungPao`
+- `thaiBasil`
+- `beefTacos`
+- `chickenEnchilada`
+- `beefBurrito`
+- `loMein`
+
+## Photo acceptance standard
+- Match the actual named recipe; no unrelated generic food imagery.
+- Use cleared or licensed assets appropriate for publication.
+- Prefer consistent natural-light food photography, realistic plating, consistent aspect ratio.
+- Maintain an elegant built-in fallback for custom recipes or failed image loads.
+- Add URLs to `verifiedRecipePhotos` after visual and HTTP verification.
