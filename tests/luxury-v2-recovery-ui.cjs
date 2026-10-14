@@ -1,0 +1,13 @@
+const fs=require('node:fs');
+const assert=require('node:assert/strict');
+const html=fs.readFileSync('luxury-v2/index.html','utf8');
+const live=fs.readFileSync('luxury-v2/live.js','utf8');
+assert.match(html,/id="saveLuxuryEdits" disabled/,'Cloud save remains disabled until original writer is migrated');
+assert.match(html,/id="exportLuxuryEdits"/,'Preview edits can be exported');
+assert.match(html,/id="exportRecoveredLuxury"/,'Device recovery export control is present');
+assert.match(live,/readPendingLuxuryDraft\(localStorage,accountUid\)/,'Only active account draft is examined');
+assert.match(live,/document\.querySelector\('#luxuryRecoverActions'\)\.hidden=true/,'Recovery data is hidden synchronously on sign-out');
+assert.match(live,/document\.querySelector\('#exportLuxuryEdits'\)\.onclick=/,'Preview export action is wired');
+assert.match(live,/document\.querySelector\('#exportRecoveredLuxury'\)\.onclick=/,'Recovered export action is wired');
+assert.doesNotMatch(live,/\b(?:setDoc|updateDoc|deleteDoc)\s*\(/,'Luxury preview cannot mutate Firestore directly');
+console.log('Luxury staged save/export controls and account-scoped recovery tests passed');
