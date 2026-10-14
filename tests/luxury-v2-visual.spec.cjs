@@ -39,3 +39,30 @@ test('luxury v2 is visually and structurally isolated on iPhone', async ({ page 
   await expect(page.locator('link[rel="stylesheet"], iframe, object, embed')).toHaveCount(0);
   expect(errors).toEqual([]);
 });
+
+test('luxury navigation never injects legacy presentation after load', async ({ page }) => {
+  await page.addInitScript(() => {
+    window.__luxuryLeakLog = [];
+    const badClass = /^(primaryNav|navMoreMenu|assignmentChoices|shoppingHeading|recipegrid|todayMealImage)$/;
+    const check = () => {
+      for (const node of document.querySelectorAll('*')) {
+        if ([...node.classList].some(c => badClass.test(c))) window.__luxuryLeakLog.push('legacy class: ' + node.className);
+      }
+      if (document.querySelector('link[rel="stylesheet"], iframe, object, embed')) window.__luxuryLeakLog.push('foreign document/style');
+      for (const sheet of document.styleSheets) {
+        if (sheet.href) window.__luxuryLeakLog.push('external CSS: ' + sheet.href);
+      }
+    };
+    document.addEventListener('DOMContentLoaded', () => {
+      check();
+      new MutationObserver(check).observe(document.documentElement, { childList: true, subtree: true, attributes: true, attributeFilter: ['class', 'href', 'rel'] });
+    });
+  });
+  await page.goto(url);
+  for (const tab of ['week','groceries','cook','today','week','today']) {
+    await page.locator('[data-nav="' + tab + '"]').click();
+    await expect(page.locator('[data-page="' + tab + '"]')).toBeVisible();
+  }
+  await page.waitForTimeout(500);
+  expect(await page.evaluate(() => window.__luxuryLeakLog)).toEqual([]);
+});
