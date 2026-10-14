@@ -17,3 +17,14 @@ assert.deepEqual(groceryTotals(null,lookup,[1,2]),[],'Signed-out state has no ph
 account.mealTypes=['Lunch'];
 assert.deepEqual(groceryTotals(account,lookup,[1,2]),[],'Unselected meal slots do not contribute');
 console.log('Two-week luxury grocery aggregation checks passed');
+
+// The plan may store Week 2 as active, with Week 1 in alternateWeek.
+account.mealTypes=['Dinner'];
+account.activePlanningWeek=2;
+account.plan={1:[null,null,'meal',null]};
+account.mealServings={'1-2':3};
+account.dinnerSides={};
+account.alternateWeek={plan:{0:[null,null,'meal',null]},mealServings:{},dinnerSides:{0:['mashedpotatoes']}};
+assert.equal(groceryTotals(account,lookup,[1]).find(x=>x.name==='Rice')?.quantity,2, 'Inactive Week 1 must map to alternate bundle');
+assert.equal(groceryTotals(account,lookup,[2]).find(x=>x.name==='Rice')?.quantity,3, 'Active Week 2 must map to current bundle');
+assert.equal(groceryTotals(account,lookup,[1,2]).find(x=>x.name==='Rice')?.quantity,5, 'Both weeks must combine regardless of which is active');
