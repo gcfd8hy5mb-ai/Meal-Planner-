@@ -43,12 +43,18 @@ test('All 166 built-in recipes have one unique, approved, readable photograph',(
   for(const match of html.matchAll(/recipes\.push\(\.\.\.(\[[\s\S]*?\])\);/g))recipes.push(...vm.runInNewContext(match[1]));
   assert.equal(recipes.length,166);
   assert.equal(new Set(recipes.map(r=>r.id)).size,166);
-  assert.deepEqual(Object.keys(photos).sort(),recipes.map(r=>r.id).sort());
+  assert.deepEqual(Object.keys(photos).sort(),Array.from(recipes,r=>r.id).sort());
   const audit=JSON.parse(readFileSync(new URL('../docs/original-meal-photo-audit.json',import.meta.url),'utf8'));
   for(const item of audit){
     if(item.visualVerdict==='pass')assert.equal(photos[item.id],item.url);
     else assert.equal(photos[item.id],'assets/meal-photos/'+item.id+'.webp');
   }
   const inventory=JSON.parse(readFileSync(new URL('../docs/meal-photo-prompts/catalog.json',import.meta.url),'utf8'));
-  for(const item of inventory){assert.equal(item.status,'accepted');assert.equal(photos[item.id],item.asset);}
+  for(const item of inventory){
+    const recipe=recipes.find(r=>r.id===item.id);
+    assert.equal(item.status,'accepted');
+    assert.equal(photos[item.id],item.asset);
+    assert.equal(item.name,recipe.name);
+    assert.deepEqual(item.ingredients,JSON.parse(JSON.stringify(recipe.ingredients)),item.id+' ingredients differ from the live recipe');
+  }
 });

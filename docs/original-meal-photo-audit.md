@@ -1,6 +1,6 @@
 # Original Tablewise photo audit
 
-All 41 direct image URLs returned HTTP 200 and decoded as images. Visual review compares each photograph against current catalog ingredients, not its ID alone. A pass means the defining dish matches, not that every incidental garnish matches. Existing asset licensing provenance remains unverified.
+All 41 original direct image URLs returned HTTP 200 and decoded as images. Visual review compares each photograph against current catalog ingredients, not its ID alone. A pass means the defining dish matches, not that every incidental garnish matches. The 33 failed links have since been replaced with recipe-specific local photographs; the eight passing links are retained and checked for working image responses. Replacement paths are recorded in [original-meal-photo-audit.json](original-meal-photo-audit.json). Existing asset licensing provenance remains unverified.
 
 | Recipe ID | Visual result | Evidence |
 |---|---|---|
