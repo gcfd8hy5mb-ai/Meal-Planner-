@@ -5,6 +5,8 @@ on:
       - 'luxury-v2/**'
       - '.github/workflows/luxury-v2-isolation.yml'
       - 'tests/luxury-v2-isolation.cjs'
+      - 'tests/luxury-v2-groceries.test.mjs'
+      - 'tests/luxury-v2-groceries.test.mjs'
   push:
     paths:
       - 'luxury-v2/**'
@@ -17,6 +19,8 @@ jobs:
       - uses: actions/checkout@v4
       - name: Run standalone legacy-leak regression test
         run: node tests/luxury-v2-isolation.cjs
+      - name: Verify saved two-week grocery aggregation
+        run: node tests/luxury-v2-groceries.test.mjs
       - name: Verify isolated JavaScript module syntax
         run: |
           node --input-type=module --check < luxury-v2/live.js
