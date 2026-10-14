@@ -10,5 +10,9 @@ assert.match(html,/confirmedCloudDocument=snapshot\.data\(\)/,'Last-confirmed cl
 assert.match(html,/confirmedCloudDocument=committed/,'Successful writes advance baseline');
 assert.match(html,/confirmedCloudDocument=null;state=defaults\(\)/,'Sign-out clears baseline');
 assert.match(html,/const initialDocument=\{\.\.\.state,custom:'\[\]',onboardingInitialized:true\}/,'New accounts retain explicit registration flow');
+assert.match(html,/await createOnlyAccount\(/,'Account creation must be create-only');
+assert.doesNotMatch(html,/await setDoc\(/,'No unrestricted writes including reset and registration');
+assert.match(html,/const confirmed=await guardedSave\(/,'Fresh-start reset must be conflict guarded');
+assert.doesNotMatch(html,/reconciliation\.if\(!state/,'Offline recovery logic must not be swallowed by comments');
 assert.match(html,/err instanceof CloudSaveConflict/,'Cloud conflicts must be visible to user');
 console.log('Production-save migration structural safety checks passed');
