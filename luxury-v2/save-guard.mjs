@@ -24,5 +24,11 @@ export function preparePlanPatch(original,current,preview,applyPreview) {
   if(!guard.ok) return {ok:false,reason:guard.reason};
   if(!preview || Object.keys(preview).length===0) return {ok:false,reason:'Nothing to save'};
   const updated=applyPreview(current,preview);
-  return {ok:true,fields:{plan:updated.plan,alternateWeek:updated.alternateWeek}};
+  // Include changed serving/side overrides so replaced dinners cannot retain old quantities.
+  // Leave unrelated account fields untouched.
+  const fields={plan:updated.plan,alternateWeek:updated.alternateWeek};
+  for(const key of ['mealServings','dinnerSides']){
+    if(JSON.stringify(updated[key]??{})!==JSON.stringify(current[key]??{})) fields[key]=updated[key]??{};
+  }
+  return {ok:true,fields};
 }
