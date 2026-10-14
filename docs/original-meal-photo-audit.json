@@ -1,0 +1,371 @@
+[
+  {
+    "id": "oats",
+    "url": "https://images.unsplash.com/photo-1594490150174-b349c66d93c5?auto=format&fit=crop&w=680&q=80",
+    "status": 200,
+    "readable": true,
+    "visualVerdict": "pass",
+    "reason": "Berry-topped oats are visible.",
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+  },
+  {
+    "id": "eggs",
+    "url": "https://images.unsplash.com/photo-1769311732020-f1c2243ad1ff?auto=format&fit=crop&w=680&q=80",
+    "status": 200,
+    "readable": true,
+    "visualVerdict": "fail",
+    "reason": "Avocado toast includes unlisted leafy garnish; egg and whole-grain bread identity partly obscured.",
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+  },
+  {
+    "id": "chicken",
+    "url": "https://images.unsplash.com/photo-1744444202869-54debf97b285?auto=format&fit=crop&w=680&q=80",
+    "status": 200,
+    "readable": true,
+    "visualVerdict": "fail",
+    "reason": "White sliced protein and egg bowl; no recognizable brown rice and broccoli chicken bowl.",
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+  },
+  {
+    "id": "frenchtoast",
+    "url": "https://images.unsplash.com/photo-1773326631184-cece466f4e91?auto=format&fit=crop&w=680&q=80",
+    "status": 200,
+    "readable": true,
+    "visualVerdict": "pass",
+    "reason": "Golden French toast slices; dominant dish matches.",
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+  },
+  {
+    "id": "smoothie",
+    "url": "https://images.unsplash.com/photo-1685967836529-b0e8d6938227?auto=format&fit=crop&w=680&q=80",
+    "status": 200,
+    "readable": true,
+    "visualVerdict": "fail",
+    "reason": "Banana smoothie includes prominent unlisted oats; peanut butter not identifiable.",
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+  },
+  {
+    "id": "pancakes",
+    "url": "https://images.unsplash.com/photo-1541288097308-7b8e3f58c4c6?auto=format&fit=crop&w=680&q=80",
+    "status": 200,
+    "readable": true,
+    "visualVerdict": "fail",
+    "reason": "Pancakes have unlisted blueberries and no clearly visible maple syrup.",
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+  },
+  {
+    "id": "spaghetti",
+    "url": "https://images.unsplash.com/photo-1677139599935-67eb22b12bb1?auto=format&fit=crop&w=680&q=80",
+    "status": 200,
+    "readable": true,
+    "visualVerdict": "pass",
+    "reason": "Spaghetti, tomato sauce and meatballs visible; minor herb garnish differs.",
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+  },
+  {
+    "id": "salad",
+    "url": "https://images.unsplash.com/photo-1697155836261-f7afd5353e64?auto=format&fit=crop&w=680&q=80",
+    "status": 200,
+    "readable": true,
+    "visualVerdict": "fail",
+    "reason": "Mostly chickpeas; defining cucumber, cherry tomatoes and feta not visible.",
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+  },
+  {
+    "id": "tacos",
+    "url": "https://images.unsplash.com/photo-1719948515819-71265e1abb0d?auto=format&fit=crop&w=680&q=80",
+    "status": 200,
+    "readable": true,
+    "visualVerdict": "pass",
+    "reason": "Chicken street tacos with onion, cilantro and lime visible.",
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+  },
+  {
+    "id": "sandwich",
+    "url": "https://images.unsplash.com/photo-1734773343286-99e5068b175b?auto=format&fit=crop&w=680&q=80",
+    "status": 200,
+    "readable": true,
+    "visualVerdict": "fail",
+    "reason": "Fried or heavily coated chicken with jalapenos, cheese and sauce; recipe is grilled chicken with mayonnaise.",
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+  },
+  {
+    "id": "waffles",
+    "url": "https://images.unsplash.com/photo-1752095809219-5efed353033f?auto=format&fit=crop&w=680&q=80",
+    "status": 200,
+    "readable": true,
+    "visualVerdict": "fail",
+    "reason": "Waffles topped with unlisted berries and cream; no maple syrup visible.",
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+  },
+  {
+    "id": "burrito",
+    "url": "https://images.unsplash.com/photo-1662478839359-751ffc3cbbd8?auto=format&fit=crop&w=680&q=80",
+    "status": 200,
+    "readable": true,
+    "visualVerdict": "fail",
+    "reason": "Ground-meat burrito instead of breakfast egg, potato and cheddar filling.",
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+  },
+  {
+    "id": "parfait",
+    "url": "https://images.unsplash.com/photo-1490371475955-4cb3bfc72f71?auto=format&fit=crop&w=680&q=80",
+    "status": 200,
+    "readable": true,
+    "visualVerdict": "fail",
+    "reason": "Dominant raspberries instead of listed strawberries.",
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+  },
+  {
+    "id": "yogurt",
+    "url": "https://images.unsplash.com/photo-1654584240523-6b8d3f6c33b4?auto=format&fit=crop&w=680&q=80",
+    "status": 200,
+    "readable": true,
+    "visualVerdict": "fail",
+    "reason": "Drink-like jars with oats/granola instead of plain Greek yogurt and mixed berries.",
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+  },
+  {
+    "id": "cereal",
+    "url": "https://images.unsplash.com/photo-1506226869879-4ac9a5e630b9?auto=format&fit=crop&w=680&q=80",
+    "status": 200,
+    "readable": true,
+    "visualVerdict": "fail",
+    "reason": "Banana oatmeal instead of whole-grain cereal and milk.",
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+  },
+  {
+    "id": "breakfastsand",
+    "url": "https://images.unsplash.com/photo-1773083042321-a4d900c2b101?auto=format&fit=crop&w=680&q=80",
+    "status": 200,
+    "readable": true,
+    "visualVerdict": "fail",
+    "reason": "Open egg/potato/white-sauce sandwich instead of English muffin, egg, cheddar and turkey.",
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+  },
+  {
+    "id": "omelet",
+    "url": "https://images.unsplash.com/photo-1510693206972-df098062cb71?auto=format&fit=crop&w=680&q=80",
+    "status": 200,
+    "readable": true,
+    "visualVerdict": "fail",
+    "reason": "Open baked egg skillet instead of folded cheese and spinach omelet.",
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+  },
+  {
+    "id": "scramble",
+    "url": "https://images.unsplash.com/photo-1776286952319-53e7320e0cd0?auto=format&fit=crop&w=680&q=80",
+    "status": 200,
+    "readable": true,
+    "visualVerdict": "fail",
+    "reason": "Fried whole eggs and toast instead of scrambled eggs with spinach, peppers and cheddar.",
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+  },
+  {
+    "id": "nuts",
+    "url": "https://images.unsplash.com/photo-1767877609689-beff32b9c0ac?auto=format&fit=crop&w=680&q=80",
+    "status": 200,
+    "readable": true,
+    "visualVerdict": "pass",
+    "reason": "Mixed nuts and dark raisins visible.",
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+  },
+  {
+    "id": "friedrice",
+    "url": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=680&q=80",
+    "status": 200,
+    "readable": true,
+    "visualVerdict": "fail",
+    "reason": "Rice mound without clearly visible defining chicken and scrambled egg.",
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+  },
+  {
+    "id": "fajitas",
+    "url": "https://images.unsplash.com/photo-1756521973435-4e4e1d2884b7?auto=format&fit=crop&w=680&q=80",
+    "status": 200,
+    "readable": true,
+    "visualVerdict": "fail",
+    "reason": "Chicken/pepper plate includes unlisted rice and cream; no defining tortillas visible.",
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+  },
+  {
+    "id": "shrimpTacos",
+    "url": "https://images.unsplash.com/photo-1689774329109-9b70beeefc0a?auto=format&fit=crop&w=680&q=80",
+    "status": 200,
+    "readable": true,
+    "visualVerdict": "fail",
+    "reason": "Shrimp tacos include prominent avocado and other unlisted toppings.",
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+  },
+  {
+    "id": "chickenparm",
+    "url": "https://images.unsplash.com/photo-1632778149955-e80f8ceca2e8?auto=format&fit=crop&w=680&q=80",
+    "status": 200,
+    "readable": true,
+    "visualVerdict": "fail",
+    "reason": "Breaded cutlet shown but defining pasta not visible; topping resembles cream rather than melted mozzarella.",
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+  },
+  {
+    "id": "soup",
+    "url": "https://images.unsplash.com/photo-1512003867696-6d5ce6835040?auto=format&fit=crop&w=680&q=80",
+    "status": 200,
+    "readable": true,
+    "visualVerdict": "fail",
+    "reason": "Broccoli and other vegetables dominate; defining carrots, celery and noodles not clear.",
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+  },
+  {
+    "id": "beefbroccoli",
+    "url": "https://images.unsplash.com/photo-1783375175952-705a0600e05c?auto=format&fit=crop&w=680&q=80",
+    "status": 200,
+    "readable": true,
+    "visualVerdict": "pass",
+    "reason": "Beef strips, broccoli and rice clearly visible.",
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+  },
+  {
+    "id": "quesadilla",
+    "url": "https://images.unsplash.com/photo-1673990349292-ed2dfa7988c9?auto=format&fit=crop&w=680&q=80",
+    "status": 200,
+    "readable": true,
+    "visualVerdict": "fail",
+    "reason": "Orange meat-like filling, not clearly black beans; unlisted guacamole.",
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+  },
+  {
+    "id": "dumpling",
+    "url": "https://images.unsplash.com/photo-1684252801327-7e7794c4dd7f?auto=format&fit=crop&w=680&q=80",
+    "status": 200,
+    "readable": true,
+    "visualVerdict": "fail",
+    "reason": "Steamed dumplings without defining cabbage and carrot bowl; filling cannot be verified.",
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+  },
+  {
+    "id": "salmon",
+    "url": "https://images.unsplash.com/photo-1602536966945-7153f9554a0d?auto=format&fit=crop&w=680&q=80",
+    "status": 200,
+    "readable": true,
+    "visualVerdict": "fail",
+    "reason": "Photo appears to show a different mixed dish, not salmon fillet with sweet potato and green beans.",
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+  },
+  {
+    "id": "bowlmex",
+    "url": "https://images.unsplash.com/photo-1668665771757-4d42737d295a?auto=format&fit=crop&w=680&q=80",
+    "status": 200,
+    "readable": true,
+    "visualVerdict": "fail",
+    "reason": "Chicken bowl includes prominent corn, peppers, lime and cream absent from recipe.",
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+  },
+  {
+    "id": "orangeChicken",
+    "url": "https://images.unsplash.com/photo-1705596704813-b39b95549cd2?auto=format&fit=crop&w=680&q=80",
+    "status": 200,
+    "readable": true,
+    "visualVerdict": "fail",
+    "reason": "Heavy battered chicken and peppers differ from unbreaded orange-juice chicken with broccoli.",
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+  },
+  {
+    "id": "stirfry",
+    "url": "https://images.unsplash.com/photo-1767974877206-a594e0b1008e?auto=format&fit=crop&w=680&q=80",
+    "status": 200,
+    "readable": true,
+    "visualVerdict": "fail",
+    "reason": "Generic sauced stir-fry without defining broccoli and rice presentation.",
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+  },
+  {
+    "id": "apple",
+    "url": "https://images.unsplash.com/photo-1642339800118-eb551cfa1434?auto=format&fit=crop&w=680&q=80",
+    "status": 200,
+    "readable": true,
+    "visualVerdict": "pass",
+    "reason": "Apple slices and peanut butter dip clearly visible.",
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+  },
+  {
+    "id": "bagel",
+    "url": "https://images.unsplash.com/photo-1605661479369-a8859129827b?auto=format&fit=crop&w=680&q=78",
+    "status": 200,
+    "readable": true,
+    "visualVerdict": "fail",
+    "reason": "Handheld filled bread sandwich does not clearly show egg, turkey and cheddar breakfast bagel.",
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+  },
+  {
+    "id": "enchiladas",
+    "url": "https://images.unsplash.com/photo-1755144248558-c9cb2d811db5?auto=format&fit=crop&w=680&q=78",
+    "status": 200,
+    "readable": true,
+    "visualVerdict": "fail",
+    "reason": "Restaurant plate with additional toppings and sides; black bean filling cannot be confirmed.",
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+  },
+  {
+    "id": "teriyaki",
+    "url": "https://images.unsplash.com/photo-1742349166781-70e38f10b7ed?auto=format&fit=crop&w=680&q=78",
+    "status": 200,
+    "readable": true,
+    "visualVerdict": "fail",
+    "reason": "Salmon/rice plate lacks broccoli and recognizable teriyaki glaze.",
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+  },
+  {
+    "id": "kungPao",
+    "url": "https://images.unsplash.com/photo-1605704931020-ba62cdb2ba9b?auto=format&fit=crop&w=680&q=80",
+    "status": 200,
+    "readable": true,
+    "visualVerdict": "fail",
+    "reason": "Mixed vegetable rice bowl rather than clearly chicken, bell pepper and peanuts.",
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+  },
+  {
+    "id": "thaiBasil",
+    "url": "https://images.unsplash.com/photo-1707897634981-39bcfe435268?auto=format&fit=crop&w=680&q=80",
+    "status": 200,
+    "readable": true,
+    "visualVerdict": "fail",
+    "reason": "Large unlisted fried egg dominates; ground chicken and basil cannot be confidently confirmed.",
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+  },
+  {
+    "id": "beefTacos",
+    "url": "https://images.unsplash.com/photo-1690874684451-92358e91b14c?auto=format&fit=crop&w=680&q=80",
+    "status": 200,
+    "readable": true,
+    "visualVerdict": "fail",
+    "reason": "Prominent unlisted cheese, cilantro and lime; recipe uses lettuce, tomato and salsa.",
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+  },
+  {
+    "id": "chickenEnchilada",
+    "url": "https://images.unsplash.com/photo-1730415136652-3044ec3db585?auto=format&fit=crop&w=680&q=80",
+    "status": 200,
+    "readable": true,
+    "visualVerdict": "fail",
+    "reason": "Plated stuffed dish appears unlike sauced corn-tortilla chicken enchiladas with Monterey Jack.",
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+  },
+  {
+    "id": "beefBurrito",
+    "url": "https://images.unsplash.com/photo-1731090389603-d63060ee08a6?auto=format&fit=crop&w=680&q=80",
+    "status": 200,
+    "readable": true,
+    "visualVerdict": "fail",
+    "reason": "Burrito includes visible avocado, fries and dip absent from recipe; specified black beans not clear.",
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+  },
+  {
+    "id": "loMein",
+    "url": "https://images.unsplash.com/photo-1758979690131-11e2aa0b142b?auto=format&fit=crop&w=680&q=80",
+    "status": 200,
+    "readable": true,
+    "visualVerdict": "pass",
+    "reason": "Chicken, noodles, cabbage and carrot visible; noodle thickness varies.",
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+  }
+]

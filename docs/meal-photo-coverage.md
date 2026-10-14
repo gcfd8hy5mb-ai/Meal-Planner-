@@ -1,36 +1,21 @@
 # Tablewise meal image coverage
 
-Generated from main recipe catalog. Catalog entries: 166. Existing photo mappings: 41. Catalog entries lacking a mapping: 125.
+Catalog entries: 166. Original missing-photo set: 125. Generated and accepted: 25. Current mappings: 33.
 
-This is a mapping audit, **not visual confirmation** that every existing photo shows the correct dish. Verify each image visually, confirm its reuse rights, and check the direct URL loads before adding a new mapping.
+Photography: built-in AI image generation, recipe-specific prompts, dark cinematic restaurant lighting. Files: 960 × 640 WebP, quality 82, each under 150 KiB. Original-photo visual audit is in [original-meal-photo-audit.md](original-meal-photo-audit.md). Failed original mappings use the existing labeled fallback.
 
-## Missing image mappings
+## Batch status
 
-- `wrap`
-- `pasta`
-- `tofu`
-- `noodles`
-- `greekwrap`
-- `medbowl`
-- `burgers`
-- `sesameChicken`
-- `beefNoodles`
-- `sweetSour`
-- `chickenQuesa`
-- `steakFajitaBowl`
-- `tacoSalad`
-- `homeCfs`
-- `homeBurgers`
-- `homeTaterTot`
-- `southSmotheredPork`
-- `southFriedChicken`
-- `southChickenDumplings`
-- `southChickenGravy`
-- `southChickenRice`
-- `southChickenSpaghetti`
-- `southBroccoliRice`
-- `southPotPie`
-- `southDressingBake`
+| Batch | Accepted | Total |
+|---|---:|---:|
+| 1 | 25 | 25 |
+| 2 | 0 | 25 |
+| 3 | 0 | 25 |
+| 4 | 0 | 25 |
+| 5 | 0 | 25 |
+
+## Pending original missing-photo IDs
+
 - `southRanchChicken`
 - `southBbqChicken`
 - `southTendersGravy`
@@ -132,53 +117,38 @@ This is a mapping audit, **not visual confirmation** that every existing photo s
 - `lunchChili`
 - `lunchTenderBasket`
 
-## Existing mapped recipe IDs
+## Original mappings rejected in the visual audit
 
-- `oats`
-- `eggs`
-- `chicken`
-- `frenchtoast`
-- `smoothie`
-- `pancakes`
-- `spaghetti`
-- `salad`
-- `tacos`
-- `sandwich`
-- `waffles`
-- `burrito`
-- `parfait`
-- `yogurt`
-- `cereal`
-- `breakfastsand`
-- `omelet`
-- `scramble`
-- `nuts`
-- `friedrice`
-- `fajitas`
-- `shrimpTacos`
-- `chickenparm`
-- `soup`
-- `beefbroccoli`
-- `quesadilla`
-- `dumpling`
-- `salmon`
-- `bowlmex`
-- `orangeChicken`
-- `stirfry`
-- `apple`
-- `bagel`
-- `enchiladas`
-- `teriyaki`
-- `kungPao`
-- `thaiBasil`
-- `beefTacos`
-- `chickenEnchilada`
-- `beefBurrito`
-- `loMein`
-
-## Photo acceptance standard
-- Match the actual named recipe; no unrelated generic food imagery.
-- Use cleared or licensed assets appropriate for publication.
-- Prefer consistent natural-light food photography, realistic plating, consistent aspect ratio.
-- Maintain an elegant built-in fallback for custom recipes or failed image loads.
-- Add URLs to `verifiedRecipePhotos` after visual and HTTP verification.
+- `eggs`: Avocado toast includes unlisted leafy garnish; egg and whole-grain bread identity partly obscured.
+- `chicken`: White sliced protein and egg bowl; no recognizable brown rice and broccoli chicken bowl.
+- `smoothie`: Banana smoothie includes prominent unlisted oats; peanut butter not identifiable.
+- `pancakes`: Pancakes have unlisted blueberries and no clearly visible maple syrup.
+- `salad`: Mostly chickpeas; defining cucumber, cherry tomatoes and feta not visible.
+- `sandwich`: Fried or heavily coated chicken with jalapenos, cheese and sauce; recipe is grilled chicken with mayonnaise.
+- `waffles`: Waffles topped with unlisted berries and cream; no maple syrup visible.
+- `burrito`: Ground-meat burrito instead of breakfast egg, potato and cheddar filling.
+- `parfait`: Dominant raspberries instead of listed strawberries.
+- `yogurt`: Drink-like jars with oats/granola instead of plain Greek yogurt and mixed berries.
+- `cereal`: Banana oatmeal instead of whole-grain cereal and milk.
+- `breakfastsand`: Open egg/potato/white-sauce sandwich instead of English muffin, egg, cheddar and turkey.
+- `omelet`: Open baked egg skillet instead of folded cheese and spinach omelet.
+- `scramble`: Fried whole eggs and toast instead of scrambled eggs with spinach, peppers and cheddar.
+- `friedrice`: Rice mound without clearly visible defining chicken and scrambled egg.
+- `fajitas`: Chicken/pepper plate includes unlisted rice and cream; no defining tortillas visible.
+- `shrimpTacos`: Shrimp tacos include prominent avocado and other unlisted toppings.
+- `chickenparm`: Breaded cutlet shown but defining pasta not visible; topping resembles cream rather than melted mozzarella.
+- `soup`: Broccoli and other vegetables dominate; defining carrots, celery and noodles not clear.
+- `quesadilla`: Orange meat-like filling, not clearly black beans; unlisted guacamole.
+- `dumpling`: Steamed dumplings without defining cabbage and carrot bowl; filling cannot be verified.
+- `salmon`: Photo appears to show a different mixed dish, not salmon fillet with sweet potato and green beans.
+- `bowlmex`: Chicken bowl includes prominent corn, peppers, lime and cream absent from recipe.
+- `orangeChicken`: Heavy battered chicken and peppers differ from unbreaded orange-juice chicken with broccoli.
+- `stirfry`: Generic sauced stir-fry without defining broccoli and rice presentation.
+- `bagel`: Handheld filled bread sandwich does not clearly show egg, turkey and cheddar breakfast bagel.
+- `enchiladas`: Restaurant plate with additional toppings and sides; black bean filling cannot be confirmed.
+- `teriyaki`: Salmon/rice plate lacks broccoli and recognizable teriyaki glaze.
+- `kungPao`: Mixed vegetable rice bowl rather than clearly chicken, bell pepper and peanuts.
+- `thaiBasil`: Large unlisted fried egg dominates; ground chicken and basil cannot be confidently confirmed.
+- `beefTacos`: Prominent unlisted cheese, cilantro and lime; recipe uses lettuce, tomato and salsa.
+- `chickenEnchilada`: Plated stuffed dish appears unlike sauced corn-tortilla chicken enchiladas with Monterey Jack.
+- `beefBurrito`: Burrito includes visible avocado, fries and dip absent from recipe; specified black beans not clear.
