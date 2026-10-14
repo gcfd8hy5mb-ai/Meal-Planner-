@@ -1,6 +1,6 @@
 # Tablewise meal image coverage
 
-Catalog entries: 166. Original missing-photo set: 125. Generated and accepted: 75. Current mappings: 83.
+Catalog entries: 166. Original missing-photo set: 125. Generated and accepted: 100. Current mappings: 108.
 
 Photography: built-in AI image generation, recipe-specific prompts, dark cinematic restaurant lighting. Files: 960 × 640 WebP, quality 82, each under 150 KiB. Original-photo visual audit is in [original-meal-photo-audit.md](original-meal-photo-audit.md). Failed original mappings use the existing labeled fallback.
 
@@ -11,36 +11,11 @@ Photography: built-in AI image generation, recipe-specific prompts, dark cinemat
 | 1 | 25 | 25 |
 | 2 | 25 | 25 |
 | 3 | 25 | 25 |
-| 4 | 0 | 25 |
+| 4 | 25 | 25 |
 | 5 | 0 | 25 |
 
 ## Pending original missing-photo IDs
 
-- `lunchPotatoSoup`
-- `southPorkGravy`
-- `southFriedPork`
-- `southPorkTenderloin`
-- `southCountryRibs`
-- `southBbqRibs`
-- `southHamMac`
-- `southHamPotato`
-- `southBlackEyed`
-- `southBeansRice`
-- `southVegPlate`
-- `southSausageMac`
-- `southBbqPotato`
-- `southChiliCornbread`
-- `southRoastChicken`
-- `southChickenBiscuit`
-- `southBaconRanchBake`
-- `southCajunChickenPasta`
-- `southChickenBaconPasta`
-- `southCreamyGarlicChicken`
-- `southChickenTacos`
-- `southChickenBurritoBowl`
-- `southTeriyakiChicken`
-- `southOrangeChicken`
-- `southBeefStroganoff`
 - `southCheeseburgerCass`
 - `southChiliBurger`
 - `southBeefEnchiladas`
