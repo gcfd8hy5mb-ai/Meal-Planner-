@@ -48,3 +48,6 @@ assert.match(html,/const uid=activeUid,previousState=state;let stillPending=fals
 assert.doesNotMatch(html,/try\{await writeChain;let stillPending=false;/,'Pending marker may not be scoped exclusively inside try');
 assert.match(html,/if\(cloudConflictBlocked\)\{refreshDraftRecovery\(\);retryButton\.style\.display='none'\}/,'Sign-out failure with conflict must show draft export, not retry');
 assert.match(html,/pendingCleared\?'Saved to cloud ✓':'Cloud saved, but device backup status could not be cleared/,'Storage cleanup failure cannot be displayed as fully saved');
+
+assert.match(html,/if\(authEpoch!==sessionEpoch\|\|activeUid!==uid\|\|auth\.currentUser\?\.uid!==uid\)return;confirmedCloudDocument=confirmed/,'Reset success must not apply to a later session');
+assert.match(html,/catch\(err\)\{if\(authEpoch!==sessionEpoch\|\|activeUid!==uid\|\|auth\.currentUser\?\.uid!==uid\)\{console\.warn\('Reset was cancelled after account change'/,'Reset failure must not restore another account state');
