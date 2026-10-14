@@ -1,7 +1,7 @@
 const fs=require('node:fs');
 const assert=require('node:assert/strict');
 const html=fs.readFileSync('index.html','utf8');
-assert.match(html,/import \{ guardedSave, CloudSaveConflict \} from '\.\/cloud-save-guard\.mjs'/);
+assert.match(html,/import \{ guardedSave, CloudSaveConflict, createOnlyAccount \} from '\.\/cloud-save-guard\.mjs'/);
 assert.match(html,/import \{ getFirestore, doc, getDoc, setDoc, runTransaction \}/);
 assert.match(html,/const committed=await guardedSave\(/,'Save uses guarded transaction');
 assert.doesNotMatch(html,/await setDoc\(doc\(db,'users',uid\),\{\.\.\.payload/,'Unconditional full-document save is forbidden');
