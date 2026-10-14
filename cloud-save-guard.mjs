@@ -16,3 +16,14 @@ export async function guardedSave({runTransaction,reference,confirmed,next,uid,g
   return payload;
  });
 }
+
+export async function createOnlyAccount({runTransaction,reference,uid,getUid,initialDocument}){
+ if(!uid||reference?.id!==uid||getUid()!==uid)throw new CloudSaveConflict();
+ return runTransaction(async tx=>{
+   if(getUid()!==uid)throw new CloudSaveConflict();
+   const snapshot=await tx.get(reference);
+   if(snapshot.exists()||getUid()!==uid)throw new CloudSaveConflict();
+   tx.set(reference,initialDocument);
+   return initialDocument;
+ });
+}
