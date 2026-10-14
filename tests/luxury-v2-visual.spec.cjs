@@ -66,3 +66,44 @@ test('luxury navigation never injects legacy presentation after load', async ({ 
   await page.waitForTimeout(500);
   expect(await page.evaluate(() => window.__luxuryLeakLog)).toEqual([]);
 });
+
+for (const width of [320, 390, 430]) {
+  test('luxury mobile visual contract at ' + width + 'px', async ({ browser }) => {
+    const context = await browser.newContext({ viewport: { width, height: 844 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true });
+    const page = await context.newPage();
+    const errors = [];
+    page.on('pageerror', e => errors.push(e.message));
+    await page.goto(url, { waitUntil: 'domcontentloaded' });
+    for (const screen of ['today', 'week', 'groceries', 'cook']) {
+      await page.locator('[data-nav="' + screen + '"]').click();
+      await expect(page.locator('[data-page="' + screen + '"]')).toBeVisible();
+      const snapshot = await page.evaluate(() => {
+        const root = getComputedStyle(document.documentElement);
+        const heading = getComputedStyle(document.querySelector('[data-page]:not([hidden]) h1'));
+        const nav = document.querySelector('footer');
+        const navStyle = getComputedStyle(nav);
+        return {
+          rootFont: root.fontFamily,
+          rootBackground: root.backgroundColor,
+          headingFont: heading.fontFamily,
+          navPosition: navStyle.position,
+          navBackground: navStyle.backgroundColor,
+          visiblePages: document.querySelectorAll('[data-page]:not([hidden])').length,
+          overflow: document.documentElement.scrollWidth > innerWidth,
+          stylesheetLinks: document.querySelectorAll('link[rel="stylesheet"]').length
+        };
+      });
+      expect(snapshot.rootFont).toContain('Avenir');
+      expect(snapshot.headingFont).toContain('Georgia');
+      expect(snapshot.rootBackground).toBe('rgb(248, 243, 234)');
+      expect(snapshot.navPosition).toBe('fixed');
+      expect(snapshot.navBackground).toBe('rgb(255, 253, 248)');
+      expect(snapshot.visiblePages).toBe(1);
+      expect(snapshot.overflow).toBe(false);
+      expect(snapshot.stylesheetLinks).toBe(0);
+      await page.screenshot({ path: 'test-results/luxury-' + width + '-' + screen + '.png', fullPage: true });
+    }
+    expect(errors).toEqual([]);
+    await context.close();
+  });
+}
