@@ -22,3 +22,11 @@ assert.equal(writes.length,1,'New account created exactly once');
 writes=[];
 await assert.rejects(createOnlyAccount({runTransaction:async f=>f({get:async()=>({exists:()=>true}),set:()=>writes.push(base)}),reference:fresh.reference,uid:'A',getUid:()=> 'A',initialDocument:base}),CloudSaveConflict);
 assert.equal(writes.length,0,'Registration must not overwrite existing data');
+
+let reset=setup({...base,retiredRecipes:['old'],staleSettings:{hidden:true}});
+reset.confirmed={...base,retiredRecipes:['old'],staleSettings:{hidden:true}};
+await guardedSave({...reset,next:{plan:{},preferences:{},goals:{}},replaceDocument:true});
+assert.deepEqual(reset.writes[0],{plan:{},preferences:{},goals:{}},'Explicit reset removes old fields rather than merging');
+reset=setup({...base,unrelated:'new data'});
+await assert.rejects(guardedSave({...reset,next:{plan:{}},replaceDocument:true}),CloudSaveConflict);
+assert.equal(reset.writes.length,0,'Conflicting reset must not delete newer changes');
