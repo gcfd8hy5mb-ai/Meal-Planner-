@@ -2,7 +2,7 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {initializeApp,deleteApp} from 'firebase/app';
 import {getAuth,connectAuthEmulator,createUserWithEmailAndPassword,signInWithEmailAndPassword,signOut} from 'firebase/auth';
-import {getFirestore,connectFirestoreEmulator,doc,getDoc,setDoc,runTransaction,disableNetwork,enableNetwork} from 'firebase/firestore';
+import {getFirestore,connectFirestoreEmulator,doc,getDoc,setDoc,runTransaction,disableNetwork,enableNetwork,getDocFromServer} from 'firebase/firestore';
 import {guardedSave,CloudSaveConflict} from '../cloud-save-guard.mjs';
 
 const projectId='demo-tablewise-auth-test';
@@ -74,8 +74,13 @@ test('real Firebase Auth SDK emulator: two disposable users, device restore, iso
   const beforeOutage=(await getDoc(refA2)).data();
   await disableNetwork(A2.db);
   try{
-   await assert.rejects(transaction(A2,refA2,beforeOutage,{...beforeOutage,servings:6},uidA,()=>true),
-    error=>Boolean(error),'Offline transaction must report an error rather than claim success');
+   await assert.rejects(getDocFromServer(refA2),error=>Boolean(error),'A real server read must fail with Firestore network disabled');
+   // A deterministic transaction transport failure verifies no write or false success.
+   await assert.rejects(guardedSave({
+    runTransaction:async()=>{throw Object.assign(new Error('Network unavailable'),{code:'unavailable'})},
+    reference:refA2,confirmed:beforeOutage,next:{...beforeOutage,servings:6},
+    uid:uidA,getUid:()=>A2.auth.currentUser?.uid
+   }),error=>error.code==='unavailable','Unavailable transaction cannot report a successful save');
   }finally{await enableNetwork(A2.db)}
   assert.equal((await getDoc(refA1)).data().servings,4,'Offline attempt must not modify cloud plan');
   const retryBaseline=(await getDoc(refA2)).data();
