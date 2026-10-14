@@ -16,3 +16,8 @@ assert.match(html,/const confirmed=await guardedSave\(/,'Fresh-start reset must 
 assert.doesNotMatch(html,/reconciliation\.if\(!state/,'Offline recovery logic must not be swallowed by comments');
 assert.match(html,/err instanceof CloudSaveConflict/,'Cloud conflicts must be visible to user');
 console.log('Production-save migration structural safety checks passed');
+
+assert.match(html,/if\(cloudConflictBlocked\)throw new CloudSaveConflict\(\)/,'Previously observed conflicts must stop later queued writes');
+assert.match(html,/if\(err instanceof CloudSaveConflict\)cloudConflictBlocked=true/,'Conflict state must latch');
+assert.match(html,/if\(recovered\)\{confirmedCloudDocument=null;cloudConflictBlocked=true;\}/,'Recovered draft must block automatic cloud writes');
+assert.match(html,/cloudConflictBlocked=false;state=defaults\(\)/,'Switching accounts must clear previous conflict state');
