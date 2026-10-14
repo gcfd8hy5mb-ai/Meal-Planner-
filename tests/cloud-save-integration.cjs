@@ -27,3 +27,6 @@ assert.match(html,/draftButton.onclick=\(\)=>\{if\(!cloudConflictBlocked\|\|!act
 assert.match(html,/download='tablewise-unsaved-plan-'/,'Conflict backup must be a downloadable file');
 assert.match(html,/if\(err instanceof CloudSaveConflict\)cloudConflictBlocked=true;refreshDraftRecovery\(\)/,'Conflict must expose recovery action');
 assert.match(html,/if\(recovered\)\{confirmedCloudDocument=null;cloudConflictBlocked=true;\}refreshDraftRecovery\(\)/,'Recovered draft must expose recovery action');
+
+assert.match(html,/import \{ serializeUnsavedPlan \} from '\.\/draft-export\.mjs'/,'Backup uses validated serializer');
+assert.match(html,/const backup=serializeUnsavedPlan\(state\)/,'Backup must serialize current unsaved state');
