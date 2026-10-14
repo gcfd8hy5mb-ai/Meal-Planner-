@@ -10,6 +10,7 @@ on:
       - 'tests/luxury-v2-meal-preview.test.mjs'
       - 'tests/luxury-v2-save-guard.test.mjs'
       - 'tests/luxury-v2-save-transaction.test.mjs'
+      - 'tests/luxury-v2-save-flow.test.mjs'
       - 'tests/luxury-v2-cloud-write-gate.cjs'
       - 'tests/luxury-v2-legacy-save.test.mjs'
   push:
@@ -22,6 +23,7 @@ on:
       - 'tests/luxury-v2-meal-preview.test.mjs'
       - 'tests/luxury-v2-save-guard.test.mjs'
       - 'tests/luxury-v2-save-transaction.test.mjs'
+      - 'tests/luxury-v2-save-flow.test.mjs'
       - 'tests/luxury-v2-cloud-write-gate.cjs'
       - 'tests/luxury-v2-legacy-save.test.mjs'
 jobs:
@@ -41,6 +43,8 @@ jobs:
         run: node tests/luxury-v2-save-guard.test.mjs
       - name: Verify isolated transaction safety without live writes
         run: node tests/luxury-v2-save-transaction.test.mjs
+      - name: Verify recoverable staged luxury-save flow
+        run: node tests/luxury-v2-save-flow.test.mjs
       - name: Block cross-version unsafe cloud writes
         run: node tests/luxury-v2-cloud-write-gate.cjs
       - name: Simulate safe original-planner save migration
