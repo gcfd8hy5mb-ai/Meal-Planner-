@@ -1,6 +1,7 @@
 import {readFileSync,existsSync} from 'node:fs';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
+import vm from 'node:vm';
 const html=readFileSync(new URL('../index.html',import.meta.url),'utf8');
 const mapMatch=html.match(/const verifiedRecipePhotos=(\{[^;]+\});const recipePhoto=/);
 assert.ok(mapMatch,'Photo mapping must exist');
@@ -33,4 +34,27 @@ test('Prompt inventory contains five exact batches of 25 unique catalog recipes'
   assert.equal(new Set(inventory.map(r=>r.id)).size,125);
   for(let batch=1;batch<=5;batch++)assert.equal(inventory.filter(r=>r.batch===batch).length,25);
   for(const item of inventory){assert.ok(html.includes('id:'+JSON.stringify(item.id))||html.includes('id:'+"'"+item.id+"'")||html.includes('"id":'+JSON.stringify(item.id)),item.id+' must exist in catalog');assert.equal(item.asset,'assets/meal-photos/'+item.id+'.webp');assert.ok(item.prompt.includes(item.name));for(const [name] of item.ingredients)assert.ok(item.prompt.includes(name),item.id+' missing ingredient '+name);}
+});
+
+test('All 166 built-in recipes have one unique, approved, readable photograph',()=>{
+  const start=html.indexOf('const recipes=')+'const recipes='.length;
+  const first=html.indexOf(';recipes.push(',start);
+  const recipes=vm.runInNewContext(html.slice(start,first));
+  for(const match of html.matchAll(/recipes\.push\(\.\.\.(\[[\s\S]*?\])\);/g))recipes.push(...vm.runInNewContext(match[1]));
+  assert.equal(recipes.length,166);
+  assert.equal(new Set(recipes.map(r=>r.id)).size,166);
+  assert.deepEqual(Object.keys(photos).sort(),Array.from(recipes,r=>r.id).sort());
+  const audit=JSON.parse(readFileSync(new URL('../docs/original-meal-photo-audit.json',import.meta.url),'utf8'));
+  for(const item of audit){
+    if(item.visualVerdict==='pass')assert.equal(photos[item.id],item.url);
+    else assert.equal(photos[item.id],'assets/meal-photos/'+item.id+'.webp');
+  }
+  const inventory=JSON.parse(readFileSync(new URL('../docs/meal-photo-prompts/catalog.json',import.meta.url),'utf8'));
+  for(const item of inventory){
+    const recipe=recipes.find(r=>r.id===item.id);
+    assert.equal(item.status,'accepted');
+    assert.equal(photos[item.id],item.asset);
+    assert.equal(item.name,recipe.name);
+    assert.deepEqual(item.ingredients,JSON.parse(JSON.stringify(recipe.ingredients)),item.id+' ingredients differ from the live recipe');
+  }
 });

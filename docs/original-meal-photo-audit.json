@@ -15,7 +15,9 @@
     "readable": true,
     "visualVerdict": "fail",
     "reason": "Avocado toast includes unlisted leafy garnish; egg and whole-grain bread identity partly obscured.",
-    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit.",
+    "replacementAsset": "assets/meal-photos/eggs.webp",
+    "replacementReview": "Accepted after visual review against the current recipe ingredients."
   },
   {
     "id": "chicken",
@@ -24,7 +26,9 @@
     "readable": true,
     "visualVerdict": "fail",
     "reason": "White sliced protein and egg bowl; no recognizable brown rice and broccoli chicken bowl.",
-    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit.",
+    "replacementAsset": "assets/meal-photos/chicken.webp",
+    "replacementReview": "Accepted after visual review against the current recipe ingredients."
   },
   {
     "id": "frenchtoast",
@@ -42,7 +46,9 @@
     "readable": true,
     "visualVerdict": "fail",
     "reason": "Banana smoothie includes prominent unlisted oats; peanut butter not identifiable.",
-    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit.",
+    "replacementAsset": "assets/meal-photos/smoothie.webp",
+    "replacementReview": "Accepted after visual review against the current recipe ingredients."
   },
   {
     "id": "pancakes",
@@ -51,7 +57,9 @@
     "readable": true,
     "visualVerdict": "fail",
     "reason": "Pancakes have unlisted blueberries and no clearly visible maple syrup.",
-    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit.",
+    "replacementAsset": "assets/meal-photos/pancakes.webp",
+    "replacementReview": "Accepted after visual review against the current recipe ingredients."
   },
   {
     "id": "spaghetti",
@@ -69,7 +77,9 @@
     "readable": true,
     "visualVerdict": "fail",
     "reason": "Mostly chickpeas; defining cucumber, cherry tomatoes and feta not visible.",
-    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit.",
+    "replacementAsset": "assets/meal-photos/salad.webp",
+    "replacementReview": "Accepted after visual review against the current recipe ingredients."
   },
   {
     "id": "tacos",
@@ -87,7 +97,9 @@
     "readable": true,
     "visualVerdict": "fail",
     "reason": "Fried or heavily coated chicken with jalapenos, cheese and sauce; recipe is grilled chicken with mayonnaise.",
-    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit.",
+    "replacementAsset": "assets/meal-photos/sandwich.webp",
+    "replacementReview": "Accepted after visual review against the current recipe ingredients."
   },
   {
     "id": "waffles",
@@ -96,7 +108,9 @@
     "readable": true,
     "visualVerdict": "fail",
     "reason": "Waffles topped with unlisted berries and cream; no maple syrup visible.",
-    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit.",
+    "replacementAsset": "assets/meal-photos/waffles.webp",
+    "replacementReview": "Accepted after visual review against the current recipe ingredients."
   },
   {
     "id": "burrito",
@@ -105,7 +119,9 @@
     "readable": true,
     "visualVerdict": "fail",
     "reason": "Ground-meat burrito instead of breakfast egg, potato and cheddar filling.",
-    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit.",
+    "replacementAsset": "assets/meal-photos/burrito.webp",
+    "replacementReview": "Accepted after visual review against the current recipe ingredients."
   },
   {
     "id": "parfait",
@@ -114,7 +130,9 @@
     "readable": true,
     "visualVerdict": "fail",
     "reason": "Dominant raspberries instead of listed strawberries.",
-    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit.",
+    "replacementAsset": "assets/meal-photos/parfait.webp",
+    "replacementReview": "Accepted after visual review against the current recipe ingredients."
   },
   {
     "id": "yogurt",
@@ -123,7 +141,9 @@
     "readable": true,
     "visualVerdict": "fail",
     "reason": "Drink-like jars with oats/granola instead of plain Greek yogurt and mixed berries.",
-    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit.",
+    "replacementAsset": "assets/meal-photos/yogurt.webp",
+    "replacementReview": "Accepted after visual review against the current recipe ingredients."
   },
   {
     "id": "cereal",
@@ -132,7 +152,9 @@
     "readable": true,
     "visualVerdict": "fail",
     "reason": "Banana oatmeal instead of whole-grain cereal and milk.",
-    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit.",
+    "replacementAsset": "assets/meal-photos/cereal.webp",
+    "replacementReview": "Accepted after visual review against the current recipe ingredients."
   },
   {
     "id": "breakfastsand",
@@ -141,7 +163,9 @@
     "readable": true,
     "visualVerdict": "fail",
     "reason": "Open egg/potato/white-sauce sandwich instead of English muffin, egg, cheddar and turkey.",
-    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit.",
+    "replacementAsset": "assets/meal-photos/breakfastsand.webp",
+    "replacementReview": "Accepted after visual review against the current recipe ingredients."
   },
   {
     "id": "omelet",
@@ -150,7 +174,9 @@
     "readable": true,
     "visualVerdict": "fail",
     "reason": "Open baked egg skillet instead of folded cheese and spinach omelet.",
-    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit.",
+    "replacementAsset": "assets/meal-photos/omelet.webp",
+    "replacementReview": "Accepted after visual review against the current recipe ingredients."
   },
   {
     "id": "scramble",
@@ -159,7 +185,9 @@
     "readable": true,
     "visualVerdict": "fail",
     "reason": "Fried whole eggs and toast instead of scrambled eggs with spinach, peppers and cheddar.",
-    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit.",
+    "replacementAsset": "assets/meal-photos/scramble.webp",
+    "replacementReview": "Accepted after visual review against the current recipe ingredients."
   },
   {
     "id": "nuts",
@@ -177,7 +205,9 @@
     "readable": true,
     "visualVerdict": "fail",
     "reason": "Rice mound without clearly visible defining chicken and scrambled egg.",
-    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit.",
+    "replacementAsset": "assets/meal-photos/friedrice.webp",
+    "replacementReview": "Accepted after visual review against the current recipe ingredients."
   },
   {
     "id": "fajitas",
@@ -186,7 +216,9 @@
     "readable": true,
     "visualVerdict": "fail",
     "reason": "Chicken/pepper plate includes unlisted rice and cream; no defining tortillas visible.",
-    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit.",
+    "replacementAsset": "assets/meal-photos/fajitas.webp",
+    "replacementReview": "Accepted after visual review against the current recipe ingredients."
   },
   {
     "id": "shrimpTacos",
@@ -195,7 +227,9 @@
     "readable": true,
     "visualVerdict": "fail",
     "reason": "Shrimp tacos include prominent avocado and other unlisted toppings.",
-    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit.",
+    "replacementAsset": "assets/meal-photos/shrimpTacos.webp",
+    "replacementReview": "Accepted after visual review against the current recipe ingredients."
   },
   {
     "id": "chickenparm",
@@ -204,7 +238,9 @@
     "readable": true,
     "visualVerdict": "fail",
     "reason": "Breaded cutlet shown but defining pasta not visible; topping resembles cream rather than melted mozzarella.",
-    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit.",
+    "replacementAsset": "assets/meal-photos/chickenparm.webp",
+    "replacementReview": "Accepted after visual review against the current recipe ingredients."
   },
   {
     "id": "soup",
@@ -213,7 +249,9 @@
     "readable": true,
     "visualVerdict": "fail",
     "reason": "Broccoli and other vegetables dominate; defining carrots, celery and noodles not clear.",
-    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit.",
+    "replacementAsset": "assets/meal-photos/soup.webp",
+    "replacementReview": "Accepted after visual review against the current recipe ingredients."
   },
   {
     "id": "beefbroccoli",
@@ -231,7 +269,9 @@
     "readable": true,
     "visualVerdict": "fail",
     "reason": "Orange meat-like filling, not clearly black beans; unlisted guacamole.",
-    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit.",
+    "replacementAsset": "assets/meal-photos/quesadilla.webp",
+    "replacementReview": "Accepted after visual review against the current recipe ingredients."
   },
   {
     "id": "dumpling",
@@ -240,7 +280,9 @@
     "readable": true,
     "visualVerdict": "fail",
     "reason": "Steamed dumplings without defining cabbage and carrot bowl; filling cannot be verified.",
-    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit.",
+    "replacementAsset": "assets/meal-photos/dumpling.webp",
+    "replacementReview": "Accepted after visual review against the current recipe ingredients."
   },
   {
     "id": "salmon",
@@ -249,7 +291,9 @@
     "readable": true,
     "visualVerdict": "fail",
     "reason": "Photo appears to show a different mixed dish, not salmon fillet with sweet potato and green beans.",
-    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit.",
+    "replacementAsset": "assets/meal-photos/salmon.webp",
+    "replacementReview": "Accepted after visual review against the current recipe ingredients."
   },
   {
     "id": "bowlmex",
@@ -258,7 +302,9 @@
     "readable": true,
     "visualVerdict": "fail",
     "reason": "Chicken bowl includes prominent corn, peppers, lime and cream absent from recipe.",
-    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit.",
+    "replacementAsset": "assets/meal-photos/bowlmex.webp",
+    "replacementReview": "Accepted after visual review against the current recipe ingredients."
   },
   {
     "id": "orangeChicken",
@@ -267,7 +313,9 @@
     "readable": true,
     "visualVerdict": "fail",
     "reason": "Heavy battered chicken and peppers differ from unbreaded orange-juice chicken with broccoli.",
-    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit.",
+    "replacementAsset": "assets/meal-photos/orangeChicken.webp",
+    "replacementReview": "Accepted after visual review against the current recipe ingredients."
   },
   {
     "id": "stirfry",
@@ -276,7 +324,9 @@
     "readable": true,
     "visualVerdict": "fail",
     "reason": "Generic sauced stir-fry without defining broccoli and rice presentation.",
-    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit.",
+    "replacementAsset": "assets/meal-photos/stirfry.webp",
+    "replacementReview": "Accepted after visual review against the current recipe ingredients."
   },
   {
     "id": "apple",
@@ -294,7 +344,9 @@
     "readable": true,
     "visualVerdict": "fail",
     "reason": "Handheld filled bread sandwich does not clearly show egg, turkey and cheddar breakfast bagel.",
-    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit.",
+    "replacementAsset": "assets/meal-photos/bagel.webp",
+    "replacementReview": "Accepted after visual review against the current recipe ingredients."
   },
   {
     "id": "enchiladas",
@@ -303,7 +355,9 @@
     "readable": true,
     "visualVerdict": "fail",
     "reason": "Restaurant plate with additional toppings and sides; black bean filling cannot be confirmed.",
-    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit.",
+    "replacementAsset": "assets/meal-photos/enchiladas.webp",
+    "replacementReview": "Accepted after visual review against the current recipe ingredients."
   },
   {
     "id": "teriyaki",
@@ -312,7 +366,9 @@
     "readable": true,
     "visualVerdict": "fail",
     "reason": "Salmon/rice plate lacks broccoli and recognizable teriyaki glaze.",
-    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit.",
+    "replacementAsset": "assets/meal-photos/teriyaki.webp",
+    "replacementReview": "Accepted after visual review against the current recipe ingredients."
   },
   {
     "id": "kungPao",
@@ -321,7 +377,9 @@
     "readable": true,
     "visualVerdict": "fail",
     "reason": "Mixed vegetable rice bowl rather than clearly chicken, bell pepper and peanuts.",
-    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit.",
+    "replacementAsset": "assets/meal-photos/kungPao.webp",
+    "replacementReview": "Accepted after visual review against the current recipe ingredients."
   },
   {
     "id": "thaiBasil",
@@ -330,7 +388,9 @@
     "readable": true,
     "visualVerdict": "fail",
     "reason": "Large unlisted fried egg dominates; ground chicken and basil cannot be confidently confirmed.",
-    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit.",
+    "replacementAsset": "assets/meal-photos/thaiBasil.webp",
+    "replacementReview": "Accepted after visual review against the current recipe ingredients."
   },
   {
     "id": "beefTacos",
@@ -339,7 +399,9 @@
     "readable": true,
     "visualVerdict": "fail",
     "reason": "Prominent unlisted cheese, cilantro and lime; recipe uses lettuce, tomato and salsa.",
-    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit.",
+    "replacementAsset": "assets/meal-photos/beefTacos.webp",
+    "replacementReview": "Accepted after visual review against the current recipe ingredients."
   },
   {
     "id": "chickenEnchilada",
@@ -348,7 +410,9 @@
     "readable": true,
     "visualVerdict": "fail",
     "reason": "Plated stuffed dish appears unlike sauced corn-tortilla chicken enchiladas with Monterey Jack.",
-    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit.",
+    "replacementAsset": "assets/meal-photos/chickenEnchilada.webp",
+    "replacementReview": "Accepted after visual review against the current recipe ingredients."
   },
   {
     "id": "beefBurrito",
@@ -357,7 +421,9 @@
     "readable": true,
     "visualVerdict": "fail",
     "reason": "Burrito includes visible avocado, fries and dip absent from recipe; specified black beans not clear.",
-    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit."
+    "rights": "Existing Unsplash asset; original attribution/licensing provenance not independently verified in this audit.",
+    "replacementAsset": "assets/meal-photos/beefBurrito.webp",
+    "replacementReview": "Accepted after visual review against the current recipe ingredients."
   },
   {
     "id": "loMein",
