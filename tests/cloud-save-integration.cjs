@@ -1,0 +1,14 @@
+const fs=require('node:fs');
+const assert=require('node:assert/strict');
+const html=fs.readFileSync('index.html','utf8');
+assert.match(html,/import \{ guardedSave, CloudSaveConflict \} from '\.\/cloud-save-guard\.mjs'/);
+assert.match(html,/import \{ getFirestore, doc, getDoc, setDoc, runTransaction \}/);
+assert.match(html,/const committed=await guardedSave\(/,'Save uses guarded transaction');
+assert.doesNotMatch(html,/await setDoc\(doc\(db,'users',uid\),\{\.\.\.payload/,'Unconditional full-document save is forbidden');
+assert.match(html,/if\(recovered\)confirmedCloudDocument=null/,'Recovered drafts cannot overwrite cloud silently');
+assert.match(html,/confirmedCloudDocument=snapshot\.data\(\)/,'Last-confirmed cloud snapshot must be initialized');
+assert.match(html,/confirmedCloudDocument=committed/,'Successful writes advance baseline');
+assert.match(html,/confirmedCloudDocument=null;state=defaults\(\)/,'Sign-out clears baseline');
+assert.match(html,/const initialDocument=\{\.\.\.state,custom:'\[\]',onboardingInitialized:true\}/,'New accounts retain explicit registration flow');
+assert.match(html,/err instanceof CloudSaveConflict/,'Cloud conflicts must be visible to user');
+console.log('Production-save migration structural safety checks passed');
