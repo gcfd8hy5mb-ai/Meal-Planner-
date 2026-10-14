@@ -1,0 +1,1 @@
+module.exports = { testDir: './tests', testMatch: '**/luxury-v2-visual.spec.cjs', use: { browserName: 'chromium', viewport: { width: 390, height: 844 }, deviceScaleFactor: 3, isMobile: true, hasTouch: true }, reporter: 'list' };
