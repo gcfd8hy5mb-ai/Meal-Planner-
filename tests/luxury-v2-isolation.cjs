@@ -11,7 +11,10 @@ assert.doesNotMatch(html, /@import|<iframe\b|<object\b|<embed\b/i, 'No embedded 
 assert.doesNotMatch(html, /<script[^>]+src=/i, 'No legacy scripts');
 assert.doesNotMatch(html, /(?:src|href)=["']\.\.\//i, 'No relative imports from legacy app');
 assert.doesNotMatch(html, /\b(primaryNav|navMoreMenu|groceryGroup|mealDialog|recipegrid|foodWeekItem)\b/, 'No legacy layout classes');
-assert.ok(!html.includes(legacy.slice(0, 180)), 'Legacy document must not be duplicated');
+for (const legacyRule of ['.primaryNav{', '.navMoreMenu{', '.recipegrid .card{', '.shoppingHeading{']) {
+ assert.ok(legacy.includes(legacyRule), 'Expected baseline legacy rule is missing: '+legacyRule);
+ assert.ok(!html.includes(legacyRule), 'Legacy CSS leaked into v2: '+legacyRule);
+}
 for (const screen of ['today', 'week', 'groceries', 'cook']) {
  assert.match(html, new RegExp('data-page="'+screen+'"'), screen+' screen missing');
  assert.match(html, new RegExp('data-nav="'+screen+'"'), screen+' nav missing');
