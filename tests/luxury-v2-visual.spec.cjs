@@ -133,3 +133,22 @@ test('network interruption and reload never reveal legacy layout', async ({ brow
   }
   await context.close();
 });
+
+test('Firebase CDN failure retains a luxury-only visible account status', async ({ browser }) => {
+  const context = await browser.newContext({ viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true });
+  const page = await context.newPage();
+  await page.route('https://www.gstatic.com/**', route => route.abort('internetdisconnected'));
+  await page.goto(url, { waitUntil: 'domcontentloaded' });
+  const banner = page.locator('#accountDataStatus');
+  await expect(banner).toBeVisible();
+  await expect(banner).toContainText('Loading your Tablewise plan');
+  await expect(page.locator('#accountDataStatus')).toHaveCount(1);
+  for (const screen of ['today','week','groceries','cook']) {
+    await page.locator('[data-nav="' + screen + '"]').click();
+    await expect(page.locator('[data-page="' + screen + '"]')).toBeVisible();
+    await expect(banner).toBeVisible();
+    expect(await page.evaluate(() => getComputedStyle(document.documentElement).backgroundColor)).toBe('rgb(248, 243, 234)');
+    await page.screenshot({ path: 'test-results/auth-unavailable-' + screen + '.png', fullPage: true });
+  }
+  await context.close();
+});
