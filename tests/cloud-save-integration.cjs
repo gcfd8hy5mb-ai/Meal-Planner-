@@ -37,3 +37,5 @@ assert.match(html,/authEpoch===sessionEpoch&&auth\.currentUser\?\.uid===activeUi
 assert.match(html,/if\(activeUid===uid&&authEpoch===sessionEpoch\)confirmedCloudDocument=committed/,'Old session cannot replace new baseline');
 assert.match(html,/const uid=activeUid,sessionEpoch=authEpoch,previous=state/,'Fresh-start must capture session');
 assert.match(html,/getUid:\(\)=>epoch===authEpoch\?auth\.currentUser\?\.uid:null,initialDocument/,'Account creation must validate current session');
+
+assert.match(html,/next:blank,replaceDocument:true,uid/,'Fresh start must replace the entire verified document');
