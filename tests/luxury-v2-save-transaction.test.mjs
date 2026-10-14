@@ -30,3 +30,10 @@ let switched='athlete-a';
 h=makeHarness();h.getAuthenticatedUid=()=>switched;h.runTransaction=async callback=>callback({get:async()=>{switched='athlete-b';return {exists:()=>true,data:()=>structuredClone(original)}},update:()=>{throw Error('must not update')}});
 await assert.rejects(savePreviewTransaction({...h,documentRef:h.ref,original,preview:{'1-0-2':'beans'}}),/Account changed/);
 console.log('Luxury transaction unit tests passed, with no live Firestore writes');
+
+const withOldOverrides={...structuredClone(original),mealServings:{'0-2':5},dinnerSides:{0:['mashedpotatoes']}};
+h=makeHarness(structuredClone(withOldOverrides));
+await savePreviewTransaction({...h,documentRef:h.ref,original:withOldOverrides,preview:{'1-0-2':'beans'}});
+assert.deepEqual(h.calls[0].fields.mealServings,{},'Transaction clears stale serving override');
+assert.deepEqual(h.calls[0].fields.dinnerSides,{},'Transaction clears stale dinner sides');
+assert.equal(withOldOverrides.mealServings['0-2'],5,'Saved source is not mutated');
