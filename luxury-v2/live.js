@@ -9,7 +9,7 @@ const firebaseConfig={apiKey:'AIzaSyBETYaxuDmBR6_dNDCu62d_ciDph3AqKjI',authDomai
 const firebase=initializeApp(firebaseConfig);
 const auth=getAuth(firebase),db=getFirestore(firebase);
 const baseRecipes=new Map(recipes.map(r=>[r.id,r]));
-let account=null,liveWeek=1,currentRecipe=null,step=0,authEpoch=0;
+let account=null,liveWeek=1,currentRecipe=null,step=0,authEpoch=0,groceryWeek='both';
 const previewNotice=document.getElementById('accountDataStatus');
 if (!previewNotice) throw new Error('Luxury v2 account status boundary missing');
 previewNotice.textContent='Checking your account. This preview never changes your saved data.';
@@ -33,10 +33,10 @@ const renderIngredients=(scope='plan')=>{
  if (!account) {intro.textContent='Sign in to view grocery quantities from your saved plan.';heading.textContent='No saved plan loaded';host.append(intro);return}
  const rows=scope==='recipe'&&currentRecipe
    ? (currentRecipe.ingredients||[]).map(([name,quantity,unit])=>({name,quantity,unit}))
-   : groceryTotals(account,findRecipe,[1,2]);
+   : groceryTotals(account,findRecipe,groceryWeek==='both'?[1,2]:[Number(groceryWeek)]);
  intro.textContent=scope==='recipe'&&currentRecipe
    ? 'Measured ingredients for '+currentRecipe.name+'. Quantities are for the base recipe.'
-   : 'Combined ingredients for Week 1 and Week 2, including saved dinner sides. Read-only preview.';
+   : (groceryWeek==='both'?'Both weeks':('Week '+groceryWeek))+' · Saved meal ingredients and dinner sides. Read-only preview.';
  host.append(intro);
  heading.textContent=rows.length+' ingredients';
  if (!rows.length){const empty=document.createElement('p');empty.className='notice';empty.textContent='No planned recipe ingredients found.';host.append(empty);return}
@@ -46,5 +46,10 @@ document.querySelector('#previousStep').onclick=()=>{step=Math.max(0,step-1);sho
 document.querySelector('#nextStep').onclick=()=>{if(step+1>=(currentRecipe?.steps?.length||0)){showPage('today');return}step++;showCookStep()};
 document.querySelector('.full').onclick=()=>{renderIngredients('recipe');showPage('groceries')};
 document.querySelectorAll('[data-nav="groceries"]').forEach(b=>b.addEventListener('click',()=>renderIngredients()));
+document.querySelectorAll('[data-grocery-week]').forEach(b=>b.addEventListener('click',()=>{
+  groceryWeek=b.dataset.groceryWeek;
+  document.querySelectorAll('[data-grocery-week]').forEach(x=>{const active=x===b;x.classList.toggle('active',active);x.setAttribute('aria-pressed',String(active))});
+  renderIngredients();
+}));
 document.querySelectorAll('[data-week]').forEach(b=>b.addEventListener('click',()=>{if(account)renderWeek(b.dataset.week)}));
 onAuthStateChanged(auth,async user=>{const epoch=++authEpoch;account=null;if(!user){label('Read-only preview. Sign in to Tablewise in this browser first, then return here to see your saved meals.');return}label('Loading your saved plan securely…');try{const snapshot=await getDoc(doc(db,'users',user.uid));if(epoch!==authEpoch)return;if(!snapshot.exists()){label('Your saved cloud plan was not found. Nothing has been modified. Your account needs recovery before this preview can display saved meals.');return}account=snapshot.data();if(!account.preferences){label('Your saved preferences need recovery. No data has been changed.');return}label('Connected to your saved Tablewise plan — read-only preview. Editing is not available in this preview.');liveWeek=account.activePlanningWeek===2?2:1;document.querySelectorAll('[data-week]').forEach(b=>b.classList.toggle('active',Number(b.dataset.week)===liveWeek));setHero();renderWeek(liveWeek);const weekHint=document.querySelector('[data-page="week"]>.muted');if(weekHint)weekHint.textContent='Your saved dinners. Recipe viewing is available; editing is not yet available in luxury v2.';const meals=document.querySelectorAll('.simple .meal-row');for(let i=0;i<meals.length;i++){const recipe=dayMeal(liveWeek,new Date().getDay(),i);const small=meals[i].querySelector('small');if(small)small.textContent=recipe?.name||'Not planned';meals[i].onclick=()=>recipe?openRecipe(recipe):showPage('week')}renderIngredients()}catch(error){if(epoch!==authEpoch)return;label('Could not read your saved plan. No changes were made. Check your connection and try again.');console.error('Luxury preview read failed',error)}});
