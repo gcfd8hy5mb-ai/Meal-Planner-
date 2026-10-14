@@ -9,6 +9,7 @@ on:
       - 'tests/luxury-v2-checklist.test.mjs'
       - 'tests/luxury-v2-meal-preview.test.mjs'
       - 'tests/luxury-v2-save-guard.test.mjs'
+      - 'tests/luxury-v2-save-transaction.test.mjs'
   push:
     paths:
       - 'luxury-v2/**'
@@ -18,6 +19,7 @@ on:
       - 'tests/luxury-v2-checklist.test.mjs'
       - 'tests/luxury-v2-meal-preview.test.mjs'
       - 'tests/luxury-v2-save-guard.test.mjs'
+      - 'tests/luxury-v2-save-transaction.test.mjs'
 jobs:
   no-legacy-leak:
     runs-on: ubuntu-latest
@@ -33,6 +35,8 @@ jobs:
         run: node tests/luxury-v2-meal-preview.test.mjs
       - name: Reject conflicting concurrent cloud plan changes
         run: node tests/luxury-v2-save-guard.test.mjs
+      - name: Verify isolated transaction safety without live writes
+        run: node tests/luxury-v2-save-transaction.test.mjs
       - name: Verify isolated JavaScript module syntax
         run: |
           node --input-type=module --check < luxury-v2/live.js
