@@ -30,3 +30,35 @@ assert.deepEqual(reset.writes[0],{plan:{},preferences:{},goals:{}},'Explicit res
 reset=setup({...base,unrelated:'new data'});
 await assert.rejects(guardedSave({...reset,next:{plan:{}},replaceDocument:true}),CloudSaveConflict);
 assert.equal(reset.writes.length,0,'Conflicting reset must not delete newer changes');
+
+let network=setup();
+network.runTransaction=async()=>{throw new Error('network-unavailable')};
+await assert.rejects(guardedSave(network),/network-unavailable/);
+assert.equal(network.writes.length,0,'Network failure cannot pretend that a transaction committed');
+network=setup();
+let account='A';
+network.getUid=()=>account;
+network.runTransaction=async callback=>callback({
+ get:async()=>{account='B';return {exists:()=>true,data:()=>structuredClone(base)}},
+ set:()=>{throw Error('A transaction after account switch must not write')}
+});
+await assert.rejects(guardedSave(network),CloudSaveConflict);
+assert.equal(network.writes.length,0,'Account switch during transaction rejects write');
+network=setup();
+account='A';
+network.getUid=()=>account;
+network.runTransaction=async callback=>callback({
+ get:async()=>({exists:()=>true,data:()=>structuredClone(base)}),
+ set:()=>{account='B';throw Error('Session revoked before simulated commit')}
+});
+await assert.rejects(guardedSave(network),/Session revoked/);
+network=setup();
+let attempts=0;
+network.runTransaction=async callback=>{
+ if(++attempts===1)throw Error('connection dropped');
+ return callback({get:async()=>({exists:()=>true,data:()=>structuredClone(base)}),set:(ref,payload)=>network.writes.push(payload)});
+};
+await assert.rejects(guardedSave(network),/connection dropped/);
+assert.equal(network.writes.length,0,'Interrupted save has no false write');
+await guardedSave(network);
+assert.equal(network.writes.length,1,'Explicit retry after transient failure commits one verified write');
