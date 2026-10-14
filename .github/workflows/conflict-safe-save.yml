@@ -6,6 +6,8 @@ on:
       - 'cloud-save-guard.mjs'
       - 'tests/cloud-save-guard.test.mjs'
       - 'tests/cloud-save-concurrency.test.mjs'
+      - 'draft-export.mjs'
+      - 'tests/draft-export.test.mjs'
       - 'tests/cloud-save-integration.cjs'
       - '.github/workflows/conflict-safe-save.yml'
   pull_request:
@@ -14,6 +16,8 @@ on:
       - 'cloud-save-guard.mjs'
       - 'tests/cloud-save-guard.test.mjs'
       - 'tests/cloud-save-concurrency.test.mjs'
+      - 'draft-export.mjs'
+      - 'tests/draft-export.test.mjs'
       - 'tests/cloud-save-integration.cjs'
       - '.github/workflows/conflict-safe-save.yml'
 jobs:
@@ -25,6 +29,8 @@ jobs:
         run: node tests/cloud-save-guard.test.mjs
       - name: Simulate two simultaneous account saves
         run: node tests/cloud-save-concurrency.test.mjs
+      - name: Verify unsaved-plan backup completeness
+        run: node tests/draft-export.test.mjs
       - name: Verify planner wiring without live account access
         run: node tests/cloud-save-integration.cjs
       - name: Parse safe-save module
