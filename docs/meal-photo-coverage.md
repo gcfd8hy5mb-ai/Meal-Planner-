@@ -1,6 +1,6 @@
 # Tablewise meal image coverage
 
-Catalog entries: 166. Original missing-photo set: 125. Generated and accepted: 25. Current mappings: 33.
+Catalog entries: 166. Original missing-photo set: 125. Generated and accepted: 50. Current mappings: 58.
 
 Photography: built-in AI image generation, recipe-specific prompts, dark cinematic restaurant lighting. Files: 960 × 640 WebP, quality 82, each under 150 KiB. Original-photo visual audit is in [original-meal-photo-audit.md](original-meal-photo-audit.md). Failed original mappings use the existing labeled fallback.
 
@@ -9,38 +9,13 @@ Photography: built-in AI image generation, recipe-specific prompts, dark cinemat
 | Batch | Accepted | Total |
 |---|---:|---:|
 | 1 | 25 | 25 |
-| 2 | 0 | 25 |
+| 2 | 25 | 25 |
 | 3 | 0 | 25 |
 | 4 | 0 | 25 |
 | 5 | 0 | 25 |
 
 ## Pending original missing-photo IDs
 
-- `southRanchChicken`
-- `southBbqChicken`
-- `southTendersGravy`
-- `southBeefTips`
-- `southSalisbury`
-- `southMeatloaf`
-- `southHamburgerSteak`
-- `southCubeSteak`
-- `southPotRoast`
-- `southMississippiRoast`
-- `southBeefStew`
-- `southGroundBeefGravy`
-- `southHamburgerPotato`
-- `southCowboyCass`
-- `southSloppyJoe`
-- `southBaconBurger`
-- `southTacoCass`
-- `southTacoSoup`
-- `southBakedSpaghetti`
-- `southLasagna`
-- `southGoulash`
-- `southSausagePotato`
-- `southRedBeans`
-- `southJambalaya`
-- `southDirtyRice`
 - `southShrimpGrits`
 - `southFriedCatfish`
 - `southBlackenedCatfish`
