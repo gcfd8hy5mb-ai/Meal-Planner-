@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import {guardedSave,CloudSaveConflict,canonical} from '../cloud-save-guard.mjs';
+import {guardedSave,CloudSaveConflict,canonical,createOnlyAccount} from '../cloud-save-guard.mjs';
 const base={plan:{0:[null,null,'rice',null]},custom:'[]',preferences:{food:'all'},servings:2};
 function setup(current=structuredClone(base),u='A'){
  const writes=[];const reference={id:'A'};
@@ -13,3 +13,12 @@ for(const changed of [{...base,plan:{}},{...base,custom:'[1]'},{...base,preferen
 a=setup(structuredClone(base),'B');await assert.rejects(guardedSave(a),CloudSaveConflict);assert.equal(a.writes.length,0);
 a=setup();a.confirmed=null;await assert.rejects(guardedSave(a),CloudSaveConflict);
 console.log('Production-plan guarded-save simulations passed without cloud writes');
+
+let fresh=setup(null);
+let writes=[];
+let created=await createOnlyAccount({runTransaction:async f=>f({get:async()=>({exists:()=>false}),set:(ref,value)=>writes.push(value)}),reference:fresh.reference,uid:'A',getUid:()=> 'A',initialDocument:base});
+assert.equal(created.servings,2);
+assert.equal(writes.length,1,'New account created exactly once');
+writes=[];
+await assert.rejects(createOnlyAccount({runTransaction:async f=>f({get:async()=>({exists:()=>true}),set:()=>writes.push(base)}),reference:fresh.reference,uid:'A',getUid:()=> 'A',initialDocument:base}),CloudSaveConflict);
+assert.equal(writes.length,0,'Registration must not overwrite existing data');
