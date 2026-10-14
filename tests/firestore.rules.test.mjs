@@ -160,8 +160,9 @@ test('emulator: A to B to A switching rejects stale session and preserves both p
    confirmed:originalA,next:{...originalA,plan:{'0':['stale']}},
    uid:'switch-owner-A',getUid:()=>session===capturedSession?active:null}),CloudSaveConflict,
    'Old A session cannot write even when account A is active again');
- await Promise.allSettled([oldA]);
+ await assert.rejects(oldA,CloudSaveConflict,'In-flight A save must fail when the session changes');
  const currentA=(await getDoc(referenceA)).data();
+ assert.equal(currentA.plan['0'][0],'tacos','A data is unchanged by cancelled old-session save');
  const updated=await guardedSave({runTransaction:cb=>runTransaction(first,cb),reference:referenceA,
    confirmed:currentA,next:{...currentA,servings:4},uid:'switch-owner-A',getUid:()=>active});
  assert.equal(updated.servings,4,'New A session can write with fresh baseline');
