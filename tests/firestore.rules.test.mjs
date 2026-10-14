@@ -133,3 +133,38 @@ test('emulator: Start Fresh fully replaces old fields but refuses a stale reset'
  const result=(await getDoc(ref)).data();
  assert.deepEqual(result,{plan:{},preferences:{},goals:{},custom:'[]'},'Reset must remove all leftover fields');
 });
+
+test('emulator: A to B to A switching rejects stale session and preserves both plans',async()=>{
+ const first=env.authenticatedContext('switch-owner-A').firestore();
+ const second=env.authenticatedContext('switch-owner-B').firestore();
+ const referenceA=doc(first,'users/switch-owner-A');
+ const referenceB=doc(second,'users/switch-owner-B');
+ const originalA={plan:{'0':['tacos']},preferences:{style:'Mexican'},goals:{cal:2200},custom:'[]'};
+ const originalB={plan:{'0':['sushi']},preferences:{style:'Asian'},goals:{cal:1800},custom:'[]'};
+ await setDoc(referenceA,originalA);
+ await setDoc(referenceB,originalB);
+ let session=1,active='switch-owner-A';
+ const capturedSession=session;
+ const oldA=guardedSave({runTransaction:cb=>runTransaction(first,cb),reference:referenceA,
+  confirmed:originalA,next:{...originalA,plan:{'0':['old-write']}},
+  uid:'switch-owner-A',getUid:()=>session===capturedSession?active:null});
+ // Session switches before the queued save is guaranteed to commit: subsequent stale saves must fail.
+ active='switch-owner-B';session++;
+ const baselineB=(await getDoc(referenceB)).data();
+ const b=await guardedSave({runTransaction:cb=>runTransaction(second,cb),reference:referenceB,
+  confirmed:baselineB,next:{...baselineB,plan:{'0':['ramen']}},
+  uid:'switch-owner-B',getUid:()=>active});
+ assert.equal(b.plan['0'][0],'ramen');
+ active='switch-owner-A';session++;
+ await assert.rejects(guardedSave({runTransaction:cb=>runTransaction(first,cb),reference:referenceA,
+   confirmed:originalA,next:{...originalA,plan:{'0':['stale']}},
+   uid:'switch-owner-A',getUid:()=>session===capturedSession?active:null}),CloudSaveConflict,
+   'Old A session cannot write even when account A is active again');
+ await Promise.allSettled([oldA]);
+ const currentA=(await getDoc(referenceA)).data();
+ const updated=await guardedSave({runTransaction:cb=>runTransaction(first,cb),reference:referenceA,
+   confirmed:currentA,next:{...currentA,servings:4},uid:'switch-owner-A',getUid:()=>active});
+ assert.equal(updated.servings,4,'New A session can write with fresh baseline');
+ assert.equal((await getDoc(referenceB)).data().plan['0'][0],'ramen','B session remains isolated');
+ await assertFails(getDoc(doc(second,'users/switch-owner-A')),'B may not read A after switching');
+});
