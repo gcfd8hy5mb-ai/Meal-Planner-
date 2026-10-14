@@ -41,3 +41,12 @@ assert.match(html, /Sign in to view your saved two-week plan/, 'Signed-out week 
 assert.doesNotMatch(html, /const groceryDemo\s*=|const cookSteps\s*=|const demoMeals\s*=/, 'No hard-coded demo food data');
 assert.doesNotMatch(html, /Preview recipe · 4 servings|Creamy Garlic Chicken<\/h2>/, 'No pretend saved meal in the hero');
 assert.match(html, /No recipe selected/, 'Cook page must have a truthful empty state');
+
+// Account isolation: clear previous person's private content before asynchronous account loading.
+assert.match(luxuryAdapter, /const resetPrivateView=\(\)=>/, 'Explicit account-view reset is required');
+assert.match(luxuryAdapter, /onAuthStateChanged\(auth,async user=>\{const epoch=\+\+authEpoch;resetPrivateView\(\)/, 'Reset must run at the start of every auth transition');
+for(const privateRegion of ["#days",".hero-copy h2",".hero-photo",".cook-photo","#cookStepBody","#luxuryMealChoices",".simple .meal-row","#groceryItems"]){
+ assert.ok(luxuryAdapter.includes(privateRegion), 'Missing private region scrub: '+privateRegion);
+}
+assert.match(luxuryAdapter, /currentRecipe=null;step=0;previewEdits=\{\}/, 'Recipe and preview data must be discarded during account switching');
+assert.match(luxuryAdapter, /if\(!loaded.preferences\)[\s\S]*return\}account=loaded;accountUid=user.uid/, 'Only valid saved account data may become visible');
