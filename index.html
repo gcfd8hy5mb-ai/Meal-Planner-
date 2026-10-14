@@ -401,17 +401,21 @@ function scheduleRecipe(id){const recipe=getR(id);if(!recipe)return;dialogTitle.
 const cookFractions={'¼':0.25,'½':0.5,'¾':0.75,'⅓':1/3,'⅔':2/3,'⅛':0.125,'⅜':0.375,'⅝':0.625,'⅞':0.875,'⅖':0.4,'⅗':0.6,'⅕':0.2};
 function scaleCookInstruction(instruction,count){
  if(count===1)return instruction;
- const quantity=/(?<![\w\d.-])(\d+(?:\.\d+)?(?:\s*[¼½¾⅓⅔⅛⅜⅝⅞⅖⅗⅕])?|[¼½¾⅓⅔⅛⅜⅝⅞⅖⅗⅕])\s+(cups?|tablespoons?|tbsp|teaspoons?|tsp|ounces?|oz|cloves?|slices?|eggs?|tortillas?|potatoes?|peppers?|carrots?|onions?|biscuits?|buns?)\b/gi;
+ // Match mixed numbers and slash fractions atomically; never scale the denominator alone.
+ const quantity=/(?<![\w./-])((?:\d+(?:\.\d+)?\s+)?\d+\/\d+|\d+(?:\.\d+)?(?:\s*[¼½¾⅓⅔⅛⅜⅝⅞⅖⅗⅕])?|[¼½¾⅓⅔⅛⅜⅝⅞⅖⅗⅕])\s+(cups?|tablespoons?|tbsp|teaspoons?|tsp|ounces?|oz|cloves?|slices?|eggs?|tortillas?|potatoes?|peppers?|carrots?|onions?|biscuits?|buns?)\b/gi;
  const value=str=>{
   let n=0;
-  const ascii=str.match(/\d+(?:\.\d+)?/);
-  if(ascii)n=Number(ascii[0]);
-  for(const c of str)if(cookFractions[c]!==undefined)n+=cookFractions[c];
+  for(const token of str.trim().split(/\s+/)){
+   if(token.includes('/')){const [a,b]=token.split('/').map(Number);if(!b)return NaN;n+=a/b;continue}
+   const decimal=token.match(/^\d+(?:\.\d+)?/);
+   if(decimal)n+=Number(decimal[0]);
+   for(const c of token)if(cookFractions[c]!==undefined)n+=cookFractions[c];
+  }
   return n;
  };
  return instruction.replace(quantity,(match,amount,unit)=>{
   const n=value(amount)*count;
-  return fmt(n)+' '+unit;
+  return Number.isFinite(n)?fmt(n)+' '+unit:match;
  });
 }
 function details(id,plannedDay,plannedSlot){
