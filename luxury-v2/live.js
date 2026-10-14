@@ -1,15 +1,16 @@
-// Read-only luxury v2 data adapter. Never writes to Firestore or local storage.
+// Luxury v2 adapter: cloud account/plan data is read-only; grocery checks stay local to this browser.
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js';
 import { getAuth, onAuthStateChanged } from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js';
 import { getFirestore, getDoc, doc } from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js';
 import { recipes, verifiedRecipePhotos } from './catalog.js';
 import { groceryTotals } from './groceries.mjs';
+import {groceryKey,readChecklist,saveChecklist} from './checklist.mjs';
 
 const firebaseConfig={apiKey:'AIzaSyBETYaxuDmBR6_dNDCu62d_ciDph3AqKjI',authDomain:'meal-planner-a478e.firebaseapp.com',projectId:'meal-planner-a478e',storageBucket:'meal-planner-a478e.firebasestorage.app',messagingSenderId:'695296765702',appId:'1:695296765702:web:bfd3f88f4253c56038b887'};
 const firebase=initializeApp(firebaseConfig);
 const auth=getAuth(firebase),db=getFirestore(firebase);
 const baseRecipes=new Map(recipes.map(r=>[r.id,r]));
-let account=null,liveWeek=1,currentRecipe=null,step=0,authEpoch=0,groceryWeek='both';
+let account=null,accountUid=null,liveWeek=1,currentRecipe=null,step=0,authEpoch=0,groceryWeek='both';
 const previewNotice=document.getElementById('accountDataStatus');
 if (!previewNotice) throw new Error('Luxury v2 account status boundary missing');
 previewNotice.textContent='Checking your account. This preview never changes your saved data.';
@@ -28,19 +29,37 @@ const renderIngredients=(scope='plan')=>{
  const host=document.querySelector('#groceryItems');if(!host)return;
  host.replaceChildren();
  const heading=document.querySelector('#groceryCount');
- const clear=document.querySelector('#clearGroceries');clear.hidden=true;
+ const clear=document.querySelector('#clearGroceries');
+ clear.hidden=true;
  const intro=document.createElement('p');intro.className='notice';
- if (!account) {intro.textContent='Sign in to view grocery quantities from your saved plan.';heading.textContent='No saved plan loaded';host.append(intro);return}
- const rows=scope==='recipe'&&currentRecipe
+ if (!account || !accountUid) {intro.textContent='Sign in to view grocery quantities from your saved plan.';heading.textContent='No saved plan loaded';host.append(intro);return}
+ const recipeOnly=scope==='recipe'&&currentRecipe;
+ const rows=recipeOnly
    ? (currentRecipe.ingredients||[]).map(([name,quantity,unit])=>({name,quantity,unit}))
    : groceryTotals(account,findRecipe,groceryWeek==='both'?[1,2]:[Number(groceryWeek)]);
- intro.textContent=scope==='recipe'&&currentRecipe
+ intro.textContent=recipeOnly
    ? 'Measured ingredients for '+currentRecipe.name+'. Quantities are for the base recipe.'
-   : (groceryWeek==='both'?'Both weeks':('Week '+groceryWeek))+' · Saved meal ingredients and dinner sides. Read-only preview.';
+   : (groceryWeek==='both'?'Both weeks':('Week '+groceryWeek))+' · Grocery checks stay on this device, not synced to your account.';
  host.append(intro);
- heading.textContent=rows.length+' ingredients';
- if (!rows.length){const empty=document.createElement('p');empty.className='notice';empty.textContent='No planned recipe ingredients found.';host.append(empty);return}
- for(const item of rows){const row=document.createElement('div');row.className='grocery-item';row.textContent=item.name+' — '+formatAmount(item.quantity,item.unit);host.append(row)}
+ if (!rows.length){heading.textContent='0 ingredients';const empty=document.createElement('p');empty.className='notice';empty.textContent='No planned recipe ingredients found.';host.append(empty);return}
+ if(recipeOnly){heading.textContent=rows.length+' recipe ingredients';for(const item of rows){const row=document.createElement('div');row.className='grocery-item';row.textContent=item.name+' — '+formatAmount(item.quantity,item.unit);host.append(row)}return}
+ const scopeKey=groceryWeek;
+ const checks=readChecklist(localStorage,accountUid,scopeKey,rows);
+ const updateHeading=()=>{heading.textContent=Object.values(checks).filter(Boolean).length+' of '+rows.length+' checked'};
+ const persist=()=>saveChecklist(localStorage,accountUid,scopeKey,rows,checks);
+ for(const item of rows){
+   const key=groceryKey(item);
+   const row=document.createElement('button');row.type='button';row.className='grocery-item';
+   row.setAttribute('aria-pressed',String(!!checks[key]));
+   const marker=document.createElement('span'),caption=document.createElement('span');
+   marker.setAttribute('aria-hidden','true');caption.textContent=item.name+' — '+formatAmount(item.quantity,item.unit);
+   const paint=()=>{row.classList.toggle('checked',!!checks[key]);row.setAttribute('aria-pressed',String(!!checks[key]));marker.textContent=checks[key]?'☑':'□'};
+   row.addEventListener('click',()=>{checks[key]=!checks[key];if(!persist())label('Grocery checks could not be saved on this device. Your cloud plan was not changed.');paint();updateHeading()});
+   paint();row.append(marker,caption);host.append(row);
+ }
+ clear.hidden=false;clear.textContent='Uncheck all';
+ clear.onclick=()=>{for(const key of Object.keys(checks))delete checks[key];if(!persist())label('Grocery checks could not be saved on this device.');renderIngredients()};
+ updateHeading();
 };
 document.querySelector('#previousStep').onclick=()=>{step=Math.max(0,step-1);showCookStep()};
 document.querySelector('#nextStep').onclick=()=>{if(step+1>=(currentRecipe?.steps?.length||0)){showPage('today');return}step++;showCookStep()};
@@ -52,4 +71,4 @@ document.querySelectorAll('[data-grocery-week]').forEach(b=>b.addEventListener('
   renderIngredients();
 }));
 document.querySelectorAll('[data-week]').forEach(b=>b.addEventListener('click',()=>{if(account)renderWeek(b.dataset.week)}));
-onAuthStateChanged(auth,async user=>{const epoch=++authEpoch;account=null;if(!user){label('Read-only preview. Sign in to Tablewise in this browser first, then return here to see your saved meals.');return}label('Loading your saved plan securely…');try{const snapshot=await getDoc(doc(db,'users',user.uid));if(epoch!==authEpoch)return;if(!snapshot.exists()){label('Your saved cloud plan was not found. Nothing has been modified. Your account needs recovery before this preview can display saved meals.');return}account=snapshot.data();if(!account.preferences){label('Your saved preferences need recovery. No data has been changed.');return}label('Connected to your saved Tablewise plan — read-only preview. Editing is not available in this preview.');liveWeek=account.activePlanningWeek===2?2:1;document.querySelectorAll('[data-week]').forEach(b=>b.classList.toggle('active',Number(b.dataset.week)===liveWeek));setHero();renderWeek(liveWeek);const weekHint=document.querySelector('[data-page="week"]>.muted');if(weekHint)weekHint.textContent='Your saved dinners. Recipe viewing is available; editing is not yet available in luxury v2.';const meals=document.querySelectorAll('.simple .meal-row');for(let i=0;i<meals.length;i++){const recipe=dayMeal(liveWeek,new Date().getDay(),i);const small=meals[i].querySelector('small');if(small)small.textContent=recipe?.name||'Not planned';meals[i].onclick=()=>recipe?openRecipe(recipe):showPage('week')}renderIngredients()}catch(error){if(epoch!==authEpoch)return;label('Could not read your saved plan. No changes were made. Check your connection and try again.');console.error('Luxury preview read failed',error)}});
+onAuthStateChanged(auth,async user=>{const epoch=++authEpoch;account=null;accountUid=null;renderIngredients();if(!user){label('Read-only preview. Sign in to Tablewise in this browser first, then return here to see your saved meals.');return}label('Loading your saved plan securely…');try{const snapshot=await getDoc(doc(db,'users',user.uid));if(epoch!==authEpoch)return;if(!snapshot.exists()){label('Your saved cloud plan was not found. Nothing has been modified. Your account needs recovery before this preview can display saved meals.');return}account=snapshot.data();accountUid=user.uid;if(!account.preferences){label('Your saved preferences need recovery. No data has been changed.');return}label('Connected to your saved Tablewise plan — read-only preview. Editing is not available in this preview.');liveWeek=account.activePlanningWeek===2?2:1;document.querySelectorAll('[data-week]').forEach(b=>b.classList.toggle('active',Number(b.dataset.week)===liveWeek));setHero();renderWeek(liveWeek);const weekHint=document.querySelector('[data-page="week"]>.muted');if(weekHint)weekHint.textContent='Your saved dinners. Recipe viewing is available; editing is not yet available in luxury v2.';const meals=document.querySelectorAll('.simple .meal-row');for(let i=0;i<meals.length;i++){const recipe=dayMeal(liveWeek,new Date().getDay(),i);const small=meals[i].querySelector('small');if(small)small.textContent=recipe?.name||'Not planned';meals[i].onclick=()=>recipe?openRecipe(recipe):showPage('week')}renderIngredients()}catch(error){if(epoch!==authEpoch)return;label('Could not read your saved plan. No changes were made. Check your connection and try again.');console.error('Luxury preview read failed',error)}});
