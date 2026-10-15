@@ -6,7 +6,7 @@ import { recipes, verifiedRecipePhotos } from './catalog.js';
 import { groceryTotals } from './groceries.mjs';
 import {groceryKey,readChecklist,saveChecklist} from './checklist.mjs';
 import {replacePreviewMeal,previewAccount,hasPreviewEdits} from './meal-preview.mjs';
-import {readPendingLuxuryDraft,commitLuxuryPreview} from './save-flow.mjs';
+import {readPendingLuxuryDraft,commitLuxuryPreview,classifyLuxuryRecovery} from './save-flow.mjs';
 
 const firebaseConfig={apiKey:'AIzaSyBETYaxuDmBR6_dNDCu62d_ciDph3AqKjI',authDomain:'meal-planner-a478e.firebaseapp.com',projectId:'meal-planner-a478e',storageBucket:'meal-planner-a478e.firebasestorage.app',messagingSenderId:'695296765702',appId:'1:695296765702:web:bfd3f88f4253c56038b887'};
 const firebase=initializeApp(firebaseConfig);
@@ -76,7 +76,17 @@ const refreshRecovered=()=>{
  const area=document.querySelector('#luxuryRecoverActions');
  if(!accountUid){area.hidden=true;return}
  try{const backup=readPendingLuxuryDraft(localStorage,accountUid);area.hidden=!backup;
- if(backup)document.querySelector('#luxuryRecoverStatus').textContent=backup.unreadable?'A previous draft is unreadable. Cloud saving is blocked.':'An earlier draft remains on this device. Export it before proceeding.'}
+ if(backup){
+  const recovery=classifyLuxuryRecovery(backup,account,accountUid);
+  const copy={
+   'already-saved':'These edits appear to be saved in the cloud, but their device backup remains. Export before clearing.',
+   'unsaved':'An earlier meal change was not saved. Export your draft before deciding how to proceed.',
+   'conflict':'Another device changed the saved plan. Export your draft; automatic overwrite is blocked.',
+   'cloud-missing':'Cloud data was not found. Export the device draft; do not overwrite cloud data.',
+   'unreadable':'A previous draft is unreadable or belongs to another account. Cloud saving is blocked.'
+  };
+  document.querySelector('#luxuryRecoverStatus').textContent=copy[recovery.status]||'Review or export this device draft.';
+ }}
  catch{area.hidden=false;document.querySelector('#luxuryRecoverStatus').textContent='Device storage is unavailable. Do not assume unsaved data is safe.'}
 };
 document.querySelector('#discardLuxuryEdits').onclick=()=>{previewEdits={};refreshDiscard();document.querySelector('#luxuryMealPicker').hidden=true;renderWeek(liveWeek);setHero();renderIngredients();label('Preview discarded. Your saved meals are unchanged.')};
