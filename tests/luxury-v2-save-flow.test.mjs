@@ -50,3 +50,13 @@ assert.equal(classifyLuxuryRecovery(pending,{...original,plan:{0:[null,null,'ram
 assert.equal(classifyLuxuryRecovery(pending,null,uid).status,'cloud-missing');
 assert.equal(classifyLuxuryRecovery({...pending,uid:'different'},original,uid).status,'unreadable');
 assert.equal(classifyLuxuryRecovery({version:0,uid,unreadable:true},original,uid).status,'unreadable');
+
+h=harness();
+r=await commitLuxuryPreview({...h,retainBackupUntilVerified:true});
+assert.equal(r.awaitingServerVerification,true,'Transaction success alone cannot clear recovery data');
+assert.equal(r.confirmed,false);
+assert.ok(readPendingLuxuryDraft(h.storage,uid),'Backup survives before server verification');
+assert.equal(classifyLuxuryRecovery(readPendingLuxuryDraft(h.storage,uid),previewAccount(original,preview),uid).status,'already-saved');
+h.storage.removeItem(pendingKey(uid));
+assert.equal(readPendingLuxuryDraft(h.storage,uid),null,'Explicit cleanup occurs only after verification');
+console.log('Luxury server-verification backup retention passed');
