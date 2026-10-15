@@ -19,7 +19,8 @@ assert.match(live,/getAuthenticatedUid:\(\)=>authEpoch===epoch/,'Save must check
 assert.match(live,/runTransaction:callback=>runTransaction\(db,callback\)/,'Save must use actual Firestore transactions');
 
 assert.match(live,/getDocFromServer\(doc\(db,'users',uid\)\)/,'Luxury successful save must verify a server snapshot, not a local cache');
-assert.match(live,/renderIngredients\(\);refreshRecovered\(\)/,'Device recovery alert survives successful commit when backup cleanup fails');
+assert.match(live,/renderIngredients\(\);[\s\S]*?refreshRecovered\(\)/,'Recovery status refreshes after verified save and cleanup attempt');
+assert.match(live,/retainBackupUntilVerified:true/,'Device draft remains available until fresh server snapshot');
 assert.match(live,/classifyLuxuryRecovery\(backup,account,accountUid\)/,'Recovery status must distinguish already-committed saves from actual conflicts');
 
 assert.match(live,/let transactionResult=null/,'Track cloud commit separately from reload result');
