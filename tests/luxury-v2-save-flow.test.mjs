@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import {commitLuxuryPreview,readPendingLuxuryDraft,pendingKey} from '../luxury-v2/save-flow.mjs';
+import {commitLuxuryPreview,readPendingLuxuryDraft,pendingKey,classifyLuxuryRecovery} from '../luxury-v2/save-flow.mjs';
 const uid='test-user', original={activePlanningWeek:1,plan:{0:[null,null,'tacos',null]},alternateWeek:{plan:{}},preferences:{style:'Anything'}},preview={'1-0-2':'sushi'};
 function harness({failBackup=false,failTransaction=false,failCleanup=false,changed=false}={}){
  const map=new Map(),calls=[];
@@ -39,3 +39,13 @@ assert.equal(readPendingLuxuryDraft(recoveredStorage,uid)?.unreadable,true,'Malf
 h.map.set(pendingKey(uid),JSON.stringify({version:1,uid,original,preview:[]}));
 assert.equal(readPendingLuxuryDraft(recoveredStorage,uid)?.unreadable,true,'Array payload is not a valid set of meal edits');
 console.log('Luxury staged save flow: backup, conflict, network, switching, cleanup safeguards passed');
+
+const pending={version:1,uid,original,preview};
+assert.equal(classifyLuxuryRecovery(null,original,uid).status,'none');
+assert.equal(classifyLuxuryRecovery(pending,original,uid).status,'unsaved','Interrupted transaction retains unsaved draft');
+const desired={...original,plan:{0:[null,null,'sushi',null]},alternateWeek:{plan:{}}};
+assert.equal(classifyLuxuryRecovery(pending,desired,uid).status,'already-saved','Failed backup cleanup must not mislabel cloud commit');
+assert.equal(classifyLuxuryRecovery(pending,{...original,plan:{0:[null,null,'ramen',null]}},uid).status,'conflict','Second-device update must not be overwritten');
+assert.equal(classifyLuxuryRecovery(pending,null,uid).status,'cloud-missing');
+assert.equal(classifyLuxuryRecovery({...pending,uid:'different'},original,uid).status,'unreadable');
+assert.equal(classifyLuxuryRecovery({version:0,uid,unreadable:true},original,uid).status,'unreadable');
