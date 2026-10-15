@@ -11,3 +11,9 @@ assert.match(live,/document\.querySelector\('#exportLuxuryEdits'\)\.onclick=/,'P
 assert.match(live,/document\.querySelector\('#exportRecoveredLuxury'\)\.onclick=/,'Recovered export action is wired');
 assert.doesNotMatch(live,/\b(?:setDoc|updateDoc|deleteDoc)\s*\(/,'Luxury preview cannot mutate Firestore directly');
 console.log('Luxury staged save/export controls and account-scoped recovery tests passed');
+
+assert.match(live,/const LUXURY_SAVES_RELEASED=false/,'Production-facing save must remain disabled before hosted validation');
+assert.match(live,/saveLuxuryButton\.onclick=async\(\)=>/,'Save action is wired for later controlled release');
+assert.match(live,/commitLuxuryPreview\(\{/,'Save action must use backed-up transactional controller');
+assert.match(live,/getAuthenticatedUid:\(\)=>authEpoch===epoch/,'Save must check the authenticated session epoch');
+assert.match(live,/runTransaction:callback=>runTransaction\(db,callback\)/,'Save must use actual Firestore transactions');
