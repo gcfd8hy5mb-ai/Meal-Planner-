@@ -3,11 +3,13 @@ on:
   pull_request:
     paths:
       - 'index.html'
+      - 'tests/auth-recovery-messages.cjs'
       - '.github/workflows/app-syntax.yml'
   push:
     branches: [main]
     paths:
       - 'index.html'
+      - 'tests/auth-recovery-messages.cjs'
       - '.github/workflows/app-syntax.yml'
 jobs:
   syntax:
@@ -17,6 +19,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Protect original account sign-in recovery
+        run: node tests/auth-recovery-messages.cjs
       - name: Check inline JavaScript syntax
         run: |
           node --input-type=module <<'NODE'
