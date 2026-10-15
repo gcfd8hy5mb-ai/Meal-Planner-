@@ -3,6 +3,7 @@ on:
   pull_request:
     paths:
       - 'index.html'
+      - 'tests/local-backup-shape.cjs'
       - 'tests/local-backup-inspection.cjs'
       - 'tests/auth-recovery-messages.cjs'
       - '.github/workflows/app-syntax.yml'
@@ -10,6 +11,7 @@ on:
     branches: [main]
     paths:
       - 'index.html'
+      - 'tests/local-backup-shape.cjs'
       - 'tests/local-backup-inspection.cjs'
       - 'tests/auth-recovery-messages.cjs'
       - '.github/workflows/app-syntax.yml'
@@ -25,6 +27,8 @@ jobs:
         run: node tests/auth-recovery-messages.cjs
       - name: Check local recovery read-only protection
         run: node tests/local-backup-inspection.cjs
+      - name: Check local backup structure diagnostic
+        run: node tests/local-backup-shape.cjs
       - name: Check inline JavaScript syntax
         run: |
           node --input-type=module <<'NODE'
