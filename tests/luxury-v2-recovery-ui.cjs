@@ -21,3 +21,9 @@ assert.match(live,/runTransaction:callback=>runTransaction\(db,callback\)/,'Save
 assert.match(live,/getDocFromServer\(doc\(db,'users',uid\)\)/,'Luxury successful save must verify a server snapshot, not a local cache');
 assert.match(live,/renderIngredients\(\);refreshRecovered\(\)/,'Device recovery alert survives successful commit when backup cleanup fails');
 assert.match(live,/classifyLuxuryRecovery\(backup,account,accountUid\)/,'Recovery status must distinguish already-committed saves from actual conflicts');
+
+assert.match(live,/let transactionResult=null/,'Track cloud commit separately from reload result');
+assert.match(live,/transactionResult=result/,'Record successful transaction before server reload');
+assert.match(live,/if\(transactionResult\)\{[\s\S]*?Cloud write completed, but the server reload could not be verified/,'Never misreport a committed write as an unsaved draft');
+assert.match(live,/else\{[\s\S]*?Save was not confirmed\. Review the device recovery options/,'An unconfirmed write must not promise an available export');
+console.log('Cloud commit vs verification-failure user messaging regression passed');
