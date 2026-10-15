@@ -14,6 +14,7 @@ on:
       - 'tests/luxury-v2-save-flow.test.mjs'
       - 'tests/hosted-firebase-disposable.test.mjs'
       - 'tests/luxury-v2-recovery-ui.cjs'
+      - 'tests/luxury-v2-recovery-diagnostic.test.mjs'
       - 'tests/luxury-v2-cloud-write-gate.cjs'
       - 'tests/luxury-v2-legacy-save.test.mjs'
   push:
@@ -30,6 +31,7 @@ on:
       - 'tests/luxury-v2-save-flow.test.mjs'
       - 'tests/hosted-firebase-disposable.test.mjs'
       - 'tests/luxury-v2-recovery-ui.cjs'
+      - 'tests/luxury-v2-recovery-diagnostic.test.mjs'
       - 'tests/luxury-v2-cloud-write-gate.cjs'
       - 'tests/luxury-v2-legacy-save.test.mjs'
 jobs:
@@ -55,6 +57,8 @@ jobs:
         run: node tests/luxury-v2-save-flow.test.mjs
       - name: Verify luxury draft export and recovery UI
         run: node tests/luxury-v2-recovery-ui.cjs
+      - name: Check private read-only account diagnostic
+        run: node tests/luxury-v2-recovery-diagnostic.test.mjs
       - name: Block cross-version unsafe cloud writes
         run: node tests/luxury-v2-cloud-write-gate.cjs
       - name: Simulate safe original-planner save migration
