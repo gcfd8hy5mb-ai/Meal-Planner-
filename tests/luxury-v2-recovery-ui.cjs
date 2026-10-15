@@ -28,3 +28,11 @@ assert.match(live,/transactionResult=result/,'Record successful transaction befo
 assert.match(live,/if\(transactionResult\)\{[\s\S]*?Cloud write completed, but the server reload could not be verified/,'Never misreport a committed write as an unsaved draft');
 assert.match(live,/else\{[\s\S]*?Save was not confirmed\. Review the device recovery options/,'An unconfirmed write must not promise an available export');
 console.log('Cloud commit vs verification-failure user messaging regression passed');
+
+assert.match(html,/id="luxurySignInForm"/,'Preview includes native sign-in form');
+assert.match(html,/id="luxurySignOut"/,'Preview provides sign-out');
+assert.doesNotMatch(html,/Account integration is pending/,'Profile placeholder is removed');
+assert.match(live,/signInWithEmailAndPassword\(auth,/,'Sign-in uses Firebase Authentication');
+assert.match(live,/await signOut\(auth\)/,'Sign-out uses Firebase Authentication');
+assert.match(live,/const snapshot=await getDocFromServer\(doc\(db,'users',user.uid\)\)/,'Plan restoration requires live server data');
+console.log('Luxury preview account form and read-only Firebase loading checks passed');
