@@ -50,3 +50,11 @@ export function classifyLuxuryRecovery(pending,current,uid){
   return {status:'conflict'};
  }catch{return {status:'unreadable'}}
 }
+
+/** Assert that a fresh server read contains the intended planning changes. */
+export function verifyLuxurySavedPlan(original,preview,serverAccount){
+ if(!serverAccount)throw Error('Saved plan could not be reloaded');
+ const expected=selectedPlanSnapshot(previewAccount(original,preview));
+ if(selectedPlanSnapshot(serverAccount)!==expected)throw Error('Server meal plan differs from submitted changes; recovery backup retained');
+ return true;
+}
