@@ -12,6 +12,7 @@ on:
       - 'tests/luxury-v2-save-guard.test.mjs'
       - 'tests/luxury-v2-save-transaction.test.mjs'
       - 'tests/luxury-v2-save-flow.test.mjs'
+      - 'tests/hosted-firebase-disposable.test.mjs'
       - 'tests/luxury-v2-recovery-ui.cjs'
       - 'tests/luxury-v2-cloud-write-gate.cjs'
       - 'tests/luxury-v2-legacy-save.test.mjs'
@@ -27,6 +28,7 @@ on:
       - 'tests/luxury-v2-save-guard.test.mjs'
       - 'tests/luxury-v2-save-transaction.test.mjs'
       - 'tests/luxury-v2-save-flow.test.mjs'
+      - 'tests/hosted-firebase-disposable.test.mjs'
       - 'tests/luxury-v2-recovery-ui.cjs'
       - 'tests/luxury-v2-cloud-write-gate.cjs'
       - 'tests/luxury-v2-legacy-save.test.mjs'
@@ -57,6 +59,8 @@ jobs:
         run: node tests/luxury-v2-cloud-write-gate.cjs
       - name: Simulate safe original-planner save migration
         run: node tests/luxury-v2-legacy-save.test.mjs
+      - name: Validate hosted test script syntax without touching Firebase
+        run: node --check tests/hosted-firebase-disposable.test.mjs
       - name: Verify isolated JavaScript module syntax
         run: |
           node --input-type=module --check < luxury-v2/live.js
