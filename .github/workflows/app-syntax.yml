@@ -3,6 +3,7 @@ on:
   pull_request:
     paths:
       - 'index.html'
+      - 'tests/backup-export.cjs'
       - 'tests/local-backup-shape.cjs'
       - 'tests/local-backup-inspection.cjs'
       - 'tests/auth-recovery-messages.cjs'
@@ -11,6 +12,7 @@ on:
     branches: [main]
     paths:
       - 'index.html'
+      - 'tests/backup-export.cjs'
       - 'tests/local-backup-shape.cjs'
       - 'tests/local-backup-inspection.cjs'
       - 'tests/auth-recovery-messages.cjs'
@@ -29,6 +31,8 @@ jobs:
         run: node tests/local-backup-inspection.cjs
       - name: Check local backup structure diagnostic
         run: node tests/local-backup-shape.cjs
+      - name: Check read-only backup export
+        run: node tests/backup-export.cjs
       - name: Check inline JavaScript syntax
         run: |
           node --input-type=module <<'NODE'
