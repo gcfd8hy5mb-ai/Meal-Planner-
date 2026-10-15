@@ -6,3 +6,7 @@ assert.match(app,/if\(!state.preferences&&!state.onboardingInitialized\)\{/);
 assert.match(app,/activeUid=null;\s*setMessage\('Your saved cloud document is missing meal preferences/);
 assert.doesNotMatch(app,/setDoc\(doc\(db,'users',user.uid\),\{[^}]*preferences:\{/,'Auth recovery cannot automatically replace missing preferences');
 console.log('PASS safe network errors and missing-preferences hold');
+assert.match(app,/id="authRecoverySummary"[^>]*hidden/,'Recovery status is hidden until authenticated');
+assert.match(app,/clearAuthRecoverySummary\(\);showPlanner\(false\)/,'A previous account diagnostic is cleared at each auth transition');
+assert.match(app,/showAuthRecoverySummary\(state\)/,'Missing preferences show a read-only plan count');
+assert.match(app,/recoverySummary.textContent='Read-only cloud check/,'Recovery summary does not attempt Firestore writes');
