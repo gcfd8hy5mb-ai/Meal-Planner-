@@ -3,6 +3,7 @@ import { initializeApp } from 'https://www.gstatic.com/firebasejs/11.10.0/fireba
 import { getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut } from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js';
 import { getFirestore, getDoc, getDocFromServer, doc, runTransaction } from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js';
 import { recipes, verifiedRecipePhotos } from './catalog.js';
+import {diagnoseSavedPlan} from './recovery-diagnostic.mjs';
 import { groceryTotals } from './groceries.mjs';
 import {groceryKey,readChecklist,saveChecklist} from './checklist.mjs';
 import {replacePreviewMeal,previewAccount,hasPreviewEdits} from './meal-preview.mjs';
@@ -14,12 +15,33 @@ const auth=getAuth(firebase),db=getFirestore(firebase);
 const baseRecipes=new Map(recipes.map(r=>[r.id,r]));
 let account=null,accountUid=null,liveWeek=1,currentRecipe=null,step=0,authEpoch=0,groceryWeek='both',previewEdits={};
 const effectiveAccount=()=>previewAccount(account,previewEdits);
+const diagnosisPanel=document.querySelector('#luxuryRecoveryPanel');
+const diagnosisOutput=document.querySelector('#luxuryDiagnosticResults');
+document.querySelector('#luxuryInspectPlan').onclick=async()=>{
+ const user=auth.currentUser,epoch=authEpoch;
+ if(!user){diagnosisOutput.textContent='Sign in using the profile icon first.';return}
+ diagnosisOutput.textContent='Checking saved Firebase record…';
+ try{
+  const snap=await getDocFromServer(doc(db,'users',user.uid));
+  if(epoch!==authEpoch||auth.currentUser?.uid!==user.uid)return;
+  const result=diagnoseSavedPlan(snap.exists()?snap.data():null);
+  diagnosisOutput.textContent='Cloud document: '+result.document+
+   '\\nPreferences: '+result.preferences+
+   '\\nWeek 1: '+result.week1.meals+' selected meals across '+result.week1.days+' days'+
+   '\\nWeek 2: '+result.week2.meals+' selected meals across '+result.week2.days+' days'+
+   '\\nWeek 1 structure: '+(result.week1.valid?'readable':'needs review')+
+   '\\nWeek 2 structure: '+(result.week2.valid?'readable':'needs review')+
+   '\\n'+result.recovery+'\\nNo changes were made.';
+ }catch{
+  if(epoch===authEpoch&&auth.currentUser?.uid===user.uid)diagnosisOutput.textContent='Could not read account from Firebase. No changes were made.';
+ }
+};
 const accountPanel=document.querySelector('#luxuryAccountPanel');
 const authMessage=document.querySelector('#luxuryAuthMessage');
 const authForm=document.querySelector('#luxurySignInForm');
 const authPassword=document.querySelector('#luxuryPassword');
-document.querySelector('.profile').onclick=()=>{accountPanel.hidden=!accountPanel.hidden;authForm.hidden=!!auth.currentUser;document.querySelector('#luxurySignOut').hidden=!auth.currentUser;authMessage.textContent=auth.currentUser?'Signed in. Your saved meals are read-only in this preview.':'Sign in to load your saved Tablewise account.';if(!accountPanel.hidden)accountPanel.scrollIntoView({block:'start'})};
-document.querySelector('#luxuryCloseAccount').onclick=()=>{accountPanel.hidden=true;authPassword.value=''};
+document.querySelector('.profile').onclick=()=>{accountPanel.hidden=!accountPanel.hidden;diagnosisPanel.hidden=!auth.currentUser||accountPanel.hidden;authForm.hidden=!!auth.currentUser;document.querySelector('#luxurySignOut').hidden=!auth.currentUser;authMessage.textContent=auth.currentUser?'Signed in. Your saved meals are read-only in this preview.':'Sign in to load your saved Tablewise account.';if(!accountPanel.hidden)accountPanel.scrollIntoView({block:'start'})};
+document.querySelector('#luxuryCloseAccount').onclick=()=>{accountPanel.hidden=true;diagnosisPanel.hidden=true;authPassword.value=''};
 authForm.onsubmit=async event=>{
  event.preventDefault();
  const button=document.querySelector('#luxurySignIn');
@@ -193,7 +215,7 @@ document.querySelectorAll('[data-grocery-week]').forEach(b=>b.addEventListener('
 document.querySelectorAll('[data-week]').forEach(b=>b.addEventListener('click',()=>{if(account)renderWeek(b.dataset.week)}));
 const resetPrivateView=()=>{
  // Clear all previous account content synchronously, before any next-account fetch.
- account=null;accountUid=null;currentRecipe=null;step=0;previewEdits={};liveWeek=1;groceryWeek='both';
+ account=null;accountUid=null;diagnosisPanel.hidden=true;diagnosisOutput.textContent='';currentRecipe=null;step=0;previewEdits={};liveWeek=1;groceryWeek='both';
  document.querySelector('#luxuryRecoverActions').hidden=true;
  refreshDiscard();
  const picker=document.querySelector('#luxuryMealPicker');picker.hidden=true;
