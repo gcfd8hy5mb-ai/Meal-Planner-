@@ -1,6 +1,6 @@
 // Luxury v2 adapter: cloud saves remain release-gated until hosted Firebase validation.
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js';
-import { getAuth, onAuthStateChanged } from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js';
+import { getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut } from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js';
 import { getFirestore, getDoc, getDocFromServer, doc, runTransaction } from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js';
 import { recipes, verifiedRecipePhotos } from './catalog.js';
 import { groceryTotals } from './groceries.mjs';
@@ -14,6 +14,32 @@ const auth=getAuth(firebase),db=getFirestore(firebase);
 const baseRecipes=new Map(recipes.map(r=>[r.id,r]));
 let account=null,accountUid=null,liveWeek=1,currentRecipe=null,step=0,authEpoch=0,groceryWeek='both',previewEdits={};
 const effectiveAccount=()=>previewAccount(account,previewEdits);
+const accountPanel=document.querySelector('#luxuryAccountPanel');
+const authMessage=document.querySelector('#luxuryAuthMessage');
+const authForm=document.querySelector('#luxurySignInForm');
+const authPassword=document.querySelector('#luxuryPassword');
+document.querySelector('.profile').onclick=()=>{accountPanel.hidden=!accountPanel.hidden;authForm.hidden=!!auth.currentUser;document.querySelector('#luxurySignOut').hidden=!auth.currentUser;authMessage.textContent=auth.currentUser?'Signed in. Your saved meals are read-only in this preview.':'Sign in to load your saved Tablewise account.';if(!accountPanel.hidden)accountPanel.scrollIntoView({block:'start'})};
+document.querySelector('#luxuryCloseAccount').onclick=()=>{accountPanel.hidden=true;authPassword.value=''};
+authForm.onsubmit=async event=>{
+ event.preventDefault();
+ const button=document.querySelector('#luxurySignIn');
+ button.disabled=true;authMessage.textContent='Signing in securely…';
+ try{
+  await signInWithEmailAndPassword(auth,document.querySelector('#luxuryEmail').value.trim(),authPassword.value);
+  authPassword.value='';
+  authMessage.textContent='Signed in. Loading your saved meals…';
+  authForm.hidden=true;document.querySelector('#luxurySignOut').hidden=false;
+ }catch(error){
+  authPassword.value='';
+  authMessage.textContent='Could not sign in. Check your email and password, then try again.';
+ }finally{button.disabled=false}
+};
+document.querySelector('#luxurySignOut').onclick=async()=>{
+ const button=document.querySelector('#luxurySignOut');button.disabled=true;
+ try{await signOut(auth);authPassword.value='';authForm.hidden=false;button.hidden=true;authMessage.textContent='Signed out. Your saved cloud meals were not changed.'}
+ catch{authMessage.textContent='Could not sign out. Try again.'}
+ finally{button.disabled=false}
+};
 const previewNotice=document.getElementById('accountDataStatus');
 if (!previewNotice) throw new Error('Luxury v2 account status boundary missing');
 previewNotice.textContent='Checking your account. This preview never changes your saved data.';
@@ -198,4 +224,4 @@ const resetPrivateView=()=>{
  }
  renderIngredients();
 };
-onAuthStateChanged(auth,async user=>{const epoch=++authEpoch;resetPrivateView();if(!user){label('Read-only preview. Sign in to Tablewise in this browser first, then return here to see your saved meals.');return}label('Loading your saved plan securely…');try{const snapshot=await getDoc(doc(db,'users',user.uid));if(epoch!==authEpoch)return;if(!snapshot.exists()){label('Your saved cloud plan was not found. Nothing has been modified. Your account needs recovery before this preview can display saved meals.');return}const loaded=snapshot.data();if(!loaded.preferences){label('Your saved preferences need recovery. No data has been changed.');return}account=loaded;accountUid=user.uid;refreshRecovered();label('Connected to your saved Tablewise plan. You can preview changes without saving them.');liveWeek=account.activePlanningWeek===2?2:1;document.querySelectorAll('[data-week]').forEach(b=>b.classList.toggle('active',Number(b.dataset.week)===liveWeek));setHero();renderWeek(liveWeek);const weekHint=document.querySelector('[data-page="week"]>.muted');if(weekHint)weekHint.textContent='Choose Change to preview a different dinner. Preview changes are not saved.';const meals=document.querySelectorAll('.simple .meal-row');for(let i=0;i<meals.length;i++){const recipe=dayMeal(liveWeek,new Date().getDay(),i);const small=meals[i].querySelector('small');if(small)small.textContent=recipe?.name||'Not planned';meals[i].onclick=()=>recipe?openRecipe(recipe):showPage('week')}renderIngredients()}catch(error){if(epoch!==authEpoch)return;label('Could not read your saved plan. No changes were made. Check your connection and try again.');console.error('Luxury preview read failed',error)}});
+onAuthStateChanged(auth,async user=>{const epoch=++authEpoch;resetPrivateView();if(!user){label('Sign in using the profile icon to load your saved Tablewise meals. Cloud saving is disabled in this preview.');return}label('Loading your saved plan securely…');try{const snapshot=await getDocFromServer(doc(db,'users',user.uid));if(epoch!==authEpoch)return;if(!snapshot.exists()){label('Your saved cloud plan was not found. Nothing has been modified. Your account needs recovery before this preview can display saved meals.');return}const loaded=snapshot.data();if(!loaded.preferences){label('Your saved preferences need recovery. No data has been changed.');return}account=loaded;accountUid=user.uid;refreshRecovered();label('Connected to your saved Tablewise plan. You can preview changes without saving them.');liveWeek=account.activePlanningWeek===2?2:1;document.querySelectorAll('[data-week]').forEach(b=>b.classList.toggle('active',Number(b.dataset.week)===liveWeek));setHero();renderWeek(liveWeek);const weekHint=document.querySelector('[data-page="week"]>.muted');if(weekHint)weekHint.textContent='Choose Change to preview a different dinner. Preview changes are not saved.';const meals=document.querySelectorAll('.simple .meal-row');for(let i=0;i<meals.length;i++){const recipe=dayMeal(liveWeek,new Date().getDay(),i);const small=meals[i].querySelector('small');if(small)small.textContent=recipe?.name||'Not planned';meals[i].onclick=()=>recipe?openRecipe(recipe):showPage('week')}renderIngredients()}catch(error){if(epoch!==authEpoch)return;label('Could not read your saved plan. No changes were made. Check your connection and try again.');console.error('Luxury preview read failed',error)}});
