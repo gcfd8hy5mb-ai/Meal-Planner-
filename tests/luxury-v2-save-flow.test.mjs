@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import {previewAccount} from '../luxury-v2/meal-preview.mjs';
 import {commitLuxuryPreview,readPendingLuxuryDraft,pendingKey,classifyLuxuryRecovery} from '../luxury-v2/save-flow.mjs';
 const uid='test-user', original={activePlanningWeek:1,plan:{0:[null,null,'tacos',null]},alternateWeek:{plan:{}},preferences:{style:'Anything'}},preview={'1-0-2':'sushi'};
 function harness({failBackup=false,failTransaction=false,failCleanup=false,changed=false}={}){
@@ -43,7 +44,7 @@ console.log('Luxury staged save flow: backup, conflict, network, switching, clea
 const pending={version:1,uid,original,preview};
 assert.equal(classifyLuxuryRecovery(null,original,uid).status,'none');
 assert.equal(classifyLuxuryRecovery(pending,original,uid).status,'unsaved','Interrupted transaction retains unsaved draft');
-const desired={...original,plan:{0:[null,null,'sushi',null]},alternateWeek:{plan:{}}};
+const desired=previewAccount(original,preview);
 assert.equal(classifyLuxuryRecovery(pending,desired,uid).status,'already-saved','Failed backup cleanup must not mislabel cloud commit');
 assert.equal(classifyLuxuryRecovery(pending,{...original,plan:{0:[null,null,'ramen',null]}},uid).status,'conflict','Second-device update must not be overwritten');
 assert.equal(classifyLuxuryRecovery(pending,null,uid).status,'cloud-missing');
