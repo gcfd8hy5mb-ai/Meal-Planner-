@@ -14,7 +14,7 @@ export function readPendingLuxuryDraft(storage,uid){
   return draft?.version===1&&draft.uid===uid&&draft.preview&&typeof draft.preview==='object'&&!Array.isArray(draft.preview)&&draft.original&&typeof draft.original==='object'?draft:{version:0,uid,unreadable:true};
  }catch{return {version:0,uid,unreadable:true}}
 }
-export async function commitLuxuryPreview({storage,uid,original,preview,runTransaction,documentRef,getAuthenticatedUid}){
+export async function commitLuxuryPreview({storage,uid,original,preview,runTransaction,documentRef,getAuthenticatedUid,retainBackupUntilVerified=false}){
  if(!uid||documentRef?.id!==uid||getAuthenticatedUid?.()!==uid)throw Error('Account changed before backup');
  if(!preview||!Object.keys(preview).length)throw Error('No edits to save');
  const existing=readPendingLuxuryDraft(storage,uid);
@@ -26,6 +26,7 @@ export async function commitLuxuryPreview({storage,uid,original,preview,runTrans
  let result;
  try{result=await savePreviewTransaction({runTransaction,documentRef,original,preview,getAuthenticatedUid})}
  catch(e){throw e} // Keep backup for recovery/export on failure.
+ if(retainBackupUntilVerified)return {...result,confirmed:false,awaitingServerVerification:true};
  // If cleanup fails, retain the recoverable copy and surface a warning.
  try{storage.removeItem(pendingKey(uid))}
  catch(e){return {...result,cleanupWarning:'Saved to cloud, but device backup cleanup failed.',confirmed: false}}
