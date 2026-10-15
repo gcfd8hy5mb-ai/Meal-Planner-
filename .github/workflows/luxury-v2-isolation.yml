@@ -8,6 +8,7 @@ on:
       - 'tests/luxury-v2-groceries.test.mjs'
       - 'tests/luxury-v2-checklist.test.mjs'
       - 'tests/luxury-v2-meal-preview.test.mjs'
+      - 'tests/luxury-v2-iphone-journey.test.mjs'
       - 'tests/luxury-v2-save-guard.test.mjs'
       - 'tests/luxury-v2-save-transaction.test.mjs'
       - 'tests/luxury-v2-save-flow.test.mjs'
@@ -22,6 +23,7 @@ on:
       - 'tests/luxury-v2-groceries.test.mjs'
       - 'tests/luxury-v2-checklist.test.mjs'
       - 'tests/luxury-v2-meal-preview.test.mjs'
+      - 'tests/luxury-v2-iphone-journey.test.mjs'
       - 'tests/luxury-v2-save-guard.test.mjs'
       - 'tests/luxury-v2-save-transaction.test.mjs'
       - 'tests/luxury-v2-save-flow.test.mjs'
@@ -41,6 +43,8 @@ jobs:
         run: node tests/luxury-v2-checklist.test.mjs
       - name: Verify preview dinner replacement and grocery recalculation
         run: node tests/luxury-v2-meal-preview.test.mjs
+      - name: Exercise dual-week iPhone edits and interruption recovery
+        run: node tests/luxury-v2-iphone-journey.test.mjs
       - name: Reject conflicting concurrent cloud plan changes
         run: node tests/luxury-v2-save-guard.test.mjs
       - name: Verify isolated transaction safety without live writes
