@@ -24,4 +24,18 @@ await assert.rejects(commitLuxuryPreview(h),/Account changed/);assert.equal(h.ca
 h=harness();h.storage.setItem(pendingKey(uid),'{bad json');
 assert.equal(readPendingLuxuryDraft(h.storage,uid).unreadable,true);
 await assert.rejects(commitLuxuryPreview(h),/unsaved luxury draft/);
+// Simulate a full app restart: a new controller reads persisted backup from the same device storage.
+h=harness({failTransaction:true});
+await assert.rejects(commitLuxuryPreview(h),/network error/);
+const recoveredStorage={getItem:key=>h.map.get(key)??null,setItem:(key,value)=>h.map.set(key,value),removeItem:key=>h.map.delete(key)};
+assert.deepEqual(readPendingLuxuryDraft(recoveredStorage,uid)?.preview,preview,'Restart can recover previous unsaved meal choice');
+await assert.rejects(commitLuxuryPreview({...h,storage:recoveredStorage,runTransaction:async()=>{throw Error('Unexpected overwrite')}}),/unsaved luxury draft/,'Recovered draft blocks new writes until reviewed');
+const savedForSomeoneElse={version:1,uid:'different-account',original,preview};
+h.map.set(pendingKey(uid),JSON.stringify(savedForSomeoneElse));
+assert.equal(readPendingLuxuryDraft(recoveredStorage,uid)?.unreadable,true,'Mismatched account backup must not disappear silently');
+await assert.rejects(commitLuxuryPreview({...h,storage:recoveredStorage}),/unsaved luxury draft/,'Mismatched backup blocks cloud mutation');
+h.map.set(pendingKey(uid),JSON.stringify({version:1,uid,preview}));
+assert.equal(readPendingLuxuryDraft(recoveredStorage,uid)?.unreadable,true,'Malformed backup must trigger recovery warning, not silently clear');
+h.map.set(pendingKey(uid),JSON.stringify({version:1,uid,original,preview:[]}));
+assert.equal(readPendingLuxuryDraft(recoveredStorage,uid)?.unreadable,true,'Array payload is not a valid set of meal edits');
 console.log('Luxury staged save flow: backup, conflict, network, switching, cleanup safeguards passed');
