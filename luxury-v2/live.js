@@ -41,7 +41,8 @@ saveLuxuryButton.onclick=async()=>{
    storage:localStorage,uid,original,preview,
    runTransaction:callback=>runTransaction(db,callback),
    documentRef:doc(db,'users',uid),
-   getAuthenticatedUid:()=>authEpoch===epoch&&auth.currentUser?.uid===uid?uid:null
+   getAuthenticatedUid:()=>authEpoch===epoch&&auth.currentUser?.uid===uid?uid:null,
+   retainBackupUntilVerified:true
   });
   if(authEpoch!==epoch||auth.currentUser?.uid!==uid)return;
   // A committed transaction must not be reported as an unsaved draft if its reload fails.
@@ -50,8 +51,12 @@ saveLuxuryButton.onclick=async()=>{
   const cloud=await getDocFromServer(doc(db,'users',uid));
   if(authEpoch!==epoch||auth.currentUser?.uid!==uid)return;
   if(!cloud.exists())throw Error('Saved plan could not be reloaded');
-  account=cloud.data();previewEdits={};renderWeek(liveWeek);setHero();renderIngredients();refreshRecovered();
-  label(result.cleanupWarning||'Meal changes saved to your account.');
+  account=cloud.data();previewEdits={};renderWeek(liveWeek);setHero();renderIngredients();
+  let cleanupWarning='';
+  try{localStorage.removeItem('tablewise-luxury-pending-'+uid)}
+  catch{cleanupWarning='Saved and verified in the cloud, but the recovery backup remains on this device.'}
+  refreshRecovered();
+  label(cleanupWarning||'Meal changes saved to your account.');
  }catch(error){
   if(authEpoch===epoch&&auth.currentUser?.uid===uid){
    if(transactionResult){
