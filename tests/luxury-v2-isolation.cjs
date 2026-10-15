@@ -49,4 +49,5 @@ for(const privateRegion of ["#days",".hero-copy h2",".hero-photo",".cook-photo",
  assert.ok(luxuryAdapter.includes(privateRegion), 'Missing private region scrub: '+privateRegion);
 }
 assert.match(luxuryAdapter, /currentRecipe=null;step=0;previewEdits=\{\}/, 'Recipe and preview data must be discarded during account switching');
-assert.match(luxuryAdapter, /if\(!loaded.preferences\)[\s\S]*return\}account=loaded;accountUid=user.uid/, 'Only valid saved account data may become visible');
+assert.match(luxuryAdapter, /if\(!loaded.plan\|\|typeof loaded.plan!=='object'\|\|Array.isArray\(loaded.plan\)\)[\s\S]*return\}/, 'Reject missing or malformed saved meal plans');
+assert.match(luxuryAdapter, /const needsPreferencesRecovery=!loaded.preferences&&!loaded.onboardingInitialized/, 'Warn when preferences may need recovery before read-only display');
