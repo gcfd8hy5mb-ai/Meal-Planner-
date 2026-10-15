@@ -1,0 +1,35 @@
+name: Tablewise hosted Firebase verification
+on:
+  workflow_dispatch:
+    inputs:
+      confirm_disposable_accounts:
+        description: 'Type DISPOSABLE_ONLY after configuring dedicated empty test accounts'
+        required: true
+        type: string
+permissions:
+  contents: read
+jobs:
+  hosted-validation:
+    if: ${{ inputs.confirm_disposable_accounts == 'DISPOSABLE_ONLY' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    environment: tablewise-hosted-test
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: integration/luxury-v2-guarded
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm ci --no-audit --no-fund
+      - name: Verify hosted Firebase with disposable identities only
+        env:
+          TABLEWISE_HOSTED_TEST_APPROVED: 'yes'
+          TABLEWISE_FIREBASE_PROJECT_ID: ${{ secrets.TABLEWISE_FIREBASE_PROJECT_ID }}
+          TABLEWISE_FIREBASE_API_KEY: ${{ secrets.TABLEWISE_FIREBASE_API_KEY }}
+          TABLEWISE_TEST_A_EMAIL: ${{ secrets.TABLEWISE_TEST_A_EMAIL }}
+          TABLEWISE_TEST_A_PASSWORD: ${{ secrets.TABLEWISE_TEST_A_PASSWORD }}
+          TABLEWISE_TEST_B_EMAIL: ${{ secrets.TABLEWISE_TEST_B_EMAIL }}
+          TABLEWISE_TEST_B_PASSWORD: ${{ secrets.TABLEWISE_TEST_B_PASSWORD }}
+        run: node tests/hosted-firebase-disposable.test.mjs
