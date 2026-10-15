@@ -1,4 +1,4 @@
-// Staged luxury-save integration. Not wired to the interface until recovery UI is tested.
+// Staged luxury-save integration. UI cloud writes remain disabled by release gate.
 // The browser must preserve an exportable draft before attempting Firestore.
 import {savePreviewTransaction} from './save-transaction.mjs';
 const prefix='tablewise-luxury-pending-';
@@ -9,7 +9,7 @@ export function readPendingLuxuryDraft(storage,uid){
  if(!raw)return null;
  try{
   const draft=JSON.parse(raw);
-  return draft?.version===1&&draft.uid===uid&&draft.preview&&typeof draft.preview==='object'?draft:null;
+  return draft?.version===1&&draft.uid===uid&&draft.preview&&typeof draft.preview==='object'&&!Array.isArray(draft.preview)&&draft.original&&typeof draft.original==='object'?draft:{version:0,uid,unreadable:true};
  }catch{return {version:0,uid,unreadable:true}}
 }
 export async function commitLuxuryPreview({storage,uid,original,preview,runTransaction,documentRef,getAuthenticatedUid}){
