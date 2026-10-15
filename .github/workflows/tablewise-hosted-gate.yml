@@ -17,12 +17,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: integration/luxury-v2-guarded
+          ref: ee08172457300c26577188f640e21e28021ff938
           persist-credentials: false
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - run: npm ci --no-audit --no-fund
+      - run: npm install --no-audit --no-fund --ignore-scripts
       - name: Verify hosted Firebase with disposable identities only
         env:
           TABLEWISE_HOSTED_TEST_APPROVED: 'yes'
