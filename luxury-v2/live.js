@@ -1,7 +1,7 @@
 // Luxury v2 adapter: cloud saves remain release-gated until hosted Firebase validation.
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js';
 import { getAuth, onAuthStateChanged } from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js';
-import { getFirestore, getDoc, doc, runTransaction } from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js';
+import { getFirestore, getDoc, getDocFromServer, doc, runTransaction } from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js';
 import { recipes, verifiedRecipePhotos } from './catalog.js';
 import { groceryTotals } from './groceries.mjs';
 import {groceryKey,readChecklist,saveChecklist} from './checklist.mjs';
@@ -44,10 +44,10 @@ saveLuxuryButton.onclick=async()=>{
   });
   if(authEpoch!==epoch||auth.currentUser?.uid!==uid)return;
   // A fresh server document becomes the next verified baseline.
-  const cloud=await getDoc(doc(db,'users',uid));
+  const cloud=await getDocFromServer(doc(db,'users',uid));
   if(authEpoch!==epoch||auth.currentUser?.uid!==uid)return;
   if(!cloud.exists())throw Error('Saved plan could not be reloaded');
-  account=cloud.data();previewEdits={};renderWeek(liveWeek);setHero();renderIngredients();
+  account=cloud.data();previewEdits={};renderWeek(liveWeek);setHero();renderIngredients();refreshRecovered();
   label(result.cleanupWarning||'Meal changes saved to your account.');
  }catch(error){
   if(authEpoch===epoch&&auth.currentUser?.uid===uid){
