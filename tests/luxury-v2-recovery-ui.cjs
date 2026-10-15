@@ -17,3 +17,7 @@ assert.match(live,/saveLuxuryButton\.onclick=async\(\)=>/,'Save action is wired 
 assert.match(live,/commitLuxuryPreview\(\{/,'Save action must use backed-up transactional controller');
 assert.match(live,/getAuthenticatedUid:\(\)=>authEpoch===epoch/,'Save must check the authenticated session epoch');
 assert.match(live,/runTransaction:callback=>runTransaction\(db,callback\)/,'Save must use actual Firestore transactions');
+
+assert.match(live,/getDocFromServer\(doc\(db,'users',uid\)\)/,'Luxury successful save must verify a server snapshot, not a local cache');
+assert.match(live,/renderIngredients\(\);refreshRecovered\(\)/,'Device recovery alert survives successful commit when backup cleanup fails');
+assert.match(live,/classifyLuxuryRecovery\(backup,account,accountUid\)/,'Recovery status must distinguish already-committed saves from actual conflicts');
