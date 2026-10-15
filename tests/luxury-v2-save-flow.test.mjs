@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import {previewAccount} from '../luxury-v2/meal-preview.mjs';
-import {commitLuxuryPreview,readPendingLuxuryDraft,pendingKey,classifyLuxuryRecovery} from '../luxury-v2/save-flow.mjs';
+import {commitLuxuryPreview,readPendingLuxuryDraft,pendingKey,classifyLuxuryRecovery,verifyLuxurySavedPlan} from '../luxury-v2/save-flow.mjs';
 const uid='test-user', original={activePlanningWeek:1,plan:{0:[null,null,'tacos',null]},alternateWeek:{plan:{}},preferences:{style:'Anything'}},preview={'1-0-2':'sushi'};
 function harness({failBackup=false,failTransaction=false,failCleanup=false,changed=false}={}){
  const map=new Map(),calls=[];
@@ -60,3 +60,8 @@ assert.equal(classifyLuxuryRecovery(readPendingLuxuryDraft(h.storage,uid),previe
 h.storage.removeItem(pendingKey(uid));
 assert.equal(readPendingLuxuryDraft(h.storage,uid),null,'Explicit cleanup occurs only after verification');
 console.log('Luxury server-verification backup retention passed');
+
+assert.equal(verifyLuxurySavedPlan(original,preview,previewAccount(original,preview)),true,'Verified server snapshot matches intended dinner change');
+assert.throws(()=>verifyLuxurySavedPlan(original,preview,original),/differs from submitted changes/,'Old server data cannot clear backup');
+assert.throws(()=>verifyLuxurySavedPlan(original,preview,null),/could not be reloaded/,'Missing server document cannot clear backup');
+console.log('PASS: server read-back must match saved plan before backup cleanup');
