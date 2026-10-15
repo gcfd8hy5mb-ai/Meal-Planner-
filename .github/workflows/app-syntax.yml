@@ -3,12 +3,14 @@ on:
   pull_request:
     paths:
       - 'index.html'
+      - 'tests/local-backup-inspection.cjs'
       - 'tests/auth-recovery-messages.cjs'
       - '.github/workflows/app-syntax.yml'
   push:
     branches: [main]
     paths:
       - 'index.html'
+      - 'tests/local-backup-inspection.cjs'
       - 'tests/auth-recovery-messages.cjs'
       - '.github/workflows/app-syntax.yml'
 jobs:
@@ -21,6 +23,8 @@ jobs:
           node-version: '22'
       - name: Protect original account sign-in recovery
         run: node tests/auth-recovery-messages.cjs
+      - name: Check local recovery read-only protection
+        run: node tests/local-backup-inspection.cjs
       - name: Check inline JavaScript syntax
         run: |
           node --input-type=module <<'NODE'
