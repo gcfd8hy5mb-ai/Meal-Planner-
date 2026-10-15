@@ -6,7 +6,7 @@ import { recipes, verifiedRecipePhotos } from './catalog.js';
 import { groceryTotals } from './groceries.mjs';
 import {groceryKey,readChecklist,saveChecklist} from './checklist.mjs';
 import {replacePreviewMeal,previewAccount,hasPreviewEdits} from './meal-preview.mjs';
-import {readPendingLuxuryDraft,commitLuxuryPreview,classifyLuxuryRecovery} from './save-flow.mjs';
+import {readPendingLuxuryDraft,commitLuxuryPreview,classifyLuxuryRecovery,verifyLuxurySavedPlan} from './save-flow.mjs';
 
 const firebaseConfig={apiKey:'AIzaSyBETYaxuDmBR6_dNDCu62d_ciDph3AqKjI',authDomain:'meal-planner-a478e.firebaseapp.com',projectId:'meal-planner-a478e',storageBucket:'meal-planner-a478e.firebasestorage.app',messagingSenderId:'695296765702',appId:'1:695296765702:web:bfd3f88f4253c56038b887'};
 const firebase=initializeApp(firebaseConfig);
@@ -51,6 +51,7 @@ saveLuxuryButton.onclick=async()=>{
   const cloud=await getDocFromServer(doc(db,'users',uid));
   if(authEpoch!==epoch||auth.currentUser?.uid!==uid)return;
   if(!cloud.exists())throw Error('Saved plan could not be reloaded');
+  verifyLuxurySavedPlan(original,preview,cloud.data());
   account=cloud.data();previewEdits={};renderWeek(liveWeek);setHero();renderIngredients();
   let cleanupWarning='';
   try{localStorage.removeItem('tablewise-luxury-pending-'+uid)}
