@@ -152,3 +152,26 @@ test('Firebase CDN failure retains a luxury-only visible account status', async 
   }
   await context.close();
 });
+
+test('iPhone meal editing stays release-gated and recovery controls remain reachable',async({browser})=>{
+ const context=await browser.newContext({viewport:{width:390,height:844},isMobile:true,hasTouch:true});
+ const page=await context.newPage();
+ await page.goto(url,{waitUntil:'domcontentloaded'});
+ await page.locator('[data-nav="week"]').click();
+ await expect(page.locator('[data-page="week"]')).toBeVisible();
+ await page.locator('[data-week="2"]').click();
+ await expect(page.locator('[data-week="2"]')).toHaveClass(/active/);
+ await page.locator('[data-week="1"]').click();
+ await expect(page.locator('[data-week="1"]')).toHaveClass(/active/);
+ await expect(page.locator('#saveLuxuryEdits')).toBeDisabled();
+ await expect(page.locator('#luxuryDraftActions')).toBeHidden();
+ await expect(page.locator('#luxuryRecoverActions')).toBeHidden();
+ // Even if a faulty caller reveals draft controls, the release gate cannot be bypassed by tapping Save.
+ await page.locator('#luxuryDraftActions').evaluate(node=>node.hidden=false);
+ await expect(page.locator('#saveLuxuryEdits')).toBeDisabled();
+ await expect(page.locator('#exportLuxuryEdits')).toBeVisible();
+ await page.locator('#saveLuxuryEdits').evaluate(node=>node.click());
+ await expect(page.locator('[data-page="week"]')).toBeVisible();
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+ await context.close();
+});
