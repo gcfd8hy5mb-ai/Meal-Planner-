@@ -1,6 +1,8 @@
 // Staged luxury-save integration. UI cloud writes remain disabled by release gate.
 // The browser must preserve an exportable draft before attempting Firestore.
 import {savePreviewTransaction} from './save-transaction.mjs';
+import {previewAccount} from './meal-preview.mjs';
+import {selectedPlanSnapshot} from './save-guard.mjs';
 const prefix='tablewise-luxury-pending-';
 export const pendingKey=uid=>prefix+uid;
 export function readPendingLuxuryDraft(storage,uid){
@@ -28,4 +30,22 @@ export async function commitLuxuryPreview({storage,uid,original,preview,runTrans
  try{storage.removeItem(pendingKey(uid))}
  catch(e){return {...result,cleanupWarning:'Saved to cloud, but device backup cleanup failed.',confirmed: false}}
  return {...result,confirmed:true};
+}
+
+/**
+ * Read-only classification: never auto-replay or auto-delete a recovered draft.
+ * Distinguishes successful cloud commit with failed local cleanup from genuinely unsaved edits.
+ */
+export function classifyLuxuryRecovery(pending,current,uid){
+ if(!pending)return {status:'none'};
+ if(!uid||pending.unreadable||pending.uid!==uid||!pending.original||!pending.preview)return {status:'unreadable'};
+ if(!current)return {status:'cloud-missing'};
+ try{
+  const cloud=selectedPlanSnapshot(current);
+  const original=selectedPlanSnapshot(pending.original);
+  const desired=selectedPlanSnapshot(previewAccount(pending.original,pending.preview));
+  if(cloud===desired)return {status:'already-saved'};
+  if(cloud===original)return {status:'unsaved'};
+  return {status:'conflict'};
+ }catch{return {status:'unreadable'}}
 }
