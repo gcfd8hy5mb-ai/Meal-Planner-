@@ -140,5 +140,20 @@ test('luxury UI save controller: signed-in meal changes, conflict backup, cross-
   await assert.rejects(failed,error=>error.code==='unavailable','Network rejection reported');
   assert.equal(readPendingLuxuryDraft(deviceStorage,owner.uid)?.preview['2-0-2'],'noodles','Offline changes remain recoverable');
   assert.equal((await getDoc(ref)).data().alternateWeek.plan['0'][2],'soup','Offline save did not mutate cloud');
+
+  // Fresh device after interruption: original user can still save both weeks
+  // only from a server-refreshed baseline and without carrying a stale local draft.
+  const latest=(await getDocFromServer(ref)).data();
+  const cleanPhoneStorage=storage();
+  const bothWeeks=await save(phone,latest,{'1-0-2':'enchiladas','2-0-2':'noodles'},cleanPhoneStorage);
+  assert.equal(bothWeeks.confirmed,true,'Two-week save must be transaction-confirmed');
+  const serverPlan=(await getDocFromServer(secondRef)).data();
+  assert.equal(serverPlan.plan['0'][2],'enchiladas','Week 1 reaches another device');
+  assert.equal(serverPlan.alternateWeek.plan['0'][2],'noodles','Week 2 reaches another device');
+  assert.equal(serverPlan.checked['milk|cup'],true,'Grocery checkmarks survive dual-week edit');
+  assert.deepEqual(serverPlan.profile,{displayName:'Family'},'Account profile remains unchanged');
+  assert.equal(readPendingLuxuryDraft(cleanPhoneStorage,owner.uid),null);
+  assert.deepEqual((await getDoc(otherRef)).data(),plan('dumplings'),'Unrelated user stays isolated after dual-week save');
+
  }finally{await Promise.allSettled(clients.map(c=>deleteApp(c.app)));}
 });
