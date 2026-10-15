@@ -4,6 +4,7 @@ import {initializeApp,deleteApp} from 'firebase/app';
 import {getAuth,connectAuthEmulator,createUserWithEmailAndPassword,signInWithEmailAndPassword,signOut} from 'firebase/auth';
 import {getFirestore,connectFirestoreEmulator,doc,getDoc,setDoc,runTransaction,disableNetwork,enableNetwork,getDocFromServer} from 'firebase/firestore';
 import {guardedSave,CloudSaveConflict} from '../cloud-save-guard.mjs';
+import {commitLuxuryPreview,readPendingLuxuryDraft} from '../luxury-v2/save-flow.mjs';
 
 const projectId='demo-tablewise-auth-test';
 let counter=0;
@@ -90,5 +91,54 @@ test('real Firebase Auth SDK emulator: two disposable users, device restore, iso
   assert.equal(A1.auth.currentUser,null);
   await signInWithEmailAndPassword(A1.auth,aEmail,pass);
   assert.equal((await getDoc(refA1)).data().servings,6,'Sign-out/in restores data after offline retry');
+ }finally{await Promise.allSettled(clients.map(c=>deleteApp(c.app)));}
+});
+
+test('luxury UI save controller: signed-in meal changes, conflict backup, cross-account denial, and recovery', {timeout:90000},async()=>{
+ const clients=[];
+ const storage=()=>{const values=new Map();return {getItem:key=>values.get(key)??null,setItem:(key,value)=>values.set(key,value),removeItem:key=>values.delete(key)}};
+ try{
+  const phone=client('luxury-owner'),second=client('luxury-other-device'),stranger=client('luxury-stranger');
+  clients.push(phone,second,stranger);
+  const stamp=Date.now(),pass='EmulatorOnly!123456';
+  const email='luxury-owner-'+stamp+'@example.test';
+  const owner=(await createUserWithEmailAndPassword(phone.auth,email,pass)).user;
+  const other=(await createUserWithEmailAndPassword(stranger.auth,'luxury-stranger-'+stamp+'@example.test',pass)).user;
+  await signInWithEmailAndPassword(second.auth,email,pass);
+  const ref=doc(phone.db,'users',owner.uid),secondRef=doc(second.db,'users',owner.uid),otherRef=doc(stranger.db,'users',other.uid);
+  const original={...plan('tacos'),activePlanningWeek:1,alternateWeek:{plan:{'0':[null,null,'soup',null]}},checked:{'milk|cup':true},custom:'[]',profile:{displayName:'Family'}};
+  await setDoc(ref,original);
+  await setDoc(otherRef,plan('dumplings'));
+  const save=(c,original,preview,storage)=>commitLuxuryPreview({
+    storage,uid:owner.uid,original,preview,documentRef:doc(c.db,'users',owner.uid),
+    getAuthenticatedUid:()=>c.auth.currentUser?.uid,
+    runTransaction:callback=>runTransaction(c.db,callback)
+  });
+  let deviceStorage=storage();
+  let baseline=(await getDoc(ref)).data();
+  let result=await save(phone,baseline,{'1-0-2':'lasagna'},deviceStorage);
+  assert.equal(result.confirmed,true);
+  let after=(await getDoc(secondRef)).data();
+  assert.equal(after.plan['0'][2],'lasagna','Luxury dinner edit reaches second device');
+  assert.equal(after.alternateWeek.plan['0'][2],'soup','Week 2 survives Week 1 edit');
+  assert.equal(after.checked['milk|cup'],true,'Grocery state preserved');
+  assert.deepEqual(after.profile,{displayName:'Family'},'Unrelated profile untouched');
+  assert.equal(readPendingLuxuryDraft(deviceStorage,owner.uid),null,'Successful save clears pending draft');
+  const stale=baseline;
+  deviceStorage=storage();
+  await assert.rejects(save(second,stale,{'1-0-2':'pizza'},deviceStorage),/Saved plan changed/,'Stale luxury save rejected');
+  assert.equal(readPendingLuxuryDraft(deviceStorage,owner.uid)?.preview['1-0-2'],'pizza','Conflict leaves exportable local backup');
+  assert.equal((await getDoc(ref)).data().plan['0'][2],'lasagna','Conflict cannot overwrite newer dinner');
+  deviceStorage=storage();
+  await assert.rejects(save(stranger,after,{'1-0-2':'stolen'},deviceStorage),/Account changed/,'Another user cannot start owner save');
+  assert.equal(readPendingLuxuryDraft(deviceStorage,owner.uid),null,'Unauthorized save never stores owner draft');
+  assert.deepEqual((await getDoc(otherRef)).data(),plan('dumplings'),'Other account unchanged');
+  deviceStorage=storage();
+  const failed=commitLuxuryPreview({storage:deviceStorage,uid:owner.uid,original:after,preview:{'2-0-2':'noodles'},documentRef:ref,
+    getAuthenticatedUid:()=>phone.auth.currentUser?.uid,
+    runTransaction:async()=>{throw Object.assign(new Error('offline'),{code:'unavailable'})}});
+  await assert.rejects(failed,error=>error.code==='unavailable','Network rejection reported');
+  assert.equal(readPendingLuxuryDraft(deviceStorage,owner.uid)?.preview['2-0-2'],'noodles','Offline changes remain recoverable');
+  assert.equal((await getDoc(ref)).data().alternateWeek.plan['0'][2],'soup','Offline save did not mutate cloud');
  }finally{await Promise.allSettled(clients.map(c=>deleteApp(c.app)));}
 });
