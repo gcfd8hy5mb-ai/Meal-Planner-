@@ -1,12 +1,12 @@
-// Luxury v2 adapter: cloud account/plan data is read-only; grocery checks stay local to this browser.
+// Luxury v2 adapter: cloud saves remain release-gated until hosted Firebase validation.
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js';
 import { getAuth, onAuthStateChanged } from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js';
-import { getFirestore, getDoc, doc } from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js';
+import { getFirestore, getDoc, doc, runTransaction } from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js';
 import { recipes, verifiedRecipePhotos } from './catalog.js';
 import { groceryTotals } from './groceries.mjs';
 import {groceryKey,readChecklist,saveChecklist} from './checklist.mjs';
 import {replacePreviewMeal,previewAccount,hasPreviewEdits} from './meal-preview.mjs';
-import {readPendingLuxuryDraft} from './save-flow.mjs';
+import {readPendingLuxuryDraft,commitLuxuryPreview} from './save-flow.mjs';
 
 const firebaseConfig={apiKey:'AIzaSyBETYaxuDmBR6_dNDCu62d_ciDph3AqKjI',authDomain:'meal-planner-a478e.firebaseapp.com',projectId:'meal-planner-a478e',storageBucket:'meal-planner-a478e.firebasestorage.app',messagingSenderId:'695296765702',appId:'1:695296765702:web:bfd3f88f4253c56038b887'};
 const firebase=initializeApp(firebaseConfig);
@@ -26,7 +26,36 @@ const dayMeal=(week,day,slot)=>{const row=planFor(week)?.[day];return findRecipe
 const formatAmount=(n,unit)=>{const amount=Number(n);return (Number.isFinite(amount)?(Math.round(amount*100)/100):n)+' '+(unit||'')};
 const setHero=()=>{const dinner=dayMeal(account?.activePlanningWeek===2?2:1,new Date().getDay(),2);const heading=document.querySelector('.hero-copy h2'),subtitle=document.querySelector('.hero-copy .muted'),picture=document.querySelector('.hero-photo');if(!heading||!subtitle||!picture)return;heading.textContent=dinner?.name||'No dinner planned today';subtitle.textContent=dinner?(dinner.serv||account?.servings||2)+' servings · Your saved plan':'No dinner scheduled in your saved plan';picture.style.backgroundImage=dinner&&photo(dinner.id)?'linear-gradient(transparent 35%,#10271ed9),url("'+photo(dinner.id)+'")':'none';const cookButton=document.querySelector('.hero .primary');if(cookButton)cookButton.onclick=()=>dinner?openRecipe(dinner):showPage('week')};
 const renderWeek=(week)=>{liveWeek=Number(week)||1;const list=document.querySelector('#days');if(!list)return;list.replaceChildren();for(let day=0;day<7;day++){const meal=dayMeal(liveWeek,day,2);const card=document.createElement('div');card.className='day';const dayLabel=document.createElement('strong');dayLabel.textContent=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'][day];card.append(dayLabel);if(meal&&photo(meal.id)){const img=document.createElement('img');img.src=photo(meal.id);img.alt='';img.loading='lazy';card.append(img)}const body=document.createElement('div'),name=document.createElement('strong'),small=document.createElement('small');name.textContent=meal?.name||'No dinner planned';small.textContent=meal?(hasPreviewEdits(previewEdits)?'Preview plan · not saved':'Saved recipe'):'No meal scheduled';body.append(name,document.createElement('br'),small);card.append(body);if(meal){const button=document.createElement('button');button.className='primary';button.textContent='›';button.setAttribute('aria-label','View '+meal.name);button.onclick=()=>openRecipe(meal);card.append(button)}const edit=document.createElement('button');edit.className='primary';edit.textContent='Change';edit.setAttribute('aria-label','Preview another dinner for '+dayLabel.textContent);edit.onclick=()=>openMealPicker(liveWeek,day);card.append(edit);list.append(card)}};
-const refreshDiscard=()=>{const unsaved=hasPreviewEdits(previewEdits);document.querySelector('#discardLuxuryEdits').hidden=!unsaved;document.querySelector('#luxuryDraftActions').hidden=!unsaved};
+// Statically off until separate hosted-project validation and recovery review pass.
+const LUXURY_SAVES_RELEASED=false;
+let luxurySaving=false;
+const saveLuxuryButton=document.querySelector('#saveLuxuryEdits');
+const refreshDiscard=()=>{const unsaved=hasPreviewEdits(previewEdits);document.querySelector('#discardLuxuryEdits').hidden=!unsaved;document.querySelector('#luxuryDraftActions').hidden=!unsaved;saveLuxuryButton.disabled=!LUXURY_SAVES_RELEASED||!unsaved||!accountUid||luxurySaving;saveLuxuryButton.textContent=LUXURY_SAVES_RELEASED?'Save meal changes':'Save changes (release testing pending)'};
+saveLuxuryButton.onclick=async()=>{
+ if(!LUXURY_SAVES_RELEASED||luxurySaving||!accountUid||!account||!hasPreviewEdits(previewEdits))return;
+ const uid=accountUid,epoch=authEpoch,original=account,preview={...previewEdits};
+ luxurySaving=true;refreshDiscard();label('Saving your meal changes securely…');
+ try{
+  const result=await commitLuxuryPreview({
+   storage:localStorage,uid,original,preview,
+   runTransaction:callback=>runTransaction(db,callback),
+   documentRef:doc(db,'users',uid),
+   getAuthenticatedUid:()=>authEpoch===epoch&&auth.currentUser?.uid===uid?uid:null
+  });
+  if(authEpoch!==epoch||auth.currentUser?.uid!==uid)return;
+  // A fresh server document becomes the next verified baseline.
+  const cloud=await getDoc(doc(db,'users',uid));
+  if(authEpoch!==epoch||auth.currentUser?.uid!==uid)return;
+  if(!cloud.exists())throw Error('Saved plan could not be reloaded');
+  account=cloud.data();previewEdits={};renderWeek(liveWeek);setHero();renderIngredients();
+  label(result.cleanupWarning||'Meal changes saved to your account.');
+ }catch(error){
+  if(authEpoch===epoch&&auth.currentUser?.uid===uid){
+   label('Save was not confirmed. Your draft remains available for export. '+(error?.message||'Check your connection.'));
+   refreshRecovered();
+  }
+ }finally{luxurySaving=false;if(authEpoch===epoch)refreshDiscard()}
+};
 const downloadLuxuryDraft=(draft)=>{
  const blob=new Blob([JSON.stringify(draft,null,2)],{type:'application/json'});
  const href=URL.createObjectURL(blob),link=document.createElement('a');
