@@ -36,3 +36,9 @@ assert.match(live,/signInWithEmailAndPassword\(auth,/,'Sign-in uses Firebase Aut
 assert.match(live,/await signOut\(auth\)/,'Sign-out uses Firebase Authentication');
 assert.match(live,/const snapshot=await getDocFromServer\(doc\(db,'users',user.uid\)\)/,'Plan restoration requires live server data');
 console.log('Luxury preview account form and read-only Firebase loading checks passed');
+
+assert.match(live,/const needsPreferencesRecovery=!loaded\.preferences&&!loaded\.onboardingInitialized/,'Missing preferences with an existing account must display a recovery warning');
+assert.match(live,/if\(!loaded\.plan\|\|typeof loaded\.plan!=='object'/,'Unverified plan shape must not be rendered');
+assert.match(live,/Existing saved meals are shown read-only where available/,'Preview must not hide recoverable meals because preferences are absent');
+assert.match(live,/const LUXURY_SAVES_RELEASED=false/,'Cloud save remains disabled');
+console.log('Partial read-only account recovery display guard passed');
