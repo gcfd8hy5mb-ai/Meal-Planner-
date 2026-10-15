@@ -35,6 +35,7 @@ saveLuxuryButton.onclick=async()=>{
  if(!LUXURY_SAVES_RELEASED||luxurySaving||!accountUid||!account||!hasPreviewEdits(previewEdits))return;
  const uid=accountUid,epoch=authEpoch,original=account,preview={...previewEdits};
  luxurySaving=true;refreshDiscard();label('Saving your meal changes securely…');
+ let transactionResult=null;
  try{
   const result=await commitLuxuryPreview({
    storage:localStorage,uid,original,preview,
@@ -43,6 +44,8 @@ saveLuxuryButton.onclick=async()=>{
    getAuthenticatedUid:()=>authEpoch===epoch&&auth.currentUser?.uid===uid?uid:null
   });
   if(authEpoch!==epoch||auth.currentUser?.uid!==uid)return;
+  // A committed transaction must not be reported as an unsaved draft if its reload fails.
+  transactionResult=result;
   // A fresh server document becomes the next verified baseline.
   const cloud=await getDocFromServer(doc(db,'users',uid));
   if(authEpoch!==epoch||auth.currentUser?.uid!==uid)return;
@@ -51,7 +54,11 @@ saveLuxuryButton.onclick=async()=>{
   label(result.cleanupWarning||'Meal changes saved to your account.');
  }catch(error){
   if(authEpoch===epoch&&auth.currentUser?.uid===uid){
-   label('Save was not confirmed. Your draft remains available for export. '+(error?.message||'Check your connection.'));
+   if(transactionResult){
+    label('Cloud write completed, but the server reload could not be verified. Check your saved plan after reconnecting before making another change. '+(error?.message||''));
+   }else{
+    label('Save was not confirmed. Review the device recovery options before retrying. '+(error?.message||'Check your connection.'));
+   }
    refreshRecovered();
   }
  }finally{luxurySaving=false;if(authEpoch===epoch)refreshDiscard()}
