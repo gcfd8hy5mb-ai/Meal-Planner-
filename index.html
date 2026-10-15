@@ -462,6 +462,17 @@ function showAuthRecoverySummary(cloud){
 }
 function inspectLocalMealBackups(){
  const result=document.getElementById('deviceBackupResult');
+ const shape=value=>Array.isArray(value)?'array':value===null?'null':typeof value;
+ const inspectPlan=plan=>{
+  if(!plan||typeof plan!=='object')return {format:shape(plan),days:0,selected:0,nonempty:0};
+  const rows=Array.isArray(plan)?plan:Object.values(plan);
+  let selected=0,nonempty=0;
+  for(const day of rows){
+   if(Array.isArray(day)){selected+=day.filter(v=>typeof v==='string'&&v.trim()).length;nonempty+=day.filter(v=>v!==null&&v!==undefined&&v!=='').length}
+   else if(day&&typeof day==='object'){const slots=Object.values(day);selected+=slots.filter(v=>typeof v==='string'&&v.trim()).length;nonempty+=slots.filter(v=>v!==null&&v!==undefined&&v!=='').length}
+  }
+  return {format:shape(plan),days:rows.length,selected,nonempty};
+ };
  let entries=[];
  try{
   for(let i=0;i<localStorage.length;i++){
@@ -471,13 +482,17 @@ function inspectLocalMealBackups(){
    if(!value)continue;
    try{
     const backup=JSON.parse(value);
-    const count=plan=>plan&&typeof plan==='object'&&!Array.isArray(plan)?Object.values(plan).reduce((total,day)=>total+(Array.isArray(day)?day.filter(id=>typeof id==='string'&&id.trim()).length:0),0):null;
-    entries.push({week1:count(backup.plan),week2:count(backup.alternateWeek?.plan),preferences:!!backup.preferences,valid:!!(backup.plan&&backup.goals)});
+    const one=inspectPlan(backup?.plan),two=inspectPlan(backup?.alternateWeek?.plan);
+    entries.push({one,two,preferences:shape(backup?.preferences),custom:shape(backup?.custom),customCount:Array.isArray(backup?.custom)?backup.custom.length:null,setup:backup?.weekSetupComplete===true?'complete':backup?.weekSetupComplete===false?'incomplete':'unknown',activeWeek:backup?.activePlanningWeek===2?2:1,alternate:shape(backup?.alternateWeek),valid:!!(backup?.plan&&backup?.goals)});
    }catch(err){entries.push({invalid:true})}
   }
  }catch(error){result.textContent='This app cannot access its local backup storage. No data was changed.';return}
- if(!entries.length){result.textContent='No Tablewise device backup found in this app storage. Check the ORIGINAL Home Screen app, not Safari. No data was changed.';return}
- result.textContent=entries.map((item,i)=>item.invalid?'Backup '+(i+1)+': unreadable': 'Backup '+(i+1)+': Week 1 '+(item.week1===null?'unavailable':item.week1)+' selected slots; Week 2 '+(item.week2===null?'unavailable':item.week2)+' selected slots; preferences '+(item.preferences?'present':'missing')+'; structure '+(item.valid?'valid':'incomplete')).join(' | ') + '. Read-only. No backup was modified.';
+ if(!entries.length){result.textContent='No Tablewise device backup found in this app storage. No data was changed.';return}
+ result.textContent=entries.map((item,i)=>{
+  if(item.invalid)return 'Backup '+(i+1)+': unreadable';
+  const format=w=>w.format+', '+w.days+' days, '+w.selected+' meal IDs, '+w.nonempty+' nonempty slots';
+  return 'Backup '+(i+1)+' — stored Week A: '+format(item.one)+'; stored Week B: '+format(item.two)+'; active week: '+item.activeWeek+'; preferences: '+item.preferences+'; alternate week: '+item.alternate+'; setup: '+item.setup+'; custom recipes: '+(item.customCount??item.custom)+'; structure: '+(item.valid?'valid':'incomplete');
+ }).join(' | ')+'. Read-only: no data was modified.';
 }
 document.getElementById('inspectDeviceBackup').addEventListener('click',inspectLocalMealBackups);
 function showPlanner(visible){gate.style.display=visible?'none':'grid';document.querySelector('header').toggleAttribute('data-locked',!visible);document.querySelector('main').toggleAttribute('data-locked',!visible)}
