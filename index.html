@@ -448,7 +448,8 @@ function details(id,plannedDay,plannedSlot){
 document.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>{tab=b.dataset.tab;const more=document.querySelector('.navMore');if(more)more.open=false;view();window.scrollTo({top:0,behavior:'instant'})});view();
 
 const gate=document.getElementById('authGate'),message=document.getElementById('authMessage');
-const setMessage=(s)=>{message.textContent=s};
+gate.style.visibility='hidden';
+const setMessage=(s)=>{message.textContent=s;if(s!=='Restoring your meals from the cloud…'&&s!=='Please wait…')gate.style.visibility='visible'};
 const recoverySummary=document.getElementById('authRecoverySummary');
 function clearAuthRecoverySummary(){recoverySummary.hidden=true;recoverySummary.textContent=''}
 function showAuthRecoverySummary(cloud){
@@ -614,6 +615,16 @@ if(!snapshot.exists()){
     return;
   }
 }
-if(typeof state.custom==='string'){try{const parsed=JSON.parse(state.custom);state.custom=Array.isArray(parsed)?parsed:[]}catch(error){console.error('Could not read saved recipes',error);state.custom=[]}}if(pending&&draft){try{const restored=JSON.parse(draft);if(restored&&restored.plan&&restored.goals){state=restored;recovered=true}}catch(err){console.error('Could not restore pending local draft',err)}}if(!state||!state.plan||!state.goals)state=defaults();state.checked=state.checked||{};state.custom=state.custom||[];state.servings=state.servings||2;state.pantry=state.pantry||{};state.mealServings=state.mealServings||{};ensureTwoWeekPlanner();if(!state.groceryQuantities)state.groceryQuantities=groceryQuantities();document.getElementById('cloudStatus').textContent=recovered?'Unsaved changes recovered on this device — retry cloud save':'Cloud connected ✓';retryButton.style.display=recovered?'inline-block':'none';lastSaveError=recovered?new Error('Cloud plan missing; local data recovered. Do not overwrite until reviewed.'):null;// A missing document is only created during explicit account registration above.
+if(typeof state.custom==='string'){try{const parsed=JSON.parse(state.custom);state.custom=Array.isArray(parsed)?parsed:[]}catch(error){console.error('Could not read saved recipes',error);state.custom=[]}}if(pending&&draft){
+ try{
+  const restored=JSON.parse(draft);
+  const mealIds=plan=>(Array.isArray(plan)?plan:plan&&typeof plan==='object'?Object.values(plan):[]).flatMap(day=>Array.isArray(day)?day:[]).filter(id=>typeof id==='string'&&id.trim());
+  const cloudIds=mealIds(state.plan),localIds=mealIds(restored?.plan);
+  // A stale pending marker must not supersede a successfully recovered cloud plan.
+  const cloudAlreadyRecovered=!!snapshot.exists()&&!!state.preferences&&cloudIds.length>0&&JSON.stringify(cloudIds)===JSON.stringify(localIds)&&JSON.stringify(state.preferences)===JSON.stringify(restored?.preferences);
+  if(cloudAlreadyRecovered){pending=false}
+  else if(restored&&restored.plan&&restored.goals){state=restored;recovered=true}
+ }catch(err){console.error('Could not read pending local draft',err)}
+}if(!state||!state.plan||!state.goals)state=defaults();state.checked=state.checked||{};state.custom=state.custom||[];state.servings=state.servings||2;state.pantry=state.pantry||{};state.mealServings=state.mealServings||{};ensureTwoWeekPlanner();if(!state.groceryQuantities)state.groceryQuantities=groceryQuantities();document.getElementById('cloudStatus').textContent=recovered?'Unsaved changes recovered on this device — retry cloud save':'Cloud connected ✓';retryButton.style.display=recovered?'inline-block':'none';lastSaveError=recovered?new Error('Cloud plan missing; local data recovered. Do not overwrite until reviewed.'):null;// A missing document is only created during explicit account registration above.
 view();showPlanner(true);void restoreKrogerConnection()}catch(e){if(epoch!==authEpoch)return;activeUid=null;state=defaults();setMessage('Could not load your private plan. Check Firestore rules and your connection, then refresh.');console.error('Cloud restore failed',e)}});
 </script></body></html>
