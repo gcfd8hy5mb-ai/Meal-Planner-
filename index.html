@@ -530,7 +530,7 @@ function localRestoreCandidate(uid){
  if(!raw)throw Error('The original device backup is missing.');
  const data=JSON.parse(raw);
  const ids=selectedMealIds(data.plan);
- if(!data.preferences||!data.goals||!data.weekSetupComplete||ids.length!==7)throw Error('The backup does not match the verified seven-dinner plan. Recovery stopped.');
+ if(!data.preferences||!data.goals||!data.weekSetupComplete||!Array.isArray(data.plan)||data.plan.length!==7||data.plan.some(day=>!Array.isArray(day))||ids.length!==7)throw Error('The backup does not match the verified seven-dinner plan. Recovery stopped.');
  const idsExpected=['beefTacos','homeBurgers','homeTaterTot','southGoulash','fajitas','enchiladas','stirfry'];
  if(ids.some((id,i)=>id!==idsExpected[i]))throw Error('Saved meals differ from the verified backup. Recovery stopped.');
  const known=new Set(recipes.map(r=>r.id));
@@ -567,7 +567,8 @@ confirmRestoreButton.addEventListener('click',async()=>{
    const snap=await transaction.get(ref);
    if(!snap.exists()||!cloudEligibleForRecovery(snap.data()))throw Error('Cloud data changed. Recovery stopped to protect it.');
    if(auth.currentUser?.uid!==reviewed.uid)throw Error('Account changed. Recovery stopped.');
-   transaction.update(ref,{preferences:candidate.data.preferences,plan:candidate.data.plan,weekSetupComplete:true,choosingMeals:false,mealTypes:candidate.data.mealTypes||['Dinner'],mealScope:candidate.data.mealScope||'dinner'});
+   const firestorePlan=Object.fromEntries(candidate.data.plan.map((day,i)=>[String(i),day]));
+   transaction.update(ref,{preferences:candidate.data.preferences,plan:firestorePlan,weekSetupComplete:true,choosingMeals:false,mealTypes:candidate.data.mealTypes||['Dinner'],mealScope:candidate.data.mealScope||'dinner'});
   });
   restoreReview.textContent='Recovery saved to Firebase. Close and reopen Tablewise to load your meals.';
  }catch(error){restoreReview.textContent=(error.message||'Recovery unsuccessful.')+' Existing data was not intentionally replaced.'}
