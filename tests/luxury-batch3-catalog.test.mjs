@@ -8,7 +8,7 @@ const js=source.replace(/export\s*\{recipes,verifiedRecipePhotos\};?/, '')+'\n;g
 const ctx={};vm.runInNewContext(js,ctx,{timeout:2000});
 const batch=Array.from(ctx.__recipes).slice(84,125);
 test('batch-three maps to exactly the next 41 real recipes',()=>{
- assert.equal(batch.length,41);assert.equal(new Set(batch.map(r=>r.id)).size,42);
+ assert.equal(batch.length,41);assert.equal(new Set(batch.map(r=>r.id)).size,41);
  assert.deepEqual(Object.keys(reviewedRecipeDetails).slice(84,125).sort(),batch.map(r=>r.id).sort());
 });
 test('each batch-three recipe has measured ingredients and multi-step cooking directions',()=>{
