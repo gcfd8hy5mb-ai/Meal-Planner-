@@ -7,3 +7,7 @@ test('long braises and roasting recipes do not show implausibly short cook estim
   assert.ok(reviewedRecipeDetails[id]?.cookMinutes>=minCook,id+' underestimates its stated cook time');
  }
 });
+
+test('buttermilk fried chicken includes its required refrigeration time',()=>{
+ assert.ok(reviewedRecipeDetails.southFriedChicken.prepMinutes>=30,'30-minute buttermilk soak cannot fit a shorter prep estimate');
+});
