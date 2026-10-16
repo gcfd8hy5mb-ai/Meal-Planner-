@@ -7,7 +7,9 @@ export function groceryTotals(account, recipeLookup, selectedWeeks = [1,2]) {
   const slotNames = ['Breakfast','Lunch','Dinner','Snack'];
   const activeWeek = account.activePlanningWeek === 2 ? 2 : 1;
   const sideMap = new Map(sideRecipes.map(side => [side.id,side]));
-  for (const week of selectedWeeks) {
+  // Ignore invalid or repeated week selections; a week must never be counted twice.
+  const weeks = [...new Set((Array.isArray(selectedWeeks) ? selectedWeeks : []).filter(week => week === 1 || week === 2))];
+  for (const week of weeks) {
     const bundle = week === activeWeek ? account : (account.alternateWeek || {});
     for (let day=0;day<7;day++) {
       const planned = bundle.plan?.[day] || [];
@@ -19,7 +21,7 @@ export function groceryTotals(account, recipeLookup, selectedWeeks = [1,2]) {
         const defaultPortions = Number(account.servings);
         const portions = Number.isFinite(specified) && specified>0 ? Math.min(30,specified) : Math.min(30,Math.max(1,Number.isFinite(defaultPortions)?defaultPortions:1));
         const sides = slot===2 ? (Array.isArray(bundle.dinnerSides?.[day]) ? bundle.dinnerSides[day] : (bundle.dinnerSides?.[day] ? [bundle.dinnerSides[day]] : [])) : [];
-        const ingredients = [...(Array.isArray(recipe.ingredients)?recipe.ingredients:[]),...sides.flatMap(id=>sideMap.get(id)?.ingredients||[])];
+        const ingredients = [...(Array.isArray(recipe.ingredients)?recipe.ingredients:[]),...[...new Set(sides)].flatMap(id=>sideMap.get(id)?.ingredients||[])];
         for (const entry of ingredients) {
           if (!Array.isArray(entry)) continue;
           const [name,quantity,unit=''] = entry;
