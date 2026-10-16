@@ -26,7 +26,7 @@ test('all 166 grocery ingredient quantities are numeric, positive, and unit-defi
 test('recipes do not call for measured cooking oil without listing cooking oil',()=>{
  for(const recipe of recipes){
   const directions=recipe.steps.join(' ');
-  const measuredOil=/(?:\\d+|½|¼|¾|⅓|⅔)\\s*(?:tsp|tbsp|teaspoons?|tablespoons?)\\s+(?:of\\s+)?(?:(?:olive|cooking|vegetable|sesame)\\s+)?oil\\b/i.test(directions);
-  if(measuredOil)assert.ok(recipe.ingredients.some(([name])=>/\\boil\\b/i.test(name)),recipe.id+' mentions measured oil without grocery entry');
+  const measuredOil=/(?:\d+|½|¼|¾|⅓|⅔)\s*(?:tsp|tbsp|teaspoons?|tablespoons?)\s+(?:of\s+)?(?:(?:olive|cooking|vegetable|sesame)\s+)?oil\b/i.test(directions);
+  if(measuredOil)assert.ok(recipe.ingredients.some(([name])=>/\boil\b/i.test(name)),recipe.id+' mentions measured oil without grocery entry');
  }
 });
