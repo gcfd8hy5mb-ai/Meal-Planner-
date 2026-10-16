@@ -3,6 +3,7 @@ on:
   pull_request:
     paths:
       - 'index.html'
+      - 'tests/current-save-failure-scenarios.cjs'
       - 'tests/cloud-save-conflict-status.cjs'
       - 'tests/cloud-revision-guard.cjs'
       - 'tests/recovery-conflict-status.cjs'
@@ -19,6 +20,7 @@ on:
     branches: [main]
     paths:
       - 'index.html'
+      - 'tests/current-save-failure-scenarios.cjs'
       - 'tests/cloud-save-conflict-status.cjs'
       - 'tests/cloud-revision-guard.cjs'
       - 'tests/recovery-conflict-status.cjs'
@@ -61,6 +63,8 @@ jobs:
         run: node tests/cloud-revision-guard.cjs
       - name: Validate save-failure conflict messaging
         run: node tests/cloud-save-conflict-status.cjs
+      - name: Simulate current production save failures
+        run: node tests/current-save-failure-scenarios.cjs
       - name: Check inline JavaScript syntax
         run: |
           node --input-type=module <<'NODE'
