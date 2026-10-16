@@ -5,6 +5,7 @@ on:
       - 'luxury-v2/**'
       - '.github/workflows/luxury-v2-isolation.yml'
       - 'tests/luxury-v2-isolation.cjs'
+      - 'tests/luxury-v2-week-controls.cjs'
       - 'tests/luxury-v2-header-cleanup.cjs'
       - 'tests/luxury-v2-success-notice.cjs'
       - 'tests/luxury-v2-optional-meals.cjs'
@@ -26,6 +27,7 @@ on:
       - 'luxury-v2/**'
       - '.github/workflows/luxury-v2-isolation.yml'
       - 'tests/luxury-v2-isolation.cjs'
+      - 'tests/luxury-v2-week-controls.cjs'
       - 'tests/luxury-v2-header-cleanup.cjs'
       - 'tests/luxury-v2-success-notice.cjs'
       - 'tests/luxury-v2-optional-meals.cjs'
@@ -55,6 +57,8 @@ jobs:
         run: node tests/luxury-v2-success-notice.cjs
       - name: Check compact luxury header
         run: node tests/luxury-v2-header-cleanup.cjs
+      - name: Verify approved week typography and actions
+        run: node tests/luxury-v2-week-controls.cjs
       - name: Run standalone legacy-leak regression test
         run: node tests/luxury-v2-isolation.cjs
       - name: Verify saved two-week grocery aggregation
