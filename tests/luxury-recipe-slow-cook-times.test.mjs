@@ -1,0 +1,9 @@
+import assert from 'node:assert/strict';
+import test from 'node:test';
+import {reviewedRecipeDetails} from '../luxury-v2/recipe-details.mjs';
+const longCooks={southMississippiRoast:180,southPotRoast:180,southPulledPork:180,southBbqRibs:150,southBeefStew:120,southCountryRibs:150};
+test('long braises and roasting recipes do not show implausibly short cook estimates',()=>{
+ for(const [id,minCook] of Object.entries(longCooks)){
+  assert.ok(reviewedRecipeDetails[id]?.cookMinutes>=minCook,id+' underestimates its stated cook time');
+ }
+});
