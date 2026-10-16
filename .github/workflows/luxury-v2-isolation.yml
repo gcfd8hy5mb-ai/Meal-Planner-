@@ -5,6 +5,7 @@ on:
       - 'luxury-v2/**'
       - '.github/workflows/luxury-v2-isolation.yml'
       - 'tests/luxury-v2-isolation.cjs'
+      - 'tests/luxury-v2-cold-start.cjs'
       - 'tests/luxury-v2-groceries.test.mjs'
       - 'tests/luxury-v2-checklist.test.mjs'
       - 'tests/luxury-v2-meal-preview.test.mjs'
@@ -22,6 +23,7 @@ on:
       - 'luxury-v2/**'
       - '.github/workflows/luxury-v2-isolation.yml'
       - 'tests/luxury-v2-isolation.cjs'
+      - 'tests/luxury-v2-cold-start.cjs'
       - 'tests/luxury-v2-groceries.test.mjs'
       - 'tests/luxury-v2-checklist.test.mjs'
       - 'tests/luxury-v2-meal-preview.test.mjs'
@@ -39,6 +41,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Guard first-paint luxury shell against old layout
+        run: node tests/luxury-v2-cold-start.cjs
       - name: Run standalone legacy-leak regression test
         run: node tests/luxury-v2-isolation.cjs
       - name: Verify saved two-week grocery aggregation

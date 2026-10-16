@@ -97,7 +97,7 @@ for (const width of [320, 390, 430]) {
       expect(snapshot.headingFont).toContain('Georgia');
       expect(snapshot.rootBackground).toBe('rgb(248, 243, 234)');
       expect(snapshot.navPosition).toBe('fixed');
-      expect(snapshot.navBackground).toBe('rgb(255, 253, 248)');
+      expect(snapshot.navBackground).toBe('rgb(22, 62, 49)');
       expect(snapshot.visiblePages).toBe(1);
       expect(snapshot.overflow).toBe(false);
       expect(snapshot.stylesheetLinks).toBe(0);
