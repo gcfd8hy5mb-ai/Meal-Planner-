@@ -14,6 +14,7 @@ async function simulate({changedCloud=false,networkDown=false,emptyLocal=false}=
  if(emptyLocal)local.plan={0:[null,null,null,null]};
  const values=new Map(),status={textContent:''},retry={style:{display:''}};
  const sandbox={
+   __original:original,__uid:uid,
    activeUid:uid,auth:{currentUser:{uid}},signingOut:false,resetInProgress:false,
    state:local,writeChain:Promise.resolve(),reconcileGroceryChecks(){},
    localStorage:{setItem:(k,v)=>values.set(k,v),getItem:k=>values.get(k)||null,removeItem:k=>values.delete(k)},
@@ -27,7 +28,7 @@ async function simulate({changedCloud=false,networkDown=false,emptyLocal=false}=
      return fn(tx);
    }
  };
- vm.runInNewContext(source+';globalThis.invokeSave=save;globalThis.statusSnapshot=()=>({cloudBaseline,lastSaveError});',sandbox);
+ vm.runInNewContext(source+';cloudBaseline=JSON.stringify(globalThis.__original);cloudBaselineUid=globalThis.__uid;globalThis.invokeSave=save;globalThis.statusSnapshot=()=>({cloudBaseline,lastSaveError});',sandbox);
  sandbox.invokeSave();
  await sandbox.writeChain;
  return {status:status.textContent,retry:retry.style.display,localBackup:values.get('tablewise-v1-'+uid),pending:values.get('tablewise-pending-'+uid),cloud,error:sandbox.statusSnapshot().lastSaveError};
