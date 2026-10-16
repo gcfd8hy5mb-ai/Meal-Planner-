@@ -11,7 +11,7 @@ const meals=[
 const ids=(query,category='All')=>searchMeals(meals,{query,category}).map(m=>m.id);
 test('meal search understands cuisines, proteins, and ingredient keywords',()=>{
  assert.deepEqual(ids('mexican'),['b','f']);
- assert.deepEqual(ids('chicken'),['p','f']);
+ assert.deepEqual(ids('chicken'),['f','p']);
  assert.deepEqual(ids('beef'),['b']);
  assert.deepEqual(ids('penne'),['p']);
  assert.deepEqual(ids('CHICKEN PASTA'),['p']);
