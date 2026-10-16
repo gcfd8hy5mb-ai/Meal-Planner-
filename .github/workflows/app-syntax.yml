@@ -3,6 +3,7 @@ on:
   pull_request:
     paths:
       - 'index.html'
+      - 'tests/rapid-edits-account-switch.cjs'
       - 'tests/current-save-failure-scenarios.cjs'
       - 'tests/cloud-save-conflict-status.cjs'
       - 'tests/cloud-revision-guard.cjs'
@@ -20,6 +21,7 @@ on:
     branches: [main]
     paths:
       - 'index.html'
+      - 'tests/rapid-edits-account-switch.cjs'
       - 'tests/current-save-failure-scenarios.cjs'
       - 'tests/cloud-save-conflict-status.cjs'
       - 'tests/cloud-revision-guard.cjs'
@@ -65,6 +67,8 @@ jobs:
         run: node tests/cloud-save-conflict-status.cjs
       - name: Simulate current production save failures
         run: node tests/current-save-failure-scenarios.cjs
+      - name: Test rapid edits and account switching
+        run: node tests/rapid-edits-account-switch.cjs
       - name: Check inline JavaScript syntax
         run: |
           node --input-type=module <<'NODE'
