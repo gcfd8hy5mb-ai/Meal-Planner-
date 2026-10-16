@@ -162,7 +162,7 @@ const openMealPicker=(week,day)=>{
  const picker=document.querySelector('#luxuryMealPicker'),options=document.querySelector('#luxuryMealChoices');
  const search=document.querySelector('#luxuryMealSearch'),tabs=document.querySelector('#luxuryMealTabs');
  const count=document.querySelector('#luxuryMealCount'),more=document.querySelector('#luxuryLoadMoreMeals');
- let category='All',limit=6;
+ let category='All',limit=3;
  search.value='';tabs.replaceChildren();
  const draw=()=>{
   const found=searchMeals(recipes,{query:search.value,category,slot:'Dinner'});
@@ -191,8 +191,8 @@ const openMealPicker=(week,day)=>{
    const url=exemplar&&photo(exemplar.id);
    if(url){const image=document.createElement('img');image.className='picker-category-photo';image.src=url;image.alt='';image.loading='lazy';button.prepend(image)}
   }
- }button.onclick=()=>{category=name;limit=6;draw()};tabs.append(button)}
- search.oninput=()=>{limit=6;draw()};more.onclick=()=>{limit+=6;draw()};
+ }button.onclick=()=>{category=name;limit=3;draw()};tabs.append(button)}
+ search.oninput=()=>{limit=3;draw()};more.onclick=()=>{limit+=3;draw()};
  document.querySelector('#cancelLuxuryMealPicker').onclick=()=>{picker.hidden=true};
  document.querySelector('#luxuryPickerClose').onclick=()=>{picker.hidden=true};
  draw();picker.hidden=false;picker.scrollIntoView({block:'nearest'});
