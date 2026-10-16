@@ -3,6 +3,7 @@ on:
   pull_request:
     paths:
       - 'index.html'
+      - 'tests/recovery-conflict-status.cjs'
       - 'tests/guarded-cloud-save.cjs'
       - 'tests/startup-recovered-cloud.cjs'
       - 'tests/restore-firestore-shape.cjs'
@@ -16,6 +17,7 @@ on:
     branches: [main]
     paths:
       - 'index.html'
+      - 'tests/recovery-conflict-status.cjs'
       - 'tests/guarded-cloud-save.cjs'
       - 'tests/startup-recovered-cloud.cjs'
       - 'tests/restore-firestore-shape.cjs'
@@ -49,6 +51,8 @@ jobs:
         run: node tests/startup-recovered-cloud.cjs
       - name: Check guarded cloud save
         run: node tests/guarded-cloud-save.cjs
+      - name: Validate recovery conflict messaging
+        run: node tests/recovery-conflict-status.cjs
       - name: Check inline JavaScript syntax
         run: |
           node --input-type=module <<'NODE'
