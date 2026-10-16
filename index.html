@@ -632,8 +632,10 @@ if(typeof state.custom==='string'){try{const parsed=JSON.parse(state.custom);sta
   const mealIds=plan=>(Array.isArray(plan)?plan:plan&&typeof plan==='object'?Object.values(plan):[]).flatMap(day=>Array.isArray(day)?day:[]).filter(id=>typeof id==='string'&&id.trim());
   const cloudIds=mealIds(state.plan),localIds=mealIds(restored?.plan);
   // A stale pending marker must not supersede a successfully recovered cloud plan.
-  const cloudAlreadyRecovered=!!snapshot.exists()&&!!state.preferences&&cloudIds.length>0&&JSON.stringify(cloudIds)===JSON.stringify(localIds)&&JSON.stringify(state.preferences)===JSON.stringify(restored?.preferences);
+  const cloudAlreadyRecovered=!!snapshot.exists()&&!!state.preferences&&cloudIds.length>0&&JSON.stringify(cloudIds)===JSON.stringify(localIds)&&['likes','avoid','style'].every(key=>JSON.stringify(state.preferences?.[key]??null)===JSON.stringify(restored?.preferences?.[key]??null));
   if(cloudAlreadyRecovered){
+   // The previously recovered cloud data matches the original device meal selections.
+   // Do not rewrite the backup or cloud document just to clear a stale UI warning.
    pending=false;
   }else if(restored&&restored.plan&&restored.goals){
    state=restored;recovered=true;
