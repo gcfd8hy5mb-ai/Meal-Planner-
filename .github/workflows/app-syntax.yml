@@ -3,6 +3,7 @@ on:
   pull_request:
     paths:
       - 'index.html'
+      - 'tests/guarded-cloud-save.cjs'
       - 'tests/startup-recovered-cloud.cjs'
       - 'tests/restore-firestore-shape.cjs'
       - 'tests/guarded-meal-restore.cjs'
@@ -15,6 +16,7 @@ on:
     branches: [main]
     paths:
       - 'index.html'
+      - 'tests/guarded-cloud-save.cjs'
       - 'tests/startup-recovered-cloud.cjs'
       - 'tests/restore-firestore-shape.cjs'
       - 'tests/guarded-meal-restore.cjs'
@@ -45,6 +47,8 @@ jobs:
         run: node tests/restore-firestore-shape.cjs
       - name: Check cloud recovery startup
         run: node tests/startup-recovered-cloud.cjs
+      - name: Check guarded cloud save
+        run: node tests/guarded-cloud-save.cjs
       - name: Check inline JavaScript syntax
         run: |
           node --input-type=module <<'NODE'
