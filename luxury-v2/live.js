@@ -6,6 +6,7 @@ import { recipes, verifiedRecipePhotos } from './catalog.js';
 import {recipeSummary} from './recipe-details.mjs';
 import {diagnoseSavedPlan} from './recovery-diagnostic.mjs';
 import { groceryTotals } from './groceries.mjs';
+import {searchMeals,mealCategories} from './meal-search.mjs';
 import {groceryKey,readChecklist,saveChecklist} from './checklist.mjs';
 import {replacePreviewMeal,previewAccount,hasPreviewEdits} from './meal-preview.mjs';
 import {readPendingLuxuryDraft,commitLuxuryPreview,classifyLuxuryRecovery,verifyLuxurySavedPlan} from './save-flow.mjs';
@@ -157,18 +158,33 @@ const refreshRecovered=()=>{
 };
 document.querySelector('#discardLuxuryEdits').onclick=()=>{previewEdits={};refreshDiscard();document.querySelector('#luxuryMealPicker').hidden=true;renderWeek(liveWeek);setHero();renderIngredients();label('Preview discarded. Your saved meals are unchanged.')};
 const openMealPicker=(week,day)=>{
- if(!account) return;
- const picker=document.querySelector('#luxuryMealPicker');
- const options=document.querySelector('#luxuryMealChoices');options.replaceChildren();
- const chosen=recipes.filter(r=>r.slot==='Dinner').sort((a,b)=>a.name.localeCompare(b.name));
- for(const recipe of chosen){
-   const button=document.createElement('button');button.type='button';button.className='grocery-item';button.textContent=recipe.name;
+ if(!account)return;
+ const picker=document.querySelector('#luxuryMealPicker'),options=document.querySelector('#luxuryMealChoices');
+ const search=document.querySelector('#luxuryMealSearch'),tabs=document.querySelector('#luxuryMealTabs');
+ const count=document.querySelector('#luxuryMealCount'),more=document.querySelector('#luxuryLoadMoreMeals');
+ let category='All',limit=8;
+ search.value='';tabs.replaceChildren();
+ const draw=()=>{
+  const found=searchMeals(recipes,{query:search.value,category,slot:'Dinner'});
+  options.replaceChildren();
+  for(const recipe of found.slice(0,limit)){
+   const button=document.createElement('button');button.type='button';button.className='grocery-item';
+   const heading=document.createElement('strong');heading.textContent=recipe.name;
+   const details=document.createElement('small');details.textContent=[recipe.cuisine||'Dinner',recipe.cal?recipe.cal+' cal':''].filter(Boolean).join(' · ');
+   const add=document.createElement('span');add.textContent='+';add.setAttribute('aria-hidden','true');
+   button.append(add,heading,details);
    button.onclick=()=>{previewEdits=replacePreviewMeal(account,previewEdits,week,day,2,recipe.id);picker.hidden=true;refreshDiscard();renderWeek(week);setHero();renderIngredients();label('Preview updated. Grocery quantities recalculated. Meal changes are not saved to your account.')};
    options.append(button);
- }
- const cancel=document.querySelector('#cancelLuxuryMealPicker');cancel.onclick=()=>{picker.hidden=true};
- picker.hidden=false;
- picker.scrollIntoView({block:'nearest'});
+  }
+  count.textContent=found.length+' matching meals';
+  if(!found.length){const empty=document.createElement('p');empty.className='notice';empty.textContent='No matching meals. Try another ingredient or category.';options.append(empty)}
+  more.hidden=found.length<=limit;
+  for(const tab of tabs.querySelectorAll('button'))tab.setAttribute('aria-pressed',String(tab.textContent===category));
+ };
+ for(const name of mealCategories){const button=document.createElement('button');button.type='button';button.textContent=name;button.onclick=()=>{category=name;limit=8;draw()};tabs.append(button)}
+ search.oninput=()=>{limit=8;draw()};more.onclick=()=>{limit+=8;draw()};
+ document.querySelector('#cancelLuxuryMealPicker').onclick=()=>{picker.hidden=true};
+ draw();picker.hidden=false;picker.scrollIntoView({block:'nearest'});
 };
 const showCookStep=()=>{const count=document.querySelector('#stepCount'),title=document.querySelector('#cookStepTitle'),body=document.querySelector('#cookStepBody');const items=currentRecipe?.steps||[];const n=items.length;count.textContent=n?'Step '+(step+1)+' of '+n:'No cooking steps available';title.textContent=currentRecipe?.name||'Select a meal';body.textContent=items[step]||'Open a saved recipe to view its cooking instructions.';document.querySelector('#previousStep').disabled=step===0;document.querySelector('#nextStep').disabled=!n;document.querySelector('#nextStep').textContent=step===n-1?'Done':'Next'};
 const openRecipe=(recipe)=>{currentRecipe=recipe;step=0;const img=document.querySelector('.cook-photo');const url=photo(recipe.id);if(url){img.src=url;img.alt=recipe.name;img.hidden=false}else img.hidden=true;showCookStep();showPage('cook')};
