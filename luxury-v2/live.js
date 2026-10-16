@@ -162,17 +162,20 @@ const openMealPicker=(week,day)=>{
  const picker=document.querySelector('#luxuryMealPicker'),options=document.querySelector('#luxuryMealChoices');
  const search=document.querySelector('#luxuryMealSearch'),tabs=document.querySelector('#luxuryMealTabs');
  const count=document.querySelector('#luxuryMealCount'),more=document.querySelector('#luxuryLoadMoreMeals');
- let category='All',limit=8;
+ let category='All',limit=6;
  search.value='';tabs.replaceChildren();
  const draw=()=>{
   const found=searchMeals(recipes,{query:search.value,category,slot:'Dinner'});
   options.replaceChildren();
   for(const recipe of found.slice(0,limit)){
    const button=document.createElement('button');button.type='button';button.className='grocery-item';
-   const heading=document.createElement('strong');heading.textContent=recipe.name;
+   const photoUrl=photo(recipe.id);if(photoUrl){const image=document.createElement('img');image.className='picker-meal-photo';image.src=photoUrl;image.alt='';image.loading='lazy';button.append(image)}
+   const content=document.createElement('div');content.className='picker-meal-copy';const heading=document.createElement('strong');heading.textContent=recipe.name;
    const details=document.createElement('small');details.textContent=[recipe.cuisine||'Dinner',recipe.cal?recipe.cal+' cal':''].filter(Boolean).join(' · ');
-   const add=document.createElement('span');add.textContent='+';add.setAttribute('aria-hidden','true');
-   button.append(add,heading,details);
+   const nutrition=document.createElement('small');nutrition.className='picker-macros';nutrition.textContent=[recipe.p!=null?recipe.p+'g protein':'',recipe.c!=null?recipe.c+'g carbs':'',recipe.f!=null?recipe.f+'g fat':''].filter(Boolean).join(' · ');
+   content.append(heading,details,nutrition);
+   const add=document.createElement('span');add.className='picker-meal-add';add.textContent='+';add.setAttribute('aria-hidden','true');
+   button.append(content,add);
    button.onclick=()=>{previewEdits=replacePreviewMeal(account,previewEdits,week,day,2,recipe.id);picker.hidden=true;refreshDiscard();renderWeek(week);setHero();renderIngredients();label('Preview updated. Grocery quantities recalculated. Meal changes are not saved to your account.')};
    options.append(button);
   }
@@ -181,8 +184,8 @@ const openMealPicker=(week,day)=>{
   more.hidden=found.length<=limit;
   for(const tab of tabs.querySelectorAll('button'))tab.setAttribute('aria-pressed',String(tab.textContent===category));
  };
- for(const name of mealCategories){const button=document.createElement('button');button.type='button';button.textContent=name;button.onclick=()=>{category=name;limit=8;draw()};tabs.append(button)}
- search.oninput=()=>{limit=8;draw()};more.onclick=()=>{limit+=8;draw()};
+ for(const name of mealCategories){const button=document.createElement('button');button.type='button';button.textContent=name;if(['All','Mexican','Chicken','Beef','Pork'].includes(name))button.className='picker-featured-tab';button.onclick=()=>{category=name;limit=6;draw()};tabs.append(button)}
+ search.oninput=()=>{limit=6;draw()};more.onclick=()=>{limit+=6;draw()};
  document.querySelector('#cancelLuxuryMealPicker').onclick=()=>{picker.hidden=true};
  draw();picker.hidden=false;picker.scrollIntoView({block:'nearest'});
 };
