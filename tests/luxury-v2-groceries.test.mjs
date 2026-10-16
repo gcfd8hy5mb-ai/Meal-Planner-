@@ -43,3 +43,6 @@ const repeatRows=groceryTotals(repeatAccount,lookup,[1,2]);
 assert.equal(repeatRows.find(x=>x.name==='Rice')?.quantity,9,'Repeated meals sum quantities across dates and both weeks');
 assert.equal(repeatRows.find(x=>x.name==='Potatoes')?.quantity,9,'Sides repeat with their parent meal servings');
 assert.equal(repeatRows.find(x=>x.name==='Salt')?.quantity,4.5,'Fractional ingredient units multiply with per-meal servings');
+
+repeatAccount.dinnerSides[0]=['mashedpotatoes','mashedpotatoes'];
+assert.equal(groceryTotals(repeatAccount,lookup,[1,2]).find(x=>x.name==='Potatoes')?.quantity,9,'Duplicate side IDs within a dinner cannot double grocery totals');
