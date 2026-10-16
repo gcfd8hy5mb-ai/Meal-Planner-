@@ -184,7 +184,7 @@ const openMealPicker=(week,day)=>{
   more.hidden=found.length<=limit;
   for(const tab of tabs.querySelectorAll('button'))tab.setAttribute('aria-pressed',String(tab.textContent===category));
  };
- for(const name of mealCategories){const button=document.createElement('button');button.type='button';button.textContent=name;if(['All','Mexican','Chicken','Beef','Pork'].includes(name)){
+ for(const name of ['All','Mexican','Chicken','Beef','Pork',...mealCategories.filter(name=>!['All','Mexican','Chicken','Beef','Pork'].includes(name))]){const button=document.createElement('button');button.type='button';button.textContent=name;if(['All','Mexican','Chicken','Beef','Pork'].includes(name)){
   button.className='picker-featured-tab';
   if(name!=='All'){
    const exemplar=searchMeals(recipes,{category:name,slot:'Dinner'}).find(item=>photo(item.id));
@@ -194,6 +194,7 @@ const openMealPicker=(week,day)=>{
  }button.onclick=()=>{category=name;limit=6;draw()};tabs.append(button)}
  search.oninput=()=>{limit=6;draw()};more.onclick=()=>{limit+=6;draw()};
  document.querySelector('#cancelLuxuryMealPicker').onclick=()=>{picker.hidden=true};
+ document.querySelector('#luxuryPickerClose').onclick=()=>{picker.hidden=true};
  draw();picker.hidden=false;picker.scrollIntoView({block:'nearest'});
 };
 const showCookStep=()=>{const count=document.querySelector('#stepCount'),title=document.querySelector('#cookStepTitle'),body=document.querySelector('#cookStepBody');const items=currentRecipe?.steps||[];const n=items.length;count.textContent=n?'Step '+(step+1)+' of '+n:'No cooking steps available';title.textContent=currentRecipe?.name||'Select a meal';body.textContent=items[step]||'Open a saved recipe to view its cooking instructions.';document.querySelector('#previousStep').disabled=step===0;document.querySelector('#nextStep').disabled=!n;document.querySelector('#nextStep').textContent=step===n-1?'Done':'Next'};
