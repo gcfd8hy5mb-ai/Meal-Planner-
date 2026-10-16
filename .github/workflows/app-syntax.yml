@@ -3,6 +3,7 @@ on:
   pull_request:
     paths:
       - 'index.html'
+      - 'tests/guarded-meal-restore.cjs'
       - 'tests/backup-export.cjs'
       - 'tests/local-backup-shape.cjs'
       - 'tests/local-backup-inspection.cjs'
@@ -12,6 +13,7 @@ on:
     branches: [main]
     paths:
       - 'index.html'
+      - 'tests/guarded-meal-restore.cjs'
       - 'tests/backup-export.cjs'
       - 'tests/local-backup-shape.cjs'
       - 'tests/local-backup-inspection.cjs'
@@ -33,6 +35,8 @@ jobs:
         run: node tests/local-backup-shape.cjs
       - name: Check read-only backup export
         run: node tests/backup-export.cjs
+      - name: Validate guarded meal restoration
+        run: node tests/guarded-meal-restore.cjs
       - name: Check inline JavaScript syntax
         run: |
           node --input-type=module <<'NODE'
