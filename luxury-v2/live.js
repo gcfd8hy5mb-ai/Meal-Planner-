@@ -210,7 +210,7 @@ const renderIngredients=(scope='plan')=>{
 };
 document.querySelector('#previousStep').onclick=()=>{step=Math.max(0,step-1);showCookStep()};
 document.querySelector('#nextStep').onclick=()=>{if(step+1>=(currentRecipe?.steps?.length||0)){showPage('today');return}step++;showCookStep()};
-document.querySelector('.full').onclick=()=>{renderIngredients('recipe');showPage('groceries')};
+document.querySelector('section[data-page="cook"] > button.primary.full').onclick=()=>{renderIngredients('recipe');showPage('groceries')};
 document.querySelectorAll('[data-nav="groceries"]').forEach(b=>b.addEventListener('click',()=>renderIngredients()));
 document.querySelectorAll('[data-grocery-week]').forEach(b=>b.addEventListener('click',()=>{
   groceryWeek=b.dataset.groceryWeek;
