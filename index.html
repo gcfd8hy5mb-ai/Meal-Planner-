@@ -601,7 +601,9 @@ if(!snapshot.exists()){
     registrationPending=false;
     state=defaults();
     // Mark truly new accounts explicitly so onboarding is never mistaken for lost cloud data.
-    await setDoc(doc(db,'users',user.uid),{...state,custom:'[]',onboardingInitialized:true});
+    const initializedCloud={...state,custom:'[]',onboardingInitialized:true};
+    await setDoc(doc(db,'users',user.uid),initializedCloud);
+    if(epoch===authEpoch&&auth.currentUser?.uid===user.uid){cloudBaseline=JSON.stringify(initializedCloud);cloudBaselineUid=user.uid;}
     if(epoch!==authEpoch||auth.currentUser?.uid!==user.uid)return;
   }else if(draft){
     let backup=null;
