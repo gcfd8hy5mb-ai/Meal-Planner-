@@ -30,7 +30,8 @@ test('luxury v2 is visually and structurally isolated on iPhone', async ({ page 
     expect(state.width).toBeLessThanOrEqual(state.viewport);
     expect(state.font).toContain('Avenir');
     expect(state.headingFont).toContain('Georgia');
-    expect(state.rootBackground).toBe('rgb(248, 243, 234)');
+    expect(state.rootBackground).toBe('rgb(8, 11, 13)');
+    expect(await page.locator('#days .day').count() === 0 || await page.locator('#days .day').first().evaluate(e => getComputedStyle(e).backgroundColor !== 'rgb(255, 253, 248)')).toBe(true);
     expect(state.forbiddenElements).toBe(0);
     await page.screenshot({ path: 'test-results/luxury-'+screen+'.png', fullPage: true });
   }
@@ -95,9 +96,9 @@ for (const width of [320, 390, 430]) {
       });
       expect(snapshot.rootFont).toContain('Avenir');
       expect(snapshot.headingFont).toContain('Georgia');
-      expect(snapshot.rootBackground).toBe('rgb(248, 243, 234)');
+      expect(snapshot.rootBackground).toBe('rgb(8, 11, 13)');
       expect(snapshot.navPosition).toBe('fixed');
-      expect(snapshot.navBackground).toBe('rgb(22, 62, 49)');
+      expect(snapshot.navBackground).toBe('rgb(14, 18, 20)');
       expect(snapshot.visiblePages).toBe(1);
       expect(snapshot.overflow).toBe(false);
       expect(snapshot.stylesheetLinks).toBe(0);
@@ -125,7 +126,7 @@ test('network interruption and reload never reveal legacy layout', async ({ brow
       forbidden: !!document.querySelector('link[rel="stylesheet"], iframe, object, embed, .primaryNav, .navMoreMenu, .recipegrid, .shoppingHeading'),
       overflow: document.documentElement.scrollWidth > innerWidth
     }));
-    expect(styles.root).toBe('rgb(248, 243, 234)');
+    expect(styles.root).toBe('rgb(8, 11, 13)');
     expect(styles.heading).toContain('Georgia');
     expect(styles.forbidden).toBe(false);
     expect(styles.overflow).toBe(false);
@@ -147,7 +148,7 @@ test('Firebase CDN failure retains a luxury-only visible account status', async 
     await page.locator('[data-nav="' + screen + '"]').click();
     await expect(page.locator('[data-page="' + screen + '"]')).toBeVisible();
     await expect(banner).toBeVisible();
-    expect(await page.evaluate(() => getComputedStyle(document.documentElement).backgroundColor)).toBe('rgb(248, 243, 234)');
+    expect(await page.evaluate(() => getComputedStyle(document.documentElement).backgroundColor)).toBe('rgb(8, 11, 13)');
     await page.screenshot({ path: 'test-results/auth-unavailable-' + screen + '.png', fullPage: true });
   }
   await context.close();
