@@ -46,3 +46,27 @@ assert.equal(repeatRows.find(x=>x.name==='Salt')?.quantity,4.5,'Fractional ingre
 
 repeatAccount.dinnerSides[0]=['mashedpotatoes','mashedpotatoes'];
 assert.equal(groceryTotals(repeatAccount,lookup,[1,2]).find(x=>x.name==='Potatoes')?.quantity,9,'Duplicate side IDs within a dinner cannot double grocery totals');
+
+const changingRecipes=new Map([
+ ['mealA',{ingredients:[['Rice',1,'cup'],['Chicken',5,'oz']]}],
+ ['mealB',{ingredients:[['Potatoes',2,'cup'],['Beef',4,'oz']]}]
+]);
+const changingLookup=id=>changingRecipes.get(id);
+const changingAccount={activePlanningWeek:1,servings:2,mealTypes:['Dinner'],plan:{0:[null,null,'mealA',null]},mealServings:{},dinnerSides:{},alternateWeek:{plan:{0:[null,null,'mealA',null]},mealServings:{},dinnerSides:{}}};
+const qty=(weeks,name)=>groceryTotals(changingAccount,changingLookup,weeks).find(x=>x.name===name)?.quantity||0;
+assert.equal(qty([1,2],'Rice'),4,'Both weeks initially contain a two-serving rice meal');
+changingAccount.mealServings['0-2']=3;
+assert.equal(qty([1,2],'Rice'),5,'Changing meal servings immediately recalculates both weeks');
+changingAccount.plan[0][2]='mealB';
+assert.equal(qty([1,2],'Rice'),2,'Replacing a recipe removes its old ingredient totals');
+assert.equal(qty([1,2],'Potatoes'),6,'Replacing a recipe adds new ingredients at the current serving count');
+changingAccount.alternateWeek.plan[0][2]='mealB';
+assert.equal(qty([1,2],'Rice'),0,'Replacing meals in both weeks removes all unused ingredients');
+assert.equal(qty([1,2],'Potatoes'),10,'New meal ingredients aggregate across active and alternate weeks');
+changingAccount.activePlanningWeek=2;
+[changingAccount.plan,changingAccount.alternateWeek.plan]=[changingAccount.alternateWeek.plan,changingAccount.plan];
+[changingAccount.mealServings,changingAccount.alternateWeek.mealServings]=[changingAccount.alternateWeek.mealServings||{},changingAccount.mealServings];
+assert.equal(qty([1],'Potatoes'),6,'Switching active weeks retains Week 1 quantities');
+assert.equal(qty([2],'Potatoes'),4,'Switching active weeks retains Week 2 quantities');
+changingAccount.alternateWeek.plan[0][2]=null;
+assert.equal(qty([1,2],'Potatoes'),4,'Removing a planned meal removes its ingredient contribution');
