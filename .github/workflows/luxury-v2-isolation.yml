@@ -5,6 +5,7 @@ on:
       - 'luxury-v2/**'
       - '.github/workflows/luxury-v2-isolation.yml'
       - 'tests/luxury-v2-isolation.cjs'
+      - 'tests/luxury-v2-header.cjs'
       - 'tests/luxury-v2-success-notice.cjs'
       - 'tests/luxury-v2-optional-meals.cjs'
       - 'tests/luxury-v2-cold-start.cjs'
@@ -25,6 +26,7 @@ on:
       - 'luxury-v2/**'
       - '.github/workflows/luxury-v2-isolation.yml'
       - 'tests/luxury-v2-isolation.cjs'
+      - 'tests/luxury-v2-header.cjs'
       - 'tests/luxury-v2-success-notice.cjs'
       - 'tests/luxury-v2-optional-meals.cjs'
       - 'tests/luxury-v2-cold-start.cjs'
@@ -51,6 +53,8 @@ jobs:
         run: node tests/luxury-v2-optional-meals.cjs
       - name: Check quiet successful account restore
         run: node tests/luxury-v2-success-notice.cjs
+      - name: Validate luxury header hierarchy
+        run: node tests/luxury-v2-header.cjs
       - name: Run standalone legacy-leak regression test
         run: node tests/luxury-v2-isolation.cjs
       - name: Verify saved two-week grocery aggregation
