@@ -14,6 +14,7 @@ on:
       - 'tests/luxury-pot-pie-recipe.test.mjs'
       - 'tests/luxury-recipe-all-directions.test.mjs'
       - 'tests/luxury-recipe-specific-descriptions.test.mjs'
+      - 'tests/luxury-loaded-potato-times.test.mjs'
       - 'tests/luxury-v2-week-controls.cjs'
       - 'tests/luxury-v2-header-cleanup.cjs'
       - 'tests/luxury-v2-success-notice.cjs'
@@ -45,6 +46,7 @@ on:
       - 'tests/luxury-pot-pie-recipe.test.mjs'
       - 'tests/luxury-recipe-all-directions.test.mjs'
       - 'tests/luxury-recipe-specific-descriptions.test.mjs'
+      - 'tests/luxury-loaded-potato-times.test.mjs'
       - 'tests/luxury-v2-week-controls.cjs'
       - 'tests/luxury-v2-header-cleanup.cjs'
       - 'tests/luxury-v2-success-notice.cjs'
@@ -78,7 +80,7 @@ jobs:
       - name: Verify approved week typography and actions
         run: node tests/luxury-v2-week-controls.cjs
       - name: Validate first 42 recipes and cooking metadata
-        run: node --test tests/luxury-recipe-details.test.mjs tests/luxury-batch1-catalog.test.mjs tests/luxury-batch2-catalog.test.mjs tests/luxury-batch3-catalog.test.mjs tests/luxury-batch4-catalog.test.mjs tests/luxury-recipe-slow-cook-times.test.mjs tests/luxury-pot-pie-recipe.test.mjs tests/luxury-recipe-all-directions.test.mjs tests/luxury-recipe-specific-descriptions.test.mjs
+        run: node --test tests/luxury-recipe-details.test.mjs tests/luxury-batch1-catalog.test.mjs tests/luxury-batch2-catalog.test.mjs tests/luxury-batch3-catalog.test.mjs tests/luxury-batch4-catalog.test.mjs tests/luxury-recipe-slow-cook-times.test.mjs tests/luxury-pot-pie-recipe.test.mjs tests/luxury-recipe-all-directions.test.mjs tests/luxury-recipe-specific-descriptions.test.mjs tests/luxury-loaded-potato-times.test.mjs
       - name: Run standalone legacy-leak regression test
         run: node tests/luxury-v2-isolation.cjs
       - name: Verify saved two-week grocery aggregation
