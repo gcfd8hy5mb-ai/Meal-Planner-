@@ -39,6 +39,8 @@ try {
    tx.update(refA,{plan:state.plan});
  }),/Cloud changed on another device/);
  assert.equal((await getDocFromServer(refA)).data().plan['0'][2],'homeBurgers');
+ await deleteDoc(refA);createdA=false;
+ await deleteDoc(refB);createdB=false;
  await signOut(authB);assert.equal(authB.currentUser,null);
  await signOut(authA);assert.equal(authA.currentUser,null);
  console.log('PASS current hosted Firebase disposable account isolation, save, readback, conflict, sign-out');
