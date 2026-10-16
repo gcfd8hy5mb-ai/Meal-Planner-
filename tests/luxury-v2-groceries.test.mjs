@@ -28,3 +28,18 @@ account.alternateWeek={plan:{0:[null,null,'meal',null]},mealServings:{},dinnerSi
 assert.equal(groceryTotals(account,lookup,[1]).find(x=>x.name==='Rice')?.quantity,2, 'Inactive Week 1 must map to alternate bundle');
 assert.equal(groceryTotals(account,lookup,[2]).find(x=>x.name==='Rice')?.quantity,3, 'Active Week 2 must map to current bundle');
 assert.equal(groceryTotals(account,lookup,[1,2]).find(x=>x.name==='Rice')?.quantity,5, 'Both weeks must combine regardless of which is active');
+
+const repeatedWeeks=groceryTotals(account,lookup,[1,1,2,2]);
+assert.equal(repeatedWeeks.find(x=>x.name==='Rice')?.quantity,5,'Duplicate week filters must not double grocery quantities');
+assert.equal(groceryTotals(account,lookup,[0,3]).length,0,'Invalid weeks must not silently include alternate week');
+assert.equal(groceryTotals(account,lookup,[2,2]).find(x=>x.name==='Rice')?.quantity,3,'Week 2 may be selected repeatedly without doubling');
+const repeatAccount={
+ activePlanningWeek:1,servings:2,mealTypes:['Dinner'],
+ plan:{0:[null,null,'meal',null],1:[null,null,'meal',null]},
+ mealServings:{'1-2':4},dinnerSides:{0:['mashedpotatoes'],1:['mashedpotatoes']},
+ alternateWeek:{plan:{0:[null,null,'meal',null]},mealServings:{'0-2':3},dinnerSides:{0:['mashedpotatoes']}}
+};
+const repeatRows=groceryTotals(repeatAccount,lookup,[1,2]);
+assert.equal(repeatRows.find(x=>x.name==='Rice')?.quantity,9,'Repeated meals sum quantities across dates and both weeks');
+assert.equal(repeatRows.find(x=>x.name==='Potatoes')?.quantity,9,'Sides repeat with their parent meal servings');
+assert.equal(repeatRows.find(x=>x.name==='Salt')?.quantity,4.5,'Fractional ingredient units multiply with per-meal servings');
