@@ -3,6 +3,7 @@ on:
   pull_request:
     paths:
       - 'index.html'
+      - 'tests/cloud-revision-guard.cjs'
       - 'tests/recovery-conflict-status.cjs'
       - 'tests/guarded-cloud-save.cjs'
       - 'tests/startup-recovered-cloud.cjs'
@@ -17,6 +18,7 @@ on:
     branches: [main]
     paths:
       - 'index.html'
+      - 'tests/cloud-revision-guard.cjs'
       - 'tests/recovery-conflict-status.cjs'
       - 'tests/guarded-cloud-save.cjs'
       - 'tests/startup-recovered-cloud.cjs'
@@ -53,6 +55,8 @@ jobs:
         run: node tests/guarded-cloud-save.cjs
       - name: Validate recovery conflict messaging
         run: node tests/recovery-conflict-status.cjs
+      - name: Validate multi-device revision guard
+        run: node tests/cloud-revision-guard.cjs
       - name: Check inline JavaScript syntax
         run: |
           node --input-type=module <<'NODE'
