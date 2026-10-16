@@ -1,0 +1,34 @@
+name: Tablewise current hosted Firebase audit
+on:
+  workflow_dispatch:
+    inputs:
+      confirm_disposable_accounts:
+        description: 'Type DISPOSABLE_ONLY to authorize disposable CI accounts only'
+        required: true
+        type: string
+permissions:
+  contents: read
+jobs:
+  hosted-validation:
+    if: ${{ inputs.confirm_disposable_accounts == 'DISPOSABLE_ONLY' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    environment: tablewise-hosted-test
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-audit --no-fund --ignore-scripts
+      - name: Verify disposable Firebase users against current code
+        env:
+          TABLEWISE_HOSTED_TEST_APPROVED: 'yes'
+          TABLEWISE_FIREBASE_PROJECT_ID: ${{ secrets.TABLEWISE_FIREBASE_PROJECT_ID }}
+          TABLEWISE_FIREBASE_API_KEY: ${{ secrets.TABLEWISE_FIREBASE_API_KEY }}
+          TABLEWISE_TEST_A_EMAIL: ${{ secrets.TABLEWISE_TEST_A_EMAIL }}
+          TABLEWISE_TEST_A_PASSWORD: ${{ secrets.TABLEWISE_TEST_A_PASSWORD }}
+          TABLEWISE_TEST_B_EMAIL: ${{ secrets.TABLEWISE_TEST_B_EMAIL }}
+          TABLEWISE_TEST_B_PASSWORD: ${{ secrets.TABLEWISE_TEST_B_PASSWORD }}
+        run: node tests/current-hosted-disposable.test.mjs
