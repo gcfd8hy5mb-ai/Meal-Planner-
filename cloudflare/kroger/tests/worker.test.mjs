@@ -70,7 +70,7 @@ test('new endpoints reject disallowed origins', async () => {
 test('callback diagnoses rejected OAuth code without exposing Kroger response or tokens', async () => {
   const state = 's'.repeat(43);
   const env = goodConfig();
-  env.KROGER_KV.get = async () => ({uid: 'test-user', expires: Date.now() + 30000, redirectUri: base + '/auth/kroger/callback'});
+  env.KROGER_KV.get = async () => ({uid: 'test-user', expires: Date.now() + 30000, redirectUri: base + '/auth/kroger/callback', returnUrl: 'https://gcfd8hy5mb-ai.github.io/Meal-Planner-/'});
   const originalFetch = globalThis.fetch;
   globalThis.fetch = async () => new Response(JSON.stringify({error: 'invalid_grant', access_token: 'should-never-leak'}), {status:400,headers:{'Content-Type':'application/json'}});
   try {
@@ -116,4 +116,38 @@ test('rejects cross-origin and insecure preview return URLs',async()=>{
  const env=goodConfig();env.KROGER_APP_ORIGIN='https://preview.tablewise.example';env.KROGER_APP_RETURN='https://attacker.invalid/capture';
  const callback=await send('/auth/kroger/callback?state=bad&code=invalid',{},env);
  assert.equal(new URL(callback.headers.get('location')).origin,origin);
+});
+
+test('both approved app origins pass CORS and unapproved origins remain blocked',async()=>{
+ const env=goodConfig();
+ env.KROGER_APP_ORIGIN=origin;
+ env.KROGER_APP_RETURN=origin+'/Meal-Planner-/';
+ env.KROGER_PREVIEW_ORIGIN='https://tablewise-luxury-preview.pages.dev';
+ env.KROGER_PREVIEW_RETURN=env.KROGER_PREVIEW_ORIGIN+'/luxury-v2/index.html';
+ for(const allowed of [origin,env.KROGER_PREVIEW_ORIGIN]){
+  const response=await send('/status',{headers:{Origin:allowed}},env);
+  assert.equal(response.status,401);
+  assert.equal(response.headers.get('access-control-allow-origin'),allowed);
+ }
+ const blocked=await send('/status',{headers:{Origin:'https://attacker.invalid'}},env);
+ assert.equal(blocked.status,403);
+});
+test('OAuth callback returns to the original allowed app, never a query-selected destination',async()=>{
+ const env=goodConfig();
+ env.KROGER_PREVIEW_ORIGIN='https://tablewise-luxury-preview.pages.dev';
+ env.KROGER_PREVIEW_RETURN=env.KROGER_PREVIEW_ORIGIN+'/luxury-v2/index.html';
+ const state='s'.repeat(43);
+ env.KROGER_KV.get=async()=>({uid:'user1',expires:Date.now()+30000,redirectUri:base+'/auth/kroger/callback',returnUrl:env.KROGER_PREVIEW_RETURN});
+ const response=await send('/auth/kroger/callback?state='+state+'&error=access_denied&next=https://attacker.invalid',{},env);
+ assert.equal(response.status,303);
+ const destination=new URL(response.headers.get('location'));
+ assert.equal(destination.origin,env.KROGER_PREVIEW_ORIGIN);
+ assert.equal(destination.pathname,'/luxury-v2/index.html');
+ assert.equal(destination.searchParams.get('kroger_reason'),'oauth_denied');
+});
+test('OAuth callback rejects saved return URLs not on the configured allowlist',async()=>{
+ const env=goodConfig(), state='s'.repeat(43);
+ env.KROGER_KV.get=async()=>({uid:'user1',expires:Date.now()+30000,redirectUri:base+'/auth/kroger/callback',returnUrl:'https://attacker.invalid/collect'});
+ const response=await send('/auth/kroger/callback?state='+state+'&error=access_denied',{},env);
+ assert.equal(new URL(response.headers.get('location')).origin,origin);
 });
