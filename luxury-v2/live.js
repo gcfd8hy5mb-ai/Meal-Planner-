@@ -31,6 +31,14 @@ const krogerDisplay=(message,connected=false)=>{
  krogerDisconnectButton.hidden=!connected;
  krogerConnectButton.disabled=!auth.currentUser||connected;
 };
+const groceryKrogerToggle=document.querySelector('#groceryKrogerToggle');
+const groceryKrogerDrawer=document.querySelector('#groceryKrogerDrawer');
+groceryKrogerToggle.onclick=()=>{
+ const opening=groceryKrogerDrawer.hidden;
+ groceryKrogerDrawer.hidden=!opening;
+ groceryKrogerToggle.setAttribute('aria-expanded',String(opening));
+ if(opening)groceryKrogerDrawer.scrollIntoView({behavior:'smooth',block:'nearest'});
+};
 const krogerStoreZip=document.querySelector('#krogerStoreZip');
 const krogerStoreSelect=document.querySelector('#krogerStoreSelect');
 const krogerStoreMessage=document.querySelector('#krogerStoreMessage');
