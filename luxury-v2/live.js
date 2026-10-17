@@ -112,7 +112,8 @@ document.querySelector('#krogerAddCartButton').onclick=async()=>{
  const storeAtSubmit=krogerLocationId;
  if(!storeAtSubmit){productMessage.textContent='Choose your Kroger store first.';return}
  if(items.length>20){productMessage.textContent='Select 20 or fewer products per cart update.';return}
- if(!window.confirm('Add '+items.length+' selected products to your Kroger cart? This will not place an order.'))return;
+ const totalPackages=items.reduce((sum,item)=>sum+item.quantity,0);
+ if(!window.confirm('Add '+items.length+' distinct products ('+totalPackages+' total packages) to your Kroger cart? Verify quantities before continuing. This will not place an order.'))return;
  const button=document.querySelector('#krogerAddCartButton');krogerCartPending=true;button.disabled=true;productMessage.textContent='Updating cart…';
  try{
   const result=await krogerRequest(user,'/cart/add',{method:'POST',body:{items}});
