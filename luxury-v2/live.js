@@ -132,12 +132,13 @@ const appendKrogerMatch=(item,products)=>{
  const group=document.createElement('div');group.className='kroger-match-group';
  const heading=document.createElement('strong');heading.textContent=item.name+' — '+formatAmount(item.quantity,item.unit);
  group.append(heading);
+ const quantityNote=document.createElement('small');quantityNote.textContent='Recipe amount shown above. Kroger cart quantity starts at 1 package; confirm the package size covers what you need.';group.append(quantityNote);
  if(!products.length){const missing=document.createElement('p');missing.textContent='No matching Kroger products found. Try searching by name.';group.append(missing)}
  for(const product of sortKrogerOffers(products).slice(0,2)){
   const row=document.createElement('div');row.className='kroger-result';
   const details=document.createElement('div'),name=document.createElement('strong'),meta=document.createElement('small');
   name.textContent=product.name;const offer=krogerPriceSummary(product);
-  meta.textContent=[product.brand,product.size,offer.label].filter(Boolean).join(' / ');
+  meta.textContent=[product.brand,product.size||'Package size not provided',offer.label].filter(Boolean).join(' / ');
   details.append(name,meta);
   const select=document.createElement('button');select.type='button';
   const paint=()=>{select.textContent=selectedKroger.has(product.upc)?'Remove':'Select'};
@@ -161,6 +162,7 @@ const loadKrogerMatches=async()=>{
   }catch{
    if(epoch!==matchEpoch||auth.currentUser?.uid!==user.uid||krogerLocationId!==matchStore)return;
    appendKrogerMatch(item,[]);
+   krogerMatchProgress.textContent='Some Kroger lookups failed; retry those ingredients by searching for them individually.';
   }
  }
  if(epoch===matchEpoch){
