@@ -6,6 +6,7 @@ import { recipes, verifiedRecipePhotos } from './catalog.js';
 import {recipeSummary} from './recipe-details.mjs';
 import {diagnoseSavedPlan} from './recovery-diagnostic.mjs';
 import { groceryTotals } from './groceries.mjs';
+import {groupGroceryItems} from './grocery-categories.mjs';
 import {krogerRequest} from './kroger-connect.mjs';
 import {readKrogerStore,saveKrogerStore} from './kroger-store.mjs';
 import {krogerPriceSummary,sortKrogerOffers} from './kroger-pricing.mjs';
@@ -383,12 +384,19 @@ const renderGroceryPanel=(week)=>{
  const persist=()=>saveChecklist(localStorage,accountUid,week,rows,checks);
  summary.append(heading,clear);host.append(summary);
  if(!rows.length){const empty=document.createElement('p');empty.className='notice';empty.textContent='No planned ingredients for this period.';host.append(empty);clear.hidden=true}
- for(const item of rows){
-  const key=groceryKey(item),row=document.createElement('button');row.type='button';row.className='grocery-item';row.setAttribute('aria-pressed',String(!!checks[key]));
-  const marker=document.createElement('span'),caption=document.createElement('span');marker.setAttribute('aria-hidden','true');caption.textContent=item.name+' — '+formatAmount(item.quantity,item.unit);
-  const paint=()=>{row.classList.toggle('checked',!!checks[key]);row.setAttribute('aria-pressed',String(!!checks[key]));marker.textContent=checks[key]?'☑':'□'};
-  row.onclick=()=>{checks[key]=!checks[key];if(!persist())label('Grocery checks could not be saved on this device.');paint();updateHeading()};
-  paint();row.append(marker,caption);host.append(row);
+ for(const [category,items] of groupGroceryItems(rows)){
+  const panel=document.createElement('details');panel.className='grocery-category';panel.open=true;
+  const title=document.createElement('summary');title.textContent=category;panel.append(title);
+  for(const item of items){
+   const key=groceryKey(item),row=document.createElement('button');row.type='button';row.className='grocery-item';row.setAttribute('aria-pressed',String(!!checks[key]));
+   const marker=document.createElement('span'),caption=document.createElement('span'),amount=document.createElement('span');
+   marker.setAttribute('aria-hidden','true');caption.className='grocery-name';caption.textContent=item.name;
+   amount.className='grocery-quantity';amount.textContent=formatAmount(item.quantity,item.unit);
+   const paint=()=>{row.classList.toggle('checked',!!checks[key]);row.setAttribute('aria-pressed',String(!!checks[key]));marker.textContent=checks[key]?'☑':'□'};
+   row.onclick=()=>{checks[key]=!checks[key];if(!persist())label('Grocery checks could not be saved on this device.');paint();updateHeading()};
+   paint();row.append(marker,caption,amount);panel.append(row);
+  }
+  host.append(panel);
  }
  clear.onclick=()=>{for(const key of Object.keys(checks))delete checks[key];if(!persist())label('Grocery checks could not be saved on this device.');renderGroceryPanel(week)};
  updateHeading();
