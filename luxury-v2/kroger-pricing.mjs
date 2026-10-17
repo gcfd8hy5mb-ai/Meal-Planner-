@@ -16,3 +16,10 @@ export function sortKrogerOffers(products){
   return Number(y.onSale)-Number(x.onSale)||y.savings-x.savings;
  });
 }
+
+export function krogerPromotionCoverage(products){
+ const items=Array.isArray(products)?products:[];
+ if(!items.length)return 'No Kroger products found for this search.';
+ const sales=items.filter(item=>krogerPriceSummary(item).onSale).length;
+ return sales?items.length+' matches · '+sales+' verified promotional '+(sales===1?'price':'prices')+' shown. Weekly ads and digital coupons may differ.':items.length+' matches · Kroger returned no discounted promotional prices for these products. Check Kroger weekly ads and digital coupons separately.';
+}
