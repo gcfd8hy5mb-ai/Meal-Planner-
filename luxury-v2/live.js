@@ -29,7 +29,6 @@ const krogerDisplay=(message,connected=false)=>{
  krogerDisconnectButton.hidden=!connected;
  krogerConnectButton.disabled=!auth.currentUser||connected;
 };
-
 const productPanel=document.querySelector('#krogerProductReview');
 const productResults=document.querySelector('#krogerProductResults');
 const productMessage=document.querySelector('#krogerProductMessage');
@@ -625,7 +624,7 @@ document.querySelectorAll('[data-grocery-week]').forEach(b=>b.addEventListener('
 document.querySelectorAll('[data-week]').forEach(b=>b.addEventListener('click',()=>{if(account)renderWeek(b.dataset.week)}));
 const resetPrivateView=()=>{
  // Clear all previous account content synchronously, before any next-account fetch.
- ++krogerEpoch;krogerDisplay('Sign in to Tablewise to connect your Kroger account.');
+ ++krogerEpoch;clearKrogerProducts();krogerDisplay('Sign in to Tablewise to connect your Kroger account.');
  account=null;accountUid=null;diagnosisPanel.hidden=true;diagnosisOutput.textContent='';currentRecipe=null;step=0;previewEdits={};liveWeek=1;groceryWeek='both';
  document.querySelector('#luxuryRecoverActions').hidden=true;
  refreshDiscard();
