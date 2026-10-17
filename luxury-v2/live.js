@@ -162,7 +162,8 @@ const loadKrogerMatches=async()=>{
 krogerMatchButton.onclick=()=>{
  if(!auth.currentUser||!account||!accountUid){krogerMatchProgress.textContent='Sign in and load your saved meal plan first.';return}
  resetKrogerMatches();
- matchQueue=groceryTotals(effectiveAccount(),findRecipe,groceryWeek==='both'?[1,2]:[Number(groceryWeek)]);
+ if(!groceryOpenWeek){krogerMatchProgress.textContent='Open Both weeks, Week 1, or Week 2 before matching your groceries.';return}
+ matchQueue=groceryTotals(effectiveAccount(),findRecipe,groceryOpenWeek==='both'?[1,2]:[Number(groceryOpenWeek)]);
  if(!matchQueue.length){krogerMatchProgress.textContent='No saved grocery ingredients to match.';return}
  void loadKrogerMatches();
 };
