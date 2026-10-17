@@ -7,6 +7,7 @@ import {recipeSummary} from './recipe-details.mjs';
 import {diagnoseSavedPlan} from './recovery-diagnostic.mjs';
 import { groceryTotals } from './groceries.mjs';
 import {krogerRequest} from './kroger-connect.mjs';
+import {krogerPriceSummary,sortKrogerOffers} from './kroger-pricing.mjs';
 import {searchMeals,mealCategories} from './meal-search.mjs';
 import {groceryKey,readChecklist,saveChecklist} from './checklist.mjs';
 import {replacePreviewMeal,previewAccount,hasPreviewEdits} from './meal-preview.mjs';
@@ -73,8 +74,8 @@ document.querySelector('#krogerSearchButton').onclick=async()=>{
   for(const item of data.products||[]){
    const row=document.createElement('div');row.className='kroger-result';
    const info=document.createElement('div'),title=document.createElement('strong'),details=document.createElement('small');
-   title.textContent=item.name;const price=item.promo??item.regular;
-   details.textContent=[item.brand,item.size,price!=null?'Price: '+price:'Price unavailable'].filter(Boolean).join(' / ');
+   title.textContent=item.name;const offer=krogerPriceSummary(item);
+   details.textContent=[item.brand,item.size,offer.label].filter(Boolean).join(' / ');
    info.append(title,details);
    const button=document.createElement('button');button.type='button';button.textContent=selectedKroger.has(item.upc)?'Remove':'Select';
    button.onclick=()=>{if(selectedKroger.has(item.upc))selectedKroger.delete(item.upc);else selectedKroger.set(item.upc,{upc:item.upc,quantity:1});button.textContent=selectedKroger.has(item.upc)?'Remove':'Select';renderKrogerSelection()};
@@ -103,11 +104,11 @@ const appendKrogerMatch=(item,products)=>{
  const heading=document.createElement('strong');heading.textContent=item.name+' — '+formatAmount(item.quantity,item.unit);
  group.append(heading);
  if(!products.length){const missing=document.createElement('p');missing.textContent='No matching Kroger products found. Try searching by name.';group.append(missing)}
- for(const product of products.slice(0,2)){
+ for(const product of sortKrogerOffers(products).slice(0,2)){
   const row=document.createElement('div');row.className='kroger-result';
   const details=document.createElement('div'),name=document.createElement('strong'),meta=document.createElement('small');
-  name.textContent=product.name;const price=product.promo??product.regular;
-  meta.textContent=[product.brand,product.size,price!=null?'Price: '+price:'Price unavailable'].filter(Boolean).join(' / ');
+  name.textContent=product.name;const offer=krogerPriceSummary(product);
+  meta.textContent=[product.brand,product.size,offer.label].filter(Boolean).join(' / ');
   details.append(name,meta);
   const select=document.createElement('button');select.type='button';
   const paint=()=>{select.textContent=selectedKroger.has(product.upc)?'Remove':'Select'};
