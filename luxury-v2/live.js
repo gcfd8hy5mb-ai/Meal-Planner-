@@ -8,6 +8,7 @@ import {diagnoseSavedPlan} from './recovery-diagnostic.mjs';
 import { groceryTotals } from './groceries.mjs';
 import {groupGroceryItems} from './grocery-categories.mjs';
 import {krogerRequest} from './kroger-connect.mjs';
+import {suggestedKrogerPackages} from './kroger-packages.mjs';
 import {readKrogerStore,saveKrogerStore} from './kroger-store.mjs';
 import {krogerPriceSummary,sortKrogerOffers,krogerPromotionCoverage,sortKrogerIngredientMatches,krogerIngredientRelevance} from './kroger-pricing.mjs';
 import {searchMeals,mealCategories} from './meal-search.mjs';
@@ -140,11 +141,12 @@ const appendKrogerMatch=(item,products,{failed=false}={})=>{
   const row=document.createElement('div');row.className='kroger-result';
   const details=document.createElement('div'),name=document.createElement('strong'),meta=document.createElement('small');
   name.textContent=product.name;const offer=krogerPriceSummary(product);
-  meta.textContent=[product.brand,product.size||'Package size not provided',offer.label].filter(Boolean).join(' / ');
+  const suggested=suggestedKrogerPackages(item,product.size);
+  meta.textContent=[product.brand,product.size||'Package size not provided',offer.label,suggested?'Estimated '+suggested+' package'+(suggested===1?'':'s')+' needed; verify item size':'Confirm package quantity manually'].filter(Boolean).join(' / ');
   details.append(name,meta);
   const select=document.createElement('button');select.type='button';
   const paint=()=>{select.textContent=selectedKroger.has(product.upc)?'Remove':'Select'};
-  select.onclick=()=>{if(selectedKroger.has(product.upc))selectedKroger.delete(product.upc);else selectedKroger.set(product.upc,{upc:product.upc,quantity:1});paint();renderKrogerSelection()};
+  select.onclick=()=>{if(selectedKroger.has(product.upc))selectedKroger.delete(product.upc);else selectedKroger.set(product.upc,{upc:product.upc,quantity:suggested??1});paint();renderKrogerSelection()};
   paint();row.append(details,select);group.append(row);
  }
  krogerMatchResults.append(group);
