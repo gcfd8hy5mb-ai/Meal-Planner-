@@ -374,7 +374,23 @@ const showCookStep=()=>{const count=document.querySelector('#stepCount'),title=d
 const openRecipe=(recipe)=>{currentRecipe=recipe;step=0;const img=document.querySelector('.cook-photo');const url=photo(recipe.id);if(url){img.src=url;img.alt=recipe.name;img.hidden=false}else img.hidden=true;showCookStep();showPage('cook')};
 const groceryExpansion={week:null,categories:{}};
 const groceryExpandedKey=()=>accountUid?'tablewise:grocery-expanded:v1:'+accountUid:null;
-const restoreGroceryExpansion=()=>{groceryExpansion.week=null;groceryExpansion.categories={};const key=groceryExpandedKey();if(!key)return;try{const value=JSON.parse(localStorage.getItem(key)||'null');if(value&&['both','1','2',null].includes(value.week)){groceryExpansion.week=value.week;if(value.categories&&typeof value.categories==='object'&&!Array.isArray(value.categories)){for(const [w,states] of Object.entries(value.categories)){if(!['both','1','2'].includes(w)||!states||typeof states!=='object')continue;groceryExpansion.categories[w]={};for(const [name,open] of Object.entries(states))if(name.length<100&&typeof open==='boolean')groceryExpansion.categories[w][name]=open}}}}}catch{}};
+const restoreGroceryExpansion=()=>{
+ groceryExpansion.week=null;groceryExpansion.categories={};
+ const key=groceryExpandedKey();if(!key)return;
+ try{
+  const value=JSON.parse(localStorage.getItem(key)||'null');
+  if(!value||!['both','1','2',null].includes(value.week))return;
+  groceryExpansion.week=value.week;
+  if(!value.categories||typeof value.categories!=='object'||Array.isArray(value.categories))return;
+  for(const [week,states] of Object.entries(value.categories)){
+   if(!['both','1','2'].includes(week)||!states||typeof states!=='object')continue;
+   groceryExpansion.categories[week]={};
+   for(const [name,open] of Object.entries(states)){
+    if(name.length<100&&typeof open==='boolean')groceryExpansion.categories[week][name]=open;
+   }
+  }
+ }catch{}
+};
 const saveGroceryExpansion=()=>{const key=groceryExpandedKey();if(key)try{localStorage.setItem(key,JSON.stringify(groceryExpansion))}catch{}};
 const renderGroceryPanel=(week)=>{
  const host=document.querySelector('#groceryWeekContent');
