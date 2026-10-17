@@ -8,3 +8,10 @@ test('zero-size packages and incompatible unit sizes require manual review',()=>
  assert.equal(packages({quantity:2,unit:'lb'},'2 fl oz'),null);
  assert.equal(packages({quantity:1,unit:'each'},'2 lb'),null);
 });
+
+test('common recipe unit aliases match unambiguous retail package sizes',()=>{
+ assert.equal(packages({quantity:3,unit:'lbs'},'1 lb'),3);
+ assert.equal(packages({quantity:24,unit:'ounces'},'16 oz'),2);
+ assert.equal(packages({quantity:6,unit:'pieces'},'2 ct'),3);
+ assert.equal(packages({quantity:2,unit:'cups'},'16 fl oz'),null);
+});
