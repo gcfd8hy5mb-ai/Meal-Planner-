@@ -129,7 +129,7 @@ const krogerMatchMore=document.querySelector('#krogerMatchMore');
 const krogerMatchProgress=document.querySelector('#krogerMatchProgress');
 const krogerMatchResults=document.querySelector('#krogerMatchResults');
 let matchEpoch=0,matchQueue=[],matchPosition=0;
-const resetKrogerMatches=()=>{++matchEpoch;matchQueue=[];matchPosition=0;krogerMatchResults.replaceChildren();krogerMatchMore.hidden=true;krogerMatchProgress.textContent=''};
+const resetKrogerMatches=()=>{++matchEpoch;matchQueue=[];matchPosition=0;krogerMatchResults.replaceChildren();krogerMatchMore.hidden=true;krogerMatchButton.disabled=false;krogerMatchProgress.textContent=''};
 const appendKrogerMatch=(item,products,{failed=false}={})=>{
  const group=document.createElement('div');group.className='kroger-match-group';
  const heading=document.createElement('strong');heading.textContent=item.name+' — '+formatAmount(item.quantity,item.unit);
