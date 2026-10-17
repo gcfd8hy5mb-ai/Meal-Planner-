@@ -133,7 +133,7 @@ const appendKrogerMatch=(item,products,{failed=false}={})=>{
  const group=document.createElement('div');group.className='kroger-match-group';
  const heading=document.createElement('strong');heading.textContent=item.name+' — '+formatAmount(item.quantity,item.unit);
  group.append(heading);
- const quantityNote=document.createElement('small');quantityNote.textContent='Recipe amount shown above. Kroger cart quantity starts at 1 package; confirm the package size covers what you need.';group.append(quantityNote);
+ const quantityNote=document.createElement('small');quantityNote.textContent='Recipe amount shown above. When package sizes are comparable, Tablewise estimates the number to select; otherwise it defaults to 1 package. Always confirm the package label and cart quantity.';group.append(quantityNote);
  if(!products.length){const missing=document.createElement('p');missing.textContent=failed?'Kroger search failed for this ingredient. Retry the search or search manually.':'No matching Kroger products found. Try searching by name.';group.append(missing)}
  const relevant=sortKrogerIngredientMatches(item.name,products).filter(product=>krogerIngredientRelevance(item.name,product)>0);
  if(products.length&&!relevant.length){const warning=document.createElement('p');warning.textContent='No clearly matching product names returned. Search manually and check the label before selecting.';group.append(warning)}
