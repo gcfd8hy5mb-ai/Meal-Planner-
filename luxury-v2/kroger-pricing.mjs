@@ -23,3 +23,17 @@ export function krogerPromotionCoverage(products){
  const sales=items.filter(item=>krogerPriceSummary(item).onSale).length;
  return sales?items.length+' matches · '+sales+' verified promotional '+(sales===1?'price':'prices')+' shown. Weekly ads and digital coupons may differ.':items.length+' matches · Kroger returned no discounted promotional prices for these products. Check Kroger weekly ads and digital coupons separately.';
 }
+
+const tokens=name=>new Set(String(name||'').toLowerCase().split(/[^a-z0-9]+/).filter(word=>word.length>2));
+export function krogerIngredientRelevance(ingredient,product){
+ const wanted=tokens(ingredient),found=tokens(product?.name);
+ return wanted.size?[...wanted].filter(word=>found.has(word)).length/wanted.size:0;
+}
+export function sortKrogerIngredientMatches(ingredient,products){
+ return [...(Array.isArray(products)?products:[])].sort((a,b)=>{
+  const relevance=krogerIngredientRelevance(ingredient,b)-krogerIngredientRelevance(ingredient,a);
+  if(relevance)return relevance;
+  const x=krogerPriceSummary(a),y=krogerPriceSummary(b);
+  return Number(y.onSale)-Number(x.onSale)||y.savings-x.savings;
+ });
+}
