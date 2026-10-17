@@ -372,15 +372,14 @@ const openMealPicker=(week,day)=>{
 const showCookStep=()=>{const count=document.querySelector('#stepCount'),title=document.querySelector('#cookStepTitle'),body=document.querySelector('#cookStepBody');const items=currentRecipe?.steps||[];const n=items.length;count.textContent=n?'Step '+(step+1)+' of '+n:'No cooking steps available';title.textContent=currentRecipe?.name||'Select a meal';body.textContent=items[step]||'Open a saved recipe to view its cooking instructions.';document.querySelector('#previousStep').disabled=step===0;document.querySelector('#nextStep').disabled=!n;document.querySelector('#nextStep').textContent=step===n-1?'Done':'Next'};
 const openRecipe=(recipe)=>{currentRecipe=recipe;step=0;const img=document.querySelector('.cook-photo');const url=photo(recipe.id);if(url){img.src=url;img.alt=recipe.name;img.hidden=false}else img.hidden=true;showCookStep();showPage('cook')};
 const renderGroceryPanel=(week)=>{
- const host=document.querySelector('[data-grocery-content="'+week+'"]');
- const counter=document.querySelector('[data-grocery-count="'+week+'"]');
+ const host=document.querySelector('#groceryWeekContent');
  if(!host)return;host.replaceChildren();
- if(!account||!accountUid){counter.textContent='Sign in to view';return}
+ if(!account||!accountUid){host.textContent='Sign in to view your grocery list.';return}
  const rows=groceryTotals(effectiveAccount(),findRecipe,week==='both'?[1,2]:[Number(week)]);
  const checks=readChecklist(localStorage,accountUid,week,rows);
  const summary=document.createElement('div');summary.className='grocery-summary';
  const heading=document.createElement('strong');const clear=document.createElement('button');clear.type='button';clear.className='primary';clear.textContent='Uncheck all';
- const updateHeading=()=>{const checked=Object.values(checks).filter(Boolean).length;heading.textContent=checked+' of '+rows.length+' checked';counter.textContent=heading.textContent;};
+ const updateHeading=()=>{const checked=Object.values(checks).filter(Boolean).length;heading.textContent=checked+' of '+rows.length+' checked';};
  const persist=()=>saveChecklist(localStorage,accountUid,week,rows,checks);
  summary.append(heading,clear);host.append(summary);
  if(!rows.length){const empty=document.createElement('p');empty.className='notice';empty.textContent='No planned ingredients for this period.';host.append(empty);clear.hidden=true}
@@ -394,18 +393,21 @@ const renderGroceryPanel=(week)=>{
  clear.onclick=()=>{for(const key of Object.keys(checks))delete checks[key];if(!persist())label('Grocery checks could not be saved on this device.');renderGroceryPanel(week)};
  updateHeading();
 };
+let groceryOpenWeek='both';
+const updateGroceryTabs=()=>document.querySelectorAll('[data-grocery-panel]').forEach(button=>{const open=button.dataset.groceryPanel===groceryOpenWeek;button.classList.toggle('active',open);button.setAttribute('aria-expanded',String(open));});
 const renderIngredients=(scope='plan')=>{
  resetKrogerMatches();
  const host=document.querySelector('#groceryItems');host.replaceChildren();
  const heading=document.querySelector('#groceryCount'),clear=document.querySelector('#clearGroceries');clear.hidden=true;
  if(scope==='recipe'&&currentRecipe){
-  document.querySelectorAll('[data-grocery-panel]').forEach(p=>p.open=false);
-  host.hidden=false;heading.textContent=currentRecipe.ingredients?.length+' recipe ingredients';
+  groceryOpenWeek=null;document.querySelector('#groceryWeekContent').replaceChildren();updateGroceryTabs();
+  host.hidden=false;heading.textContent=(currentRecipe.ingredients?.length||0)+' recipe ingredients';
   for(const [name,quantity,unit] of currentRecipe.ingredients||[]){const row=document.createElement('div');row.className='grocery-item';row.textContent=name+' — '+formatAmount(quantity,unit);host.append(row)}
- }else{host.hidden=true;for(const week of ['both','1','2'])renderGroceryPanel(week)}
+ }else{host.hidden=true;updateGroceryTabs();const content=document.querySelector('#groceryWeekContent');if(groceryOpenWeek)renderGroceryPanel(groceryOpenWeek);else content.replaceChildren();}
 };
-document.querySelectorAll('[data-grocery-panel]').forEach(panel=>panel.addEventListener('toggle',()=>{
- if(panel.open){document.querySelector('#groceryItems').hidden=true;document.querySelectorAll('[data-grocery-panel]').forEach(other=>{if(other!==panel)other.open=false})}
+document.querySelectorAll('[data-grocery-panel]').forEach(button=>button.addEventListener('click',()=>{
+ groceryOpenWeek=groceryOpenWeek===button.dataset.groceryPanel?null:button.dataset.groceryPanel;
+ renderIngredients();
 }));
 document.querySelector('#previousStep').onclick=()=>{step=Math.max(0,step-1);showCookStep()};
 document.querySelector('#nextStep').onclick=()=>{if(step+1>=(currentRecipe?.steps?.length||0)){showPage('today');return}step++;showCookStep()};
@@ -415,7 +417,7 @@ document.querySelectorAll('[data-week]').forEach(b=>b.addEventListener('click',(
 const resetPrivateView=()=>{
  // Clear all previous account content synchronously, before any next-account fetch.
  ++krogerEpoch;clearKrogerProducts();krogerDisplay('Sign in to Tablewise to connect your Kroger account.');
- account=null;accountUid=null;diagnosisPanel.hidden=true;diagnosisOutput.textContent='';currentRecipe=null;step=0;previewEdits={};liveWeek=1;groceryWeek='both';
+ account=null;accountUid=null;diagnosisPanel.hidden=true;diagnosisOutput.textContent='';currentRecipe=null;step=0;previewEdits={};liveWeek=1;groceryWeek='both';groceryOpenWeek='both';
  document.querySelector('#luxuryRecoverActions').hidden=true;
  refreshDiscard();
  const picker=document.querySelector('#luxuryMealPicker');picker.hidden=true;
