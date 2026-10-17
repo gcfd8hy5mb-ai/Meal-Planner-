@@ -35,7 +35,7 @@ const productMessage=document.querySelector('#krogerProductMessage');
 const cartReview=document.querySelector('#krogerCartReview');
 const selectedKroger=new Map();
 let productSearchEpoch=0;
-const clearKrogerProducts=()=>{++productSearchEpoch;selectedKroger.clear();productResults.replaceChildren();cartReview.hidden=true;productPanel.hidden=true};
+const clearKrogerProducts=()=>{resetKrogerMatches();++productSearchEpoch;selectedKroger.clear();productResults.replaceChildren();cartReview.hidden=true;productPanel.hidden=true};
 const renderKrogerSelection=()=>{cartReview.hidden=!selectedKroger.size;document.querySelector('#krogerCartSelection').textContent=selectedKroger.size+' products selected. Review before adding to Kroger.'};
 document.querySelector('#krogerSearchButton').onclick=async()=>{
  const user=auth.currentUser;if(!user)return;
@@ -65,6 +65,59 @@ document.querySelector('#krogerAddCartButton').onclick=async()=>{
  catch(error){productMessage.textContent=error.message||'Could not update cart.'}
  finally{button.disabled=false}
 };
+const krogerMatchButton=document.querySelector('#krogerMatchList');
+const krogerMatchMore=document.querySelector('#krogerMatchMore');
+const krogerMatchProgress=document.querySelector('#krogerMatchProgress');
+const krogerMatchResults=document.querySelector('#krogerMatchResults');
+let matchEpoch=0,matchQueue=[],matchPosition=0;
+const resetKrogerMatches=()=>{++matchEpoch;matchQueue=[];matchPosition=0;krogerMatchResults.replaceChildren();krogerMatchMore.hidden=true;krogerMatchProgress.textContent=''};
+const appendKrogerMatch=(item,products)=>{
+ const group=document.createElement('div');group.className='kroger-match-group';
+ const heading=document.createElement('strong');heading.textContent=item.name+' — '+formatAmount(item.quantity,item.unit);
+ group.append(heading);
+ if(!products.length){const missing=document.createElement('p');missing.textContent='No matching Kroger products found. Try searching by name.';group.append(missing)}
+ for(const product of products.slice(0,2)){
+  const row=document.createElement('div');row.className='kroger-result';
+  const details=document.createElement('div'),name=document.createElement('strong'),meta=document.createElement('small');
+  name.textContent=product.name;const price=product.promo??product.regular;
+  meta.textContent=[product.brand,product.size,price!=null?'Price: '+price:'Price unavailable'].filter(Boolean).join(' / ');
+  details.append(name,meta);
+  const select=document.createElement('button');select.type='button';
+  const paint=()=>{select.textContent=selectedKroger.has(product.upc)?'Remove':'Select'};
+  select.onclick=()=>{if(selectedKroger.has(product.upc))selectedKroger.delete(product.upc);else selectedKroger.set(product.upc,{upc:product.upc,quantity:1});paint();renderKrogerSelection()};
+  paint();row.append(details,select);group.append(row);
+ }
+ krogerMatchResults.append(group);
+};
+const loadKrogerMatches=async()=>{
+ const user=auth.currentUser,epoch=matchEpoch;if(!user)return;
+ krogerMatchMore.hidden=true;krogerMatchButton.disabled=true;
+ const stop=Math.min(matchQueue.length,matchPosition+5);
+ while(matchPosition<stop){
+  const item=matchQueue[matchPosition++];
+  krogerMatchProgress.textContent='Matching '+matchPosition+' of '+matchQueue.length+' ingredients…';
+  try{
+   const result=await krogerRequest(user,'/products',{params:{term:item.name}});
+   if(epoch!==matchEpoch||auth.currentUser?.uid!==user.uid)return;
+   appendKrogerMatch(item,result.products||[]);
+  }catch{
+   if(epoch!==matchEpoch||auth.currentUser?.uid!==user.uid)return;
+   appendKrogerMatch(item,[]);
+  }
+ }
+ if(epoch===matchEpoch){
+  krogerMatchProgress.textContent='Reviewed '+matchPosition+' of '+matchQueue.length+' ingredients. Choose the exact products before adding to cart.';
+  krogerMatchMore.hidden=matchPosition>=matchQueue.length;krogerMatchButton.disabled=false;
+ }
+};
+krogerMatchButton.onclick=()=>{
+ if(!auth.currentUser||!account||!accountUid){krogerMatchProgress.textContent='Sign in and load your saved meal plan first.';return}
+ resetKrogerMatches();
+ matchQueue=groceryTotals(effectiveAccount(),findRecipe,groceryWeek==='both'?[1,2]:[Number(groceryWeek)]);
+ if(!matchQueue.length){krogerMatchProgress.textContent='No saved grocery ingredients to match.';return}
+ void loadKrogerMatches();
+};
+krogerMatchMore.onclick=()=>{void loadKrogerMatches()};
 const refreshKroger=async()=>{
  const epoch=++krogerEpoch,user=auth.currentUser;
  if(!user){krogerDisplay('Sign in to Tablewise to connect your Kroger account.');return}
@@ -271,6 +324,7 @@ const openMealPicker=(week,day)=>{
 const showCookStep=()=>{const count=document.querySelector('#stepCount'),title=document.querySelector('#cookStepTitle'),body=document.querySelector('#cookStepBody');const items=currentRecipe?.steps||[];const n=items.length;count.textContent=n?'Step '+(step+1)+' of '+n:'No cooking steps available';title.textContent=currentRecipe?.name||'Select a meal';body.textContent=items[step]||'Open a saved recipe to view its cooking instructions.';document.querySelector('#previousStep').disabled=step===0;document.querySelector('#nextStep').disabled=!n;document.querySelector('#nextStep').textContent=step===n-1?'Done':'Next'};
 const openRecipe=(recipe)=>{currentRecipe=recipe;step=0;const img=document.querySelector('.cook-photo');const url=photo(recipe.id);if(url){img.src=url;img.alt=recipe.name;img.hidden=false}else img.hidden=true;showCookStep();showPage('cook')};
 const renderIngredients=(scope='plan')=>{
+ resetKrogerMatches();
  const host=document.querySelector('#groceryItems');if(!host)return;
  host.replaceChildren();
  const heading=document.querySelector('#groceryCount');
