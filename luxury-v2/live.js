@@ -84,7 +84,7 @@ const cartReview=document.querySelector('#krogerCartReview');
 const selectedKroger=new Map();
 let productSearchEpoch=0;
 const clearKrogerProducts=({keepStore=false}={})=>{if(!keepStore)clearStoreResults();resetKrogerMatches();++productSearchEpoch;selectedKroger.clear();productResults.replaceChildren();cartReview.hidden=true;productPanel.hidden=true};
-const renderKrogerSelection=()=>{cartReview.hidden=!selectedKroger.size;document.querySelector('#krogerCartSelection').textContent=selectedKroger.size+' products selected. Review before adding to Kroger.'};
+const renderKrogerSelection=()=>{cartReview.hidden=!selectedKroger.size;document.querySelector('#krogerCartSelection').textContent=selectedKroger.size+' distinct products · '+[...selectedKroger.values()].reduce((total,item)=>total+item.quantity,0)+' total packages selected. Verify quantities before adding to Kroger.'};
 document.querySelector('#krogerSearchButton').onclick=async()=>{
  const user=auth.currentUser;if(!user)return;
  const term=document.querySelector('#krogerProductTerm').value.trim();if(term.length<2){productMessage.textContent='Enter at least two characters.';return}
