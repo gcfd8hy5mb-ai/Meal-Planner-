@@ -128,8 +128,8 @@ const krogerMatchButton=document.querySelector('#krogerMatchList');
 const krogerMatchMore=document.querySelector('#krogerMatchMore');
 const krogerMatchProgress=document.querySelector('#krogerMatchProgress');
 const krogerMatchResults=document.querySelector('#krogerMatchResults');
-let matchEpoch=0,matchQueue=[],matchPosition=0;
-const resetKrogerMatches=()=>{++matchEpoch;matchQueue=[];matchPosition=0;krogerMatchResults.replaceChildren();krogerMatchMore.hidden=true;krogerMatchButton.disabled=false;krogerMatchProgress.textContent=''};
+let matchEpoch=0,matchQueue=[],matchPosition=0,matchFailures=0;
+const resetKrogerMatches=()=>{++matchEpoch;matchQueue=[];matchPosition=0;matchFailures=0;krogerMatchResults.replaceChildren();krogerMatchMore.hidden=true;krogerMatchButton.disabled=false;krogerMatchProgress.textContent=''};
 const appendKrogerMatch=(item,products,{failed=false}={})=>{
  const group=document.createElement('div');group.className='kroger-match-group';
  const heading=document.createElement('strong');heading.textContent=item.name+' — '+formatAmount(item.quantity,item.unit);
@@ -157,7 +157,6 @@ const loadKrogerMatches=async()=>{
  if(!krogerLocationId){krogerMatchProgress.textContent='Choose your Kroger store before matching products.';return}
  krogerMatchMore.hidden=true;krogerMatchButton.disabled=true;
  const stop=Math.min(matchQueue.length,matchPosition+5);
- let failedLookups=0;
  while(matchPosition<stop){
   const item=matchQueue[matchPosition++];
   krogerMatchProgress.textContent='Matching '+matchPosition+' of '+matchQueue.length+' ingredients…';
@@ -167,11 +166,11 @@ const loadKrogerMatches=async()=>{
    appendKrogerMatch(item,result.products||[]);
   }catch{
    if(epoch!==matchEpoch||auth.currentUser?.uid!==user.uid||krogerLocationId!==matchStore)return;
-   appendKrogerMatch(item,[],{failed:true});failedLookups++;
+   appendKrogerMatch(item,[],{failed:true});matchFailures++;
   }
  }
  if(epoch===matchEpoch){
-  krogerMatchProgress.textContent='Reviewed '+matchPosition+' of '+matchQueue.length+' ingredients.'+(failedLookups?' '+failedLookups+' Kroger lookups failed; search these ingredients manually.':'')+' Product quantities are per package; check sizes before adding to cart.';
+  krogerMatchProgress.textContent='Reviewed '+matchPosition+' of '+matchQueue.length+' ingredients.'+(matchFailures?' '+matchFailures+' Kroger lookups failed; search these ingredients manually.':'')+' Product quantities are per package; check sizes before adding to cart.';
   krogerMatchMore.hidden=matchPosition>=matchQueue.length;krogerMatchButton.disabled=false;
  }
 };
