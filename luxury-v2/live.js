@@ -25,8 +25,45 @@ let krogerEpoch=0;
 const krogerDisplay=(message,connected=false)=>{
  krogerStatus.textContent=message;
  krogerConnectButton.hidden=connected;
+ productPanel.hidden=!connected;if(!connected)clearKrogerProducts();
  krogerDisconnectButton.hidden=!connected;
  krogerConnectButton.disabled=!auth.currentUser||connected;
+};
+const productPanel=document.querySelector('#krogerProductReview');
+const productResults=document.querySelector('#krogerProductResults');
+const productMessage=document.querySelector('#krogerProductMessage');
+const cartReview=document.querySelector('#krogerCartReview');
+const selectedKroger=new Map();
+let productSearchEpoch=0;
+const clearKrogerProducts=()=>{++productSearchEpoch;selectedKroger.clear();productResults.replaceChildren();cartReview.hidden=true;productPanel.hidden=true};
+const renderKrogerSelection=()=>{cartReview.hidden=!selectedKroger.size;document.querySelector('#krogerCartSelection').textContent=selectedKroger.size+' products selected. Review before adding to Kroger.'};
+document.querySelector('#krogerSearchButton').onclick=async()=>{
+ const user=auth.currentUser;if(!user)return;
+ const term=document.querySelector('#krogerProductTerm').value.trim();if(term.length<2){productMessage.textContent='Enter at least two characters.';return}
+ const epoch=++productSearchEpoch;productMessage.textContent='Searching products…';productResults.replaceChildren();
+ try{const data=await krogerRequest(user,'/products',{params:{term}});
+  if(epoch!==productSearchEpoch||auth.currentUser?.uid!==user.uid)return;
+  for(const item of data.products||[]){
+   const row=document.createElement('div');row.className='kroger-result';
+   const info=document.createElement('div'),title=document.createElement('strong'),details=document.createElement('small');
+   title.textContent=item.name;const price=item.promo??item.regular;
+   details.textContent=[item.brand,item.size,price!=null?'Price: '+price:'Price unavailable'].filter(Boolean).join(' / ');
+   info.append(title,details);
+   const button=document.createElement('button');button.type='button';button.textContent=selectedKroger.has(item.upc)?'Remove':'Select';
+   button.onclick=()=>{if(selectedKroger.has(item.upc))selectedKroger.delete(item.upc);else selectedKroger.set(item.upc,{upc:item.upc,quantity:1});button.textContent=selectedKroger.has(item.upc)?'Remove':'Select';renderKrogerSelection()};
+   row.append(info,button);productResults.append(row);
+  }
+  productMessage.textContent=(data.products||[]).length+' product matches. Verify size and availability.';
+ }catch(error){if(epoch===productSearchEpoch)productMessage.textContent=error.message||'Search unavailable.'}
+};
+document.querySelector('#krogerAddCartButton').onclick=async()=>{
+ const user=auth.currentUser;if(!user||!selectedKroger.size)return;
+ const items=[...selectedKroger.values()];
+ if(!window.confirm('Add '+items.length+' selected products to your Kroger cart? This will not place an order.'))return;
+ const button=document.querySelector('#krogerAddCartButton');button.disabled=true;productMessage.textContent='Updating cart…';
+ try{const result=await krogerRequest(user,'/cart/add',{method:'POST',body:{items}});if(auth.currentUser?.uid!==user.uid)return;productMessage.textContent=result.message||'Cart updated. Review in Kroger.';selectedKroger.clear();renderKrogerSelection()}
+ catch(error){productMessage.textContent=error.message||'Could not update cart.'}
+ finally{button.disabled=false}
 };
 const refreshKroger=async()=>{
  const epoch=++krogerEpoch,user=auth.currentUser;
@@ -281,7 +318,7 @@ document.querySelectorAll('[data-grocery-week]').forEach(b=>b.addEventListener('
 document.querySelectorAll('[data-week]').forEach(b=>b.addEventListener('click',()=>{if(account)renderWeek(b.dataset.week)}));
 const resetPrivateView=()=>{
  // Clear all previous account content synchronously, before any next-account fetch.
- ++krogerEpoch;krogerDisplay('Sign in to Tablewise to connect your Kroger account.');
+ ++krogerEpoch;clearKrogerProducts();krogerDisplay('Sign in to Tablewise to connect your Kroger account.');
  account=null;accountUid=null;diagnosisPanel.hidden=true;diagnosisOutput.textContent='';currentRecipe=null;step=0;previewEdits={};liveWeek=1;groceryWeek='both';
  document.querySelector('#luxuryRecoverActions').hidden=true;
  refreshDiscard();

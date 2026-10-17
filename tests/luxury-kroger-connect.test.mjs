@@ -14,5 +14,12 @@ test('Kroger UI and safe connection operations exist without public credentials'
 });
 test('Reject unauthenticated or unauthorized Kroger actions',async()=>{
  await assert.rejects(krogerRequest(null,'/status'),/sign-in required/i);
- await assert.rejects(krogerRequest({getIdToken:async()=> 'fake'},'/cart/add',{method:'POST'}),/Unsupported Kroger action/);
+ await assert.rejects(krogerRequest({getIdToken:async()=> 'fake'},'/other-action',{method:'POST'}),/Unsupported Kroger action/);
+});
+
+test('product review requires explicit user confirmation and never initiates checkout',()=>{
+ assert.match(app,/krogerRequest\(user,'\/products'/);
+ assert.match(app,/window\.confirm\('Add '/);
+ assert.match(app,/krogerRequest\(user,'\/cart\/add'/);
+ assert.doesNotMatch(app,/\/checkout|placeOrder|purchaseNow/i);
 });
