@@ -429,7 +429,8 @@ const renderIngredients=(scope='plan')=>{
  const host=document.querySelector('#groceryItems');host.replaceChildren();
  const heading=document.querySelector('#groceryCount'),clear=document.querySelector('#clearGroceries');clear.hidden=true;
  if(scope==='recipe'&&currentRecipe){
-  groceryOpenWeek=null;document.querySelector('#groceryWeekContent').replaceChildren();updateGroceryTabs();
+  // Recipe ingredients are a temporary view, not a change to saved grocery week selection.
+  document.querySelector('#groceryWeekContent').replaceChildren();
   host.hidden=false;heading.textContent=(currentRecipe.ingredients?.length||0)+' recipe ingredients';
   for(const [name,quantity,unit] of currentRecipe.ingredients||[]){const row=document.createElement('div');row.className='grocery-item';row.textContent=name+' — '+formatAmount(quantity,unit);host.append(row)}
  }else{host.hidden=true;updateGroceryTabs();const content=document.querySelector('#groceryWeekContent');if(groceryOpenWeek)renderGroceryPanel(groceryOpenWeek);else content.replaceChildren();}
