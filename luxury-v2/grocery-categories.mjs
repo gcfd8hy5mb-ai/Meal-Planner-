@@ -7,5 +7,5 @@ const categories=[
  ['Frozen',/frozen|ice cream/i],
  ['Beverages',/juice|soda|coffee|tea|drink|water/i]
 ];
-export function groceryCategory(name){for(const [category,pattern] of categories)if(pattern.test(name||''))return category;return 'Other';}
+export function groceryCategory(name){if(/frozen|ice cream/i.test(name||''))return 'Frozen';if(/ground pepper|black pepper|white pepper|pepper powder|peppercorn|coconut milk|canned milk|evaporated milk/i.test(name||''))return 'Pantry & Dry Goods';for(const [category,pattern] of categories)if(pattern.test(name||''))return category;return 'Other';}
 export function groupGroceryItems(rows){const groups=new Map();for(const row of rows){const name=groceryCategory(row.name);if(!groups.has(name))groups.set(name,[]);groups.get(name).push(row)}return [...groups].sort((a,b)=>{const index=n=>categories.findIndex(x=>x[0]===n);const i=index(a[0]),j=index(b[0]);return (i<0?99:i)-(j<0?99:j)});}
