@@ -152,6 +152,7 @@ const loadKrogerMatches=async()=>{
  if(!krogerLocationId){krogerMatchProgress.textContent='Choose your Kroger store before matching products.';return}
  krogerMatchMore.hidden=true;krogerMatchButton.disabled=true;
  const stop=Math.min(matchQueue.length,matchPosition+5);
+ let failedLookups=0;
  while(matchPosition<stop){
   const item=matchQueue[matchPosition++];
   krogerMatchProgress.textContent='Matching '+matchPosition+' of '+matchQueue.length+' ingredients…';
@@ -161,12 +162,11 @@ const loadKrogerMatches=async()=>{
    appendKrogerMatch(item,result.products||[]);
   }catch{
    if(epoch!==matchEpoch||auth.currentUser?.uid!==user.uid||krogerLocationId!==matchStore)return;
-   appendKrogerMatch(item,[]);
-   krogerMatchProgress.textContent='Some Kroger lookups failed; retry those ingredients by searching for them individually.';
+   appendKrogerMatch(item,[]);failedLookups++;
   }
  }
  if(epoch===matchEpoch){
-  krogerMatchProgress.textContent='Reviewed '+matchPosition+' of '+matchQueue.length+' ingredients. Promotions appear only if Kroger supplies them; check the weekly ad and digital coupons separately.';
+  krogerMatchProgress.textContent='Reviewed '+matchPosition+' of '+matchQueue.length+' ingredients.'+(failedLookups?' '+failedLookups+' Kroger lookups failed; search these ingredients manually.':'')+' Product quantities are per package; check sizes before adding to cart.';
   krogerMatchMore.hidden=matchPosition>=matchQueue.length;krogerMatchButton.disabled=false;
  }
 };
