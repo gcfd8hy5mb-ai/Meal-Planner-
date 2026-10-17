@@ -27,7 +27,7 @@ let krogerEpoch=0;
 const krogerDisplay=(message,connected=false)=>{
  krogerStatus.textContent=message;
  krogerConnectButton.hidden=connected;
- productPanel.hidden=!connected;if(!connected)clearKrogerProducts();
+ productPanel.hidden=!connected;if(!connected)clearKrogerProducts({keepStore:true});
  krogerDisconnectButton.hidden=!connected;
  krogerConnectButton.disabled=!auth.currentUser||connected;
 };
@@ -73,7 +73,7 @@ const productMessage=document.querySelector('#krogerProductMessage');
 const cartReview=document.querySelector('#krogerCartReview');
 const selectedKroger=new Map();
 let productSearchEpoch=0;
-const clearKrogerProducts=()=>{clearStoreResults();resetKrogerMatches();++productSearchEpoch;selectedKroger.clear();productResults.replaceChildren();cartReview.hidden=true;productPanel.hidden=true};
+const clearKrogerProducts=({keepStore=false}={})=>{if(!keepStore)clearStoreResults();resetKrogerMatches();++productSearchEpoch;selectedKroger.clear();productResults.replaceChildren();cartReview.hidden=true;productPanel.hidden=true};
 const renderKrogerSelection=()=>{cartReview.hidden=!selectedKroger.size;document.querySelector('#krogerCartSelection').textContent=selectedKroger.size+' products selected. Review before adding to Kroger.'};
 document.querySelector('#krogerSearchButton').onclick=async()=>{
  const user=auth.currentUser;if(!user)return;
