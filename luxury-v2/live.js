@@ -9,7 +9,7 @@ import { groceryTotals } from './groceries.mjs';
 import {groupGroceryItems} from './grocery-categories.mjs';
 import {krogerRequest} from './kroger-connect.mjs';
 import {readKrogerStore,saveKrogerStore} from './kroger-store.mjs';
-import {krogerPriceSummary,sortKrogerOffers} from './kroger-pricing.mjs';
+import {krogerPriceSummary,sortKrogerOffers,krogerPromotionCoverage} from './kroger-pricing.mjs';
 import {searchMeals,mealCategories} from './meal-search.mjs';
 import {groceryKey,readChecklist,saveChecklist} from './checklist.mjs';
 import {replacePreviewMeal,previewAccount,hasPreviewEdits} from './meal-preview.mjs';
@@ -101,7 +101,7 @@ document.querySelector('#krogerSearchButton').onclick=async()=>{
    button.onclick=()=>{if(selectedKroger.has(item.upc))selectedKroger.delete(item.upc);else selectedKroger.set(item.upc,{upc:item.upc,quantity:1});button.textContent=selectedKroger.has(item.upc)?'Remove':'Select';renderKrogerSelection()};
    row.append(info,button);productResults.append(row);
   }
-  productMessage.textContent=(data.products||[]).length+' product matches. Promotions appear only when Kroger supplies a discounted price; weekly ad and digital coupons may not be included.';
+  productMessage.textContent=krogerPromotionCoverage(data.products);
  }catch(error){if(epoch===productSearchEpoch)productMessage.textContent=error.message||'Search unavailable.'}
 };
 document.querySelector('#krogerAddCartButton').onclick=async()=>{
