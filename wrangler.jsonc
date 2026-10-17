@@ -15,5 +15,11 @@
       "KROGER_CLIENT_SECRET",
       "KROGER_TOKEN_ENCRYPTION_KEY"
     ]
+  },
+  "vars": {
+    "KROGER_APP_ORIGIN": "https://gcfd8hy5mb-ai.github.io",
+    "KROGER_APP_RETURN": "https://gcfd8hy5mb-ai.github.io/Meal-Planner-/",
+    "KROGER_PREVIEW_ORIGIN": "https://tablewise-luxury-preview.pages.dev",
+    "KROGER_PREVIEW_RETURN": "https://tablewise-luxury-preview.pages.dev/luxury-v2/index.html"
   }
 }
