@@ -69,7 +69,7 @@ document.querySelector('#krogerFindStores').onclick=async()=>{
 };
 krogerStoreSelect.onchange=()=>{
  krogerLocationId=krogerStoreSelect.value;
- resetKrogerMatches();selectedKroger.clear();renderKrogerSelection();productResults.replaceChildren();
+ resetKrogerMatches();++productSearchEpoch;selectedKroger.clear();renderKrogerSelection();productResults.replaceChildren();productMessage.textContent='';
  if(krogerLocationId){
   const label=krogerStoreSelect.selectedOptions[0]?.textContent||'Selected Kroger';
   const saved=saveKrogerStore(localStorage,auth.currentUser?.uid,{id:krogerLocationId,label,zip:krogerStoreZip.value.trim()});
@@ -88,9 +88,9 @@ document.querySelector('#krogerSearchButton').onclick=async()=>{
  const user=auth.currentUser;if(!user)return;
  const term=document.querySelector('#krogerProductTerm').value.trim();if(term.length<2){productMessage.textContent='Enter at least two characters.';return}
  if(!krogerLocationId){productMessage.textContent='Choose your Kroger store first.';return}
- const epoch=++productSearchEpoch;productMessage.textContent='Searching products…';productResults.replaceChildren();
- try{const data=await krogerRequest(user,'/products',{params:{term,locationId:krogerLocationId}});
-  if(epoch!==productSearchEpoch||auth.currentUser?.uid!==user.uid)return;
+ const epoch=++productSearchEpoch,searchStore=krogerLocationId;productMessage.textContent='Searching products…';productResults.replaceChildren();
+ try{const data=await krogerRequest(user,'/products',{params:{term,locationId:searchStore}});
+  if(epoch!==productSearchEpoch||auth.currentUser?.uid!==user.uid||krogerLocationId!==searchStore)return;
   for(const item of data.products||[]){
    const row=document.createElement('div');row.className='kroger-result';
    const info=document.createElement('div'),title=document.createElement('strong'),details=document.createElement('small');
@@ -138,7 +138,7 @@ const appendKrogerMatch=(item,products)=>{
  krogerMatchResults.append(group);
 };
 const loadKrogerMatches=async()=>{
- const user=auth.currentUser,epoch=matchEpoch;if(!user)return;
+ const user=auth.currentUser,epoch=matchEpoch,matchStore=krogerLocationId;if(!user)return;
  if(!krogerLocationId){krogerMatchProgress.textContent='Choose your Kroger store before matching products.';return}
  krogerMatchMore.hidden=true;krogerMatchButton.disabled=true;
  const stop=Math.min(matchQueue.length,matchPosition+5);
@@ -146,11 +146,11 @@ const loadKrogerMatches=async()=>{
   const item=matchQueue[matchPosition++];
   krogerMatchProgress.textContent='Matching '+matchPosition+' of '+matchQueue.length+' ingredients…';
   try{
-   const result=await krogerRequest(user,'/products',{params:{term:item.name,locationId:krogerLocationId}});
-   if(epoch!==matchEpoch||auth.currentUser?.uid!==user.uid)return;
+   const result=await krogerRequest(user,'/products',{params:{term:item.name,locationId:matchStore}});
+   if(epoch!==matchEpoch||auth.currentUser?.uid!==user.uid||krogerLocationId!==matchStore)return;
    appendKrogerMatch(item,result.products||[]);
   }catch{
-   if(epoch!==matchEpoch||auth.currentUser?.uid!==user.uid)return;
+   if(epoch!==matchEpoch||auth.currentUser?.uid!==user.uid||krogerLocationId!==matchStore)return;
    appendKrogerMatch(item,[]);
   }
  }
