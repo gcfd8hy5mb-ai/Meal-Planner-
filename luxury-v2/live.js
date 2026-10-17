@@ -128,12 +128,12 @@ const krogerMatchProgress=document.querySelector('#krogerMatchProgress');
 const krogerMatchResults=document.querySelector('#krogerMatchResults');
 let matchEpoch=0,matchQueue=[],matchPosition=0;
 const resetKrogerMatches=()=>{++matchEpoch;matchQueue=[];matchPosition=0;krogerMatchResults.replaceChildren();krogerMatchMore.hidden=true;krogerMatchProgress.textContent=''};
-const appendKrogerMatch=(item,products)=>{
+const appendKrogerMatch=(item,products,{failed=false}={})=>{
  const group=document.createElement('div');group.className='kroger-match-group';
  const heading=document.createElement('strong');heading.textContent=item.name+' — '+formatAmount(item.quantity,item.unit);
  group.append(heading);
  const quantityNote=document.createElement('small');quantityNote.textContent='Recipe amount shown above. Kroger cart quantity starts at 1 package; confirm the package size covers what you need.';group.append(quantityNote);
- if(!products.length){const missing=document.createElement('p');missing.textContent='No matching Kroger products found. Try searching by name.';group.append(missing)}
+ if(!products.length){const missing=document.createElement('p');missing.textContent=failed?'Kroger search failed for this ingredient. Retry the search or search manually.':'No matching Kroger products found. Try searching by name.';group.append(missing)}
  for(const product of sortKrogerOffers(products).slice(0,2)){
   const row=document.createElement('div');row.className='kroger-result';
   const details=document.createElement('div'),name=document.createElement('strong'),meta=document.createElement('small');
@@ -162,7 +162,7 @@ const loadKrogerMatches=async()=>{
    appendKrogerMatch(item,result.products||[]);
   }catch{
    if(epoch!==matchEpoch||auth.currentUser?.uid!==user.uid||krogerLocationId!==matchStore)return;
-   appendKrogerMatch(item,[]);failedLookups++;
+   appendKrogerMatch(item,[],{failed:true});failedLookups++;
   }
  }
  if(epoch===matchEpoch){
