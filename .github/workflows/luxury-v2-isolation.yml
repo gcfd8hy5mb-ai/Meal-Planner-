@@ -19,6 +19,7 @@ on:
       - 'tests/luxury-cook-ingredients-button.test.mjs'
       - 'tests/luxury-meal-search.test.mjs'
       - 'tests/luxury-meal-picker-footer.test.mjs'
+      - 'tests/luxury-kroger-connect.test.mjs'
       - 'tests/luxury-picker-approved-layout.test.mjs'
       - 'tests/luxury-v2-week-controls.cjs'
       - 'tests/luxury-v2-header-cleanup.cjs'

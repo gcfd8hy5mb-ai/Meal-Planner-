@@ -6,6 +6,7 @@ import { recipes, verifiedRecipePhotos } from './catalog.js';
 import {recipeSummary} from './recipe-details.mjs';
 import {diagnoseSavedPlan} from './recovery-diagnostic.mjs';
 import { groceryTotals } from './groceries.mjs';
+import {krogerRequest} from './kroger-connect.mjs';
 import {searchMeals,mealCategories} from './meal-search.mjs';
 import {groceryKey,readChecklist,saveChecklist} from './checklist.mjs';
 import {replacePreviewMeal,previewAccount,hasPreviewEdits} from './meal-preview.mjs';
@@ -17,6 +18,39 @@ const auth=getAuth(firebase),db=getFirestore(firebase);
 const baseRecipes=new Map(recipes.map(r=>[r.id,r]));
 let account=null,accountUid=null,liveWeek=1,currentRecipe=null,step=0,authEpoch=0,groceryWeek='both',previewEdits={};
 const effectiveAccount=()=>previewAccount(account,previewEdits);
+const krogerStatus=document.querySelector('#krogerConnectionStatus');
+const krogerConnectButton=document.querySelector('#krogerConnectButton');
+const krogerDisconnectButton=document.querySelector('#krogerDisconnectButton');
+let krogerEpoch=0;
+const krogerDisplay=(message,connected=false)=>{
+ krogerStatus.textContent=message;
+ krogerConnectButton.hidden=connected;
+ krogerDisconnectButton.hidden=!connected;
+ krogerConnectButton.disabled=!auth.currentUser||connected;
+};
+const refreshKroger=async()=>{
+ const epoch=++krogerEpoch,user=auth.currentUser;
+ if(!user){krogerDisplay('Sign in to Tablewise to connect your Kroger account.');return}
+ krogerDisplay('Checking Kroger connection…');krogerConnectButton.disabled=true;
+ try{const result=await krogerRequest(user,'/status');if(epoch!==krogerEpoch||auth.currentUser?.uid!==user.uid)return;
+  krogerDisplay(result.connected?'Kroger connected. Product selection will require your confirmation.':'Not connected. Connect to shop your grocery list at Kroger.',!!result.connected);
+ }catch{if(epoch===krogerEpoch)krogerDisplay('Kroger connection is unavailable. Try again.');}
+};
+krogerConnectButton.onclick=async()=>{
+ const user=auth.currentUser;if(!user)return;
+ krogerConnectButton.disabled=true;krogerStatus.textContent='Opening Kroger sign-in…';
+ try{const result=await krogerRequest(user,'/connect',{method:'POST'});if(auth.currentUser?.uid!==user.uid)return;
+  window.location.assign(result.authorizationUrl);
+ }catch(error){krogerDisplay(error.message||'Unable to start Kroger connection.');}
+};
+krogerDisconnectButton.onclick=async()=>{
+ const user=auth.currentUser;if(!user)return;
+ krogerDisconnectButton.disabled=true;krogerStatus.textContent='Disconnecting Kroger…';
+ try{await krogerRequest(user,'/disconnect',{method:'POST'});if(auth.currentUser?.uid!==user.uid)return;
+  krogerDisplay('Kroger disconnected. Your grocery list is unchanged.');
+ }catch(error){krogerDisplay(error.message||'Could not disconnect Kroger.',true);}
+};
+
 const optionalToggle=document.querySelector('#luxuryOptionalToggle'),optionalDetails=document.querySelector('#luxuryOptionalDetails');
 const setOptionalExpanded=expanded=>{optionalDetails.hidden=!expanded;optionalToggle.setAttribute('aria-expanded',String(expanded))};
 optionalToggle.onclick=()=>setOptionalExpanded(optionalDetails.hidden);
@@ -247,6 +281,7 @@ document.querySelectorAll('[data-grocery-week]').forEach(b=>b.addEventListener('
 document.querySelectorAll('[data-week]').forEach(b=>b.addEventListener('click',()=>{if(account)renderWeek(b.dataset.week)}));
 const resetPrivateView=()=>{
  // Clear all previous account content synchronously, before any next-account fetch.
+ ++krogerEpoch;krogerDisplay('Sign in to Tablewise to connect your Kroger account.');
  account=null;accountUid=null;diagnosisPanel.hidden=true;diagnosisOutput.textContent='';currentRecipe=null;step=0;previewEdits={};liveWeek=1;groceryWeek='both';
  document.querySelector('#luxuryRecoverActions').hidden=true;
  refreshDiscard();
@@ -279,4 +314,4 @@ const resetPrivateView=()=>{
  }
  renderIngredients();
 };
-onAuthStateChanged(auth,async user=>{const epoch=++authEpoch;resetPrivateView();if(!user){label('Sign in using the profile icon to load your saved Tablewise meals. Cloud saving is disabled in this preview.');return}label('Loading your saved plan securely…');try{const snapshot=await getDocFromServer(doc(db,'users',user.uid));if(epoch!==authEpoch)return;if(!snapshot.exists()){label('Your saved cloud plan was not found. Nothing has been modified. Your account needs recovery before this preview can display saved meals.');return}const loaded=snapshot.data();if(!loaded.plan||typeof loaded.plan!=='object'||Array.isArray(loaded.plan)){label('Your saved meal plan could not be verified. Nothing has been changed. Please check your original Tablewise account.');return}const needsPreferencesRecovery=!loaded.preferences&&!loaded.onboardingInitialized;account=loaded;accountUid=user.uid;refreshRecovered();label(needsPreferencesRecovery?'Your preferences may need recovery. Existing saved meals are shown read-only where available; nothing will be written to Firebase. Check your original Tablewise app before changing your plan.':null);liveWeek=account.activePlanningWeek===2?2:1;document.querySelectorAll('[data-week]').forEach(b=>b.classList.toggle('active',Number(b.dataset.week)===liveWeek));setHero();renderWeek(liveWeek);const weekHint=document.querySelector('[data-page="week"]>.muted');if(weekHint)weekHint.textContent='Choose Change to preview a different dinner. Preview changes are not saved.';const meals=document.querySelectorAll('[data-optional-meal]');let hasOptionalMeal=false;for(let i=0;i<meals.length;i++){const recipe=dayMeal(liveWeek,new Date().getDay(),i);const small=meals[i].querySelector('small');if(small)small.textContent=recipe?.name||'Not planned';if(recipe)hasOptionalMeal=true;meals[i].onclick=()=>recipe?openRecipe(recipe):showPage('week')}optionalToggle.hidden=hasOptionalMeal;setOptionalExpanded(hasOptionalMeal);renderIngredients()}catch(error){if(epoch!==authEpoch)return;label('Could not read your saved plan. No changes were made. Check your connection and try again.');console.error('Luxury preview read failed',error)}});
+onAuthStateChanged(auth,async user=>{const epoch=++authEpoch;resetPrivateView();if(user)void refreshKroger();if(!user){label('Sign in using the profile icon to load your saved Tablewise meals. Cloud saving is disabled in this preview.');return}label('Loading your saved plan securely…');try{const snapshot=await getDocFromServer(doc(db,'users',user.uid));if(epoch!==authEpoch)return;if(!snapshot.exists()){label('Your saved cloud plan was not found. Nothing has been modified. Your account needs recovery before this preview can display saved meals.');return}const loaded=snapshot.data();if(!loaded.plan||typeof loaded.plan!=='object'||Array.isArray(loaded.plan)){label('Your saved meal plan could not be verified. Nothing has been changed. Please check your original Tablewise account.');return}const needsPreferencesRecovery=!loaded.preferences&&!loaded.onboardingInitialized;account=loaded;accountUid=user.uid;refreshRecovered();label(needsPreferencesRecovery?'Your preferences may need recovery. Existing saved meals are shown read-only where available; nothing will be written to Firebase. Check your original Tablewise app before changing your plan.':null);liveWeek=account.activePlanningWeek===2?2:1;document.querySelectorAll('[data-week]').forEach(b=>b.classList.toggle('active',Number(b.dataset.week)===liveWeek));setHero();renderWeek(liveWeek);const weekHint=document.querySelector('[data-page="week"]>.muted');if(weekHint)weekHint.textContent='Choose Change to preview a different dinner. Preview changes are not saved.';const meals=document.querySelectorAll('[data-optional-meal]');let hasOptionalMeal=false;for(let i=0;i<meals.length;i++){const recipe=dayMeal(liveWeek,new Date().getDay(),i);const small=meals[i].querySelector('small');if(small)small.textContent=recipe?.name||'Not planned';if(recipe)hasOptionalMeal=true;meals[i].onclick=()=>recipe?openRecipe(recipe):showPage('week')}optionalToggle.hidden=hasOptionalMeal;setOptionalExpanded(hasOptionalMeal);renderIngredients()}catch(error){if(epoch!==authEpoch)return;label('Could not read your saved plan. No changes were made. Check your connection and try again.');console.error('Luxury preview read failed',error)}});
