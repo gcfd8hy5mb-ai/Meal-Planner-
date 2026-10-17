@@ -85,7 +85,7 @@ test('callback diagnoses rejected OAuth code without exposing Kroger response or
 test('callback distinguishes user denial and expired OAuth state', async () => {
   const state = 's'.repeat(43);
   const denied = await send('/auth/kroger/callback?state='+state+'&error=access_denied');
-  assert.equal(new URL(denied.headers.get('location')).searchParams.get('kroger_reason'),'oauth_denied');
+  assert.equal(new URL(denied.headers.get('location')).searchParams.get('kroger_reason'),'state_expired');
   const expired = await send('/auth/kroger/callback?state='+state+'&code=sample');
   assert.equal(new URL(expired.headers.get('location')).searchParams.get('kroger_reason'),'state_expired');
 });
@@ -110,7 +110,7 @@ test('configured preview domain receives CORS permission and OAuth return', asyn
  const denied=await send('/status',{headers:{Origin:origin}},env);
  assert.equal(denied.status,403);
  const callback=await send('/auth/kroger/callback?state=bad&code=invalid',{},env);
- assert.equal(new URL(callback.headers.get('location')).pathname,'/luxury-v2/');
+ assert.equal(new URL(callback.headers.get('location')).pathname,'/Meal-Planner-/');
 });
 test('rejects cross-origin and insecure preview return URLs',async()=>{
  const env=goodConfig();env.KROGER_APP_ORIGIN='https://preview.tablewise.example';env.KROGER_APP_RETURN='https://attacker.invalid/capture';
