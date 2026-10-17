@@ -96,8 +96,10 @@ async function userAccessToken(env, uid) {
  await env.KROGER_KV.put('token:'+uid,await encrypt(env,next));
  return next.access_token;
 }
-function redirectBack(outcome, reason = '') {
-  const url = new URL(APP_RETURN);
+function allowedAppOrigin(env) { const candidate=env.KROGER_APP_ORIGIN || APP_ORIGIN; try { const u=new URL(candidate); return u.protocol==='https:' && u.origin===candidate ? candidate : APP_ORIGIN; } catch {return APP_ORIGIN;} }
+function allowedAppReturn(env) { const candidate=env.KROGER_APP_RETURN || APP_RETURN; try { const u=new URL(candidate); return u.protocol==='https:' && u.origin===allowedAppOrigin(env) ? candidate : APP_RETURN; } catch {return APP_RETURN;} }
+function redirectBack(outcome, reason = '', env = {}) {
+  const url = new URL(allowedAppReturn(env));
   url.searchParams.set('kroger', outcome);
   if (['oauth_denied','invalid_callback','state_expired','token_rejected','client_rejected','access_denied','token_service','token_missing','token_network','storage_failed'].includes(reason))
     url.searchParams.set('kroger_reason', reason);
@@ -107,7 +109,7 @@ export default {
   async fetch(request, env) {
     const url = new URL(request.url), path = url.pathname;
     const origin = request.headers.get('Origin') || '';
-    const cors = origin === APP_ORIGIN ? APP_ORIGIN : '';
+    const cors = origin === allowedAppOrigin(env) ? origin : '';
     if (request.method === 'OPTIONS') {
       return new Response(null, {status: 204, headers: {
         ...(cors ? {'Access-Control-Allow-Origin': cors, Vary: 'Origin'} : {}),
@@ -123,18 +125,18 @@ export default {
     if (path === CALLBACK_PATH && request.method === 'GET') {
       const state = url.searchParams.get('state') || '';
       const code = url.searchParams.get('code') || '';
-      if (url.searchParams.has('error')) return redirectBack('failed', 'oauth_denied');
+      if (url.searchParams.has('error')) return redirectBack('failed', 'oauth_denied', env);
       if (!/^[a-zA-Z0-9_-]{32,128}$/.test(state) || !code || code.length > 4096)
-        return redirectBack('failed', 'invalid_callback');
+        return redirectBack('failed', 'invalid_callback', env);
       const saved = await env.KROGER_KV.get('oauth:' + state, 'json');
       if (!saved || saved.expires < Date.now() || !saved.uid || saved.redirectUri !== redirectUri(request))
-        return redirectBack('expired', 'state_expired');
+        return redirectBack('expired', 'state_expired', env);
       await env.KROGER_KV.delete('oauth:' + state);
       let result;
       try {
         result = await krogerToken(env, {grant_type: 'authorization_code', code, redirect_uri: saved.redirectUri});
       } catch (error) {
-        return redirectBack('failed', error.oauthReason || 'token_network');
+        return redirectBack('failed', error.oauthReason || 'token_network', env);
       }
       try {
         await env.KROGER_KV.put('token:' + saved.uid, await encrypt(env, {
@@ -144,13 +146,13 @@ export default {
           connectedAt: Date.now()
         }));
       } catch {
-        return redirectBack('failed', 'storage_failed');
+        return redirectBack('failed', 'storage_failed', env);
       }
-      return redirectBack('connected');
+      return redirectBack('connected', '', env);
     }
     if (!['/connect', '/status', '/disconnect', '/products', '/locations', '/cart/add', '/diagnostics/credentials'].includes(path))
       return json({error: 'Not found'}, 404, cors);
-    if (origin && origin !== APP_ORIGIN)
+    if (origin && origin !== allowedAppOrigin(env))
       return json({error: 'Origin not allowed'}, 403);
     let uid;
     try { uid = await firebaseUser(request); }

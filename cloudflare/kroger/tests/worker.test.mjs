@@ -102,3 +102,18 @@ test('product search retains valid numeric UPCs and rejects malformed values', a
   assert.match(await source, /filter\(p=>\/\^\\d\{8,14\}\$\/\.test\(p\.upc\)\)/);
   assert.doesNotMatch(await source, /\/\^\\\\d\{8,14\}/);
 });
+
+test('configured preview domain receives CORS permission and OAuth return', async()=>{
+ const env=goodConfig();env.KROGER_APP_ORIGIN='https://preview.tablewise.example';env.KROGER_APP_RETURN='https://preview.tablewise.example/luxury-v2/';
+ const allowed=await send('/status',{headers:{Origin:env.KROGER_APP_ORIGIN}},env);
+ assert.equal(allowed.headers.get('access-control-allow-origin'),env.KROGER_APP_ORIGIN);
+ const denied=await send('/status',{headers:{Origin:origin}},env);
+ assert.equal(denied.status,403);
+ const callback=await send('/auth/kroger/callback?state=bad&code=invalid',{},env);
+ assert.equal(new URL(callback.headers.get('location')).pathname,'/luxury-v2/');
+});
+test('rejects cross-origin and insecure preview return URLs',async()=>{
+ const env=goodConfig();env.KROGER_APP_ORIGIN='https://preview.tablewise.example';env.KROGER_APP_RETURN='https://attacker.invalid/capture';
+ const callback=await send('/auth/kroger/callback?state=bad&code=invalid',{},env);
+ assert.equal(new URL(callback.headers.get('location')).origin,origin);
+});
