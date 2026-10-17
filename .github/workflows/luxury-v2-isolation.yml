@@ -1,0 +1,81 @@
+name: Luxury v2 design isolation
+on:
+  pull_request:
+    paths:
+      - 'luxury-v2/**'
+      - '.github/workflows/luxury-v2-isolation.yml'
+      - 'tests/luxury-v2-isolation.cjs'
+      - 'tests/luxury-v2-groceries.test.mjs'
+      - 'tests/luxury-v2-checklist.test.mjs'
+      - 'tests/luxury-v2-meal-preview.test.mjs'
+      - 'tests/luxury-v2-save-guard.test.mjs'
+      - 'tests/luxury-v2-save-transaction.test.mjs'
+      - 'tests/luxury-v2-save-flow.test.mjs'
+      - 'tests/luxury-v2-recovery-ui.cjs'
+      - 'tests/luxury-v2-cloud-write-gate.cjs'
+      - 'tests/luxury-v2-legacy-save.test.mjs'
+  push:
+    paths:
+      - 'luxury-v2/**'
+      - '.github/workflows/luxury-v2-isolation.yml'
+      - 'tests/luxury-v2-isolation.cjs'
+      - 'tests/luxury-v2-groceries.test.mjs'
+      - 'tests/luxury-v2-checklist.test.mjs'
+      - 'tests/luxury-v2-meal-preview.test.mjs'
+      - 'tests/luxury-v2-save-guard.test.mjs'
+      - 'tests/luxury-v2-save-transaction.test.mjs'
+      - 'tests/luxury-v2-save-flow.test.mjs'
+      - 'tests/luxury-v2-recovery-ui.cjs'
+      - 'tests/luxury-v2-cloud-write-gate.cjs'
+      - 'tests/luxury-v2-legacy-save.test.mjs'
+jobs:
+  no-legacy-leak:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run standalone legacy-leak regression test
+        run: node tests/luxury-v2-isolation.cjs
+      - name: Verify saved two-week grocery aggregation
+        run: node tests/luxury-v2-groceries.test.mjs
+      - name: Verify account-scoped checklist persistence
+        run: node tests/luxury-v2-checklist.test.mjs
+      - name: Verify preview dinner replacement and grocery recalculation
+        run: node tests/luxury-v2-meal-preview.test.mjs
+      - name: Reject conflicting concurrent cloud plan changes
+        run: node tests/luxury-v2-save-guard.test.mjs
+      - name: Verify isolated transaction safety without live writes
+        run: node tests/luxury-v2-save-transaction.test.mjs
+      - name: Verify recoverable staged luxury-save flow
+        run: node tests/luxury-v2-save-flow.test.mjs
+      - name: Verify luxury draft export and recovery UI
+        run: node tests/luxury-v2-recovery-ui.cjs
+      - name: Block cross-version unsafe cloud writes
+        run: node tests/luxury-v2-cloud-write-gate.cjs
+      - name: Simulate safe original-planner save migration
+        run: node tests/luxury-v2-legacy-save.test.mjs
+      - name: Verify isolated JavaScript module syntax
+        run: |
+          node --input-type=module --check < luxury-v2/live.js
+          node --input-type=module --check < luxury-v2/catalog.js
+      - name: Verify v2 cannot inherit legacy layout or styling
+        run: |
+          node <<'NODE'
+          const fs=require('node:fs');
+          const assert=require('node:assert/strict');
+          const html=fs.readFileSync('luxury-v2/index.html','utf8');
+          assert.match(html,/<!doctype html>/i,'v2 must be a standalone document');
+          assert.match(html,/<style>[\s\S]*<\/style>/i,'v2 must define its own CSS');
+          assert.doesNotMatch(html,/<link\b[^>]*rel\s*=\s*["']?stylesheet/i,'external/legacy stylesheets are forbidden');
+          assert.match(html,/<script type="module" src="\.\/live\.js"><\/script>/i,'Only the local read-only bridge is loaded');
+          assert.doesNotMatch(html,/<iframe\b/i,'legacy embedded pages are forbidden');
+          assert.doesNotMatch(html,/@import\b/i,'imported CSS is forbidden');
+          assert.doesNotMatch(html,/(?:href|src)\s*=\s*["'](?:\/index\.html|legacy)/i,'legacy asset references are forbidden');
+          for (const legacy of ['primaryNav','navMoreMenu','assignmentChoices','shoppingHeading','recipegrid','todayMealImage']) {
+            assert.ok(!html.includes(legacy),`legacy selector found: ${legacy}`);
+          }
+          assert.match(html,/data-page="today"/);
+          assert.match(html,/data-page="week"/);
+          assert.match(html,/data-page="groceries"/);
+          assert.match(html,/data-page="cook"/);
+          console.log('PASS: luxury v2 standalone HTML, no legacy CSS/JS/markup dependencies');
+          NODE

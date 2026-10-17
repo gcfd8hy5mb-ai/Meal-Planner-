@@ -1,0 +1,28 @@
+import assert from 'node:assert/strict';
+import {replacePreviewMeal,previewAccount,hasPreviewEdits} from '../luxury-v2/meal-preview.mjs';
+import {groceryTotals} from '../luxury-v2/groceries.mjs';
+const account={activePlanningWeek:2,servings:2,mealTypes:['Dinner'],plan:{0:[null,null,'rice',null]},alternateWeek:{plan:{1:[null,null,'rice',null]},mealServings:{}},mealServings:{}};
+const lookup=id=>({rice:{ingredients:[['Rice',1,'cup']]},beans:{ingredients:[['Beans',2,'cup']]}})[id];
+const original=JSON.stringify(account);
+let preview=replacePreviewMeal(account,{},1,1,2,'beans');
+assert.equal(hasPreviewEdits(preview),true);
+let view=previewAccount(account,preview);
+assert.equal(view.alternateWeek.plan[1][2],'beans');
+assert.equal(view.plan[0][2],'rice');
+assert.equal(JSON.stringify(account),original,'Never mutate cloud data');
+assert.equal(groceryTotals(view,lookup,[1,2]).find(r=>r.name==='Beans')?.quantity,4);
+assert.equal(groceryTotals(view,lookup,[1,2]).find(r=>r.name==='Rice')?.quantity,2);
+preview=replacePreviewMeal(account,preview,2,0,2,'beans');
+view=previewAccount(account,preview);
+assert.equal(groceryTotals(view,lookup,[1,2]).find(r=>r.name==='Beans')?.quantity,8,'Combined groceries update immediately');
+assert.deepEqual(previewAccount(account,{}),account,'Discard preview restores saved plan content');
+assert.throws(()=>replacePreviewMeal(account,{},3,0,2,'beans'),'Invalid week refused');
+console.log('Luxury meal preview and grocery recalculation passed');
+
+const withOverrides={activePlanningWeek:1,servings:2,plan:{0:[null,null,'rice',null]},mealServings:{'0-2':6},dinnerSides:{0:['mashedpotatoes']},alternateWeek:{plan:{}}};
+const replaced=previewAccount(withOverrides,{'1-0-2':'beans'});
+assert.equal(replaced.mealServings['0-2'],undefined,'Replacing meal clears stale serving override in preview');
+assert.equal(replaced.dinnerSides[0],undefined,'Replacing dinner clears stale selected sides in preview');
+assert.equal(withOverrides.mealServings['0-2'],6,'Stored serving override remains intact');
+assert.deepEqual(withOverrides.dinnerSides[0],['mashedpotatoes'],'Stored sides remain intact');
+assert.equal(groceryTotals(replaced,lookup,[1]).find(x=>x.name==='Beans')?.quantity,4,'Replacement uses current default servings rather than stale six-serving override');
