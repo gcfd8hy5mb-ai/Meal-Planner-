@@ -1,6 +1,6 @@
 // Prices are store-dependent API responses, not guaranteed checkout totals or coupon offers.
 const money = value => '$'+Number(value).toFixed(2);
-const positive = value => typeof value==='number' && Number.isFinite(value) && value>=0;
+const positive = value => typeof value==='number' && Number.isFinite(value) && value>0;
 export function krogerPriceSummary(product){
  const regular=product?.regular, promo=product?.promo;
  if(positive(regular)&&positive(promo)&&promo<regular){

@@ -7,6 +7,7 @@ import {recipeSummary} from './recipe-details.mjs';
 import {diagnoseSavedPlan} from './recovery-diagnostic.mjs';
 import { groceryTotals } from './groceries.mjs';
 import {krogerRequest} from './kroger-connect.mjs';
+import {readKrogerStore,saveKrogerStore} from './kroger-store.mjs';
 import {krogerPriceSummary,sortKrogerOffers} from './kroger-pricing.mjs';
 import {searchMeals,mealCategories} from './meal-search.mjs';
 import {groceryKey,readChecklist,saveChecklist} from './checklist.mjs';
@@ -35,6 +36,12 @@ const krogerStoreSelect=document.querySelector('#krogerStoreSelect');
 const krogerStoreMessage=document.querySelector('#krogerStoreMessage');
 let krogerLocationId='';
 let storeLookupEpoch=0;
+const restoreKrogerStore=user=>{
+ if(!user)return;const saved=readKrogerStore(localStorage,user.uid);if(!saved)return;
+ krogerLocationId=saved.id;krogerStoreZip.value=saved.zip||'';
+ krogerStoreSelect.replaceChildren();const option=document.createElement('option');option.value=saved.id;option.textContent=saved.label;krogerStoreSelect.append(option);
+ krogerStoreSelect.hidden=false;krogerStoreMessage.textContent='Saved store: '+saved.label+'. Change store to search somewhere else.';
+};
 const clearStoreResults=()=>{++storeLookupEpoch;krogerStoreSelect.replaceChildren();krogerStoreSelect.hidden=true;krogerLocationId=''};
 document.querySelector('#krogerFindStores').onclick=async()=>{
  const user=auth.currentUser,zip=krogerStoreZip.value.trim();
@@ -54,7 +61,11 @@ document.querySelector('#krogerFindStores').onclick=async()=>{
 krogerStoreSelect.onchange=()=>{
  krogerLocationId=krogerStoreSelect.value;
  resetKrogerMatches();selectedKroger.clear();renderKrogerSelection();productResults.replaceChildren();
- krogerStoreMessage.textContent=krogerLocationId?'Store selected. Search results will use this location.':'Choose a Kroger store first.';
+ if(krogerLocationId){
+  const label=krogerStoreSelect.selectedOptions[0]?.textContent||'Selected Kroger';
+  const saved=saveKrogerStore(localStorage,auth.currentUser?.uid,{id:krogerLocationId,label,zip:krogerStoreZip.value.trim()});
+  krogerStoreMessage.textContent=saved?'Saved store: '+label+'. Store-specific prices will be requested.':'Store selected, but could not save the preference on this device.';
+ }else krogerStoreMessage.textContent='Choose a Kroger store first.';
 };
 const productPanel=document.querySelector('#krogerProductReview');
 const productResults=document.querySelector('#krogerProductResults');
@@ -81,7 +92,7 @@ document.querySelector('#krogerSearchButton').onclick=async()=>{
    button.onclick=()=>{if(selectedKroger.has(item.upc))selectedKroger.delete(item.upc);else selectedKroger.set(item.upc,{upc:item.upc,quantity:1});button.textContent=selectedKroger.has(item.upc)?'Remove':'Select';renderKrogerSelection()};
    row.append(info,button);productResults.append(row);
   }
-  productMessage.textContent=(data.products||[]).length+' product matches. Verify size and availability.';
+  productMessage.textContent=(data.products||[]).length+' product matches. Promotions appear only when Kroger supplies a discounted price; weekly ad and digital coupons may not be included.';
  }catch(error){if(epoch===productSearchEpoch)productMessage.textContent=error.message||'Search unavailable.'}
 };
 document.querySelector('#krogerAddCartButton').onclick=async()=>{
@@ -135,7 +146,7 @@ const loadKrogerMatches=async()=>{
   }
  }
  if(epoch===matchEpoch){
-  krogerMatchProgress.textContent='Reviewed '+matchPosition+' of '+matchQueue.length+' ingredients. Choose the exact products before adding to cart.';
+  krogerMatchProgress.textContent='Reviewed '+matchPosition+' of '+matchQueue.length+' ingredients. Promotions appear only if Kroger supplies them; check the weekly ad and digital coupons separately.';
   krogerMatchMore.hidden=matchPosition>=matchQueue.length;krogerMatchButton.disabled=false;
  }
 };
@@ -434,4 +445,4 @@ const resetPrivateView=()=>{
  }
  renderIngredients();
 };
-onAuthStateChanged(auth,async user=>{const epoch=++authEpoch;resetPrivateView();if(user)void refreshKroger();if(!user){label('Sign in using the profile icon to load your saved Tablewise meals. Cloud saving is disabled in this preview.');return}label('Loading your saved plan securely…');try{const snapshot=await getDocFromServer(doc(db,'users',user.uid));if(epoch!==authEpoch)return;if(!snapshot.exists()){label('Your saved cloud plan was not found. Nothing has been modified. Your account needs recovery before this preview can display saved meals.');return}const loaded=snapshot.data();if(!loaded.plan||typeof loaded.plan!=='object'||Array.isArray(loaded.plan)){label('Your saved meal plan could not be verified. Nothing has been changed. Please check your original Tablewise account.');return}const needsPreferencesRecovery=!loaded.preferences&&!loaded.onboardingInitialized;account=loaded;accountUid=user.uid;refreshRecovered();label(needsPreferencesRecovery?'Your preferences may need recovery. Existing saved meals are shown read-only where available; nothing will be written to Firebase. Check your original Tablewise app before changing your plan.':null);liveWeek=account.activePlanningWeek===2?2:1;document.querySelectorAll('[data-week]').forEach(b=>b.classList.toggle('active',Number(b.dataset.week)===liveWeek));setHero();renderWeek(liveWeek);const weekHint=document.querySelector('[data-page="week"]>.muted');if(weekHint)weekHint.textContent='Choose Change to preview a different dinner. Preview changes are not saved.';const meals=document.querySelectorAll('[data-optional-meal]');let hasOptionalMeal=false;for(let i=0;i<meals.length;i++){const recipe=dayMeal(liveWeek,new Date().getDay(),i);const small=meals[i].querySelector('small');if(small)small.textContent=recipe?.name||'Not planned';if(recipe)hasOptionalMeal=true;meals[i].onclick=()=>recipe?openRecipe(recipe):showPage('week')}optionalToggle.hidden=hasOptionalMeal;setOptionalExpanded(hasOptionalMeal);renderIngredients()}catch(error){if(epoch!==authEpoch)return;label('Could not read your saved plan. No changes were made. Check your connection and try again.');console.error('Luxury preview read failed',error)}});
+onAuthStateChanged(auth,async user=>{const epoch=++authEpoch;resetPrivateView();if(user){restoreKrogerStore(user);void refreshKroger();}if(!user){label('Sign in using the profile icon to load your saved Tablewise meals. Cloud saving is disabled in this preview.');return}label('Loading your saved plan securely…');try{const snapshot=await getDocFromServer(doc(db,'users',user.uid));if(epoch!==authEpoch)return;if(!snapshot.exists()){label('Your saved cloud plan was not found. Nothing has been modified. Your account needs recovery before this preview can display saved meals.');return}const loaded=snapshot.data();if(!loaded.plan||typeof loaded.plan!=='object'||Array.isArray(loaded.plan)){label('Your saved meal plan could not be verified. Nothing has been changed. Please check your original Tablewise account.');return}const needsPreferencesRecovery=!loaded.preferences&&!loaded.onboardingInitialized;account=loaded;accountUid=user.uid;refreshRecovered();label(needsPreferencesRecovery?'Your preferences may need recovery. Existing saved meals are shown read-only where available; nothing will be written to Firebase. Check your original Tablewise app before changing your plan.':null);liveWeek=account.activePlanningWeek===2?2:1;document.querySelectorAll('[data-week]').forEach(b=>b.classList.toggle('active',Number(b.dataset.week)===liveWeek));setHero();renderWeek(liveWeek);const weekHint=document.querySelector('[data-page="week"]>.muted');if(weekHint)weekHint.textContent='Choose Change to preview a different dinner. Preview changes are not saved.';const meals=document.querySelectorAll('[data-optional-meal]');let hasOptionalMeal=false;for(let i=0;i<meals.length;i++){const recipe=dayMeal(liveWeek,new Date().getDay(),i);const small=meals[i].querySelector('small');if(small)small.textContent=recipe?.name||'Not planned';if(recipe)hasOptionalMeal=true;meals[i].onclick=()=>recipe?openRecipe(recipe):showPage('week')}optionalToggle.hidden=hasOptionalMeal;setOptionalExpanded(hasOptionalMeal);renderIngredients()}catch(error){if(epoch!==authEpoch)return;label('Could not read your saved plan. No changes were made. Check your connection and try again.');console.error('Luxury preview read failed',error)}});
