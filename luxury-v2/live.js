@@ -9,7 +9,7 @@ import { groceryTotals } from './groceries.mjs';
 import {groupGroceryItems} from './grocery-categories.mjs';
 import {krogerRequest} from './kroger-connect.mjs';
 import {readKrogerStore,saveKrogerStore} from './kroger-store.mjs';
-import {krogerPriceSummary,sortKrogerOffers,krogerPromotionCoverage} from './kroger-pricing.mjs';
+import {krogerPriceSummary,sortKrogerOffers,krogerPromotionCoverage,sortKrogerIngredientMatches} from './kroger-pricing.mjs';
 import {searchMeals,mealCategories} from './meal-search.mjs';
 import {groceryKey,readChecklist,saveChecklist} from './checklist.mjs';
 import {replacePreviewMeal,previewAccount,hasPreviewEdits} from './meal-preview.mjs';
@@ -134,7 +134,7 @@ const appendKrogerMatch=(item,products,{failed=false}={})=>{
  group.append(heading);
  const quantityNote=document.createElement('small');quantityNote.textContent='Recipe amount shown above. Kroger cart quantity starts at 1 package; confirm the package size covers what you need.';group.append(quantityNote);
  if(!products.length){const missing=document.createElement('p');missing.textContent=failed?'Kroger search failed for this ingredient. Retry the search or search manually.':'No matching Kroger products found. Try searching by name.';group.append(missing)}
- for(const product of sortKrogerOffers(products).slice(0,2)){
+ for(const product of sortKrogerIngredientMatches(item.name,products).slice(0,2)){
   const row=document.createElement('div');row.className='kroger-result';
   const details=document.createElement('div'),name=document.createElement('strong'),meta=document.createElement('small');
   name.textContent=product.name;const offer=krogerPriceSummary(product);
