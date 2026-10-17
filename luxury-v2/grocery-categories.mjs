@@ -1,10 +1,11 @@
 const categories=[
+ ['Frozen',/frozen|ice cream|frozen peas|frozen vegetable/i],
+ ['Pantry & Dry Goods',/ground pepper|black pepper|white pepper|pepper powder|peppercorn|coconut milk|canned milk|evaporated milk/i],
  ['Produce',/pepper|onion|garlic|tomato|lettuce|spinach|broccoli|carrot|potato|banana|apple|lemon|lime|cilantro|avocado|mushroom|zucchini|cucumber|berries|strawberr|celery|cabbage|asparagus|salad|fruit/i],
  ['Meat & Seafood',/chicken|beef|steak|turkey|pork|bacon|sausage|shrimp|salmon|fish|ground meat|hamburger/i],
  ['Dairy & Eggs',/milk|cheese|cream|yogurt|butter|egg|mozzarella|cheddar|parmesan/i],
  ['Bread & Bakery',/bread|bun|roll|tortilla|bagel|pita|toast/i],
  ['Pantry & Dry Goods',/rice|pasta|noodle|flour|sugar|oil|vinegar|bean|lentil|oat|cereal|sauce|salsa|seasoning|spice|salt|pepper powder|broth|stock|honey|peanut butter|tomato paste/i],
- ['Frozen',/frozen|ice cream/i],
  ['Beverages',/juice|soda|coffee|tea|drink|water/i]
 ];
 export function groceryCategory(name){for(const [category,pattern] of categories)if(pattern.test(name||''))return category;return 'Other';}
