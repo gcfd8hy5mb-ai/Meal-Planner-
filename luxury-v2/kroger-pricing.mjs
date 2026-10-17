@@ -37,3 +37,9 @@ export function sortKrogerIngredientMatches(ingredient,products){
   return Number(y.onSale)-Number(x.onSale)||y.savings-x.savings;
  });
 }
+
+export function krogerClearlyMatchesIngredient(ingredient,product){
+ const wanted=tokens(ingredient),found=tokens(product?.name);
+ if(!wanted.size)return false;
+ return [...wanted].every(word=>found.has(word));
+}
