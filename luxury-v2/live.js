@@ -217,6 +217,18 @@ const refreshKroger=async()=>{
   krogerDisplay(result.connected?'Kroger connected. Product selection will require your confirmation.':'Not connected. Connect to shop your grocery list at Kroger.',!!result.connected);
  }catch{if(epoch===krogerEpoch&&auth.currentUser?.uid===user.uid)krogerDisplay('Could not verify Kroger connection. Your last confirmed connection state is preserved. Try again.',krogerKnownConnected);}
 };
+// iOS can restore a suspended tab without triggering a fresh Firebase auth event.
+// Recheck the authenticated Kroger status on return; never repeat an OAuth or cart POST.
+let krogerLastReturnRefresh=0;
+const refreshKrogerOnReturn=()=>{
+ if(!auth.currentUser||document.visibilityState==='hidden')return;
+ const now=Date.now();
+ if(now-krogerLastReturnRefresh<1500)return;
+ krogerLastReturnRefresh=now;
+ void refreshKroger();
+};
+window.addEventListener('pageshow',event=>{if(event.persisted)refreshKrogerOnReturn()});
+document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible')refreshKrogerOnReturn()});
 krogerConnectButton.onclick=async()=>{
  const user=auth.currentUser,epoch=krogerEpoch;if(!user)return;
  krogerConnectButton.disabled=true;krogerStatus.textContent='Opening Kroger sign-in…';
