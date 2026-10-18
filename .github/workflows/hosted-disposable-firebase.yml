@@ -1,6 +1,12 @@
 name: Hosted disposable Firebase security audit
 
 on:
+  push:
+    branches:
+      - integration/luxury-v2-guarded
+    paths:
+      - '.github/workflows/hosted-disposable-firebase.yml'
+      - 'tests/hosted-firebase-disposable.test.mjs'
   workflow_dispatch:
     inputs:
       approval:
@@ -17,7 +23,9 @@ concurrency:
 
 jobs:
   hosted-disposable-isolation:
-    if: ${{ github.ref_name == 'integration/luxury-v2-guarded' && inputs.approval == 'yes' }}
+    # Protected by a repository-level approval variable. No credentials or
+    # disposable test writes are attempted until the owner explicitly opts in.
+    if: ${{ github.ref_name == 'integration/luxury-v2-guarded' && vars.TABLEWISE_HOSTED_TEST_APPROVED == 'yes' && (github.event_name == 'push' || inputs.approval == 'yes') }}
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
