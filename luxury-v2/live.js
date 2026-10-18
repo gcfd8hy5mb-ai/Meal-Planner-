@@ -218,14 +218,14 @@ krogerConnectButton.onclick=async()=>{
  krogerConnectButton.disabled=true;krogerStatus.textContent='Opening Kroger sign-in…';
  try{const result=await krogerRequest(user,'/connect',{method:'POST'});if(auth.currentUser?.uid!==user.uid)return;
   window.location.assign(result.authorizationUrl);
- }catch(error){krogerDisplay(error.message||'Unable to start Kroger connection.');}
+ }catch(error){if(auth.currentUser?.uid===user.uid)krogerDisplay(error.message||'Unable to start Kroger connection.');}
 };
 krogerDisconnectButton.onclick=async()=>{
  const user=auth.currentUser;if(!user)return;
  krogerDisconnectButton.disabled=true;krogerStatus.textContent='Disconnecting Kroger…';
  try{await krogerRequest(user,'/disconnect',{method:'POST'});if(auth.currentUser?.uid!==user.uid)return;
   krogerDisplay('Kroger disconnected. Your grocery list is unchanged.');
- }catch(error){krogerDisplay(error.message||'Could not disconnect Kroger.',true);}
+ }catch(error){if(auth.currentUser?.uid===user.uid)krogerDisplay(error.message||'Could not disconnect Kroger.',true);}
 };
 
 const optionalToggle=document.querySelector('#luxuryOptionalToggle'),optionalDetails=document.querySelector('#luxuryOptionalDetails');
