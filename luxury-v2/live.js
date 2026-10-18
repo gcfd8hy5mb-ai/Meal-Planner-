@@ -476,11 +476,17 @@ const renderGroceryPanel=(week)=>{
  if(!rows.length){const empty=document.createElement('p');empty.className='notice';empty.textContent='No planned ingredients for this period.';host.append(empty);clear.hidden=true}
  for(const [category,items] of groupGroceryItems(rows)){
   const panel=document.createElement('details');panel.className='grocery-category';panel.open=groceryExpansion.categories[week]?.[category]??false;
-  // Save on the user's click before native <details> queues its asynchronous toggle.
-  // Ignore delayed toggles from panels already removed during navigation/re-render.
-  panel.addEventListener('toggle',()=>{if(!panel.isConnected||!host.contains(panel)||groceryExpansion.week!==week)return;(groceryExpansion.categories[week]??={})[category]=panel.open;saveGroceryExpansion()});
+  // Own the details transition synchronously; never trust asynchronous native toggle
+  // events to persist a stale state after navigation or a panel rebuild.
   const title=document.createElement('summary');title.textContent=category;
-  title.addEventListener('click',()=>{if(groceryExpansion.week!==week)return;(groceryExpansion.categories[week]??={})[category]=!panel.open;saveGroceryExpansion()});
+  title.addEventListener('click',event=>{
+   event.preventDefault();
+   if(!panel.isConnected||!host.contains(panel)||groceryExpansion.week!==week)return;
+   const next=!panel.open;
+   panel.open=next;
+   (groceryExpansion.categories[week]??={})[category]=next;
+   saveGroceryExpansion();
+  });
   panel.append(title);
   for(const item of items){
    const key=groceryKey(item),row=document.createElement('button');row.type='button';row.className='grocery-item';row.setAttribute('aria-pressed',String(!!checks[key]));
