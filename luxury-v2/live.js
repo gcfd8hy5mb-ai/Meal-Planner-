@@ -92,7 +92,7 @@ const renderKrogerSelection=()=>{
  for(const [upc,item] of selectedKroger){
   const row=document.createElement('div');row.className='kroger-result';
   const label=document.createElement('label');label.textContent=item.name||('Product '+upc);
-  const quantity=document.createElement('input');quantity.type='number';quantity.min='1';quantity.max='30';quantity.step='1';quantity.inputMode='numeric';quantity.value=String(item.quantity);
+  const quantity=document.createElement('input');quantity.type='number';quantity.min='1';quantity.max='30';quantity.step='1';quantity.inputMode='numeric';quantity.value=String(item.quantity);quantity.disabled=krogerCartPending;
   const inputId='kroger-quantity-'+upc;quantity.id=inputId;label.htmlFor=inputId;
   quantity.setAttribute('aria-label','Packages for '+(item.name||upc));
   quantity.onchange=()=>{
@@ -100,7 +100,7 @@ const renderKrogerSelection=()=>{
    if(!Number.isSafeInteger(value)||value<1||value>30){quantity.value=String(item.quantity);productMessage.textContent='Enter a whole number from 1 to 30 packages.';return}
    item.quantity=value;count.textContent=selectedKroger.size+' distinct products · '+[...selectedKroger.values()].reduce((total,entry)=>total+entry.quantity,0)+' total packages selected. Verify quantities before adding to Kroger.';
   };
-  const remove=document.createElement('button');remove.type='button';remove.textContent='Remove';remove.setAttribute('aria-label','Remove '+(item.name||upc)+' from Kroger selection');remove.onclick=()=>{if(krogerCartPending)return;selectedKroger.delete(upc);renderKrogerSelection()};
+  const remove=document.createElement('button');remove.type='button';remove.textContent='Remove';remove.disabled=krogerCartPending;remove.setAttribute('aria-label','Remove '+(item.name||upc)+' from Kroger selection');remove.onclick=()=>{if(krogerCartPending)return;selectedKroger.delete(upc);renderKrogerSelection()};
   row.append(label,quantity,remove);list.append(row);
  }
 };
@@ -134,7 +134,7 @@ document.querySelector('#krogerAddCartButton').onclick=async()=>{
  if(items.some(item=>!/^\d{8,14}$/.test(String(item.upc||''))||!Number.isSafeInteger(item.quantity)||item.quantity<1||item.quantity>30)){productMessage.textContent='One or more selected products have an invalid code or package quantity. Remove and reselect those products before continuing.';return}
  const totalPackages=items.reduce((sum,item)=>sum+item.quantity,0);
  if(!window.confirm('Add '+items.length+' distinct products ('+totalPackages+' total packages) to your Kroger cart? Verify quantities before continuing. This will not place an order.'))return;
- const button=document.querySelector('#krogerAddCartButton');krogerCartPending=true;button.disabled=true;productMessage.textContent='Updating cart…';
+ const button=document.querySelector('#krogerAddCartButton');krogerCartPending=true;button.disabled=true;renderKrogerSelection();productMessage.textContent='Updating cart…';
  try{
   const result=await krogerRequest(user,'/cart/add',{method:'POST',body:{items}});
   if(auth.currentUser?.uid!==user.uid||krogerLocationId!==storeAtSubmit)return;
@@ -142,7 +142,7 @@ document.querySelector('#krogerAddCartButton').onclick=async()=>{
   for(const item of items){const current=selectedKroger.get(item.upc);if(current?.quantity===item.quantity)selectedKroger.delete(item.upc)}
   renderKrogerSelection();
  }catch(error){if(auth.currentUser?.uid===user.uid&&krogerLocationId===storeAtSubmit)productMessage.textContent=error.message||'Could not update cart.'}
- finally{krogerCartPending=false;button.disabled=false}
+ finally{krogerCartPending=false;button.disabled=false;renderKrogerSelection()}
 };
 const krogerMatchButton=document.querySelector('#krogerMatchList');
 const krogerMatchMore=document.querySelector('#krogerMatchMore');
