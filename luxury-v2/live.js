@@ -26,6 +26,7 @@ const krogerStatus=document.querySelector('#krogerConnectionStatus');
 const krogerConnectButton=document.querySelector('#krogerConnectButton');
 const krogerDisconnectButton=document.querySelector('#krogerDisconnectButton');
 let krogerEpoch=0;
+let krogerActionEpoch=0,krogerActionPending=false;
 let krogerKnownConnected=false;
 const krogerDisplay=(message,connected=false)=>{
  krogerKnownConnected=connected;
@@ -221,7 +222,7 @@ const refreshKroger=async()=>{
 // Recheck the authenticated Kroger status on return; never repeat an OAuth or cart POST.
 let krogerLastReturnRefresh=0;
 const refreshKrogerOnReturn=()=>{
- if(!auth.currentUser||document.visibilityState==='hidden')return;
+ if(!auth.currentUser||document.visibilityState==='hidden'||krogerActionPending)return;
  const now=Date.now();
  if(now-krogerLastReturnRefresh<1500)return;
  krogerLastReturnRefresh=now;
@@ -230,14 +231,17 @@ const refreshKrogerOnReturn=()=>{
 window.addEventListener('pageshow',event=>{if(event.persisted)refreshKrogerOnReturn()});
 document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible')refreshKrogerOnReturn()});
 krogerConnectButton.onclick=async()=>{
- const user=auth.currentUser,epoch=krogerEpoch;if(!user)return;
+ const user=auth.currentUser,epoch=krogerEpoch;if(!user||krogerActionPending)return;
+ const actionEpoch=++krogerActionEpoch;krogerActionPending=true;
  krogerConnectButton.disabled=true;krogerStatus.textContent='Opening Kroger sign-in…';
  try{const result=await krogerRequest(user,'/connect',{method:'POST'});if(epoch!==krogerEpoch||auth.currentUser?.uid!==user.uid)return;
   window.location.assign(result.authorizationUrl);
  }catch(error){if(epoch===krogerEpoch&&auth.currentUser?.uid===user.uid)krogerDisplay(error.message||'Unable to start Kroger connection.');}
+ finally{if(actionEpoch===krogerActionEpoch)krogerActionPending=false;}
 };
 krogerDisconnectButton.onclick=async()=>{
- const user=auth.currentUser,epoch=krogerEpoch;if(!user)return;
+ const user=auth.currentUser,epoch=krogerEpoch;if(!user||krogerActionPending)return;
+ const actionEpoch=++krogerActionEpoch;krogerActionPending=true;
  krogerDisconnectButton.disabled=true;krogerStatus.textContent='Disconnecting Kroger…';
  try{await krogerRequest(user,'/disconnect',{method:'POST'});if(epoch!==krogerEpoch||auth.currentUser?.uid!==user.uid)return;
   krogerDisplay('Kroger disconnected. Your grocery list is unchanged.');
@@ -249,6 +253,7 @@ krogerDisconnectButton.onclick=async()=>{
   if(epoch+1!==krogerEpoch||auth.currentUser?.uid!==user.uid)return;
   if(krogerStatus.textContent.startsWith('Could not verify Kroger connection.'))krogerStatus.textContent='Disconnect result is uncertain. Check Kroger connection again before retrying. Your grocery list is unchanged.';
  }
+ finally{if(actionEpoch===krogerActionEpoch)krogerActionPending=false;}
 };
 
 const optionalToggle=document.querySelector('#luxuryOptionalToggle'),optionalDetails=document.querySelector('#luxuryOptionalDetails');
@@ -507,7 +512,7 @@ document.querySelectorAll('[data-nav="groceries"]').forEach(b=>b.addEventListene
 document.querySelectorAll('[data-week]').forEach(b=>b.addEventListener('click',()=>{if(account)renderWeek(b.dataset.week)}));
 const resetPrivateView=()=>{
  // Clear all previous account content synchronously, before any next-account fetch.
- ++krogerEpoch;clearKrogerProducts();krogerDisplay('Sign in to Tablewise to connect your Kroger account.');
+ ++krogerEpoch;++krogerActionEpoch;krogerActionPending=false;clearKrogerProducts();krogerDisplay('Sign in to Tablewise to connect your Kroger account.');
  account=null;accountUid=null;diagnosisPanel.hidden=true;diagnosisOutput.textContent='';currentRecipe=null;step=0;previewEdits={};liveWeek=1;groceryWeek='both';groceryOpenWeek=null;groceryExpansion.week=null;groceryExpansion.categories={};
  document.querySelector('#luxuryRecoverActions').hidden=true;
  refreshDiscard();
