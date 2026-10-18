@@ -85,3 +85,7 @@ The owner reports resetting the repository Actions opt-in variable `TABLEWISE_HO
 5. Test network outage and return while on the guarded preview. Verify that an interrupted request cannot overwrite a newer plan, that errors are visible, and that cloud **Save changes** remains disabled.
 
 Stop and record any unexpected data sharing, blank screen or missing data. Do not unlock the luxury cloud Save gate or write to actual accounts for this walkthrough. A full cross-device write/recovery test requires a separately approved disposable-record procedure.
+
+## Read-only Kroger Worker CORS probe
+
+The guarded `Luxury v2 design isolation` job now sends unauthenticated `OPTIONS /status` preflight requests to the existing Kroger Worker from GitHub Actions, simulating the existing GitHub Pages origin and two Cloudflare Pages preview origins. It logs HTTP response status and CORS allow-origin/method/header metadata, without credentials, Firebase writes, OAuth, or cart actions. Results are diagnostic only: a passing CI job is **not** proof that Kroger sign-in works in Safari. The Worker itself has not been edited or deployed. If preview origins are rejected while the Home Screen origin is accepted, fix the Worker's exact allow-list and preserve its authenticated request behavior; do not use unrestricted production CORS.\n
