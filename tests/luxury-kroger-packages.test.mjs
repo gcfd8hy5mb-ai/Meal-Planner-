@@ -15,3 +15,10 @@ test('common recipe unit aliases match unambiguous retail package sizes',()=>{
  assert.equal(packages({quantity:6,unit:'pieces'},'2 ct'),3);
  assert.equal(packages({quantity:2,unit:'cups'},'16 fl oz'),null);
 });
+
+test('cup-labeled packages never imply liquid volume without verification',()=>{
+ assert.equal(packages({quantity:16,unit:'fl oz'},'2 cups'),null);
+ assert.equal(packages({quantity:2,unit:'cups'},'16 fl oz'),null);
+ assert.equal(packages({quantity:2,unit:'fl oz'},'8 fl oz'),1);
+ assert.equal(packages({quantity:16,unit:'oz'},'1 lb'),1);
+});
