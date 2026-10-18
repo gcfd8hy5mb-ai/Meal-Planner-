@@ -26,7 +26,9 @@ const krogerStatus=document.querySelector('#krogerConnectionStatus');
 const krogerConnectButton=document.querySelector('#krogerConnectButton');
 const krogerDisconnectButton=document.querySelector('#krogerDisconnectButton');
 let krogerEpoch=0;
+let krogerKnownConnected=false;
 const krogerDisplay=(message,connected=false)=>{
+ krogerKnownConnected=connected;
  krogerStatus.textContent=message;
  krogerConnectButton.hidden=connected;
  productPanel.hidden=!connected;if(!connected)clearKrogerProducts({keepStore:true});
@@ -209,10 +211,11 @@ krogerMatchMore.onclick=()=>{void loadKrogerMatches()};
 const refreshKroger=async()=>{
  const epoch=++krogerEpoch,user=auth.currentUser;
  if(!user){krogerDisplay('Sign in to Tablewise to connect your Kroger account.');return}
- krogerDisplay('Checking Kroger connection…');krogerConnectButton.disabled=true;
+ krogerStatus.textContent='Checking Kroger connection…';
+ krogerConnectButton.disabled=true;krogerDisconnectButton.disabled=true;
  try{const result=await krogerRequest(user,'/status');if(epoch!==krogerEpoch||auth.currentUser?.uid!==user.uid)return;
   krogerDisplay(result.connected?'Kroger connected. Product selection will require your confirmation.':'Not connected. Connect to shop your grocery list at Kroger.',!!result.connected);
- }catch{if(epoch===krogerEpoch)krogerDisplay('Kroger connection is unavailable. Try again.');}
+ }catch{if(epoch===krogerEpoch&&auth.currentUser?.uid===user.uid)krogerDisplay('Could not verify Kroger connection. Your last confirmed connection state is preserved. Try again.',krogerKnownConnected);}
 };
 krogerConnectButton.onclick=async()=>{
  const user=auth.currentUser,epoch=krogerEpoch;if(!user)return;
