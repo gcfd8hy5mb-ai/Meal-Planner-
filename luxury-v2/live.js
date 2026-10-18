@@ -214,18 +214,18 @@ const refreshKroger=async()=>{
  }catch{if(epoch===krogerEpoch)krogerDisplay('Kroger connection is unavailable. Try again.');}
 };
 krogerConnectButton.onclick=async()=>{
- const user=auth.currentUser;if(!user)return;
+ const user=auth.currentUser,epoch=krogerEpoch;if(!user)return;
  krogerConnectButton.disabled=true;krogerStatus.textContent='Opening Kroger sign-in…';
- try{const result=await krogerRequest(user,'/connect',{method:'POST'});if(auth.currentUser?.uid!==user.uid)return;
+ try{const result=await krogerRequest(user,'/connect',{method:'POST'});if(epoch!==krogerEpoch||auth.currentUser?.uid!==user.uid)return;
   window.location.assign(result.authorizationUrl);
- }catch(error){if(auth.currentUser?.uid===user.uid)krogerDisplay(error.message||'Unable to start Kroger connection.');}
+ }catch(error){if(epoch===krogerEpoch&&auth.currentUser?.uid===user.uid)krogerDisplay(error.message||'Unable to start Kroger connection.');}
 };
 krogerDisconnectButton.onclick=async()=>{
- const user=auth.currentUser;if(!user)return;
+ const user=auth.currentUser,epoch=krogerEpoch;if(!user)return;
  krogerDisconnectButton.disabled=true;krogerStatus.textContent='Disconnecting Kroger…';
- try{await krogerRequest(user,'/disconnect',{method:'POST'});if(auth.currentUser?.uid!==user.uid)return;
+ try{await krogerRequest(user,'/disconnect',{method:'POST'});if(epoch!==krogerEpoch||auth.currentUser?.uid!==user.uid)return;
   krogerDisplay('Kroger disconnected. Your grocery list is unchanged.');
- }catch(error){if(auth.currentUser?.uid===user.uid)krogerDisplay(error.message||'Could not disconnect Kroger.',true);}
+ }catch(error){if(epoch===krogerEpoch&&auth.currentUser?.uid===user.uid)krogerDisplay(error.message||'Could not disconnect Kroger.',true);}
 };
 
 const optionalToggle=document.querySelector('#luxuryOptionalToggle'),optionalDetails=document.querySelector('#luxuryOptionalDetails');
