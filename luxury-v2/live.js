@@ -229,7 +229,14 @@ krogerDisconnectButton.onclick=async()=>{
  krogerDisconnectButton.disabled=true;krogerStatus.textContent='Disconnecting Kroger…';
  try{await krogerRequest(user,'/disconnect',{method:'POST'});if(epoch!==krogerEpoch||auth.currentUser?.uid!==user.uid)return;
   krogerDisplay('Kroger disconnected. Your grocery list is unchanged.');
- }catch(error){if(epoch===krogerEpoch&&auth.currentUser?.uid===user.uid)krogerDisplay(error.message||'Could not disconnect Kroger.',true);}
+ }catch(error){
+  if(epoch!==krogerEpoch||auth.currentUser?.uid!==user.uid)return;
+  // A timeout can occur after the worker completed disconnect. Recheck the read-only
+  // status endpoint rather than assuming the previous connection remains active.
+  await refreshKroger();
+  if(epoch+1!==krogerEpoch||auth.currentUser?.uid!==user.uid)return;
+  if(krogerStatus.textContent.startsWith('Could not verify Kroger connection.'))krogerStatus.textContent='Disconnect result is uncertain. Check Kroger connection again before retrying. Your grocery list is unchanged.';
+ }
 };
 
 const optionalToggle=document.querySelector('#luxuryOptionalToggle'),optionalDetails=document.querySelector('#luxuryOptionalDetails');
