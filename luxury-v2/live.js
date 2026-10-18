@@ -216,7 +216,7 @@ const refreshKroger=async()=>{
  krogerConnectButton.disabled=true;krogerDisconnectButton.disabled=true;
  try{const result=await krogerRequest(user,'/status');if(epoch!==krogerEpoch||auth.currentUser?.uid!==user.uid)return;
   krogerDisplay(result.connected?'Kroger connected. Product selection will require your confirmation.':'Not connected. Connect to shop your grocery list at Kroger.',!!result.connected);
- }catch{if(epoch===krogerEpoch&&auth.currentUser?.uid===user.uid)krogerDisplay('Could not verify Kroger connection. Your last confirmed connection state is preserved. Try again.',krogerKnownConnected);}
+ }catch(error){if(epoch===krogerEpoch&&auth.currentUser?.uid===user.uid)krogerDisplay('Kroger connection check failed: '+(error?.message||'Unknown network error')+' Your last confirmed connection state is preserved.',krogerKnownConnected);}
 };
 // iOS can restore a suspended tab without triggering a fresh Firebase auth event.
 // Recheck the authenticated Kroger status on return; never repeat an OAuth or cart POST.
@@ -255,7 +255,7 @@ krogerDisconnectButton.onclick=async()=>{
   // status endpoint rather than assuming the previous connection remains active.
   await refreshKroger();
   if(epoch+1!==krogerEpoch||auth.currentUser?.uid!==user.uid)return;
-  if(krogerStatus.textContent.startsWith('Could not verify Kroger connection.'))krogerStatus.textContent='Disconnect result is uncertain. Check Kroger connection again before retrying. Your grocery list is unchanged.';
+  if(krogerStatus.textContent.startsWith('Kroger connection check failed:'))krogerStatus.textContent='Disconnect result is uncertain. Check Kroger connection again before retrying. Your grocery list is unchanged.';
  }
  finally{if(actionEpoch===krogerActionEpoch)krogerActionPending=false;}
 };

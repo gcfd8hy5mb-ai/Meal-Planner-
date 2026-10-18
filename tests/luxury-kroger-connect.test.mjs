@@ -23,3 +23,21 @@ test('product review requires explicit user confirmation and never initiates che
  assert.match(app,/krogerRequest\(user,'\/cart\/add'/);
  assert.doesNotMatch(app,/\/checkout|placeOrder|purchaseNow/i);
 });
+
+test('Network/CORS and HTTP errors are separated without leaking gateway response',async()=>{
+ const original=globalThis.fetch;
+ const user={getIdToken:async()=> 'disposable-token'};
+ try{
+  globalThis.fetch=async()=>{throw new TypeError('Failed to fetch')};
+  await assert.rejects(krogerRequest(user,'/status'),/gateway is unreachable.*allowed-origins\/CORS/i);
+  globalThis.fetch=async()=>({ok:false,status:403,json:async()=>({error:'sensitive backend detail'})});
+  await assert.rejects(krogerRequest(user,'/status'),e=>e.message.includes('HTTP 403')&&!e.message.includes('sensitive backend detail'));
+  globalThis.fetch=async()=>({ok:false,status:502,json:async()=>({error:'private worker detail'})});
+  await assert.rejects(krogerRequest(user,'/status'),e=>e.message.includes('HTTP 502')&&!e.message.includes('private worker detail'));
+ }finally{globalThis.fetch=original}
+});
+test('Preview displays a classified status error without changing connection state',()=>{
+ assert.match(app,/Kroger connection check failed:/);
+ assert.match(app,/Your last confirmed connection state is preserved/);
+ assert.match(app,/krogerStatus\.textContent\.startsWith\('Kroger connection check failed:'\)/);
+});
