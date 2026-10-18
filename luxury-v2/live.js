@@ -126,7 +126,7 @@ document.querySelector('#krogerSearchButton').onclick=async()=>{
 let krogerCartPending=false;
 document.querySelector('#krogerAddCartButton').onclick=async()=>{
  const user=auth.currentUser;if(!user||!selectedKroger.size||krogerCartPending)return;
- const items=[...selectedKroger.values()].map(item=>({...item}));
+ const items=[...selectedKroger.values()].map(({upc,quantity})=>({upc,quantity}));
  const storeAtSubmit=krogerLocationId;
  if(!storeAtSubmit){productMessage.textContent='Choose your Kroger store first.';return}
  if(items.length>20){productMessage.textContent='Select 20 or fewer products per cart update.';return}
