@@ -63,6 +63,10 @@ try{
  await signOut(authA);
  await expectDenied(()=>getDocFromServer(refA),'Signed-out A cannot read private plan');
  assert.equal((await getDocFromServer(refB)).data().profile.displayName,'Disposable CI B');
+ // Restore the disposable A session for the finally-block cleanup; never leave
+ // records behind because the security test intentionally signed out.
+ const restoredA=(await signInWithEmailAndPassword(authA,env.TABLEWISE_TEST_A_EMAIL,env.TABLEWISE_TEST_A_PASSWORD)).user;
+ assert.equal(restoredA.uid,ua.uid,'Disposable cleanup account identity changed');
  console.log('PASS hosted bidirectional read/write/delete isolation, sign-out, dual-week save, server verification, and conflict recovery');
 }finally{
  // Delete only documents created by this exact invocation; leave account identities intact.
