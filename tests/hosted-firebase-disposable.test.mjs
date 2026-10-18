@@ -30,9 +30,18 @@ try{
  const baseline={activePlanningWeek:1,plan:{0:[null,null,'tacos',null]},alternateWeek:{plan:{0:[null,null,'soup',null]}},servings:2,mealServings:{},dinnerSides:{},profile:{displayName:'Disposable CI A'},checked:{'milk|cup':true}};
  await setDoc(refA,baseline);createdA=true;
  await setDoc(refB,{...baseline,profile:{displayName:'Disposable CI B'}});createdB=true;
+ // Test both cross-account directions, including overwrites and deletion, using
+ // only documents created by this invocation. Never use privileged credentials.
+ assert.equal((await getDocFromServer(refA)).data().profile.displayName,'Disposable CI A');
+ assert.equal((await getDocFromServer(refB)).data().profile.displayName,'Disposable CI B');
  await expectDenied(()=>getDocFromServer(doc(dbB,'users',ua.uid)),'B cannot read A');
  await expectDenied(()=>setDoc(doc(dbB,'users',ua.uid),{plan:{}}),'B cannot write A');
+ await expectDenied(()=>deleteDoc(doc(dbB,'users',ua.uid)),'B cannot delete A');
  await expectDenied(()=>getDocFromServer(doc(dbA,'users',ub.uid)),'A cannot read B');
+ await expectDenied(()=>setDoc(doc(dbA,'users',ub.uid),{plan:{}}),'A cannot write B');
+ await expectDenied(()=>deleteDoc(doc(dbA,'users',ub.uid)),'A cannot delete B');
+ assert.equal((await getDocFromServer(refA)).data().profile.displayName,'Disposable CI A');
+ assert.equal((await getDocFromServer(refB)).data().profile.displayName,'Disposable CI B');
  const backup=memory(),preview={'1-0-2':'lasagna','2-0-2':'noodles'};
  const outcome=await commitLuxuryPreview({storage:backup,uid:ua.uid,original:baseline,preview,documentRef:refA,
    getAuthenticatedUid:()=>authA.currentUser?.uid,runTransaction:fn=>runTransaction(dbA,fn),retainBackupUntilVerified:true});
@@ -49,7 +58,12 @@ try{
    getAuthenticatedUid:()=>authA.currentUser?.uid,runTransaction:fn=>runTransaction(dbA,fn)}),/Saved plan changed/);
  assert.ok(readPendingLuxuryDraft(stale,ua.uid),'Conflict retains exportable backup');
  assert.equal((await getDocFromServer(refA)).data().plan[0][2],'lasagna');
- console.log('PASS hosted account isolation, dual-week save, server verification, and conflict recovery');
+ // A sign-out must not allow A's old client to read even its own private
+ // document. B must retain its own session and must never see A's data.
+ await signOut(authA);
+ await expectDenied(()=>getDocFromServer(refA),'Signed-out A cannot read private plan');
+ assert.equal((await getDocFromServer(refB)).data().profile.displayName,'Disposable CI B');
+ console.log('PASS hosted bidirectional read/write/delete isolation, sign-out, dual-week save, server verification, and conflict recovery');
 }finally{
  // Delete only documents created by this exact invocation; leave account identities intact.
  const failures=[];
