@@ -118,7 +118,7 @@ document.querySelector('#krogerSearchButton').onclick=async()=>{
    details.textContent=[item.brand,item.size,offer.label].filter(Boolean).join(' / ');
    info.append(title,details);
    const button=document.createElement('button');button.type='button';button.textContent=selectedKroger.has(item.upc)?'Remove':'Select';
-   button.onclick=()=>{if(selectedKroger.has(item.upc))selectedKroger.delete(item.upc);else selectedKroger.set(item.upc,{upc:item.upc,name:item.name,quantity:1});button.textContent=selectedKroger.has(item.upc)?'Remove':'Select';renderKrogerSelection()};
+   button.onclick=()=>{if(krogerCartPending)return;if(selectedKroger.has(item.upc))selectedKroger.delete(item.upc);else selectedKroger.set(item.upc,{upc:item.upc,name:item.name,quantity:1});button.textContent=selectedKroger.has(item.upc)?'Remove':'Select';renderKrogerSelection()};
    row.append(info,button);productResults.append(row);
   }
   productMessage.textContent=krogerPromotionCoverage(data.products);
@@ -167,7 +167,7 @@ const appendKrogerMatch=(item,products,{failed=false}={})=>{
   details.append(name,meta);
   const select=document.createElement('button');select.type='button';
   const paint=()=>{select.textContent=selectedKroger.has(product.upc)?'Remove':'Select'};
-  select.onclick=()=>{if(selectedKroger.has(product.upc))selectedKroger.delete(product.upc);else selectedKroger.set(product.upc,{upc:product.upc,name:product.name,quantity:suggested??1});paint();renderKrogerSelection()};
+  select.onclick=()=>{if(krogerCartPending)return;if(selectedKroger.has(product.upc))selectedKroger.delete(product.upc);else selectedKroger.set(product.upc,{upc:product.upc,name:product.name,quantity:suggested??1});paint();renderKrogerSelection()};
   paint();row.append(details,select);group.append(row);
  }
  krogerMatchResults.append(group);
