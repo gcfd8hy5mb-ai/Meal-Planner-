@@ -15,6 +15,33 @@ The `tests/luxury-release-audit.test.mjs` assertions run inside the existing
 
 This is static/controlled regression evidence only. These checks **cannot** establish real-device browser behavior, remote image availability or visual correctness, live auth isolation, or payment/cart behavior.
 
+## Guarded hosted Firebase test runner
+
+A GitHub Actions workflow at `.github/workflows/hosted-disposable-firebase.yml`
+runs on pushes to `integration/luxury-v2-guarded` **only after explicit opt-in**.
+Until the repository Actions variable `TABLEWISE_HOSTED_TEST_APPROVED` is set
+to `yes`, the hosted job is skipped and no live test writes occur.
+
+To enable a disposable run, configure that Actions variable and these six
+repository Actions secrets (never paste values into PRs or chat):
+`TABLEWISE_FIREBASE_API_KEY`, `TABLEWISE_FIREBASE_PROJECT_ID`,
+`TABLEWISE_TEST_A_EMAIL`, `TABLEWISE_TEST_A_PASSWORD`,
+`TABLEWISE_TEST_B_EMAIL`, `TABLEWISE_TEST_B_PASSWORD`.
+The two existing email/password test identities must start with `tablewise-ci-`,
+be distinct, and have **no pre-existing `users/{uid}` documents**.
+The test explicitly refuses to overwrite pre-existing data, uses normal Firebase
+client authentication (never admin credentials), and attempts to delete only its
+own temporary documents before exiting.
+
+The hosted workflow cannot be considered passed merely because GitHub's
+ordinary four PR CI jobs are green or the opt-in job is skipped. Record the
+actual hosted job conclusion and review its cleanup outcome before promotion.
+Turn the approval variable back off after validation.
+
+Note: GitHub's manual `workflow_dispatch` picker may require a workflow file
+on the default branch; the guarded-branch push trigger allows running without
+altering production `main` once the Actions configuration is explicitly approved.
+
 ## Required hosted/cloud validation before production
 
 1. Test with **two disposable Firebase accounts** (A/B) and two browsers/devices: sign-in, A→B→A switching, strict user-document isolation, session expiry, sign-out and account deletion propagation. Confirm no A data, cache, grocery checklist or Kroger store leaks to B.
