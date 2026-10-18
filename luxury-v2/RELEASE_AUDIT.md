@@ -22,12 +22,12 @@ runs on pushes to `integration/luxury-v2-guarded` **only after explicit opt-in**
 Until the repository Actions variable `TABLEWISE_HOSTED_TEST_APPROVED` is set
 to `yes`, the hosted job is skipped and no live test writes occur.
 
-To enable a disposable run, configure that Actions variable and these six
-repository Actions secrets (never paste values into PRs or chat):
+To enable a disposable run, configure that Actions variable and use the six
+existing secrets in the protected `tablewise-hosted-test` environment (never paste values into PRs or chat):
 `TABLEWISE_FIREBASE_API_KEY`, `TABLEWISE_FIREBASE_PROJECT_ID`,
 `TABLEWISE_TEST_A_EMAIL`, `TABLEWISE_TEST_A_PASSWORD`,
 `TABLEWISE_TEST_B_EMAIL`, `TABLEWISE_TEST_B_PASSWORD`.
-The two existing email/password test identities must start with `tablewise-ci-`,
+The workflow job explicitly selects this environment, so its scoped secrets are available only after its protection rules are satisfied. Confirm the environment allows the guarded integration branch. The two existing email/password test identities must start with `tablewise-ci-`,
 be distinct, and have **no pre-existing `users/{uid}` documents**.
 The test explicitly refuses to overwrite pre-existing data, uses normal Firebase
 client authentication (never admin credentials), and attempts to delete only its
