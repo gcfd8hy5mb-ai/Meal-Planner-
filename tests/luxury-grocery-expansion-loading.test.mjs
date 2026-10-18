@@ -14,9 +14,10 @@ test('native accordion clicks persist intended state before queued toggle',()=>{
 test('delayed native toggle events cannot rewrite state after panel removed',()=>{
  assert.match(grocery,/panel\.addEventListener\('toggle',\(\)=>\{if\(!panel\.isConnected\|\|!host\.contains\(panel\)\|\|groceryExpansion\.week!==week\)return/);
 });
-test('signed-in account restoration has loading copy, not a false empty-plan message',()=>{
- assert.match(reset,/const resetPrivateView=\(loadingUser=false\)/);
- assert.match(reset,/loadingUser\?'Loading your dinner…':'No dinner selected'/);
- assert.match(auth,/const epoch=\+\+authEpoch;resetPrivateView\(!!user\)/);
- assert.match(reset,/loadingUser\?'Restoring your saved meal plan securely\.'/);
+test('signed-in loading follows synchronous private reset without false empty state',()=>{
+ assert.match(reset,/const resetPrivateView=\(\)=>/);
+ assert.match(auth,/const epoch=\+\+authEpoch;resetPrivateView\(\);if\(user\)/);
+ assert.match(auth,/textContent='Loading your dinner…'/);
+ assert.match(auth,/textContent='Restoring your saved meal plan securely\.'/);
+ assert.ok(auth.indexOf("resetPrivateView()")<auth.indexOf("textContent='Loading your dinner…'"));
 });
