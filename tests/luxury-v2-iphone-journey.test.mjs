@@ -57,3 +57,6 @@ await import('./kroger-account-switch-race.test.mjs');
 
 // Run final structural/release-safety audit in the existing iPhone CI gate.
 await import('./luxury-release-audit.test.mjs');
+
+// Preserve the iPhone grocery accordion state and signed-in loading behavior.
+await import('./luxury-grocery-expansion-loading.test.mjs');
