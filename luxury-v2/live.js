@@ -143,7 +143,7 @@ document.querySelector('#krogerAddCartButton').onclick=async()=>{
   productMessage.textContent=result.message||'Cart updated. Review in Kroger.';
   for(const item of items){const current=selectedKroger.get(item.upc);if(current?.quantity===item.quantity)selectedKroger.delete(item.upc)}
   renderKrogerSelection();
- }catch(error){if(auth.currentUser?.uid===user.uid&&krogerLocationId===storeAtSubmit)productMessage.textContent=error.message||'Could not update cart.'}
+ }catch(error){if(auth.currentUser?.uid===user.uid&&krogerLocationId===storeAtSubmit)productMessage.textContent='Kroger cart update was not confirmed. Your selection is still here. Check your Kroger cart before retrying to avoid adding products twice.'}
  finally{krogerCartPending=false;button.disabled=false;krogerStoreSelect.disabled=false;document.querySelector('#krogerFindStores').disabled=false;renderKrogerSelection()}
 };
 const krogerMatchButton=document.querySelector('#krogerMatchList');
