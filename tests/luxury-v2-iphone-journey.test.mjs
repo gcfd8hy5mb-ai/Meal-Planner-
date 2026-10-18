@@ -54,3 +54,6 @@ console.log('PASS: iPhone dual-week edits, draft export, interrupted save, reope
 
 // Exercise Kroger's delayed request/account-switch races in the existing iPhone CI journey.
 await import('./kroger-account-switch-race.test.mjs');
+
+// Run final structural/release-safety audit in the existing iPhone CI gate.
+await import('./luxury-release-audit.test.mjs');
