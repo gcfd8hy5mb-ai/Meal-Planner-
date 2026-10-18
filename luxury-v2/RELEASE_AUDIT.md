@@ -60,7 +60,7 @@ altering production `main` once the Actions configuration is explicitly approved
 7. Switch account A→B→A rapidly with Kroger requests pending; verify no cross-account grocery selections, store, recipe plan, history, tokens or prompts. Close and reopen after a network outage.
 8. On a second device/browser, validate read-only plan restore and app data isolation. Test cloud-save/recovery **only against approved disposable test records**; production save gate stays off.
 
-**Release decision:** BLOCKED pending the hosted Firebase/two-account evidence and real iPhone walkthrough. No production promotion authorized. 
+**Release decision:** BLOCKED pending real iPhone / second-browser read-only restore, account-switch verification, approved disposable write-recovery test, and Kroger OAuth/cart validation. The hosted two-account test completed successfully as shown by the owner's GitHub Actions screenshot (36 seconds; actual test step green), but that is not equivalent to completing all real-device release gates. No production promotion authorized. 
 
 ## Hosted test execution evidence
 
@@ -69,3 +69,19 @@ The guarded push-triggered hosted audit must produce a **successful non-skipped 
 ### Hosted runner dependency setup
 
 The hosted workflow intentionally does not request npm dependency caching or `npm ci`: this repository does not have the lockfile required by those options. It follows the passing Firestore test workflow's bounded `npm install` path. The hosted test remains approval-gated and may still report a separate Firebase or credential error once dependency setup succeeds.
+
+## Hosted audit completion and next safe validation (2026-10-18)
+
+The owner provided a screenshot of a **successful 36-second non-skipped hosted disposable Firebase security audit** after PR #177. The "Test hosted two-account isolation and recovery" step was green (4 seconds). This establishes success for the scripted checks in `tests/hosted-firebase-disposable.test.mjs`, including disposable bidirectional access denials, sign-out denial, transaction verification and conflict backup. It does **not** cover two separate real devices, browser session/caching behavior, Kroger OAuth, or account deletion propagation.
+
+The owner reports resetting the repository Actions opt-in variable `TABLEWISE_HOSTED_TEST_APPROVED` to `no`. Its value was not independently read from GitHub; keep it off between explicitly approved hosted test runs.
+
+**Next read-only real-device walkthrough (no cloud writes):**
+
+1. On the guarded preview, sign in to account A and note the Home dinner, Week 1 / Week 2 plan, and the grocery checklist. Do not record credentials or expose other account data.
+2. Open the same guarded preview in a second independent browser/device (Safari versus another browser is acceptable; a second iPhone is better). Sign in to A and verify the **existing cloud plan** loads; the grocery checklist is currently account-scoped **localStorage**, so do not assume it syncs across devices.
+3. Sign out on the second browser, then sign in to B. Verify A's plan, Kroger store and grocery states are not visible to B. Switch B → A again and verify the correct plan returns.
+4. Close and reopen the browser. Ensure only the current account's plan appears, and that no false `No dinner selected` flashes during authenticated restore.
+5. Test network outage and return while on the guarded preview. Verify that an interrupted request cannot overwrite a newer plan, that errors are visible, and that cloud **Save changes** remains disabled.
+
+Stop and record any unexpected data sharing, blank screen or missing data. Do not unlock the luxury cloud Save gate or write to actual accounts for this walkthrough. A full cross-device write/recovery test requires a separately approved disposable-record procedure.
