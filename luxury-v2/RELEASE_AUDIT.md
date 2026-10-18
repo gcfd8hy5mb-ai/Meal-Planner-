@@ -61,3 +61,7 @@ altering production `main` once the Actions configuration is explicitly approved
 8. On a second device/browser, validate read-only plan restore and app data isolation. Test cloud-save/recovery **only against approved disposable test records**; production save gate stays off.
 
 **Release decision:** BLOCKED pending the hosted Firebase/two-account evidence and real iPhone walkthrough. No production promotion authorized. 
+
+## Hosted test execution evidence
+
+The guarded push-triggered hosted audit must produce a **successful non-skipped job** before hosted isolation may be marked passed. A skipped job, a successful PR emulator check, or a workflow configured without an approved runner is insufficient. The guarded PR must separately satisfy all four standard CI checks for its exact HEAD SHA before merge.
