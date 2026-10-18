@@ -51,3 +51,6 @@ assert.equal(records.has(pendingKey(uid)),true,'Conflicting edits remain exporta
 assert.equal(hasPreviewEdits({}),false);
 assert.equal(JSON.stringify(saved),baseline,'Discarding the preview never changes saved data');
 console.log('PASS: iPhone dual-week edits, draft export, interrupted save, reopen and conflict guard');
+
+// Exercise Kroger's delayed request/account-switch races in the existing iPhone CI journey.
+await import('./kroger-account-switch-race.test.mjs');

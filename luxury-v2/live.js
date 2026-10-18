@@ -231,7 +231,9 @@ const refreshKrogerOnReturn=()=>{
 window.addEventListener('pageshow',event=>{if(event.persisted)refreshKrogerOnReturn()});
 document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible')refreshKrogerOnReturn()});
 krogerConnectButton.onclick=async()=>{
- const user=auth.currentUser,epoch=krogerEpoch;if(!user||krogerActionPending)return;
+ const user=auth.currentUser;if(!user||krogerActionPending)return;
+ // Invalidate any status check started before this action.
+ const epoch=++krogerEpoch;
  const actionEpoch=++krogerActionEpoch;krogerActionPending=true;
  krogerConnectButton.disabled=true;krogerStatus.textContent='Opening Kroger sign-in…';
  try{const result=await krogerRequest(user,'/connect',{method:'POST'});if(epoch!==krogerEpoch||auth.currentUser?.uid!==user.uid)return;
@@ -240,7 +242,9 @@ krogerConnectButton.onclick=async()=>{
  finally{if(actionEpoch===krogerActionEpoch)krogerActionPending=false;}
 };
 krogerDisconnectButton.onclick=async()=>{
- const user=auth.currentUser,epoch=krogerEpoch;if(!user||krogerActionPending)return;
+ const user=auth.currentUser;if(!user||krogerActionPending)return;
+ // Invalidate any status check started before this action.
+ const epoch=++krogerEpoch;
  const actionEpoch=++krogerActionEpoch;krogerActionPending=true;
  krogerDisconnectButton.disabled=true;krogerStatus.textContent='Disconnecting Kroger…';
  try{await krogerRequest(user,'/disconnect',{method:'POST'});if(epoch!==krogerEpoch||auth.currentUser?.uid!==user.uid)return;
