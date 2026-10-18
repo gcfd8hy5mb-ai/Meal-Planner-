@@ -36,7 +36,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-          cache: npm
       - name: Validate disposable credentials and approval
         env:
           TABLEWISE_FIREBASE_API_KEY: ${{ secrets.TABLEWISE_FIREBASE_API_KEY }}
@@ -57,8 +56,9 @@ jobs:
           [[ "$TABLEWISE_FIREBASE_PROJECT_ID" == "meal-planner-a478e" ]] || { echo "::error::Unexpected Firebase project."; exit 1; }
           [[ "$TABLEWISE_TEST_A_EMAIL" == tablewise-ci-* && "$TABLEWISE_TEST_B_EMAIL" == tablewise-ci-* && "$TABLEWISE_TEST_A_EMAIL" != "$TABLEWISE_TEST_B_EMAIL" ]] || { echo "::error::Expected two distinct tablewise-ci- accounts."; exit 1; }
           echo "Preflight passed. Disposable account identities are not printed."
-      - name: Install pinned Firebase test dependencies
-        run: npm ci --no-audit --no-fund
+      - name: Install Firebase test dependencies
+        timeout-minutes: 8
+        run: npm install --no-audit --no-fund --fetch-retries=1 --fetch-timeout=30000
       - name: Test hosted two-account isolation and recovery
         env:
           TABLEWISE_HOSTED_TEST_APPROVED: 'yes'
