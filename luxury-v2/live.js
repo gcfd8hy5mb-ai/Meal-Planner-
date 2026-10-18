@@ -100,7 +100,8 @@ const renderKrogerSelection=()=>{
    if(!Number.isSafeInteger(value)||value<1||value>30){quantity.value=String(item.quantity);productMessage.textContent='Enter a whole number from 1 to 30 packages.';return}
    item.quantity=value;count.textContent=selectedKroger.size+' distinct products · '+[...selectedKroger.values()].reduce((total,entry)=>total+entry.quantity,0)+' total packages selected. Verify quantities before adding to Kroger.';
   };
-  row.append(label,quantity);list.append(row);
+  const remove=document.createElement('button');remove.type='button';remove.textContent='Remove';remove.setAttribute('aria-label','Remove '+(item.name||upc)+' from Kroger selection');remove.onclick=()=>{if(krogerCartPending)return;selectedKroger.delete(upc);renderKrogerSelection()};
+  row.append(label,quantity,remove);list.append(row);
  }
 };
 document.querySelector('#krogerSearchButton').onclick=async()=>{
