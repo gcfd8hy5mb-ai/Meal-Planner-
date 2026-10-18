@@ -1,4 +1,6 @@
 name: Hosted disposable Firebase security audit
+# Authorized guarded validation: requires opt-in variable and protected environment.
+# Never run against user-owned documents or from production main.
 
 on:
   push:
