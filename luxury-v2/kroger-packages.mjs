@@ -11,8 +11,8 @@ export function suggestedKrogerPackages(ingredient,size){
  const aliases={lbs:'lb',pound:'lb',pounds:'lb',ounce:'oz',ounces:'oz',gram:'g',grams:'g',gallon:'gal',gallons:'gal',quart:'qt',quarts:'qt',pint:'pt',pints:'pt',cups:'cup',liter:'l',liters:'l',milliliter:'ml',milliliters:'ml'};
  const packUnit=(match[2].replace(/\s+/g,' ') in aliases)?aliases[match[2].replace(/\s+/g,' ')]:match[2].replace(/\s+/g,' ');
  if(!kind[unit]||kind[unit]!==kind[packUnit])return null;
- // Do not convert cups to fluid ounces for ingredient volume: recipe cups and retail fluid ounces can be different for solids.
- if(kind[unit]==='volume'&&unit==='cup')return null;
+ // Cup-based recipe or retail package labels can describe solids or liquids; never assume fluid-volume equivalence.
+ if(unit==='cup'||packUnit==='cup')return null;
  const result=Math.ceil(needed*factors[unit]/(Number(match[1])*factors[packUnit]));
  return Number.isFinite(result)&&result>=1&&result<=30?result:null;
 }
