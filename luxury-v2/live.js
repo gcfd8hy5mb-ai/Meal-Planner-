@@ -31,6 +31,7 @@ const krogerDisplay=(message,connected=false)=>{
  krogerConnectButton.hidden=connected;
  productPanel.hidden=!connected;if(!connected)clearKrogerProducts({keepStore:true});
  krogerDisconnectButton.hidden=!connected;
+ krogerDisconnectButton.disabled=!auth.currentUser||!connected;
  krogerConnectButton.disabled=!auth.currentUser||connected;
 };
 const groceryKrogerToggle=document.querySelector('#groceryKrogerToggle');
