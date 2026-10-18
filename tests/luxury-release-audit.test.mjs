@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {readFileSync} from 'node:fs';
+import {readFileSync,existsSync} from 'node:fs';
 import vm from 'node:vm';
 
 const html=readFileSync(new URL('../luxury-v2/index.html',import.meta.url),'utf8');
@@ -29,7 +29,8 @@ test('catalog contains 166 unique recipes with instructions and usable photo map
   assert.ok(Array.isArray(recipe.ingredients)&&recipe.ingredients.length>0,'missing ingredients: '+recipe.id);
   assert.ok(Array.isArray(recipe.steps)&&recipe.steps.length>=3,'incomplete recipe steps: '+recipe.id);
   const url=verifiedRecipePhotos[recipe.id];
-  if(typeof url!=='string'||!url.startsWith('https://'))missing.push(recipe.id);
+  if(typeof url!=='string'||(!url.startsWith('https://')&&!url.startsWith('assets/')))missing.push(recipe.id);
+  else if(url.startsWith('assets/')&&!existsSync(new URL('../'+url,import.meta.url)))missing.push(recipe.id+' (local file not found)');
  }
  assert.deepEqual(missing,[],'missing photo mappings (remote loading still needs device/network verification)');
 });
