@@ -54,6 +54,7 @@ const restoreKrogerStore=user=>{
 };
 const clearStoreResults=()=>{++storeLookupEpoch;krogerStoreSelect.replaceChildren();krogerStoreSelect.hidden=true;krogerLocationId=''};
 document.querySelector('#krogerFindStores').onclick=async()=>{
+ if(krogerCartPending)return;
  const user=auth.currentUser,zip=krogerStoreZip.value.trim();
  if(!user){krogerStoreMessage.textContent='Sign in before choosing a store.';return}
  if(!/^\d{5}$/.test(zip)){krogerStoreMessage.textContent='Enter a 5-digit ZIP code.';return}
@@ -69,6 +70,7 @@ document.querySelector('#krogerFindStores').onclick=async()=>{
  }catch(error){if(epoch===storeLookupEpoch)krogerStoreMessage.textContent=error.message||'Store lookup unavailable.'}
 };
 krogerStoreSelect.onchange=()=>{
+ if(krogerCartPending){krogerStoreSelect.value=krogerLocationId;return}
  krogerLocationId=krogerStoreSelect.value;
  resetKrogerMatches();++productSearchEpoch;selectedKroger.clear();renderKrogerSelection();productResults.replaceChildren();productMessage.textContent='';
  if(krogerLocationId){
@@ -134,7 +136,7 @@ document.querySelector('#krogerAddCartButton').onclick=async()=>{
  if(items.some(item=>!/^\d{8,14}$/.test(String(item.upc||''))||!Number.isSafeInteger(item.quantity)||item.quantity<1||item.quantity>30)){productMessage.textContent='One or more selected products have an invalid code or package quantity. Remove and reselect those products before continuing.';return}
  const totalPackages=items.reduce((sum,item)=>sum+item.quantity,0);
  if(!window.confirm('Add '+items.length+' distinct products ('+totalPackages+' total packages) to your Kroger cart? Verify quantities before continuing. This will not place an order.'))return;
- const button=document.querySelector('#krogerAddCartButton');krogerCartPending=true;button.disabled=true;renderKrogerSelection();productMessage.textContent='Updating cart…';
+ const button=document.querySelector('#krogerAddCartButton');krogerCartPending=true;button.disabled=true;krogerStoreSelect.disabled=true;document.querySelector('#krogerFindStores').disabled=true;renderKrogerSelection();productMessage.textContent='Updating cart…';
  try{
   const result=await krogerRequest(user,'/cart/add',{method:'POST',body:{items}});
   if(auth.currentUser?.uid!==user.uid||krogerLocationId!==storeAtSubmit)return;
@@ -142,7 +144,7 @@ document.querySelector('#krogerAddCartButton').onclick=async()=>{
   for(const item of items){const current=selectedKroger.get(item.upc);if(current?.quantity===item.quantity)selectedKroger.delete(item.upc)}
   renderKrogerSelection();
  }catch(error){if(auth.currentUser?.uid===user.uid&&krogerLocationId===storeAtSubmit)productMessage.textContent=error.message||'Could not update cart.'}
- finally{krogerCartPending=false;button.disabled=false;renderKrogerSelection()}
+ finally{krogerCartPending=false;button.disabled=false;krogerStoreSelect.disabled=false;document.querySelector('#krogerFindStores').disabled=false;renderKrogerSelection()}
 };
 const krogerMatchButton=document.querySelector('#krogerMatchList');
 const krogerMatchMore=document.querySelector('#krogerMatchMore');
