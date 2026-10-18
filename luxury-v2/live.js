@@ -255,7 +255,7 @@ krogerDisconnectButton.onclick=async()=>{
   // status endpoint rather than assuming the previous connection remains active.
   await refreshKroger();
   if(epoch+1!==krogerEpoch||auth.currentUser?.uid!==user.uid)return;
-  if(krogerStatus.textContent.startsWith('Could not verify Kroger connection.'))krogerStatus.textContent='Disconnect result is uncertain. Check Kroger connection again before retrying. Your grocery list is unchanged.';
+  if(krogerStatus.textContent.startsWith('Kroger connection check failed:'))krogerStatus.textContent='Disconnect result is uncertain. Check Kroger connection again before retrying. Your grocery list is unchanged.';
  }
  finally{if(actionEpoch===krogerActionEpoch)krogerActionPending=false;}
 };
