@@ -90,7 +90,9 @@ jobs:
         run: node --test tests/luxury-recipe-details.test.mjs tests/luxury-batch1-catalog.test.mjs tests/luxury-batch2-catalog.test.mjs tests/luxury-batch3-catalog.test.mjs tests/luxury-batch4-catalog.test.mjs tests/luxury-recipe-slow-cook-times.test.mjs tests/luxury-pot-pie-recipe.test.mjs tests/luxury-recipe-all-directions.test.mjs tests/luxury-recipe-specific-descriptions.test.mjs tests/luxury-loaded-potato-times.test.mjs tests/luxury-all-grocery-ingredients.test.mjs tests/luxury-cook-ingredients-button.test.mjs tests/luxury-meal-search.test.mjs tests/luxury-meal-picker-footer.test.mjs tests/luxury-picker-approved-layout.test.mjs
       - name: Run standalone legacy-leak regression test
         run: node tests/luxury-v2-isolation.cjs
-      - name: Diagnose Kroger Worker OPTIONS/CORS without credentials\n        run: node tests/kroger-cors-origin-probe.mjs\n      - name: Verify saved two-week grocery aggregation
+      - name: Diagnose Kroger Worker OPTIONS/CORS without credentials
+        run: node tests/kroger-cors-origin-probe.mjs
+      - name: Verify saved two-week grocery aggregation
         run: node tests/luxury-v2-groceries.test.mjs
       - name: Verify account-scoped checklist persistence
         run: node tests/luxury-v2-checklist.test.mjs
