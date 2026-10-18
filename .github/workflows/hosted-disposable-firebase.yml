@@ -27,6 +27,7 @@ jobs:
     # disposable test writes are attempted until the owner explicitly opts in.
     if: ${{ github.ref_name == 'integration/luxury-v2-guarded' && vars.TABLEWISE_HOSTED_TEST_APPROVED == 'yes' && (github.event_name == 'push' || inputs.approval == 'yes') }}
     runs-on: ubuntu-latest
+    environment: tablewise-hosted-test
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
@@ -47,7 +48,7 @@ jobs:
           set -euo pipefail
           for name in TABLEWISE_FIREBASE_API_KEY TABLEWISE_FIREBASE_PROJECT_ID TABLEWISE_TEST_A_EMAIL TABLEWISE_TEST_A_PASSWORD TABLEWISE_TEST_B_EMAIL TABLEWISE_TEST_B_PASSWORD; do
             if [[ -z "${!name}" ]]; then
-              echo "::error title=Missing secret::Set repository Actions secret ${name} for disposable test accounts."
+              echo "::error title=Missing secret::Set environment Actions secret ${name} in tablewise-hosted-test."
               exit 1
             fi
           done
