@@ -227,6 +227,7 @@ krogerDisconnectButton.onclick=async()=>{
  try{await krogerRequest(user,'/disconnect',{method:'POST'});if(epoch!==krogerEpoch||auth.currentUser?.uid!==user.uid)return;
   krogerDisplay('Kroger disconnected. Your grocery list is unchanged.');
  }catch(error){if(epoch===krogerEpoch&&auth.currentUser?.uid===user.uid)krogerDisplay(error.message||'Could not disconnect Kroger.',true);}
+ finally{if(epoch===krogerEpoch&&auth.currentUser?.uid===user.uid)krogerDisconnectButton.disabled=false;}
 };
 
 const optionalToggle=document.querySelector('#luxuryOptionalToggle'),optionalDetails=document.querySelector('#luxuryOptionalDetails');
