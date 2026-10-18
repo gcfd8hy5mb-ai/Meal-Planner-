@@ -1,0 +1,68 @@
+name: Hosted disposable Firebase security audit
+
+on:
+  push:
+    branches:
+      - integration/luxury-v2-guarded
+    paths:
+      - '.github/workflows/hosted-disposable-firebase.yml'
+      - 'tests/hosted-firebase-disposable.test.mjs'
+  workflow_dispatch:
+    inputs:
+      approval:
+        description: "Type yes to approve writes ONLY to two disposable tablewise-ci- test accounts"
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: tablewise-hosted-disposable-audit
+  cancel-in-progress: false
+
+jobs:
+  hosted-disposable-isolation:
+    # Protected by a repository-level approval variable. No credentials or
+    # disposable test writes are attempted until the owner explicitly opts in.
+    if: ${{ github.ref_name == 'integration/luxury-v2-guarded' && vars.TABLEWISE_HOSTED_TEST_APPROVED == 'yes' && (github.event_name == 'push' || inputs.approval == 'yes') }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Validate disposable credentials and approval
+        env:
+          TABLEWISE_FIREBASE_API_KEY: ${{ secrets.TABLEWISE_FIREBASE_API_KEY }}
+          TABLEWISE_FIREBASE_PROJECT_ID: ${{ secrets.TABLEWISE_FIREBASE_PROJECT_ID }}
+          TABLEWISE_TEST_A_EMAIL: ${{ secrets.TABLEWISE_TEST_A_EMAIL }}
+          TABLEWISE_TEST_A_PASSWORD: ${{ secrets.TABLEWISE_TEST_A_PASSWORD }}
+          TABLEWISE_TEST_B_EMAIL: ${{ secrets.TABLEWISE_TEST_B_EMAIL }}
+          TABLEWISE_TEST_B_PASSWORD: ${{ secrets.TABLEWISE_TEST_B_PASSWORD }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          for name in TABLEWISE_FIREBASE_API_KEY TABLEWISE_FIREBASE_PROJECT_ID TABLEWISE_TEST_A_EMAIL TABLEWISE_TEST_A_PASSWORD TABLEWISE_TEST_B_EMAIL TABLEWISE_TEST_B_PASSWORD; do
+            if [[ -z "${!name}" ]]; then
+              echo "::error title=Missing secret::Set repository Actions secret ${name} for disposable test accounts."
+              exit 1
+            fi
+          done
+          [[ "$TABLEWISE_FIREBASE_PROJECT_ID" == "meal-planner-a478e" ]] || { echo "::error::Unexpected Firebase project."; exit 1; }
+          [[ "$TABLEWISE_TEST_A_EMAIL" == tablewise-ci-* && "$TABLEWISE_TEST_B_EMAIL" == tablewise-ci-* && "$TABLEWISE_TEST_A_EMAIL" != "$TABLEWISE_TEST_B_EMAIL" ]] || { echo "::error::Expected two distinct tablewise-ci- accounts."; exit 1; }
+          echo "Preflight passed. Disposable account identities are not printed."
+      - name: Install pinned Firebase test dependencies
+        run: npm ci --no-audit --no-fund
+      - name: Test hosted two-account isolation and recovery
+        env:
+          TABLEWISE_HOSTED_TEST_APPROVED: 'yes'
+          TABLEWISE_FIREBASE_API_KEY: ${{ secrets.TABLEWISE_FIREBASE_API_KEY }}
+          TABLEWISE_FIREBASE_PROJECT_ID: ${{ secrets.TABLEWISE_FIREBASE_PROJECT_ID }}
+          TABLEWISE_TEST_A_EMAIL: ${{ secrets.TABLEWISE_TEST_A_EMAIL }}
+          TABLEWISE_TEST_A_PASSWORD: ${{ secrets.TABLEWISE_TEST_A_PASSWORD }}
+          TABLEWISE_TEST_B_EMAIL: ${{ secrets.TABLEWISE_TEST_B_EMAIL }}
+          TABLEWISE_TEST_B_PASSWORD: ${{ secrets.TABLEWISE_TEST_B_PASSWORD }}
+        run: node --test tests/hosted-firebase-disposable.test.mjs

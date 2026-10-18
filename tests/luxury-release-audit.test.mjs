@@ -54,3 +54,15 @@ test('disposable hosted audit explicitly protects both accounts and refuses real
  assert.match(hosted,/if\(createdA\)/);
  assert.match(hosted,/if\(createdB\)/);
 });
+
+test('hosted test runner remains opt-in and restricted to guarded integration',()=>{
+ const runner=readFileSync(new URL('../.github/workflows/hosted-disposable-firebase.yml',import.meta.url),'utf8');
+ assert.match(runner,/workflow_dispatch:/);
+ assert.match(runner,/branches:\s*\n\s*- integration\/luxury-v2-guarded/);
+ assert.match(runner,/vars\.TABLEWISE_HOSTED_TEST_APPROVED == 'yes'/);
+ assert.match(runner,/github\.ref_name == 'integration\/luxury-v2-guarded'/);
+ assert.match(runner,/node --test tests\/hosted-firebase-disposable\.test\.mjs/);
+ assert.match(runner,/TABLEWISE_TEST_A_EMAIL: \$\{\{ secrets\.TABLEWISE_TEST_A_EMAIL \}\}/);
+ assert.match(runner,/TABLEWISE_TEST_B_EMAIL: \$\{\{ secrets\.TABLEWISE_TEST_B_EMAIL \}\}/);
+ assert.doesNotMatch(runner,/service.account|GOOGLE_APPLICATION_CREDENTIALS|firebase_admin/i);
+});
