@@ -43,3 +43,14 @@ test('Kroger requests remain authenticated and do not replay cart actions after 
  assert.doesNotMatch(resume,/(?:krogerRequest\([^\n]*(?:cart\/add|disconnect|connect))/);
  assert.match(live,/\+\+krogerActionEpoch;krogerActionPending=false;clearKrogerProducts/);
 });
+
+test('disposable hosted audit explicitly protects both accounts and refuses real-user records',()=>{
+ const hosted=readFileSync(new URL('./hosted-firebase-disposable.test.mjs',import.meta.url),'utf8');
+ assert.match(hosted,/TABLEWISE_HOSTED_TEST_APPROVED/);
+ assert.match(hosted,/tablewise-ci-/);
+ assert.match(hosted,/Test A already has data\. Refusing to overwrite/);
+ assert.match(hosted,/Test B already has data\. Refusing to overwrite/);
+ for(const message of ['B cannot read A','B cannot write A','B cannot delete A','A cannot read B','A cannot write B','A cannot delete B','Signed-out A cannot read private plan'])assert.ok(hosted.includes(message),'missing hosted coverage: '+message);
+ assert.match(hosted,/if\(createdA\)/);
+ assert.match(hosted,/if\(createdB\)/);
+});
