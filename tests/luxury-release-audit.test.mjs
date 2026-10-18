@@ -58,6 +58,7 @@ test('disposable hosted audit explicitly protects both accounts and refuses real
 test('hosted test runner remains opt-in and restricted to guarded integration',()=>{
  const runner=readFileSync(new URL('../.github/workflows/hosted-disposable-firebase.yml',import.meta.url),'utf8');
  assert.match(runner,/workflow_dispatch:/);
+ assert.match(runner,/environment: tablewise-hosted-test/);
  assert.match(runner,/branches:\s*\n\s*- integration\/luxury-v2-guarded/);
  assert.match(runner,/vars\.TABLEWISE_HOSTED_TEST_APPROVED == 'yes'/);
  assert.match(runner,/github\.ref_name == 'integration\/luxury-v2-guarded'/);
