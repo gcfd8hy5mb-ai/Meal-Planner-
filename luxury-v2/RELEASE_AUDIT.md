@@ -65,3 +65,7 @@ altering production `main` once the Actions configuration is explicitly approved
 ## Hosted test execution evidence
 
 The guarded push-triggered hosted audit must produce a **successful non-skipped job** before hosted isolation may be marked passed. A skipped job, a successful PR emulator check, or a workflow configured without an approved runner is insufficient. The guarded PR must separately satisfy all four standard CI checks for its exact HEAD SHA before merge.
+
+### Hosted runner dependency setup
+
+The hosted workflow intentionally does not request npm dependency caching or `npm ci`: this repository does not have the lockfile required by those options. It follows the passing Firestore test workflow's bounded `npm install` path. The hosted test remains approval-gated and may still report a separate Firebase or credential error once dependency setup succeeds.
