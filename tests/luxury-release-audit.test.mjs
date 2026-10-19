@@ -67,3 +67,15 @@ test('hosted test runner remains opt-in and restricted to guarded integration',(
  assert.match(runner,/TABLEWISE_TEST_B_EMAIL: \$\{\{ secrets\.TABLEWISE_TEST_B_EMAIL \}\}/);
  assert.doesNotMatch(runner,/service.account|GOOGLE_APPLICATION_CREDENTIALS|firebase_admin/i);
 });
+
+test('Worker live fingerprint flow is read-only and environment scoped',()=>{
+ const wf=readFileSync(new URL('../.github/workflows/kroger-worker-readonly-audit.yml',import.meta.url),'utf8');
+ const probe=readFileSync(new URL('../ops/tablewise-kroger/read-live-worker-fingerprint.mjs',import.meta.url),'utf8');
+ assert.match(wf,/environment: tablewise-kroger-production/);
+ assert.match(wf,/github\.ref_name == 'integration\/luxury-v2-guarded'/);
+ assert.match(wf,/secrets\.CLOUDFLARE_API_TOKEN/);
+ assert.doesNotMatch(wf,/wrangler\s+deploy|upload-artifact|workers\/scripts\/.*PUT|release/i);
+ assert.match(probe,/method:'GET'/);
+ assert.doesNotMatch(probe,/method:\s*['"](?:POST|PUT|PATCH|DELETE)['"]/);
+ assert.doesNotMatch(probe,/console\.log\(\s*(?:token|data|await\s+resp\.text\(\)|data\.toString\(\))/);
+});
