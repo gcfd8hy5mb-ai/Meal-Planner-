@@ -1,0 +1,16 @@
+import assert from 'node:assert/strict';
+import {diagnoseSavedPlan} from '../luxury-v2/recovery-diagnostic.mjs';
+const original={preferences:null,goals:{name:'Personal'},plan:{0:[null,'tacos',null],1:[null,null,null]},alternateWeek:{plan:{0:[null,'soup',null]}}};
+const frozen=JSON.stringify(original);
+const result=diagnoseSavedPlan(original);
+assert.equal(result.document,'present');
+assert.equal(result.preferences,'null');
+assert.equal(result.week1.meals,1);
+assert.equal(result.week2.meals,1);
+assert.match(result.recovery,/do not reset/);
+assert.equal(JSON.stringify(original),frozen,'A diagnostic cannot change Firestore data');
+assert.doesNotMatch(JSON.stringify(result),/tacos|soup|Personal/,'Do not expose personal details');
+assert.equal(diagnoseSavedPlan(null).document,'missing');
+assert.equal(diagnoseSavedPlan({plan:{0:null}}).week1.valid,false);
+assert.equal(diagnoseSavedPlan({plan:{0:[null]},onboardingInitialized:true}).recovery.includes('original app guard'),true);
+console.log('PASS: read-only recovery diagnostic, counts, missing preferences, and no private content');
