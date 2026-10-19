@@ -79,4 +79,8 @@ test('Worker live fingerprint flow is read-only and environment scoped',()=>{
  assert.match(probe,/new URL\('\.\.\/\.\.\/cloudflare\/kroger\/worker\.js',import\.meta\.url\)/,'Worker baseline must resolve from nested ops/tablewise-kroger directory');
  assert.doesNotMatch(probe,/method:\s*['"](?:POST|PUT|PATCH|DELETE)['"]/);
  assert.doesNotMatch(probe,/console\.log\(\s*(?:token|data|await\s+resp\.text\(\)|data\.toString\(\))/);
+ assert.match(probe,/comparisonKind:'nonsecret-feature-markers-only'/);
+ assert.match(probe,/Matching feature markers, equal hashes/);
+ assert.doesNotMatch(probe,/console\.log\(\s*(?:liveText|resp|headers)\s*\)/);
+ assert.doesNotMatch(probe,/method:\s*['\"](?:POST|PUT|PATCH|DELETE)['\"]/);
 });
