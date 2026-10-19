@@ -536,10 +536,10 @@ const renderIngredients=(scope='plan')=>{
   // accordion open or changing the user's saved expansion preferences.
   for(const button of document.querySelectorAll('[data-grocery-panel]')){
    const week=button.dataset.groceryPanel;
-   const count=account?groceryTotals(effectiveAccount(),findRecipe,[Number(week)]).length:0;
+   const count=account?groceryTotals(effectiveAccount(),findRecipe,week==='both'?[1,2]:[Number(week)]).length:0;
    let indicator=button.querySelector('.grocery-week-count');
    if(!indicator){indicator=document.createElement('span');indicator.className='grocery-week-count';const chevron=button.querySelector('.grocery-tab-chevron');if(chevron)chevron.before(indicator);else button.append(indicator)}
-   indicator.textContent=account?' · '+count+' items':'';
+   indicator.textContent=account?count+' items':'';
   }
   const content=document.querySelector('#groceryWeekContent');if(groceryOpenWeek)renderGroceryPanel(groceryOpenWeek);else content.replaceChildren();}
 };
