@@ -15,7 +15,7 @@ if(productionHtml.includes('const save=()=>') && !productionHtml.includes("impor
  ]) execFileSync(process.execPath,[test],{stdio:'inherit'});
  const assert=require('node:assert/strict');
  const luxury=readFileSync('luxury-v2/live.js','utf8');
- assert.match(luxury,/LUXURY_SAVES_RELEASED\\s*=\\s*false/,'Luxury cloud saves must remain gated');
+ assert.match(luxury,/LUXURY_SAVES_RELEASED\s*=\s*false/,'Luxury cloud saves must remain gated');
  console.log('Current production cloud-save behavior and luxury save gate verified');
  process.exit(0);
 }
