@@ -97,3 +97,12 @@ test('live rollback inventory is read-only and never outputs Worker secrets or s
  assert.doesNotMatch(code,/method:\s*['"](?:POST|PUT|PATCH|DELETE)['"]/);
  assert.doesNotMatch(wf,/wrangler\s+deploy|upload-artifact/);
 });
+
+test('live active-version verification stays GET-only and blocks ambiguous rollback metadata',()=>{
+ const source=readFileSync(new URL('../ops/tablewise-kroger/read-rollback-metadata.mjs',import.meta.url),'utf8');
+ assert.match(source,/base\+'\/versions\/'.*encodeURIComponent\(deployed\.version_id\)/);
+ assert.match(source,/activeVersionMetadataChecks:versionChecks/);
+ assert.match(source,/matchesActiveDeployment:true/);
+ assert.match(source,/rollbackBackupComplete:false/);
+ assert.doesNotMatch(source,/method:\s*['"](?:PUT|POST|PATCH|DELETE)['"]/);
+});
