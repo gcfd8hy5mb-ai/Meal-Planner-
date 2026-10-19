@@ -440,7 +440,13 @@ const openMealPicker=(week,day)=>{
  search.oninput=()=>{limit=3;draw()};more.onclick=()=>{limit+=3;draw()};
  document.querySelector('#cancelLuxuryMealPicker').onclick=()=>{picker.hidden=true};
  document.querySelector('#luxuryPickerClose').onclick=()=>{picker.hidden=true};
- draw();picker.hidden=false;picker.scrollIntoView({block:'nearest'});
+ draw();
+ // Place the picker directly above the meal list so a change never requires
+ // scrolling past the rest of the week or the draft/recovery controls.
+ const days=document.querySelector('#days');
+ if(days?.parentElement===picker.parentElement)days.before(picker);
+ picker.hidden=false;
+ picker.scrollIntoView({block:'start',behavior:'instant'});
 };
 const showCookStep=()=>{const count=document.querySelector('#stepCount'),title=document.querySelector('#cookStepTitle'),body=document.querySelector('#cookStepBody');const items=currentRecipe?.steps||[];const n=items.length;count.textContent=n?'Step '+(step+1)+' of '+n:'No cooking steps available';title.textContent=currentRecipe?.name||'Select a meal';body.textContent=items[step]||'Open a saved recipe to view its cooking instructions.';document.querySelector('#previousStep').disabled=step===0;document.querySelector('#nextStep').disabled=!n;document.querySelector('#nextStep').textContent=step===n-1?'Done':'Next'};
 const openRecipe=(recipe)=>{currentRecipe=recipe;step=0;const img=document.querySelector('.cook-photo');const url=photo(recipe.id);if(url){img.src=url;img.alt=recipe.name;img.hidden=false}else img.hidden=true;showCookStep();showPage('cook')};
