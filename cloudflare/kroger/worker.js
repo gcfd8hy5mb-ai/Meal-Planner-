@@ -96,6 +96,17 @@ async function userAccessToken(env, uid) {
  await env.KROGER_KV.put('token:'+uid,await encrypt(env,next));
  return next.access_token;
 }
+// Only previews served by our dedicated Cloudflare Pages project are eligible.
+// Hostname anchoring excludes lookalike domains and unrelated *.pages.dev sites.
+function luxuryPreviewOrigin(origin) {
+  try {
+    const url = new URL(origin);
+    if (url.protocol !== 'https:' || url.origin !== origin || url.username || url.password ||
+        url.pathname !== '/' || url.search || url.hash) return false;
+    return url.hostname === 'tablewise-luxury-preview.pages.dev' ||
+      /^[a-f0-9]{8,40}\\.tablewise-luxury-preview\\.pages\\.dev$/.test(url.hostname);
+  } catch { return false; }
+}
 function allowedApps(env) {
   const pairs = [
     [env.KROGER_APP_ORIGIN || APP_ORIGIN, env.KROGER_APP_RETURN || APP_RETURN],
@@ -123,6 +134,8 @@ export default {
     const url = new URL(request.url), path = url.pathname;
     const origin = request.headers.get('Origin') || '';
     const apps = allowedApps(env);
+    // OAuth callback returns to this same approved preview origin, not an arbitrary URL.
+    if (luxuryPreviewOrigin(origin)) apps.push({origin, returnUrl: origin + '/'});
     const app = apps.find(item => item.origin === origin);
     const cors = app ? origin : '';
     if (request.method === 'OPTIONS') {
