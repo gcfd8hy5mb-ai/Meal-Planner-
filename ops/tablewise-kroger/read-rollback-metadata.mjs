@@ -20,6 +20,23 @@ if(!list.length)throw Error('No active Worker deployment returned; do not certif
 const active=list[0];
 const versions=Array.isArray(active.versions)?active.versions:[];
 if(!versions.length||versions.some(v=>!v.version_id||!Number.isFinite(Number(v.percentage))))throw Error('Active deployment versions missing or invalid');
+// Confirm Cloudflare still exposes metadata for each *currently deployed* version.
+// This does NOT execute a rollback or export its source/bindings.
+const versionChecks=[];
+for(const deployed of versions){
+ const response=await fetch(base+'/versions/'+encodeURIComponent(deployed.version_id),{
+  method:'GET',
+  headers:{Authorization:'Bearer '+token,Accept:'application/json'},
+  redirect:'error',
+  signal:AbortSignal.timeout(15000)
+ });
+ if(!response.ok)throw Error('Active Worker version metadata unavailable (HTTP '+response.status+'); rollback readiness not established');
+ const body=await response.json();
+ const version=body?.result;
+ if(body?.success!==true||!version||String(version.id||version.version_id||'')!==deployed.version_id)
+  throw Error('Active Worker version metadata does not match deployment; rollback readiness not established');
+ versionChecks.push({matchesActiveDeployment:true,versionFingerprint:fingerprint(deployed.version_id)});
+}
 const settings=await read('/settings');
 const bindings=Array.isArray(settings?.bindings)?settings.bindings:[];
 const counts={};
@@ -34,6 +51,7 @@ console.log(JSON.stringify({
  activeVersionFingerprints:versions.map(v=>fingerprint(v.version_id)),
  bindingTypeCounts:counts,
  bindingCount:bindings.length,
+ activeVersionMetadataChecks:versionChecks,
  compatibilityDatePresent:typeof settings?.compatibility_date==='string',
  metadataAvailable:true,
  rollbackBackupComplete:false
