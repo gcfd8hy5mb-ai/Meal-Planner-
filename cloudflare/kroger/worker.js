@@ -158,8 +158,11 @@ export default {
       const saved = await env.KROGER_KV.get('oauth:' + state, 'json');
       if (!saved || saved.expires < Date.now() || !saved.uid ||
           saved.redirectUri !== redirectUri(request)) return redirectBack('expired', 'state_expired');
+      const savedOrigin = new URL(saved.returnUrl).origin;
       const destination = apps.find(item => item.returnUrl === saved.returnUrl &&
-        item.origin === new URL(saved.returnUrl).origin)?.returnUrl;
+        item.origin === savedOrigin)?.returnUrl ||
+        (luxuryPreviewOrigin(savedOrigin) && saved.returnUrl === savedOrigin + '/'
+          ? saved.returnUrl : null);
       if (!destination) return redirectBack('failed', 'invalid_callback');
       await env.KROGER_KV.delete('oauth:' + state);
       if (url.searchParams.has('error')) return redirectBack('failed', 'oauth_denied', destination);
