@@ -84,3 +84,16 @@ test('Worker live fingerprint flow is read-only and environment scoped',()=>{
  assert.doesNotMatch(probe,/console\.log\(\s*(?:liveText|resp|headers)\s*\)/);
  assert.doesNotMatch(probe,/method:\s*['\"](?:POST|PUT|PATCH|DELETE)['\"]/);
 });
+
+test('live rollback inventory is read-only and never outputs Worker secrets or source',()=>{
+ const wf=readFileSync(new URL('../.github/workflows/kroger-worker-readonly-audit.yml',import.meta.url),'utf8');
+ const code=readFileSync(new URL('../ops/tablewise-kroger/read-rollback-metadata.mjs',import.meta.url),'utf8');
+ assert.match(wf,/read-rollback-metadata\.mjs/);
+ assert.match(wf,/environment: tablewise-kroger-production/);
+ assert.match(code,/method:'GET'/);
+ assert.match(code,/read\('\/deployments'\)/);
+ assert.match(code,/read\('\/settings'\)/);
+ assert.match(code,/rollbackBackupComplete:false/);
+ assert.doesNotMatch(code,/method:\s*['"](?:POST|PUT|PATCH|DELETE)['"]/);
+ assert.doesNotMatch(wf,/wrangler\s+deploy|upload-artifact/);
+});
