@@ -104,7 +104,7 @@ function luxuryPreviewOrigin(origin) {
     if (url.protocol !== 'https:' || url.origin !== origin || url.username || url.password ||
         url.pathname !== '/' || url.search || url.hash) return false;
     return url.hostname === 'tablewise-luxury-preview.pages.dev' ||
-      /^[a-f0-9]{8,40}\\.tablewise-luxury-preview\\.pages\\.dev$/.test(url.hostname);
+      /^[a-f0-9]{8,40}\.tablewise-luxury-preview\.pages\.dev$/.test(url.hostname);
   } catch { return false; }
 }
 function allowedApps(env) {
