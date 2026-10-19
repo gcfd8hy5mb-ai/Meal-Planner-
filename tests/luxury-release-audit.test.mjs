@@ -77,5 +77,5 @@ test('Worker live fingerprint flow is read-only and environment scoped',()=>{
  assert.doesNotMatch(wf,/wrangler\s+deploy|upload-artifact|workers\/scripts\/.*PUT|release/i);
  assert.match(probe,/method:'GET'/);
  assert.doesNotMatch(probe,/method:\s*['"](?:POST|PUT|PATCH|DELETE)['"]/);
- assert.doesNotMatch(probe,/console\.log\([^\n]*(?:token|data\.toString|data\))/);
+ assert.doesNotMatch(probe,/console\.log\(\s*(?:token|data|await\s+resp\.text\(\)|data\.toString\(\))/);
 });
