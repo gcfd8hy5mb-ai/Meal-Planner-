@@ -12,7 +12,7 @@ import {suggestedKrogerPackages} from './kroger-packages.mjs';
 import {readKrogerStore,saveKrogerStore} from './kroger-store.mjs';
 import {krogerPriceSummary,sortKrogerOffers,krogerPromotionCoverage,sortKrogerIngredientMatches,krogerIngredientRelevance} from './kroger-pricing.mjs';
 import {searchMeals,mealCategories} from './meal-search.mjs';
-import {groceryKey,readChecklist,saveChecklist} from './checklist.mjs';
+import {groceryKey,readSyncedChecklist,saveSyncedChecklist} from './checklist.mjs';
 import {replacePreviewMeal,previewAccount,hasPreviewEdits} from './meal-preview.mjs';
 import {readPendingLuxuryDraft,commitLuxuryPreview,classifyLuxuryRecovery,verifyLuxurySavedPlan} from './save-flow.mjs';
 
@@ -485,11 +485,12 @@ const renderGroceryPanel=(week)=>{
  if(!host)return;host.replaceChildren();
  if(!account||!accountUid){host.textContent='Sign in to view your grocery list.';return}
  const rows=groceryTotals(effectiveAccount(),findRecipe,week==='both'?[1,2]:[Number(week)]);
- const checks=readChecklist(localStorage,accountUid,week,rows);
+ const weekRows={'1':groceryTotals(effectiveAccount(),findRecipe,[1]),'2':groceryTotals(effectiveAccount(),findRecipe,[2])};
+ const checks=readSyncedChecklist(localStorage,accountUid,week,weekRows);
  const summary=document.createElement('div');summary.className='grocery-summary';
  const heading=document.createElement('strong');const clear=document.createElement('button');clear.type='button';clear.className='primary';clear.textContent='Uncheck all';
  const updateHeading=()=>{const checked=Object.values(checks).filter(Boolean).length;heading.textContent=checked+' of '+rows.length+' checked';};
- const persist=()=>saveChecklist(localStorage,accountUid,week,rows,checks);
+ const persist=()=>saveSyncedChecklist(localStorage,accountUid,week,weekRows,checks);
  summary.append(heading,clear);host.append(summary);
  if(!rows.length){const empty=document.createElement('p');empty.className='notice';empty.textContent='No planned ingredients for this period.';host.append(empty);clear.hidden=true}
  for(const [category,items] of groupGroceryItems(rows)){
@@ -517,7 +518,7 @@ const renderGroceryPanel=(week)=>{
   }
   host.append(panel);
  }
- clear.onclick=()=>{for(const key of Object.keys(checks))delete checks[key];if(!persist())label('Grocery checks could not be saved on this device.');renderGroceryPanel(week)};
+ clear.onclick=()=>{for(const item of rows)checks[groceryKey(item)]=false;if(!persist())label('Grocery checks could not be saved on this device.');renderGroceryPanel(week)};
  updateHeading();
 };
 let groceryOpenWeek=null;
