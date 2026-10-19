@@ -102,3 +102,7 @@ The existing Worker source is **already tracked** at `cloudflare/kroger/worker.j
 ### Fingerprint checker path correction
 
 The original read-only Worker fingerprint job failed before source comparison because its nested script resolved `../cloudflare/kroger/worker.js` under `ops/`. It now resolves `../../cloudflare/kroger/worker.js` from `ops/tablewise-kroger/`. A regression assertion checks this directory relationship. The job remains GET-only, and its next actual run must independently confirm the Cloudflare response and whether the deployed source matches the repository baseline.
+
+### Live Worker metadata comparison (read only)
+
+The exact-byte audit returned `sameBytes: false`. That does not establish functional differences, because Cloudflare may serve a bundled/multipart format rather than the source tracked at `cloudflare/kroger/worker.js`. The guarded fingerprint job now additionally logs only broad payload media classification and boolean presence of expected nonsecret endpoint/security feature-marker groups (origin restrictions, authentication, OAuth, status, cart and replay protection). This report **does not** prove semantic equivalence or establish a complete rollback backup. No Worker code, live response bodies, bindings, credentials or token values are exported or uploaded. **Deployment remains disabled** pending a private restorable copy of the active Worker and a reviewed minimal CORS diff.
