@@ -106,3 +106,34 @@ test('live active-version verification stays GET-only and blocks ambiguous rollb
  assert.match(source,/rollbackBackupComplete:false/);
  assert.doesNotMatch(source,/method:\s*['"](?:PUT|POST|PATCH|DELETE)['"]/);
 });
+
+test('Kroger Worker authorizes the original site and only dedicated luxury Pages previews',async()=>{
+ const source=readFileSync(new URL('../cloudflare/kroger/worker.js',import.meta.url),'utf8');
+ const worker=(await import('data:text/javascript;base64,'+Buffer.from(source).toString('base64'))).default;
+ const allowed=[
+  'https://gcfd8hy5mb-ai.github.io',
+  'https://362aa87c.tablewise-luxury-preview.pages.dev',
+  'https://15015936.tablewise-luxury-preview.pages.dev',
+  'https://tablewise-luxury-preview.pages.dev'
+ ];
+ const blocked=[
+  'https://example.pages.dev',
+  'https://tablewise-luxury-preview.pages.dev.attacker.com',
+  'https://other.tablewise-luxury-preview.pages.dev',
+  'http://362aa87c.tablewise-luxury-preview.pages.dev',
+  'https://evil.example.com',
+  'https://362aa87c.tablewise-luxury-preview.pages.dev.evil.com'
+ ];
+ for(const origin of allowed){
+  const response=await worker.fetch(new Request('https://tablewise-kroger.example/status',{method:'OPTIONS',headers:{Origin:origin}}),{});
+  assert.equal(response.status,204);
+  assert.equal(response.headers.get('Access-Control-Allow-Origin'),origin,'allow '+origin);
+  assert.match(response.headers.get('Access-Control-Allow-Headers')||'',/Authorization/);
+ }
+ for(const origin of blocked){
+  const response=await worker.fetch(new Request('https://tablewise-kroger.example/status',{method:'OPTIONS',headers:{Origin:origin}}),{});
+  assert.equal(response.headers.get('Access-Control-Allow-Origin'),null,'block '+origin);
+ }
+ assert.match(source,/saved\.returnUrl === savedOrigin \+ '\/'/,'OAuth callback remains bound to verified exact preview origin');
+ assert.match(source,/luxuryPreviewOrigin\(savedOrigin\)/,'OAuth callback validates preview return origin');
+});
