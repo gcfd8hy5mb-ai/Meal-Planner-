@@ -425,7 +425,13 @@ const openMealPicker=(week,day)=>{
    content.append(heading,details,nutrition);
    const add=document.createElement('span');add.className='picker-meal-add';add.textContent='+';add.setAttribute('aria-hidden','true');
    button.append(content,add);
-   button.onclick=()=>{previewEdits=replacePreviewMeal(account,previewEdits,week,day,2,recipe.id);picker.hidden=true;refreshDiscard();renderWeek(week);setHero();renderIngredients();label('Preview updated. Grocery quantities recalculated. Meal changes are not saved to your account.')};
+   button.onclick=()=>{previewEdits=replacePreviewMeal(account,previewEdits,week,day,2,recipe.id);picker.hidden=true;refreshDiscard();renderWeek(week);setHero();renderIngredients();
+   // Return directly to the edited day rather than leaving the user at the
+   // now-hidden picker above the week. Never imply this preview is cloud-saved.
+   const editedDay=document.querySelector('#days')?.children[day];
+   if(editedDay){editedDay.setAttribute('tabindex','-1');editedDay.focus({preventScroll:true});editedDay.scrollIntoView({block:'center'});}
+   label('Dinner preview updated for '+['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'][day]+'. Grocery quantities recalculated. Changes are not saved to your account.');
+  };
    options.append(button);
   }
   count.textContent=found.length+' matching meals';
