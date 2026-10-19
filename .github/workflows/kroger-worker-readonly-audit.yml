@@ -1,0 +1,36 @@
+name: Kroger Worker live fingerprint (read only)
+
+on:
+  push:
+    branches:
+      - integration/luxury-v2-guarded
+    paths:
+      - '.github/workflows/kroger-worker-readonly-audit.yml'
+      - 'ops/tablewise-kroger/read-live-worker-fingerprint.mjs'
+      - 'ops/tablewise-kroger/read-rollback-metadata.mjs'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  live-worker-fingerprint:
+    if: ${{ github.ref_name == 'integration/luxury-v2-guarded' }}
+    environment: tablewise-kroger-production
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify current Worker without source disclosure or changes
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: 6df282c1f8a8107aa594c416abbd92c4
+        run: node ops/tablewise-kroger/read-live-worker-fingerprint.mjs
+      - name: Inventory live deployment and binding types without exposing values
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: 6df282c1f8a8107aa594c416abbd92c4
+        run: node ops/tablewise-kroger/read-rollback-metadata.mjs

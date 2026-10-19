@@ -1,0 +1,18 @@
+const fs=require('node:fs'),assert=require('node:assert/strict');
+const html=fs.readFileSync('luxury-v2/index.html','utf8');
+const live=fs.readFileSync('luxury-v2/live.js','utf8');
+const old=fs.readFileSync('index.html','utf8');
+assert.match(html,/<!doctype html>/i);
+assert.match(html,/<style>[\s\S]*?\[hidden\]\s*\{display:none!important\}/i,'Hidden tabs must remain hidden before script executes');
+assert.match(html,/<main>[\s\S]*<section data-page="today"[\s\S]*<section data-page="week" hidden[\s\S]*<section data-page="groceries" hidden[\s\S]*<section data-page="cook" hidden/i,'Only first destination is visible before startup');
+assert.match(html,/<script type="module" src="\.\/live\.js"><\/script>/,'The v2 adapter must be standalone');
+assert.doesNotMatch(html,/<iframe|<link[^>]*stylesheet|<script[^>]+src="\.\.\/index\.html"|window\.location\s*=\s*['"][^'"]*index\.html/i,'No embedded or redirected legacy page');
+assert.match(live,/onAuthStateChanged\(auth,async user=>\{const epoch=\+\+authEpoch;resetPrivateView\(\)/,'Private data must be cleared before each login restoration');
+assert.match(live,/const snapshot=await getDocFromServer/,'Restoration must check server, not present made-up meals');
+assert.match(html,/id="saveLuxuryEdits" disabled/,'Luxury saving must stay disabled before release');
+assert.match(live,/LUXURY_SAVES_RELEASED\s*=\s*false/,'Cloud writes must remain release gated');
+assert.match(html,/footer\{position:fixed;bottom:calc\(12px \+ env\(safe-area-inset-bottom\)\);left:50%;transform:translateX\(-50%\)/,'Luxury dock must float, not render as the old full-width bottom bar');
+assert.match(html,/footer button.active\{background:#dec797/,'Selected luxury tab must use its own gold active surface');
+assert.doesNotMatch(html,/footer\{position:fixed;bottom:0;left:0;right:0;background:#fffdf8/,'Reject old footer styling');
+assert.ok(old.length>html.length,'Expected to preserve original separate production document');
+console.log('PASS luxury cold-start isolation: no old layout render, inactive screens hidden, restored data gated');
