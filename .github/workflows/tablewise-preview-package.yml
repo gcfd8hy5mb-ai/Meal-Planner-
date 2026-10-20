@@ -7,6 +7,7 @@ on:
       - 'preview-package/**'
       - 'tests/luxury-account-approved-design.test.mjs'
       - 'tests/luxury-grocery-week-scope.test.mjs'
+      - 'tests/luxury-pantry-discovery.test.mjs'
       - '.github/workflows/tablewise-preview-package.yml'
   workflow_dispatch:
 permissions:
@@ -22,7 +23,7 @@ jobs:
       - name: Verify preview is release-gated
         run: |
           node --input-type=module --check < luxury-v2/live.js
-          node --test luxury-v2/checklist-sync.test.mjs tests/luxury-account-approved-design.test.mjs tests/luxury-grocery-week-scope.test.mjs
+          node --test luxury-v2/checklist-sync.test.mjs tests/luxury-account-approved-design.test.mjs tests/luxury-grocery-week-scope.test.mjs tests/luxury-pantry-discovery.test.mjs
           node - <<'NODE'
           const fs=require('fs'),assert=require('assert');
           const source=fs.readFileSync('luxury-v2/live.js','utf8');
