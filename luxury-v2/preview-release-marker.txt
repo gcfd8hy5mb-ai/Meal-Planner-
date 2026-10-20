@@ -1,0 +1,3 @@
+Tablewise luxury preview production promotion verification
+Approved branch: release/luxury-v2-clean-main-20261019
+Scope: Cloudflare Pages tablewise-luxury-preview only; no original app or Kroger Worker changes.
