@@ -12,7 +12,7 @@ test('approved luxury account controls replace gold legacy buttons',()=>{
  assert.doesNotMatch(html,/>Saved plan health</);
 });
 test('diagnostic is not visible and signed-in card is state-driven',()=>{
- assert.match(html,/#luxuryRecoveryPanel\\{display:none!important\\}/);
+ assert.ok(html.includes('#luxuryRecoveryPanel{display:none!important}'));
  assert.match(js,/diagnosisPanel.hidden=true/);
  assert.match(js,/luxuryAccountIdentity/);
 });
