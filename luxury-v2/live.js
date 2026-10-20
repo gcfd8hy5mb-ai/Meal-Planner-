@@ -14,6 +14,7 @@ import {readKrogerStore,saveKrogerStore} from './kroger-store.mjs';
 import {krogerPriceSummary,sortKrogerOffers,krogerPromotionCoverage,sortKrogerIngredientMatches,krogerIngredientRelevance} from './kroger-pricing.mjs';
 import {searchMeals,mealCategories} from './meal-search.mjs';
 import {matchPantry,ingredientTokens} from './pantry-discovery.mjs';
+import {ONLINE_RECIPE_SEARCH_ENABLED,requestOnlineRecipes} from './online-recipe-client.mjs';
 import {groceryKey,readSyncedChecklist,saveSyncedChecklist} from './checklist.mjs';
 import {replacePreviewMeal,previewAccount,hasPreviewEdits} from './meal-preview.mjs';
 import {readPendingLuxuryDraft,commitLuxuryPreview,classifyLuxuryRecovery,verifyLuxurySavedPlan} from './save-flow.mjs';
@@ -22,19 +23,36 @@ import {readPendingLuxuryDraft,commitLuxuryPreview,classifyLuxuryRecovery,verify
 const pantryPanel=document.querySelector('#pantryDiscoverPanel');
 const pantryToggle=document.querySelector('#pantryDiscoverToggle');
 pantryToggle.onclick=()=>{pantryPanel.hidden=!pantryPanel.hidden;pantryToggle.setAttribute('aria-expanded',String(!pantryPanel.hidden))};
-document.querySelector('#pantryFind').onclick=()=>{
+document.querySelector('#pantryFind').onclick=async()=>{
  const pantry=ingredientTokens(document.querySelector('#pantryIngredients').value);
  const status=document.querySelector('#pantrySearchStatus');
  const results=document.querySelector('#pantrySearchResults');results.replaceChildren();
  if(!pantry.length){status.textContent='Enter at least one ingredient to find meals.';return}
  const matches=matchPantry(recipes,pantry,{type:document.querySelector('#pantryCuisine').value,maxMissing:document.querySelector('#pantryMissing').value});
- status.textContent=matches.length?matches.length+' matching Tablewise recipes. Thousands of additional recipes require a connected recipe service.':'No matching Tablewise recipes for these filters yet. Try allowing more missing ingredients. Online search is not connected yet.';
+ status.textContent=matches.length?matches.length+' matching Tablewise recipes. Online discovery is not yet enabled.':'No local matches for those filters. Try allowing more missing ingredients.';
  for(const {recipe,missing,have,total} of matches.slice(0,40)){
   const button=document.createElement('button');button.type='button';button.className='pantry-recipe';
   const title=document.createElement('strong');title.textContent=recipe.name;
   const detail=document.createElement('small');detail.textContent=have+' of '+total+' ingredients on hand'+(missing.length?' · Need: '+missing.join(', '):' · Ready to cook');
   button.append(title,detail);button.onclick=()=>openRecipe(recipe);results.append(button);
  }
+ if(!ONLINE_RECIPE_SEARCH_ENABLED)return;
+ const searchButton=document.querySelector('#pantryFind');searchButton.disabled=true;
+ try{
+  const remote=await requestOnlineRecipes({fetcher:fetch,ingredients:pantry,type:document.querySelector('#pantryCuisine').value,maxMissing:document.querySelector('#pantryMissing').value});
+  for(const item of remote){
+   const card=document.createElement('article');card.className='pantry-recipe';
+   const heading=document.createElement('strong');heading.textContent=item.name;
+   const detail=document.createElement('small');detail.textContent=(item.have||0)+' ingredients on hand'+(item.missing?.length?' · Need: '+item.missing.join(', '):' · Ready to cook');
+   const instructions=document.createElement('details');const label=document.createElement('summary');label.textContent='Ingredients and cooking instructions';
+   const list=document.createElement('ul');
+   for(const ingredient of item.ingredients){const li=document.createElement('li');li.textContent=[ingredient.amount,ingredient.name].filter(Boolean).join(' ');list.append(li)}
+   const steps=document.createElement('p');steps.style.whiteSpace='pre-line';steps.textContent=item.instructions;
+   instructions.append(label,list,steps);card.append(heading,detail,instructions);results.append(card);
+  }
+  status.textContent=(matches.length+remote.length)+' recipe suggestions. Online results are supplied by a separate recipe provider.';
+ }catch{status.textContent='Local matches are shown. Online recipe discovery is temporarily unavailable.'}
+ finally{searchButton.disabled=false}
 };
 const firebaseConfig={apiKey:'AIzaSyBETYaxuDmBR6_dNDCu62d_ciDph3AqKjI',authDomain:'meal-planner-a478e.firebaseapp.com',projectId:'meal-planner-a478e',storageBucket:'meal-planner-a478e.firebasestorage.app',messagingSenderId:'695296765702',appId:'1:695296765702:web:bfd3f88f4253c56038b887'};
 const firebase=initializeApp(firebaseConfig);
