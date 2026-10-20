@@ -289,7 +289,7 @@ const accountPanel=document.querySelector('#luxuryAccountPanel');
 const authMessage=document.querySelector('#luxuryAuthMessage');
 const authForm=document.querySelector('#luxurySignInForm');
 const authPassword=document.querySelector('#luxuryPassword');
-document.querySelector('.profile').onclick=()=>{accountPanel.hidden=!accountPanel.hidden;diagnosisPanel.hidden=!auth.currentUser||accountPanel.hidden;authForm.hidden=!!auth.currentUser;document.querySelector('#luxurySignOut').hidden=!auth.currentUser;authMessage.textContent=auth.currentUser?'Signed in. Your saved meals are read-only in this preview.':'Sign in to load your saved Tablewise account.';if(!accountPanel.hidden)accountPanel.scrollIntoView({block:'start'})};
+document.querySelector('.profile').onclick=()=>{accountPanel.hidden=!accountPanel.hidden;diagnosisPanel.hidden=true;document.querySelector('#luxuryAccountIdentity').hidden=!auth.currentUser;authForm.hidden=!!auth.currentUser;document.querySelector('#luxurySignOut').hidden=!auth.currentUser;authMessage.textContent=auth.currentUser?'You’re signed in. Your saved meals are available in this preview.':'Sign in to load your saved Tablewise account.';if(!accountPanel.hidden)accountPanel.scrollIntoView({block:'start'})};
 document.querySelector('#luxuryCloseAccount').onclick=()=>{accountPanel.hidden=true;diagnosisPanel.hidden=true;authPassword.value=''};
 authForm.onsubmit=async event=>{
  event.preventDefault();
@@ -299,7 +299,7 @@ authForm.onsubmit=async event=>{
   await signInWithEmailAndPassword(auth,document.querySelector('#luxuryEmail').value.trim(),authPassword.value);
   authPassword.value='';
   authMessage.textContent='Signed in. Loading your saved meals…';
-  authForm.hidden=true;document.querySelector('#luxurySignOut').hidden=false;
+  authForm.hidden=true;document.querySelector('#luxurySignOut').hidden=false;document.querySelector('#luxuryAccountIdentity').hidden=false;
  }catch(error){
   authPassword.value='';
   authMessage.textContent='Could not sign in. Check your email and password, then try again.';
@@ -307,7 +307,7 @@ authForm.onsubmit=async event=>{
 };
 document.querySelector('#luxurySignOut').onclick=async()=>{
  const button=document.querySelector('#luxurySignOut');button.disabled=true;
- try{await signOut(auth);authPassword.value='';authForm.hidden=false;button.hidden=true;authMessage.textContent='Signed out. Your saved cloud meals were not changed.'}
+ try{await signOut(auth);authPassword.value='';authForm.hidden=false;button.hidden=true;document.querySelector('#luxuryAccountIdentity').hidden=true;authMessage.textContent='Signed out. Your saved cloud meals were not changed.'}
  catch{authMessage.textContent='Could not sign out. Try again.'}
  finally{button.disabled=false}
 };
