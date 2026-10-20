@@ -6,6 +6,7 @@ import { recipes, verifiedRecipePhotos } from './catalog.js';
 import {recipeSummary} from './recipe-details.mjs';
 import {diagnoseSavedPlan} from './recovery-diagnostic.mjs';
 import { groceryTotals } from './groceries.mjs';
+import { groceryWeeksForScope } from './grocery-week-scope.mjs';
 import {groupGroceryItems} from './grocery-categories.mjs';
 import {krogerRequest} from './kroger-connect.mjs';
 import {suggestedKrogerPackages} from './kroger-packages.mjs';
@@ -484,7 +485,7 @@ const renderGroceryPanel=(week)=>{
  const host=document.querySelector('#groceryWeekContent');
  if(!host)return;host.replaceChildren();
  if(!account||!accountUid){host.textContent='Sign in to view your grocery list.';return}
- const rows=groceryTotals(effectiveAccount(),findRecipe,week==='both'?[1,2]:[Number(week)]);
+ const rows=groceryTotals(effectiveAccount(),findRecipe,groceryWeeksForScope(week));
  const weekRows={'1':groceryTotals(effectiveAccount(),findRecipe,[1]),'2':groceryTotals(effectiveAccount(),findRecipe,[2])};
  const checks=readSyncedChecklist(localStorage,accountUid,week,weekRows);
  const summary=document.createElement('div');summary.className='grocery-summary';
@@ -537,7 +538,7 @@ const renderIngredients=(scope='plan')=>{
   // accordion open or changing the user's saved expansion preferences.
   for(const button of document.querySelectorAll('[data-grocery-panel]')){
    const week=button.dataset.groceryPanel;
-   const count=account?groceryTotals(effectiveAccount(),findRecipe,week==='both'?[1,2]:[Number(week)]).length:0;
+   const count=account?groceryTotals(effectiveAccount(),findRecipe,groceryWeeksForScope(week)).length:0;
    let indicator=button.querySelector('.grocery-week-count');
    if(!indicator){indicator=document.createElement('span');indicator.className='grocery-week-count';const chevron=button.querySelector('.grocery-tab-chevron');if(chevron)chevron.before(indicator);else button.append(indicator)}
    indicator.textContent=account?count+' items':'';
