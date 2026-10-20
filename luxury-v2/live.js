@@ -13,10 +13,29 @@ import {suggestedKrogerPackages} from './kroger-packages.mjs';
 import {readKrogerStore,saveKrogerStore} from './kroger-store.mjs';
 import {krogerPriceSummary,sortKrogerOffers,krogerPromotionCoverage,sortKrogerIngredientMatches,krogerIngredientRelevance} from './kroger-pricing.mjs';
 import {searchMeals,mealCategories} from './meal-search.mjs';
+import {matchPantry,ingredientTokens} from './pantry-discovery.mjs';
 import {groceryKey,readSyncedChecklist,saveSyncedChecklist} from './checklist.mjs';
 import {replacePreviewMeal,previewAccount,hasPreviewEdits} from './meal-preview.mjs';
 import {readPendingLuxuryDraft,commitLuxuryPreview,classifyLuxuryRecovery,verifyLuxurySavedPlan} from './save-flow.mjs';
 
+// Read-only pantry suggestions. A licensed large-catalog endpoint is not yet configured.
+const pantryPanel=document.querySelector('#pantryDiscoverPanel');
+const pantryToggle=document.querySelector('#pantryDiscoverToggle');
+pantryToggle.onclick=()=>{pantryPanel.hidden=!pantryPanel.hidden;pantryToggle.setAttribute('aria-expanded',String(!pantryPanel.hidden))};
+document.querySelector('#pantryFind').onclick=()=>{
+ const pantry=ingredientTokens(document.querySelector('#pantryIngredients').value);
+ const status=document.querySelector('#pantrySearchStatus');
+ const results=document.querySelector('#pantrySearchResults');results.replaceChildren();
+ if(!pantry.length){status.textContent='Enter at least one ingredient to find meals.';return}
+ const matches=matchPantry(recipes,pantry,{type:document.querySelector('#pantryCuisine').value,maxMissing:document.querySelector('#pantryMissing').value});
+ status.textContent=matches.length?matches.length+' matching Tablewise recipes. Thousands of additional recipes require a connected recipe service.':'No matching Tablewise recipes for these filters yet. Try allowing more missing ingredients. Online search is not connected yet.';
+ for(const {recipe,missing,have,total} of matches.slice(0,40)){
+  const button=document.createElement('button');button.type='button';button.className='pantry-recipe';
+  const title=document.createElement('strong');title.textContent=recipe.name;
+  const detail=document.createElement('small');detail.textContent=have+' of '+total+' ingredients on hand'+(missing.length?' · Need: '+missing.join(', '):' · Ready to cook');
+  button.append(title,detail);button.onclick=()=>openRecipe(recipe);results.append(button);
+ }
+};
 const firebaseConfig={apiKey:'AIzaSyBETYaxuDmBR6_dNDCu62d_ciDph3AqKjI',authDomain:'meal-planner-a478e.firebaseapp.com',projectId:'meal-planner-a478e',storageBucket:'meal-planner-a478e.firebasestorage.app',messagingSenderId:'695296765702',appId:'1:695296765702:web:bfd3f88f4253c56038b887'};
 const firebase=initializeApp(firebaseConfig);
 const auth=getAuth(firebase),db=getFirestore(firebase);
