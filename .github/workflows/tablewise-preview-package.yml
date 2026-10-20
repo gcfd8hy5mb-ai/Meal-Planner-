@@ -5,7 +5,7 @@ on:
       - 'luxury-v2/**'
       - 'assets/**'
       - 'preview-package/**'
-      - 'tests/luxury-account-approved-design.test.mjs tests/luxury-grocery-week-scope.test.mjs'
+      - 'tests/luxury-account-approved-design.test.mjs'
       - 'tests/luxury-grocery-week-scope.test.mjs'
       - '.github/workflows/tablewise-preview-package.yml'
   workflow_dispatch:
