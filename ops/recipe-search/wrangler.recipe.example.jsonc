@@ -1,0 +1,15 @@
+{
+  // TEMPLATE ONLY. This is NOT the existing tablewise-kroger Worker.
+  // Do not deploy until production secret, limiter namespace, and rollout are approved.
+  "$schema": "../../node_modules/wrangler/config-schema.json",
+  "name": "tablewise-recipes-api",
+  "main": "./worker.mjs",
+  "compatibility_date": "2026-10-20",
+  "ratelimits": [
+    {
+      "name": "RECIPE_RATE_LIMITER",
+      "namespace_id": "REPLACE_WITH_VERIFIED_UNIQUE_NAMESPACE_ID",
+      "simple": { "limit": 10, "period": 60 }
+    }
+  ]
+}
