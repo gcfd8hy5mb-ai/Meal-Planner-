@@ -44,7 +44,7 @@ export function createMealDbProvider({fetcher,apiKey,apiVersion='v1',baseUrl='ht
   return Array.isArray(result.meals)?result.meals:[];
  }
  return {
-  async search({ingredients=[],type='Any',maxResults=30}={}){
+  async search({ingredients=[],type='Any',maxMissing=2,maxResults=30}={}){
    const pantry=[...new Set(ingredients.map(clean).filter(Boolean))].slice(0,12);
    if(!pantry.length)return [];
    const area=supportedAreas[type],category=supportedCategories[type];
@@ -62,7 +62,7 @@ export function createMealDbProvider({fetcher,apiKey,apiVersion='v1',baseUrl='ht
     const parsed=normalizeRemoteMeal(details[0]);
     if(parsed)results.push(parsed);
    }
-   return rankRemoteMeals(results,pantry,{maxMissing:20});
+   return rankRemoteMeals(results,pantry,{maxMissing});
   }
  };
 }
