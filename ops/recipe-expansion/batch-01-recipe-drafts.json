@@ -2030,6 +2030,355 @@
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
       }
+    },
+    {
+      "id": "exp01-025",
+      "name": "Mexican Picadillo",
+      "serv": 4,
+      "ingredients": [
+        [
+          "Lean ground beef",
+          1,
+          "lb"
+        ],
+        [
+          "Yukon Gold potatoes",
+          1,
+          "lb"
+        ],
+        [
+          "Carrot",
+          2,
+          "each"
+        ],
+        [
+          "Roma tomatoes",
+          3,
+          "each"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Garlic cloves",
+          3,
+          "each"
+        ],
+        [
+          "Beef broth",
+          1,
+          "cup"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Dried oregano",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          0.75,
+          "tsp"
+        ],
+        [
+          "Black pepper",
+          0.25,
+          "tsp"
+        ],
+        [
+          "Frozen peas",
+          0.5,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Scrub and peel 1 lb potatoes, then dice into ½-inch cubes. Peel and dice 2 carrots, finely chop 1 yellow onion and 3 garlic cloves, and cut 3 Roma tomatoes into small pieces.",
+        "Heat 1 tbsp olive oil in a large deep skillet over medium heat. Cook onion and carrot for 4 minutes, stirring occasionally, then add garlic and cook 30 seconds.",
+        "Add 1 lb ground beef, break it into small crumbles, and cook 7–9 minutes until no pink remains and a thermometer reads 160°F. Drain excess fat if necessary.",
+        "Stir in potatoes, tomatoes, 1 cup beef broth, 1 tsp cumin, 1 tsp oregano, ¾ tsp salt and ¼ tsp pepper. Bring to a gentle simmer, cover, and cook for 15–20 minutes, stirring occasionally, until potatoes are tender.",
+        "Add ½ cup frozen peas and simmer uncovered for another 4–5 minutes, until the vegetables are heated through and the sauce thickens slightly. Divide evenly among four plates or bowls and serve hot."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-026",
+      "name": "Salsa Verde Chicken Tacos",
+      "serv": 4,
+      "ingredients": [
+        [
+          "Boneless skinless chicken thighs",
+          1.5,
+          "lb"
+        ],
+        [
+          "Salsa verde",
+          1.5,
+          "cup"
+        ],
+        [
+          "Chicken broth",
+          0.5,
+          "cup"
+        ],
+        [
+          "White onion",
+          0.5,
+          "each"
+        ],
+        [
+          "Garlic cloves",
+          2,
+          "each"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Salt",
+          0.5,
+          "tsp"
+        ],
+        [
+          "Corn tortillas",
+          12,
+          "each"
+        ],
+        [
+          "Cilantro",
+          0.25,
+          "cup"
+        ],
+        [
+          "Lime",
+          2,
+          "each"
+        ],
+        [
+          "Shredded lettuce",
+          1,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Finely dice half a white onion and mince 2 garlic cloves. Heat 1 tbsp olive oil in a heavy skillet over medium heat, then sauté onion for 3–4 minutes until softened and stir in garlic for 30 seconds.",
+        "Add 1½ lb chicken thighs to the skillet and sprinkle with 1 tsp cumin and ½ tsp salt. Pour 1½ cups salsa verde and ½ cup chicken broth around the chicken; bring to a gentle simmer.",
+        "Cover and cook 18–25 minutes, turning the chicken halfway through, until the thickest pieces reach 165°F and shred easily. Remove the chicken to a cutting board, shred using two forks and return the meat to its sauce.",
+        "Simmer the shredded chicken uncovered 3–5 minutes until coated with a slightly thickened sauce. Warm 12 corn tortillas in a dry skillet for 20–30 seconds per side.",
+        "Divide the chicken among the tortillas, three tacos per person. Top with 1 cup shredded lettuce, ¼ cup chopped cilantro and wedges from 2 limes, then serve while hot."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-027",
+      "name": "Beef and Cheese Empanadas",
+      "serv": 6,
+      "ingredients": [
+        [
+          "Lean ground beef",
+          1,
+          "lb"
+        ],
+        [
+          "Prepared refrigerated empanada dough discs",
+          12,
+          "each"
+        ],
+        [
+          "Shredded Monterey Jack cheese",
+          1,
+          "cup"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Red bell pepper",
+          1,
+          "each"
+        ],
+        [
+          "Garlic cloves",
+          2,
+          "each"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Smoked paprika",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          0.75,
+          "tsp"
+        ],
+        [
+          "Egg",
+          1,
+          "each"
+        ],
+        [
+          "Water",
+          1,
+          "tbsp"
+        ]
+      ],
+      "steps": [
+        "Heat 1 tbsp olive oil in a large skillet over medium heat. Finely dice 1 onion and 1 red bell pepper and sauté for 5–6 minutes until soft; add 2 minced garlic cloves for the final 30 seconds.",
+        "Add 1 lb lean ground beef and break into fine crumbles. Cook about 7–9 minutes until browned and at least 160°F, then drain excess liquid and season with 1 tsp cumin, 1 tsp smoked paprika and ¾ tsp salt.",
+        "Transfer the filling to a bowl and let it cool until no longer steaming. Stir in 1 cup shredded Monterey Jack cheese. Heat the oven to 400°F and line two baking sheets with parchment.",
+        "Place 12 empanada dough discs on a clean surface. Spoon about 2 tablespoons filling in the center of each disc, fold each one into a half-moon shape, and seal the edges tightly with fork tines.",
+        "Beat 1 egg with 1 tbsp water and brush lightly over each empanada. Bake 20–25 minutes, switching tray positions halfway through, until deeply golden and the filling is heated through; serve two per person after resting 5 minutes."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-028",
+      "name": "Cheesy Chicken Taco Casserole",
+      "serv": 6,
+      "ingredients": [
+        [
+          "Fully cooked shredded chicken",
+          3,
+          "cup"
+        ],
+        [
+          "Corn tortillas",
+          12,
+          "each"
+        ],
+        [
+          "Red enchilada sauce",
+          2,
+          "cup"
+        ],
+        [
+          "Canned black beans",
+          1.5,
+          "cup"
+        ],
+        [
+          "Frozen corn",
+          1,
+          "cup"
+        ],
+        [
+          "Shredded cheddar cheese",
+          2,
+          "cup"
+        ],
+        [
+          "Sour cream",
+          0.5,
+          "cup"
+        ],
+        [
+          "Diced green chiles",
+          0.25,
+          "cup"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Chili powder",
+          1,
+          "tsp"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tsp"
+        ],
+        [
+          "Green onion",
+          3,
+          "each"
+        ]
+      ],
+      "steps": [
+        "Heat oven to 375°F and grease a 9-by-13-inch baking dish with 1 tsp olive oil. Drain and rinse 1½ cups black beans and slice 3 green onions.",
+        "In a large mixing bowl combine 3 cups fully cooked shredded chicken, drained beans, 1 cup frozen corn, ¼ cup diced green chiles, 1 tsp cumin and 1 tsp chili powder. Stir in ½ cup red enchilada sauce.",
+        "Spread ½ cup enchilada sauce on the bottom of the dish. Tear 6 corn tortillas into large pieces and arrange in a single overlapping layer. Top with half the chicken mixture and ¾ cup shredded cheddar.",
+        "Repeat with the remaining 6 tortillas, the other half of the chicken mixture and another ¾ cup cheese. Pour the remaining 1 cup enchilada sauce over the top and sprinkle the last ½ cup cheese evenly over the dish.",
+        "Cover loosely with foil and bake 20 minutes, then uncover and bake another 10–15 minutes until bubbling and the center reaches 165°F. Rest for 8 minutes before dividing into six servings; finish with ½ cup sour cream and sliced green onions."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
     }
   ]
 }
