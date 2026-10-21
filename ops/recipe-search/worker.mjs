@@ -1,8 +1,9 @@
 // Draft Cloudflare Worker route. DO NOT deploy before production review.
 // Bind RECIPE_API_KEY as a secret and optionally RECIPE_API_VERSION ('v1' or 'v2').
 // This Worker is independent of the live tablewise-kroger Worker.
-import {createMealDbProvider} from '../../luxury-v2/online-recipe-provider.mjs';
-const ALLOWED_TYPES=new Set(['Any','Mexican','Tex-Mex','Italian','Chinese','Asian','Southern','American','Soups','Stews','Casseroles','Breakfast','BBQ','Seafood','Vegetarian']);
+import {createMealDbProvider,supportedAreas,supportedCategories} from '../../luxury-v2/online-recipe-provider.mjs';
+// Do not silently serve an unrelated cuisine when provider lacks a category.
+const ALLOWED_TYPES=new Set(['Any',...Object.keys(supportedAreas),...Object.keys(supportedCategories)]);
 const allowedOrigin='https://tablewise-luxury-preview.pages.dev';
 const json=(payload,status=200)=>new Response(JSON.stringify(payload),{status,headers:{'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store','X-Content-Type-Options':'nosniff'}});
 export async function handleRecipeRequest(request,env,fetcher=fetch){
@@ -20,7 +21,7 @@ export async function handleRecipeRequest(request,env,fetcher=fetch){
  const ingredients=String(u.searchParams.get('ingredients')||'').split(',').map(x=>x.trim()).filter(Boolean);
  if(ingredients.length<1||ingredients.length>12||ingredients.some(x=>x.length>60))return json({error:'Add 1–12 ingredients'},400);
  const type=u.searchParams.get('type')||'Any';
- if(!ALLOWED_TYPES.has(type))return json({error:'Invalid food type'},400);
+ if(!ALLOWED_TYPES.has(type))return json({error:'This food type is not supported by the online recipe provider yet'},422);
  const n=Number(u.searchParams.get('maxMissing')||2);
  if(!Number.isInteger(n)||n<0||n>5)return json({error:'Invalid missing ingredient limit'},400);
  // Never spend provider quota without a functioning, centrally enforced limiter.
