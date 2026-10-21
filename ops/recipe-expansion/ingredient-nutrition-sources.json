@@ -344,16 +344,21 @@
       "reviewStatus": "pending"
     },
     "Black pepper": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170931",
+      "description": "Spices, pepper, black",
+      "state": "Spices, pepper, black",
+      "kcalPer100g": 251,
+      "proteinPer100g": 10.39,
+      "carbsPer100g": 63.95,
+      "fatPer100g": 3.26,
+      "gramsPerUnit": {
+        "tsp": 2.3
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170931/nutrients",
+      "portionSource": "Ground black pepper, USDA explicit 1 teaspoon ground = 2.3g; whole peppercorn teaspoon differs.",
+      "reviewNotes": "USDA source-linked ingredient input values. Preparation yield and retained ingredient fractions still require full-recipe review."
     },
     "Bolillo rolls": {
       "source": "",
@@ -1973,16 +1978,22 @@
       "reviewStatus": "pending"
     },
     "Honey": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "169640",
+      "description": "Honey",
+      "state": "Honey",
+      "kcalPer100g": 304,
+      "proteinPer100g": 0.3,
+      "carbsPer100g": 82.4,
+      "fatPer100g": 0,
+      "gramsPerUnit": {
+        "cup": 339,
+        "tbsp": 21
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169640/nutrients",
+      "portionSource": "USDA explicit cup and tablespoon values; specific floral/brand honeys can vary.",
+      "reviewNotes": "USDA source-linked ingredient input values. Preparation yield and retained ingredient fractions still require full-recipe review."
     },
     "Italian sausage": {
       "source": "",
@@ -2500,16 +2511,21 @@
       "reviewStatus": "pending"
     },
     "Paprika": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "171329",
+      "description": "Spices, paprika",
+      "state": "Spices, paprika",
+      "kcalPer100g": 282,
+      "proteinPer100g": 14.14,
+      "carbsPer100g": 53.99,
+      "fatPer100g": 12.89,
+      "gramsPerUnit": {
+        "tsp": 2.3
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171329/nutrients",
+      "portionSource": "Regular paprika ground, not smoked paprika; USDA explicit 1 tsp = 2.3g.",
+      "reviewNotes": "USDA source-linked ingredient input values. Preparation yield and retained ingredient fractions still require full-recipe review."
     },
     "Parmesan": {
       "source": "",
@@ -3112,16 +3128,21 @@
       "reviewStatus": "pending"
     },
     "Sesame oil": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "171016",
+      "description": "Oil, sesame, salad or cooking",
+      "state": "Oil, sesame, salad or cooking",
+      "kcalPer100g": 884,
+      "proteinPer100g": 0,
+      "carbsPer100g": 0,
+      "fatPer100g": 100,
+      "gramsPerUnit": {
+        "tbsp": 13.6
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171016/nutrients",
+      "portionSource": "USDA explicit 1 tablespoon = 13.6g; toasted versus refined sesame oil and consumed fraction depend on recipe.",
+      "reviewNotes": "USDA source-linked ingredient input values. Preparation yield and retained ingredient fractions still require full-recipe review."
     },
     "Sesame seeds": {
       "source": "",
