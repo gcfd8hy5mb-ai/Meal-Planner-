@@ -35,6 +35,9 @@ for(const b of plan.batches){
   if(!low||existingNames.has(low))fail('Missing/duplicate recipe name in batch '+b.number+': '+name);
   existingIds.add(id);existingNames.add(low);
   if(!['Breakfast','Lunch','Dinner','Snack'].includes(recipe.slot))fail('Invalid meal slot: '+name);
+  const prohibited=plan.recipePreferences?.excludeNewRecipesContaining||[];
+  const foodText=[recipe.name,...(Array.isArray(recipe.ingredients)?recipe.ingredients.map(x=>x?.[0]):[])].join(' ').toLowerCase();
+  if(prohibited.some(item=>new RegExp('\\b'+item.replace(/[.*+?^${}()|[\\]\\]/g,'\\  if(!['Breakfast','Lunch','Dinner','Snack'].includes(recipe.slot))fail('Invalid meal slot: '+name);')+'\\b','i').test(foodText)))fail('Excluded tofu or meat-substitute ingredient in new recipe: '+name);
   if(!Array.isArray(recipe.ingredients)||recipe.ingredients.length<3||recipe.ingredients.some(x=>!Array.isArray(x)||x.length<3||!x[0]||!(Number(x[1])>0)||!x[2]))fail('Unmeasured ingredients: '+name);
   if(!Array.isArray(recipe.steps)||recipe.steps.length<4||recipe.steps.some(x=>typeof x!=='string'||x.trim().length<25))fail('Incomplete cooking instructions: '+name);
   if(!recipe.photo||typeof recipe.photo!=='string'||!recipe.photo.startsWith('assets/meal-photos/')||!existsSync(resolve(root,recipe.photo)))fail('Missing local recipe-specific photo: '+name);
