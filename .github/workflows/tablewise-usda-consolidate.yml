@@ -1,6 +1,10 @@
 name: Consolidate USDA ingredient review
 on:
   workflow_dispatch:
+  pull_request:
+    paths:
+      - '.github/workflows/tablewise-usda-consolidate.yml'
+      - 'ops/recipe-expansion/consolidate-usda-candidates.mjs'
 permissions:
   contents: read
   actions: read
