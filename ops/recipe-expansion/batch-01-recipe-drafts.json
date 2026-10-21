@@ -434,63 +434,53 @@
     },
     {
       "id": "exp01-006",
-      "name": "Green Chile Chicken Enchiladas",
+      "name": "Creamy Roasted Poblano Mac and Cheese",
       "slot": "Dinner",
       "cuisine": "Mexican & Tex-Mex",
       "serv": 4,
       "ingredients": [
         [
-          "Cooked shredded chicken",
+          "Elbow macaroni",
+          12,
+          "oz"
+        ],
+        [
+          "Poblano peppers",
           3,
-          "cup"
-        ],
-        [
-          "Flour tortillas",
-          8,
           "each"
         ],
         [
-          "Mild green enchilada sauce",
+          "Cheddar cheese",
           2,
           "cup"
         ],
         [
-          "Diced green chiles",
-          0.5,
-          "cup"
-        ],
-        [
-          "Shredded Monterey Jack cheese",
+          "Milk",
           2,
           "cup"
         ],
         [
-          "Sour cream",
+          "Butter",
+          3,
+          "tbsp"
+        ],
+        [
+          "Flour",
+          3,
+          "tbsp"
+        ],
+        [
+          "Breadcrumbs",
           0.5,
           "cup"
-        ],
-        [
-          "White onion",
-          0.5,
-          "each"
-        ],
-        [
-          "Ground cumin",
-          1,
-          "tsp"
-        ],
-        [
-          "Olive oil",
-          1,
-          "tsp"
         ]
       ],
       "steps": [
-        "Heat oven to 375°F and lightly grease a 9-by-13-inch baking dish with 1 tsp olive oil. Pour ½ cup green enchilada sauce across the bottom.",
-        "Mix 3 cups fully cooked shredded chicken with ½ cup diced green chiles, ½ finely diced onion, 1 tsp cumin, and ½ cup of the sauce in a bowl.",
-        "Lay out 8 tortillas and divide the chicken mixture evenly along the center of each. Sprinkle 1 cup Monterey Jack cheese among them, roll tightly, and arrange seam-side down in the prepared dish.",
-        "Pour the remaining 1 cup enchilada sauce over the rolls and sprinkle with the remaining 1 cup cheese. Cover loosely with foil and bake 15 minutes; remove foil and bake 10–12 minutes more until bubbling and the filling is at least 165°F.",
-        "Rest the enchiladas 5 minutes before serving. Dollop with ½ cup sour cream divided among four portions and serve two enchiladas per person."
+        "Roast 3 poblanos under broiler until charred, steam covered 10 minutes then peel, seed and chop",
+        "Heat oven to 375°F and boil 12 oz macaroni until just tender; drain",
+        "Melt 3 tbsp butter, whisk in 3 tbsp flour for 1 minute, slowly whisk in 2 cups milk and cook until thick",
+        "Melt in 2 cups cheddar, stir in diced poblanos and macaroni",
+        "Transfer to baking dish, sprinkle ½ cup breadcrumbs and bake 15–20 minutes until bubbly"
       ],
       "stage": "recipe-draft",
       "ingredientsReady": true,
@@ -501,7 +491,12 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
-      }
+      },
+      "nutritionStatus": "requires-recalculation-after-duplicate-replacement",
+      "nutritionReview": "BLOCKED: calculate per-serving macros from ingredient database, do not reuse macros from replaced recipe",
+      "prepMinutes": null,
+      "cookMinutes": null,
+      "timeReview": "BLOCKED: recalculate for new recipe after duplicate replacement"
     },
     {
       "id": "exp01-007",
@@ -1269,61 +1264,51 @@
     },
     {
       "id": "exp01-016",
-      "name": "Red Chile Beef Enchiladas",
+      "name": "Pork and Hominy Green Chile Skillet",
       "serv": 4,
       "ingredients": [
         [
-          "Cooked shredded beef",
-          3,
-          "cup"
+          "Pork shoulder",
+          1.5,
+          "lb"
         ],
         [
-          "Corn tortillas",
-          12,
-          "each"
+          "Hominy",
+          30,
+          "oz"
         ],
         [
-          "Red enchilada sauce",
-          2.5,
-          "cup"
-        ],
-        [
-          "Shredded Monterey Jack cheese",
+          "Salsa verde",
           2,
           "cup"
         ],
         [
-          "White onion",
-          0.5,
+          "Chicken broth",
+          1,
+          "cup"
+        ],
+        [
+          "Yellow onion",
+          1,
           "each"
         ],
         [
-          "Olive oil",
-          1,
-          "tbsp"
+          "Garlic cloves",
+          3,
+          "each"
         ],
         [
-          "Ground cumin",
+          "Cumin",
           1,
           "tsp"
-        ],
-        [
-          "Sour cream",
-          0.5,
-          "cup"
-        ],
-        [
-          "Cilantro",
-          0.25,
-          "cup"
         ]
       ],
       "steps": [
-        "Heat oven to 375°F and grease a 9-by-13-inch baking dish with 1 tbsp olive oil. Spread ½ cup red enchilada sauce thinly across the bottom.",
-        "Combine 3 cups safely reheated cooked shredded beef with ½ finely diced white onion, 1 tsp cumin and ½ cup red enchilada sauce. Warm the filling until steaming.",
-        "Heat 12 corn tortillas one at a time in a dry skillet for 15–20 seconds per side to make them pliable. Spoon beef filling evenly along the center of each tortilla and sprinkle with half of the Monterey Jack cheese.",
-        "Roll each enchilada tightly, place seam-side down in the dish, pour the remaining 1½ cups enchilada sauce over the tops and scatter the remaining cheese across the dish.",
-        "Cover loosely with foil and bake 15 minutes, then uncover and bake 10–12 more minutes until bubbling and the centers reach 165°F. Rest 5 minutes; serve three enchiladas each with sour cream and chopped cilantro."
+        "Cut 1½ lb pork shoulder into ½-inch cubes and cook in a covered skillet with 1 cup broth over low heat for 45 minutes",
+        "Uncover, increase to medium and simmer until liquid almost evaporates",
+        "Add diced onion and 3 minced garlic cloves, cook 5 minutes",
+        "Stir in two drained 15 oz cans hominy, 2 cups salsa verde and 1 tsp cumin",
+        "Cover and cook 20–25 minutes until pork is tender and reaches at least 145°F; rest 3 minutes before serving"
       ],
       "slot": "Dinner",
       "cuisine": "Mexican & Tex-Mex",
@@ -1336,7 +1321,12 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
-      }
+      },
+      "nutritionStatus": "requires-recalculation-after-duplicate-replacement",
+      "nutritionReview": "BLOCKED: calculate per-serving macros from ingredient database, do not reuse macros from replaced recipe",
+      "prepMinutes": null,
+      "cookMinutes": null,
+      "timeReview": "BLOCKED: recalculate for new recipe after duplicate replacement"
     },
     {
       "id": "exp01-017",
@@ -1618,76 +1608,51 @@
     },
     {
       "id": "exp01-020",
-      "name": "Chipotle Lime Shrimp Tacos",
+      "name": "Citrus Shrimp and Avocado Ceviche Cups",
       "serv": 4,
       "ingredients": [
         [
-          "Peeled deveined raw shrimp",
-          1.25,
+          "Cooked shrimp",
+          1.5,
           "lb"
         ],
         [
-          "Corn tortillas",
-          12,
-          "each"
-        ],
-        [
-          "Chipotle pepper in adobo",
-          1,
-          "each"
-        ],
-        [
           "Lime",
-          3,
+          4,
           "each"
         ],
         [
-          "Olive oil",
-          2,
-          "tbsp"
-        ],
-        [
-          "Garlic cloves",
-          2,
-          "each"
-        ],
-        [
-          "Ground cumin",
+          "Orange",
           1,
-          "tsp"
+          "each"
         ],
         [
-          "Salt",
-          0.75,
-          "tsp"
-        ],
-        [
-          "Shredded cabbage",
+          "Avocados",
           2,
-          "cup"
+          "each"
         ],
         [
-          "Sour cream",
+          "Cucumber",
+          1,
+          "each"
+        ],
+        [
+          "Red onion",
           0.5,
-          "cup"
+          "each"
         ],
         [
           "Cilantro",
           0.25,
           "cup"
-        ],
-        [
-          "Honey",
-          1,
-          "tsp"
         ]
       ],
       "steps": [
-        "Finely chop 1 chipotle pepper and mince 2 garlic cloves. In a bowl whisk chipotle, garlic, 1 tbsp olive oil, juice from 1 lime, 1 tsp cumin and ¾ tsp salt; toss with 1¼ lb peeled shrimp and refrigerate for 10–15 minutes.",
-        "Whisk ½ cup sour cream with juice from a second lime and 1 tsp honey to make a drizzle. Finely chop ¼ cup cilantro and prepare 2 cups shredded cabbage.",
-        "Warm 12 corn tortillas in a dry skillet for 20–30 seconds on each side, then wrap in a clean towel to keep them pliable.",
-        "Heat the remaining 1 tbsp olive oil in a skillet over medium-high heat. Add shrimp in a single layer, discarding any leftover raw marinade, and cook 2–3 minutes per side until opaque, firm and 145°F in the thickest pieces.",
-        "Divide shrimp evenly among the tortillas, about three per person. Top with shredded cabbage, sour-cream drizzle, cilantro and wedges from the remaining lime; serve immediately."
+        "Verify 1½ lb shrimp are fully cooked to 145°F, then chill below 40°F",
+        "Dice cooked shrimp, 2 avocados, 1 cucumber and ½ red onion into small pieces",
+        "Juice 4 limes and 1 orange into a clean bowl",
+        "Fold shrimp, vegetables, juice and ¼ cup chopped cilantro together; refrigerate covered for 15 minutes",
+        "Divide into four chilled lettuce-free appetizer cups and serve promptly"
       ],
       "slot": "Dinner",
       "cuisine": "Mexican & Tex-Mex",
@@ -1700,7 +1665,12 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
-      }
+      },
+      "nutritionStatus": "requires-recalculation-after-duplicate-replacement",
+      "nutritionReview": "BLOCKED: calculate per-serving macros from ingredient database, do not reuse macros from replaced recipe",
+      "prepMinutes": null,
+      "cookMinutes": null,
+      "timeReview": "BLOCKED: recalculate for new recipe after duplicate replacement"
     },
     {
       "id": "exp01-021",
@@ -2296,76 +2266,61 @@
     },
     {
       "id": "exp01-028",
-      "name": "Cheesy Chicken Taco Casserole",
+      "name": "Cornbread Crusted Turkey Tamale Pie",
       "serv": 6,
       "ingredients": [
         [
-          "Fully cooked shredded chicken",
-          3,
-          "cup"
-        ],
-        [
-          "Corn tortillas",
-          12,
-          "each"
-        ],
-        [
-          "Red enchilada sauce",
-          2,
-          "cup"
-        ],
-        [
-          "Canned black beans",
+          "Lean ground turkey",
           1.5,
-          "cup"
+          "lb"
         ],
         [
-          "Frozen corn",
+          "Black beans",
+          15,
+          "oz"
+        ],
+        [
+          "Crushed tomatoes",
+          14,
+          "oz"
+        ],
+        [
+          "Cornmeal",
           1,
           "cup"
         ],
         [
-          "Shredded cheddar cheese",
-          2,
-          "cup"
-        ],
-        [
-          "Sour cream",
+          "Flour",
           0.5,
           "cup"
         ],
         [
-          "Diced green chiles",
-          0.25,
+          "Milk",
+          1,
           "cup"
         ],
         [
-          "Ground cumin",
+          "Egg",
           1,
-          "tsp"
+          "each"
+        ],
+        [
+          "Cheddar",
+          1,
+          "cup"
         ],
         [
           "Chili powder",
           1,
-          "tsp"
-        ],
-        [
-          "Olive oil",
-          1,
-          "tsp"
-        ],
-        [
-          "Green onion",
-          3,
-          "each"
+          "tbsp"
         ]
       ],
       "steps": [
-        "Heat oven to 375°F and grease a 9-by-13-inch baking dish with 1 tsp olive oil. Drain and rinse 1½ cups black beans and slice 3 green onions.",
-        "In a large mixing bowl combine 3 cups fully cooked shredded chicken, drained beans, 1 cup frozen corn, ¼ cup diced green chiles, 1 tsp cumin and 1 tsp chili powder. Stir in ½ cup red enchilada sauce.",
-        "Spread ½ cup enchilada sauce on the bottom of the dish. Tear 6 corn tortillas into large pieces and arrange in a single overlapping layer. Top with half the chicken mixture and ¾ cup shredded cheddar.",
-        "Repeat with the remaining 6 tortillas, the other half of the chicken mixture and another ¾ cup cheese. Pour the remaining 1 cup enchilada sauce over the top and sprinkle the last ½ cup cheese evenly over the dish.",
-        "Cover loosely with foil and bake 20 minutes, then uncover and bake another 10–15 minutes until bubbling and the center reaches 165°F. Rest for 8 minutes before dividing into six servings; finish with ½ cup sour cream and sliced green onions."
+        "Preheat oven to 375°F and brown 1½ lb ground turkey in a deep oven-safe skillet until 165°F",
+        "Stir in 1 drained can beans, 14 oz tomatoes and 1 tbsp chili powder and simmer 5 minutes",
+        "Whisk 1 cup cornmeal, ½ cup flour, 1 cup milk and 1 egg into a spoonable batter",
+        "Spread 1 cup cheddar over turkey filling, then carefully spoon cornbread batter on top",
+        "Bake uncovered 25–30 minutes until topping is set and golden, then rest 5 minutes before serving"
       ],
       "slot": "Dinner",
       "cuisine": "Mexican & Tex-Mex",
@@ -2378,7 +2333,12 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
-      }
+      },
+      "nutritionStatus": "requires-recalculation-after-duplicate-replacement",
+      "nutritionReview": "BLOCKED: calculate per-serving macros from ingredient database, do not reuse macros from replaced recipe",
+      "prepMinutes": null,
+      "cookMinutes": null,
+      "timeReview": "BLOCKED: recalculate for new recipe after duplicate replacement"
     },
     {
       "id": "exp01-029",
@@ -2933,66 +2893,51 @@
     },
     {
       "id": "exp01-035",
-      "name": "Chicken Mole Enchiladas",
+      "name": "Charred Corn and Black Bean Chicken Stuffed Poblanos",
       "serv": 6,
       "ingredients": [
         [
-          "Cooked shredded chicken",
-          3,
-          "cup"
-        ],
-        [
-          "Corn tortillas",
-          12,
+          "Poblano peppers",
+          4,
           "each"
         ],
         [
-          "Mole poblano paste, prepared",
-          0.75,
-          "cup"
+          "Cooked chicken",
+          1.5,
+          "lb"
         ],
         [
-          "Chicken broth",
-          2,
-          "cup"
+          "Black beans",
+          15,
+          "oz"
         ],
         [
-          "Shredded Monterey Jack cheese",
+          "Corn kernels",
           1.5,
           "cup"
         ],
         [
-          "White onion",
-          0.5,
-          "each"
-        ],
-        [
-          "Sesame seeds",
-          2,
-          "tbsp"
-        ],
-        [
-          "Olive oil",
+          "Pepper jack",
           1,
-          "tbsp"
-        ],
-        [
-          "Salt",
-          0.25,
-          "tsp"
-        ],
-        [
-          "Cilantro",
-          0.25,
           "cup"
+        ],
+        [
+          "Salsa",
+          1,
+          "cup"
+        ],
+        [
+          "Cumin",
+          1,
+          "tsp"
         ]
       ],
       "steps": [
-        "Preheat oven to 375°F and grease a 9-by-13-inch baking dish with 1 tbsp olive oil. Dice half a white onion and chop ¼ cup cilantro; reserve both for the finished enchiladas.",
-        "Whisk ¾ cup commercially prepared mole poblano paste and 2 cups chicken broth together in a saucepan over medium-low heat, adding the broth a little at a time to prevent lumps. Simmer for 5–8 minutes until smooth and pourable, checking the mole package for any additional preparation directions.",
-        "Warm 3 cups fully cooked shredded chicken in a skillet with ½ cup prepared mole sauce until steaming and the chicken reaches 165°F. Taste before adding any of the optional ¼ tsp salt because prepared mole may already be seasoned.",
-        "Briefly heat 12 corn tortillas in a dry skillet until pliable, then divide the chicken filling among them. Roll the tortillas tightly and arrange seam-side down in the baking dish; pour the remaining mole sauce evenly over them.",
-        "Sprinkle 1½ cups shredded Monterey Jack over the enchiladas. Cover with foil and bake 15 minutes; uncover and bake another 8–10 minutes until bubbling and the centers reach 165°F. Rest 5 minutes, sprinkle with 2 tbsp sesame seeds, onion and cilantro, and serve two enchiladas per person."
+        "Preheat oven to 400°F and halve 4 poblano peppers, removing seeds",
+        "Mix 1½ lb cooked shredded chicken, drained 15 oz black beans, 1½ cups corn, 1 cup salsa and 1 tsp cumin",
+        "Arrange poblano halves cut side up and divide filling among eight halves",
+        "Sprinkle 1 cup pepper jack across peppers and bake 20–25 minutes until peppers soften and filling reaches 165°F",
+        "Serve two pepper halves per person after resting 5 minutes"
       ],
       "slot": "Dinner",
       "cuisine": "Mexican & Tex-Mex",
@@ -3005,7 +2950,12 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
-      }
+      },
+      "nutritionStatus": "requires-recalculation-after-duplicate-replacement",
+      "nutritionReview": "BLOCKED: calculate per-serving macros from ingredient database, do not reuse macros from replaced recipe",
+      "prepMinutes": null,
+      "cookMinutes": null,
+      "timeReview": "BLOCKED: recalculate for new recipe after duplicate replacement"
     },
     {
       "id": "exp01-036",
@@ -3828,80 +3778,56 @@
     },
     {
       "id": "exp01-045",
-      "name": "Southern Chicken and Dumplings",
+      "name": "Maple Glazed Breakfast Pork Sausage Patties",
       "slot": "Dinner",
       "cuisine": "Southern & Comfort",
       "serv": 4,
-      "prepMinutes": 25,
-      "cookMinutes": 50,
-      "cal": 510,
-      "p": 36,
-      "c": 48,
-      "f": 19,
-      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "prepMinutes": null,
+      "cookMinutes": null,
+      "nutritionStatus": "requires-recalculation-after-duplicate-replacement",
       "ingredients": [
         [
-          "Boneless chicken thighs",
+          "Ground pork",
           1.5,
           "lb"
         ],
         [
-          "Chicken broth",
-          6,
-          "cup"
-        ],
-        [
-          "Carrots",
-          2,
-          "each"
-        ],
-        [
-          "Celery stalks",
-          2,
-          "each"
-        ],
-        [
-          "Yellow onion",
-          1,
-          "each"
-        ],
-        [
-          "All-purpose flour",
-          2,
-          "cup"
-        ],
-        [
-          "Baking powder",
-          1,
-          "tbsp"
-        ],
-        [
-          "Milk",
-          0.75,
-          "cup"
-        ],
-        [
-          "Butter",
+          "Maple syrup",
           3,
           "tbsp"
         ],
         [
-          "Salt",
+          "Sage",
           1,
+          "tsp"
+        ],
+        [
+          "Ground thyme",
+          0.5,
+          "tsp"
+        ],
+        [
+          "Salt",
+          0.75,
           "tsp"
         ],
         [
           "Black pepper",
           0.5,
           "tsp"
+        ],
+        [
+          "Vegetable oil",
+          1,
+          "tbsp"
         ]
       ],
       "steps": [
-        "Dice 1 onion, 2 carrots, and 2 celery stalks. Melt 1 tbsp butter in a large Dutch oven over medium heat; soften vegetables for 6 minutes.",
-        "Add 6 cups chicken broth and 1½ lb chicken thighs. Simmer covered for 25–30 minutes until chicken reaches 165°F, then remove, shred, and return to the pot.",
-        "Mix 2 cups flour, 1 tbsp baking powder, ½ tsp salt and 2 tbsp softened butter. Stir in ¾ cup milk just until a soft dough forms; do not overmix.",
-        "Drop walnut-sized tablespoons of dough onto gently simmering broth. Cover tightly and steam 15 minutes without lifting the lid, until dumplings are cooked through.",
-        "Season with remaining salt and ½ tsp pepper. Divide chicken, vegetables, dumplings, and broth into four bowls."
+        "Mix 1½ lb pork with 1 tsp sage, ½ tsp thyme, ¾ tsp salt and ½ tsp pepper",
+        "Shape into eight equally sized thin patties and refrigerate for 10 minutes",
+        "Heat 1 tbsp oil in a nonstick skillet over medium heat; cook patties 4–5 minutes each side",
+        "Check that centers reach 160°F, then brush both sides with 3 tbsp maple syrup divided evenly",
+        "Cook one final minute until syrup glazes, then serve two patties per person"
       ],
       "stage": "recipe-draft",
       "ingredientsReady": true,
@@ -3912,7 +3838,9 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
-      }
+      },
+      "nutritionReview": "BLOCKED: calculate per-serving macros from ingredient database, do not reuse macros from replaced recipe",
+      "timeReview": "BLOCKED: recalculate for new recipe after duplicate replacement"
     },
     {
       "id": "exp01-046",
@@ -4135,17 +4063,13 @@
     },
     {
       "id": "exp01-049",
-      "name": "Beef and Broccoli Stir-Fry",
+      "name": "Ginger Beef and Snow Pea Noodle Bowls",
       "slot": "Dinner",
       "cuisine": "Chinese & Asian",
       "serv": 4,
-      "prepMinutes": 20,
-      "cookMinutes": 15,
-      "cal": 490,
-      "p": 39,
-      "c": 29,
-      "f": 24,
-      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "prepMinutes": null,
+      "cookMinutes": null,
+      "nutritionStatus": "requires-recalculation-after-duplicate-replacement",
       "ingredients": [
         [
           "Flank steak",
@@ -4153,52 +4077,47 @@
           "lb"
         ],
         [
-          "Broccoli florets",
-          5,
+          "Snow peas",
+          3,
           "cup"
         ],
         [
-          "Low-sodium soy sauce",
+          "Rice noodles",
+          12,
+          "oz"
+        ],
+        [
+          "Soy sauce",
           0.25,
           "cup"
         ],
         [
-          "Beef broth",
-          0.5,
-          "cup"
-        ],
-        [
-          "Cornstarch",
-          2,
-          "tbsp"
-        ],
-        [
-          "Brown sugar",
+          "Fresh ginger",
           2,
           "tbsp"
         ],
         [
           "Garlic cloves",
-          3,
+          4,
           "each"
         ],
         [
-          "Fresh ginger",
+          "Sesame oil",
           1,
           "tbsp"
         ],
         [
-          "Vegetable oil",
+          "Honey",
           2,
           "tbsp"
         ]
       ],
       "steps": [
-        "Slice 1½ lb flank steak thinly across the grain. Whisk ¼ cup soy sauce, ½ cup broth, 2 tbsp cornstarch and 2 tbsp brown sugar until smooth.",
-        "Heat 1 tbsp oil in a large wok over high heat; sear half the beef in a single layer for 2 minutes per side. Repeat with remaining beef and ½ tbsp oil, then move beef to a plate.",
-        "Add remaining ½ tbsp oil, 5 cups broccoli and ¼ cup water. Cover and steam 3 minutes until crisp-tender.",
-        "Add 3 minced garlic cloves and 1 tbsp grated ginger; stir 30 seconds. Pour in sauce and stir until thickened and glossy, about 2 minutes.",
-        "Return beef and all juices to the wok. Continue cooking until beef reaches at least 145°F and rests 3 minutes before serving four portions."
+        "Cook 12 oz rice noodles according to package, drain and rinse briefly",
+        "Whisk ¼ cup soy sauce, 2 tbsp honey, 2 tbsp grated ginger and 4 minced garlic cloves",
+        "Slice 1½ lb flank steak thinly across grain; heat 1 tbsp sesame oil in a wok and sear steak in batches 2–3 minutes per side",
+        "Add 3 cups snow peas and ¼ cup water; cover 3 minutes until crisp-tender",
+        "Add sauce and noodles, stir 2 minutes to coat, checking beef reaches 145°F and rests 3 minutes before serving"
       ],
       "stage": "recipe-draft",
       "ingredientsReady": true,
@@ -4209,79 +4128,62 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
-      }
+      },
+      "nutritionReview": "BLOCKED: calculate per-serving macros from ingredient database, do not reuse macros from replaced recipe",
+      "timeReview": "BLOCKED: recalculate for new recipe after duplicate replacement"
     },
     {
       "id": "exp01-050",
-      "name": "Loaded Baked Potato Soup",
+      "name": "French Onion Potato Gratin",
       "slot": "Dinner",
       "cuisine": "Soups & Stews",
       "serv": 6,
-      "prepMinutes": 20,
-      "cookMinutes": 35,
-      "cal": 470,
-      "p": 18,
-      "c": 45,
-      "f": 24,
-      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "prepMinutes": null,
+      "cookMinutes": null,
+      "nutritionStatus": "requires-recalculation-after-duplicate-replacement",
       "ingredients": [
         [
-          "Russet potatoes",
-          3,
+          "Yukon gold potatoes",
+          2,
           "lb"
         ],
         [
-          "Chicken broth",
-          4,
-          "cup"
+          "Yellow onions",
+          3,
+          "each"
         ],
         [
-          "Milk",
-          2,
-          "cup"
-        ],
-        [
-          "Bacon",
-          8,
-          "slice"
-        ],
-        [
-          "Shredded cheddar",
+          "Gruyere cheese",
           1.5,
           "cup"
         ],
         [
-          "Sour cream",
-          0.5,
+          "Heavy cream",
+          1.5,
           "cup"
-        ],
-        [
-          "Yellow onion",
-          1,
-          "each"
         ],
         [
           "Butter",
-          2,
+          3,
           "tbsp"
         ],
         [
-          "All-purpose flour",
-          0.25,
-          "cup"
+          "Fresh thyme",
+          1,
+          "tsp"
         ],
         [
-          "Green onions",
-          3,
-          "each"
+          "Beef broth",
+          0.5,
+          "cup"
         ]
       ],
       "steps": [
-        "Dice 3 lb peeled potatoes into ½-inch cubes; chop 1 onion. Cook 8 bacon slices until crisp; drain and crumble.",
-        "Melt 2 tbsp butter in a large pot. Sauté the onion for 5 minutes; sprinkle over ¼ cup flour and stir for 1 minute.",
-        "Slowly whisk in 4 cups chicken broth and 2 cups milk until lump-free. Add diced potatoes, bring to a simmer and cook 18–22 minutes until fork-tender.",
-        "Mash about one third of the potatoes against the side of the pot for a creamy texture. Turn heat to low and melt in 1½ cups cheddar, then stir in ½ cup sour cream without boiling.",
-        "Divide into six bowls; top with crumbled bacon and 3 sliced green onions."
+        "Heat oven to 375°F. Thinly slice 3 onions and 2 lb potatoes",
+        "Melt 3 tbsp butter, cook onions 20–25 minutes until deeply caramelized; deglaze with ½ cup beef broth",
+        "Layer half the sliced potatoes in a buttered baking dish, then half the onions and ¾ cup Gruyere",
+        "Repeat layers and pour 1½ cups cream mixed with 1 tsp thyme over everything",
+        "Cover and bake 45 minutes, uncover and bake 20–25 minutes until potatoes are tender and golden"
       ],
       "stage": "recipe-draft",
       "ingredientsReady": true,
@@ -4292,7 +4194,9 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
-      }
+      },
+      "nutritionReview": "BLOCKED: calculate per-serving macros from ingredient database, do not reuse macros from replaced recipe",
+      "timeReview": "BLOCKED: recalculate for new recipe after duplicate replacement"
     },
     {
       "id": "exp01-051",
@@ -4442,65 +4346,56 @@
     },
     {
       "id": "exp01-053",
-      "name": "Chicken Fried Steak with Country Gravy",
+      "name": "Savory Cheddar Biscuit Breakfast Bake",
       "slot": "Dinner",
       "cuisine": "Southern & Comfort",
       "serv": 4,
-      "prepMinutes": 25,
-      "cookMinutes": 25,
-      "cal": 730,
-      "p": 43,
-      "c": 53,
-      "f": 38,
-      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "prepMinutes": null,
+      "cookMinutes": null,
+      "nutritionStatus": "requires-recalculation-after-duplicate-replacement",
       "ingredients": [
         [
-          "Cube steaks",
-          1.5,
-          "lb"
-        ],
-        [
-          "All-purpose flour",
-          1.5,
-          "cup"
+          "Refrigerated biscuit dough",
+          16,
+          "oz"
         ],
         [
           "Eggs",
-          2,
+          8,
           "each"
         ],
         [
           "Milk",
-          2.5,
+          0.75,
           "cup"
         ],
         [
-          "Vegetable oil",
-          0.5,
+          "Cheddar",
+          1.5,
           "cup"
         ],
         [
-          "Salt",
-          1,
-          "tsp"
+          "Baby spinach",
+          2,
+          "cup"
         ],
         [
-          "Black pepper",
-          1,
-          "tsp"
+          "Breakfast ham",
+          8,
+          "oz"
         ],
         [
-          "Paprika",
-          0.5,
-          "tsp"
+          "Butter",
+          1,
+          "tbsp"
         ]
       ],
       "steps": [
-        "Mix 1 cup flour, ½ tsp salt, ½ tsp pepper, and ½ tsp paprika in a shallow dish. Whisk 2 eggs with ½ cup milk in a second dish.",
-        "Pat 1½ lb cube steaks dry. Coat each in seasoned flour, dip into egg mixture, and dredge again in flour, pressing gently to adhere.",
-        "Heat ½ cup oil in a heavy skillet to about 350°F. Fry steaks in batches 3–4 minutes per side until golden and beef is cooked to at least 145°F, then rest 3 minutes. Transfer to a rack.",
-        "Pour off oil except 3 tbsp drippings. Whisk in remaining ½ cup flour and cook 1 minute. Gradually whisk in 2 cups milk and simmer 3–5 minutes until gravy thickens, seasoning with remaining salt and pepper.",
-        "Divide four steaks among plates and ladle country gravy over each; serve hot."
+        "Heat oven to 350°F and grease baking dish with 1 tbsp butter",
+        "Cut 16 oz refrigerated biscuit dough into quarters and scatter evenly",
+        "Whisk 8 eggs with ¾ cup milk and stir in 8 oz diced fully cooked ham and 2 cups spinach",
+        "Pour over biscuits and sprinkle 1½ cups cheddar evenly on top",
+        "Bake 35–40 minutes until biscuits are cooked and egg center is 160°F, rest 5 minutes before cutting into six portions"
       ],
       "stage": "recipe-draft",
       "ingredientsReady": true,
@@ -4511,7 +4406,9 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
-      }
+      },
+      "nutritionReview": "BLOCKED: calculate per-serving macros from ingredient database, do not reuse macros from replaced recipe",
+      "timeReview": "BLOCKED: recalculate for new recipe after duplicate replacement"
     },
     {
       "id": "exp01-054",
@@ -5202,55 +5099,46 @@
     },
     {
       "id": "exp01-063",
-      "name": "Sweet and Sour Chicken",
+      "name": "Crispy Ginger Orange Pork Cutlets",
       "slot": "Dinner",
       "cuisine": "Chinese & Asian",
       "serv": 4,
-      "prepMinutes": 25,
-      "cookMinutes": 20,
-      "cal": 580,
-      "p": 37,
-      "c": 68,
-      "f": 18,
-      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "prepMinutes": null,
+      "cookMinutes": null,
+      "nutritionStatus": "requires-recalculation-after-duplicate-replacement",
       "ingredients": [
         [
-          "Boneless chicken breast",
+          "Pork loin cutlets",
           1.5,
           "lb"
         ],
         [
-          "Bell peppers",
-          2,
-          "each"
-        ],
-        [
-          "Pineapple chunks",
+          "Panko breadcrumbs",
           1.5,
           "cup"
         ],
         [
-          "Rice vinegar",
-          0.25,
-          "cup"
-        ],
-        [
-          "Ketchup",
-          0.25,
-          "cup"
-        ],
-        [
-          "Brown sugar",
-          0.25,
-          "cup"
-        ],
-        [
-          "Soy sauce",
+          "Eggs",
           2,
+          "each"
+        ],
+        [
+          "Flour",
+          0.5,
+          "cup"
+        ],
+        [
+          "Orange juice",
+          0.75,
+          "cup"
+        ],
+        [
+          "Fresh ginger",
+          1,
           "tbsp"
         ],
         [
-          "Cornstarch",
+          "Honey",
           2,
           "tbsp"
         ],
@@ -5261,11 +5149,11 @@
         ]
       ],
       "steps": [
-        "Cut 1½ lb chicken breast into 1-inch cubes. Mix 1 tbsp cornstarch with chicken and set aside.",
-        "Whisk ¼ cup rice vinegar, ¼ cup ketchup, ¼ cup brown sugar, 2 tbsp soy sauce, remaining 1 tbsp cornstarch and ½ cup water.",
-        "Heat 2 tbsp oil in a wok over medium-high heat. Sauté chicken in batches for 5–7 minutes until cooked to 165°F; remove to a plate.",
-        "Stir-fry 2 chopped bell peppers for 3 minutes, then add 1½ cups pineapple chunks.",
-        "Pour in sauce and simmer 2 minutes until glossy and thick. Return chicken, toss until coated, and divide into four servings."
+        "Pound 1½ lb pork loin cutlets evenly to ½-inch and set flour, 2 beaten eggs and panko in separate bowls",
+        "Bread pork in flour, egg and 1½ cups panko",
+        "Heat 2 tbsp oil over medium and pan fry cutlets 3–4 minutes per side until golden and pork reaches 145°F; rest 3 minutes",
+        "Simmer ¾ cup orange juice, 1 tbsp grated ginger and 2 tbsp honey for 5–7 minutes into a light glaze",
+        "Serve four cutlets with warm orange ginger glaze spooned on top"
       ],
       "stage": "recipe-draft",
       "ingredientsReady": true,
@@ -5276,7 +5164,9 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
-      }
+      },
+      "nutritionReview": "BLOCKED: calculate per-serving macros from ingredient database, do not reuse macros from replaced recipe",
+      "timeReview": "BLOCKED: recalculate for new recipe after duplicate replacement"
     },
     {
       "id": "exp01-064",
@@ -5431,52 +5321,38 @@
     },
     {
       "id": "exp01-066",
-      "name": "Cajun Shrimp and Grits",
+      "name": "Creole Catfish with Tomato Okra Relish",
       "slot": "Dinner",
       "cuisine": "Southern & Comfort",
       "serv": 4,
-      "prepMinutes": 20,
-      "cookMinutes": 25,
-      "cal": 590,
-      "p": 36,
-      "c": 49,
-      "f": 29,
-      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "prepMinutes": null,
+      "cookMinutes": null,
+      "nutritionStatus": "requires-recalculation-after-duplicate-replacement",
       "ingredients": [
         [
-          "Peeled shrimp",
+          "Catfish fillets",
           1.5,
           "lb"
         ],
         [
-          "Quick grits",
-          1,
-          "cup"
-        ],
-        [
-          "Milk",
+          "Okra",
           2,
           "cup"
         ],
         [
-          "Water",
-          2,
-          "cup"
+          "Diced tomatoes",
+          14,
+          "oz"
         ],
         [
-          "Shredded cheddar",
+          "Bell pepper",
           1,
-          "cup"
+          "each"
         ],
         [
-          "Butter",
-          3,
-          "tbsp"
-        ],
-        [
-          "Bacon",
-          4,
-          "slice"
+          "Yellow onion",
+          0.5,
+          "each"
         ],
         [
           "Cajun seasoning",
@@ -5484,17 +5360,22 @@
           "tsp"
         ],
         [
-          "Green onions",
-          3,
+          "Olive oil",
+          2,
+          "tbsp"
+        ],
+        [
+          "Lemon",
+          1,
           "each"
         ]
       ],
       "steps": [
-        "Bring 2 cups milk and 2 cups water to a simmer; whisk in 1 cup grits and cook per package directions, stirring often.",
-        "Stir 1 cup cheddar and 2 tbsp butter into tender grits; cover and keep warm.",
-        "Cook 4 bacon slices in a skillet until crisp, about 7 minutes; remove and crumble, leaving 1 tbsp drippings.",
-        "Toss 1½ lb peeled shrimp with 2 tsp Cajun seasoning and sauté in hot drippings with remaining 1 tbsp butter for 2–3 minutes per side until opaque and 145°F.",
-        "Spoon cheesy grits into four bowls; top with shrimp, bacon and 3 sliced green onions."
+        "Pat 1½ lb catfish fillets dry and season evenly with 2 tsp Cajun seasoning",
+        "Heat 1 tbsp oil in a nonstick skillet; cook catfish 3–5 minutes per side until 145°F and transfer to a plate",
+        "Heat remaining 1 tbsp oil and sauté ½ diced onion, one diced bell pepper and 2 cups sliced okra for 6 minutes",
+        "Add 14 oz tomatoes and simmer 7 minutes until okra tender and relish thickened",
+        "Spoon warm tomato okra relish over fish and serve with lemon wedges"
       ],
       "stage": "recipe-draft",
       "ingredientsReady": true,
@@ -5505,7 +5386,9 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
-      }
+      },
+      "nutritionReview": "BLOCKED: calculate per-serving macros from ingredient database, do not reuse macros from replaced recipe",
+      "timeReview": "BLOCKED: recalculate for new recipe after duplicate replacement"
     },
     {
       "id": "exp01-067",
@@ -5801,27 +5684,33 @@
     },
     {
       "id": "exp01-71",
-      "name": "Smothered Pork Chops with Onion Gravy",
+      "name": "Chicken and Leek Pot Pie",
       "slot": "Dinner",
       "cuisine": "Southern & Comfort",
       "serv": 4,
-      "prepMinutes": 20,
-      "cookMinutes": 35,
-      "cal": 520,
-      "p": 42,
-      "c": 18,
-      "f": 30,
-      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "prepMinutes": null,
+      "cookMinutes": null,
+      "nutritionStatus": "requires-recalculation-after-duplicate-replacement",
       "ingredients": [
         [
-          "Bone-in pork chops",
-          2,
+          "Cooked chicken",
+          1.5,
           "lb"
         ],
         [
-          "Yellow onions",
+          "Leeks",
           2,
           "each"
+        ],
+        [
+          "Carrots",
+          2,
+          "each"
+        ],
+        [
+          "Frozen peas",
+          1,
+          "cup"
         ],
         [
           "Chicken broth",
@@ -5829,37 +5718,32 @@
           "cup"
         ],
         [
-          "All-purpose flour",
-          0.33,
+          "Milk",
+          1,
           "cup"
         ],
         [
-          "Olive oil",
-          2,
-          "tbsp"
+          "Flour",
+          0.25,
+          "cup"
         ],
         [
           "Butter",
-          2,
+          3,
           "tbsp"
         ],
         [
-          "Garlic powder",
+          "Puff pastry",
           1,
-          "tsp"
-        ],
-        [
-          "Black pepper",
-          0.5,
-          "tsp"
+          "sheet"
         ]
       ],
       "steps": [
-        "Pat 2 lb pork chops dry; combine ⅓ cup flour, 1 tsp garlic powder and ½ tsp pepper. Lightly dredge the chops and reserve leftover flour separately.",
-        "Heat 2 tbsp olive oil in a skillet over medium-high. Sear chops 3 minutes per side, then transfer to a plate; they will finish cooking in gravy.",
-        "Reduce heat to medium. Add 2 tbsp butter and 2 thinly sliced onions; cook 8–10 minutes until softened and golden.",
-        "Sprinkle in 2 tbsp reserved flour that has not contacted raw meat. Stir 1 minute, then gradually whisk in 2 cups chicken broth and simmer 3 minutes.",
-        "Return chops to gravy, cover and simmer 10–15 minutes until pork reaches 145°F, rest 3 minutes, then divide among four plates."
+        "Preheat oven to 400°F and wash 2 leeks thoroughly; slice pale portions and dice 2 carrots",
+        "Melt 3 tbsp butter, soften leeks and carrots for 7 minutes, stir in ¼ cup flour for 1 minute",
+        "Whisk in 2 cups broth and 1 cup milk until thick; fold in 1½ lb cooked chicken and 1 cup peas",
+        "Pour filling into a baking dish and cover with a sheet of puff pastry, cutting slits for steam",
+        "Bake 25–30 minutes until pastry is deeply golden and filling reaches 165°F; rest 10 minutes"
       ],
       "stage": "recipe-draft",
       "ingredientsReady": true,
@@ -5870,7 +5754,9 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
-      }
+      },
+      "nutritionReview": "BLOCKED: calculate per-serving macros from ingredient database, do not reuse macros from replaced recipe",
+      "timeReview": "BLOCKED: recalculate for new recipe after duplicate replacement"
     },
     {
       "id": "exp01-72",
@@ -6098,51 +5984,27 @@
     },
     {
       "id": "exp01-75",
-      "name": "Chicken and Sausage Jambalaya",
+      "name": "Smoky Sausage Cabbage and Apple Skillet",
       "slot": "Dinner",
       "cuisine": "Cajun & Creole",
       "serv": 6,
-      "prepMinutes": 25,
-      "cookMinutes": 45,
-      "cal": 580,
-      "p": 40,
-      "c": 55,
-      "f": 22,
-      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "prepMinutes": null,
+      "cookMinutes": null,
+      "nutritionStatus": "requires-recalculation-after-duplicate-replacement",
       "ingredients": [
         [
-          "Boneless chicken thighs",
+          "Smoked sausage",
           1.5,
           "lb"
         ],
         [
-          "Smoked sausage",
-          12,
-          "oz"
+          "Green cabbage",
+          1,
+          "head"
         ],
         [
-          "Long-grain white rice",
+          "Apples",
           2,
-          "cup"
-        ],
-        [
-          "Chicken broth",
-          4,
-          "cup"
-        ],
-        [
-          "Crushed tomatoes",
-          14,
-          "oz"
-        ],
-        [
-          "Bell peppers",
-          2,
-          "each"
-        ],
-        [
-          "Celery stalks",
-          3,
           "each"
         ],
         [
@@ -6151,8 +6013,13 @@
           "each"
         ],
         [
-          "Cajun seasoning",
+          "Apple cider vinegar",
           2,
+          "tbsp"
+        ],
+        [
+          "Dijon mustard",
+          1,
           "tbsp"
         ],
         [
@@ -6162,11 +6029,11 @@
         ]
       ],
       "steps": [
-        "Heat 1 tbsp oil in a heavy pot; brown 12 oz sliced smoked sausage for 4 minutes. Transfer to a plate.",
-        "Add 1½ lb diced chicken thighs and cook 5 minutes until lightly browned; add diced onion, 2 peppers and 3 celery stalks and cook 5 minutes.",
-        "Stir in 2 tbsp Cajun seasoning, 2 cups rinsed rice, 4 cups broth and 14 oz crushed tomatoes. Return sausage.",
-        "Bring to a boil, cover and reduce to low. Simmer 20–25 minutes until rice is tender and chicken reaches 165°F. Add a splash of broth if rice needs more time.",
-        "Turn off heat and rest covered 5 minutes. Fluff gently and divide into six portions."
+        "Slice 1½ lb fully cooked smoked sausage into coins, 1 small cabbage into ribbons, 2 apples into wedges and 1 onion thinly",
+        "Heat 1 tbsp olive oil in wide skillet and brown sausage for 5 minutes, transfer to plate",
+        "Add cabbage and onion with ¼ cup water and cover 8 minutes to soften",
+        "Stir in apples, 2 tbsp cider vinegar and 1 tbsp Dijon; cook 5–7 minutes",
+        "Return sausage and heat thoroughly to 165°F, divide into six portions"
       ],
       "stage": "recipe-draft",
       "ingredientsReady": true,
@@ -6177,7 +6044,9 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
-      }
+      },
+      "nutritionReview": "BLOCKED: calculate per-serving macros from ingredient database, do not reuse macros from replaced recipe",
+      "timeReview": "BLOCKED: recalculate for new recipe after duplicate replacement"
     },
     {
       "id": "exp01-76",
@@ -6561,60 +6430,61 @@
     },
     {
       "id": "exp01-081",
-      "name": "Slow-Cooker Mississippi Pot Roast",
+      "name": "Balsamic Beef Short Ribs with Polenta",
       "slot": "Dinner",
       "cuisine": "American",
       "serv": 8,
-      "prepMinutes": 15,
-      "cookMinutes": 480,
-      "cal": 480,
-      "p": 44,
-      "c": 8,
-      "f": 30,
-      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "prepMinutes": null,
+      "cookMinutes": null,
+      "nutritionStatus": "requires-recalculation-after-duplicate-replacement",
       "ingredients": [
         [
-          "Chuck roast",
+          "Beef short ribs",
           3,
           "lb"
         ],
         [
-          "Ranch seasoning",
-          1,
-          "oz"
-        ],
-        [
-          "Au jus seasoning",
-          1,
-          "oz"
-        ],
-        [
-          "Pepperoncini peppers",
-          8,
-          "each"
-        ],
-        [
-          "Pepperoncini brine",
-          0.25,
+          "Balsamic vinegar",
+          0.5,
           "cup"
         ],
         [
-          "Unsalted butter",
-          4,
-          "tbsp"
+          "Beef broth",
+          2,
+          "cup"
         ],
         [
-          "Beef broth",
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Garlic cloves",
+          4,
+          "each"
+        ],
+        [
+          "Quick polenta",
+          1,
+          "cup"
+        ],
+        [
+          "Milk",
+          2,
+          "cup"
+        ],
+        [
+          "Parmesan",
           0.5,
           "cup"
         ]
       ],
       "steps": [
-        "Pat 3 lb chuck roast dry and place it in a 6-quart slow cooker.",
-        "Sprinkle 1 oz ranch seasoning and 1 oz au jus mix evenly over the beef; add 8 pepperoncini peppers, ¼ cup brine and ½ cup broth around the sides.",
-        "Place 4 tbsp butter in small pieces on top. Cover and cook on LOW 8 hours until beef shreds easily.",
-        "Use two forks to shred beef in the cooking juices, removing any large pieces of fat.",
-        "Divide into eight servings with peppers and spoon over the warm cooking liquid."
+        "Heat oven to 325°F. Sear 3 lb short ribs in Dutch oven over medium-high for 3 minutes per side",
+        "Remove ribs and soften one sliced onion and 4 minced garlic cloves for 5 minutes",
+        "Add ½ cup balsamic and 2 cups broth, return short ribs, cover and braise 2½–3 hours until fork tender",
+        "Cook 1 cup quick polenta in 2 cups milk and 2 cups water per package and stir in ½ cup Parmesan",
+        "Spoon polenta into six bowls and top with ribs and braising juices"
       ],
       "stage": "recipe-draft",
       "ingredientsReady": true,
@@ -6625,7 +6495,9 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
-      }
+      },
+      "nutritionReview": "BLOCKED: calculate per-serving macros from ingredient database, do not reuse macros from replaced recipe",
+      "timeReview": "BLOCKED: recalculate for new recipe after duplicate replacement"
     },
     {
       "id": "exp01-082",
@@ -6999,65 +6871,56 @@
     },
     {
       "id": "exp01-087",
-      "name": "Creamy Cajun Chicken Pasta",
+      "name": "Roasted Red Pepper Turkey Burgers",
       "slot": "Dinner",
       "cuisine": "Cajun & Creole",
       "serv": 4,
-      "prepMinutes": 20,
-      "cookMinutes": 25,
-      "cal": 690,
-      "p": 46,
-      "c": 65,
-      "f": 27,
-      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "prepMinutes": null,
+      "cookMinutes": null,
+      "nutritionStatus": "requires-recalculation-after-duplicate-replacement",
       "ingredients": [
         [
-          "Boneless chicken breast",
+          "Ground turkey",
           1.5,
           "lb"
         ],
         [
-          "Dry penne pasta",
-          12,
-          "oz"
-        ],
-        [
-          "Heavy cream",
-          1,
+          "Roasted red peppers",
+          0.75,
           "cup"
         ],
         [
-          "Bell peppers",
-          2,
+          "Breadcrumbs",
+          0.33,
+          "cup"
+        ],
+        [
+          "Egg",
+          1,
           "each"
         ],
         [
-          "Parmesan cheese",
+          "Feta",
           0.5,
           "cup"
         ],
         [
-          "Cajun seasoning",
-          2,
-          "tbsp"
-        ],
-        [
-          "Olive oil",
-          1,
-          "tbsp"
-        ],
-        [
-          "Garlic cloves",
-          3,
+          "Hamburger buns",
+          4,
           "each"
+        ],
+        [
+          "Baby spinach",
+          2,
+          "cup"
         ]
       ],
       "steps": [
-        "Boil 12 oz penne according to package directions; reserve ½ cup pasta water and drain.",
-        "Cut 1½ lb chicken into strips and toss with 1 tbsp Cajun seasoning. Sear in 1 tbsp olive oil for 6–8 minutes until chicken reaches 165°F; transfer to a plate.",
-        "Slice 2 bell peppers and sauté in same pan for 4–5 minutes. Add 3 minced garlic cloves and remaining 1 tbsp seasoning, cook 30 seconds.",
-        "Pour in 1 cup cream and simmer gently for 3 minutes; stir in ½ cup Parmesan and reserved pasta water as needed.",
-        "Return chicken and penne, toss until evenly coated and piping hot, then divide into four portions."
+        "Drain and finely chop ¾ cup roasted red peppers",
+        "Mix 1½ lb ground turkey with peppers, ⅓ cup breadcrumbs, 1 egg and ½ cup feta; shape into four patties",
+        "Heat a lightly oiled nonstick skillet over medium and cook patties 5–7 minutes per side until 165°F",
+        "Toast four buns and divide 2 cups spinach among bottom halves",
+        "Add turkey patties, close buns and serve while warm"
       ],
       "stage": "recipe-draft",
       "ingredientsReady": true,
@@ -7068,7 +6931,9 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
-      }
+      },
+      "nutritionReview": "BLOCKED: calculate per-serving macros from ingredient database, do not reuse macros from replaced recipe",
+      "timeReview": "BLOCKED: recalculate for new recipe after duplicate replacement"
     },
     {
       "id": "exp01-088",
