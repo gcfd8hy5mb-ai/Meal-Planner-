@@ -1,0 +1,27 @@
+name: Consolidate USDA ingredient review
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  consolidate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/download-artifact@v4
+        with:
+          run-id: 39648515850
+          github-token: ${{ github.token }}
+          pattern: tablewise-usda-api-review-candidates-*
+          path: /tmp/tablewise-usda-artifacts
+      - name: Validate and consolidate all 294 search responses
+        run: node ops/recipe-expansion/consolidate-usda-candidates.mjs /tmp/tablewise-usda-artifacts
+      - uses: actions/upload-artifact@v4
+        with:
+          name: tablewise-usda-294-consolidated-review
+          path: ops/recipe-expansion/usda-candidates-consolidated.json
+          retention-days: 30
