@@ -1,28 +1,44 @@
 #!/usr/bin/env node
-// USDA FoodData Central mapping assistant. It suggests candidates, NEVER auto-approves them.
-// Usage: USDA_FDC_API_KEY=... node ops/recipe-expansion/suggest-usda-food-matches.mjs [limit=20]
-// Keep keys in the environment; never commit API keys or automatic nutrition estimates.
+// USDA ingredient candidate lookup. Never approves food matches or nutrition numbers.
+// Usage: USDA_FDC_API_KEY=... node ops/recipe-expansion/suggest-usda-food-matches.mjs [limit] [offset]
+// DEMO_KEY is for a small pilot only; for bulk retrieval configure a personal USDA key.
 import fs from 'node:fs';
 const dir='ops/recipe-expansion/';
 const data=JSON.parse(fs.readFileSync(dir+'ingredient-nutrition-sources.json','utf8'));
 const key=process.env.USDA_FDC_API_KEY || 'DEMO_KEY';
-// DEMO_KEY is USDA's published low-quota public example key. Override with a secret for scale.
-const limit=Math.min(300,Math.max(1,Number(process.argv[2])||20));
+const demo=key==='DEMO_KEY';
+const limit=Math.min(demo?10:300,Math.max(1,Number(process.argv[2])||10));
 const offset=Math.max(0,Number(process.argv[3])||0);
 const todo=Object.entries(data.ingredients).filter(([,v])=>v.reviewStatus!=='approved').slice(offset,offset+limit);
+const sleep=ms=>new Promise(resolve=>setTimeout(resolve,ms));
 const suggestions=[];
 for(const [name] of todo){
- try{
-  const response=await fetch('https://api.nal.usda.gov/fdc/v1/foods/search?api_key='+encodeURIComponent(key),{
+ let result=null;
+ for(let attempt=0;attempt<3;attempt++){
+  try{
+   const response=await fetch('https://api.nal.usda.gov/fdc/v1/foods/search?api_key='+encodeURIComponent(key),{
     method:'POST',headers:{'Content-Type':'application/json'},signal:AbortSignal.timeout(20000),
     body:JSON.stringify({query:name,pageSize:5,dataType:['Foundation','SR Legacy','Survey (FNDDS)']})
-  });
-  if(!response.ok)throw Error('USDA HTTP '+response.status);
-  const json=await response.json();
-  suggestions.push({ingredient:name,candidates:(json.foods||[]).map(f=>({fdcId:f.fdcId,description:f.description,dataType:f.dataType,publicationDate:f.publicationDate})),status:'review-required'});
- }catch(e){suggestions.push({ingredient:name,error:String(e),status:'fetch-error'})}
+   });
+   if(response.status===429 || response.status>=500){
+    const retry=response.headers.get('retry-after');
+    if(attempt<2){await sleep(retry&&/^\d+$/.test(retry)?Math.min(60000,Number(retry)*1000):Math.min(30000,2500*2**attempt));continue}
+   }
+   if(!response.ok)throw Error('USDA HTTP '+response.status);
+   const json=await response.json();
+   result={ingredient:name,candidates:(json.foods||[]).map(f=>({fdcId:f.fdcId,description:f.description,dataType:f.dataType,publicationDate:f.publicationDate})),status:'review-required'};
+   break;
+  }catch(e){
+   if(attempt===2)result={ingredient:name,error:String(e),status:'fetch-error'};
+   else await sleep(1500*2**attempt);
+  }
+ }
+ suggestions.push(result??{ingredient:name,error:'Retries exhausted',status:'fetch-error'});
+ if(demo)await sleep(1500);
 }
-fs.writeFileSync(dir+'usda-food-suggestions.json',JSON.stringify({source:'USDA FoodData Central',note:'Candidates only. Review edible portion, state, serving weight, and nutrients before manually marking ingredient approved.',suggestions},null,2)+'\n');
+const output=dir+'usda-food-suggestions.json';
+fs.writeFileSync(output,JSON.stringify({source:'USDA FoodData Central',offset,requested:todo.length,note:'Candidates only, NOT VERIFIED nutrition. Review every source, gram conversion, nutrient and serving.',suggestions},null,2)+'\n');
 const success=suggestions.filter(x=>x.candidates).length;
-console.log(JSON.stringify({requested:todo.length,suggestions:success,errors:suggestions.filter(x=>x.error).length,output:dir+'usda-food-suggestions.json'}));
-if(!success)process.exitCode=1;
+const errors=suggestions.length-success;
+console.log(JSON.stringify({requested:todo.length,suggestions:success,errors,output}));
+if(errors)process.exitCode=1;
