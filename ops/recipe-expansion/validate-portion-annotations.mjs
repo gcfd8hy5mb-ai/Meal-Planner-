@@ -15,6 +15,12 @@ for(const r of recipes){
     throw Error('Unsourced onion weight: '+r.name);
   if(name==='Ground cumin'&& (metadata.sourceWeightGramsPerTsp!==null||metadata.ingredientState!=='ground'))
     throw Error('Unsourced ground cumin mass: '+r.name);
+  if(name==='Ground cumin'){
+    const candidate=metadata.candidateSource;
+    if(metadata.candidateGramsPerGroundTeaspoon!==2||candidate?.type!=='branded-ground-cumin-density'||candidate?.productUpc!=='855269003404'||candidate?.reviewStatus!=='source-and-recipe-review-required')
+      throw Error('Ground cumin proposal source metadata missing: '+r.name);
+    if(metadata.reviewStatus!=='ground-cumin-source-proposal-needs-review')throw Error('Ground cumin prematurely approved: '+r.name);
+  }
   if(name==='Lime'&&metadata.consumedAmountGrams!==null)throw Error('Unsourced lime mass: '+r.name);
   counts[name]++;
  }
