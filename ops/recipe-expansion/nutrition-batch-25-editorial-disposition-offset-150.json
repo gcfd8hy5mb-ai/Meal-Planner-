@@ -1,0 +1,102 @@
+{
+  "offset": 150,
+  "sourceRunId": 39684991634,
+  "sourceArtifactId": 12385359171,
+  "recordsRequested": 25,
+  "sourceDetailRetrieved": 25,
+  "approvedInReview": [
+    "Cooked shrimp",
+    "Cornstarch",
+    "Dried rosemary",
+    "Dry couscous"
+  ],
+  "held": [
+    {
+      "ingredient": "Chicken wings",
+      "reason": "Source meat and skin raw; recipe wings may include bone, so input pounds versus edible meat differ"
+    },
+    {
+      "ingredient": "Chickpeas",
+      "reason": "Top hit chickpea flour, not canned or cooked chickpeas"
+    },
+    {
+      "ingredient": "Chili garlic sauce",
+      "reason": "Top hit tomato chili sauce, not Asian chili-garlic sauce"
+    },
+    {
+      "ingredient": "Coconut milk",
+      "reason": "Top hit sweetened beverage instead of canned culinary coconut milk"
+    },
+    {
+      "ingredient": "Coleslaw mix",
+      "reason": "Top hit restaurant prepared coleslaw, not raw vegetables"
+    },
+    {
+      "ingredient": "Cooked chicken",
+      "reason": "Top hit chicken bratwurst"
+    },
+    {
+      "ingredient": "Cooked chicken breast",
+      "reason": "Top hit breaded breast tenders"
+    },
+    {
+      "ingredient": "Cooked diced ham",
+      "reason": "Top match honey ham; unknown recipe cut and cure"
+    },
+    {
+      "ingredient": "Cooked pinto beans",
+      "reason": "USDA match salted cooked beans; recipe type and salt content unspecified"
+    },
+    {
+      "ingredient": "Cooked shredded turkey",
+      "reason": "Top match cooked turkey salami"
+    },
+    {
+      "ingredient": "Cornmeal",
+      "reason": "Top hit blue cornmeal instead of unspecified conventional cornmeal"
+    },
+    {
+      "ingredient": "Cotija cheese",
+      "reason": "Whole solid Oaxaca-like cheese measure lacks cup weight for grated/shredded cotija"
+    },
+    {
+      "ingredient": "Cream of chicken soup",
+      "reason": "USDA can = 10.75oz but recipe states cans without specific size"
+    },
+    {
+      "ingredient": "Cremini mushrooms",
+      "reason": "Top hit beech mushrooms, not cremini"
+    },
+    {
+      "ingredient": "Crumbled cotija cheese",
+      "reason": "Source solid cotija weight RACC only, not cup crumbled"
+    },
+    {
+      "ingredient": "Deli ham",
+      "reason": "Top hit turkey ham, not conventional deli ham"
+    },
+    {
+      "ingredient": "Diced green chiles",
+      "reason": "Top hit babyfood green beans"
+    },
+    {
+      "ingredient": "Dried apricots",
+      "reason": "USDA cup halves while recipe instructs chopped apricots"
+    },
+    {
+      "ingredient": "Dry breadcrumbs",
+      "reason": "Top hit bulgur dry"
+    },
+    {
+      "ingredient": "Dry fettuccine",
+      "reason": "Top hit bulgur dry"
+    },
+    {
+      "ingredient": "Dry linguine",
+      "reason": "Top hit bulgur dry"
+    }
+  ],
+  "approvedTotalAfterReview": 31,
+  "fullyCertifiedRecipes": 0,
+  "note": "Each approval is only input-level USDA nutrition and portion grams, not published meal-level nutrition."
+}
