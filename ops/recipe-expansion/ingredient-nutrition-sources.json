@@ -1033,16 +1033,21 @@
       "reviewStatus": "pending"
     },
     "Cooked shrimp": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central",
+      "foodId": "175180",
+      "description": "Crustaceans, shrimp, cooked",
+      "state": "Crustaceans, shrimp, cooked",
+      "kcalPer100g": 99,
+      "proteinPer100g": 23.98,
+      "carbsPer100g": 0.2,
+      "fatPer100g": 0.28,
+      "gramsPerUnit": {
+        "lb": 453.59237
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/175180/nutrients",
+      "portionSource": "Cooked shrimp USDA per-100g values, mass pound edible cooked shrimp; recipe specifies already-cooked peeled shrimp, 145F chilled before using.",
+      "reviewNotes": "Verified source and unit for ingredient input, not cooked recipe yield or served macro certification."
     },
     "Corn kernels": {
       "source": "",
@@ -1081,16 +1086,21 @@
       "reviewStatus": "pending"
     },
     "Cornstarch": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central",
+      "foodId": "169698",
+      "description": "Cornstarch",
+      "state": "Cornstarch",
+      "kcalPer100g": 381,
+      "proteinPer100g": 0.26,
+      "carbsPer100g": 91.27,
+      "fatPer100g": 0.05,
+      "gramsPerUnit": {
+        "tbsp": 8
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169698/nutrients",
+      "portionSource": "USDA dry cornstarch 1 cup = 128g; standard US 1 tbsp=1/16 cup => 8g, volume conversion assumes level scoop.",
+      "reviewNotes": "Verified source and unit for ingredient input, not cooked recipe yield or served macro certification."
     },
     "Cotija cheese": {
       "source": "",
@@ -1331,16 +1341,21 @@
       "reviewStatus": "pending"
     },
     "Dried rosemary": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central",
+      "foodId": "171333",
+      "description": "Spices, rosemary, dried",
+      "state": "Spices, rosemary, dried",
+      "kcalPer100g": 331,
+      "proteinPer100g": 4.88,
+      "carbsPer100g": 64.06,
+      "fatPer100g": 15.22,
+      "gramsPerUnit": {
+        "tsp": 1.2
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171333/nutrients",
+      "portionSource": "USDA 1 tsp dried rosemary = 1.2g.",
+      "reviewNotes": "Verified source and unit for ingredient input, not cooked recipe yield or served macro certification."
     },
     "Dried thyme": {
       "source": "",
@@ -1367,16 +1382,21 @@
       "reviewStatus": "pending"
     },
     "Dry couscous": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central",
+      "foodId": "169699",
+      "description": "Couscous, dry",
+      "state": "Couscous, dry",
+      "kcalPer100g": 376,
+      "proteinPer100g": 12.76,
+      "carbsPer100g": 77.43,
+      "fatPer100g": 0.64,
+      "gramsPerUnit": {
+        "cup": 173
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169699/nutrients",
+      "portionSource": "USDA 1 cup dry couscous = 173g; recipe explicitly specifies dry couscous.",
+      "reviewNotes": "Verified source and unit for ingredient input, not cooked recipe yield or served macro certification."
     },
     "Dry elbow macaroni": {
       "source": "",
