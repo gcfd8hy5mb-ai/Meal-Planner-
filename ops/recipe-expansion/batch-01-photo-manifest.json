@@ -391,6 +391,42 @@
       "photoReview": "pending",
       "pairedWithInstructions": true,
       "photoBrief": "Luxury dark shallow salad bowl filled with romaine, thin sliced seared steak, sweet corn, black beans, diced tomatoes, avocado, red onion, cotija and creamy lime drizzle"
+    },
+    {
+      "id": "exp01-045",
+      "name": "Cilantro Lime Chicken Taquitos",
+      "expectedAsset": "assets/meal-photos/exp01-045.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Three crispy rolled corn taquitos with visible shredded chicken, Monterey Jack and cilantro, served with lime and green salsa; not flautas"
+    },
+    {
+      "id": "exp01-046",
+      "name": "Smothered Pork Chops with Onion Gravy",
+      "expectedAsset": "assets/meal-photos/exp01-046.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Golden browned boneless pork chop under silky brown gravy containing generous caramelized onion strips, on a rustic dark ceramic plate"
+    },
+    {
+      "id": "exp01-047",
+      "name": "Country Fried Steak and Cream Gravy",
+      "expectedAsset": "assets/meal-photos/exp01-047.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Crispy irregular breaded cube steak on a dark ceramic plate with thick pale pepper-speckled cream gravy, golden craggy crust still visible"
+    },
+    {
+      "id": "exp01-048",
+      "name": "Cajun Shrimp and Grits",
+      "expectedAsset": "assets/meal-photos/exp01-048.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Opaque plump Cajun-spiced shrimp and slices of browned smoked sausage over creamy pale cheddar grits, sautéed peppers and green onion garnish"
     }
   ]
 }
