@@ -15,7 +15,10 @@ for(const entry of entries){
   const portions=food?.foodPortions??[];
   const relevant=portions.filter(p=>{
    const label=[p.measureUnit,p.modifier,p.portionDescription].filter(Boolean).join(' ').toLowerCase();
-   if(unit==='cup')return /\bcup\b/.test(label);
+   if(unit==='cup'){
+    // A generic 'cup' must not accept cups of shells, elbows, rotini etc. for dry orzo.
+    return /\bcup\b/.test(label)&&!(/\bcup\s+(shells|rotini|elbows|spaghetti|penne|farfalle|lasagna)\b/.test(label));
+   }
    if(unit==='each')return /\b(each|whole|unit|piece|fruit|pepper|lemon|apple)\b/.test(label);
    return false;
   });
