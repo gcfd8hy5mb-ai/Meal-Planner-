@@ -22,10 +22,12 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Query USDA API for 10 ingredient pilot
+      - name: Query USDA API with dedicated repository key
         env:
           USDA_FDC_API_KEY: ${{ secrets.USDA_FDC_API_KEY }}
-        run: node ops/recipe-expansion/suggest-usda-food-matches.mjs 10 10
+        run: |
+          if [ -z "$USDA_FDC_API_KEY" ]; then echo 'Missing USDA_FDC_API_KEY repository secret'; exit 1; fi
+          node ops/recipe-expansion/suggest-usda-food-matches.mjs 25 10
       - name: Upload review-only lookup report
         if: always()
         uses: actions/upload-artifact@v4
