@@ -2743,6 +2743,365 @@
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
       }
+    },
+    {
+      "id": "exp01-033",
+      "name": "Mexican Beef Stuffed Zucchini",
+      "serv": 4,
+      "ingredients": [
+        [
+          "Medium zucchini",
+          4,
+          "each"
+        ],
+        [
+          "Lean ground beef",
+          1,
+          "lb"
+        ],
+        [
+          "Yellow onion",
+          0.5,
+          "each"
+        ],
+        [
+          "Garlic cloves",
+          2,
+          "each"
+        ],
+        [
+          "Cooked rice",
+          1,
+          "cup"
+        ],
+        [
+          "Black beans, drained",
+          1,
+          "cup"
+        ],
+        [
+          "Diced tomatoes, drained",
+          1,
+          "cup"
+        ],
+        [
+          "Shredded cheddar cheese",
+          1,
+          "cup"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Chili powder",
+          2,
+          "tsp"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          0.5,
+          "tsp"
+        ],
+        [
+          "Cilantro",
+          0.25,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Preheat the oven to 400°F. Slice 4 zucchini lengthwise and use a spoon to scoop out the soft centers, leaving sturdy ¼-inch shells. Arrange the eight halves cut-side up in a lightly oiled baking dish and chop the scooped flesh.",
+        "Finely dice half an onion and mince 2 garlic cloves. Heat 1 tbsp olive oil in a skillet over medium heat and sauté onion for 3 minutes; add the chopped zucchini flesh and garlic and cook 2 minutes more.",
+        "Add 1 lb lean ground beef, breaking it apart with a wooden spoon, and cook 7–9 minutes until fully browned and the center reaches 160°F. Drain excess fat, then add 2 tsp chili powder, 1 tsp cumin and ½ tsp salt.",
+        "Stir in 1 cup cooked rice, 1 cup drained black beans and 1 cup drained diced tomatoes. Heat the mixture until steaming, then spoon evenly into the eight zucchini boats. Cover tightly with foil and bake 20 minutes.",
+        "Remove foil, sprinkle 1 cup shredded cheddar evenly over the boats and bake another 8–12 minutes until the zucchini is fork-tender, the cheese melts and the filling reaches 165°F. Rest 3 minutes and garnish with ¼ cup chopped cilantro before serving two halves per person."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-034",
+      "name": "Pork Al Pastor Tacos",
+      "serv": 6,
+      "ingredients": [
+        [
+          "Boneless pork shoulder",
+          2,
+          "lb"
+        ],
+        [
+          "Pineapple chunks",
+          1,
+          "cup"
+        ],
+        [
+          "Pineapple juice",
+          0.5,
+          "cup"
+        ],
+        [
+          "Achiote paste",
+          2,
+          "tbsp"
+        ],
+        [
+          "Dried guajillo chiles",
+          3,
+          "each"
+        ],
+        [
+          "White vinegar",
+          2,
+          "tbsp"
+        ],
+        [
+          "Garlic cloves",
+          3,
+          "each"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Dried oregano",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          1,
+          "tsp"
+        ],
+        [
+          "Corn tortillas",
+          18,
+          "each"
+        ],
+        [
+          "White onion",
+          1,
+          "each"
+        ],
+        [
+          "Cilantro",
+          0.5,
+          "cup"
+        ],
+        [
+          "Lime",
+          2,
+          "each"
+        ]
+      ],
+      "steps": [
+        "Remove stems and seeds from 3 dried guajillo chiles, cover with hot water and soak for 15 minutes; drain. Blend softened chiles with ½ cup pineapple juice, 2 tbsp achiote paste, 2 tbsp vinegar, 3 garlic cloves, 1 tsp cumin, 1 tsp oregano and 1 tsp salt until smooth.",
+        "Trim visible excess fat from 2 lb pork shoulder and slice into ½-inch strips. Coat thoroughly with the prepared marinade in a covered dish and refrigerate at least 2 hours, preferably overnight; keep raw meat and its marinade refrigerated.",
+        "Heat oven to 375°F. Arrange pork in a roasting pan in a shallow, even layer, cover tightly with foil and roast about 45–60 minutes, until the pieces are tender and reach at least 145°F. Rest 3 minutes and reserve only fully cooked pan juices.",
+        "Uncover the pan, stir in 1 cup pineapple chunks and broil 3–5 minutes, watching continuously, until the edges of the pork and pineapple begin to caramelize. Chop the cooked pork and pineapple into small taco-size pieces.",
+        "Warm 18 corn tortillas in a dry skillet, about 20 seconds per side. Divide pork and pineapple across the tortillas; finish with diced white onion, ½ cup chopped cilantro and lime wedges, giving each person three tacos."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-035",
+      "name": "Chicken Mole Enchiladas",
+      "serv": 6,
+      "ingredients": [
+        [
+          "Cooked shredded chicken",
+          3,
+          "cup"
+        ],
+        [
+          "Corn tortillas",
+          12,
+          "each"
+        ],
+        [
+          "Mole poblano paste, prepared",
+          0.75,
+          "cup"
+        ],
+        [
+          "Chicken broth",
+          2,
+          "cup"
+        ],
+        [
+          "Shredded Monterey Jack cheese",
+          1.5,
+          "cup"
+        ],
+        [
+          "White onion",
+          0.5,
+          "each"
+        ],
+        [
+          "Sesame seeds",
+          2,
+          "tbsp"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Salt",
+          0.25,
+          "tsp"
+        ],
+        [
+          "Cilantro",
+          0.25,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Preheat oven to 375°F and grease a 9-by-13-inch baking dish with 1 tbsp olive oil. Dice half a white onion and chop ¼ cup cilantro; reserve both for the finished enchiladas.",
+        "Whisk ¾ cup commercially prepared mole poblano paste and 2 cups chicken broth together in a saucepan over medium-low heat, adding the broth a little at a time to prevent lumps. Simmer for 5–8 minutes until smooth and pourable, checking the mole package for any additional preparation directions.",
+        "Warm 3 cups fully cooked shredded chicken in a skillet with ½ cup prepared mole sauce until steaming and the chicken reaches 165°F. Taste before adding any of the optional ¼ tsp salt because prepared mole may already be seasoned.",
+        "Briefly heat 12 corn tortillas in a dry skillet until pliable, then divide the chicken filling among them. Roll the tortillas tightly and arrange seam-side down in the baking dish; pour the remaining mole sauce evenly over them.",
+        "Sprinkle 1½ cups shredded Monterey Jack over the enchiladas. Cover with foil and bake 15 minutes; uncover and bake another 8–10 minutes until bubbling and the centers reach 165°F. Rest 5 minutes, sprinkle with 2 tbsp sesame seeds, onion and cilantro, and serve two enchiladas per person."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-036",
+      "name": "Beef Quesabirria",
+      "serv": 6,
+      "ingredients": [
+        [
+          "Beef chuck roast",
+          2.5,
+          "lb"
+        ],
+        [
+          "Dried guajillo chiles",
+          4,
+          "each"
+        ],
+        [
+          "Dried ancho chiles",
+          2,
+          "each"
+        ],
+        [
+          "Beef broth",
+          3,
+          "cup"
+        ],
+        [
+          "White onion",
+          1,
+          "each"
+        ],
+        [
+          "Garlic cloves",
+          4,
+          "each"
+        ],
+        [
+          "Apple cider vinegar",
+          2,
+          "tbsp"
+        ],
+        [
+          "Dried oregano",
+          1,
+          "tsp"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          1.5,
+          "tsp"
+        ],
+        [
+          "Corn tortillas",
+          18,
+          "each"
+        ],
+        [
+          "Shredded Oaxaca cheese",
+          2,
+          "cup"
+        ],
+        [
+          "Cilantro",
+          0.5,
+          "cup"
+        ],
+        [
+          "Lime",
+          2,
+          "each"
+        ]
+      ],
+      "steps": [
+        "Remove stems and seeds from 4 guajillo and 2 ancho chiles, cover with hot water and soak 15 minutes. Drain and blend with half an onion, 4 garlic cloves, 2 tbsp vinegar, 1 tsp oregano, 1 tsp cumin and 1 cup beef broth until very smooth.",
+        "Cut 2½ lb chuck roast into large chunks and season with 1½ tsp salt. Put beef, chile sauce and remaining 2 cups beef broth in a heavy covered pot; simmer gently for 3–4 hours, turning meat occasionally, until it shreds easily with two forks.",
+        "Lift beef out, shred finely and stir in several spoonfuls of hot cooking liquid. Skim a little of the orange-red fat from the surface of the braising broth into a shallow bowl and keep the remaining broth hot to serve as consommé.",
+        "Heat a heavy nonstick skillet over medium heat. Lightly dip each of 18 corn tortillas in the skimmed broth fat, lay flat in the skillet, sprinkle with the measured Oaxaca cheese and a share of shredded beef, fold and cook 2–3 minutes per side until crisp and the cheese melts.",
+        "Serve three quesabirria tacos per person with diced remaining onion, ½ cup chopped cilantro, lime wedges and small bowls of hot strained braising broth for dipping. Refrigerate leftover beef and consommé promptly."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
     }
   ]
 }
