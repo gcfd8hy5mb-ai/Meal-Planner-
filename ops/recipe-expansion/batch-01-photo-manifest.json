@@ -499,6 +499,42 @@
       "photoReview": "pending",
       "pairedWithInstructions": true,
       "photoBrief": "Baked cheddar macaroni topped with smoky barbecue pulled pork and toasted panko crust in rustic black casserole dish, individual serving clearly showing both pork and pasta"
+    },
+    {
+      "id": "exp01-057",
+      "name": "Smoked Sausage Jambalaya",
+      "expectedAsset": "assets/meal-photos/exp01-057.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Dark cast-iron pan of reddish rice jambalaya, clearly sliced browned smoked sausage with green bell pepper, celery and tomato, green-onion garnish; no shrimp"
+    },
+    {
+      "id": "exp01-058",
+      "name": "Cajun Chicken and Sausage Gumbo",
+      "expectedAsset": "assets/meal-photos/exp01-058.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Deep brown Louisiana gumbo in matte black bowl with visible tender chicken pieces, sliced andouille, okra, and a mound of white rice, green onion garnish; no shrimp"
+    },
+    {
+      "id": "exp01-059",
+      "name": "Shrimp Étouffée",
+      "expectedAsset": "assets/meal-photos/exp01-059.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Large pink shrimp coated in smooth buttery light brown étouffée sauce with peppers, celery and onions, ladled over white rice with sliced green onions; no sausage"
+    },
+    {
+      "id": "exp01-060",
+      "name": "Red Beans and Sausage Rice",
+      "expectedAsset": "assets/meal-photos/exp01-060.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Creamy red kidney beans with sliced browned andouille sausage and Cajun vegetables alongside fluffy white rice, topped with finely cut green onions; no chicken"
     }
   ]
 }
