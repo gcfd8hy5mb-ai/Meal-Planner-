@@ -4164,6 +4164,340 @@
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
       }
+    },
+    {
+      "id": "exp01-049",
+      "name": "Buttermilk Fried Chicken",
+      "serv": 6,
+      "ingredients": [
+        [
+          "Bone-in chicken thighs and drumsticks",
+          3,
+          "lb"
+        ],
+        [
+          "Buttermilk",
+          2,
+          "cup"
+        ],
+        [
+          "All-purpose flour",
+          2,
+          "cup"
+        ],
+        [
+          "Cornstarch",
+          0.5,
+          "cup"
+        ],
+        [
+          "Paprika",
+          2,
+          "tsp"
+        ],
+        [
+          "Garlic powder",
+          2,
+          "tsp"
+        ],
+        [
+          "Onion powder",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          2,
+          "tsp"
+        ],
+        [
+          "Black pepper",
+          1,
+          "tsp"
+        ],
+        [
+          "Cayenne pepper",
+          0.25,
+          "tsp"
+        ],
+        [
+          "Neutral frying oil",
+          6,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Whisk 2 cups buttermilk with 1 tsp salt and ½ tsp black pepper in a large food-safe bowl. Add 3 lb chicken pieces, turn to coat, cover and refrigerate at least 4 hours or overnight, keeping raw chicken separate from ready-to-eat food.",
+        "Mix 2 cups flour, ½ cup cornstarch, 2 tsp paprika, 2 tsp garlic powder, 1 tsp onion powder, the remaining 1 tsp salt, ½ tsp pepper and ¼ tsp cayenne in a wide dish. Lift chicken from the marinade, letting excess drip off, then dredge thoroughly in the seasoned flour; discard used marinade.",
+        "Pour neutral oil into a deep, heavy pot to a depth of about 2 inches without filling the pot more than halfway; the measured 6 cups is an allowance, and the exact amount depends on pot size. Heat to 325°F using a deep-fry thermometer and keep water away from hot oil.",
+        "Lower two or three chicken pieces into the oil carefully without crowding. Fry about 12–18 minutes depending on piece size, turning occasionally and keeping oil near 325°F, until the thickest parts reach at least 165°F without the probe touching bone; repeat with remaining chicken.",
+        "Transfer cooked chicken to a rack over a baking sheet rather than stacking it on towels, so the crust stays crisp. Rest 5 minutes before dividing the pieces among six servings and discard frying oil safely after it has completely cooled."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-050",
+      "name": "Crispy Southern Chicken Tenders",
+      "serv": 4,
+      "ingredients": [
+        [
+          "Raw chicken tenderloins",
+          1.5,
+          "lb"
+        ],
+        [
+          "Buttermilk",
+          1,
+          "cup"
+        ],
+        [
+          "All-purpose flour",
+          1.5,
+          "cup"
+        ],
+        [
+          "Panko breadcrumbs",
+          1,
+          "cup"
+        ],
+        [
+          "Eggs",
+          2,
+          "each"
+        ],
+        [
+          "Paprika",
+          1,
+          "tsp"
+        ],
+        [
+          "Garlic powder",
+          1,
+          "tsp"
+        ],
+        [
+          "Onion powder",
+          0.5,
+          "tsp"
+        ],
+        [
+          "Salt",
+          1,
+          "tsp"
+        ],
+        [
+          "Black pepper",
+          0.5,
+          "tsp"
+        ],
+        [
+          "Neutral frying oil",
+          3,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Pat 1½ lb raw chicken tenderloins dry and place in a shallow dish with 1 cup buttermilk. Cover and refrigerate for 30 minutes while you arrange a clean breading station.",
+        "In one shallow bowl whisk 2 eggs; in another mix 1½ cups flour, 1 tsp paprika, 1 tsp garlic powder, ½ tsp onion powder, 1 tsp salt and ½ tsp pepper; place 1 cup panko in a third shallow bowl.",
+        "Remove each tender from buttermilk and let the excess drip away. Coat first in seasoned flour, then egg and finally panko, pressing crumbs gently onto all sides; discard remaining raw-chicken marinade and used breading.",
+        "Heat about 1 inch of neutral frying oil in a heavy skillet to 350°F, using up to 3 cups depending on pan size and keeping the skillet less than half full. Fry tenders in small batches for about 3–5 minutes per side, adjusting for thickness and oil temperature, until golden and the centers reach 165°F.",
+        "Move finished tenders to a wire rack so the coating stays crunchy. Let rest 3 minutes, divide evenly into four portions and serve hot; refrigerate leftovers promptly."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-051",
+      "name": "Sausage Gravy and Buttermilk Biscuits",
+      "serv": 6,
+      "ingredients": [
+        [
+          "All-purpose flour",
+          3,
+          "cup"
+        ],
+        [
+          "Baking powder",
+          1,
+          "tbsp"
+        ],
+        [
+          "Baking soda",
+          0.5,
+          "tsp"
+        ],
+        [
+          "Cold unsalted butter",
+          0.5,
+          "cup"
+        ],
+        [
+          "Buttermilk",
+          1.25,
+          "cup"
+        ],
+        [
+          "Salt",
+          1.25,
+          "tsp"
+        ],
+        [
+          "Ground breakfast pork sausage",
+          1,
+          "lb"
+        ],
+        [
+          "Whole milk",
+          3,
+          "cup"
+        ],
+        [
+          "Black pepper",
+          1,
+          "tsp"
+        ],
+        [
+          "Unsalted butter for gravy",
+          1,
+          "tbsp"
+        ]
+      ],
+      "steps": [
+        "Heat oven to 425°F and line a baking sheet with parchment. In a mixing bowl whisk 2½ cups flour, 1 tbsp baking powder, ½ tsp baking soda and ¾ tsp salt; cut in ½ cup cold butter until the mixture resembles coarse crumbs.",
+        "Pour in 1¼ cups cold buttermilk and fold gently until a shaggy dough forms. Turn onto a lightly floured surface using the remaining ½ cup flour as needed; fold the dough over itself three times, pat to about ¾ inch thick and cut 12 biscuits with a floured cutter.",
+        "Arrange biscuits on the sheet with sides nearly touching and bake 13–17 minutes until tall and golden brown. Meanwhile place 1 lb breakfast sausage in a heavy skillet over medium heat, breaking into crumbles and cooking for about 8–10 minutes until it reaches 160°F.",
+        "Add 1 tbsp butter to the sausage if the pan is dry, then sprinkle over ¼ cup flour from the flour reserved for dusting, stirring for 1 minute. Gradually whisk in 3 cups whole milk, scraping browned bits from the bottom and stirring until smooth.",
+        "Simmer the gravy for 4–6 minutes until thick enough to coat a spoon; season with remaining ½ tsp salt and 1 tsp black pepper, tasting before adding all the salt if the sausage is salty. Split two warm biscuits onto each of six plates and spoon hot sausage gravy over them."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-052",
+      "name": "Slow-Cooker Pot Roast and Carrots",
+      "serv": 6,
+      "ingredients": [
+        [
+          "Beef chuck roast",
+          3,
+          "lb"
+        ],
+        [
+          "Carrots",
+          1.5,
+          "lb"
+        ],
+        [
+          "Yukon Gold potatoes",
+          1.5,
+          "lb"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Garlic cloves",
+          4,
+          "each"
+        ],
+        [
+          "Beef broth",
+          2,
+          "cup"
+        ],
+        [
+          "Tomato paste",
+          2,
+          "tbsp"
+        ],
+        [
+          "Worcestershire sauce",
+          2,
+          "tbsp"
+        ],
+        [
+          "Olive oil",
+          2,
+          "tbsp"
+        ],
+        [
+          "Dried thyme",
+          1,
+          "tsp"
+        ],
+        [
+          "Dried rosemary",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          1.5,
+          "tsp"
+        ],
+        [
+          "Black pepper",
+          1,
+          "tsp"
+        ],
+        [
+          "Cornstarch",
+          2,
+          "tbsp"
+        ]
+      ],
+      "steps": [
+        "Pat 3 lb chuck roast dry and season on all sides with 1½ tsp salt and 1 tsp black pepper. Heat 2 tbsp olive oil in a large skillet over medium-high heat and brown the roast 3–4 minutes per side; transfer to a slow cooker.",
+        "Cut 1½ lb carrots into 2-inch pieces, halve 1½ lb Yukon Gold potatoes and cut 1 onion into thick wedges. Arrange vegetables around the beef and add 4 smashed garlic cloves.",
+        "Whisk together 2 cups beef broth, 2 tbsp tomato paste, 2 tbsp Worcestershire sauce, 1 tsp thyme and 1 tsp rosemary until smooth, then pour the liquid around the roast. Cover and cook on LOW for 8–9 hours or HIGH for 5–6 hours until the beef is fork-tender.",
+        "Transfer the roast and vegetables to a platter and cover loosely to stay warm. Pour 1 cup of cooking liquid into a saucepan; whisk 2 tbsp cornstarch with 2 tbsp cool water and gradually stir into the hot liquid, simmering 2–3 minutes until the gravy thickens.",
+        "Slice or pull apart the beef, removing any large pieces of fat. Divide the roast, carrots and potatoes into six portions and spoon the hot gravy over each plate. Refrigerate leftovers promptly in shallow containers."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
     }
   ]
 }
