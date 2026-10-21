@@ -2379,6 +2379,370 @@
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
       }
+    },
+    {
+      "id": "exp01-029",
+      "name": "Chipotle Chicken Torta",
+      "serv": 4,
+      "ingredients": [
+        [
+          "Boneless skinless chicken breasts",
+          1.25,
+          "lb"
+        ],
+        [
+          "Bolillo rolls",
+          4,
+          "each"
+        ],
+        [
+          "Chipotle peppers in adobo",
+          2,
+          "each"
+        ],
+        [
+          "Mayonnaise",
+          0.25,
+          "cup"
+        ],
+        [
+          "Refried beans",
+          1,
+          "cup"
+        ],
+        [
+          "Monterey Jack cheese",
+          4,
+          "oz"
+        ],
+        [
+          "Avocado",
+          1,
+          "each"
+        ],
+        [
+          "Roma tomatoes",
+          2,
+          "each"
+        ],
+        [
+          "Shredded lettuce",
+          1,
+          "cup"
+        ],
+        [
+          "Lime juice",
+          2,
+          "tbsp"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          0.75,
+          "tsp"
+        ]
+      ],
+      "steps": [
+        "Finely chop 2 chipotle peppers and whisk with ¼ cup mayonnaise and 2 tbsp lime juice to make the spread. Slice 2 tomatoes and 1 avocado, rinse the lettuce, and split 4 bolillo rolls lengthwise.",
+        "Pat 1¼ lb chicken breasts dry, then season with 1 tsp cumin and ¾ tsp salt. Heat 1 tbsp olive oil in a skillet over medium heat and cook the breasts for 5–7 minutes per side, depending on thickness, until a thermometer reads 165°F.",
+        "Transfer the chicken to a clean cutting board and rest for 5 minutes, then slice thinly across the grain. Meanwhile warm 1 cup refried beans in a saucepan until thoroughly steaming.",
+        "Place the split rolls cut-side up on a baking sheet, spread the lower halves with warm beans and top with equal portions of chicken and 1 oz Monterey Jack per sandwich. Broil for 1–2 minutes, watching continuously, until the cheese melts and the bread edges toast.",
+        "Spread the chipotle mayonnaise on the upper roll halves; layer the warm chicken with sliced avocado, tomatoes and 1 cup shredded lettuce. Close each torta, press gently and serve immediately."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-030",
+      "name": "Shrimp Veracruz",
+      "serv": 4,
+      "ingredients": [
+        [
+          "Peeled deveined raw shrimp",
+          1.5,
+          "lb"
+        ],
+        [
+          "Crushed tomatoes",
+          2,
+          "cup"
+        ],
+        [
+          "White onion",
+          1,
+          "each"
+        ],
+        [
+          "Garlic cloves",
+          3,
+          "each"
+        ],
+        [
+          "Pitted green olives",
+          0.5,
+          "cup"
+        ],
+        [
+          "Capers, drained",
+          2,
+          "tbsp"
+        ],
+        [
+          "Jalapeño",
+          1,
+          "each"
+        ],
+        [
+          "Olive oil",
+          2,
+          "tbsp"
+        ],
+        [
+          "Dried oregano",
+          1,
+          "tsp"
+        ],
+        [
+          "Bay leaf",
+          1,
+          "each"
+        ],
+        [
+          "Salt",
+          0.5,
+          "tsp"
+        ],
+        [
+          "Lime",
+          1,
+          "each"
+        ],
+        [
+          "Long-grain rice dry",
+          1,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Cook 1 cup dry long-grain rice according to its package instructions. While it cooks, dice 1 onion, mince 3 garlic cloves, thinly slice ½ cup green olives, and finely chop 1 jalapeño, removing seeds if milder heat is desired.",
+        "Heat 2 tbsp olive oil in a deep skillet over medium heat and cook the onion for 5–6 minutes until softened. Stir in garlic and jalapeño for 30 seconds without browning the garlic.",
+        "Add 2 cups crushed tomatoes, ½ cup sliced olives, 2 tbsp drained capers, 1 tsp oregano, one bay leaf and ½ tsp salt. Bring to a gentle simmer and cook uncovered 10–12 minutes, stirring occasionally, until slightly thickened.",
+        "Pat 1½ lb raw shrimp dry and nestle them into the simmering tomato sauce. Cook for about 4–6 minutes, turning halfway, until shrimp are opaque and firm and the thickest shrimp reaches 145°F; discard the bay leaf.",
+        "Squeeze juice from 1 lime into the sauce and stir gently. Divide rice among four plates and spoon shrimp and Veracruz-style tomato-olive sauce evenly over each portion."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-031",
+      "name": "Steak and Pinto Bean Burritos",
+      "serv": 4,
+      "ingredients": [
+        [
+          "Flank steak",
+          1.25,
+          "lb"
+        ],
+        [
+          "Large flour tortillas",
+          4,
+          "each"
+        ],
+        [
+          "Cooked rice",
+          1.5,
+          "cup"
+        ],
+        [
+          "Cooked pinto beans",
+          1.5,
+          "cup"
+        ],
+        [
+          "Shredded cheddar cheese",
+          1,
+          "cup"
+        ],
+        [
+          "Bell pepper",
+          1,
+          "each"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Salsa",
+          0.5,
+          "cup"
+        ],
+        [
+          "Olive oil",
+          2,
+          "tbsp"
+        ],
+        [
+          "Chili powder",
+          2,
+          "tsp"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          0.75,
+          "tsp"
+        ],
+        [
+          "Lime",
+          1,
+          "each"
+        ]
+      ],
+      "steps": [
+        "Thinly slice 1¼ lb flank steak against the grain and toss with 2 tsp chili powder, 1 tsp cumin, ¾ tsp salt and juice from 1 lime. Slice 1 bell pepper and 1 onion into thin strips.",
+        "Heat 1 tbsp olive oil in a large skillet over medium-high heat and sauté the sliced pepper and onion for about 6–8 minutes until softened and lightly browned; transfer vegetables to a plate.",
+        "Add the remaining tablespoon of oil to the skillet and cook steak strips in batches so the pan does not crowd, about 3–5 minutes per batch, until the thickest pieces reach 145°F; rest at least 3 minutes before serving.",
+        "Heat 1½ cups previously cooked rice and 1½ cups cooked pinto beans separately until steaming; use properly refrigerated rice and reheat to 165°F. Warm 4 large flour tortillas briefly on a dry skillet until pliable.",
+        "Divide rice, beans, steak, sautéed vegetables, 1 cup shredded cheddar and ½ cup salsa evenly among tortillas. Fold the sides inward, roll each burrito tightly and serve warm."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-032",
+      "name": "Poblano Chicken Rice Bake",
+      "serv": 6,
+      "ingredients": [
+        [
+          "Boneless skinless chicken breasts",
+          1.5,
+          "lb"
+        ],
+        [
+          "Long-grain rice dry",
+          1.5,
+          "cup"
+        ],
+        [
+          "Poblano peppers",
+          3,
+          "each"
+        ],
+        [
+          "Chicken broth",
+          3,
+          "cup"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Garlic cloves",
+          3,
+          "each"
+        ],
+        [
+          "Diced tomatoes, drained",
+          1,
+          "cup"
+        ],
+        [
+          "Shredded Monterey Jack cheese",
+          1.5,
+          "cup"
+        ],
+        [
+          "Olive oil",
+          2,
+          "tbsp"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Chili powder",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          1,
+          "tsp"
+        ],
+        [
+          "Cilantro",
+          0.25,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Preheat oven to 375°F and grease a deep 9-by-13-inch baking dish lightly. Seed and dice 3 poblano peppers, dice 1 onion, mince 3 garlic cloves and cut 1½ lb chicken breasts into even bite-size pieces.",
+        "Heat 1 tbsp olive oil in a skillet over medium heat, then cook onion and poblano peppers for 5–6 minutes until starting to soften. Add garlic for 30 seconds and transfer the vegetables to the prepared baking dish.",
+        "Add remaining 1 tbsp oil to the skillet, then sear chicken pieces in two batches for 2 minutes per side to build color; the chicken will finish cooking in the oven. Season chicken with 1 tsp cumin, 1 tsp chili powder and 1 tsp salt.",
+        "Add 1½ cups dry long-grain rice, 1 cup drained tomatoes, chicken and vegetables to the baking dish, and stir evenly. Pour over 3 cups hot chicken broth, cover tightly with foil and bake 35 minutes.",
+        "Carefully remove foil and check rice for tenderness and liquid absorption; cook covered 5–10 minutes more if needed. Verify every chicken piece reaches 165°F, sprinkle 1½ cups Monterey Jack over the dish, and return uncovered for 5 minutes to melt the cheese. Rest 5 minutes and finish with ¼ cup chopped cilantro before serving six portions."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
     }
   ]
 }
