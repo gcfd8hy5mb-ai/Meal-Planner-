@@ -5350,6 +5350,454 @@
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
       }
+    },
+    {
+      "id": "exp01-065",
+      "name": "Slow-Cooker Beef Stew",
+      "slot": "Dinner",
+      "cuisine": "Soups & Stews",
+      "serv": 6,
+      "prepMinutes": 25,
+      "cookMinutes": 480,
+      "cal": 460,
+      "p": 37,
+      "c": 40,
+      "f": 17,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Beef stew meat",
+          2,
+          "lb"
+        ],
+        [
+          "Yukon potatoes",
+          1.5,
+          "lb"
+        ],
+        [
+          "Carrots",
+          4,
+          "each"
+        ],
+        [
+          "Celery stalks",
+          3,
+          "each"
+        ],
+        [
+          "Beef broth",
+          4,
+          "cup"
+        ],
+        [
+          "Tomato paste",
+          2,
+          "tbsp"
+        ],
+        [
+          "Flour",
+          0.25,
+          "cup"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Worcestershire sauce",
+          2,
+          "tbsp"
+        ]
+      ],
+      "steps": [
+        "Toss 2 lb cubed beef with ¼ cup flour. Brown in a skillet over medium-high heat for 6 minutes, turning often.",
+        "Place 1½ lb cubed potatoes, 4 sliced carrots, 3 chopped celery stalks and 1 diced onion in the slow cooker.",
+        "Add seared beef, 4 cups broth, 2 tbsp tomato paste and 2 tbsp Worcestershire sauce; stir.",
+        "Cover and cook on LOW for 7–8 hours until beef and potatoes are tender. Keep the lid on during cooking.",
+        "Taste, adjust seasoning, and divide meat, vegetables and broth evenly among six bowls."
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-066",
+      "name": "Cajun Shrimp and Grits",
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "serv": 4,
+      "prepMinutes": 20,
+      "cookMinutes": 25,
+      "cal": 590,
+      "p": 36,
+      "c": 49,
+      "f": 29,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Peeled shrimp",
+          1.5,
+          "lb"
+        ],
+        [
+          "Quick grits",
+          1,
+          "cup"
+        ],
+        [
+          "Milk",
+          2,
+          "cup"
+        ],
+        [
+          "Water",
+          2,
+          "cup"
+        ],
+        [
+          "Shredded cheddar",
+          1,
+          "cup"
+        ],
+        [
+          "Butter",
+          3,
+          "tbsp"
+        ],
+        [
+          "Bacon",
+          4,
+          "slice"
+        ],
+        [
+          "Cajun seasoning",
+          2,
+          "tsp"
+        ],
+        [
+          "Green onions",
+          3,
+          "each"
+        ]
+      ],
+      "steps": [
+        "Bring 2 cups milk and 2 cups water to a simmer; whisk in 1 cup grits and cook per package directions, stirring often.",
+        "Stir 1 cup cheddar and 2 tbsp butter into tender grits; cover and keep warm.",
+        "Cook 4 bacon slices in a skillet until crisp, about 7 minutes; remove and crumble, leaving 1 tbsp drippings.",
+        "Toss 1½ lb peeled shrimp with 2 tsp Cajun seasoning and sauté in hot drippings with remaining 1 tbsp butter for 2–3 minutes per side until opaque and 145°F.",
+        "Spoon cheesy grits into four bowls; top with shrimp, bacon and 3 sliced green onions."
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-067",
+      "name": "Skillet Lasagna",
+      "slot": "Dinner",
+      "cuisine": "Italian",
+      "serv": 6,
+      "prepMinutes": 15,
+      "cookMinutes": 35,
+      "cal": 560,
+      "p": 31,
+      "c": 52,
+      "f": 24,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Ground beef",
+          1,
+          "lb"
+        ],
+        [
+          "Lasagna noodles",
+          10,
+          "oz"
+        ],
+        [
+          "Crushed tomatoes",
+          28,
+          "oz"
+        ],
+        [
+          "Ricotta cheese",
+          1,
+          "cup"
+        ],
+        [
+          "Shredded mozzarella",
+          1.5,
+          "cup"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Garlic cloves",
+          3,
+          "each"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Italian seasoning",
+          2,
+          "tsp"
+        ]
+      ],
+      "steps": [
+        "Heat 1 tbsp oil in a deep skillet, sauté 1 diced onion for 4 minutes, then cook 1 lb ground beef until browned and 160°F.",
+        "Add 3 minced garlic cloves and 2 tsp Italian seasoning; stir for 30 seconds.",
+        "Pour in 28 oz crushed tomatoes and 2 cups water. Break 10 oz uncooked lasagna noodles into bite-sized pieces and submerge them in sauce.",
+        "Cover and simmer 15–20 minutes, stirring gently every 4 minutes, until noodles are tender; add water as needed.",
+        "Dot with 1 cup ricotta, sprinkle 1½ cups mozzarella, cover and cook 4 minutes until cheese melts. Divide into six servings."
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-068",
+      "name": "Maple Mustard Roasted Salmon",
+      "slot": "Dinner",
+      "cuisine": "Seafood",
+      "serv": 4,
+      "prepMinutes": 15,
+      "cookMinutes": 18,
+      "cal": 460,
+      "p": 38,
+      "c": 18,
+      "f": 25,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Salmon fillets",
+          1.5,
+          "lb"
+        ],
+        [
+          "Dijon mustard",
+          2,
+          "tbsp"
+        ],
+        [
+          "Maple syrup",
+          3,
+          "tbsp"
+        ],
+        [
+          "Lemon",
+          1,
+          "each"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Garlic cloves",
+          2,
+          "each"
+        ],
+        [
+          "Black pepper",
+          0.5,
+          "tsp"
+        ]
+      ],
+      "steps": [
+        "Heat oven to 400°F and line a baking tray with parchment. Pat four salmon portions, totaling 1½ lb, dry.",
+        "Mix 2 tbsp Dijon, 3 tbsp maple syrup, 1 tbsp oil, juice of ½ lemon, 2 minced garlic cloves and ½ tsp pepper.",
+        "Brush sauce evenly over the salmon and place portions skin-side down on the tray.",
+        "Roast 12–18 minutes depending on thickness, until the center reaches 145°F.",
+        "Rest 2 minutes, garnish with remaining lemon wedges, and serve one fillet per person."
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-069",
+      "name": "Classic Chicken Noodle Casserole",
+      "slot": "Dinner",
+      "cuisine": "American",
+      "serv": 6,
+      "prepMinutes": 20,
+      "cookMinutes": 35,
+      "cal": 520,
+      "p": 34,
+      "c": 50,
+      "f": 19,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Cooked shredded chicken",
+          2,
+          "lb"
+        ],
+        [
+          "Egg noodles",
+          12,
+          "oz"
+        ],
+        [
+          "Cream of chicken soup",
+          2,
+          "can"
+        ],
+        [
+          "Milk",
+          1,
+          "cup"
+        ],
+        [
+          "Frozen peas",
+          2,
+          "cup"
+        ],
+        [
+          "Shredded cheddar",
+          1,
+          "cup"
+        ],
+        [
+          "Bread crumbs",
+          0.75,
+          "cup"
+        ],
+        [
+          "Butter",
+          2,
+          "tbsp"
+        ]
+      ],
+      "steps": [
+        "Preheat oven to 375°F. Cook 12 oz egg noodles in salted water 2 minutes short of package time and drain.",
+        "Mix 2 cans cream of chicken soup with 1 cup milk. Fold in 2 lb cooked chicken, 2 cups peas, drained noodles and 1 cup cheddar.",
+        "Spread in a greased 9-by-13-inch baking dish and smooth the surface.",
+        "Melt 2 tbsp butter and toss with ¾ cup bread crumbs; sprinkle across casserole.",
+        "Bake uncovered for 30–35 minutes until bubbling and the middle reaches 165°F. Cool 5 minutes and portion into six."
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-070",
+      "name": "Garlic Butter Steak Bites and Potatoes",
+      "slot": "Dinner",
+      "cuisine": "American",
+      "serv": 4,
+      "prepMinutes": 20,
+      "cookMinutes": 30,
+      "cal": 640,
+      "p": 42,
+      "c": 35,
+      "f": 36,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Sirloin steak",
+          1.5,
+          "lb"
+        ],
+        [
+          "Baby potatoes",
+          1.5,
+          "lb"
+        ],
+        [
+          "Butter",
+          4,
+          "tbsp"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Garlic cloves",
+          5,
+          "each"
+        ],
+        [
+          "Fresh parsley",
+          0.25,
+          "cup"
+        ],
+        [
+          "Paprika",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          1,
+          "tsp"
+        ]
+      ],
+      "steps": [
+        "Cut 1½ lb baby potatoes into halves and boil in salted water for 8–10 minutes until barely tender; drain and pat dry.",
+        "Cut 1½ lb sirloin into 1-inch cubes and season with 1 tsp paprika and ½ tsp salt.",
+        "Heat 1 tbsp oil and 2 tbsp butter in a skillet; brown potatoes for 8 minutes, stirring occasionally. Remove to a plate.",
+        "Increase heat to medium-high and sear steak cubes in batches about 2 minutes per side until 145°F, then rest 3 minutes.",
+        "Reduce heat; melt remaining 2 tbsp butter with 5 minced garlic cloves for 30 seconds. Return steak and potatoes, toss, garnish with ¼ cup parsley and divide four ways."
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
     }
   ]
 }
