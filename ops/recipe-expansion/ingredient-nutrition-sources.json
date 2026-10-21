@@ -715,28 +715,38 @@
       "reviewStatus": "pending"
     },
     "Cheddar": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central",
+      "foodId": "328637",
+      "description": "Cheese, cheddar",
+      "state": "Cheese, cheddar",
+      "kcalPer100g": 408,
+      "proteinPer100g": 23.3,
+      "carbsPer100g": 2.44,
+      "fatPer100g": 34,
+      "gramsPerUnit": {
+        "cup": 105
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/328637/nutrients",
+      "portionSource": "USDA FDC explicit 1 cup shredded cheddar = 105 g. Recipe instructions specify sprinkling or melting cups of cheddar, assumed shredded rather than block; brand variation remains.",
+      "reviewNotes": "Ingredient-source mapping only. Finished-meal nutrition cannot be published without separate recipe yield and consumed-portion verification."
     },
     "Cheddar cheese": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central",
+      "foodId": "328637",
+      "description": "Cheese, cheddar",
+      "state": "Cheese, cheddar",
+      "kcalPer100g": 408,
+      "proteinPer100g": 23.3,
+      "carbsPer100g": 2.44,
+      "fatPer100g": 34,
+      "gramsPerUnit": {
+        "cup": 105
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/328637/nutrients",
+      "portionSource": "USDA FDC explicit 1 cup shredded cheddar = 105 g. Recipe directions melt or stir cups of cheddar; shredded state assumed; brand variation remains.",
+      "reviewNotes": "Ingredient-source mapping only. Finished-meal nutrition cannot be published without separate recipe yield and consumed-portion verification."
     },
     "Cherry tomatoes": {
       "source": "",
@@ -2735,16 +2745,21 @@
       "reviewStatus": "pending"
     },
     "Pork tenderloin": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central",
+      "foodId": "2646169",
+      "description": "Pork, loin, tenderloin, boneless, raw",
+      "state": "Pork, loin, tenderloin, boneless, raw",
+      "kcalPer100g": 119.039,
+      "proteinPer100g": 21.58125,
+      "carbsPer100g": 0,
+      "fatPer100g": 3.899,
+      "gramsPerUnit": {
+        "lb": 453.59237
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/2646169/nutrients",
+      "portionSource": "USDA FDC Foundation raw boneless pork tenderloin; pound is mass conversion. Recipe cook-loss and served yield still require review.",
+      "reviewNotes": "Ingredient-source mapping only. Finished-meal nutrition cannot be published without separate recipe yield and consumed-portion verification."
     },
     "Potato gnocchi": {
       "source": "",
