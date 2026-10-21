@@ -939,7 +939,7 @@
       ],
       "steps": [
         "Slice 1¼ lb flank steak against the grain into thin strips. Toss with 2 tbsp lime juice, 2 tsp chili powder, 1 tsp cumin, 1 tsp garlic powder and ¾ tsp salt, then refrigerate while you prepare the vegetables.",
-        "Cut the 2 bell peppers and 1 onion into thin strips. Heat 1 tbsp olive oil in a wide skillet over medium-high heat and cook the vegetables for 6–8 minutes, stirring until softened and slightly browned; transfer to a plate.",
+        "Use a medium yellow onion (about 2½ inches in diameter), taking only the amount listed in the ingredients. Cut the 2 bell peppers and 1 onion into thin strips. Heat 1 tbsp olive oil in a wide skillet over medium-high heat and cook the vegetables for 6–8 minutes, stirring until softened and slightly browned; transfer to a plate.",
         "Add the remaining 1 tbsp oil to the skillet. Cook the steak in two batches for about 3–5 minutes per batch, stirring occasionally, until the thickest pieces reach 145°F. Rest the steak for at least 3 minutes before assembling.",
         "Lay out 8 flour tortillas. Sprinkle ¼ cup Monterey Jack cheese on each of four tortillas, then divide the steak and peppers evenly among them. Sprinkle the remaining cheese over the filling and cover with the other four tortillas.",
         "Cook each quesadilla in a clean skillet over medium heat for about 2–3 minutes per side until golden and cheese melts. Slice each into wedges and serve one filled quesadilla per person."
@@ -967,10 +967,16 @@
         "Yellow onion": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "onionSize": null,
+          "onionSize": "medium",
           "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
-          "edibleWeightGrams": null
+          "notes": "Recipe now specifies a medium yellow onion; USDA 110 g for a medium raw onion is a candidate only; edible weight and food-record identity require final approval.",
+          "edibleWeightGrams": null,
+          "usdaPortionCandidate": {
+            "fdcId": 170000,
+            "description": "Onions, raw",
+            "mediumWholeOnionEdibleGrams": 110,
+            "diameterInches": 2.5
+          }
         },
         "Ground cumin": {
           "listedQuantity": 1,
@@ -1169,7 +1175,7 @@
         ]
       ],
       "steps": [
-        "Preheat the oven to 375°F. Dice 1 yellow onion. Warm 2 cups previously cooked rice and 1 cup refried beans separately until steaming, following safe storage and reheating instructions for cooked rice.",
+        "Use a medium yellow onion (about 2½ inches in diameter), taking only the amount listed in the ingredients. Preheat the oven to 375°F. Dice 1 yellow onion. Warm 2 cups previously cooked rice and 1 cup refried beans separately until steaming, following safe storage and reheating instructions for cooked rice.",
         "Heat 1 tbsp olive oil in a skillet over medium heat. Cook the onion for 4 minutes, then add 1 lb ground beef and break it up. Cook until browned and the center reaches 160°F; drain any excess fat.",
         "Stir 2 tsp chili powder, 1 tsp cumin and ½ tsp salt into the beef. Spread ½ cup enchilada sauce across the bottom of a 9-by-13-inch baking dish.",
         "Fill four large tortillas evenly with rice, beans, beef mixture and ½ cup shredded cheddar. Fold the sides in and roll tightly, then place seam-side down in the baking dish.",
@@ -1198,10 +1204,16 @@
         "Yellow onion": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "onionSize": null,
+          "onionSize": "medium",
           "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
-          "edibleWeightGrams": null
+          "notes": "Recipe now specifies a medium yellow onion; USDA 110 g for a medium raw onion is a candidate only; edible weight and food-record identity require final approval.",
+          "edibleWeightGrams": null,
+          "usdaPortionCandidate": {
+            "fdcId": 170000,
+            "description": "Onions, raw",
+            "mediumWholeOnionEdibleGrams": 110,
+            "diameterInches": 2.5
+          }
         },
         "Ground cumin": {
           "listedQuantity": 1,
@@ -1374,7 +1386,7 @@
       ],
       "steps": [
         "Preheat the oven to 375°F. Slice the tops off four bell peppers, remove seeds and membranes, and place them upright in a baking dish with ¼ cup water at the bottom.",
-        "Finely dice half a yellow onion. Heat 1 tbsp olive oil in a skillet over medium heat and cook onion for 3–4 minutes. Add 1 lb ground beef, breaking it apart, and cook until the meat reaches 160°F; drain excess fat.",
+        "Use a medium yellow onion (about 2½ inches in diameter), taking only the amount listed in the ingredients. Finely dice half a yellow onion. Heat 1 tbsp olive oil in a skillet over medium heat and cook onion for 3–4 minutes. Add 1 lb ground beef, breaking it apart, and cook until the meat reaches 160°F; drain excess fat.",
         "Mix beef and onion with 1½ cups safely reheated cooked rice, 1 cup rinsed black beans, 1 cup diced tomatoes, 2 tsp chili powder, 1 tsp cumin and ½ tsp salt. Simmer 3 minutes to combine flavors.",
         "Divide the beef and rice mixture among the four peppers, pressing down gently. Cover the baking dish with foil and bake for 30 minutes until peppers begin to soften.",
         "Remove foil, top evenly with 1 cup shredded cheddar and bake for another 10–15 minutes until peppers are tender, cheese melts and the centers reach 165°F. Rest 5 minutes before serving one pepper per person."
@@ -1402,10 +1414,16 @@
         "Yellow onion": {
           "listedQuantity": 0.5,
           "listedUnit": "each",
-          "onionSize": null,
+          "onionSize": "medium",
           "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
-          "edibleWeightGrams": null
+          "notes": "Recipe now specifies a medium yellow onion; USDA 110 g for a medium raw onion is a candidate only; edible weight and food-record identity require final approval.",
+          "edibleWeightGrams": null,
+          "usdaPortionCandidate": {
+            "fdcId": 170000,
+            "description": "Onions, raw",
+            "mediumWholeOnionEdibleGrams": 110,
+            "diameterInches": 2.5
+          }
         },
         "Ground cumin": {
           "listedQuantity": 1,
@@ -1485,7 +1503,7 @@
       ],
       "steps": [
         "Bring a large pot of salted water to a boil. Add 12 oz dry elbow macaroni and cook until just firm, following package directions; reserve ½ cup pasta water, then drain.",
-        "Meanwhile finely dice 1 yellow onion. Heat 1 tbsp olive oil in a large deep skillet over medium heat and sauté onion 4 minutes. Add 1 lb ground beef and cook 7–9 minutes until it reaches 160°F, breaking it into small pieces; drain excess fat.",
+        "Use a medium yellow onion (about 2½ inches in diameter), taking only the amount listed in the ingredients. Meanwhile finely dice 1 yellow onion. Heat 1 tbsp olive oil in a large deep skillet over medium heat and sauté onion 4 minutes. Add 1 lb ground beef and cook 7–9 minutes until it reaches 160°F, breaking it into small pieces; drain excess fat.",
         "Stir 2 tsp chili powder, 1 tsp cumin, 1 tsp garlic powder and ¾ tsp salt into the beef. Add 2 cups crushed tomatoes and 1 cup beef broth, then simmer uncovered for 7 minutes.",
         "Fold cooked macaroni into the sauce and stir gently until coated. If too thick, add a few spoonfuls of the reserved pasta water. Sprinkle in 2 cups shredded cheddar in portions, stirring after each addition until melted.",
         "Turn off heat and fold in ½ cup sour cream. Rest 3 minutes so the sauce thickens, then divide into six bowls and serve warm."
@@ -1513,10 +1531,16 @@
         "Yellow onion": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "onionSize": null,
+          "onionSize": "medium",
           "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
-          "edibleWeightGrams": null
+          "notes": "Recipe now specifies a medium yellow onion; USDA 110 g for a medium raw onion is a candidate only; edible weight and food-record identity require final approval.",
+          "edibleWeightGrams": null,
+          "usdaPortionCandidate": {
+            "fdcId": 170000,
+            "description": "Onions, raw",
+            "mediumWholeOnionEdibleGrams": 110,
+            "diameterInches": 2.5
+          }
         },
         "Ground cumin": {
           "listedQuantity": 1,
@@ -1697,7 +1721,7 @@
       "steps": [
         "Cut 1½ lb pork shoulder into ½-inch cubes and cook in a covered skillet with 1 cup broth over low heat for 45 minutes",
         "Uncover, increase to medium and simmer until liquid almost evaporates",
-        "Add diced onion and 3 minced garlic cloves, cook 5 minutes",
+        "Use a medium yellow onion (about 2½ inches in diameter), taking only the amount listed in the ingredients. Add diced onion and 3 minced garlic cloves, cook 5 minutes",
         "Stir in two drained 15 oz cans hominy, 2 cups salsa verde and 1 tsp cumin",
         "Cover and cook 20–25 minutes until pork is tender and reaches at least 145°F; rest 3 minutes before serving"
       ],
@@ -1724,10 +1748,16 @@
         "Yellow onion": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "onionSize": null,
+          "onionSize": "medium",
           "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
-          "edibleWeightGrams": null
+          "notes": "Recipe now specifies a medium yellow onion; USDA 110 g for a medium raw onion is a candidate only; edible weight and food-record identity require final approval.",
+          "edibleWeightGrams": null,
+          "usdaPortionCandidate": {
+            "fdcId": 170000,
+            "description": "Onions, raw",
+            "mediumWholeOnionEdibleGrams": 110,
+            "diameterInches": 2.5
+          }
         }
       }
     },
@@ -2488,7 +2518,7 @@
       ],
       "steps": [
         "Peel and cut 1 lb russet potatoes into small cubes. Put them in a saucepan, cover with water, bring to a simmer, and cook 10–12 minutes until fork-tender; drain thoroughly and roughly mash.",
-        "Dice half a yellow onion. Heat 1 tbsp olive oil in a skillet over medium heat and cook onion for 3 minutes. Add ¾ lb ground beef, breaking it apart, and cook until it reaches 160°F; drain excess fat.",
+        "Use a medium yellow onion (about 2½ inches in diameter), taking only the amount listed in the ingredients. Dice half a yellow onion. Heat 1 tbsp olive oil in a skillet over medium heat and cook onion for 3 minutes. Add ¾ lb ground beef, breaking it apart, and cook until it reaches 160°F; drain excess fat.",
         "Stir 1 tsp chili powder, 1 tsp cumin, ½ tsp garlic powder and ¾ tsp salt into the beef. Combine with mashed potatoes and 1 cup shredded cheddar until evenly mixed.",
         "Heat the oven to 425°F and brush a baking sheet with 1 tbsp olive oil. Warm 12 corn tortillas between damp paper towels briefly until pliable, divide filling among them, roll tightly, and arrange seam-side down.",
         "Brush the tops of the rolls with remaining 1 tbsp olive oil. Bake 16–20 minutes, turning halfway, until crisp and hot through. Serve three taquitos per person with ½ cup salsa divided among the four plates."
@@ -2516,10 +2546,16 @@
         "Yellow onion": {
           "listedQuantity": 0.5,
           "listedUnit": "each",
-          "onionSize": null,
+          "onionSize": "medium",
           "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
-          "edibleWeightGrams": null
+          "notes": "Recipe now specifies a medium yellow onion; USDA 110 g for a medium raw onion is a candidate only; edible weight and food-record identity require final approval.",
+          "edibleWeightGrams": null,
+          "usdaPortionCandidate": {
+            "fdcId": 170000,
+            "description": "Onions, raw",
+            "mediumWholeOnionEdibleGrams": 110,
+            "diameterInches": 2.5
+          }
         },
         "Ground cumin": {
           "listedQuantity": 1,
@@ -2701,7 +2737,7 @@
         ]
       ],
       "steps": [
-        "Scrub and peel 1 lb potatoes, then dice into ½-inch cubes. Peel and dice 2 carrots, finely chop 1 yellow onion and 3 garlic cloves, and cut 3 Roma tomatoes into small pieces.",
+        "Use a medium yellow onion (about 2½ inches in diameter), taking only the amount listed in the ingredients. Scrub and peel 1 lb potatoes, then dice into ½-inch cubes. Peel and dice 2 carrots, finely chop 1 yellow onion and 3 garlic cloves, and cut 3 Roma tomatoes into small pieces.",
         "Heat 1 tbsp olive oil in a large deep skillet over medium heat. Cook onion and carrot for 4 minutes, stirring occasionally, then add garlic and cook 30 seconds.",
         "Add 1 lb ground beef, break it into small crumbles, and cook 7–9 minutes until no pink remains and a thermometer reads 160°F. Drain excess fat if necessary.",
         "Stir in potatoes, tomatoes, 1 cup beef broth, 1 tsp cumin, 1 tsp oregano, ¾ tsp salt and ¼ tsp pepper. Bring to a gentle simmer, cover, and cook for 15–20 minutes, stirring occasionally, until potatoes are tender.",
@@ -2730,10 +2766,16 @@
         "Yellow onion": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "onionSize": null,
+          "onionSize": "medium",
           "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
-          "edibleWeightGrams": null
+          "notes": "Recipe now specifies a medium yellow onion; USDA 110 g for a medium raw onion is a candidate only; edible weight and food-record identity require final approval.",
+          "edibleWeightGrams": null,
+          "usdaPortionCandidate": {
+            "fdcId": 170000,
+            "description": "Onions, raw",
+            "mediumWholeOnionEdibleGrams": 110,
+            "diameterInches": 2.5
+          }
         },
         "Ground cumin": {
           "listedQuantity": 1,
@@ -2932,7 +2974,7 @@
         ]
       ],
       "steps": [
-        "Heat 1 tbsp olive oil in a large skillet over medium heat. Finely dice 1 onion and 1 red bell pepper and sauté for 5–6 minutes until soft; add 2 minced garlic cloves for the final 30 seconds.",
+        "Use a medium yellow onion (about 2½ inches in diameter), taking only the amount listed in the ingredients. Heat 1 tbsp olive oil in a large skillet over medium heat. Finely dice 1 onion and 1 red bell pepper and sauté for 5–6 minutes until soft; add 2 minced garlic cloves for the final 30 seconds.",
         "Add 1 lb lean ground beef and break into fine crumbles. Cook about 7–9 minutes until browned and at least 160°F, then drain excess liquid and season with 1 tsp cumin, 1 tsp smoked paprika and ¾ tsp salt.",
         "Transfer the filling to a bowl and let it cool until no longer steaming. Stir in 1 cup shredded Monterey Jack cheese. Heat the oven to 400°F and line two baking sheets with parchment.",
         "Place 12 empanada dough discs on a clean surface. Spoon about 2 tablespoons filling in the center of each disc, fold each one into a half-moon shape, and seal the edges tightly with fork tines.",
@@ -2961,10 +3003,16 @@
         "Yellow onion": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "onionSize": null,
+          "onionSize": "medium",
           "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
-          "edibleWeightGrams": null
+          "notes": "Recipe now specifies a medium yellow onion; USDA 110 g for a medium raw onion is a candidate only; edible weight and food-record identity require final approval.",
+          "edibleWeightGrams": null,
+          "usdaPortionCandidate": {
+            "fdcId": 170000,
+            "description": "Onions, raw",
+            "mediumWholeOnionEdibleGrams": 110,
+            "diameterInches": 2.5
+          }
         },
         "Ground cumin": {
           "listedQuantity": 1,
@@ -3351,7 +3399,7 @@
         ]
       ],
       "steps": [
-        "Thinly slice 1¼ lb flank steak against the grain and toss with 2 tsp chili powder, 1 tsp cumin, ¾ tsp salt and juice from 1 lime. Slice 1 bell pepper and 1 onion into thin strips.",
+        "Use a medium yellow onion (about 2½ inches in diameter), taking only the amount listed in the ingredients. Thinly slice 1¼ lb flank steak against the grain and toss with 2 tsp chili powder, 1 tsp cumin, ¾ tsp salt and juice from 1 lime. Slice 1 bell pepper and 1 onion into thin strips.",
         "Heat 1 tbsp olive oil in a large skillet over medium-high heat and sauté the sliced pepper and onion for about 6–8 minutes until softened and lightly browned; transfer vegetables to a plate.",
         "Add the remaining tablespoon of oil to the skillet and cook steak strips in batches so the pan does not crowd, about 3–5 minutes per batch, until the thickest pieces reach 145°F; rest at least 3 minutes before serving.",
         "Heat 1½ cups previously cooked rice and 1½ cups cooked pinto beans separately until steaming; use properly refrigerated rice and reheat to 165°F. Warm 4 large flour tortillas briefly on a dry skillet until pliable.",
@@ -3397,10 +3445,16 @@
         "Yellow onion": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "onionSize": null,
+          "onionSize": "medium",
           "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
-          "edibleWeightGrams": null
+          "notes": "Recipe now specifies a medium yellow onion; USDA 110 g for a medium raw onion is a candidate only; edible weight and food-record identity require final approval.",
+          "edibleWeightGrams": null,
+          "usdaPortionCandidate": {
+            "fdcId": 170000,
+            "description": "Onions, raw",
+            "mediumWholeOnionEdibleGrams": 110,
+            "diameterInches": 2.5
+          }
         },
         "Ground cumin": {
           "listedQuantity": 1,
@@ -3484,7 +3538,7 @@
         ]
       ],
       "steps": [
-        "Preheat oven to 375°F and grease a deep 9-by-13-inch baking dish lightly. Seed and dice 3 poblano peppers, dice 1 onion, mince 3 garlic cloves and cut 1½ lb chicken breasts into even bite-size pieces.",
+        "Use a medium yellow onion (about 2½ inches in diameter), taking only the amount listed in the ingredients. Preheat oven to 375°F and grease a deep 9-by-13-inch baking dish lightly. Seed and dice 3 poblano peppers, dice 1 onion, mince 3 garlic cloves and cut 1½ lb chicken breasts into even bite-size pieces.",
         "Heat 1 tbsp olive oil in a skillet over medium heat, then cook onion and poblano peppers for 5–6 minutes until starting to soften. Add garlic for 30 seconds and transfer the vegetables to the prepared baking dish.",
         "Add remaining 1 tbsp oil to the skillet, then sear chicken pieces in two batches for 2 minutes per side to build color; the chicken will finish cooking in the oven. Season chicken with 1 tsp cumin, 1 tsp chili powder and 1 tsp salt.",
         "Add 1½ cups dry long-grain rice, 1 cup drained tomatoes, chicken and vegetables to the baking dish, and stir evenly. Pour over 3 cups hot chicken broth, cover tightly with foil and bake 35 minutes.",
@@ -3513,10 +3567,16 @@
         "Yellow onion": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "onionSize": null,
+          "onionSize": "medium",
           "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
-          "edibleWeightGrams": null
+          "notes": "Recipe now specifies a medium yellow onion; USDA 110 g for a medium raw onion is a candidate only; edible weight and food-record identity require final approval.",
+          "edibleWeightGrams": null,
+          "usdaPortionCandidate": {
+            "fdcId": 170000,
+            "description": "Onions, raw",
+            "mediumWholeOnionEdibleGrams": 110,
+            "diameterInches": 2.5
+          }
         },
         "Ground cumin": {
           "listedQuantity": 1,
@@ -3601,7 +3661,7 @@
       ],
       "steps": [
         "Preheat the oven to 400°F. Slice 4 zucchini lengthwise and use a spoon to scoop out the soft centers, leaving sturdy ¼-inch shells. Arrange the eight halves cut-side up in a lightly oiled baking dish and chop the scooped flesh.",
-        "Finely dice half an onion and mince 2 garlic cloves. Heat 1 tbsp olive oil in a skillet over medium heat and sauté onion for 3 minutes; add the chopped zucchini flesh and garlic and cook 2 minutes more.",
+        "Use a medium yellow onion (about 2½ inches in diameter), taking only the amount listed in the ingredients. Finely dice half an onion and mince 2 garlic cloves. Heat 1 tbsp olive oil in a skillet over medium heat and sauté onion for 3 minutes; add the chopped zucchini flesh and garlic and cook 2 minutes more.",
         "Add 1 lb lean ground beef, breaking it apart with a wooden spoon, and cook 7–9 minutes until fully browned and the center reaches 160°F. Drain excess fat, then add 2 tsp chili powder, 1 tsp cumin and ½ tsp salt.",
         "Stir in 1 cup cooked rice, 1 cup drained black beans and 1 cup drained diced tomatoes. Heat the mixture until steaming, then spoon evenly into the eight zucchini boats. Cover tightly with foil and bake 20 minutes.",
         "Remove foil, sprinkle 1 cup shredded cheddar evenly over the boats and bake another 8–12 minutes until the zucchini is fork-tender, the cheese melts and the filling reaches 165°F. Rest 3 minutes and garnish with ¼ cup chopped cilantro before serving two halves per person."
@@ -3629,10 +3689,16 @@
         "Yellow onion": {
           "listedQuantity": 0.5,
           "listedUnit": "each",
-          "onionSize": null,
+          "onionSize": "medium",
           "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
-          "edibleWeightGrams": null
+          "notes": "Recipe now specifies a medium yellow onion; USDA 110 g for a medium raw onion is a candidate only; edible weight and food-record identity require final approval.",
+          "edibleWeightGrams": null,
+          "usdaPortionCandidate": {
+            "fdcId": 170000,
+            "description": "Onions, raw",
+            "mediumWholeOnionEdibleGrams": 110,
+            "diameterInches": 2.5
+          }
         },
         "Ground cumin": {
           "listedQuantity": 1,
@@ -4050,7 +4116,7 @@
         ]
       ],
       "steps": [
-        "Dice 1 onion and mince 3 garlic cloves; drain and rinse 1½ cups kidney beans, measure 12 oz dry elbow macaroni and set out the remaining ingredients.",
+        "Use a medium yellow onion (about 2½ inches in diameter), taking only the amount listed in the ingredients. Dice 1 onion and mince 3 garlic cloves; drain and rinse 1½ cups kidney beans, measure 12 oz dry elbow macaroni and set out the remaining ingredients.",
         "Heat 1 tbsp olive oil in a deep skillet or Dutch oven over medium heat; sauté onion for 4–5 minutes, add garlic for 30 seconds, then add 1 lb ground beef and cook while breaking it apart until it reaches 160°F; drain excess fat.",
         "Stir in 2 tbsp tomato paste, 2 tsp chili powder, 1 tsp cumin, 1 tsp smoked paprika and ½ tsp salt; cook for 1 minute, then add 2 cups diced tomatoes, 1½ cups broth and the beans.",
         "Bring a separate large pot of water to a boil, cook the 12 oz macaroni according to package directions until barely al dente, reserve ½ cup cooking water, and drain; meanwhile simmer the beef mixture uncovered for 8–10 minutes.",
@@ -4078,10 +4144,16 @@
         "Yellow onion": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "onionSize": null,
+          "onionSize": "medium",
           "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
-          "edibleWeightGrams": null
+          "notes": "Recipe now specifies a medium yellow onion; USDA 110 g for a medium raw onion is a candidate only; edible weight and food-record identity require final approval.",
+          "edibleWeightGrams": null,
+          "usdaPortionCandidate": {
+            "fdcId": 170000,
+            "description": "Onions, raw",
+            "mediumWholeOnionEdibleGrams": 110,
+            "diameterInches": 2.5
+          }
         },
         "Ground cumin": {
           "listedQuantity": 1,
@@ -4151,7 +4223,7 @@
         ]
       ],
       "steps": [
-        "Finely dice half an onion and 1 bell pepper, chop ¼ cup cilantro, and crack 8 eggs into a bowl; whisk with ¼ tsp salt until whites and yolks are combined.",
+        "Use a medium yellow onion (about 2½ inches in diameter), taking only the amount listed in the ingredients. Finely dice half an onion and 1 bell pepper, chop ¼ cup cilantro, and crack 8 eggs into a bowl; whisk with ¼ tsp salt until whites and yolks are combined.",
         "Heat 1 tsp olive oil in a large nonstick skillet over medium heat, sauté the onion and pepper for 4–5 minutes, and transfer them to a clean plate.",
         "Add 12 oz raw Mexican-style chorizo to the skillet, breaking it into small crumbles; cook thoroughly for 7–9 minutes until the pork chorizo reaches 160°F, then drain excess rendered fat if needed.",
         "Lower the heat to medium-low, return the vegetables to the skillet and add the beaten eggs; stir slowly until eggs are softly set and fully cooked to 160°F, taking care not to dry them out.",
@@ -4179,10 +4251,16 @@
         "Yellow onion": {
           "listedQuantity": 0.5,
           "listedUnit": "each",
-          "onionSize": null,
+          "onionSize": "medium",
           "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
-          "edibleWeightGrams": null
+          "notes": "Recipe now specifies a medium yellow onion; USDA 110 g for a medium raw onion is a candidate only; edible weight and food-record identity require final approval.",
+          "edibleWeightGrams": null,
+          "usdaPortionCandidate": {
+            "fdcId": 170000,
+            "description": "Onions, raw",
+            "mediumWholeOnionEdibleGrams": 110,
+            "diameterInches": 2.5
+          }
         }
       }
     },
@@ -4244,7 +4322,7 @@
         ]
       ],
       "steps": [
-        "Peel 1 lb russet potatoes and cut into even ½-inch cubes, then dice half a yellow onion; pat the potatoes dry to help them brown instead of steaming.",
+        "Use a medium yellow onion (about 2½ inches in diameter), taking only the amount listed in the ingredients. Peel 1 lb russet potatoes and cut into even ½-inch cubes, then dice half a yellow onion; pat the potatoes dry to help them brown instead of steaming.",
         "Heat 1 tbsp olive oil in a wide skillet over medium heat and cook potato cubes and onion with ½ tsp cumin and ½ tsp salt, covered for the first 8 minutes then uncovered for another 8–10 minutes, until potatoes are tender and browned.",
         "Transfer the potatoes to a plate; crumble 12 oz raw pork chorizo into the skillet, cook over medium heat for 7–9 minutes until it reaches 160°F and drain excess grease.",
         "Beat 4 eggs and pour them into the cooked chorizo over medium-low heat, stirring until the eggs are fully cooked; return potatoes to the pan and toss briefly with the chorizo and eggs.",
@@ -4272,10 +4350,16 @@
         "Yellow onion": {
           "listedQuantity": 0.5,
           "listedUnit": "each",
-          "onionSize": null,
+          "onionSize": "medium",
           "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
-          "edibleWeightGrams": null
+          "notes": "Recipe now specifies a medium yellow onion; USDA 110 g for a medium raw onion is a candidate only; edible weight and food-record identity require final approval.",
+          "edibleWeightGrams": null,
+          "usdaPortionCandidate": {
+            "fdcId": 170000,
+            "description": "Onions, raw",
+            "mediumWholeOnionEdibleGrams": 110,
+            "diameterInches": 2.5
+          }
         },
         "Ground cumin": {
           "listedQuantity": 0.5,
@@ -4485,7 +4569,7 @@
       ],
       "steps": [
         "Set oven to broil and place 3 whole poblanos on a foil-lined sheet pan. Broil 4–6 minutes per side until the skins blister, then cover the peppers in a bowl for 10 minutes, peel away loose blackened skin, discard the seeds and chop the flesh.",
-        "Dice 1 onion and 1 lb peeled potatoes, and mince 3 garlic cloves. Heat 1 tbsp olive oil over medium heat in a large soup pot, cook the onion for 4 minutes, add the garlic for 30 seconds and stir in 1 tsp cumin.",
+        "Use a medium yellow onion (about 2½ inches in diameter), taking only the amount listed in the ingredients. Dice 1 onion and 1 lb peeled potatoes, and mince 3 garlic cloves. Heat 1 tbsp olive oil over medium heat in a large soup pot, cook the onion for 4 minutes, add the garlic for 30 seconds and stir in 1 tsp cumin.",
         "Pour 5 cups chicken broth into the pot and add potatoes, roasted poblano strips and 1¼ lb chicken breasts. Bring to a gentle simmer, cover partially and cook 18–25 minutes until the potatoes are tender and the chicken reaches 165°F.",
         "Lift chicken onto a clean board and shred with two forks. Mash several pieces of potato directly in the pot to thicken the soup naturally, then return chicken and add 1 cup frozen corn. Simmer for 5 minutes until the corn is fully heated.",
         "Lower the heat and stir in ¾ cup heavy cream, 1 tsp salt and ½ tsp pepper; warm gently for 3 minutes without hard boiling. Finish with the juice of 1 lime and ¼ cup chopped cilantro, then divide into six bowls."
@@ -4530,10 +4614,16 @@
         "Yellow onion": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "onionSize": null,
+          "onionSize": "medium",
           "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
-          "edibleWeightGrams": null
+          "notes": "Recipe now specifies a medium yellow onion; USDA 110 g for a medium raw onion is a candidate only; edible weight and food-record identity require final approval.",
+          "edibleWeightGrams": null,
+          "usdaPortionCandidate": {
+            "fdcId": 170000,
+            "description": "Onions, raw",
+            "mediumWholeOnionEdibleGrams": 110,
+            "diameterInches": 2.5
+          }
         },
         "Ground cumin": {
           "listedQuantity": 1,
@@ -4622,7 +4712,7 @@
         ]
       ],
       "steps": [
-        "Finely grate half of 1 onion and mince 1 garlic clove. In a bowl gently combine 1½ lb ground beef, 1 egg, ½ cup breadcrumbs, grated onion, garlic, 1 tsp cumin, 1 tsp chili powder and ¾ tsp salt, mixing just until the ingredients hold together.",
+        "Use a medium yellow onion (about 2½ inches in diameter), taking only the amount listed in the ingredients. Finely grate half of 1 onion and mince 1 garlic clove. In a bowl gently combine 1½ lb ground beef, 1 egg, ½ cup breadcrumbs, grated onion, garlic, 1 tsp cumin, 1 tsp chili powder and ¾ tsp salt, mixing just until the ingredients hold together.",
         "Form approximately 24 equal meatballs with lightly moistened hands and arrange on a clean plate. Heat 1 tbsp olive oil in a large skillet over medium heat and brown meatballs in batches for about 4 minutes, turning to color the surfaces; they will finish cooking in the sauce.",
         "Finely dice the remaining half onion and mince 2 garlic cloves. Add them to the skillet and cook for 3 minutes, then add 2 cups crushed tomatoes, 1 cup beef broth, 1 chopped chipotle pepper, the remaining 1 tsp cumin, 1 tsp chili powder and ½ tsp salt.",
         "Return meatballs to the sauce, cover and simmer gently for 15–20 minutes, turning once, until their centers reach 160°F. If the sauce becomes too thick, stir in water by the tablespoon; keep the meatballs partly submerged.",
@@ -4651,10 +4741,16 @@
         "Yellow onion": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "onionSize": null,
+          "onionSize": "medium",
           "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
-          "edibleWeightGrams": null
+          "notes": "Recipe now specifies a medium yellow onion; USDA 110 g for a medium raw onion is a candidate only; edible weight and food-record identity require final approval.",
+          "edibleWeightGrams": null,
+          "usdaPortionCandidate": {
+            "fdcId": 170000,
+            "description": "Onions, raw",
+            "mediumWholeOnionEdibleGrams": 110,
+            "diameterInches": 2.5
+          }
         },
         "Ground cumin": {
           "listedQuantity": 2,
@@ -4748,7 +4844,7 @@
         ]
       ],
       "steps": [
-        "Dice 1 onion and 1 bell pepper and mince 3 garlic cloves. Drain and rinse enough canned kidney and black beans to make 2 cups kidney beans and 1 cup black beans.",
+        "Use a medium yellow onion (about 2½ inches in diameter), taking only the amount listed in the ingredients. Dice 1 onion and 1 bell pepper and mince 3 garlic cloves. Drain and rinse enough canned kidney and black beans to make 2 cups kidney beans and 1 cup black beans.",
         "Heat 1 tbsp olive oil in a heavy pot over medium heat. Add onion and bell pepper and cook 5 minutes until softened, then stir in the garlic for 30 seconds.",
         "Add 1½ lb ground turkey, break into small pieces and cook 7–9 minutes until no pink remains and the turkey reaches 165°F. Stir in 2 tbsp chili powder, 2 tsp cumin, 1 tsp smoked paprika and 1 tsp salt.",
         "Finely mince 2 canned chipotle peppers and add them with 3 cups crushed tomatoes, 1 cup chicken broth and the drained beans. Bring to a low simmer, cover partly and cook 25–30 minutes, stirring occasionally so the bottom does not scorch.",
@@ -4777,10 +4873,16 @@
         "Yellow onion": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "onionSize": null,
+          "onionSize": "medium",
           "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
-          "edibleWeightGrams": null
+          "notes": "Recipe now specifies a medium yellow onion; USDA 110 g for a medium raw onion is a candidate only; edible weight and food-record identity require final approval.",
+          "edibleWeightGrams": null,
+          "usdaPortionCandidate": {
+            "fdcId": 170000,
+            "description": "Onions, raw",
+            "mediumWholeOnionEdibleGrams": 110,
+            "diameterInches": 2.5
+          }
         },
         "Ground cumin": {
           "listedQuantity": 2,
@@ -5625,7 +5727,7 @@
         ]
       ],
       "steps": [
-        "Dice 1 onion, 3 carrots and 3 celery stalks. Heat 1 tbsp oil in a large soup pot and sauté the vegetables for 6–8 minutes.",
+        "Use a medium yellow onion (about 2½ inches in diameter), taking only the amount listed in the ingredients. Dice 1 onion, 3 carrots and 3 celery stalks. Heat 1 tbsp oil in a large soup pot and sauté the vegetables for 6–8 minutes.",
         "Add 8 cups broth, 1 cup rinsed wild rice blend and 1 tsp dried thyme. Bring to a simmer, cover and cook 35–45 minutes or until the rice is tender; stir occasionally.",
         "Stir in 1½ lb fully cooked shredded turkey and simmer 5 minutes until thoroughly heated to 165°F.",
         "Pour in 1 cup milk and gently heat without boiling for another 2–3 minutes. Add water if needed to loosen the soup.",
@@ -5645,10 +5747,16 @@
         "Yellow onion": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "onionSize": null,
+          "onionSize": "medium",
           "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
-          "edibleWeightGrams": null
+          "notes": "Recipe now specifies a medium yellow onion; USDA 110 g for a medium raw onion is a candidate only; edible weight and food-record identity require final approval.",
+          "edibleWeightGrams": null,
+          "usdaPortionCandidate": {
+            "fdcId": 170000,
+            "description": "Onions, raw",
+            "mediumWholeOnionEdibleGrams": 110,
+            "diameterInches": 2.5
+          }
         }
       }
     },
@@ -5714,7 +5822,7 @@
       ],
       "steps": [
         "Cut 1½ lb chicken thighs into 2-inch pieces and pat dry. Heat 1 tbsp oil in a deep skillet over medium-high heat and brown chicken for 5–6 minutes.",
-        "Add 1 diced onion, 1 tsp cumin and ½ tsp cinnamon, stirring for 3 minutes until fragrant and softened.",
+        "Use a medium yellow onion (about 2½ inches in diameter), taking only the amount listed in the ingredients. Add 1 diced onion, 1 tsp cumin and ½ tsp cinnamon, stirring for 3 minutes until fragrant and softened.",
         "Pour in 1 cup chicken broth, add ¾ cup chopped dried apricots and one drained 15 oz can chickpeas. Cover and simmer 15–20 minutes until chicken reaches 165°F.",
         "In a separate saucepan bring remaining 1 cup broth plus ½ cup water to a boil. Stir in 1½ cups couscous, remove from heat, cover and stand 5 minutes; fluff with a fork.",
         "Divide couscous among four bowls and spoon chicken, chickpeas, apricots and spiced sauce on top."
@@ -5733,10 +5841,16 @@
         "Yellow onion": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "onionSize": null,
+          "onionSize": "medium",
           "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
-          "edibleWeightGrams": null
+          "notes": "Recipe now specifies a medium yellow onion; USDA 110 g for a medium raw onion is a candidate only; edible weight and food-record identity require final approval.",
+          "edibleWeightGrams": null,
+          "usdaPortionCandidate": {
+            "fdcId": 170000,
+            "description": "Onions, raw",
+            "mediumWholeOnionEdibleGrams": 110,
+            "diameterInches": 2.5
+          }
         },
         "Ground cumin": {
           "listedQuantity": 1,
@@ -6174,7 +6288,7 @@
         ]
       ],
       "steps": [
-        "Dice 1 onion, 3 carrots and 3 celery stalks. Heat 1 tbsp olive oil in a soup pot; sauté vegetables for 6–8 minutes.",
+        "Use a medium yellow onion (about 2½ inches in diameter), taking only the amount listed in the ingredients. Dice 1 onion, 3 carrots and 3 celery stalks. Heat 1 tbsp olive oil in a soup pot; sauté vegetables for 6–8 minutes.",
         "Add 8 cups chicken broth and 1 tsp Italian seasoning. Bring to a boil and simmer until carrots are almost tender, about 8 minutes.",
         "Add 18 oz refrigerated cheese tortellini and simmer for the time on the package, generally 3–5 minutes.",
         "Stir in 1½ lb fully cooked shredded chicken and 3 cups spinach. Simmer 3 minutes until chicken is hot and reaches 165°F and spinach wilts.",
@@ -6194,10 +6308,16 @@
         "Yellow onion": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "onionSize": null,
+          "onionSize": "medium",
           "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
-          "edibleWeightGrams": null
+          "notes": "Recipe now specifies a medium yellow onion; USDA 110 g for a medium raw onion is a candidate only; edible weight and food-record identity require final approval.",
+          "edibleWeightGrams": null,
+          "usdaPortionCandidate": {
+            "fdcId": 170000,
+            "description": "Onions, raw",
+            "mediumWholeOnionEdibleGrams": 110,
+            "diameterInches": 2.5
+          }
         }
       }
     },
@@ -6405,7 +6525,7 @@
       "steps": [
         "Preheat oven to 350°F and grease a 9-by-13-inch baking dish with 1 tbsp butter.",
         "Cook 1 lb crumbled breakfast sausage in a skillet over medium heat until browned and reaches 160°F; drain excess fat.",
-        "Whisk 10 eggs and 1 cup milk in a large bowl. Stir in 1½ cups cheddar, 1 diced bell pepper and ½ finely diced onion.",
+        "Use a medium yellow onion (about 2½ inches in diameter), taking only the amount listed in the ingredients. Whisk 10 eggs and 1 cup milk in a large bowl. Stir in 1½ cups cheddar, 1 diced bell pepper and ½ finely diced onion.",
         "Cube 6 slices bread; scatter in the prepared dish. Distribute sausage evenly and pour egg mixture over everything.",
         "Bake uncovered 35–40 minutes until middle is set and reaches 160°F. Rest 5 minutes and slice into six squares."
       ],
@@ -6423,10 +6543,16 @@
         "Yellow onion": {
           "listedQuantity": 0.5,
           "listedUnit": "each",
-          "onionSize": null,
+          "onionSize": "medium",
           "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
-          "edibleWeightGrams": null
+          "notes": "Recipe now specifies a medium yellow onion; USDA 110 g for a medium raw onion is a candidate only; edible weight and food-record identity require final approval.",
+          "edibleWeightGrams": null,
+          "usdaPortionCandidate": {
+            "fdcId": 170000,
+            "description": "Onions, raw",
+            "mediumWholeOnionEdibleGrams": 110,
+            "diameterInches": 2.5
+          }
         }
       }
     },
@@ -6557,7 +6683,7 @@
       "steps": [
         "Pat 1½ lb catfish fillets dry and season evenly with 2 tsp Cajun seasoning",
         "Heat 1 tbsp oil in a nonstick skillet; cook catfish 3–5 minutes per side until 145°F and transfer to a plate",
-        "Heat remaining 1 tbsp oil and sauté ½ diced onion, one diced bell pepper and 2 cups sliced okra for 6 minutes",
+        "Use a medium yellow onion (about 2½ inches in diameter), taking only the amount listed in the ingredients. Heat remaining 1 tbsp oil and sauté ½ diced onion, one diced bell pepper and 2 cups sliced okra for 6 minutes",
         "Add 14 oz tomatoes and simmer 7 minutes until okra tender and relish thickened",
         "Spoon warm tomato okra relish over fish and serve with lemon wedges"
       ],
@@ -6579,10 +6705,16 @@
         "Yellow onion": {
           "listedQuantity": 0.5,
           "listedUnit": "each",
-          "onionSize": null,
+          "onionSize": "medium",
           "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
-          "edibleWeightGrams": null
+          "notes": "Recipe now specifies a medium yellow onion; USDA 110 g for a medium raw onion is a candidate only; edible weight and food-record identity require final approval.",
+          "edibleWeightGrams": null,
+          "usdaPortionCandidate": {
+            "fdcId": 170000,
+            "description": "Onions, raw",
+            "mediumWholeOnionEdibleGrams": 110,
+            "diameterInches": 2.5
+          }
         }
       }
     },
@@ -7075,7 +7207,7 @@
         ]
       ],
       "steps": [
-        "Heat 1 tbsp olive oil in a deep skillet over medium heat. Cook ½ chopped onion for 4 minutes and 4 minced garlic cloves for 30 seconds.",
+        "Use a medium yellow onion (about 2½ inches in diameter), taking only the amount listed in the ingredients. Heat 1 tbsp olive oil in a deep skillet over medium heat. Cook ½ chopped onion for 4 minutes and 4 minced garlic cloves for 30 seconds.",
         "Stir in 28 oz crushed tomatoes and simmer uncovered 8 minutes, stirring occasionally.",
         "Add ¾ cup cream and gently simmer 2 minutes without boiling vigorously.",
         "Stir in 20 oz refrigerated cheese tortellini; cover and cook according to package, about 5–7 minutes, adding ¼ cup water if sauce gets too thick.",
@@ -7095,10 +7227,16 @@
         "Yellow onion": {
           "listedQuantity": 0.5,
           "listedUnit": "each",
-          "onionSize": null,
+          "onionSize": "medium",
           "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
-          "edibleWeightGrams": null
+          "notes": "Recipe now specifies a medium yellow onion; USDA 110 g for a medium raw onion is a candidate only; edible weight and food-record identity require final approval.",
+          "edibleWeightGrams": null,
+          "usdaPortionCandidate": {
+            "fdcId": 170000,
+            "description": "Onions, raw",
+            "mediumWholeOnionEdibleGrams": 110,
+            "diameterInches": 2.5
+          }
         }
       }
     },
@@ -7232,7 +7370,7 @@
         ]
       ],
       "steps": [
-        "Slice 1½ lb fully cooked smoked sausage into coins, 1 small cabbage into ribbons, 2 apples into wedges and 1 onion thinly",
+        "Use a medium yellow onion (about 2½ inches in diameter), taking only the amount listed in the ingredients. Slice 1½ lb fully cooked smoked sausage into coins, 1 small cabbage into ribbons, 2 apples into wedges and 1 onion thinly",
         "Heat 1 tbsp olive oil in wide skillet and brown sausage for 5 minutes, transfer to plate",
         "Add cabbage and onion with ¼ cup water and cover 8 minutes to soften",
         "Stir in apples, 2 tbsp cider vinegar and 1 tbsp Dijon; cook 5–7 minutes",
@@ -7256,10 +7394,16 @@
         "Yellow onion": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "onionSize": null,
+          "onionSize": "medium",
           "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
-          "edibleWeightGrams": null
+          "notes": "Recipe now specifies a medium yellow onion; USDA 110 g for a medium raw onion is a candidate only; edible weight and food-record identity require final approval.",
+          "edibleWeightGrams": null,
+          "usdaPortionCandidate": {
+            "fdcId": 170000,
+            "description": "Onions, raw",
+            "mediumWholeOnionEdibleGrams": 110,
+            "diameterInches": 2.5
+          }
         }
       }
     },
@@ -7470,7 +7614,7 @@
         ]
       ],
       "steps": [
-        "Put 2 lb chicken breasts in slow cooker with 1 diced onion, two drained 15 oz cans white beans, 8 oz green chiles, 4 cups broth, 2 tsp cumin and 1 tsp chili powder.",
+        "Use a medium yellow onion (about 2½ inches in diameter), taking only the amount listed in the ingredients. Put 2 lb chicken breasts in slow cooker with 1 diced onion, two drained 15 oz cans white beans, 8 oz green chiles, 4 cups broth, 2 tsp cumin and 1 tsp chili powder.",
         "Cover and cook on LOW for 5–6 hours, until chicken reaches 165°F and shreds easily.",
         "Transfer chicken to a board, shred with forks and return to the slow cooker.",
         "Cube 8 oz cream cheese, stir into hot chili and cook on HIGH 15–20 minutes until completely melted.",
@@ -7507,10 +7651,16 @@
         "Yellow onion": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "onionSize": null,
+          "onionSize": "medium",
           "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
-          "edibleWeightGrams": null
+          "notes": "Recipe now specifies a medium yellow onion; USDA 110 g for a medium raw onion is a candidate only; edible weight and food-record identity require final approval.",
+          "edibleWeightGrams": null,
+          "usdaPortionCandidate": {
+            "fdcId": 170000,
+            "description": "Onions, raw",
+            "mediumWholeOnionEdibleGrams": 110,
+            "diameterInches": 2.5
+          }
         },
         "Ground cumin": {
           "listedQuantity": 2,
@@ -7731,7 +7881,7 @@
       ],
       "steps": [
         "Heat oven to 325°F. Sear 3 lb short ribs in Dutch oven over medium-high for 3 minutes per side",
-        "Remove ribs and soften one sliced onion and 4 minced garlic cloves for 5 minutes",
+        "Use a medium yellow onion (about 2½ inches in diameter), taking only the amount listed in the ingredients. Remove ribs and soften one sliced onion and 4 minced garlic cloves for 5 minutes",
         "Add ½ cup balsamic and 2 cups broth, return short ribs, cover and braise 2½–3 hours until fork tender",
         "Cook 1 cup quick polenta in 2 cups milk and 2 cups water per package and stir in ½ cup Parmesan",
         "Spoon polenta into six bowls and top with ribs and braising juices"
@@ -7754,10 +7904,16 @@
         "Yellow onion": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "onionSize": null,
+          "onionSize": "medium",
           "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
-          "edibleWeightGrams": null
+          "notes": "Recipe now specifies a medium yellow onion; USDA 110 g for a medium raw onion is a candidate only; edible weight and food-record identity require final approval.",
+          "edibleWeightGrams": null,
+          "usdaPortionCandidate": {
+            "fdcId": 170000,
+            "description": "Onions, raw",
+            "mediumWholeOnionEdibleGrams": 110,
+            "diameterInches": 2.5
+          }
         }
       }
     },
@@ -8114,7 +8270,7 @@
         ]
       ],
       "steps": [
-        "Heat 1 tbsp oil in a large pot and soften 1 diced onion and 1 diced bell pepper for 6 minutes.",
+        "Use a medium yellow onion (about 2½ inches in diameter), taking only the amount listed in the ingredients. Heat 1 tbsp oil in a large pot and soften 1 diced onion and 1 diced bell pepper for 6 minutes.",
         "Add 2 lb ground beef; break it up and brown for 8–10 minutes until 160°F, draining excess fat.",
         "Stir in 2 tbsp chili powder and 2 tsp cumin for 30 seconds.",
         "Add two drained 15 oz cans kidney beans, 28 oz crushed tomatoes and 15 oz tomato sauce. Bring to a simmer.",
@@ -8134,10 +8290,16 @@
         "Yellow onion": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "onionSize": null,
+          "onionSize": "medium",
           "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
-          "edibleWeightGrams": null
+          "notes": "Recipe now specifies a medium yellow onion; USDA 110 g for a medium raw onion is a candidate only; edible weight and food-record identity require final approval.",
+          "edibleWeightGrams": null,
+          "usdaPortionCandidate": {
+            "fdcId": 170000,
+            "description": "Onions, raw",
+            "mediumWholeOnionEdibleGrams": 110,
+            "diameterInches": 2.5
+          }
         },
         "Ground cumin": {
           "listedQuantity": 2,
@@ -8275,7 +8437,7 @@
       "steps": [
         "Preheat oven to 400°F. Pat 1½ lb pork tenderloin dry; heat 1 tbsp oil in an oven-safe skillet and sear on all sides for 5 minutes total.",
         "Transfer skillet to oven and roast 15–22 minutes until pork reaches 145°F; move to board and rest 3 minutes.",
-        "While pork rests, place skillet over medium heat and add ½ thinly sliced onion, 2 cored sliced apples and 2 tbsp butter. Cook 5 minutes.",
+        "Use a medium yellow onion (about 2½ inches in diameter), taking only the amount listed in the ingredients. While pork rests, place skillet over medium heat and add ½ thinly sliced onion, 2 cored sliced apples and 2 tbsp butter. Cook 5 minutes.",
         "Pour 1 cup apple cider into the pan and scrape browned bits; add 1 tbsp Dijon and 1 tsp thyme, then simmer 5 minutes until slightly reduced.",
         "Slice pork into medallions and divide among four plates; spoon apple and onion sauce on top."
       ],
@@ -8293,10 +8455,16 @@
         "Yellow onion": {
           "listedQuantity": 0.5,
           "listedUnit": "each",
-          "onionSize": null,
+          "onionSize": "medium",
           "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
-          "edibleWeightGrams": null
+          "notes": "Recipe now specifies a medium yellow onion; USDA 110 g for a medium raw onion is a candidate only; edible weight and food-record identity require final approval.",
+          "edibleWeightGrams": null,
+          "usdaPortionCandidate": {
+            "fdcId": 170000,
+            "description": "Onions, raw",
+            "mediumWholeOnionEdibleGrams": 110,
+            "diameterInches": 2.5
+          }
         }
       }
     },
@@ -8430,7 +8598,7 @@
       ],
       "steps": [
         "Dice 1½ lb potatoes into ½-inch cubes and boil in salted water 6 minutes; drain and dry.",
-        "Heat 1 tbsp oil in a skillet and cook diced onion and pepper 4 minutes. Add 12 oz fresh chorizo, crumble and cook until 160°F.",
+        "Use a medium yellow onion (about 2½ inches in diameter), taking only the amount listed in the ingredients. Heat 1 tbsp oil in a skillet and cook diced onion and pepper 4 minutes. Add 12 oz fresh chorizo, crumble and cook until 160°F.",
         "Add cooked potatoes and 1 tsp smoked paprika; sauté 8–10 minutes until golden and crisp, turning gently.",
         "Make four wells in hash and crack an egg into each. Cover and cook 4–6 minutes until whites and yolks reach 160°F.",
         "Garnish with ¼ cup chopped cilantro and divide the hash so each serving has one egg."
@@ -8449,10 +8617,16 @@
         "Yellow onion": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "onionSize": null,
+          "onionSize": "medium",
           "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
-          "edibleWeightGrams": null
+          "notes": "Recipe now specifies a medium yellow onion; USDA 110 g for a medium raw onion is a candidate only; edible weight and food-record identity require final approval.",
+          "edibleWeightGrams": null,
+          "usdaPortionCandidate": {
+            "fdcId": 170000,
+            "description": "Onions, raw",
+            "mediumWholeOnionEdibleGrams": 110,
+            "diameterInches": 2.5
+          }
         }
       }
     },
@@ -8936,7 +9110,7 @@
       ],
       "steps": [
         "Preheat oven to 375°F and grease a loaf pan",
-        "Mix 2 lb ground turkey, 2 eggs, ¾ cup breadcrumbs, ½ cup milk, 1 diced onion, 3 minced garlic cloves and 1 tbsp rosemary",
+        "Use a medium yellow onion (about 2½ inches in diameter), taking only the amount listed in the ingredients. Mix 2 lb ground turkey, 2 eggs, ¾ cup breadcrumbs, ½ cup milk, 1 diced onion, 3 minced garlic cloves and 1 tbsp rosemary",
         "Shape firmly into loaf pan without compacting too tightly",
         "Spread ½ cup ketchup evenly on top and bake 50–60 minutes until center reaches 165°F",
         "Rest 10 minutes before cutting into eight equal slices"
@@ -8955,10 +9129,16 @@
         "Yellow onion": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "onionSize": null,
+          "onionSize": "medium",
           "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
-          "edibleWeightGrams": null
+          "notes": "Recipe now specifies a medium yellow onion; USDA 110 g for a medium raw onion is a candidate only; edible weight and food-record identity require final approval.",
+          "edibleWeightGrams": null,
+          "usdaPortionCandidate": {
+            "fdcId": 170000,
+            "description": "Onions, raw",
+            "mediumWholeOnionEdibleGrams": 110,
+            "diameterInches": 2.5
+          }
         }
       }
     },
@@ -9019,7 +9199,7 @@
       ],
       "steps": [
         "Cook 1½ cups jasmine rice according to package directions",
-        "Heat a deep skillet, cook 1 diced onion and 2 sliced peppers for 5 minutes",
+        "Use a medium yellow onion (about 2½ inches in diameter), taking only the amount listed in the ingredients. Heat a deep skillet, cook 1 diced onion and 2 sliced peppers for 5 minutes",
         "Stir in 2 tbsp red curry paste and 1 tbsp grated ginger for 1 minute",
         "Add 1½ lb diced chicken thighs and 14 oz coconut milk; simmer covered for 15–18 minutes until chicken reaches 165°F",
         "Finish with juice from 2 limes and spoon over rice in four servings"
@@ -9055,10 +9235,16 @@
         "Yellow onion": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "onionSize": null,
+          "onionSize": "medium",
           "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
-          "edibleWeightGrams": null
+          "notes": "Recipe now specifies a medium yellow onion; USDA 110 g for a medium raw onion is a candidate only; edible weight and food-record identity require final approval.",
+          "edibleWeightGrams": null,
+          "usdaPortionCandidate": {
+            "fdcId": 170000,
+            "description": "Onions, raw",
+            "mediumWholeOnionEdibleGrams": 110,
+            "diameterInches": 2.5
+          }
         }
       }
     },
@@ -9118,7 +9304,7 @@
         ]
       ],
       "steps": [
-        "Heat 1 tbsp olive oil in a large soup pot and soften diced onion, 3 carrots and 3 celery stalks for 7 minutes",
+        "Use a medium yellow onion (about 2½ inches in diameter), taking only the amount listed in the ingredients. Heat 1 tbsp olive oil in a large soup pot and soften diced onion, 3 carrots and 3 celery stalks for 7 minutes",
         "Add 1 tsp smoked paprika and stir 30 seconds",
         "Add 7 cups broth, three drained 15 oz cans navy beans and 1½ lb fully cooked ham",
         "Simmer partially covered for 25 minutes until vegetables soften",
@@ -9138,10 +9324,16 @@
         "Yellow onion": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "onionSize": null,
+          "onionSize": "medium",
           "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
-          "edibleWeightGrams": null
+          "notes": "Recipe now specifies a medium yellow onion; USDA 110 g for a medium raw onion is a candidate only; edible weight and food-record identity require final approval.",
+          "edibleWeightGrams": null,
+          "usdaPortionCandidate": {
+            "fdcId": 170000,
+            "description": "Onions, raw",
+            "mediumWholeOnionEdibleGrams": 110,
+            "diameterInches": 2.5
+          }
         }
       }
     },
@@ -9412,7 +9604,7 @@
       "steps": [
         "Warm 5 cups broth in a saucepan; cube 1½ lb peeled squash into small pieces",
         "Brown 1 lb sausage in a heavy skillet until 160°F; transfer to a plate",
-        "Melt 2 tbsp butter, cook diced onion 4 minutes, stir in 1½ cups Arborio rice and toast 2 minutes",
+        "Use a medium yellow onion (about 2½ inches in diameter), taking only the amount listed in the ingredients. Melt 2 tbsp butter, cook diced onion 4 minutes, stir in 1½ cups Arborio rice and toast 2 minutes",
         "Add warm broth one ladle at a time, stirring often; add squash after 10 minutes and continue adding broth for 20–25 minutes total until rice and squash are tender",
         "Fold in sausage, ¾ cup Parmesan and 1 tbsp chopped sage; divide into six bowls"
       ],
@@ -9430,10 +9622,16 @@
         "Yellow onion": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "onionSize": null,
+          "onionSize": "medium",
           "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
-          "edibleWeightGrams": null
+          "notes": "Recipe now specifies a medium yellow onion; USDA 110 g for a medium raw onion is a candidate only; edible weight and food-record identity require final approval.",
+          "edibleWeightGrams": null,
+          "usdaPortionCandidate": {
+            "fdcId": 170000,
+            "description": "Onions, raw",
+            "mediumWholeOnionEdibleGrams": 110,
+            "diameterInches": 2.5
+          }
         }
       }
     },
@@ -9566,7 +9764,7 @@
         ]
       ],
       "steps": [
-        "Melt 2 tbsp butter in a soup pot and soften 1 diced onion for 5 minutes",
+        "Use a medium yellow onion (about 2½ inches in diameter), taking only the amount listed in the ingredients. Melt 2 tbsp butter in a soup pot and soften 1 diced onion for 5 minutes",
         "Stir in ¼ cup flour for 1 minute then gradually whisk in 5 cups broth and 2 cups milk",
         "Add 1 lb diced potatoes and 1½ lb diced chicken; simmer 15–18 minutes, stirring often",
         "Add 4 cups corn and cook 6–8 minutes more until potatoes soften and chicken reaches 165°F",
@@ -9586,10 +9784,16 @@
         "Yellow onion": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "onionSize": null,
+          "onionSize": "medium",
           "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
-          "edibleWeightGrams": null
+          "notes": "Recipe now specifies a medium yellow onion; USDA 110 g for a medium raw onion is a candidate only; edible weight and food-record identity require final approval.",
+          "edibleWeightGrams": null,
+          "usdaPortionCandidate": {
+            "fdcId": 170000,
+            "description": "Onions, raw",
+            "mediumWholeOnionEdibleGrams": 110,
+            "diameterInches": 2.5
+          }
         }
       }
     },
@@ -9709,7 +9913,7 @@
       "steps": [
         "Preheat oven to 375°F and fit one pastry crust into a 9-inch pie pan",
         "Cook 6 bacon slices crisp; crumble, and steam 2 cups broccoli 3 minutes",
-        "Whisk 6 eggs with 1 cup half-and-half and stir in 1½ cups cheddar and ½ diced onion",
+        "Use a medium yellow onion (about 2½ inches in diameter), taking only the amount listed in the ingredients. Whisk 6 eggs with 1 cup half-and-half and stir in 1½ cups cheddar and ½ diced onion",
         "Arrange broccoli and bacon in crust, then pour egg mixture on top",
         "Bake 35–45 minutes until center reaches 160°F and is set; rest 10 minutes and cut into six slices"
       ],
@@ -9727,10 +9931,16 @@
         "Yellow onion": {
           "listedQuantity": 0.5,
           "listedUnit": "each",
-          "onionSize": null,
+          "onionSize": "medium",
           "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
-          "edibleWeightGrams": null
+          "notes": "Recipe now specifies a medium yellow onion; USDA 110 g for a medium raw onion is a candidate only; edible weight and food-record identity require final approval.",
+          "edibleWeightGrams": null,
+          "usdaPortionCandidate": {
+            "fdcId": 170000,
+            "description": "Onions, raw",
+            "mediumWholeOnionEdibleGrams": 110,
+            "diameterInches": 2.5
+          }
         }
       }
     },
@@ -9864,7 +10074,7 @@
       ],
       "steps": [
         "Preheat oven to 375°F; brown 2½ lb thighs skin-side down in 1 tbsp oil for 6 minutes and turn for 2 minutes",
-        "Remove chicken and sauté 1 sliced onion and 2 apple wedges for 4 minutes",
+        "Use a medium yellow onion (about 2½ inches in diameter), taking only the amount listed in the ingredients. Remove chicken and sauté 1 sliced onion and 2 apple wedges for 4 minutes",
         "Add 1½ cups cider, 1 cup broth, 1 tbsp Dijon and 1 tbsp chopped thyme; simmer 2 minutes",
         "Nestle chicken into liquid and bake uncovered 25–35 minutes until it reaches 165°F",
         "Rest chicken 5 minutes and divide apples, sauce and meat among four plates"
@@ -9883,10 +10093,16 @@
         "Yellow onion": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "onionSize": null,
+          "onionSize": "medium",
           "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
-          "edibleWeightGrams": null
+          "notes": "Recipe now specifies a medium yellow onion; USDA 110 g for a medium raw onion is a candidate only; edible weight and food-record identity require final approval.",
+          "edibleWeightGrams": null,
+          "usdaPortionCandidate": {
+            "fdcId": 170000,
+            "description": "Onions, raw",
+            "mediumWholeOnionEdibleGrams": 110,
+            "diameterInches": 2.5
+          }
         }
       }
     },
