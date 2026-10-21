@@ -6,6 +6,7 @@ on:
     paths:
       - 'ops/recipe-expansion/**'
       - 'tests/luxury-recipe-expansion-drafts.test.mjs'
+      - 'tests/luxury-recipe-photo-pairing.test.mjs'
       - 'luxury-v2/catalog.js'
       - 'assets/meal-photos/**'
       - '.github/workflows/tablewise-recipe-expansion.yml'
@@ -30,4 +31,4 @@ jobs:
       - name: Audit baseline and staged batches, fail on missing photos or instructions
         run: |
           node ops/recipe-expansion/audit.mjs
-          node --test tests/luxury-recipe-expansion-drafts.test.mjs
+          node --test tests/luxury-recipe-expansion-drafts.test.mjs tests/luxury-recipe-photo-pairing.test.mjs
