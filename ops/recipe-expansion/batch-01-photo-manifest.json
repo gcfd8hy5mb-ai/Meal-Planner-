@@ -625,6 +625,96 @@
       "photoReview": "pending",
       "pairedWithInstructions": true,
       "photoBrief": "Seared bite-size steak cubes and crisp golden baby potatoes coated in garlic butter, skillet daylight"
+    },
+    {
+      "id": "exp01-71",
+      "name": "Smothered Pork Chops with Onion Gravy",
+      "expectedAsset": "assets/meal-photos/exp01-71.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Brown pan-seared pork chops tucked into creamy golden caramelized-onion gravy in shallow ceramic plate"
+    },
+    {
+      "id": "exp01-72",
+      "name": "Baked Honey Mustard Chicken Thighs",
+      "expectedAsset": "assets/meal-photos/exp01-72.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Golden glazed baked chicken thighs with glossy honey mustard sauce and thyme on home-style plate"
+    },
+    {
+      "id": "exp01-73",
+      "name": "Creamy Tomato Basil Tortellini",
+      "expectedAsset": "assets/meal-photos/exp01-73.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Plump cheese tortellini in creamy red tomato basil sauce with grated Parmesan, natural daylight"
+    },
+    {
+      "id": "exp01-74",
+      "name": "Ground Turkey Lettuce Wraps",
+      "expectedAsset": "assets/meal-photos/exp01-74.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Fresh butter lettuce cups packed with glossy ground turkey, diced water chestnuts and green onion garnish"
+    },
+    {
+      "id": "exp01-75",
+      "name": "Chicken and Sausage Jambalaya",
+      "expectedAsset": "assets/meal-photos/exp01-75.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Deep skillet jambalaya with Cajun chicken chunks, smoked sausage coins, red pepper and seasoned red rice"
+    },
+    {
+      "id": "exp01-76",
+      "name": "Crispy Baked Fish Sticks",
+      "expectedAsset": "assets/meal-photos/exp01-76.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Homemade golden crunchy panko cod fish sticks arranged on plate with fresh lemon wedges and no commercial packaging"
+    },
+    {
+      "id": "exp01-77",
+      "name": "Broccoli Cheddar Stuffed Chicken",
+      "expectedAsset": "assets/meal-photos/exp01-77.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Sliced juicy stuffed chicken breast revealing bright broccoli florets and melted cheddar cheese filling"
+    },
+    {
+      "id": "exp01-78",
+      "name": "Slow-Cooker White Chicken Chili",
+      "expectedAsset": "assets/meal-photos/exp01-78.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Creamy white chicken chili with shredded chicken, white beans, diced mild green chiles and thick pale broth"
+    },
+    {
+      "id": "exp01-79",
+      "name": "Italian Meatball Subs",
+      "expectedAsset": "assets/meal-photos/exp01-79.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Toasted Italian sub roll overflowing with round beef meatballs in red tomato sauce and melted mozzarella"
+    },
+    {
+      "id": "exp01-80",
+      "name": "Roasted Vegetable and Chicken Orzo",
+      "expectedAsset": "assets/meal-photos/exp01-80.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Colorful orzo pasta with roast chicken chunks, zucchini, blistered cherry tomatoes, red onion and feta"
     }
   ]
 }
