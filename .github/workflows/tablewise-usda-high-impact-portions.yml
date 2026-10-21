@@ -6,6 +6,8 @@ on:
       - '.github/workflows/tablewise-usda-high-impact-portions.yml'
       - 'ops/recipe-expansion/fetch-high-impact-usda-portions.mjs'
       - 'ops/recipe-expansion/prioritize-ingredient-portion-review.mjs'
+      - 'ops/recipe-expansion/high-impact-portions-editorial-review.json'
+      - 'ops/recipe-expansion/validate-high-impact-portions.mjs'
 permissions:
   contents: read
 jobs:
@@ -23,6 +25,8 @@ jobs:
         env:
           USDA_FDC_API_KEY: ${{ secrets.USDA_FDC_API_KEY }}
         run: node ops/recipe-expansion/fetch-high-impact-usda-portions.mjs
+      - name: Validate editorial weights against all real recipe uses
+        run: node ops/recipe-expansion/validate-high-impact-portions.mjs
       - name: Save unapproved USDA source evidence
         if: always()
         uses: actions/upload-artifact@v4
