@@ -68,16 +68,21 @@
       "reviewStatus": "pending"
     },
     "Apricot preserves": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170645",
+      "description": "Jams and preserves, apricot",
+      "state": "apricot fruit preserve (not syrup or jelly)",
+      "kcalPer100g": 242,
+      "proteinPer100g": 0.7,
+      "carbsPer100g": 64.4,
+      "fatPer100g": 0.2,
+      "gramsPerUnit": {
+        "cup": 320
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170645/nutrients",
+      "portionSource": "USDA tablespoon reference 20 g, 16 US tablespoons per cup implies 320 g per cup; product variability remains",
+      "reviewNotes": "Source-linked as-purchased preserve input; finished dish yield/consumed marinade fractions not verified."
     },
     "Arborio rice": {
       "source": "",
