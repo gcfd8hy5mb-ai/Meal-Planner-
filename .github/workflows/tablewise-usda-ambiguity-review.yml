@@ -5,6 +5,7 @@ on:
     paths:
       - '.github/workflows/tablewise-usda-ambiguity-review.yml'
       - 'ops/recipe-expansion/review-three-ambiguous-ingredients.mjs'
+      - 'ops/recipe-expansion/build-ambiguity-resolution-queue.mjs'
 permissions:
   contents: read
 jobs:
@@ -20,10 +21,14 @@ jobs:
         env:
           USDA_FDC_API_KEY: ${{ secrets.USDA_FDC_API_KEY }}
         run: node ops/recipe-expansion/review-three-ambiguous-ingredients.mjs
+      - name: Build 98 recipe-specific source review actions
+        run: node ops/recipe-expansion/build-ambiguity-resolution-queue.mjs
       - name: Preserve manual-review evidence
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: tablewise-usda-cumin-onion-lime-evidence
-          path: ops/recipe-expansion/usda-three-ambiguities-review.json
+          path: |
+            ops/recipe-expansion/usda-three-ambiguities-review.json
+            ops/recipe-expansion/high-impact-ambiguity-resolution-queue.json
           retention-days: 30
