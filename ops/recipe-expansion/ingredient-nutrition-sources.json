@@ -207,16 +207,21 @@
       "reviewNotes": "Source-matched raw or as-purchased ingredient input. Final recipe nutrient yields/retention unverified."
     },
     "Barbecue sauce": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "174523",
+      "description": "Sauce, barbecue",
+      "state": "Sauce, barbecue",
+      "kcalPer100g": 172,
+      "proteinPer100g": 0.82,
+      "carbsPer100g": 40.77,
+      "fatPer100g": 0.63,
+      "gramsPerUnit": {
+        "cup": 279
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/174523/nutrients",
+      "portionSource": "USDA explicit 1 cup = 279 g; actual brand recipes vary",
+      "reviewNotes": "Exact cited USDA food and recipe-unit input reference; does NOT verify individual product variation, cooking yield or final prepared recipe nutrition."
     },
     "Basil pesto": {
       "source": "",
@@ -986,16 +991,21 @@
       "reviewStatus": "pending"
     },
     "Cooked pinto beans": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "173796",
+      "description": "Beans, pinto, mature seeds, cooked, boiled, with salt",
+      "state": "Beans, pinto, mature seeds, cooked, boiled, with salt",
+      "kcalPer100g": 143,
+      "proteinPer100g": 9.01,
+      "carbsPer100g": 26.22,
+      "fatPer100g": 0.65,
+      "gramsPerUnit": {
+        "cup": 171
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/173796/nutrients",
+      "portionSource": "USDA explicit 1 cup cooked pinto beans = 171 g",
+      "reviewNotes": "Exact cited USDA food and recipe-unit input reference; does NOT verify individual product variation, cooking yield or final prepared recipe nutrition."
     },
     "Cooked rice": {
       "source": "",
@@ -1133,16 +1143,21 @@
       "reviewNotes": "Source-matched raw or as-purchased ingredient input. Final recipe nutrient yields/retention unverified."
     },
     "Cream of chicken soup": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "171146",
+      "description": "Soup, cream of chicken, canned, condensed",
+      "state": "Soup, cream of chicken, canned, condensed",
+      "kcalPer100g": 90,
+      "proteinPer100g": 2.38,
+      "carbsPer100g": 7.16,
+      "fatPer100g": 5.77,
+      "gramsPerUnit": {
+        "can": 305
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171146/nutrients",
+      "portionSource": "USDA explicit standard condensed can (10.75 oz) = 305 g; not prepared/diluted soup",
+      "reviewNotes": "Exact cited USDA food and recipe-unit input reference; does NOT verify individual product variation, cooking yield or final prepared recipe nutrition."
     },
     "Cremini mushrooms": {
       "source": "",
@@ -1294,16 +1309,21 @@
       "reviewStatus": "pending"
     },
     "Dried ancho chiles": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "169396",
+      "description": "Peppers, ancho, dried",
+      "state": "Peppers, ancho, dried",
+      "kcalPer100g": 281,
+      "proteinPer100g": 11.86,
+      "carbsPer100g": 51.42,
+      "fatPer100g": 8.2,
+      "gramsPerUnit": {
+        "each": 17
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169396/nutrients",
+      "portionSource": "USDA explicit 1 dried ancho pepper = 17 g",
+      "reviewNotes": "Exact cited USDA food and recipe-unit input reference; does NOT verify individual product variation, cooking yield or final prepared recipe nutrition."
     },
     "Dried apricots": {
       "source": "",
@@ -1484,16 +1504,21 @@
       "reviewStatus": "pending"
     },
     "Egg noodles": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "169731",
+      "description": "Noodles, egg, dry, enriched",
+      "state": "Noodles, egg, dry, enriched",
+      "kcalPer100g": 384,
+      "proteinPer100g": 14.16,
+      "carbsPer100g": 71.27,
+      "fatPer100g": 4.44,
+      "gramsPerUnit": {
+        "oz": 28.5
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169731/nutrients",
+      "portionSource": "USDA explicit 2 oz dry egg noodles = 57 g; 1 oz by source conversion = 28.5 g",
+      "reviewNotes": "Exact cited USDA food and recipe-unit input reference; does NOT verify individual product variation, cooking yield or final prepared recipe nutrition."
     },
     "Eggs": {
       "source": "",
@@ -1799,16 +1824,21 @@
       "reviewStatus": "pending"
     },
     "Grated Parmesan": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "171247",
+      "description": "Cheese, parmesan, grated",
+      "state": "Cheese, parmesan, grated",
+      "kcalPer100g": 420,
+      "proteinPer100g": 28.42,
+      "carbsPer100g": 13.91,
+      "fatPer100g": 27.84,
+      "gramsPerUnit": {
+        "cup": 100
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171247/nutrients",
+      "portionSource": "USDA explicit 1 cup grated Parmesan = 100 g",
+      "reviewNotes": "Exact cited USDA food and recipe-unit input reference; does NOT verify individual product variation, cooking yield or final prepared recipe nutrition."
     },
     "Greek yogurt": {
       "source": "",
@@ -2997,28 +3027,38 @@
       "reviewStatus": "pending"
     },
     "Red enchilada sauce": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "174074",
+      "description": "Sauce, enchilada, red, mild, ready to serve",
+      "state": "Sauce, enchilada, red, mild, ready to serve",
+      "kcalPer100g": 30,
+      "proteinPer100g": 0.62,
+      "carbsPer100g": 4.87,
+      "fatPer100g": 0.91,
+      "gramsPerUnit": {
+        "cup": 224
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/174074/nutrients",
+      "portionSource": "USDA explicit 1 cup red enchilada sauce = 224 g; mild ready-to-serve style",
+      "reviewNotes": "Exact cited USDA food and recipe-unit input reference; does NOT verify individual product variation, cooking yield or final prepared recipe nutrition."
     },
     "Red onion": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central Foundation",
+      "foodId": "790577",
+      "description": "Onions, red, raw",
+      "state": "Onions, red, raw",
+      "kcalPer100g": 44,
+      "proteinPer100g": 0.94,
+      "carbsPer100g": 9.93,
+      "fatPer100g": 0.1,
+      "gramsPerUnit": {
+        "each": 197
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/790577/nutrients",
+      "portionSource": "USDA Foundation 1 edible red onion = 197 g; individual onion sizes vary",
+      "reviewNotes": "Exact cited USDA food and recipe-unit input reference; does NOT verify individual product variation, cooking yield or final prepared recipe nutrition."
     },
     "Red pepper flakes": {
       "source": "",
@@ -3252,16 +3292,21 @@
       "reviewStatus": "pending"
     },
     "Salt": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "173468",
+      "description": "Salt, table",
+      "state": "Salt, table",
+      "kcalPer100g": 0,
+      "proteinPer100g": 0,
+      "carbsPer100g": 0,
+      "fatPer100g": 0,
+      "gramsPerUnit": {
+        "tsp": 6
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/173468/nutrients",
+      "portionSource": "USDA explicit 1 tsp = 6 g",
+      "reviewNotes": "Exact cited USDA food and recipe-unit input reference; does NOT verify individual product variation, cooking yield or final prepared recipe nutrition."
     },
     "Sandwich bread": {
       "source": "",
@@ -3293,16 +3338,21 @@
       "reviewNotes": "USDA source-linked ingredient input values. Preparation yield and retained ingredient fractions still require full-recipe review."
     },
     "Sesame seeds": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170150",
+      "description": "Seeds, sesame seeds, whole, dried",
+      "state": "Seeds, sesame seeds, whole, dried",
+      "kcalPer100g": 573,
+      "proteinPer100g": 17.73,
+      "carbsPer100g": 23.45,
+      "fatPer100g": 49.67,
+      "gramsPerUnit": {
+        "tbsp": 9
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170150/nutrients",
+      "portionSource": "USDA explicit 1 tbsp sesame seeds = 9 g",
+      "reviewNotes": "Exact cited USDA food and recipe-unit input reference; does NOT verify individual product variation, cooking yield or final prepared recipe nutrition."
     },
     "Shredded cabbage": {
       "source": "",
@@ -3461,16 +3511,21 @@
       "reviewStatus": "pending"
     },
     "Sour cream": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "171257",
+      "description": "Cream, sour, cultured",
+      "state": "Cream, sour, cultured",
+      "kcalPer100g": 198,
+      "proteinPer100g": 2.44,
+      "carbsPer100g": 4.63,
+      "fatPer100g": 19.35,
+      "gramsPerUnit": {
+        "cup": 230
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171257/nutrients",
+      "portionSource": "USDA explicit 1 cup = 230 g; standard cultured sour cream, not reduced-fat",
+      "reviewNotes": "Exact cited USDA food and recipe-unit input reference; does NOT verify individual product variation, cooking yield or final prepared recipe nutrition."
     },
     "Soy sauce": {
       "source": "",
@@ -3665,28 +3720,38 @@
       "reviewStatus": "pending"
     },
     "Yellow onion": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central Foundation",
+      "foodId": "790646",
+      "description": "Onions, yellow, raw",
+      "state": "Onions, yellow, raw",
+      "kcalPer100g": 38,
+      "proteinPer100g": 0.83,
+      "carbsPer100g": 8.61,
+      "fatPer100g": 0.05,
+      "gramsPerUnit": {
+        "each": 143
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/790646/nutrients",
+      "portionSource": "USDA Foundation 1 edible onion = 143 g; individual onion sizes vary",
+      "reviewNotes": "Exact cited USDA food and recipe-unit input reference; does NOT verify individual product variation, cooking yield or final prepared recipe nutrition."
     },
     "Yellow onions": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central Foundation",
+      "foodId": "790646",
+      "description": "Onions, yellow, raw",
+      "state": "Onions, yellow, raw",
+      "kcalPer100g": 38,
+      "proteinPer100g": 0.83,
+      "carbsPer100g": 8.61,
+      "fatPer100g": 0.05,
+      "gramsPerUnit": {
+        "each": 143
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/790646/nutrients",
+      "portionSource": "USDA Foundation 1 edible onion = 143 g; individual onion sizes vary",
+      "reviewNotes": "Exact cited USDA food and recipe-unit input reference; does NOT verify individual product variation, cooking yield or final prepared recipe nutrition."
     },
     "Yukon gold potatoes": {
       "source": "",
