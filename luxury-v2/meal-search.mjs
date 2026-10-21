@@ -2,10 +2,16 @@ const categories=['All','Southern','Mexican','Chicken','Beef','Pork','Seafood','
 export const mealCategories=categories;
 const norm=value=>String(value||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').trim();
 const aliases={mexican:['mexican','tex-mex','tex mex','taco','burrito','enchilada','fajita','quesadilla','salsa','cilantro'],seafood:['fish','salmon','shrimp','tuna','catfish','seafood'],vegetarian:['vegetarian','veggie','tofu','beans','lentil'],pasta:['pasta','spaghetti','macaroni','noodle','penne','lasagna'],chicken:['chicken','poultry'],beef:['beef','steak','burger','hamburger'],pork:['pork','bacon','ham','sausage'],southern:['southern','south','cajun','creole']};
-export function searchMeals(recipes,{query='',category='All',slot='Dinner'}={}){
+export function searchMeals(recipes,{query='',category='All',slot='Dinner',quick=false,highProtein=false,lowCarb=false,recipeDetails={}}={}){
  const term=norm(query);const terms=term.split(/\s+/).filter(Boolean);
  return recipes.filter(recipe=>{
   if(slot&&recipe.slot!==slot)return false;
+  const details=recipeDetails[recipe.id]||{};
+  const prep=Number(recipe.prepMinutes??recipe.prepTimeMinutes??details.prepMinutes);
+  const cook=Number(recipe.cookMinutes??recipe.cookTimeMinutes??details.cookMinutes);
+  if(quick&&(!Number.isFinite(prep)||!Number.isFinite(cook)||prep<0||cook<0||prep+cook>30))return false;
+  if(highProtein&&(!Number.isFinite(Number(recipe.p))||recipe.p==null||Number(recipe.p)<30))return false;
+  if(lowCarb&&(!Number.isFinite(Number(recipe.c))||recipe.c==null||Number(recipe.c)>30))return false;
   const ingredients=(recipe.ingredients||[]).map(i=>i[0]).join(' ');
   const searchable=norm([recipe.name,recipe.cuisine,ingredients].join(' '));
   const tags=[norm(recipe.name),norm(recipe.cuisine),norm(ingredients)].join(' ');
