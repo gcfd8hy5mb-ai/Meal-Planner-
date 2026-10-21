@@ -7288,6 +7288,1411 @@
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
       }
+    },
+    {
+      "id": "exp01-091",
+      "name": "Creamy Mushroom Pork Tenderloin",
+      "slot": "Dinner",
+      "cuisine": "American",
+      "serv": 4,
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "cal": 510,
+      "p": 42,
+      "c": 10,
+      "f": 33,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Pork tenderloin",
+          1.5,
+          "lb"
+        ],
+        [
+          "Cremini mushrooms",
+          12,
+          "oz"
+        ],
+        [
+          "Chicken broth",
+          1,
+          "cup"
+        ],
+        [
+          "Heavy cream",
+          0.75,
+          "cup"
+        ],
+        [
+          "Garlic cloves",
+          3,
+          "each"
+        ],
+        [
+          "Dijon mustard",
+          1,
+          "tbsp"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ]
+      ],
+      "steps": [
+        "Slice 1½ lb pork into 1-inch medallions and pat dry",
+        "Heat 1 tbsp oil over medium-high and sear medallions for 3 minutes per side",
+        "Remove pork and soften 12 oz sliced mushrooms for 6 minutes; stir in 3 minced garlic cloves",
+        "Add 1 cup broth and 1 tbsp Dijon; simmer 4 minutes, then add ¾ cup cream",
+        "Return pork and simmer until centers reach 145°F; rest 3 minutes and serve with mushroom sauce"
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-092",
+      "name": "Greek Lemon Chicken Soup",
+      "slot": "Dinner",
+      "cuisine": "Soups & Stews",
+      "serv": 6,
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "cal": 370,
+      "p": 33,
+      "c": 27,
+      "f": 13,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Cooked chicken breast",
+          1.5,
+          "lb"
+        ],
+        [
+          "Chicken broth",
+          7,
+          "cup"
+        ],
+        [
+          "Long grain rice",
+          0.75,
+          "cup"
+        ],
+        [
+          "Eggs",
+          3,
+          "each"
+        ],
+        [
+          "Lemons",
+          2,
+          "each"
+        ],
+        [
+          "Carrots",
+          2,
+          "each"
+        ],
+        [
+          "Fresh dill",
+          0.25,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Bring 7 cups broth and 2 diced carrots to a simmer",
+        "Add ¾ cup rinsed rice, cover and cook 15–18 minutes until tender",
+        "Whisk 3 eggs and juice of 2 lemons in a heatproof bowl",
+        "Slowly whisk 1 cup hot broth into egg mixture, then stir into the pot off heat without boiling",
+        "Add 1½ lb fully cooked shredded chicken; warm to 165°F and garnish with ¼ cup dill"
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-093",
+      "name": "Bacon Cheeseburger Stuffed Shells",
+      "slot": "Dinner",
+      "cuisine": "American",
+      "serv": 5,
+      "prepMinutes": 25,
+      "cookMinutes": 30,
+      "cal": 640,
+      "p": 39,
+      "c": 46,
+      "f": 32,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Jumbo pasta shells",
+          20,
+          "each"
+        ],
+        [
+          "Ground beef",
+          1.5,
+          "lb"
+        ],
+        [
+          "Bacon",
+          6,
+          "slice"
+        ],
+        [
+          "Cheddar cheese",
+          2,
+          "cup"
+        ],
+        [
+          "Tomato sauce",
+          2,
+          "cup"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Dill pickles",
+          0.5,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Preheat oven to 375°F and boil 20 jumbo shells until just flexible; drain",
+        "Brown 1½ lb beef with 1 diced onion until beef reaches 160°F; drain",
+        "Cook 6 bacon slices crisp, crumble and mix with beef, 1 cup cheddar and ½ cup chopped pickles",
+        "Spread 2 cups tomato sauce in a baking dish and stuff shells evenly with meat mixture",
+        "Top with remaining 1 cup cheddar and bacon; cover and bake 25 minutes then uncover 5 minutes"
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-094",
+      "name": "Orange Ginger Glazed Pork Tenderloin",
+      "slot": "Dinner",
+      "cuisine": "Chinese & Asian",
+      "serv": 4,
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "cal": 420,
+      "p": 43,
+      "c": 27,
+      "f": 13,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Pork tenderloin",
+          1.5,
+          "lb"
+        ],
+        [
+          "Orange juice",
+          0.75,
+          "cup"
+        ],
+        [
+          "Soy sauce",
+          3,
+          "tbsp"
+        ],
+        [
+          "Honey",
+          3,
+          "tbsp"
+        ],
+        [
+          "Fresh ginger",
+          2,
+          "tbsp"
+        ],
+        [
+          "Garlic cloves",
+          3,
+          "each"
+        ],
+        [
+          "Cornstarch",
+          1,
+          "tbsp"
+        ]
+      ],
+      "steps": [
+        "Heat oven to 400°F; whisk ¾ cup orange juice, 3 tbsp soy sauce, 3 tbsp honey, 2 tbsp ginger and 3 minced garlic cloves",
+        "Reserve half the sauce in a clean saucepan; brush pork with remaining half",
+        "Roast tenderloin 20–25 minutes until center reaches 145°F",
+        "Rest pork 3 minutes; boil reserved unused sauce and thicken with 1 tbsp cornstarch mixed with water",
+        "Slice into four servings and spoon orange ginger glaze on top"
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-095",
+      "name": "Turkey Spinach Stuffed Manicotti",
+      "slot": "Dinner",
+      "cuisine": "Italian",
+      "serv": 6,
+      "prepMinutes": 25,
+      "cookMinutes": 35,
+      "cal": 540,
+      "p": 40,
+      "c": 46,
+      "f": 20,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Manicotti shells",
+          12,
+          "each"
+        ],
+        [
+          "Lean ground turkey",
+          1.25,
+          "lb"
+        ],
+        [
+          "Ricotta",
+          1.5,
+          "cup"
+        ],
+        [
+          "Baby spinach",
+          4,
+          "cup"
+        ],
+        [
+          "Mozzarella",
+          1.5,
+          "cup"
+        ],
+        [
+          "Marinara",
+          3,
+          "cup"
+        ],
+        [
+          "Italian seasoning",
+          1,
+          "tsp"
+        ]
+      ],
+      "steps": [
+        "Preheat oven to 375°F and cook 12 manicotti shells according to package until pliable",
+        "Brown 1¼ lb ground turkey to 165°F; wilt 4 cups spinach into hot turkey",
+        "Mix turkey and spinach with 1½ cups ricotta and 1 tsp Italian seasoning",
+        "Fill shells with mixture and arrange over 1 cup marinara in baking dish",
+        "Pour remaining 2 cups marinara on top, sprinkle 1½ cups mozzarella, cover and bake 25 minutes; uncover 5 minutes"
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-096",
+      "name": "Thai Basil Beef Rice",
+      "slot": "Dinner",
+      "cuisine": "Chinese & Asian",
+      "serv": 4,
+      "prepMinutes": 20,
+      "cookMinutes": 20,
+      "cal": 600,
+      "p": 38,
+      "c": 67,
+      "f": 22,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Ground beef",
+          1.5,
+          "lb"
+        ],
+        [
+          "Jasmine rice",
+          1.5,
+          "cup"
+        ],
+        [
+          "Fresh basil",
+          1,
+          "cup"
+        ],
+        [
+          "Garlic cloves",
+          5,
+          "each"
+        ],
+        [
+          "Bell peppers",
+          2,
+          "each"
+        ],
+        [
+          "Soy sauce",
+          3,
+          "tbsp"
+        ],
+        [
+          "Oyster sauce",
+          2,
+          "tbsp"
+        ],
+        [
+          "Brown sugar",
+          1,
+          "tbsp"
+        ]
+      ],
+      "steps": [
+        "Rinse and cook 1½ cups jasmine rice using package water ratio",
+        "Whisk 3 tbsp soy sauce, 2 tbsp oyster sauce and 1 tbsp brown sugar",
+        "Cook 1½ lb ground beef in a hot skillet 7–9 minutes until 160°F and drain excess grease",
+        "Stir in 5 minced garlic cloves and 2 sliced peppers; cook 4 minutes",
+        "Add sauce and 1 cup basil leaves; toss until wilted and serve over rice in four portions"
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-097",
+      "name": "Rosemary Garlic Turkey Meatloaf",
+      "slot": "Dinner",
+      "cuisine": "American",
+      "serv": 8,
+      "prepMinutes": 20,
+      "cookMinutes": 60,
+      "cal": 390,
+      "p": 33,
+      "c": 19,
+      "f": 19,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Ground turkey",
+          2,
+          "lb"
+        ],
+        [
+          "Eggs",
+          2,
+          "each"
+        ],
+        [
+          "Breadcrumbs",
+          0.75,
+          "cup"
+        ],
+        [
+          "Milk",
+          0.5,
+          "cup"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Garlic cloves",
+          3,
+          "each"
+        ],
+        [
+          "Rosemary",
+          1,
+          "tbsp"
+        ],
+        [
+          "Ketchup",
+          0.5,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Preheat oven to 375°F and grease a loaf pan",
+        "Mix 2 lb ground turkey, 2 eggs, ¾ cup breadcrumbs, ½ cup milk, 1 diced onion, 3 minced garlic cloves and 1 tbsp rosemary",
+        "Shape firmly into loaf pan without compacting too tightly",
+        "Spread ½ cup ketchup evenly on top and bake 50–60 minutes until center reaches 165°F",
+        "Rest 10 minutes before cutting into eight equal slices"
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-098",
+      "name": "Coconut Lime Chicken Curry",
+      "slot": "Dinner",
+      "cuisine": "Chinese & Asian",
+      "serv": 4,
+      "prepMinutes": 20,
+      "cookMinutes": 25,
+      "cal": 690,
+      "p": 39,
+      "c": 69,
+      "f": 30,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Chicken thighs",
+          1.5,
+          "lb"
+        ],
+        [
+          "Coconut milk",
+          14,
+          "oz"
+        ],
+        [
+          "Red curry paste",
+          2,
+          "tbsp"
+        ],
+        [
+          "Bell peppers",
+          2,
+          "each"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Fresh ginger",
+          1,
+          "tbsp"
+        ],
+        [
+          "Lime",
+          2,
+          "each"
+        ],
+        [
+          "Jasmine rice",
+          1.5,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Cook 1½ cups jasmine rice according to package directions",
+        "Heat a deep skillet, cook 1 diced onion and 2 sliced peppers for 5 minutes",
+        "Stir in 2 tbsp red curry paste and 1 tbsp grated ginger for 1 minute",
+        "Add 1½ lb diced chicken thighs and 14 oz coconut milk; simmer covered for 15–18 minutes until chicken reaches 165°F",
+        "Finish with juice from 2 limes and spoon over rice in four servings"
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-099",
+      "name": "Smoky Ham and Navy Bean Soup",
+      "slot": "Dinner",
+      "cuisine": "Soups & Stews",
+      "serv": 6,
+      "prepMinutes": 15,
+      "cookMinutes": 35,
+      "cal": 390,
+      "p": 32,
+      "c": 40,
+      "f": 12,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Cooked diced ham",
+          1.5,
+          "lb"
+        ],
+        [
+          "Canned navy beans",
+          45,
+          "oz"
+        ],
+        [
+          "Chicken broth",
+          7,
+          "cup"
+        ],
+        [
+          "Carrots",
+          3,
+          "each"
+        ],
+        [
+          "Celery stalks",
+          3,
+          "each"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Smoked paprika",
+          1,
+          "tsp"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ]
+      ],
+      "steps": [
+        "Heat 1 tbsp olive oil in a large soup pot and soften diced onion, 3 carrots and 3 celery stalks for 7 minutes",
+        "Add 1 tsp smoked paprika and stir 30 seconds",
+        "Add 7 cups broth, three drained 15 oz cans navy beans and 1½ lb fully cooked ham",
+        "Simmer partially covered for 25 minutes until vegetables soften",
+        "Mash ½ cup beans to thicken, rewarm ham to 165°F and divide into six bowls"
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-100",
+      "name": "Crispy Ranch Potato Wedges with Chicken",
+      "slot": "Dinner",
+      "cuisine": "American",
+      "serv": 4,
+      "prepMinutes": 15,
+      "cookMinutes": 40,
+      "cal": 540,
+      "p": 40,
+      "c": 52,
+      "f": 20,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Chicken tenders",
+          1.5,
+          "lb"
+        ],
+        [
+          "Russet potatoes",
+          2,
+          "lb"
+        ],
+        [
+          "Ranch seasoning",
+          2,
+          "tbsp"
+        ],
+        [
+          "Olive oil",
+          3,
+          "tbsp"
+        ],
+        [
+          "Paprika",
+          1,
+          "tsp"
+        ],
+        [
+          "Greek yogurt",
+          0.5,
+          "cup"
+        ],
+        [
+          "Lemon juice",
+          1,
+          "tbsp"
+        ]
+      ],
+      "steps": [
+        "Heat oven to 425°F and cut 2 lb scrubbed potatoes into thick wedges",
+        "Toss wedges with 2 tbsp oil, 1 tbsp ranch seasoning and 1 tsp paprika; roast 20 minutes",
+        "Toss 1½ lb chicken tenders with remaining 1 tbsp oil and 1 tbsp ranch seasoning",
+        "Add chicken to a separate lined pan and roast both pans another 15–20 minutes, until chicken reaches 165°F and potatoes brown",
+        "Whisk ½ cup yogurt with 1 tbsp lemon juice for dip; divide chicken and wedges four ways"
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-101",
+      "name": "Creamy Spinach and Artichoke Chicken Bake",
+      "slot": "Dinner",
+      "cuisine": "American",
+      "serv": 4,
+      "prepMinutes": 20,
+      "cookMinutes": 35,
+      "cal": 550,
+      "p": 52,
+      "c": 14,
+      "f": 31,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Chicken breasts",
+          1.5,
+          "lb"
+        ],
+        [
+          "Artichoke hearts",
+          14,
+          "oz"
+        ],
+        [
+          "Baby spinach",
+          4,
+          "cup"
+        ],
+        [
+          "Cream cheese",
+          6,
+          "oz"
+        ],
+        [
+          "Mozzarella",
+          1,
+          "cup"
+        ],
+        [
+          "Parmesan",
+          0.5,
+          "cup"
+        ],
+        [
+          "Garlic cloves",
+          3,
+          "each"
+        ]
+      ],
+      "steps": [
+        "Preheat oven to 375°F and lightly grease a baking dish",
+        "Spread 1½ lb chicken breast cutlets in a single layer",
+        "Mix 14 oz drained chopped artichokes, 4 cups chopped spinach, 6 oz softened cream cheese, 1 cup mozzarella and 3 minced garlic cloves",
+        "Spread mixture over chicken and sprinkle with ½ cup Parmesan",
+        "Bake 30–35 minutes until thickest chicken reaches 165°F, rest 5 minutes and divide four ways"
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-102",
+      "name": "Apricot Glazed Pork Meatballs",
+      "slot": "Dinner",
+      "cuisine": "Chinese & Asian",
+      "serv": 4,
+      "prepMinutes": 20,
+      "cookMinutes": 20,
+      "cal": 490,
+      "p": 34,
+      "c": 40,
+      "f": 22,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Ground pork",
+          1.5,
+          "lb"
+        ],
+        [
+          "Breadcrumbs",
+          0.5,
+          "cup"
+        ],
+        [
+          "Egg",
+          1,
+          "each"
+        ],
+        [
+          "Apricot preserves",
+          0.5,
+          "cup"
+        ],
+        [
+          "Soy sauce",
+          2,
+          "tbsp"
+        ],
+        [
+          "Rice vinegar",
+          1,
+          "tbsp"
+        ],
+        [
+          "Fresh ginger",
+          1,
+          "tbsp"
+        ],
+        [
+          "Green onions",
+          3,
+          "each"
+        ]
+      ],
+      "steps": [
+        "Heat oven to 400°F and line a sheet pan",
+        "Mix 1½ lb ground pork, ½ cup breadcrumbs and 1 egg, then shape into 20 meatballs",
+        "Bake for 16–20 minutes until meatballs reach 160°F",
+        "While baking, simmer ½ cup apricot preserves with 2 tbsp soy sauce, 1 tbsp rice vinegar and 1 tbsp grated ginger for 4 minutes",
+        "Coat cooked meatballs in glaze, garnish with 3 sliced green onions and serve five per person"
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-103",
+      "name": "Butternut Squash Sausage Risotto",
+      "slot": "Dinner",
+      "cuisine": "Italian",
+      "serv": 6,
+      "prepMinutes": 20,
+      "cookMinutes": 35,
+      "cal": 590,
+      "p": 24,
+      "c": 62,
+      "f": 26,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Arborio rice",
+          1.5,
+          "cup"
+        ],
+        [
+          "Italian sausage",
+          1,
+          "lb"
+        ],
+        [
+          "Butternut squash",
+          1.5,
+          "lb"
+        ],
+        [
+          "Chicken broth",
+          5,
+          "cup"
+        ],
+        [
+          "Parmesan",
+          0.75,
+          "cup"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Butter",
+          2,
+          "tbsp"
+        ],
+        [
+          "Fresh sage",
+          1,
+          "tbsp"
+        ]
+      ],
+      "steps": [
+        "Warm 5 cups broth in a saucepan; cube 1½ lb peeled squash into small pieces",
+        "Brown 1 lb sausage in a heavy skillet until 160°F; transfer to a plate",
+        "Melt 2 tbsp butter, cook diced onion 4 minutes, stir in 1½ cups Arborio rice and toast 2 minutes",
+        "Add warm broth one ladle at a time, stirring often; add squash after 10 minutes and continue adding broth for 20–25 minutes total until rice and squash are tender",
+        "Fold in sausage, ¾ cup Parmesan and 1 tbsp chopped sage; divide into six bowls"
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-104",
+      "name": "Honey Sesame Salmon Rice Bowls",
+      "slot": "Dinner",
+      "cuisine": "Seafood",
+      "serv": 4,
+      "prepMinutes": 20,
+      "cookMinutes": 40,
+      "cal": 650,
+      "p": 42,
+      "c": 72,
+      "f": 22,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Salmon fillets",
+          1.5,
+          "lb"
+        ],
+        [
+          "Brown rice",
+          1.5,
+          "cup"
+        ],
+        [
+          "Honey",
+          3,
+          "tbsp"
+        ],
+        [
+          "Soy sauce",
+          3,
+          "tbsp"
+        ],
+        [
+          "Sesame seeds",
+          2,
+          "tbsp"
+        ],
+        [
+          "Cucumber",
+          1,
+          "each"
+        ],
+        [
+          "Carrots",
+          2,
+          "each"
+        ],
+        [
+          "Rice vinegar",
+          2,
+          "tbsp"
+        ]
+      ],
+      "steps": [
+        "Cook 1½ cups dry brown rice according to package, usually 35–40 minutes",
+        "Heat oven to 400°F and place four salmon portions on lined baking tray",
+        "Whisk 3 tbsp honey, 3 tbsp soy sauce and 2 tbsp rice vinegar; brush half over salmon",
+        "Bake salmon for 12–18 minutes until 145°F and brush with reserved clean sauce",
+        "Divide rice into bowls, add salmon, 1 sliced cucumber, 2 shredded carrots and 2 tbsp sesame seeds"
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-105",
+      "name": "Chicken and Corn Chowder",
+      "slot": "Dinner",
+      "cuisine": "Soups & Stews",
+      "serv": 6,
+      "prepMinutes": 20,
+      "cookMinutes": 30,
+      "cal": 420,
+      "p": 35,
+      "c": 44,
+      "f": 12,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Chicken breasts",
+          1.5,
+          "lb"
+        ],
+        [
+          "Corn kernels",
+          4,
+          "cup"
+        ],
+        [
+          "Yukon potatoes",
+          1,
+          "lb"
+        ],
+        [
+          "Chicken broth",
+          5,
+          "cup"
+        ],
+        [
+          "Milk",
+          2,
+          "cup"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Butter",
+          2,
+          "tbsp"
+        ],
+        [
+          "Flour",
+          0.25,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Melt 2 tbsp butter in a soup pot and soften 1 diced onion for 5 minutes",
+        "Stir in ¼ cup flour for 1 minute then gradually whisk in 5 cups broth and 2 cups milk",
+        "Add 1 lb diced potatoes and 1½ lb diced chicken; simmer 15–18 minutes, stirring often",
+        "Add 4 cups corn and cook 6–8 minutes more until potatoes soften and chicken reaches 165°F",
+        "Mash some potatoes against pot to thicken, stir and divide into six servings"
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-106",
+      "name": "Crispy Oven Barbecue Pork Ribs",
+      "slot": "Dinner",
+      "cuisine": "American",
+      "serv": 4,
+      "prepMinutes": 20,
+      "cookMinutes": 195,
+      "cal": 750,
+      "p": 48,
+      "c": 36,
+      "f": 46,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Pork baby back ribs",
+          3,
+          "lb"
+        ],
+        [
+          "Barbecue sauce",
+          1,
+          "cup"
+        ],
+        [
+          "Brown sugar",
+          2,
+          "tbsp"
+        ],
+        [
+          "Smoked paprika",
+          2,
+          "tsp"
+        ],
+        [
+          "Garlic powder",
+          1,
+          "tsp"
+        ],
+        [
+          "Apple cider vinegar",
+          2,
+          "tbsp"
+        ]
+      ],
+      "steps": [
+        "Preheat oven to 300°F and remove membrane from underside of 3 lb ribs",
+        "Mix 2 tbsp brown sugar, 2 tsp smoked paprika and 1 tsp garlic powder, and rub over both sides",
+        "Set ribs on foil-lined tray, add 2 tbsp vinegar, wrap tightly in foil and bake 2½–3 hours until tender",
+        "Open foil carefully, brush ribs with 1 cup barbecue sauce, and raise oven to 425°F",
+        "Bake uncovered 10–15 minutes to caramelize; rest 10 minutes, cut into four portions and serve"
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-107",
+      "name": "Cheddar Bacon Broccoli Quiche",
+      "slot": "Breakfast",
+      "cuisine": "Breakfast",
+      "serv": 6,
+      "prepMinutes": 20,
+      "cookMinutes": 45,
+      "cal": 510,
+      "p": 22,
+      "c": 28,
+      "f": 35,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Pie crust",
+          1,
+          "each"
+        ],
+        [
+          "Eggs",
+          6,
+          "each"
+        ],
+        [
+          "Broccoli florets",
+          2,
+          "cup"
+        ],
+        [
+          "Bacon",
+          6,
+          "slice"
+        ],
+        [
+          "Cheddar cheese",
+          1.5,
+          "cup"
+        ],
+        [
+          "Half and half",
+          1,
+          "cup"
+        ],
+        [
+          "Yellow onion",
+          0.5,
+          "each"
+        ]
+      ],
+      "steps": [
+        "Preheat oven to 375°F and fit one pastry crust into a 9-inch pie pan",
+        "Cook 6 bacon slices crisp; crumble, and steam 2 cups broccoli 3 minutes",
+        "Whisk 6 eggs with 1 cup half-and-half and stir in 1½ cups cheddar and ½ diced onion",
+        "Arrange broccoli and bacon in crust, then pour egg mixture on top",
+        "Bake 35–45 minutes until center reaches 160°F and is set; rest 10 minutes and cut into six slices"
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-108",
+      "name": "Garlic Chili Noodles with Ground Pork",
+      "slot": "Dinner",
+      "cuisine": "Chinese & Asian",
+      "serv": 4,
+      "prepMinutes": 20,
+      "cookMinutes": 15,
+      "cal": 650,
+      "p": 35,
+      "c": 78,
+      "f": 22,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Ground pork",
+          1.5,
+          "lb"
+        ],
+        [
+          "Rice noodles",
+          12,
+          "oz"
+        ],
+        [
+          "Soy sauce",
+          0.25,
+          "cup"
+        ],
+        [
+          "Chili garlic sauce",
+          2,
+          "tbsp"
+        ],
+        [
+          "Brown sugar",
+          2,
+          "tbsp"
+        ],
+        [
+          "Garlic cloves",
+          5,
+          "each"
+        ],
+        [
+          "Sesame oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Green onions",
+          4,
+          "each"
+        ]
+      ],
+      "steps": [
+        "Soak or boil 12 oz rice noodles following package directions; drain",
+        "Whisk ¼ cup soy sauce, 2 tbsp chili garlic sauce and 2 tbsp brown sugar with ¼ cup water",
+        "Heat 1 tbsp sesame oil in wok; brown 1½ lb ground pork 8 minutes until 160°F",
+        "Add 5 minced garlic cloves for 30 seconds, then pour in sauce and simmer 2 minutes",
+        "Toss noodles with meat and sauce, garnish with 4 sliced green onions and divide into four bowls"
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-109",
+      "name": "Cider Braised Chicken with Apples",
+      "slot": "Dinner",
+      "cuisine": "American",
+      "serv": 4,
+      "prepMinutes": 20,
+      "cookMinutes": 45,
+      "cal": 590,
+      "p": 43,
+      "c": 28,
+      "f": 33,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Bone-in chicken thighs",
+          2.5,
+          "lb"
+        ],
+        [
+          "Apple cider",
+          1.5,
+          "cup"
+        ],
+        [
+          "Apples",
+          2,
+          "each"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Chicken broth",
+          1,
+          "cup"
+        ],
+        [
+          "Dijon mustard",
+          1,
+          "tbsp"
+        ],
+        [
+          "Fresh thyme",
+          1,
+          "tbsp"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ]
+      ],
+      "steps": [
+        "Preheat oven to 375°F; brown 2½ lb thighs skin-side down in 1 tbsp oil for 6 minutes and turn for 2 minutes",
+        "Remove chicken and sauté 1 sliced onion and 2 apple wedges for 4 minutes",
+        "Add 1½ cups cider, 1 cup broth, 1 tbsp Dijon and 1 tbsp chopped thyme; simmer 2 minutes",
+        "Nestle chicken into liquid and bake uncovered 25–35 minutes until it reaches 165°F",
+        "Rest chicken 5 minutes and divide apples, sauce and meat among four plates"
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-110",
+      "name": "Skillet Creamy Pesto Shrimp Gnocchi",
+      "slot": "Dinner",
+      "cuisine": "Italian",
+      "serv": 4,
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "cal": 700,
+      "p": 42,
+      "c": 49,
+      "f": 37,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Potato gnocchi",
+          16,
+          "oz"
+        ],
+        [
+          "Raw shrimp",
+          1.5,
+          "lb"
+        ],
+        [
+          "Basil pesto",
+          0.5,
+          "cup"
+        ],
+        [
+          "Heavy cream",
+          0.5,
+          "cup"
+        ],
+        [
+          "Cherry tomatoes",
+          2,
+          "cup"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Parmesan cheese",
+          0.5,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Cook 16 oz potato gnocchi in boiling water according to package; drain when they float",
+        "Heat 1 tbsp oil in a skillet and sauté 1½ lb raw shrimp for 2–3 minutes per side until opaque and 145°F; remove",
+        "Add 2 cups halved cherry tomatoes and cook for 3 minutes until softened",
+        "Stir in ½ cup pesto and ½ cup cream; simmer 2 minutes, then fold in gnocchi and cooked shrimp",
+        "Sprinkle ½ cup Parmesan and divide into four bowls"
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
     }
   ]
 }
