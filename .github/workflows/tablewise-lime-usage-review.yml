@@ -1,0 +1,25 @@
+name: Tablewise lime usage and source review
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'ops/recipe-expansion/batch-01-recipe-drafts.json'
+      - 'ops/recipe-expansion/validate-lime-yield-review.mjs'
+      - '.github/workflows/tablewise-lime-usage-review.yml'
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate all 23 lime uses and USDA yield safeguards
+        run: node ops/recipe-expansion/validate-lime-yield-review.mjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: tablewise-lime-yield-unapproved-review
+          path: ops/recipe-expansion/lime-juice-yield-review.json
+          retention-days: 30
