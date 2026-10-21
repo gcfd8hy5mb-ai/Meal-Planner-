@@ -1,3 +1,4 @@
+import {ingredientMatches} from './ingredient-match.mjs';
 // Development adapter for TheMealDB. Not activated for production.
 // The fetcher and API key are injected: never hardcode production credentials in client files.
 const clean=value=>String(value??'').trim().toLowerCase().replace(/[^a-z0-9 ]/g,'').replace(/\s+/g,' ');
@@ -26,7 +27,7 @@ export function rankRemoteMeals(meals,pantry,{maxMissing=2}={}){
  return (Array.isArray(meals)?meals:[]).filter(Boolean).map(recipe=>{
   const missing=recipe.ingredients.filter(({name})=>{
    const item=clean(name);
-   return !owned.some(have=>item===have||item.includes(have)||have.includes(item));
+   return !owned.some(have=>ingredientMatches(item,have));
   });
   return {...recipe,missing:missing.map(x=>x.name),have:recipe.ingredients.length-missing.length};
  }).filter(x=>x.missing.length<=allowed).sort((a,b)=>a.missing.length-b.missing.length||b.have-a.have||a.name.localeCompare(b.name));
