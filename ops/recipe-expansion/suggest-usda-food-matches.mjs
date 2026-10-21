@@ -12,13 +12,14 @@ const offset=Math.max(0,Number(process.argv[3])||0);
 const todo=Object.entries(data.ingredients).filter(([,v])=>v.reviewStatus!=='approved').slice(offset,offset+limit);
 const sleep=ms=>new Promise(resolve=>setTimeout(resolve,ms));
 const suggestions=[];
+const queryAliases={'Breadcrumbs':'bread crumbs dry plain','Jalapeño':'jalapeno pepper raw','Panko breadcrumbs':'panko bread crumbs'};
 for(const [name] of todo){
  let result=null;
  for(let attempt=0;attempt<3;attempt++){
   try{
    const response=await fetch('https://api.nal.usda.gov/fdc/v1/foods/search?api_key='+encodeURIComponent(key),{
     method:'POST',headers:{'Content-Type':'application/json'},signal:AbortSignal.timeout(20000),
-    body:JSON.stringify({query:name,pageSize:5,dataType:['Foundation','SR Legacy','Survey (FNDDS)']})
+    body:JSON.stringify({query:queryAliases[name]||name,pageSize:5,dataType:['Foundation','SR Legacy','Survey (FNDDS)']})
    });
    if(response.status===429 || response.status>=500){
     const retry=response.headers.get('retry-after');
@@ -26,7 +27,7 @@ for(const [name] of todo){
    }
    if(!response.ok)throw Error('USDA HTTP '+response.status);
    const json=await response.json();
-   result={ingredient:name,candidates:(json.foods||[]).map(f=>({fdcId:f.fdcId,description:f.description,dataType:f.dataType,publicationDate:f.publicationDate})),status:'review-required'};
+   result={ingredient:name,searchQuery:queryAliases[name]||name,candidates:(json.foods||[]).map(f=>({fdcId:f.fdcId,description:f.description,dataType:f.dataType,publicationDate:f.publicationDate})),status:'review-required'};
    break;
   }catch(e){
    if(attempt===2)result={ingredient:name,error:String(e),status:'fetch-error'};
