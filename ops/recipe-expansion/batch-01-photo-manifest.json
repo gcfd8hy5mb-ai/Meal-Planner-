@@ -247,6 +247,42 @@
       "assetSaved": false,
       "photoReview": "pending",
       "pairedWithInstructions": true
+    },
+    {
+      "id": "exp01-029",
+      "name": "Chipotle Chicken Torta",
+      "expectedAsset": "assets/meal-photos/exp01-029.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "A toasted Mexican bolillo sandwich cut diagonally to reveal sliced grilled chicken, refried beans, melted pale Monterey Jack, avocado slices, tomato, shredded lettuce and chipotle mayonnaise; no beef, no seafood"
+    },
+    {
+      "id": "exp01-030",
+      "name": "Shrimp Veracruz",
+      "expectedAsset": "assets/meal-photos/exp01-030.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Large opaque shrimp simmered in a vivid red tomato sauce with visible green olive slices and capers, plated alongside white rice, bright lime garnish; no cheese or pasta"
+    },
+    {
+      "id": "exp01-031",
+      "name": "Steak and Pinto Bean Burritos",
+      "expectedAsset": "assets/meal-photos/exp01-031.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "A single cut-open toasted flour burrito displaying thin sliced steak, whole pinto beans, rice, sautéed bell peppers, onions, cheese and red salsa, luxury moody food photography"
+    },
+    {
+      "id": "exp01-032",
+      "name": "Poblano Chicken Rice Bake",
+      "expectedAsset": "assets/meal-photos/exp01-032.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Baked casserole in rustic dark ceramic with tender chicken pieces, fluffy rice, sliced poblano peppers, diced red tomato, melted Monterey Jack, chopped cilantro; no tortillas"
     }
   ]
 }
