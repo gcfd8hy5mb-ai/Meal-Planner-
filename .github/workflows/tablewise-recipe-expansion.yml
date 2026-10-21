@@ -6,7 +6,7 @@ on:
     paths:
       - 'ops/recipe-expansion/**'
       - 'tests/luxury-recipe-expansion-drafts.test.mjs'
-      - 'tests/luxury-recipe-photo-pairing.test.mjs tests/luxury-recipe-image-quality.test.mjs'
+      - 'tests/luxury-recipe-photo-pairing.test.mjs'
       - 'tests/luxury-recipe-image-quality.test.mjs'
       - 'luxury-v2/catalog.js'
       - 'assets/meal-photos/**'
@@ -32,4 +32,4 @@ jobs:
       - name: Audit baseline and staged batches, fail on missing photos or instructions
         run: |
           node ops/recipe-expansion/audit.mjs
-          node --test tests/luxury-recipe-expansion-drafts.test.mjs tests/luxury-recipe-photo-pairing.test.mjs
+          node --test tests/luxury-recipe-expansion-drafts.test.mjs tests/luxury-recipe-photo-pairing.test.mjs tests/luxury-recipe-image-quality.test.mjs
