@@ -481,6 +481,96 @@
       "photoReview": "pending",
       "pairedWithInstructions": true,
       "photoBrief": "Homey bowl of turkey and wild rice soup with shredded turkey, dark rice grains, carrots, celery and creamy golden broth"
+    },
+    {
+      "id": "exp01-055",
+      "name": "Homestyle Beef Pot Roast",
+      "expectedAsset": "assets/meal-photos/exp01-055.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Fork-tender pot roast with chunky carrots and potatoes in a shallow bowl, rich brown juices, natural home-kitchen daylight"
+    },
+    {
+      "id": "exp01-056",
+      "name": "Garlic Parmesan Chicken Wings",
+      "expectedAsset": "assets/meal-photos/exp01-056.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Crispy oven-baked chicken wings coated in garlic butter and fine Parmesan flecks, chopped parsley, simple platter daylight"
+    },
+    {
+      "id": "exp01-057",
+      "name": "Sausage and Peppers Hoagies",
+      "expectedAsset": "assets/meal-photos/exp01-057.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Toasted hoagie roll filled with sliced Italian sausage, red and green peppers, onions, melted provolone and tomato sauce, natural daylight"
+    },
+    {
+      "id": "exp01-058",
+      "name": "One-Pot Chicken Alfredo",
+      "expectedAsset": "assets/meal-photos/exp01-058.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Creamy fettuccine Alfredo topped with juicy golden chicken strips and Parmesan, simple white ceramic bowl in daylight"
+    },
+    {
+      "id": "exp01-059",
+      "name": "Teriyaki Chicken Rice Bowls",
+      "expectedAsset": "assets/meal-photos/exp01-059.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Realistic teriyaki chicken rice bowl with glossy brown chicken chunks, fluffy white jasmine rice and vibrant steamed broccoli, window light"
+    },
+    {
+      "id": "exp01-060",
+      "name": "Classic Beef Stroganoff",
+      "expectedAsset": "assets/meal-photos/exp01-060.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Beef stroganoff with tender brown beef strips and mushrooms in pale creamy sauce over wide egg noodles, homemade daylight"
+    },
+    {
+      "id": "exp01-061",
+      "name": "Chicken Tortellini Soup",
+      "expectedAsset": "assets/meal-photos/exp01-061.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Golden chicken broth soup with plump cheese tortellini, shredded chicken, sliced carrots, celery and leafy spinach in bowl"
+    },
+    {
+      "id": "exp01-062",
+      "name": "Sheet-Pan Lemon Herb Chicken and Potatoes",
+      "expectedAsset": "assets/meal-photos/exp01-062.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Natural roasted bone-in lemon herb chicken thighs with golden baby potatoes and green beans on one baking sheet, daylight"
+    },
+    {
+      "id": "exp01-063",
+      "name": "Sweet and Sour Chicken",
+      "expectedAsset": "assets/meal-photos/exp01-063.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Bright sweet and sour chicken with distinct golden chicken pieces, red and green bell peppers, pineapple chunks and orange-red glossy sauce in bowl"
+    },
+    {
+      "id": "exp01-064",
+      "name": "Breakfast Sausage Egg Casserole",
+      "expectedAsset": "assets/meal-photos/exp01-064.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Golden baked breakfast egg casserole cut into squares showing sausage crumbles, cheddar, bell pepper and toasted bread, natural light"
     }
   ]
 }
