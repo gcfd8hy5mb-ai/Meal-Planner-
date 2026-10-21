@@ -18,3 +18,7 @@ Replace four highly overlapping recipes with fully developed alternatives, updat
 ## Replacement update
 
 The four high-overlap recipe records were replaced on the staging branch, preserving their IDs: exp01-059 → Pineapple Ginger Chicken Lettuce Cups; exp01-060 → Balsamic Steak and Roasted Grape Salad; exp01-065 → Apple Cider Pork and Sweet Potato Sheet Pan; exp01-067 → Ricotta Spinach Stuffed Portobellos. Recipe instructions, measured ingredients, estimates and matching photographic briefs were updated. This is not a full semantic or nutrition certification.
+
+## Final flagged near-duplicate review (2026-10-21)
+
+Compared the remaining five flagged dishes against their originals' named ingredients and cooking methods. Replaced `exp01-071` chicken/leek pot pie with Lemon Dill Chicken and Barley Skillet (chicken with barley, lemon, dill, spinach; no pastry), and `exp01-093` Bacon Cheeseburger Stuffed Shells with Balsamic Turkey and Roasted Beet Grain Bowls (ground turkey, roasted beets, farro and greens; no cheeseburger ingredients). Retained `exp01-085` (rice cooked with creamy chicken instead of original green-bean chicken), `exp01-089` (ground chicken baked as marinara meatballs instead of chicken breast cutlets), and `exp01-100` (roasted ranch chicken and potato wedges instead of original cream-cheese ranch chicken and green beans). This is a targeted flagged-pair editorial determination; a comprehensive food taxonomy/ingredient similarity audit and verified per-serving nutrition remain release gates. No photographs approved or recipes published.
