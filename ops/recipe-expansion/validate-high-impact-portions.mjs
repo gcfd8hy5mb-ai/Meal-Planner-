@@ -21,6 +21,21 @@ for(const item of review.items){
   throw Error('Incomplete reference evidence for '+item.ingredient);
  }
  if(sources[item.ingredient].reviewStatus==='approved')throw Error('Unexpected approved entry before audit: '+item.ingredient);
+ if(!item.status.startsWith('blocked')){
+   const raw=evidence.find(e=>e.ingredient===item.ingredient && e.unit===item.unit);
+   const food=raw?.candidates?.find(c=>c.fdcId===item.fdcId);
+   if(!food)throw Error('Editorial FDC ID not among retrieved USDA foods: '+item.ingredient);
+   const portion=food.foodPortions||[];
+   const valid=item.ingredient==='Cilantro'
+     ?portion.some(p=>p.gramWeight===4&&p.amount===0.25&&/cup/i.test(String(p.modifier)+' '+String(p.measureUnit)))
+     :portion.some(p=>p.gramWeight===item.usdaReferenceGrams&&(
+       item.ingredient==='Garlic cloves'?/clove/i.test(String(p.modifier)+' '+String(p.portionDescription)):
+       item.unit==='tsp'?/tsp|teaspoon/i.test(String(p.modifier)+' '+String(p.measureUnit)):
+       item.unit==='tbsp'?/tbsp|tablespoon/i.test(String(p.modifier)+' '+String(p.measureUnit)):
+       item.unit==='cup'?/cup/i.test(String(p.modifier)+' '+String(p.measureUnit)):false));
+   if(!valid)throw Error('USDA foodPortion weight or unit not supported by source: '+item.ingredient);
+ }
+
 }
 if(review.items.length!==10||coveredUses!==329||review.approvedMappings!==0)throw Error('Top-ten review totals or approval gate mismatch');
 console.log(JSON.stringify({reviewedPairs:review.items.length,recipeUses:coveredUses,withSourceGramCandidates:review.items.filter(x=>x.usdaReferenceGrams!==null).length,blocked:review.items.filter(x=>x.status.startsWith('blocked')).length,approvedMappings:0}));
