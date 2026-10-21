@@ -4842,6 +4842,395 @@
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
       }
+    },
+    {
+      "id": "exp01-057",
+      "name": "Smoked Sausage Jambalaya",
+      "serv": 6,
+      "ingredients": [
+        [
+          "Fully cooked smoked pork sausage",
+          1,
+          "lb"
+        ],
+        [
+          "Long-grain white rice, dry",
+          1.5,
+          "cup"
+        ],
+        [
+          "Chicken broth",
+          3,
+          "cup"
+        ],
+        [
+          "Diced tomatoes, canned",
+          1.5,
+          "cup"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Green bell pepper",
+          1,
+          "each"
+        ],
+        [
+          "Celery stalks",
+          2,
+          "each"
+        ],
+        [
+          "Garlic cloves",
+          3,
+          "each"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Cajun seasoning",
+          2,
+          "tsp"
+        ],
+        [
+          "Smoked paprika",
+          1,
+          "tsp"
+        ],
+        [
+          "Dried thyme",
+          0.5,
+          "tsp"
+        ],
+        [
+          "Bay leaf",
+          1,
+          "each"
+        ],
+        [
+          "Green onions",
+          0.25,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Dice 1 onion, 1 green bell pepper and 2 celery stalks, and mince 3 garlic cloves. Cut 1 lb fully cooked smoked sausage into ¼-inch rounds and measure 1½ cups dry rice; keep the raw vegetables separate from any cooked-meat utensils.",
+        "Heat 1 tbsp olive oil in a heavy pot over medium-high heat and brown the sausage slices for 4–5 minutes. Remove them with a slotted spoon and set aside, leaving the flavored oil in the pot.",
+        "Add onion, bell pepper and celery and cook for 5–6 minutes until soft, stirring to loosen browned bits. Add garlic, 2 tsp Cajun seasoning, 1 tsp smoked paprika and ½ tsp thyme, cooking 30 seconds until fragrant.",
+        "Stir in 1½ cups uncooked rice, 3 cups chicken broth, 1½ cups canned diced tomatoes with juices, the sausage and 1 bay leaf. Bring to a boil, reduce to low, cover tightly and simmer about 18–22 minutes until the rice is tender and the liquid is absorbed, using the rice package's timing as a guide.",
+        "Remove from heat and leave covered for 5 minutes. Discard the bay leaf, fluff the jambalaya and check that the sausage and rice are steaming hot throughout; garnish six bowls with ¼ cup sliced green onions."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-058",
+      "name": "Cajun Chicken and Sausage Gumbo",
+      "serv": 8,
+      "ingredients": [
+        [
+          "Boneless skinless chicken thighs",
+          1.5,
+          "lb"
+        ],
+        [
+          "Fully cooked smoked andouille sausage",
+          12,
+          "oz"
+        ],
+        [
+          "All-purpose flour",
+          0.5,
+          "cup"
+        ],
+        [
+          "Neutral oil",
+          0.5,
+          "cup"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Green bell pepper",
+          1,
+          "each"
+        ],
+        [
+          "Celery stalks",
+          3,
+          "each"
+        ],
+        [
+          "Garlic cloves",
+          4,
+          "each"
+        ],
+        [
+          "Chicken broth",
+          6,
+          "cup"
+        ],
+        [
+          "Dried thyme",
+          1,
+          "tsp"
+        ],
+        [
+          "Cajun seasoning",
+          2,
+          "tsp"
+        ],
+        [
+          "Bay leaves",
+          2,
+          "each"
+        ],
+        [
+          "Frozen sliced okra",
+          2,
+          "cup"
+        ],
+        [
+          "Cooked white rice",
+          4,
+          "cup"
+        ],
+        [
+          "Green onions",
+          0.5,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Dice the onion, green pepper and 3 celery stalks; mince 4 garlic cloves. Cut 1½ lb raw chicken thighs into bite-size pieces on a separate board and slice 12 oz fully cooked andouille into rounds.",
+        "In a heavy-bottomed large pot over medium-low heat, whisk together ½ cup neutral oil and ½ cup flour. Stir continuously for about 20–30 minutes until the roux turns deep milk-chocolate brown; lower heat immediately if it smokes or develops black flecks and do not leave unattended.",
+        "Carefully stir onion, pepper and celery into the hot roux and cook for 5 minutes, then add garlic for 30 seconds. Pour 6 cups chicken broth in gradually while stirring until the mixture is smooth.",
+        "Add raw chicken, sliced sausage, 1 tsp thyme, 2 tsp Cajun seasoning and 2 bay leaves. Bring to a gentle simmer, cover partially and cook 25–30 minutes, stirring occasionally, until chicken reaches 165°F.",
+        "Stir in 2 cups frozen okra and simmer another 10 minutes until tender. Remove bay leaves and serve eight portions over 4 cups safely reheated cooked white rice, adding ½ cup sliced green onions just before eating."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-059",
+      "name": "Shrimp Étouffée",
+      "serv": 6,
+      "ingredients": [
+        [
+          "Peeled deveined raw shrimp",
+          1.5,
+          "lb"
+        ],
+        [
+          "Unsalted butter",
+          5,
+          "tbsp"
+        ],
+        [
+          "All-purpose flour",
+          0.33,
+          "cup"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Green bell pepper",
+          1,
+          "each"
+        ],
+        [
+          "Celery stalks",
+          2,
+          "each"
+        ],
+        [
+          "Garlic cloves",
+          3,
+          "each"
+        ],
+        [
+          "Seafood stock",
+          3,
+          "cup"
+        ],
+        [
+          "Tomato paste",
+          1,
+          "tbsp"
+        ],
+        [
+          "Cajun seasoning",
+          2,
+          "tsp"
+        ],
+        [
+          "Smoked paprika",
+          0.5,
+          "tsp"
+        ],
+        [
+          "Worcestershire sauce",
+          1,
+          "tsp"
+        ],
+        [
+          "Green onions",
+          0.25,
+          "cup"
+        ],
+        [
+          "Cooked white rice",
+          3,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Dice 1 onion, 1 bell pepper and 2 celery stalks into small even pieces; mince 3 garlic cloves. Pat 1½ lb peeled shrimp dry and keep refrigerated until the sauce is ready.",
+        "Melt 5 tbsp butter in a heavy skillet or Dutch oven over medium heat. Sprinkle in ⅓ cup flour while whisking and cook for 5–7 minutes, stirring constantly, until the roux becomes light caramel brown.",
+        "Add the onion, pepper and celery and stir for 5–6 minutes until softened. Stir in the garlic for 30 seconds, then add 1 tbsp tomato paste, 2 tsp Cajun seasoning and ½ tsp smoked paprika.",
+        "Gradually whisk in 3 cups seafood stock until smooth, add 1 tsp Worcestershire sauce and simmer uncovered for 10 minutes until the sauce thickens enough to coat a spoon; stir to keep the roux from sticking.",
+        "Add shrimp in one layer and gently simmer 4–6 minutes, turning once, until fully opaque and reaching 145°F. Reheat 3 cups cooked white rice until steaming and 165°F, then divide into six bowls, ladle étouffée on top and sprinkle with ¼ cup sliced green onions."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-060",
+      "name": "Red Beans and Sausage Rice",
+      "serv": 6,
+      "ingredients": [
+        [
+          "Fully cooked smoked andouille sausage",
+          1,
+          "lb"
+        ],
+        [
+          "Red kidney beans, canned, drained",
+          3,
+          "cup"
+        ],
+        [
+          "Long-grain white rice, dry",
+          1.5,
+          "cup"
+        ],
+        [
+          "Chicken broth",
+          2,
+          "cup"
+        ],
+        [
+          "Water",
+          1,
+          "cup"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Green bell pepper",
+          1,
+          "each"
+        ],
+        [
+          "Celery stalks",
+          2,
+          "each"
+        ],
+        [
+          "Garlic cloves",
+          3,
+          "each"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Cajun seasoning",
+          2,
+          "tsp"
+        ],
+        [
+          "Dried thyme",
+          1,
+          "tsp"
+        ],
+        [
+          "Bay leaves",
+          2,
+          "each"
+        ],
+        [
+          "Green onions",
+          0.25,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Rinse 1½ cups dry white rice and cook separately according to package instructions while preparing the beans. Dice 1 onion, 1 green bell pepper and 2 celery stalks, mince 3 garlic cloves, and slice 1 lb fully cooked andouille sausage.",
+        "Heat 1 tbsp olive oil in a large saucepan over medium heat and brown sausage rounds for 4–5 minutes. Transfer the sausage to a plate, leaving the flavored oil in the pan.",
+        "Add onion, pepper and celery and cook for 6–7 minutes until softened. Stir in the garlic for 30 seconds, then add 2 tsp Cajun seasoning and 1 tsp dried thyme.",
+        "Pour in 2 cups chicken broth and 1 cup water, followed by 3 cups drained canned kidney beans, the browned sausage and 2 bay leaves. Simmer uncovered for 20–25 minutes, stirring occasionally; mash about ½ cup beans against the side of the pot to thicken the sauce.",
+        "Discard the bay leaves and confirm the sausage-and-bean mixture is thoroughly hot. Fluff the rice, divide it into six bowls and spoon the beans and sausage over each serving, finishing with ¼ cup chopped green onions."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
     }
   ]
 }
