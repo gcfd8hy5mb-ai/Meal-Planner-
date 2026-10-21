@@ -22,15 +22,16 @@ assert.deepEqual(searchMeals(recipes,{lowCarb:true,recipeDetails}).map(r=>r.id),
 test('only supported slot appears',()=>assert.deepEqual(searchMeals(recipes,{slot:'Breakfast'}).map(r=>r.id),['breakfast']));
 const html=fs.readFileSync('luxury-v2/index.html','utf8'),script=fs.readFileSync('luxury-v2/live.js','utf8');
 test('picker actions exist and macro values appear in Today menu',()=>{
- for(const id of ['luxuryQuickOnly','luxuryHighProtein','luxuryLowCarb','luxuryFillWeek','luxuryTodayDinnerMacros'])assert.ok(html.includes('id="'+id+'"'),id);
+ for(const id of ['luxuryQuickOnly','luxuryHighProtein','luxuryLowCarb','luxuryTodayDinnerMacros'])assert.ok(html.includes('id="'+id+'"'),id);
  assert.ok(html.includes('class="optional-macros"'));
  assert.ok(script.includes('setHero=()=>'));
  assert.ok(script.includes("textContent=macroSummary(dinner)"));
  assert.ok(script.includes("macros.textContent=recipe?macroSummary(recipe):''"));
 });
-test('weekly quick fill is preview only; cloud saving remains gated',()=>{
- assert.ok(script.includes('if(fillWeek){'));
- assert.ok(script.includes('replacePreviewMeal(account,previewEdits,week,d,2,choice.id)'));
+test('misleading weekly bulk fill removed, per-day selection and preview guard preserved',()=>{
+ assert.ok(!html.includes('luxuryFillWeek'));
+ assert.ok(!script.includes('fillWeek'));
+ assert.ok(script.includes('replacePreviewMeal(account,previewEdits,week,day,2,recipe.id)'));
  assert.ok(script.includes('const LUXURY_SAVES_RELEASED=false;'));
- assert.ok(script.includes('These changes are not saved to your account.'));
+ assert.ok(script.includes('Changes are not saved to your account.'));
 });
