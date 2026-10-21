@@ -6558,6 +6558,736 @@
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
       }
+    },
+    {
+      "id": "exp01-081",
+      "name": "Slow-Cooker Mississippi Pot Roast",
+      "slot": "Dinner",
+      "cuisine": "American",
+      "serv": 8,
+      "prepMinutes": 15,
+      "cookMinutes": 480,
+      "cal": 480,
+      "p": 44,
+      "c": 8,
+      "f": 30,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Chuck roast",
+          3,
+          "lb"
+        ],
+        [
+          "Ranch seasoning",
+          1,
+          "oz"
+        ],
+        [
+          "Au jus seasoning",
+          1,
+          "oz"
+        ],
+        [
+          "Pepperoncini peppers",
+          8,
+          "each"
+        ],
+        [
+          "Pepperoncini brine",
+          0.25,
+          "cup"
+        ],
+        [
+          "Unsalted butter",
+          4,
+          "tbsp"
+        ],
+        [
+          "Beef broth",
+          0.5,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Pat 3 lb chuck roast dry and place it in a 6-quart slow cooker.",
+        "Sprinkle 1 oz ranch seasoning and 1 oz au jus mix evenly over the beef; add 8 pepperoncini peppers, ¼ cup brine and ½ cup broth around the sides.",
+        "Place 4 tbsp butter in small pieces on top. Cover and cook on LOW 8 hours until beef shreds easily.",
+        "Use two forks to shred beef in the cooking juices, removing any large pieces of fat.",
+        "Divide into eight servings with peppers and spoon over the warm cooking liquid."
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-082",
+      "name": "Lemon Garlic Shrimp Linguine",
+      "slot": "Dinner",
+      "cuisine": "Italian",
+      "serv": 4,
+      "prepMinutes": 20,
+      "cookMinutes": 20,
+      "cal": 590,
+      "p": 36,
+      "c": 67,
+      "f": 19,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Raw peeled shrimp",
+          1.5,
+          "lb"
+        ],
+        [
+          "Dry linguine",
+          12,
+          "oz"
+        ],
+        [
+          "Olive oil",
+          2,
+          "tbsp"
+        ],
+        [
+          "Butter",
+          3,
+          "tbsp"
+        ],
+        [
+          "Garlic cloves",
+          5,
+          "each"
+        ],
+        [
+          "Lemon",
+          2,
+          "each"
+        ],
+        [
+          "Fresh parsley",
+          0.25,
+          "cup"
+        ],
+        [
+          "Red pepper flakes",
+          0.25,
+          "tsp"
+        ]
+      ],
+      "steps": [
+        "Boil 12 oz linguine until al dente, reserving ½ cup of the starchy water before draining.",
+        "Pat 1½ lb shrimp dry. Heat 2 tbsp olive oil in a large skillet and sauté shrimp for 2 minutes per side until opaque and 145°F; remove to a plate.",
+        "Reduce heat and melt 3 tbsp butter, cook 5 minced garlic cloves and ¼ tsp red pepper flakes for 30 seconds.",
+        "Add juice from 2 lemons and ¼ cup reserved pasta water; swirl until saucy.",
+        "Toss in pasta, shrimp and ¼ cup chopped parsley, adding more water if needed. Divide into four portions."
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-083",
+      "name": "Salisbury Steak with Mushroom Gravy",
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "serv": 4,
+      "prepMinutes": 20,
+      "cookMinutes": 30,
+      "cal": 510,
+      "p": 38,
+      "c": 20,
+      "f": 30,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Ground beef",
+          1.5,
+          "lb"
+        ],
+        [
+          "Breadcrumbs",
+          0.5,
+          "cup"
+        ],
+        [
+          "Egg",
+          1,
+          "each"
+        ],
+        [
+          "Mushrooms",
+          8,
+          "oz"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Beef broth",
+          2,
+          "cup"
+        ],
+        [
+          "Worcestershire sauce",
+          2,
+          "tbsp"
+        ],
+        [
+          "Cornstarch",
+          1.5,
+          "tbsp"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ]
+      ],
+      "steps": [
+        "Mix 1½ lb beef, ½ cup breadcrumbs, 1 egg and 1 tbsp Worcestershire sauce; shape into four oval patties.",
+        "Heat 1 tbsp oil in a skillet over medium heat; brown patties for 4 minutes on each side, then transfer to a plate.",
+        "Add sliced onion and 8 oz sliced mushrooms, sautéing 6 minutes until softened.",
+        "Whisk 1½ tbsp cornstarch into ¼ cup cold broth; pour remaining 1¾ cups broth and 1 tbsp Worcestershire into the pan, then add slurry and simmer until thickened.",
+        "Return patties to gravy and simmer 7–10 minutes until centers reach 160°F. Serve each patty with mushroom gravy."
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-084",
+      "name": "Ham and Cheese Breakfast Sliders",
+      "slot": "Breakfast",
+      "cuisine": "Breakfast",
+      "serv": 6,
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "cal": 460,
+      "p": 25,
+      "c": 37,
+      "f": 24,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Hawaiian dinner rolls",
+          12,
+          "each"
+        ],
+        [
+          "Deli ham",
+          12,
+          "oz"
+        ],
+        [
+          "Swiss cheese",
+          6,
+          "slice"
+        ],
+        [
+          "Eggs",
+          6,
+          "each"
+        ],
+        [
+          "Milk",
+          0.25,
+          "cup"
+        ],
+        [
+          "Butter",
+          3,
+          "tbsp"
+        ],
+        [
+          "Dijon mustard",
+          1,
+          "tbsp"
+        ]
+      ],
+      "steps": [
+        "Heat oven to 350°F. Slice a connected pack of 12 dinner rolls horizontally and place bottom slab in a greased baking dish.",
+        "Whisk 6 eggs with ¼ cup milk; scramble in a nonstick skillet over medium heat until set and 160°F.",
+        "Layer 12 oz ham, cooked eggs and 6 Swiss slices over bottom rolls; replace top slab.",
+        "Melt 3 tbsp butter, mix with 1 tbsp Dijon and brush over the tops.",
+        "Cover with foil and bake 12 minutes, then uncover 5–8 minutes until cheese melts. Cut into 12 sliders and serve two per portion."
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-085",
+      "name": "One-Pan Creamy Garlic Chicken and Rice",
+      "slot": "Dinner",
+      "cuisine": "American",
+      "serv": 4,
+      "prepMinutes": 20,
+      "cookMinutes": 30,
+      "cal": 620,
+      "p": 44,
+      "c": 60,
+      "f": 22,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Boneless chicken thighs",
+          1.5,
+          "lb"
+        ],
+        [
+          "Long grain white rice",
+          1.5,
+          "cup"
+        ],
+        [
+          "Chicken broth",
+          3,
+          "cup"
+        ],
+        [
+          "Heavy cream",
+          0.5,
+          "cup"
+        ],
+        [
+          "Garlic cloves",
+          5,
+          "each"
+        ],
+        [
+          "Baby spinach",
+          2,
+          "cup"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Italian seasoning",
+          1,
+          "tsp"
+        ]
+      ],
+      "steps": [
+        "Season 1½ lb chicken thighs with 1 tsp Italian seasoning. Heat 1 tbsp oil in a deep skillet and brown thighs 3 minutes per side; remove.",
+        "Sauté 5 minced garlic cloves for 30 seconds, then stir in 1½ cups rinsed rice, 3 cups broth and ½ cup cream.",
+        "Return chicken over rice and bring to a simmer; cover and cook on low for 18–22 minutes until rice is tender.",
+        "Check chicken at the thickest part for 165°F; continue cooking if needed, adding a splash of water if rice dries out.",
+        "Fold 2 cups spinach into hot rice until wilted, rest covered 5 minutes, then divide four ways."
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-086",
+      "name": "Beef and Bean Chili",
+      "slot": "Dinner",
+      "cuisine": "Soups & Stews",
+      "serv": 6,
+      "prepMinutes": 20,
+      "cookMinutes": 50,
+      "cal": 480,
+      "p": 37,
+      "c": 44,
+      "f": 16,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Lean ground beef",
+          2,
+          "lb"
+        ],
+        [
+          "Kidney beans",
+          30,
+          "oz"
+        ],
+        [
+          "Crushed tomatoes",
+          28,
+          "oz"
+        ],
+        [
+          "Tomato sauce",
+          15,
+          "oz"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Bell pepper",
+          1,
+          "each"
+        ],
+        [
+          "Chili powder",
+          2,
+          "tbsp"
+        ],
+        [
+          "Ground cumin",
+          2,
+          "tsp"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ]
+      ],
+      "steps": [
+        "Heat 1 tbsp oil in a large pot and soften 1 diced onion and 1 diced bell pepper for 6 minutes.",
+        "Add 2 lb ground beef; break it up and brown for 8–10 minutes until 160°F, draining excess fat.",
+        "Stir in 2 tbsp chili powder and 2 tsp cumin for 30 seconds.",
+        "Add two drained 15 oz cans kidney beans, 28 oz crushed tomatoes and 15 oz tomato sauce. Bring to a simmer.",
+        "Cook partially covered for 35–40 minutes, stirring every 10 minutes until thick, and divide into six bowls."
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-087",
+      "name": "Creamy Cajun Chicken Pasta",
+      "slot": "Dinner",
+      "cuisine": "Cajun & Creole",
+      "serv": 4,
+      "prepMinutes": 20,
+      "cookMinutes": 25,
+      "cal": 690,
+      "p": 46,
+      "c": 65,
+      "f": 27,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Boneless chicken breast",
+          1.5,
+          "lb"
+        ],
+        [
+          "Dry penne pasta",
+          12,
+          "oz"
+        ],
+        [
+          "Heavy cream",
+          1,
+          "cup"
+        ],
+        [
+          "Bell peppers",
+          2,
+          "each"
+        ],
+        [
+          "Parmesan cheese",
+          0.5,
+          "cup"
+        ],
+        [
+          "Cajun seasoning",
+          2,
+          "tbsp"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Garlic cloves",
+          3,
+          "each"
+        ]
+      ],
+      "steps": [
+        "Boil 12 oz penne according to package directions; reserve ½ cup pasta water and drain.",
+        "Cut 1½ lb chicken into strips and toss with 1 tbsp Cajun seasoning. Sear in 1 tbsp olive oil for 6–8 minutes until chicken reaches 165°F; transfer to a plate.",
+        "Slice 2 bell peppers and sauté in same pan for 4–5 minutes. Add 3 minced garlic cloves and remaining 1 tbsp seasoning, cook 30 seconds.",
+        "Pour in 1 cup cream and simmer gently for 3 minutes; stir in ½ cup Parmesan and reserved pasta water as needed.",
+        "Return chicken and penne, toss until evenly coated and piping hot, then divide into four portions."
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-088",
+      "name": "Pork Tenderloin with Apple Pan Sauce",
+      "slot": "Dinner",
+      "cuisine": "American",
+      "serv": 4,
+      "prepMinutes": 20,
+      "cookMinutes": 30,
+      "cal": 430,
+      "p": 43,
+      "c": 24,
+      "f": 17,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Pork tenderloin",
+          1.5,
+          "lb"
+        ],
+        [
+          "Apples",
+          2,
+          "each"
+        ],
+        [
+          "Apple cider",
+          1,
+          "cup"
+        ],
+        [
+          "Dijon mustard",
+          1,
+          "tbsp"
+        ],
+        [
+          "Butter",
+          2,
+          "tbsp"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Fresh thyme",
+          1,
+          "tsp"
+        ],
+        [
+          "Yellow onion",
+          0.5,
+          "each"
+        ]
+      ],
+      "steps": [
+        "Preheat oven to 400°F. Pat 1½ lb pork tenderloin dry; heat 1 tbsp oil in an oven-safe skillet and sear on all sides for 5 minutes total.",
+        "Transfer skillet to oven and roast 15–22 minutes until pork reaches 145°F; move to board and rest 3 minutes.",
+        "While pork rests, place skillet over medium heat and add ½ thinly sliced onion, 2 cored sliced apples and 2 tbsp butter. Cook 5 minutes.",
+        "Pour 1 cup apple cider into the pan and scrape browned bits; add 1 tbsp Dijon and 1 tsp thyme, then simmer 5 minutes until slightly reduced.",
+        "Slice pork into medallions and divide among four plates; spoon apple and onion sauce on top."
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-089",
+      "name": "Baked Chicken Parmesan Meatballs",
+      "slot": "Dinner",
+      "cuisine": "Italian",
+      "serv": 4,
+      "prepMinutes": 20,
+      "cookMinutes": 30,
+      "cal": 520,
+      "p": 43,
+      "c": 32,
+      "f": 23,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Ground chicken",
+          1.5,
+          "lb"
+        ],
+        [
+          "Breadcrumbs",
+          0.75,
+          "cup"
+        ],
+        [
+          "Egg",
+          1,
+          "each"
+        ],
+        [
+          "Grated Parmesan",
+          0.5,
+          "cup"
+        ],
+        [
+          "Marinara sauce",
+          2,
+          "cup"
+        ],
+        [
+          "Shredded mozzarella",
+          1,
+          "cup"
+        ],
+        [
+          "Italian seasoning",
+          1,
+          "tsp"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ]
+      ],
+      "steps": [
+        "Preheat oven to 400°F and grease a baking dish with 1 tbsp olive oil.",
+        "Mix 1½ lb ground chicken, ¾ cup breadcrumbs, 1 egg, ½ cup Parmesan and 1 tsp Italian seasoning; shape into 20 meatballs.",
+        "Arrange on a lined baking sheet and bake 15–18 minutes until centers reach 165°F.",
+        "Pour 2 cups marinara into the greased dish and add baked meatballs; sprinkle with 1 cup mozzarella.",
+        "Bake another 8–10 minutes until sauce bubbles and cheese melts; divide into four portions of five meatballs."
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-090",
+      "name": "Breakfast Potato and Chorizo Hash",
+      "slot": "Breakfast",
+      "cuisine": "Breakfast",
+      "serv": 4,
+      "prepMinutes": 20,
+      "cookMinutes": 25,
+      "cal": 560,
+      "p": 25,
+      "c": 38,
+      "f": 34,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Fresh Mexican chorizo",
+          12,
+          "oz"
+        ],
+        [
+          "Yukon gold potatoes",
+          1.5,
+          "lb"
+        ],
+        [
+          "Eggs",
+          4,
+          "each"
+        ],
+        [
+          "Bell pepper",
+          1,
+          "each"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Smoked paprika",
+          1,
+          "tsp"
+        ],
+        [
+          "Fresh cilantro",
+          0.25,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Dice 1½ lb potatoes into ½-inch cubes and boil in salted water 6 minutes; drain and dry.",
+        "Heat 1 tbsp oil in a skillet and cook diced onion and pepper 4 minutes. Add 12 oz fresh chorizo, crumble and cook until 160°F.",
+        "Add cooked potatoes and 1 tsp smoked paprika; sauté 8–10 minutes until golden and crisp, turning gently.",
+        "Make four wells in hash and crack an egg into each. Cover and cook 4–6 minutes until whites and yolks reach 160°F.",
+        "Garnish with ¼ cup chopped cilantro and divide the hash so each serving has one egg."
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
     }
   ]
 }
