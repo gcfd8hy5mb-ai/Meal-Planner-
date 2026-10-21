@@ -21,7 +21,7 @@ export async function handleRecipeRequest(request,env,fetcher=fetch){
  const ingredients=String(u.searchParams.get('ingredients')||'').split(',').map(x=>x.trim()).filter(Boolean);
  if(ingredients.length<1||ingredients.length>12||ingredients.some(x=>x.length>60))return json({error:'Add 1–12 ingredients'},400);
  const type=u.searchParams.get('type')||'Any';
- if(!ALLOWED_TYPES.has(type))return json({error:'This food type is not supported by the online recipe provider yet'},422);
+ if(!ALLOWED_TYPES.has(type))return json({error:'This food type is not supported by the online recipe provider yet'},['Tex-Mex','Asian','Southern','Soups','Stews','Casseroles','BBQ'].includes(type)?422:400);
  const n=Number(u.searchParams.get('maxMissing')||2);
  if(!Number.isInteger(n)||n<0||n>5)return json({error:'Invalid missing ingredient limit'},400);
  // Never spend provider quota without a functioning, centrally enforced limiter.
