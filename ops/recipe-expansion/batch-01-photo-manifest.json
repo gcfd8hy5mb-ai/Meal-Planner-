@@ -535,6 +535,42 @@
       "photoReview": "pending",
       "pairedWithInstructions": true,
       "photoBrief": "Creamy red kidney beans with sliced browned andouille sausage and Cajun vegetables alongside fluffy white rice, topped with finely cut green onions; no chicken"
+    },
+    {
+      "id": "exp01-061",
+      "name": "Cheddar Broccoli Chicken Bake",
+      "expectedAsset": "assets/meal-photos/exp01-061.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "A bubbling golden cheddar chicken broccoli rice casserole in a dark ceramic baking dish, clearly showing chicken cubes, green broccoli florets, rice, and crisp panko topping"
+    },
+    {
+      "id": "exp01-062",
+      "name": "Bacon Cheeseburger Tater Tot Casserole",
+      "expectedAsset": "assets/meal-photos/exp01-062.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Dark cast iron casserole topped with crispy golden tater tots, melted cheddar, bacon bits, ground beef and pickle slices, one serving spoon lifting a piece"
+    },
+    {
+      "id": "exp01-063",
+      "name": "Southern Baked Macaroni and Cheese",
+      "expectedAsset": "assets/meal-photos/exp01-063.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Rich golden baked elbow macaroni and cheese with browned bubbly cheddar crust in a dark rectangular casserole dish, no bacon or breadcrumbs"
+    },
+    {
+      "id": "exp01-064",
+      "name": "Cast-Iron Cornbread Chicken Pie",
+      "expectedAsset": "assets/meal-photos/exp01-064.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Golden cornbread crust in black cast-iron skillet, one spooned portion exposing creamy shredded chicken, peas, carrots and corn underneath"
     }
   ]
 }
