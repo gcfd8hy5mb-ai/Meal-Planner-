@@ -1,0 +1,105 @@
+{
+  "offset": 125,
+  "sourceRunId": 39684661702,
+  "sourceArtifactId": 12385885775,
+  "recordsRequested": 25,
+  "sourceDetailRetrieved": 25,
+  "approvedInReview": [
+    "Boneless pork loin",
+    "Bread crumbs",
+    "Capers, drained"
+  ],
+  "held": [
+    {
+      "ingredient": "Apricot preserves",
+      "reason": "Preserves are source-matched but cup portion missing; 1 tbsp volume not safely scaled to cup across product variations"
+    },
+    {
+      "ingredient": "Arborio rice",
+      "reason": "Search returned rice crackers"
+    },
+    {
+      "ingredient": "Artichoke hearts",
+      "reason": "Search returned Jerusalem artichokes, a different ingredient"
+    },
+    {
+      "ingredient": "Avocados",
+      "reason": "Search returned avocado oil, not avocado fruit"
+    },
+    {
+      "ingredient": "Baby arugula",
+      "reason": "Source RACC 85g is not a cup measure"
+    },
+    {
+      "ingredient": "Bacon",
+      "reason": "Search returned meatless bacon"
+    },
+    {
+      "ingredient": "Baking powder",
+      "reason": "Search returned low-sodium formula and inconsistent teaspoons"
+    },
+    {
+      "ingredient": "Basil pesto",
+      "reason": "Source brand-specific and cup weight plausible but recipe brand not specified"
+    },
+    {
+      "ingredient": "Bay leaf",
+      "reason": "Crumbled teaspoon weight does not establish a whole leaf weight"
+    },
+    {
+      "ingredient": "Beef short ribs",
+      "reason": "Search returned boneless short ribs but recipe bone status not explicit"
+    },
+    {
+      "ingredient": "Black beans, drained",
+      "reason": "Source rinsed canned beans RACC only; no drained cup mass"
+    },
+    {
+      "ingredient": "Bolillo rolls",
+      "reason": "Top hit small French rolls; bolillo weight differs"
+    },
+    {
+      "ingredient": "Boneless chicken breasts",
+      "reason": "Source specifies boneless skinless, recipe does not explicitly specify skinless"
+    },
+    {
+      "ingredient": "Boneless pork chops",
+      "reason": "Search returned cooked pork chops, recipe meat as raw"
+    },
+    {
+      "ingredient": "Breakfast ham",
+      "reason": "Search returned minced ham, while recipe may use diced ham"
+    },
+    {
+      "ingredient": "Breakfast sausage",
+      "reason": "Source beef pre-cooked sausage; recipe sausage meat/prep unspecified"
+    },
+    {
+      "ingredient": "Brown rice",
+      "reason": "Search returned brown rice flour, not rice grain"
+    },
+    {
+      "ingredient": "Butternut squash",
+      "reason": "Weight before versus after peeling/seeding is unknown"
+    },
+    {
+      "ingredient": "Cajun seasoning",
+      "reason": "Search returned croutons"
+    },
+    {
+      "ingredient": "Canned diced green chiles",
+      "reason": "Search returned canned tomatoes"
+    },
+    {
+      "ingredient": "Canned navy beans",
+      "reason": "Source canned beans but recipe amount is ounces, drained/undrained context requires checking"
+    },
+    {
+      "ingredient": "Carrot",
+      "reason": "Search returned dehydrated carrots, not fresh"
+    }
+  ],
+  "approvedTotalAfterReview": 27,
+  "recipesWithFullyVerifiedNutrition": 0,
+  "note": "No automatic first-result approvals. Retain source identity and household-measure exceptions for follow-up."
+}
