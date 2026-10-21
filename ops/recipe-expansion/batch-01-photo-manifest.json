@@ -215,6 +215,38 @@
       "assetSaved": false,
       "photoReview": "pending",
       "pairedWithInstructions": true
+    },
+    {
+      "id": "exp01-025",
+      "name": "Mexican Picadillo",
+      "expectedAsset": "assets/meal-photos/exp01-025.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true
+    },
+    {
+      "id": "exp01-026",
+      "name": "Salsa Verde Chicken Tacos",
+      "expectedAsset": "assets/meal-photos/exp01-026.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true
+    },
+    {
+      "id": "exp01-027",
+      "name": "Beef and Cheese Empanadas",
+      "expectedAsset": "assets/meal-photos/exp01-027.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true
+    },
+    {
+      "id": "exp01-028",
+      "name": "Cheesy Chicken Taco Casserole",
+      "expectedAsset": "assets/meal-photos/exp01-028.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true
     }
   ]
 }
