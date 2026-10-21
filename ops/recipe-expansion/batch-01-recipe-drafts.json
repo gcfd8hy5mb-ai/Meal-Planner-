@@ -5078,17 +5078,17 @@
     },
     {
       "id": "exp01-059",
-      "name": "Teriyaki Chicken Rice Bowls",
+      "name": "Pineapple Ginger Chicken Lettuce Cups",
       "slot": "Dinner",
       "cuisine": "Chinese & Asian",
       "serv": 4,
       "prepMinutes": 20,
-      "cookMinutes": 25,
-      "cal": 570,
-      "p": 37,
-      "c": 74,
+      "cookMinutes": 20,
+      "cal": 390,
+      "p": 39,
+      "c": 30,
       "f": 13,
-      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification",
       "ingredients": [
         [
           "Boneless chicken thighs",
@@ -5096,22 +5096,17 @@
           "lb"
         ],
         [
-          "Jasmine rice",
+          "Pineapple chunks",
           1.5,
           "cup"
         ],
         [
-          "Low-sodium soy sauce",
-          0.25,
-          "cup"
+          "Butter lettuce",
+          1,
+          "head"
         ],
         [
-          "Honey",
-          0.25,
-          "cup"
-        ],
-        [
-          "Rice vinegar",
+          "Fresh ginger",
           2,
           "tbsp"
         ],
@@ -5121,32 +5116,27 @@
           "each"
         ],
         [
-          "Fresh ginger",
-          1,
+          "Low-sodium soy sauce",
+          2,
           "tbsp"
         ],
         [
-          "Broccoli florets",
-          4,
-          "cup"
-        ],
-        [
-          "Cornstarch",
-          1,
+          "Rice vinegar",
+          2,
           "tbsp"
         ],
         [
-          "Vegetable oil",
+          "Sesame oil",
           1,
           "tbsp"
         ]
       ],
       "steps": [
-        "Rinse 1½ cups jasmine rice and cook with 2¼ cups water according to package directions, about 15 minutes; keep covered.",
-        "Whisk ¼ cup soy sauce, ¼ cup honey, 2 tbsp rice vinegar, 3 minced garlic cloves, 1 tbsp ginger, 1 tbsp cornstarch and ½ cup water.",
-        "Heat 1 tbsp oil over medium-high heat; cook 1½ lb chopped chicken thighs for 8–10 minutes until 165°F.",
-        "Steam 4 cups broccoli for 4–5 minutes until bright green and tender-crisp.",
-        "Pour sauce into chicken skillet, simmer 2–3 minutes until glossy and thick. Divide rice, broccoli and teriyaki chicken among four bowls."
+        "Wash and dry the leaves of one head of butter lettuce, then chill until ready to serve.",
+        "Cut 1½ lb chicken thighs into ½-inch cubes and pat dry; heat 1 tbsp sesame oil in a skillet over medium-high heat.",
+        "Cook chicken for 8–10 minutes, stirring, until the thickest pieces reach 165°F.",
+        "Add 3 minced garlic cloves, 2 tbsp grated ginger, 1½ cups drained pineapple chunks, 2 tbsp soy sauce and 2 tbsp vinegar; stir-fry 3–4 minutes until lightly caramelized.",
+        "Spoon warm chicken-pineapple filling into lettuce leaves, dividing evenly among four servings."
       ],
       "stage": "recipe-draft",
       "ingredientsReady": true,
@@ -5161,70 +5151,65 @@
     },
     {
       "id": "exp01-060",
-      "name": "Classic Beef Stroganoff",
+      "name": "Balsamic Steak and Roasted Grape Salad",
       "slot": "Dinner",
       "cuisine": "American",
       "serv": 4,
       "prepMinutes": 20,
-      "cookMinutes": 30,
-      "cal": 680,
-      "p": 39,
-      "c": 59,
-      "f": 29,
-      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "cookMinutes": 20,
+      "cal": 510,
+      "p": 37,
+      "c": 24,
+      "f": 30,
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification",
       "ingredients": [
         [
           "Sirloin steak",
-          1.25,
+          1.5,
           "lb"
         ],
         [
-          "Egg noodles",
-          12,
-          "oz"
-        ],
-        [
-          "Mushrooms",
-          8,
-          "oz"
-        ],
-        [
-          "Yellow onion",
-          1,
-          "each"
-        ],
-        [
-          "Beef broth",
+          "Red seedless grapes",
           2,
           "cup"
         ],
         [
-          "Sour cream",
-          0.75,
+          "Mixed salad greens",
+          6,
           "cup"
         ],
         [
-          "All-purpose flour",
-          2,
+          "Goat cheese",
+          4,
+          "oz"
+        ],
+        [
+          "Walnuts",
+          0.5,
+          "cup"
+        ],
+        [
+          "Balsamic vinegar",
+          3,
           "tbsp"
         ],
         [
-          "Butter",
+          "Olive oil",
           2,
           "tbsp"
         ],
         [
           "Dijon mustard",
           1,
-          "tbsp"
+          "tsp"
         ]
       ],
       "steps": [
-        "Cook 12 oz egg noodles in salted water according to package; drain.",
-        "Slice 1¼ lb sirloin thinly against the grain. Melt 1 tbsp butter in a large skillet and sear beef in batches for 2 minutes per side; remove to rest 3 minutes.",
-        "Melt remaining butter; cook sliced onion and 8 oz mushrooms for 7–8 minutes until softened.",
-        "Stir in 2 tbsp flour, cook 1 minute, then slowly whisk in 2 cups broth and 1 tbsp Dijon. Simmer 4 minutes until lightly thickened.",
-        "Reduce heat to low, stir in ¾ cup sour cream and cooked beef; warm without boiling, ensuring beef reached 145°F, then serve over noodles in four portions."
+        "Heat oven to 425°F. Toss 2 cups red grapes with 1 tsp of the 2 tbsp olive oil and roast on a lined pan for 12–15 minutes until some skins split.",
+        "Season 1½ lb sirloin, then sear in a hot skillet with 2 tsp olive oil for about 4 minutes per side; confirm at least 145°F and rest 3 minutes.",
+        "Whisk 3 tbsp balsamic vinegar, remaining olive oil and 1 tsp Dijon in a small bowl.",
+        "Divide 6 cups mixed greens among four plates, then scatter roasted grapes and ½ cup chopped walnuts.",
+        "Slice the rested steak against the grain, distribute among salads, crumble over 4 oz goat cheese and drizzle with dressing."
       ],
       "stage": "recipe-draft",
       "ingredientsReady": true,
@@ -5536,70 +5521,65 @@
     },
     {
       "id": "exp01-065",
-      "name": "Slow-Cooker Beef Stew",
+      "name": "Apple Cider Pork and Sweet Potato Sheet Pan",
       "slot": "Dinner",
-      "cuisine": "Soups & Stews",
-      "serv": 6,
-      "prepMinutes": 25,
-      "cookMinutes": 480,
-      "cal": 460,
-      "p": 37,
-      "c": 40,
-      "f": 17,
-      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "cuisine": "American",
+      "serv": 4,
+      "prepMinutes": 20,
+      "cookMinutes": 35,
+      "cal": 570,
+      "p": 39,
+      "c": 49,
+      "f": 25,
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification",
       "ingredients": [
         [
-          "Beef stew meat",
-          2,
-          "lb"
-        ],
-        [
-          "Yukon potatoes",
+          "Boneless pork loin",
           1.5,
           "lb"
         ],
         [
-          "Carrots",
-          4,
+          "Sweet potatoes",
+          2,
+          "lb"
+        ],
+        [
+          "Apples",
+          2,
           "each"
         ],
         [
-          "Celery stalks",
-          3,
-          "each"
-        ],
-        [
-          "Beef broth",
-          4,
+          "Apple cider",
+          0.5,
           "cup"
         ],
         [
-          "Tomato paste",
+          "Olive oil",
           2,
           "tbsp"
         ],
         [
-          "Flour",
-          0.25,
-          "cup"
+          "Dijon mustard",
+          1,
+          "tbsp"
         ],
         [
-          "Yellow onion",
+          "Fresh rosemary",
+          1,
+          "tbsp"
+        ],
+        [
+          "Red onion",
           1,
           "each"
-        ],
-        [
-          "Worcestershire sauce",
-          2,
-          "tbsp"
         ]
       ],
       "steps": [
-        "Toss 2 lb cubed beef with ¼ cup flour. Brown in a skillet over medium-high heat for 6 minutes, turning often.",
-        "Place 1½ lb cubed potatoes, 4 sliced carrots, 3 chopped celery stalks and 1 diced onion in the slow cooker.",
-        "Add seared beef, 4 cups broth, 2 tbsp tomato paste and 2 tbsp Worcestershire sauce; stir.",
-        "Cover and cook on LOW for 7–8 hours until beef and potatoes are tender. Keep the lid on during cooking.",
-        "Taste, adjust seasoning, and divide meat, vegetables and broth evenly among six bowls."
+        "Preheat oven to 425°F. Peel and dice 2 lb sweet potatoes into 1-inch cubes; slice 1 red onion into wedges.",
+        "Toss potatoes and onion with 1 tbsp olive oil and roast on a large sheet pan for 15 minutes.",
+        "Cut 1½ lb boneless pork loin into 1-inch pieces. Whisk ½ cup apple cider, 1 tbsp Dijon, 1 tbsp minced rosemary and the remaining 1 tbsp olive oil.",
+        "Core and wedge 2 apples. Add pork and apples to the sheet pan, pour over the cider mixture and stir to coat evenly.",
+        "Roast another 18–22 minutes, stirring halfway through, until pork reaches 145°F and rests 3 minutes; divide evenly among four plates."
       ],
       "stage": "recipe-draft",
       "ingredientsReady": true,
@@ -5687,47 +5667,42 @@
     },
     {
       "id": "exp01-067",
-      "name": "Skillet Lasagna",
+      "name": "Ricotta Spinach Stuffed Portobellos",
       "slot": "Dinner",
       "cuisine": "Italian",
-      "serv": 6,
-      "prepMinutes": 15,
-      "cookMinutes": 35,
-      "cal": 560,
-      "p": 31,
-      "c": 52,
-      "f": 24,
-      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "serv": 4,
+      "prepMinutes": 20,
+      "cookMinutes": 25,
+      "cal": 410,
+      "p": 23,
+      "c": 18,
+      "f": 28,
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification",
       "ingredients": [
         [
-          "Ground beef",
-          1,
-          "lb"
-        ],
-        [
-          "Lasagna noodles",
-          10,
-          "oz"
-        ],
-        [
-          "Crushed tomatoes",
-          28,
-          "oz"
+          "Large portobello mushrooms",
+          8,
+          "each"
         ],
         [
           "Ricotta cheese",
-          1,
-          "cup"
-        ],
-        [
-          "Shredded mozzarella",
           1.5,
           "cup"
         ],
         [
-          "Yellow onion",
+          "Baby spinach",
+          4,
+          "cup"
+        ],
+        [
+          "Sun-dried tomatoes",
+          0.5,
+          "cup"
+        ],
+        [
+          "Mozzarella cheese",
           1,
-          "each"
+          "cup"
         ],
         [
           "Garlic cloves",
@@ -5736,21 +5711,21 @@
         ],
         [
           "Olive oil",
-          1,
+          2,
           "tbsp"
         ],
         [
           "Italian seasoning",
-          2,
+          1,
           "tsp"
         ]
       ],
       "steps": [
-        "Heat 1 tbsp oil in a deep skillet, sauté 1 diced onion for 4 minutes, then cook 1 lb ground beef until browned and 160°F.",
-        "Add 3 minced garlic cloves and 2 tsp Italian seasoning; stir for 30 seconds.",
-        "Pour in 28 oz crushed tomatoes and 2 cups water. Break 10 oz uncooked lasagna noodles into bite-sized pieces and submerge them in sauce.",
-        "Cover and simmer 15–20 minutes, stirring gently every 4 minutes, until noodles are tender; add water as needed.",
-        "Dot with 1 cup ricotta, sprinkle 1½ cups mozzarella, cover and cook 4 minutes until cheese melts. Divide into six servings."
+        "Preheat oven to 400°F. Clean 8 large portobello caps and remove stems; brush with 1 tbsp olive oil and arrange gill-side up on a sheet pan.",
+        "Bake caps for 8 minutes, then carefully drain excess moisture.",
+        "Warm remaining 1 tbsp olive oil in a skillet and cook 3 minced garlic cloves for 30 seconds; add 4 cups spinach and wilt for 2 minutes.",
+        "Mix wilted spinach with 1½ cups ricotta, ½ cup chopped sun-dried tomatoes and 1 tsp Italian seasoning. Fill each mushroom with the mixture and top with 1 cup mozzarella.",
+        "Bake for another 12–15 minutes until caps are tender and filling is thoroughly hot; serve two stuffed mushrooms per person."
       ],
       "stage": "recipe-draft",
       "ingredientsReady": true,
