@@ -10,6 +10,7 @@ on:
       - 'ops/recipe-expansion/propose-exact-mass-conversions.mjs'
       - 'ops/recipe-expansion/audit-all-ingredient-measurements.mjs'
       - 'ops/recipe-expansion/build-usda-portion-review.mjs'
+      - 'ops/recipe-expansion/prioritize-ingredient-portion-review.mjs'
 permissions:
   contents: read
 jobs:
@@ -33,6 +34,8 @@ jobs:
         run: node ops/recipe-expansion/audit-all-ingredient-measurements.mjs
       - name: Find candidate USDA food portions for actual recipe units
         run: node ops/recipe-expansion/build-usda-portion-review.mjs
+      - name: Prioritize all 220 ingredient-specific conversion reviews
+        run: node ops/recipe-expansion/prioritize-ingredient-portion-review.mjs
       - name: Upload unapproved nutrient details
         if: always()
         uses: actions/upload-artifact@v4
@@ -44,4 +47,5 @@ jobs:
             ops/recipe-expansion/usda-measurement-proposals.json
             ops/recipe-expansion/all-ingredient-measurement-audit.json
             ops/recipe-expansion/usda-portion-review.json
+            ops/recipe-expansion/ingredient-portion-review-queue.json
           retention-days: 30
