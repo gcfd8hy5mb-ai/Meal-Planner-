@@ -1,0 +1,1787 @@
+{
+  "totalRecipes": 110,
+  "ingredientLines": 1043,
+  "distinctIngredientLabels": 294,
+  "distinctIngredientUnitConversions": 308,
+  "status": "all food data and edible grams conversions pending source match",
+  "requirements": [
+    {
+      "ingredient": "Achiote paste",
+      "requiredUnits": [
+        "tbsp"
+      ]
+    },
+    {
+      "ingredient": "All-purpose flour",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Apple cider",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Apple cider vinegar",
+      "requiredUnits": [
+        "tbsp"
+      ]
+    },
+    {
+      "ingredient": "Apples",
+      "requiredUnits": [
+        "each"
+      ]
+    },
+    {
+      "ingredient": "Apricot preserves",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Arborio rice",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Artichoke hearts",
+      "requiredUnits": [
+        "oz"
+      ]
+    },
+    {
+      "ingredient": "Avocado",
+      "requiredUnits": [
+        "each"
+      ]
+    },
+    {
+      "ingredient": "Avocados",
+      "requiredUnits": [
+        "each"
+      ]
+    },
+    {
+      "ingredient": "Baby arugula",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Baby potatoes",
+      "requiredUnits": [
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Baby spinach",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Bacon",
+      "requiredUnits": [
+        "slice"
+      ]
+    },
+    {
+      "ingredient": "Baking powder",
+      "requiredUnits": [
+        "tbsp"
+      ]
+    },
+    {
+      "ingredient": "Balsamic vinegar",
+      "requiredUnits": [
+        "cup",
+        "tbsp"
+      ]
+    },
+    {
+      "ingredient": "Barbecue sauce",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Basil pesto",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Bay leaf",
+      "requiredUnits": [
+        "each"
+      ]
+    },
+    {
+      "ingredient": "Beef broth",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Beef chuck roast",
+      "requiredUnits": [
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Beef short ribs",
+      "requiredUnits": [
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Bell pepper",
+      "requiredUnits": [
+        "each"
+      ]
+    },
+    {
+      "ingredient": "Bell peppers",
+      "requiredUnits": [
+        "each"
+      ]
+    },
+    {
+      "ingredient": "Black beans",
+      "requiredUnits": [
+        "oz"
+      ]
+    },
+    {
+      "ingredient": "Black beans canned",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Black beans, canned drained",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Black beans, drained",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Black pepper",
+      "requiredUnits": [
+        "tsp"
+      ]
+    },
+    {
+      "ingredient": "Bolillo rolls",
+      "requiredUnits": [
+        "each"
+      ]
+    },
+    {
+      "ingredient": "Bone-in chicken thighs",
+      "requiredUnits": [
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Boneless chicken breast",
+      "requiredUnits": [
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Boneless chicken breasts",
+      "requiredUnits": [
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Boneless chicken thighs",
+      "requiredUnits": [
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Boneless pork chops",
+      "requiredUnits": [
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Boneless pork loin",
+      "requiredUnits": [
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Boneless pork shoulder",
+      "requiredUnits": [
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Boneless skinless chicken breasts",
+      "requiredUnits": [
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Boneless skinless chicken thighs",
+      "requiredUnits": [
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Bread crumbs",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Breadcrumbs",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Breakfast ham",
+      "requiredUnits": [
+        "oz"
+      ]
+    },
+    {
+      "ingredient": "Breakfast sausage",
+      "requiredUnits": [
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Broccoli florets",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Brown rice",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Brown sugar",
+      "requiredUnits": [
+        "tbsp"
+      ]
+    },
+    {
+      "ingredient": "Butter",
+      "requiredUnits": [
+        "tbsp"
+      ]
+    },
+    {
+      "ingredient": "Butter lettuce",
+      "requiredUnits": [
+        "head"
+      ]
+    },
+    {
+      "ingredient": "Butternut squash",
+      "requiredUnits": [
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Cajun seasoning",
+      "requiredUnits": [
+        "tsp"
+      ]
+    },
+    {
+      "ingredient": "Canned black beans",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Canned diced green chiles",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Canned navy beans",
+      "requiredUnits": [
+        "oz"
+      ]
+    },
+    {
+      "ingredient": "Capers, drained",
+      "requiredUnits": [
+        "tbsp"
+      ]
+    },
+    {
+      "ingredient": "Carrot",
+      "requiredUnits": [
+        "each"
+      ]
+    },
+    {
+      "ingredient": "Carrots",
+      "requiredUnits": [
+        "each"
+      ]
+    },
+    {
+      "ingredient": "Catfish fillets",
+      "requiredUnits": [
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Celery stalks",
+      "requiredUnits": [
+        "each"
+      ]
+    },
+    {
+      "ingredient": "Cheddar",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Cheddar cheese",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Cherry tomatoes",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Chicken breasts",
+      "requiredUnits": [
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Chicken broth",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Chicken tenders",
+      "requiredUnits": [
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Chicken thighs",
+      "requiredUnits": [
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Chicken wings",
+      "requiredUnits": [
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Chickpeas",
+      "requiredUnits": [
+        "oz"
+      ]
+    },
+    {
+      "ingredient": "Chili garlic sauce",
+      "requiredUnits": [
+        "tbsp"
+      ]
+    },
+    {
+      "ingredient": "Chili powder",
+      "requiredUnits": [
+        "tbsp",
+        "tsp"
+      ]
+    },
+    {
+      "ingredient": "Chipotle pepper in adobo",
+      "requiredUnits": [
+        "each"
+      ]
+    },
+    {
+      "ingredient": "Chipotle peppers in adobo",
+      "requiredUnits": [
+        "each"
+      ]
+    },
+    {
+      "ingredient": "Cilantro",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Coconut milk",
+      "requiredUnits": [
+        "oz"
+      ]
+    },
+    {
+      "ingredient": "Cod fillets",
+      "requiredUnits": [
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Coleslaw mix",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Cooked chicken",
+      "requiredUnits": [
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Cooked chicken breast",
+      "requiredUnits": [
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Cooked diced ham",
+      "requiredUnits": [
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Cooked pinto beans",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Cooked rice",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Cooked shredded chicken",
+      "requiredUnits": [
+        "cup",
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Cooked shredded turkey",
+      "requiredUnits": [
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Cooked shrimp",
+      "requiredUnits": [
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Corn kernels",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Corn tortillas",
+      "requiredUnits": [
+        "each"
+      ]
+    },
+    {
+      "ingredient": "Cornmeal",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Cornstarch",
+      "requiredUnits": [
+        "tbsp"
+      ]
+    },
+    {
+      "ingredient": "Cotija cheese",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Cream cheese",
+      "requiredUnits": [
+        "oz"
+      ]
+    },
+    {
+      "ingredient": "Cream of chicken soup",
+      "requiredUnits": [
+        "can"
+      ]
+    },
+    {
+      "ingredient": "Cremini mushrooms",
+      "requiredUnits": [
+        "oz"
+      ]
+    },
+    {
+      "ingredient": "Crumbled cotija cheese",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Crushed tomatoes",
+      "requiredUnits": [
+        "cup",
+        "oz"
+      ]
+    },
+    {
+      "ingredient": "Cucumber",
+      "requiredUnits": [
+        "each"
+      ]
+    },
+    {
+      "ingredient": "Cumin",
+      "requiredUnits": [
+        "tsp"
+      ]
+    },
+    {
+      "ingredient": "Deli ham",
+      "requiredUnits": [
+        "oz"
+      ]
+    },
+    {
+      "ingredient": "Diced green chiles",
+      "requiredUnits": [
+        "oz"
+      ]
+    },
+    {
+      "ingredient": "Diced tomatoes",
+      "requiredUnits": [
+        "cup",
+        "oz"
+      ]
+    },
+    {
+      "ingredient": "Diced tomatoes canned",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Diced tomatoes, drained",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Dijon mustard",
+      "requiredUnits": [
+        "cup",
+        "tbsp",
+        "tsp"
+      ]
+    },
+    {
+      "ingredient": "Dried ancho chiles",
+      "requiredUnits": [
+        "each"
+      ]
+    },
+    {
+      "ingredient": "Dried apricots",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Dried guajillo chiles",
+      "requiredUnits": [
+        "each"
+      ]
+    },
+    {
+      "ingredient": "Dried oregano",
+      "requiredUnits": [
+        "tsp"
+      ]
+    },
+    {
+      "ingredient": "Dried rosemary",
+      "requiredUnits": [
+        "tsp"
+      ]
+    },
+    {
+      "ingredient": "Dried thyme",
+      "requiredUnits": [
+        "tsp"
+      ]
+    },
+    {
+      "ingredient": "Dry breadcrumbs",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Dry couscous",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Dry elbow macaroni",
+      "requiredUnits": [
+        "oz"
+      ]
+    },
+    {
+      "ingredient": "Dry fettuccine",
+      "requiredUnits": [
+        "oz"
+      ]
+    },
+    {
+      "ingredient": "Dry linguine",
+      "requiredUnits": [
+        "oz"
+      ]
+    },
+    {
+      "ingredient": "Dry orzo",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Dry penne pasta",
+      "requiredUnits": [
+        "oz"
+      ]
+    },
+    {
+      "ingredient": "Dry ziti pasta",
+      "requiredUnits": [
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Egg",
+      "requiredUnits": [
+        "each"
+      ]
+    },
+    {
+      "ingredient": "Egg noodles",
+      "requiredUnits": [
+        "oz"
+      ]
+    },
+    {
+      "ingredient": "Eggs",
+      "requiredUnits": [
+        "each"
+      ]
+    },
+    {
+      "ingredient": "Elbow macaroni",
+      "requiredUnits": [
+        "oz"
+      ]
+    },
+    {
+      "ingredient": "Farro",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Feta",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Feta cheese",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Flank steak",
+      "requiredUnits": [
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Flour",
+      "requiredUnits": [
+        "cup",
+        "tbsp"
+      ]
+    },
+    {
+      "ingredient": "Flour tortillas",
+      "requiredUnits": [
+        "each"
+      ]
+    },
+    {
+      "ingredient": "Flour tortillas, fajita size",
+      "requiredUnits": [
+        "each"
+      ]
+    },
+    {
+      "ingredient": "Fresh basil",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Fresh cilantro",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Fresh dill",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Fresh ginger",
+      "requiredUnits": [
+        "tbsp"
+      ]
+    },
+    {
+      "ingredient": "Fresh Mexican chorizo",
+      "requiredUnits": [
+        "oz"
+      ]
+    },
+    {
+      "ingredient": "Fresh parsley",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Fresh rosemary",
+      "requiredUnits": [
+        "tbsp"
+      ]
+    },
+    {
+      "ingredient": "Fresh sage",
+      "requiredUnits": [
+        "tbsp"
+      ]
+    },
+    {
+      "ingredient": "Fresh thyme",
+      "requiredUnits": [
+        "tbsp",
+        "tsp"
+      ]
+    },
+    {
+      "ingredient": "Frozen corn",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Frozen peas",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Fully cooked pulled pork",
+      "requiredUnits": [
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Garlic cloves",
+      "requiredUnits": [
+        "each"
+      ]
+    },
+    {
+      "ingredient": "Garlic powder",
+      "requiredUnits": [
+        "tsp"
+      ]
+    },
+    {
+      "ingredient": "Goat cheese",
+      "requiredUnits": [
+        "oz"
+      ]
+    },
+    {
+      "ingredient": "Grated Parmesan",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Greek yogurt",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Green beans",
+      "requiredUnits": [
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Green cabbage",
+      "requiredUnits": [
+        "head"
+      ]
+    },
+    {
+      "ingredient": "Green onions",
+      "requiredUnits": [
+        "each"
+      ]
+    },
+    {
+      "ingredient": "Ground beef",
+      "requiredUnits": [
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Ground chicken",
+      "requiredUnits": [
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Ground cinnamon",
+      "requiredUnits": [
+        "tsp"
+      ]
+    },
+    {
+      "ingredient": "Ground cumin",
+      "requiredUnits": [
+        "tsp"
+      ]
+    },
+    {
+      "ingredient": "Ground pork",
+      "requiredUnits": [
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Ground thyme",
+      "requiredUnits": [
+        "tsp"
+      ]
+    },
+    {
+      "ingredient": "Ground turkey",
+      "requiredUnits": [
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Gruyere cheese",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Half and half",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Hamburger buns",
+      "requiredUnits": [
+        "each"
+      ]
+    },
+    {
+      "ingredient": "Hawaiian dinner rolls",
+      "requiredUnits": [
+        "each"
+      ]
+    },
+    {
+      "ingredient": "Heavy cream",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Hoagie rolls",
+      "requiredUnits": [
+        "each"
+      ]
+    },
+    {
+      "ingredient": "Hoisin sauce",
+      "requiredUnits": [
+        "tbsp"
+      ]
+    },
+    {
+      "ingredient": "Hominy",
+      "requiredUnits": [
+        "oz"
+      ]
+    },
+    {
+      "ingredient": "Hominy canned, drained",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Honey",
+      "requiredUnits": [
+        "cup",
+        "tbsp"
+      ]
+    },
+    {
+      "ingredient": "Italian sausage",
+      "requiredUnits": [
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Italian sausage links",
+      "requiredUnits": [
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Italian seasoning",
+      "requiredUnits": [
+        "tsp"
+      ]
+    },
+    {
+      "ingredient": "Jalapeño",
+      "requiredUnits": [
+        "each"
+      ]
+    },
+    {
+      "ingredient": "Jalapeño peppers",
+      "requiredUnits": [
+        "each"
+      ]
+    },
+    {
+      "ingredient": "Jasmine rice",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Ketchup",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Kidney beans",
+      "requiredUnits": [
+        "oz"
+      ]
+    },
+    {
+      "ingredient": "Kidney beans, canned drained",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Kidney beans, rinsed",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Large bell peppers",
+      "requiredUnits": [
+        "each"
+      ]
+    },
+    {
+      "ingredient": "Large eggs",
+      "requiredUnits": [
+        "each"
+      ]
+    },
+    {
+      "ingredient": "Large flour tortillas",
+      "requiredUnits": [
+        "each"
+      ]
+    },
+    {
+      "ingredient": "Large portobello mushrooms",
+      "requiredUnits": [
+        "each"
+      ]
+    },
+    {
+      "ingredient": "Lean ground beef",
+      "requiredUnits": [
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Lean ground turkey",
+      "requiredUnits": [
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Lemon",
+      "requiredUnits": [
+        "each"
+      ]
+    },
+    {
+      "ingredient": "Lemon juice",
+      "requiredUnits": [
+        "tbsp"
+      ]
+    },
+    {
+      "ingredient": "Lemons",
+      "requiredUnits": [
+        "each"
+      ]
+    },
+    {
+      "ingredient": "Lime",
+      "requiredUnits": [
+        "each"
+      ]
+    },
+    {
+      "ingredient": "Lime juice",
+      "requiredUnits": [
+        "cup",
+        "tbsp"
+      ]
+    },
+    {
+      "ingredient": "Long grain rice",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Long grain white rice",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Long-grain rice dry",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Low-sodium soy sauce",
+      "requiredUnits": [
+        "tbsp"
+      ]
+    },
+    {
+      "ingredient": "Manicotti shells",
+      "requiredUnits": [
+        "each"
+      ]
+    },
+    {
+      "ingredient": "Maple syrup",
+      "requiredUnits": [
+        "tbsp"
+      ]
+    },
+    {
+      "ingredient": "Marinara",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Marinara sauce",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Mayonnaise",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Medium zucchini",
+      "requiredUnits": [
+        "each"
+      ]
+    },
+    {
+      "ingredient": "Milk",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Mixed salad greens",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Monterey Jack cheese",
+      "requiredUnits": [
+        "oz"
+      ]
+    },
+    {
+      "ingredient": "Mozzarella",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Mozzarella cheese",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Okra",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Olive oil",
+      "requiredUnits": [
+        "tbsp",
+        "tsp"
+      ]
+    },
+    {
+      "ingredient": "Orange",
+      "requiredUnits": [
+        "each"
+      ]
+    },
+    {
+      "ingredient": "Orange juice",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Oyster sauce",
+      "requiredUnits": [
+        "tbsp"
+      ]
+    },
+    {
+      "ingredient": "Panko breadcrumbs",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Paprika",
+      "requiredUnits": [
+        "tsp"
+      ]
+    },
+    {
+      "ingredient": "Parmesan",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Parmesan cheese",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Pearled barley",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Peeled deveined raw shrimp",
+      "requiredUnits": [
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Pepper jack",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Pickled jalapeño slices",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Pie crust",
+      "requiredUnits": [
+        "each"
+      ]
+    },
+    {
+      "ingredient": "Pineapple chunks",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Pineapple juice",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Pitted green olives",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Plain Greek yogurt",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Poblano peppers",
+      "requiredUnits": [
+        "each"
+      ]
+    },
+    {
+      "ingredient": "Pork baby back ribs",
+      "requiredUnits": [
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Pork loin cutlets",
+      "requiredUnits": [
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Pork shoulder",
+      "requiredUnits": [
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Pork tenderloin",
+      "requiredUnits": [
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Potato gnocchi",
+      "requiredUnits": [
+        "oz"
+      ]
+    },
+    {
+      "ingredient": "Prepared refrigerated empanada dough discs",
+      "requiredUnits": [
+        "each"
+      ]
+    },
+    {
+      "ingredient": "Provolone cheese",
+      "requiredUnits": [
+        "slice"
+      ]
+    },
+    {
+      "ingredient": "Quick polenta",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Radishes",
+      "requiredUnits": [
+        "each"
+      ]
+    },
+    {
+      "ingredient": "Ranch seasoning",
+      "requiredUnits": [
+        "tbsp"
+      ]
+    },
+    {
+      "ingredient": "Raw beets",
+      "requiredUnits": [
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Raw Mexican-style pork chorizo",
+      "requiredUnits": [
+        "oz"
+      ]
+    },
+    {
+      "ingredient": "Raw peeled shrimp",
+      "requiredUnits": [
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Raw shrimp",
+      "requiredUnits": [
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Red bell pepper",
+      "requiredUnits": [
+        "each"
+      ]
+    },
+    {
+      "ingredient": "Red curry paste",
+      "requiredUnits": [
+        "tbsp"
+      ]
+    },
+    {
+      "ingredient": "Red enchilada sauce",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Red onion",
+      "requiredUnits": [
+        "each"
+      ]
+    },
+    {
+      "ingredient": "Red pepper flakes",
+      "requiredUnits": [
+        "tsp"
+      ]
+    },
+    {
+      "ingredient": "Red seedless grapes",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Refried beans",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Refrigerated biscuit dough",
+      "requiredUnits": [
+        "oz"
+      ]
+    },
+    {
+      "ingredient": "Refrigerated cheese tortellini",
+      "requiredUnits": [
+        "oz"
+      ]
+    },
+    {
+      "ingredient": "Rice noodles",
+      "requiredUnits": [
+        "oz"
+      ]
+    },
+    {
+      "ingredient": "Rice vinegar",
+      "requiredUnits": [
+        "tbsp"
+      ]
+    },
+    {
+      "ingredient": "Ricotta",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Ricotta cheese",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Roasted red peppers",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Roma tomatoes",
+      "requiredUnits": [
+        "each"
+      ]
+    },
+    {
+      "ingredient": "Romaine lettuce",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Rosemary",
+      "requiredUnits": [
+        "tbsp"
+      ]
+    },
+    {
+      "ingredient": "Russet potatoes",
+      "requiredUnits": [
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Sage",
+      "requiredUnits": [
+        "tsp"
+      ]
+    },
+    {
+      "ingredient": "Salmon fillets",
+      "requiredUnits": [
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Salsa",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Salsa verde",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Salt",
+      "requiredUnits": [
+        "tsp"
+      ]
+    },
+    {
+      "ingredient": "Sandwich bread",
+      "requiredUnits": [
+        "slice"
+      ]
+    },
+    {
+      "ingredient": "Sesame oil",
+      "requiredUnits": [
+        "tbsp"
+      ]
+    },
+    {
+      "ingredient": "Sesame seeds",
+      "requiredUnits": [
+        "tbsp"
+      ]
+    },
+    {
+      "ingredient": "Shredded cabbage",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Shredded cheddar",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Shredded cheddar cheese",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Shredded lettuce",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Shredded Monterey Jack cheese",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Shredded mozzarella",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Shredded Oaxaca cheese",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Sirloin steak",
+      "requiredUnits": [
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Skinless white fish fillets",
+      "requiredUnits": [
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Small flour tortillas",
+      "requiredUnits": [
+        "each"
+      ]
+    },
+    {
+      "ingredient": "Smoked paprika",
+      "requiredUnits": [
+        "tsp"
+      ]
+    },
+    {
+      "ingredient": "Smoked sausage",
+      "requiredUnits": [
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Snow peas",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Sour cream",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Soy sauce",
+      "requiredUnits": [
+        "cup",
+        "tbsp"
+      ]
+    },
+    {
+      "ingredient": "Sun-dried tomatoes",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Sweet potatoes",
+      "requiredUnits": [
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Swiss cheese",
+      "requiredUnits": [
+        "slice"
+      ]
+    },
+    {
+      "ingredient": "Tomatillos",
+      "requiredUnits": [
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Tomato paste",
+      "requiredUnits": [
+        "tbsp"
+      ]
+    },
+    {
+      "ingredient": "Tomato sauce",
+      "requiredUnits": [
+        "oz"
+      ]
+    },
+    {
+      "ingredient": "Tortilla chips",
+      "requiredUnits": [
+        "oz"
+      ]
+    },
+    {
+      "ingredient": "Vegetable oil",
+      "requiredUnits": [
+        "tbsp"
+      ]
+    },
+    {
+      "ingredient": "Walnuts",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Water",
+      "requiredUnits": [
+        "cup",
+        "tbsp"
+      ]
+    },
+    {
+      "ingredient": "Water chestnuts",
+      "requiredUnits": [
+        "oz"
+      ]
+    },
+    {
+      "ingredient": "White beans",
+      "requiredUnits": [
+        "oz"
+      ]
+    },
+    {
+      "ingredient": "White onion",
+      "requiredUnits": [
+        "each"
+      ]
+    },
+    {
+      "ingredient": "White vinegar",
+      "requiredUnits": [
+        "tbsp"
+      ]
+    },
+    {
+      "ingredient": "Wild rice blend",
+      "requiredUnits": [
+        "cup"
+      ]
+    },
+    {
+      "ingredient": "Yellow onion",
+      "requiredUnits": [
+        "each"
+      ]
+    },
+    {
+      "ingredient": "Yellow onions",
+      "requiredUnits": [
+        "each"
+      ]
+    },
+    {
+      "ingredient": "Yukon gold potatoes",
+      "requiredUnits": [
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Yukon Gold potatoes",
+      "requiredUnits": [
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Yukon potatoes",
+      "requiredUnits": [
+        "lb"
+      ]
+    },
+    {
+      "ingredient": "Zucchini",
+      "requiredUnits": [
+        "each"
+      ]
+    }
+  ]
+}
