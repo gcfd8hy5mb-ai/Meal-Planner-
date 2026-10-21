@@ -22,6 +22,7 @@ jobs:
       - name: Fetch real USDA candidate foods and nutrients for 25 highest-use unresolved ingredients
         env:
           USDA_FDC_API_KEY: ${{ secrets.USDA_FDC_API_KEY }}
+          NUTRITION_BATCH_OFFSET: '25'
         run: node ops/recipe-expansion/fetch-nutrition-batch-25.mjs
       - name: Save source evidence for editorial approval
         if: always()
