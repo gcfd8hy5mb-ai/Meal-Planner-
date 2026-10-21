@@ -439,16 +439,21 @@
       "reviewStatus": "pending"
     },
     "Boneless pork loin": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central",
+      "foodId": "2646168",
+      "description": "Pork, loin, boneless, raw",
+      "state": "Pork, loin, boneless, raw",
+      "kcalPer100g": 167.769,
+      "proteinPer100g": 21.11875,
+      "carbsPer100g": 0,
+      "fatPer100g": 9.469,
+      "gramsPerUnit": {
+        "lb": 453.59237
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/2646168/nutrients",
+      "portionSource": "Boneless uncooked loin input. USDA Foundation data; fat trimming and cooking loss not included.",
+      "reviewNotes": "Ingredient as-purchased input only. Per-serving finished recipe nutrition not certified."
     },
     "Boneless pork shoulder": {
       "source": "",
@@ -487,16 +492,21 @@
       "reviewStatus": "pending"
     },
     "Bread crumbs": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central",
+      "foodId": "174928",
+      "description": "Bread, crumbs, dry, grated, plain",
+      "state": "Bread, crumbs, dry, grated, plain",
+      "kcalPer100g": 395,
+      "proteinPer100g": 13.35,
+      "carbsPer100g": 71.98,
+      "fatPer100g": 5.3,
+      "gramsPerUnit": {
+        "cup": 108
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/174928/nutrients",
+      "portionSource": "USDA 1 cup plain dry grated breadcrumbs = 108g; the recipe says bread crumbs, not seasoned panko.",
+      "reviewNotes": "Ingredient as-purchased input only. Per-serving finished recipe nutrition not certified."
     },
     "Breadcrumbs": {
       "source": "",
@@ -655,16 +665,21 @@
       "reviewStatus": "pending"
     },
     "Capers, drained": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central",
+      "foodId": "172238",
+      "description": "Capers, canned",
+      "state": "Capers, canned",
+      "kcalPer100g": 23,
+      "proteinPer100g": 2.36,
+      "carbsPer100g": 4.89,
+      "fatPer100g": 0.86,
+      "gramsPerUnit": {
+        "tbsp": 8.6
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/172238/nutrients",
+      "portionSource": "USDA 1 tbsp drained capers = 8.6g, matching recipe's drained capers.",
+      "reviewNotes": "Ingredient as-purchased input only. Per-serving finished recipe nutrition not certified."
     },
     "Carrot": {
       "source": "",
