@@ -13,8 +13,9 @@ for(const id of unique){
  if(!response.ok)throw Error('USDA detail request failed with HTTP '+response.status+' for ID '+id);
  const f=await response.json();
  const nutrients=(f.foodNutrients||[]).map(n=>({name:n.nutrient?.name??n.nutrientName??null,number:n.nutrient?.number??null,unit:n.nutrient?.unitName??n.unitName??null,amount:n.amount??n.value??null})).filter(n=>n.name);
- out.push({fdcId:id,description:f.description,dataType:f.dataType,nutrients,reviewStatus:'not-approved'});
+ const foodPortions=(f.foodPortions||[]).map(p=>({amount:p.amount??null,gramWeight:p.gramWeight??null,measureUnit:p.measureUnit?.name??null,modifier:p.modifier??null,portionDescription:p.portionDescription??null}));
+ out.push({fdcId:id,description:f.description,dataType:f.dataType,nutrients,foodPortions,reviewStatus:'not-approved'});
 }
-const report={source:'USDA FoodData Central',foodRecords:out.length,ingredientCandidates:chosen.length,sourceRecords:out,note:'Raw USDA details for review only. No grams/unit, edible portions or food-state approval. Do not mark recipes verified.'};
+const report={source:'USDA FoodData Central',foodRecords:out.length,ingredientCandidates:chosen.length,sourceRecords:out,note:'Raw USDA details for review only. Food-portion entries are raw USDA candidates only. No portion weights, food identity or food state have been approved. Do not mark recipes verified.'};
 fs.writeFileSync(dir+'usda-focused-nutrient-details.json',JSON.stringify(report,null,2)+'\n');
-console.log(JSON.stringify({uniqueFoods:unique.length,ingredientCandidates:chosen.length,missingNutrients:out.filter(x=>!x.nutrients.length).map(x=>x.fdcId)}));
+console.log(JSON.stringify({uniqueFoods:unique.length,ingredientCandidates:chosen.length,missingNutrients:out.filter(x=>!x.nutrients.length).map(x=>x.fdcId),foodsWithUsdaPortions:out.filter(x=>x.foodPortions.length>0).length,availableFoodPortionRows:out.reduce((n,x)=>n+x.foodPortions.length,0)}));
