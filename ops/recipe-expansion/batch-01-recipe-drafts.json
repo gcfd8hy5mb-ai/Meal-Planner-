@@ -111,10 +111,10 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "preparation": "ground",
-          "edibleGrams": null,
           "reviewStatus": "ground-cumin-teaspoon-weight-needed",
-          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
+          "sourceWeightGramsPerTsp": null,
+          "ingredientState": "ground"
         }
       }
     },
@@ -222,10 +222,10 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "preparation": "ground",
-          "edibleGrams": null,
           "reviewStatus": "ground-cumin-teaspoon-weight-needed",
-          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
+          "sourceWeightGramsPerTsp": null,
+          "ingredientState": "ground"
         }
       }
     },
@@ -328,10 +328,10 @@
         "Ground cumin": {
           "listedQuantity": 2,
           "listedUnit": "tsp",
-          "preparation": "ground",
-          "edibleGrams": null,
           "reviewStatus": "ground-cumin-teaspoon-weight-needed",
-          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
+          "sourceWeightGramsPerTsp": null,
+          "ingredientState": "ground"
         }
       }
     },
@@ -439,10 +439,10 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "preparation": "ground",
-          "edibleGrams": null,
           "reviewStatus": "ground-cumin-teaspoon-weight-needed",
-          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
+          "sourceWeightGramsPerTsp": null,
+          "ingredientState": "ground"
         }
       }
     },
@@ -550,10 +550,10 @@
         "Ground cumin": {
           "listedQuantity": 2,
           "listedUnit": "tsp",
-          "preparation": "ground",
-          "edibleGrams": null,
           "reviewStatus": "ground-cumin-teaspoon-weight-needed",
-          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
+          "sourceWeightGramsPerTsp": null,
+          "ingredientState": "ground"
         }
       }
     },
@@ -721,10 +721,10 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "preparation": "ground",
-          "edibleGrams": null,
           "reviewStatus": "ground-cumin-teaspoon-weight-needed",
-          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
+          "sourceWeightGramsPerTsp": null,
+          "ingredientState": "ground"
         }
       }
     },
@@ -824,10 +824,10 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "preparation": "ground",
-          "edibleGrams": null,
           "reviewStatus": "ground-cumin-teaspoon-weight-needed",
-          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
+          "sourceWeightGramsPerTsp": null,
+          "ingredientState": "ground"
         }
       }
     },
@@ -923,17 +923,17 @@
           "listedQuantity": 1,
           "listedUnit": "each",
           "onionSize": null,
-          "edibleGrams": null,
-          "reviewStatus": "onion-size-or-weight-needed",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
+          "reviewStatus": "requires-onion-size-or-edible-weight",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
+          "edibleWeightGrams": null
         },
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "preparation": "ground",
-          "edibleGrams": null,
           "reviewStatus": "ground-cumin-teaspoon-weight-needed",
-          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
+          "sourceWeightGramsPerTsp": null,
+          "ingredientState": "ground"
         }
       }
     },
@@ -1041,10 +1041,10 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "preparation": "ground",
-          "edibleGrams": null,
           "reviewStatus": "ground-cumin-teaspoon-weight-needed",
-          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
+          "sourceWeightGramsPerTsp": null,
+          "ingredientState": "ground"
         }
       }
     },
@@ -1145,17 +1145,17 @@
           "listedQuantity": 1,
           "listedUnit": "each",
           "onionSize": null,
-          "edibleGrams": null,
-          "reviewStatus": "onion-size-or-weight-needed",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
+          "reviewStatus": "requires-onion-size-or-edible-weight",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
+          "edibleWeightGrams": null
         },
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "preparation": "ground",
-          "edibleGrams": null,
           "reviewStatus": "ground-cumin-teaspoon-weight-needed",
-          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
+          "sourceWeightGramsPerTsp": null,
+          "ingredientState": "ground"
         }
       }
     },
@@ -1245,10 +1245,10 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "preparation": "ground",
-          "edibleGrams": null,
           "reviewStatus": "ground-cumin-teaspoon-weight-needed",
-          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
+          "sourceWeightGramsPerTsp": null,
+          "ingredientState": "ground"
         }
       }
     },
@@ -1349,17 +1349,17 @@
           "listedQuantity": 0.5,
           "listedUnit": "each",
           "onionSize": null,
-          "edibleGrams": null,
-          "reviewStatus": "onion-size-or-weight-needed",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
+          "reviewStatus": "requires-onion-size-or-edible-weight",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
+          "edibleWeightGrams": null
         },
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "preparation": "ground",
-          "edibleGrams": null,
           "reviewStatus": "ground-cumin-teaspoon-weight-needed",
-          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
+          "sourceWeightGramsPerTsp": null,
+          "ingredientState": "ground"
         }
       }
     },
@@ -1460,17 +1460,17 @@
           "listedQuantity": 1,
           "listedUnit": "each",
           "onionSize": null,
-          "edibleGrams": null,
-          "reviewStatus": "onion-size-or-weight-needed",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
+          "reviewStatus": "requires-onion-size-or-edible-weight",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
+          "edibleWeightGrams": null
         },
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "preparation": "ground",
-          "edibleGrams": null,
           "reviewStatus": "ground-cumin-teaspoon-weight-needed",
-          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
+          "sourceWeightGramsPerTsp": null,
+          "ingredientState": "ground"
         }
       }
     },
@@ -1583,10 +1583,10 @@
         "Ground cumin": {
           "listedQuantity": 1.5,
           "listedUnit": "tsp",
-          "preparation": "ground",
-          "edibleGrams": null,
           "reviewStatus": "ground-cumin-teaspoon-weight-needed",
-          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
+          "sourceWeightGramsPerTsp": null,
+          "ingredientState": "ground"
         }
       }
     },
@@ -1662,9 +1662,9 @@
           "listedQuantity": 1,
           "listedUnit": "each",
           "onionSize": null,
-          "edibleGrams": null,
-          "reviewStatus": "onion-size-or-weight-needed",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
+          "reviewStatus": "requires-onion-size-or-edible-weight",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
+          "edibleWeightGrams": null
         }
       }
     },
@@ -1782,10 +1782,10 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "preparation": "ground",
-          "edibleGrams": null,
           "reviewStatus": "ground-cumin-teaspoon-weight-needed",
-          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
+          "sourceWeightGramsPerTsp": null,
+          "ingredientState": "ground"
         }
       }
     },
@@ -1898,10 +1898,10 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "preparation": "ground",
-          "edibleGrams": null,
           "reviewStatus": "ground-cumin-teaspoon-weight-needed",
-          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
+          "sourceWeightGramsPerTsp": null,
+          "ingredientState": "ground"
         }
       }
     },
@@ -2014,10 +2014,10 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "preparation": "ground",
-          "edibleGrams": null,
           "reviewStatus": "ground-cumin-teaspoon-weight-needed",
-          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
+          "sourceWeightGramsPerTsp": null,
+          "ingredientState": "ground"
         }
       }
     },
@@ -2208,10 +2208,10 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "preparation": "ground",
-          "edibleGrams": null,
           "reviewStatus": "ground-cumin-teaspoon-weight-needed",
-          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
+          "sourceWeightGramsPerTsp": null,
+          "ingredientState": "ground"
         }
       }
     },
@@ -2400,17 +2400,17 @@
           "listedQuantity": 0.5,
           "listedUnit": "each",
           "onionSize": null,
-          "edibleGrams": null,
-          "reviewStatus": "onion-size-or-weight-needed",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
+          "reviewStatus": "requires-onion-size-or-edible-weight",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
+          "edibleWeightGrams": null
         },
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "preparation": "ground",
-          "edibleGrams": null,
           "reviewStatus": "ground-cumin-teaspoon-weight-needed",
-          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
+          "sourceWeightGramsPerTsp": null,
+          "ingredientState": "ground"
         }
       }
     },
@@ -2505,10 +2505,10 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "preparation": "ground",
-          "edibleGrams": null,
           "reviewStatus": "ground-cumin-teaspoon-weight-needed",
-          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
+          "sourceWeightGramsPerTsp": null,
+          "ingredientState": "ground"
         }
       }
     },
@@ -2614,17 +2614,17 @@
           "listedQuantity": 1,
           "listedUnit": "each",
           "onionSize": null,
-          "edibleGrams": null,
-          "reviewStatus": "onion-size-or-weight-needed",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
+          "reviewStatus": "requires-onion-size-or-edible-weight",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
+          "edibleWeightGrams": null
         },
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "preparation": "ground",
-          "edibleGrams": null,
           "reviewStatus": "ground-cumin-teaspoon-weight-needed",
-          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
+          "sourceWeightGramsPerTsp": null,
+          "ingredientState": "ground"
         }
       }
     },
@@ -2732,10 +2732,10 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "preparation": "ground",
-          "edibleGrams": null,
           "reviewStatus": "ground-cumin-teaspoon-weight-needed",
-          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
+          "sourceWeightGramsPerTsp": null,
+          "ingredientState": "ground"
         }
       }
     },
@@ -2836,17 +2836,17 @@
           "listedQuantity": 1,
           "listedUnit": "each",
           "onionSize": null,
-          "edibleGrams": null,
-          "reviewStatus": "onion-size-or-weight-needed",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
+          "reviewStatus": "requires-onion-size-or-edible-weight",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
+          "edibleWeightGrams": null
         },
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "preparation": "ground",
-          "edibleGrams": null,
           "reviewStatus": "ground-cumin-teaspoon-weight-needed",
-          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
+          "sourceWeightGramsPerTsp": null,
+          "ingredientState": "ground"
         }
       }
     },
@@ -3029,10 +3029,10 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "preparation": "ground",
-          "edibleGrams": null,
           "reviewStatus": "ground-cumin-teaspoon-weight-needed",
-          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
+          "sourceWeightGramsPerTsp": null,
+          "ingredientState": "ground"
         }
       }
     },
@@ -3254,17 +3254,17 @@
           "listedQuantity": 1,
           "listedUnit": "each",
           "onionSize": null,
-          "edibleGrams": null,
-          "reviewStatus": "onion-size-or-weight-needed",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
+          "reviewStatus": "requires-onion-size-or-edible-weight",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
+          "edibleWeightGrams": null
         },
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "preparation": "ground",
-          "edibleGrams": null,
           "reviewStatus": "ground-cumin-teaspoon-weight-needed",
-          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
+          "sourceWeightGramsPerTsp": null,
+          "ingredientState": "ground"
         }
       }
     },
@@ -3370,17 +3370,17 @@
           "listedQuantity": 1,
           "listedUnit": "each",
           "onionSize": null,
-          "edibleGrams": null,
-          "reviewStatus": "onion-size-or-weight-needed",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
+          "reviewStatus": "requires-onion-size-or-edible-weight",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
+          "edibleWeightGrams": null
         },
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "preparation": "ground",
-          "edibleGrams": null,
           "reviewStatus": "ground-cumin-teaspoon-weight-needed",
-          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
+          "sourceWeightGramsPerTsp": null,
+          "ingredientState": "ground"
         }
       }
     },
@@ -3486,17 +3486,17 @@
           "listedQuantity": 0.5,
           "listedUnit": "each",
           "onionSize": null,
-          "edibleGrams": null,
-          "reviewStatus": "onion-size-or-weight-needed",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
+          "reviewStatus": "requires-onion-size-or-edible-weight",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
+          "edibleWeightGrams": null
         },
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "preparation": "ground",
-          "edibleGrams": null,
           "reviewStatus": "ground-cumin-teaspoon-weight-needed",
-          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
+          "sourceWeightGramsPerTsp": null,
+          "ingredientState": "ground"
         }
       }
     },
@@ -3614,10 +3614,10 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "preparation": "ground",
-          "edibleGrams": null,
           "reviewStatus": "ground-cumin-teaspoon-weight-needed",
-          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
+          "sourceWeightGramsPerTsp": null,
+          "ingredientState": "ground"
         }
       }
     },
@@ -3803,10 +3803,10 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "preparation": "ground",
-          "edibleGrams": null,
           "reviewStatus": "ground-cumin-teaspoon-weight-needed",
-          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
+          "sourceWeightGramsPerTsp": null,
+          "ingredientState": "ground"
         }
       }
     },
@@ -3917,17 +3917,17 @@
           "listedQuantity": 1,
           "listedUnit": "each",
           "onionSize": null,
-          "edibleGrams": null,
-          "reviewStatus": "onion-size-or-weight-needed",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
+          "reviewStatus": "requires-onion-size-or-edible-weight",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
+          "edibleWeightGrams": null
         },
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "preparation": "ground",
-          "edibleGrams": null,
           "reviewStatus": "ground-cumin-teaspoon-weight-needed",
-          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
+          "sourceWeightGramsPerTsp": null,
+          "ingredientState": "ground"
         }
       }
     },
@@ -4018,9 +4018,9 @@
           "listedQuantity": 0.5,
           "listedUnit": "each",
           "onionSize": null,
-          "edibleGrams": null,
-          "reviewStatus": "onion-size-or-weight-needed",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
+          "reviewStatus": "requires-onion-size-or-edible-weight",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
+          "edibleWeightGrams": null
         }
       }
     },
@@ -4111,17 +4111,17 @@
           "listedQuantity": 0.5,
           "listedUnit": "each",
           "onionSize": null,
-          "edibleGrams": null,
-          "reviewStatus": "onion-size-or-weight-needed",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
+          "reviewStatus": "requires-onion-size-or-edible-weight",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
+          "edibleWeightGrams": null
         },
         "Ground cumin": {
           "listedQuantity": 0.5,
           "listedUnit": "tsp",
-          "preparation": "ground",
-          "edibleGrams": null,
           "reviewStatus": "ground-cumin-teaspoon-weight-needed",
-          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
+          "sourceWeightGramsPerTsp": null,
+          "ingredientState": "ground"
         }
       }
     },
@@ -4229,10 +4229,10 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "preparation": "ground",
-          "edibleGrams": null,
           "reviewStatus": "ground-cumin-teaspoon-weight-needed",
-          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
+          "sourceWeightGramsPerTsp": null,
+          "ingredientState": "ground"
         }
       }
     },
@@ -4351,17 +4351,17 @@
           "listedQuantity": 1,
           "listedUnit": "each",
           "onionSize": null,
-          "edibleGrams": null,
-          "reviewStatus": "onion-size-or-weight-needed",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
+          "reviewStatus": "requires-onion-size-or-edible-weight",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
+          "edibleWeightGrams": null
         },
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "preparation": "ground",
-          "edibleGrams": null,
           "reviewStatus": "ground-cumin-teaspoon-weight-needed",
-          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
+          "sourceWeightGramsPerTsp": null,
+          "ingredientState": "ground"
         }
       }
     },
@@ -4472,17 +4472,17 @@
           "listedQuantity": 1,
           "listedUnit": "each",
           "onionSize": null,
-          "edibleGrams": null,
-          "reviewStatus": "onion-size-or-weight-needed",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
+          "reviewStatus": "requires-onion-size-or-edible-weight",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
+          "edibleWeightGrams": null
         },
         "Ground cumin": {
           "listedQuantity": 2,
           "listedUnit": "tsp",
-          "preparation": "ground",
-          "edibleGrams": null,
           "reviewStatus": "ground-cumin-teaspoon-weight-needed",
-          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
+          "sourceWeightGramsPerTsp": null,
+          "ingredientState": "ground"
         }
       }
     },
@@ -4598,17 +4598,17 @@
           "listedQuantity": 1,
           "listedUnit": "each",
           "onionSize": null,
-          "edibleGrams": null,
-          "reviewStatus": "onion-size-or-weight-needed",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
+          "reviewStatus": "requires-onion-size-or-edible-weight",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
+          "edibleWeightGrams": null
         },
         "Ground cumin": {
           "listedQuantity": 2,
           "listedUnit": "tsp",
-          "preparation": "ground",
-          "edibleGrams": null,
           "reviewStatus": "ground-cumin-teaspoon-weight-needed",
-          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
+          "sourceWeightGramsPerTsp": null,
+          "ingredientState": "ground"
         }
       }
     },
@@ -4726,10 +4726,10 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "preparation": "ground",
-          "edibleGrams": null,
           "reviewStatus": "ground-cumin-teaspoon-weight-needed",
-          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
+          "sourceWeightGramsPerTsp": null,
+          "ingredientState": "ground"
         }
       }
     },
@@ -5457,9 +5457,9 @@
           "listedQuantity": 1,
           "listedUnit": "each",
           "onionSize": null,
-          "edibleGrams": null,
-          "reviewStatus": "onion-size-or-weight-needed",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
+          "reviewStatus": "requires-onion-size-or-edible-weight",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
+          "edibleWeightGrams": null
         }
       }
     },
@@ -5545,17 +5545,17 @@
           "listedQuantity": 1,
           "listedUnit": "each",
           "onionSize": null,
-          "edibleGrams": null,
-          "reviewStatus": "onion-size-or-weight-needed",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
+          "reviewStatus": "requires-onion-size-or-edible-weight",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
+          "edibleWeightGrams": null
         },
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "preparation": "ground",
-          "edibleGrams": null,
           "reviewStatus": "ground-cumin-teaspoon-weight-needed",
-          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
+          "sourceWeightGramsPerTsp": null,
+          "ingredientState": "ground"
         }
       }
     },
@@ -6006,9 +6006,9 @@
           "listedQuantity": 1,
           "listedUnit": "each",
           "onionSize": null,
-          "edibleGrams": null,
-          "reviewStatus": "onion-size-or-weight-needed",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
+          "reviewStatus": "requires-onion-size-or-edible-weight",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
+          "edibleWeightGrams": null
         }
       }
     },
@@ -6235,9 +6235,9 @@
           "listedQuantity": 0.5,
           "listedUnit": "each",
           "onionSize": null,
-          "edibleGrams": null,
-          "reviewStatus": "onion-size-or-weight-needed",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
+          "reviewStatus": "requires-onion-size-or-edible-weight",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
+          "edibleWeightGrams": null
         }
       }
     },
@@ -6391,9 +6391,9 @@
           "listedQuantity": 0.5,
           "listedUnit": "each",
           "onionSize": null,
-          "edibleGrams": null,
-          "reviewStatus": "onion-size-or-weight-needed",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
+          "reviewStatus": "requires-onion-size-or-edible-weight",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
+          "edibleWeightGrams": null
         }
       }
     },
@@ -6907,9 +6907,9 @@
           "listedQuantity": 0.5,
           "listedUnit": "each",
           "onionSize": null,
-          "edibleGrams": null,
-          "reviewStatus": "onion-size-or-weight-needed",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
+          "reviewStatus": "requires-onion-size-or-edible-weight",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
+          "edibleWeightGrams": null
         }
       }
     },
@@ -7068,9 +7068,9 @@
           "listedQuantity": 1,
           "listedUnit": "each",
           "onionSize": null,
-          "edibleGrams": null,
-          "reviewStatus": "onion-size-or-weight-needed",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
+          "reviewStatus": "requires-onion-size-or-edible-weight",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
+          "edibleWeightGrams": null
         }
       }
     },
@@ -7310,17 +7310,17 @@
           "listedQuantity": 1,
           "listedUnit": "each",
           "onionSize": null,
-          "edibleGrams": null,
-          "reviewStatus": "onion-size-or-weight-needed",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
+          "reviewStatus": "requires-onion-size-or-edible-weight",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
+          "edibleWeightGrams": null
         },
         "Ground cumin": {
           "listedQuantity": 2,
           "listedUnit": "tsp",
-          "preparation": "ground",
-          "edibleGrams": null,
           "reviewStatus": "ground-cumin-teaspoon-weight-needed",
-          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
+          "sourceWeightGramsPerTsp": null,
+          "ingredientState": "ground"
         }
       }
     },
@@ -7557,9 +7557,9 @@
           "listedQuantity": 1,
           "listedUnit": "each",
           "onionSize": null,
-          "edibleGrams": null,
-          "reviewStatus": "onion-size-or-weight-needed",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
+          "reviewStatus": "requires-onion-size-or-edible-weight",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
+          "edibleWeightGrams": null
         }
       }
     },
@@ -7937,17 +7937,17 @@
           "listedQuantity": 1,
           "listedUnit": "each",
           "onionSize": null,
-          "edibleGrams": null,
-          "reviewStatus": "onion-size-or-weight-needed",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
+          "reviewStatus": "requires-onion-size-or-edible-weight",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
+          "edibleWeightGrams": null
         },
         "Ground cumin": {
           "listedQuantity": 2,
           "listedUnit": "tsp",
-          "preparation": "ground",
-          "edibleGrams": null,
           "reviewStatus": "ground-cumin-teaspoon-weight-needed",
-          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
+          "sourceWeightGramsPerTsp": null,
+          "ingredientState": "ground"
         }
       }
     },
@@ -8096,9 +8096,9 @@
           "listedQuantity": 0.5,
           "listedUnit": "each",
           "onionSize": null,
-          "edibleGrams": null,
-          "reviewStatus": "onion-size-or-weight-needed",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
+          "reviewStatus": "requires-onion-size-or-edible-weight",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
+          "edibleWeightGrams": null
         }
       }
     },
@@ -8252,9 +8252,9 @@
           "listedQuantity": 1,
           "listedUnit": "each",
           "onionSize": null,
-          "edibleGrams": null,
-          "reviewStatus": "onion-size-or-weight-needed",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
+          "reviewStatus": "requires-onion-size-or-edible-weight",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
+          "edibleWeightGrams": null
         }
       }
     },
@@ -8758,9 +8758,9 @@
           "listedQuantity": 1,
           "listedUnit": "each",
           "onionSize": null,
-          "edibleGrams": null,
-          "reviewStatus": "onion-size-or-weight-needed",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
+          "reviewStatus": "requires-onion-size-or-edible-weight",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
+          "edibleWeightGrams": null
         }
       }
     },
@@ -8849,9 +8849,9 @@
           "listedQuantity": 1,
           "listedUnit": "each",
           "onionSize": null,
-          "edibleGrams": null,
-          "reviewStatus": "onion-size-or-weight-needed",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
+          "reviewStatus": "requires-onion-size-or-edible-weight",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
+          "edibleWeightGrams": null
         }
       }
     },
@@ -8932,9 +8932,9 @@
           "listedQuantity": 1,
           "listedUnit": "each",
           "onionSize": null,
-          "edibleGrams": null,
-          "reviewStatus": "onion-size-or-weight-needed",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
+          "reviewStatus": "requires-onion-size-or-edible-weight",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
+          "edibleWeightGrams": null
         }
       }
     },
@@ -9224,9 +9224,9 @@
           "listedQuantity": 1,
           "listedUnit": "each",
           "onionSize": null,
-          "edibleGrams": null,
-          "reviewStatus": "onion-size-or-weight-needed",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
+          "reviewStatus": "requires-onion-size-or-edible-weight",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
+          "edibleWeightGrams": null
         }
       }
     },
@@ -9380,9 +9380,9 @@
           "listedQuantity": 1,
           "listedUnit": "each",
           "onionSize": null,
-          "edibleGrams": null,
-          "reviewStatus": "onion-size-or-weight-needed",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
+          "reviewStatus": "requires-onion-size-or-edible-weight",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
+          "edibleWeightGrams": null
         }
       }
     },
@@ -9521,9 +9521,9 @@
           "listedQuantity": 0.5,
           "listedUnit": "each",
           "onionSize": null,
-          "edibleGrams": null,
-          "reviewStatus": "onion-size-or-weight-needed",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
+          "reviewStatus": "requires-onion-size-or-edible-weight",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
+          "edibleWeightGrams": null
         }
       }
     },
@@ -9677,9 +9677,9 @@
           "listedQuantity": 1,
           "listedUnit": "each",
           "onionSize": null,
-          "edibleGrams": null,
-          "reviewStatus": "onion-size-or-weight-needed",
-          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
+          "reviewStatus": "requires-onion-size-or-edible-weight",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion.",
+          "edibleWeightGrams": null
         }
       }
     },
