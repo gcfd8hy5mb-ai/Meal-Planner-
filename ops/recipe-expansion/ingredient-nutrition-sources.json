@@ -39,16 +39,21 @@
       "reviewStatus": "pending"
     },
     "Apple cider vinegar": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "173469",
+      "description": "Vinegar, cider",
+      "state": "Vinegar, cider",
+      "kcalPer100g": 21,
+      "proteinPer100g": 0,
+      "carbsPer100g": 0.93,
+      "fatPer100g": 0,
+      "gramsPerUnit": {
+        "tbsp": 14.9
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/173469/nutrients",
+      "portionSource": "USDA explicit 1 tbsp = 14.9 g; food use/retention still must be reviewed.",
+      "reviewNotes": "Source-linked ingredient INPUT mapping. Does not imply final recipe serving nutrition is verified; recipe-specific cooking retention and yield must be checked."
     },
     "Apples": {
       "source": "",
@@ -1112,16 +1117,22 @@
       "reviewStatus": "pending"
     },
     "Crushed tomatoes": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170501",
+      "description": "Tomatoes, crushed, canned",
+      "state": "Tomatoes, crushed, canned",
+      "kcalPer100g": 32,
+      "proteinPer100g": 1.64,
+      "carbsPer100g": 7.29,
+      "fatPer100g": 0.28,
+      "gramsPerUnit": {
+        "cup": 242,
+        "oz": 28.349523125
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170501/nutrients",
+      "portionSource": "USDA lists 0.5 cup = 121 g, scaled to 1 cup = 242g; oz interpreted as mass ounce not fluid ounce. Brands and drained liquid may vary.",
+      "reviewNotes": "Source-linked ingredient INPUT mapping. Does not imply final recipe serving nutrition is verified; recipe-specific cooking retention and yield must be checked."
     },
     "Cucumber": {
       "source": "",
@@ -1681,16 +1692,21 @@
       "reviewNotes": "Ingredient composition verified at recipe input. Cooking moisture, garlic size variation and ingredient retention are not estimated; recipe totals remain unverified until all source mappings and yields have been reviewed."
     },
     "Garlic powder": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "171325",
+      "description": "Spices, garlic powder",
+      "state": "Spices, garlic powder",
+      "kcalPer100g": 331,
+      "proteinPer100g": 16.55,
+      "carbsPer100g": 72.73,
+      "fatPer100g": 0.73,
+      "gramsPerUnit": {
+        "tsp": 3.1
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171325/nutrients",
+      "portionSource": "USDA explicit 1 tsp = 3.1 g; dry garlic powder, not garlic salt.",
+      "reviewNotes": "Source-linked ingredient INPUT mapping. Does not imply final recipe serving nutrition is verified; recipe-specific cooking retention and yield must be checked."
     },
     "Goat cheese": {
       "source": "",
