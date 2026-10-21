@@ -3825,6 +3825,771 @@
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
       }
+    },
+    {
+      "id": "exp01-045",
+      "name": "Southern Chicken and Dumplings",
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "serv": 4,
+      "prepMinutes": 25,
+      "cookMinutes": 50,
+      "cal": 510,
+      "p": 36,
+      "c": 48,
+      "f": 19,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Boneless chicken thighs",
+          1.5,
+          "lb"
+        ],
+        [
+          "Chicken broth",
+          6,
+          "cup"
+        ],
+        [
+          "Carrots",
+          2,
+          "each"
+        ],
+        [
+          "Celery stalks",
+          2,
+          "each"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "All-purpose flour",
+          2,
+          "cup"
+        ],
+        [
+          "Baking powder",
+          1,
+          "tbsp"
+        ],
+        [
+          "Milk",
+          0.75,
+          "cup"
+        ],
+        [
+          "Butter",
+          3,
+          "tbsp"
+        ],
+        [
+          "Salt",
+          1,
+          "tsp"
+        ],
+        [
+          "Black pepper",
+          0.5,
+          "tsp"
+        ]
+      ],
+      "steps": [
+        "Dice 1 onion, 2 carrots, and 2 celery stalks. Melt 1 tbsp butter in a large Dutch oven over medium heat; soften vegetables for 6 minutes.",
+        "Add 6 cups chicken broth and 1½ lb chicken thighs. Simmer covered for 25–30 minutes until chicken reaches 165°F, then remove, shred, and return to the pot.",
+        "Mix 2 cups flour, 1 tbsp baking powder, ½ tsp salt and 2 tbsp softened butter. Stir in ¾ cup milk just until a soft dough forms; do not overmix.",
+        "Drop walnut-sized tablespoons of dough onto gently simmering broth. Cover tightly and steam 15 minutes without lifting the lid, until dumplings are cooked through.",
+        "Season with remaining salt and ½ tsp pepper. Divide chicken, vegetables, dumplings, and broth into four bowls."
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-046",
+      "name": "Baked Ziti with Italian Sausage",
+      "slot": "Dinner",
+      "cuisine": "Italian",
+      "serv": 6,
+      "prepMinutes": 20,
+      "cookMinutes": 45,
+      "cal": 620,
+      "p": 32,
+      "c": 65,
+      "f": 25,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Dry ziti pasta",
+          1,
+          "lb"
+        ],
+        [
+          "Italian sausage",
+          1,
+          "lb"
+        ],
+        [
+          "Marinara sauce",
+          4,
+          "cup"
+        ],
+        [
+          "Ricotta cheese",
+          1,
+          "cup"
+        ],
+        [
+          "Shredded mozzarella",
+          2,
+          "cup"
+        ],
+        [
+          "Grated Parmesan",
+          0.5,
+          "cup"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Garlic cloves",
+          3,
+          "each"
+        ]
+      ],
+      "steps": [
+        "Preheat the oven to 375°F. Boil 1 lb ziti in salted water 2 minutes less than package instructions and drain.",
+        "Heat 1 tbsp olive oil in a skillet over medium heat. Crumble 1 lb Italian sausage and cook 8–10 minutes until browned and at least 160°F; add 3 minced garlic cloves for the last minute.",
+        "Stir 4 cups marinara into the sausage. Toss with cooked pasta and 1 cup ricotta, then spread in a 9-by-13-inch baking dish.",
+        "Top with 2 cups mozzarella and ½ cup Parmesan. Cover with foil and bake 20 minutes, uncover and bake another 10–15 minutes until bubbling.",
+        "Rest 10 minutes before cutting into six portions."
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-047",
+      "name": "Honey Garlic Pork Chops",
+      "slot": "Dinner",
+      "cuisine": "American",
+      "serv": 4,
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "cal": 420,
+      "p": 39,
+      "c": 23,
+      "f": 19,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Boneless pork chops",
+          1.5,
+          "lb"
+        ],
+        [
+          "Honey",
+          0.25,
+          "cup"
+        ],
+        [
+          "Low-sodium soy sauce",
+          3,
+          "tbsp"
+        ],
+        [
+          "Garlic cloves",
+          4,
+          "each"
+        ],
+        [
+          "Apple cider vinegar",
+          1,
+          "tbsp"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Black pepper",
+          0.5,
+          "tsp"
+        ]
+      ],
+      "steps": [
+        "Pat 1½ lb pork chops dry. Season with ½ tsp black pepper. Mix ¼ cup honey, 3 tbsp soy sauce, 1 tbsp vinegar, and 4 minced garlic cloves.",
+        "Heat 1 tbsp olive oil in a large skillet over medium-high heat. Sear the chops 3–5 minutes per side, depending on thickness.",
+        "Reduce heat to medium-low; pour honey-garlic mixture into the skillet and simmer 3–5 minutes, turning chops and spooning sauce over them.",
+        "Check the thickest chop with a thermometer; cook until at least 145°F, then rest 3 minutes.",
+        "Serve one quarter of the meat per person, spooning the reduced sauce evenly over four servings."
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-048",
+      "name": "Creamy Tuscan Chicken Pasta",
+      "slot": "Dinner",
+      "cuisine": "Italian",
+      "serv": 4,
+      "prepMinutes": 20,
+      "cookMinutes": 25,
+      "cal": 650,
+      "p": 44,
+      "c": 52,
+      "f": 29,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Boneless chicken breast",
+          1.5,
+          "lb"
+        ],
+        [
+          "Dry penne pasta",
+          12,
+          "oz"
+        ],
+        [
+          "Heavy cream",
+          1,
+          "cup"
+        ],
+        [
+          "Baby spinach",
+          3,
+          "cup"
+        ],
+        [
+          "Sun-dried tomatoes",
+          0.5,
+          "cup"
+        ],
+        [
+          "Grated Parmesan",
+          0.5,
+          "cup"
+        ],
+        [
+          "Garlic cloves",
+          4,
+          "each"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Italian seasoning",
+          1,
+          "tsp"
+        ]
+      ],
+      "steps": [
+        "Cook 12 oz penne in boiling salted water according to the package; save ½ cup cooking water and drain.",
+        "Slice 1½ lb chicken breast into thin cutlets, sprinkle with 1 tsp Italian seasoning, and sauté in 1 tbsp olive oil over medium heat for 4–6 minutes per side until 165°F. Transfer to a plate.",
+        "Lower heat, add 4 minced garlic cloves and ½ cup chopped sun-dried tomatoes and cook 1 minute. Pour in 1 cup cream, simmer gently for 3 minutes.",
+        "Stir in 3 cups spinach until wilted, then add ½ cup Parmesan and splash in reserved pasta water to loosen the sauce.",
+        "Return sliced cooked chicken and penne to the skillet; toss until hot and divide into four portions."
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-049",
+      "name": "Beef and Broccoli Stir-Fry",
+      "slot": "Dinner",
+      "cuisine": "Chinese & Asian",
+      "serv": 4,
+      "prepMinutes": 20,
+      "cookMinutes": 15,
+      "cal": 490,
+      "p": 39,
+      "c": 29,
+      "f": 24,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Flank steak",
+          1.5,
+          "lb"
+        ],
+        [
+          "Broccoli florets",
+          5,
+          "cup"
+        ],
+        [
+          "Low-sodium soy sauce",
+          0.25,
+          "cup"
+        ],
+        [
+          "Beef broth",
+          0.5,
+          "cup"
+        ],
+        [
+          "Cornstarch",
+          2,
+          "tbsp"
+        ],
+        [
+          "Brown sugar",
+          2,
+          "tbsp"
+        ],
+        [
+          "Garlic cloves",
+          3,
+          "each"
+        ],
+        [
+          "Fresh ginger",
+          1,
+          "tbsp"
+        ],
+        [
+          "Vegetable oil",
+          2,
+          "tbsp"
+        ]
+      ],
+      "steps": [
+        "Slice 1½ lb flank steak thinly across the grain. Whisk ¼ cup soy sauce, ½ cup broth, 2 tbsp cornstarch and 2 tbsp brown sugar until smooth.",
+        "Heat 1 tbsp oil in a large wok over high heat; sear half the beef in a single layer for 2 minutes per side. Repeat with remaining beef and ½ tbsp oil, then move beef to a plate.",
+        "Add remaining ½ tbsp oil, 5 cups broccoli and ¼ cup water. Cover and steam 3 minutes until crisp-tender.",
+        "Add 3 minced garlic cloves and 1 tbsp grated ginger; stir 30 seconds. Pour in sauce and stir until thickened and glossy, about 2 minutes.",
+        "Return beef and all juices to the wok. Continue cooking until beef reaches at least 145°F and rests 3 minutes before serving four portions."
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-050",
+      "name": "Loaded Baked Potato Soup",
+      "slot": "Dinner",
+      "cuisine": "Soups & Stews",
+      "serv": 6,
+      "prepMinutes": 20,
+      "cookMinutes": 35,
+      "cal": 470,
+      "p": 18,
+      "c": 45,
+      "f": 24,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Russet potatoes",
+          3,
+          "lb"
+        ],
+        [
+          "Chicken broth",
+          4,
+          "cup"
+        ],
+        [
+          "Milk",
+          2,
+          "cup"
+        ],
+        [
+          "Bacon",
+          8,
+          "slice"
+        ],
+        [
+          "Shredded cheddar",
+          1.5,
+          "cup"
+        ],
+        [
+          "Sour cream",
+          0.5,
+          "cup"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Butter",
+          2,
+          "tbsp"
+        ],
+        [
+          "All-purpose flour",
+          0.25,
+          "cup"
+        ],
+        [
+          "Green onions",
+          3,
+          "each"
+        ]
+      ],
+      "steps": [
+        "Dice 3 lb peeled potatoes into ½-inch cubes; chop 1 onion. Cook 8 bacon slices until crisp; drain and crumble.",
+        "Melt 2 tbsp butter in a large pot. Sauté the onion for 5 minutes; sprinkle over ¼ cup flour and stir for 1 minute.",
+        "Slowly whisk in 4 cups chicken broth and 2 cups milk until lump-free. Add diced potatoes, bring to a simmer and cook 18–22 minutes until fork-tender.",
+        "Mash about one third of the potatoes against the side of the pot for a creamy texture. Turn heat to low and melt in 1½ cups cheddar, then stir in ½ cup sour cream without boiling.",
+        "Divide into six bowls; top with crumbled bacon and 3 sliced green onions."
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-051",
+      "name": "Lemon Butter Baked Cod",
+      "slot": "Dinner",
+      "cuisine": "Seafood",
+      "serv": 4,
+      "prepMinutes": 15,
+      "cookMinutes": 18,
+      "cal": 310,
+      "p": 34,
+      "c": 6,
+      "f": 17,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Cod fillets",
+          1.5,
+          "lb"
+        ],
+        [
+          "Butter",
+          4,
+          "tbsp"
+        ],
+        [
+          "Lemon",
+          2,
+          "each"
+        ],
+        [
+          "Garlic cloves",
+          3,
+          "each"
+        ],
+        [
+          "Paprika",
+          1,
+          "tsp"
+        ],
+        [
+          "Fresh parsley",
+          0.25,
+          "cup"
+        ],
+        [
+          "Salt",
+          0.5,
+          "tsp"
+        ],
+        [
+          "Black pepper",
+          0.25,
+          "tsp"
+        ]
+      ],
+      "steps": [
+        "Preheat oven to 400°F. Pat 1½ lb cod fillets dry and arrange in a lightly oiled baking dish.",
+        "Melt 4 tbsp butter and whisk with juice of 1 lemon, 3 minced garlic cloves, 1 tsp paprika, ½ tsp salt, and ¼ tsp pepper.",
+        "Spoon butter mixture over fish and arrange thin slices from the second lemon on top.",
+        "Bake 12–18 minutes depending on thickness, until fish flakes easily and reaches 145°F in the center.",
+        "Scatter ¼ cup chopped parsley over the baked fish; divide into four equal portions and spoon on pan juices."
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-052",
+      "name": "BBQ Pulled Chicken Sandwiches",
+      "slot": "Dinner",
+      "cuisine": "American",
+      "serv": 6,
+      "prepMinutes": 15,
+      "cookMinutes": 35,
+      "cal": 510,
+      "p": 37,
+      "c": 55,
+      "f": 16,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Boneless chicken breast",
+          2,
+          "lb"
+        ],
+        [
+          "Barbecue sauce",
+          1.5,
+          "cup"
+        ],
+        [
+          "Chicken broth",
+          0.5,
+          "cup"
+        ],
+        [
+          "Apple cider vinegar",
+          2,
+          "tbsp"
+        ],
+        [
+          "Smoked paprika",
+          1,
+          "tsp"
+        ],
+        [
+          "Hamburger buns",
+          6,
+          "each"
+        ],
+        [
+          "Coleslaw mix",
+          3,
+          "cup"
+        ],
+        [
+          "Mayonnaise",
+          0.25,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Place 2 lb chicken breasts in a deep skillet with ½ cup broth, 1 cup barbecue sauce, 2 tbsp vinegar, and 1 tsp smoked paprika.",
+        "Bring to a gentle simmer, cover, and cook 20–25 minutes, turning halfway through, until chicken reaches 165°F.",
+        "Transfer chicken to a plate and shred with two forks. Return to the skillet and stir in remaining ½ cup barbecue sauce; simmer 5 minutes.",
+        "In a separate bowl, mix 3 cups coleslaw mix with ¼ cup mayonnaise; chill until serving.",
+        "Warm six hamburger buns, divide pulled chicken among them, top with slaw, and serve immediately."
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-053",
+      "name": "Chicken Fried Steak with Country Gravy",
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "serv": 4,
+      "prepMinutes": 25,
+      "cookMinutes": 25,
+      "cal": 730,
+      "p": 43,
+      "c": 53,
+      "f": 38,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Cube steaks",
+          1.5,
+          "lb"
+        ],
+        [
+          "All-purpose flour",
+          1.5,
+          "cup"
+        ],
+        [
+          "Eggs",
+          2,
+          "each"
+        ],
+        [
+          "Milk",
+          2.5,
+          "cup"
+        ],
+        [
+          "Vegetable oil",
+          0.5,
+          "cup"
+        ],
+        [
+          "Salt",
+          1,
+          "tsp"
+        ],
+        [
+          "Black pepper",
+          1,
+          "tsp"
+        ],
+        [
+          "Paprika",
+          0.5,
+          "tsp"
+        ]
+      ],
+      "steps": [
+        "Mix 1 cup flour, ½ tsp salt, ½ tsp pepper, and ½ tsp paprika in a shallow dish. Whisk 2 eggs with ½ cup milk in a second dish.",
+        "Pat 1½ lb cube steaks dry. Coat each in seasoned flour, dip into egg mixture, and dredge again in flour, pressing gently to adhere.",
+        "Heat ½ cup oil in a heavy skillet to about 350°F. Fry steaks in batches 3–4 minutes per side until golden and beef is cooked to at least 145°F, then rest 3 minutes. Transfer to a rack.",
+        "Pour off oil except 3 tbsp drippings. Whisk in remaining ½ cup flour and cook 1 minute. Gradually whisk in 2 cups milk and simmer 3–5 minutes until gravy thickens, seasoning with remaining salt and pepper.",
+        "Divide four steaks among plates and ladle country gravy over each; serve hot."
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-054",
+      "name": "Turkey and Wild Rice Soup",
+      "slot": "Dinner",
+      "cuisine": "Soups & Stews",
+      "serv": 6,
+      "prepMinutes": 20,
+      "cookMinutes": 50,
+      "cal": 360,
+      "p": 29,
+      "c": 39,
+      "f": 10,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Cooked shredded turkey",
+          1.5,
+          "lb"
+        ],
+        [
+          "Wild rice blend",
+          1,
+          "cup"
+        ],
+        [
+          "Chicken broth",
+          8,
+          "cup"
+        ],
+        [
+          "Carrots",
+          3,
+          "each"
+        ],
+        [
+          "Celery stalks",
+          3,
+          "each"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Dried thyme",
+          1,
+          "tsp"
+        ],
+        [
+          "Milk",
+          1,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Dice 1 onion, 3 carrots and 3 celery stalks. Heat 1 tbsp oil in a large soup pot and sauté the vegetables for 6–8 minutes.",
+        "Add 8 cups broth, 1 cup rinsed wild rice blend and 1 tsp dried thyme. Bring to a simmer, cover and cook 35–45 minutes or until the rice is tender; stir occasionally.",
+        "Stir in 1½ lb fully cooked shredded turkey and simmer 5 minutes until thoroughly heated to 165°F.",
+        "Pour in 1 cup milk and gently heat without boiling for another 2–3 minutes. Add water if needed to loosen the soup.",
+        "Divide into six bowls, making sure turkey, rice, and vegetables are evenly distributed."
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
     }
   ]
 }
