@@ -1701,6 +1701,335 @@
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
       }
+    },
+    {
+      "id": "exp01-021",
+      "name": "Steak Nacho Supreme",
+      "serv": 4,
+      "ingredients": [
+        [
+          "Flank steak",
+          1.25,
+          "lb"
+        ],
+        [
+          "Tortilla chips",
+          8,
+          "oz"
+        ],
+        [
+          "Shredded cheddar cheese",
+          1.5,
+          "cup"
+        ],
+        [
+          "Canned black beans",
+          1,
+          "cup"
+        ],
+        [
+          "Roma tomatoes",
+          2,
+          "each"
+        ],
+        [
+          "Pickled jalapeño slices",
+          0.25,
+          "cup"
+        ],
+        [
+          "Sour cream",
+          0.5,
+          "cup"
+        ],
+        [
+          "Avocado",
+          1,
+          "each"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Chili powder",
+          1,
+          "tsp"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          0.5,
+          "tsp"
+        ],
+        [
+          "Lime",
+          1,
+          "each"
+        ]
+      ],
+      "steps": [
+        "Heat oven to 400°F and line a large baking sheet with parchment. Drain and rinse 1 cup black beans, dice 2 tomatoes, slice 1 avocado, and cut 1 lime into wedges.",
+        "Pat 1¼ lb flank steak dry and season with 1 tsp chili powder, 1 tsp cumin, and ½ tsp salt. Heat 1 tbsp oil in a heavy skillet over medium-high heat and sear steak roughly 4–6 minutes per side, depending on thickness, until the center reaches 145°F; rest for at least 3 minutes.",
+        "Slice the rested steak thinly against the grain. Spread 8 oz tortilla chips in a single layer on the prepared sheet and scatter the drained beans, steak slices, and 1½ cups cheddar evenly over the chips.",
+        "Bake 7–10 minutes, until the chips are hot and the cheese melts, checking frequently to prevent burning. Remove the pan from the oven and place it on a heat-safe surface.",
+        "Scatter diced tomato and ¼ cup pickled jalapeños over the nachos. Add avocado and dollops from ½ cup sour cream, then divide into four portions and serve immediately with lime wedges."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-022",
+      "name": "Pulled Pork Nachos",
+      "serv": 4,
+      "ingredients": [
+        [
+          "Fully cooked pulled pork",
+          1.5,
+          "lb"
+        ],
+        [
+          "Tortilla chips",
+          8,
+          "oz"
+        ],
+        [
+          "Shredded Monterey Jack cheese",
+          1.5,
+          "cup"
+        ],
+        [
+          "Canned black beans",
+          1,
+          "cup"
+        ],
+        [
+          "Barbecue sauce",
+          0.5,
+          "cup"
+        ],
+        [
+          "Red onion",
+          0.5,
+          "each"
+        ],
+        [
+          "Pickled jalapeño slices",
+          0.25,
+          "cup"
+        ],
+        [
+          "Sour cream",
+          0.5,
+          "cup"
+        ],
+        [
+          "Cilantro",
+          0.25,
+          "cup"
+        ],
+        [
+          "Lime",
+          1,
+          "each"
+        ]
+      ],
+      "steps": [
+        "Preheat the oven to 400°F and line a large rimmed sheet pan with parchment. Drain and rinse 1 cup black beans, thinly dice half a red onion, and chop ¼ cup fresh cilantro.",
+        "Put 1½ lb fully cooked pulled pork into a saucepan with ½ cup barbecue sauce and 2 tbsp water. Heat over medium-low for 6–8 minutes, stirring occasionally, until the meat is steaming and reaches 165°F.",
+        "Spread 8 oz tortilla chips over the sheet pan in an even layer. Distribute the hot pulled pork and drained black beans evenly over the chips and sprinkle 1½ cups Monterey Jack cheese over everything.",
+        "Bake 6–9 minutes, just until the cheese melts and the nachos are heated through; watch closely because exposed chips can brown quickly.",
+        "Remove from the oven and top with diced onion, ¼ cup pickled jalapeños, ½ cup sour cream, and chopped cilantro. Cut 1 lime into wedges and serve the nachos in four portions while crisp."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-023",
+      "name": "Beef and Potato Taquitos",
+      "serv": 4,
+      "ingredients": [
+        [
+          "Lean ground beef",
+          0.75,
+          "lb"
+        ],
+        [
+          "Russet potatoes",
+          1,
+          "lb"
+        ],
+        [
+          "Corn tortillas",
+          12,
+          "each"
+        ],
+        [
+          "Yellow onion",
+          0.5,
+          "each"
+        ],
+        [
+          "Shredded cheddar cheese",
+          1,
+          "cup"
+        ],
+        [
+          "Olive oil",
+          3,
+          "tbsp"
+        ],
+        [
+          "Chili powder",
+          1,
+          "tsp"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Garlic powder",
+          0.5,
+          "tsp"
+        ],
+        [
+          "Salt",
+          0.75,
+          "tsp"
+        ],
+        [
+          "Salsa",
+          0.5,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Peel and cut 1 lb russet potatoes into small cubes. Put them in a saucepan, cover with water, bring to a simmer, and cook 10–12 minutes until fork-tender; drain thoroughly and roughly mash.",
+        "Dice half a yellow onion. Heat 1 tbsp olive oil in a skillet over medium heat and cook onion for 3 minutes. Add ¾ lb ground beef, breaking it apart, and cook until it reaches 160°F; drain excess fat.",
+        "Stir 1 tsp chili powder, 1 tsp cumin, ½ tsp garlic powder and ¾ tsp salt into the beef. Combine with mashed potatoes and 1 cup shredded cheddar until evenly mixed.",
+        "Heat the oven to 425°F and brush a baking sheet with 1 tbsp olive oil. Warm 12 corn tortillas between damp paper towels briefly until pliable, divide filling among them, roll tightly, and arrange seam-side down.",
+        "Brush the tops of the rolls with remaining 1 tbsp olive oil. Bake 16–20 minutes, turning halfway, until crisp and hot through. Serve three taquitos per person with ½ cup salsa divided among the four plates."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-024",
+      "name": "Crispy Chicken Flautas",
+      "serv": 4,
+      "ingredients": [
+        [
+          "Cooked shredded chicken",
+          3,
+          "cup"
+        ],
+        [
+          "Flour tortillas, fajita size",
+          12,
+          "each"
+        ],
+        [
+          "Shredded Monterey Jack cheese",
+          1,
+          "cup"
+        ],
+        [
+          "Salsa verde",
+          0.5,
+          "cup"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Chili powder",
+          1,
+          "tsp"
+        ],
+        [
+          "Olive oil",
+          3,
+          "tbsp"
+        ],
+        [
+          "Shredded lettuce",
+          2,
+          "cup"
+        ],
+        [
+          "Roma tomatoes",
+          2,
+          "each"
+        ],
+        [
+          "Sour cream",
+          0.5,
+          "cup"
+        ],
+        [
+          "Salt",
+          0.25,
+          "tsp"
+        ]
+      ],
+      "steps": [
+        "Preheat oven to 425°F and lightly grease a large baking sheet with 1 tbsp olive oil. Dice 2 tomatoes and wash and dry 2 cups shredded lettuce for the topping.",
+        "Mix 3 cups fully cooked shredded chicken with ½ cup salsa verde, 1 cup Monterey Jack cheese, 1 tsp cumin, 1 tsp chili powder and ¼ tsp salt until the filling is evenly moistened.",
+        "Warm 12 fajita-size flour tortillas until pliable. Place an even strip of the chicken mixture near one edge of each tortilla and roll as tightly as possible into narrow tubes.",
+        "Place flautas seam-side down on the sheet without touching. Brush the tops and sides with the remaining 2 tbsp olive oil, then bake 16–20 minutes, turning once after about 10 minutes, until deep golden and the centers reach 165°F.",
+        "Allow the flautas to cool for 2 minutes so the crisp shells set. Divide into four portions of three, and top each with shredded lettuce, diced tomato and a share of ½ cup sour cream."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
     }
   ]
 }
