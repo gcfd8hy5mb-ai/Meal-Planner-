@@ -1,0 +1,15 @@
+{
+  "project": "Tablewise",
+  "baseline": 166,
+  "target": 1000,
+  "batches": [
+    {"number": 1, "add": 250, "cumulative": 416, "status": "not-started"},
+    {"number": 2, "add": 250, "cumulative": 666, "status": "not-started"},
+    {"number": 3, "add": 250, "cumulative": 916, "status": "not-started"},
+    {"number": 4, "add": 84, "cumulative": 1000, "status": "not-started"}
+  ],
+  "publishingPolicy": "Each batch must have unique recipe IDs/names, measured ingredients, practical instructions, accurately matched photographs, a traceable source/license if imported, and a passing CI audit before catalog publication.",
+  "preserveExistingRecipes": true,
+  "releaseWithoutPhotos": false,
+  "allowUnverifiedImports": false
+}
