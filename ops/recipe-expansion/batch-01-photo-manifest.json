@@ -805,6 +805,186 @@
       "photoReview": "pending",
       "pairedWithInstructions": true,
       "photoBrief": "Rustic breakfast skillet of crispy potatoes, red chorizo, bell peppers and four fully cooked eggs"
+    },
+    {
+      "id": "exp01-091",
+      "name": "Creamy Mushroom Pork Tenderloin",
+      "expectedAsset": "assets/meal-photos/exp01-091.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Pork medallions coated in creamy mushroom sauce on a simple plate"
+    },
+    {
+      "id": "exp01-092",
+      "name": "Greek Lemon Chicken Soup",
+      "expectedAsset": "assets/meal-photos/exp01-092.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Pale yellow Greek lemon chicken and rice soup with carrot and dill"
+    },
+    {
+      "id": "exp01-093",
+      "name": "Bacon Cheeseburger Stuffed Shells",
+      "expectedAsset": "assets/meal-photos/exp01-093.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Jumbo pasta shells filled with cheeseburger beef, bacon, cheddar and red sauce"
+    },
+    {
+      "id": "exp01-094",
+      "name": "Orange Ginger Glazed Pork Tenderloin",
+      "expectedAsset": "assets/meal-photos/exp01-094.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Sliced roasted pork tenderloin in orange ginger glaze with citrus wedges"
+    },
+    {
+      "id": "exp01-095",
+      "name": "Turkey Spinach Stuffed Manicotti",
+      "expectedAsset": "assets/meal-photos/exp01-095.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Baked tubular manicotti stuffed with turkey and spinach in red marinara and mozzarella"
+    },
+    {
+      "id": "exp01-096",
+      "name": "Thai Basil Beef Rice",
+      "expectedAsset": "assets/meal-photos/exp01-096.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Thai basil ground beef with bell pepper over steamed jasmine rice"
+    },
+    {
+      "id": "exp01-097",
+      "name": "Rosemary Garlic Turkey Meatloaf",
+      "expectedAsset": "assets/meal-photos/exp01-097.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Slices of rosemary turkey meatloaf with red ketchup glaze and visible herbs"
+    },
+    {
+      "id": "exp01-098",
+      "name": "Coconut Lime Chicken Curry",
+      "expectedAsset": "assets/meal-photos/exp01-098.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Golden coconut chicken curry with bell peppers served over fluffy rice and lime"
+    },
+    {
+      "id": "exp01-099",
+      "name": "Smoky Ham and Navy Bean Soup",
+      "expectedAsset": "assets/meal-photos/exp01-099.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Chunky white navy beans with diced pink ham and carrots in golden soup broth"
+    },
+    {
+      "id": "exp01-100",
+      "name": "Crispy Ranch Potato Wedges with Chicken",
+      "expectedAsset": "assets/meal-photos/exp01-100.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Crispy oven-baked ranch potato wedges beside golden chicken tenderloins and creamy dip"
+    },
+    {
+      "id": "exp01-101",
+      "name": "Creamy Spinach and Artichoke Chicken Bake",
+      "expectedAsset": "assets/meal-photos/exp01-101.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Baked chicken breasts under creamy spinach artichoke cheesy topping in ceramic pan"
+    },
+    {
+      "id": "exp01-102",
+      "name": "Apricot Glazed Pork Meatballs",
+      "expectedAsset": "assets/meal-photos/exp01-102.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Glossy amber apricot glazed pork meatballs with sliced green onions on plate"
+    },
+    {
+      "id": "exp01-103",
+      "name": "Butternut Squash Sausage Risotto",
+      "expectedAsset": "assets/meal-photos/exp01-103.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Creamy orange butternut risotto with browned Italian sausage and flecks of sage"
+    },
+    {
+      "id": "exp01-104",
+      "name": "Honey Sesame Salmon Rice Bowls",
+      "expectedAsset": "assets/meal-photos/exp01-104.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Sticky honey sesame baked salmon over brown rice with crisp cucumber and carrot"
+    },
+    {
+      "id": "exp01-105",
+      "name": "Chicken and Corn Chowder",
+      "expectedAsset": "assets/meal-photos/exp01-105.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Thick golden chicken corn chowder with potato cubes and sweet yellow corn"
+    },
+    {
+      "id": "exp01-106",
+      "name": "Crispy Oven Barbecue Pork Ribs",
+      "expectedAsset": "assets/meal-photos/exp01-106.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Oven barbecue pork ribs with caramelized smoky red glaze and exposed bones"
+    },
+    {
+      "id": "exp01-107",
+      "name": "Cheddar Bacon Broccoli Quiche",
+      "expectedAsset": "assets/meal-photos/exp01-107.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Golden broccoli cheddar quiche slice with bacon pieces in flaky pastry crust"
+    },
+    {
+      "id": "exp01-108",
+      "name": "Garlic Chili Noodles with Ground Pork",
+      "expectedAsset": "assets/meal-photos/exp01-108.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Rice noodles tossed with spicy garlic ground pork and scallions in natural daylight"
+    },
+    {
+      "id": "exp01-109",
+      "name": "Cider Braised Chicken with Apples",
+      "expectedAsset": "assets/meal-photos/exp01-109.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Golden braised bone-in chicken thighs with softened apples and cider sauce"
+    },
+    {
+      "id": "exp01-110",
+      "name": "Skillet Creamy Pesto Shrimp Gnocchi",
+      "expectedAsset": "assets/meal-photos/exp01-110.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Soft pillowy gnocchi with shrimp, basil pesto cream and cherry tomatoes"
     }
   ]
 }
