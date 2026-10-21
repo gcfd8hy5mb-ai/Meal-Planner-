@@ -283,6 +283,42 @@
       "photoReview": "pending",
       "pairedWithInstructions": true,
       "photoBrief": "Baked casserole in rustic dark ceramic with tender chicken pieces, fluffy rice, sliced poblano peppers, diced red tomato, melted Monterey Jack, chopped cilantro; no tortillas"
+    },
+    {
+      "id": "exp01-033",
+      "name": "Mexican Beef Stuffed Zucchini",
+      "expectedAsset": "assets/meal-photos/exp01-033.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Two baked zucchini halves filled with seasoned ground beef, rice, black beans and tomato, melted cheddar and cilantro; zucchini shells clearly visible, no tortillas"
+    },
+    {
+      "id": "exp01-034",
+      "name": "Pork Al Pastor Tacos",
+      "expectedAsset": "assets/meal-photos/exp01-034.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Three warm corn tortillas filled with caramelized marinated pork and pineapple pieces, diced white onion, cilantro and lime; pineapple clearly visible"
+    },
+    {
+      "id": "exp01-035",
+      "name": "Chicken Mole Enchiladas",
+      "expectedAsset": "assets/meal-photos/exp01-035.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Two rolled corn enchiladas filled with shredded chicken under a glossy dark mole sauce, melted Monterey Jack, sesame seeds, white onion and cilantro; no red tomato sauce"
+    },
+    {
+      "id": "exp01-036",
+      "name": "Beef Quesabirria",
+      "expectedAsset": "assets/meal-photos/exp01-036.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Three folded crispy red-braised beef and melted Oaxaca cheese corn tacos with cilantro and onion, hot deep-red birria consommé in a small dipping bowl beside the tacos"
     }
   ]
 }
