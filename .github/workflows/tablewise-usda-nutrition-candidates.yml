@@ -1,6 +1,12 @@
 name: Prepare USDA recipe nutrition candidates
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - feature/recipe-expansion-110-content-20261021
+    paths:
+      - '.github/workflows/tablewise-usda-nutrition-candidates.yml'
+      - 'ops/recipe-expansion/import-usda-sr-legacy.py'
 permissions:
   contents: read
 jobs:
