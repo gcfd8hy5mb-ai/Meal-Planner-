@@ -355,6 +355,42 @@
       "photoReview": "pending",
       "pairedWithInstructions": true,
       "photoBrief": "Three corn tortillas with grilled white fish fillet pieces, crunchy cabbage, fresh avocado, creamy white lime-yogurt drizzle, cilantro and lime wedges; no shrimp"
+    },
+    {
+      "id": "exp01-041",
+      "name": "Creamy Chicken Poblano Soup",
+      "expectedAsset": "assets/meal-photos/exp01-041.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Rustic dark bowl of creamy pale green poblano soup showing clearly shredded chicken, potato pieces, charred poblano strips, corn kernels, cilantro and lime; no tortillas"
+    },
+    {
+      "id": "exp01-042",
+      "name": "Mexican Beef Meatballs",
+      "expectedAsset": "assets/meal-photos/exp01-042.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Four rustic beef meatballs in bright red tomato-chipotle sauce over fluffy white rice, cilantro garnish; no spaghetti or pasta"
+    },
+    {
+      "id": "exp01-043",
+      "name": "Smoky Chipotle Turkey Chili",
+      "expectedAsset": "assets/meal-photos/exp01-043.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Deep stoneware bowl of hearty dark red turkey chili with kidney beans, black beans, crushed tomato, grated cheddar, steaming, spoon beside it"
+    },
+    {
+      "id": "exp01-044",
+      "name": "Steak Taco Salad",
+      "expectedAsset": "assets/meal-photos/exp01-044.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Luxury dark shallow salad bowl filled with romaine, thin sliced seared steak, sweet corn, black beans, diced tomatoes, avocado, red onion, cotija and creamy lime drizzle"
     }
   ]
 }
