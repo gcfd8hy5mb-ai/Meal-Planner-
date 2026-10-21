@@ -3436,6 +3436,395 @@
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
       }
+    },
+    {
+      "id": "exp01-041",
+      "name": "Creamy Chicken Poblano Soup",
+      "serv": 6,
+      "ingredients": [
+        [
+          "Boneless skinless chicken breasts",
+          1.25,
+          "lb"
+        ],
+        [
+          "Poblano peppers",
+          3,
+          "each"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Garlic cloves",
+          3,
+          "each"
+        ],
+        [
+          "Chicken broth",
+          5,
+          "cup"
+        ],
+        [
+          "Heavy cream",
+          0.75,
+          "cup"
+        ],
+        [
+          "Russet potatoes",
+          1,
+          "lb"
+        ],
+        [
+          "Frozen corn",
+          1,
+          "cup"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          1,
+          "tsp"
+        ],
+        [
+          "Black pepper",
+          0.5,
+          "tsp"
+        ],
+        [
+          "Lime",
+          1,
+          "each"
+        ],
+        [
+          "Cilantro",
+          0.25,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Set oven to broil and place 3 whole poblanos on a foil-lined sheet pan. Broil 4–6 minutes per side until the skins blister, then cover the peppers in a bowl for 10 minutes, peel away loose blackened skin, discard the seeds and chop the flesh.",
+        "Dice 1 onion and 1 lb peeled potatoes, and mince 3 garlic cloves. Heat 1 tbsp olive oil over medium heat in a large soup pot, cook the onion for 4 minutes, add the garlic for 30 seconds and stir in 1 tsp cumin.",
+        "Pour 5 cups chicken broth into the pot and add potatoes, roasted poblano strips and 1¼ lb chicken breasts. Bring to a gentle simmer, cover partially and cook 18–25 minutes until the potatoes are tender and the chicken reaches 165°F.",
+        "Lift chicken onto a clean board and shred with two forks. Mash several pieces of potato directly in the pot to thicken the soup naturally, then return chicken and add 1 cup frozen corn. Simmer for 5 minutes until the corn is fully heated.",
+        "Lower the heat and stir in ¾ cup heavy cream, 1 tsp salt and ½ tsp pepper; warm gently for 3 minutes without hard boiling. Finish with the juice of 1 lime and ¼ cup chopped cilantro, then divide into six bowls."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-042",
+      "name": "Mexican Beef Meatballs",
+      "serv": 6,
+      "ingredients": [
+        [
+          "Lean ground beef",
+          1.5,
+          "lb"
+        ],
+        [
+          "Egg",
+          1,
+          "each"
+        ],
+        [
+          "Dry breadcrumbs",
+          0.5,
+          "cup"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Garlic cloves",
+          3,
+          "each"
+        ],
+        [
+          "Ground cumin",
+          2,
+          "tsp"
+        ],
+        [
+          "Chili powder",
+          2,
+          "tsp"
+        ],
+        [
+          "Salt",
+          1.25,
+          "tsp"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Crushed tomatoes",
+          2,
+          "cup"
+        ],
+        [
+          "Beef broth",
+          1,
+          "cup"
+        ],
+        [
+          "Chipotle pepper in adobo",
+          1,
+          "each"
+        ],
+        [
+          "Cilantro",
+          0.25,
+          "cup"
+        ],
+        [
+          "Cooked rice",
+          3,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Finely grate half of 1 onion and mince 1 garlic clove. In a bowl gently combine 1½ lb ground beef, 1 egg, ½ cup breadcrumbs, grated onion, garlic, 1 tsp cumin, 1 tsp chili powder and ¾ tsp salt, mixing just until the ingredients hold together.",
+        "Form approximately 24 equal meatballs with lightly moistened hands and arrange on a clean plate. Heat 1 tbsp olive oil in a large skillet over medium heat and brown meatballs in batches for about 4 minutes, turning to color the surfaces; they will finish cooking in the sauce.",
+        "Finely dice the remaining half onion and mince 2 garlic cloves. Add them to the skillet and cook for 3 minutes, then add 2 cups crushed tomatoes, 1 cup beef broth, 1 chopped chipotle pepper, the remaining 1 tsp cumin, 1 tsp chili powder and ½ tsp salt.",
+        "Return meatballs to the sauce, cover and simmer gently for 15–20 minutes, turning once, until their centers reach 160°F. If the sauce becomes too thick, stir in water by the tablespoon; keep the meatballs partly submerged.",
+        "Reheat 3 cups previously cooked rice until steaming and 165°F, following safe cooled-rice storage practices. Divide rice among six plates, spoon four meatballs and tomato-chile sauce onto each, and garnish with ¼ cup chopped cilantro."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-043",
+      "name": "Smoky Chipotle Turkey Chili",
+      "serv": 6,
+      "ingredients": [
+        [
+          "Ground turkey",
+          1.5,
+          "lb"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Bell pepper",
+          1,
+          "each"
+        ],
+        [
+          "Garlic cloves",
+          3,
+          "each"
+        ],
+        [
+          "Kidney beans, canned drained",
+          2,
+          "cup"
+        ],
+        [
+          "Black beans, canned drained",
+          1,
+          "cup"
+        ],
+        [
+          "Crushed tomatoes",
+          3,
+          "cup"
+        ],
+        [
+          "Chicken broth",
+          1,
+          "cup"
+        ],
+        [
+          "Chipotle peppers in adobo",
+          2,
+          "each"
+        ],
+        [
+          "Chili powder",
+          2,
+          "tbsp"
+        ],
+        [
+          "Ground cumin",
+          2,
+          "tsp"
+        ],
+        [
+          "Smoked paprika",
+          1,
+          "tsp"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Salt",
+          1,
+          "tsp"
+        ],
+        [
+          "Shredded cheddar",
+          0.75,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Dice 1 onion and 1 bell pepper and mince 3 garlic cloves. Drain and rinse enough canned kidney and black beans to make 2 cups kidney beans and 1 cup black beans.",
+        "Heat 1 tbsp olive oil in a heavy pot over medium heat. Add onion and bell pepper and cook 5 minutes until softened, then stir in the garlic for 30 seconds.",
+        "Add 1½ lb ground turkey, break into small pieces and cook 7–9 minutes until no pink remains and the turkey reaches 165°F. Stir in 2 tbsp chili powder, 2 tsp cumin, 1 tsp smoked paprika and 1 tsp salt.",
+        "Finely mince 2 canned chipotle peppers and add them with 3 cups crushed tomatoes, 1 cup chicken broth and the drained beans. Bring to a low simmer, cover partly and cook 25–30 minutes, stirring occasionally so the bottom does not scorch.",
+        "Taste and adjust seasoning, then simmer uncovered an additional 5 minutes if you prefer a thicker chili. Ladle into six bowls and top each with about 2 tbsp shredded cheddar from the measured ¾ cup."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-044",
+      "name": "Steak Taco Salad",
+      "serv": 4,
+      "ingredients": [
+        [
+          "Flank steak",
+          1.25,
+          "lb"
+        ],
+        [
+          "Romaine lettuce",
+          8,
+          "cup"
+        ],
+        [
+          "Corn kernels",
+          1,
+          "cup"
+        ],
+        [
+          "Black beans, canned drained",
+          1,
+          "cup"
+        ],
+        [
+          "Roma tomatoes",
+          2,
+          "each"
+        ],
+        [
+          "Avocado",
+          1,
+          "each"
+        ],
+        [
+          "Red onion",
+          0.5,
+          "each"
+        ],
+        [
+          "Crumbled cotija cheese",
+          0.5,
+          "cup"
+        ],
+        [
+          "Lime",
+          2,
+          "each"
+        ],
+        [
+          "Olive oil",
+          3,
+          "tbsp"
+        ],
+        [
+          "Chili powder",
+          2,
+          "tsp"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          0.75,
+          "tsp"
+        ],
+        [
+          "Sour cream",
+          0.25,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Pat 1¼ lb flank steak dry and rub with 2 tsp chili powder, 1 tsp cumin, ¾ tsp salt and 1 tbsp olive oil. Let sit for 10 minutes while you prepare the remaining salad ingredients.",
+        "Rinse and dry 8 cups chopped romaine lettuce. Drain and rinse 1 cup black beans, dice 2 tomatoes, finely slice half a red onion and cube 1 avocado; keep avocado aside with a small squeeze of lime to limit browning.",
+        "Heat a grill pan over medium-high heat and cook the steak 4–6 minutes per side, according to thickness, until the thickest part reaches 145°F. Rest for at least 3 minutes, then slice thinly against the grain.",
+        "Warm 1 cup corn kernels in a dry skillet for 4–5 minutes, stirring until thoroughly hot and slightly browned. Whisk remaining 2 tbsp olive oil with juice of the limes and ¼ cup sour cream to make a pourable dressing.",
+        "Divide romaine, beans, corn, tomato, onion and avocado among four large salad bowls. Top evenly with sliced steak and ½ cup cotija cheese; drizzle the lime dressing on each salad just before serving."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
     }
   ]
 }
