@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,existsSync} from 'node:fs';
+import {assertPhotoQuality} from '../ops/recipe-expansion/image-quality.mjs';
 const read=p=>JSON.parse(readFileSync(new URL(p,import.meta.url),'utf8'));
 const drafts=read('../ops/recipe-expansion/batch-01-recipe-drafts.json').recipes;
 const manifest=read('../ops/recipe-expansion/batch-01-photo-manifest.json');
@@ -23,7 +24,9 @@ test('photo-ready state requires a real individual saved and reviewed file',()=>
    assert.equal(image.assetSaved,true);
    assert.equal(image.photoReview,'approved');
    assert.equal(recipe.photo,image.expectedAsset);
-   assert.ok(existsSync(new URL('../'+image.expectedAsset,import.meta.url)),recipe.name+' photo missing from repository');
+   const photoPath=new URL('../'+image.expectedAsset,import.meta.url);
+   assert.ok(existsSync(photoPath),recipe.name+' photo missing from repository');
+   assert.doesNotThrow(()=>assertPhotoQuality(readFileSync(photoPath)),recipe.name+' photo must be full-resolution');
   }
  }
 });
