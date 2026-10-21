@@ -1,0 +1,30 @@
+name: Tablewise recipe expansion integrity
+on:
+  push:
+    branches:
+      - release/luxury-v2-clean-main-20261019
+    paths:
+      - 'ops/recipe-expansion/**'
+      - 'luxury-v2/catalog.js'
+      - 'assets/meal-photos/**'
+      - '.github/workflows/tablewise-recipe-expansion.yml'
+  pull_request:
+    paths:
+      - 'ops/recipe-expansion/**'
+      - 'luxury-v2/catalog.js'
+      - 'assets/meal-photos/**'
+      - '.github/workflows/tablewise-recipe-expansion.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit-recipes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Audit baseline and staged batches, fail on missing photos or instructions
+        run: node ops/recipe-expansion/audit.mjs
