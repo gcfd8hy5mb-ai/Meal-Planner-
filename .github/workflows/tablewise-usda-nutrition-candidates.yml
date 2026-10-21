@@ -1,6 +1,10 @@
 name: Prepare USDA recipe nutrition candidates
 on:
   workflow_dispatch:
+  pull_request:
+    paths:
+      - '.github/workflows/tablewise-usda-nutrition-candidates.yml'
+      - 'ops/recipe-expansion/suggest-usda-food-matches.mjs'
   push:
     branches:
       - feature/recipe-expansion-110-content-20261021
