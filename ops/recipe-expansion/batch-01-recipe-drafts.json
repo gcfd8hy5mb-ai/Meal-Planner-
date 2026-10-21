@@ -3825,6 +3825,345 @@
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
       }
+    },
+    {
+      "id": "exp01-045",
+      "name": "Cilantro Lime Chicken Taquitos",
+      "serv": 4,
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "ingredients": [
+        [
+          "Boneless skinless chicken breast",
+          1.25,
+          "lb"
+        ],
+        [
+          "Corn tortillas",
+          12,
+          "each"
+        ],
+        [
+          "Monterey Jack cheese",
+          1,
+          "cup"
+        ],
+        [
+          "Chopped cilantro",
+          0.5,
+          "cup"
+        ],
+        [
+          "Lime juice",
+          3,
+          "tbsp"
+        ],
+        [
+          "Garlic cloves",
+          2,
+          "each"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Chili powder",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          0.75,
+          "tsp"
+        ],
+        [
+          "Olive oil",
+          3,
+          "tbsp"
+        ],
+        [
+          "Salsa verde",
+          0.5,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Heat oven to 425°F and line a sheet pan with parchment. Rub 1¼ lb chicken breast with 1 tsp cumin, 1 tsp chili powder and ¾ tsp salt, and place in a lightly oiled ovenproof dish.",
+        "Bake chicken 18–25 minutes, depending on thickness, until the thickest section reaches 165°F. Rest for 5 minutes on a clean board and shred with two forks.",
+        "Toss chicken with ½ cup cilantro, 3 tbsp lime juice, 2 minced garlic cloves, 1 cup Monterey Jack and ½ cup salsa verde until the filling is evenly coated.",
+        "Warm 12 corn tortillas under a damp towel until pliable. Divide filling evenly, roll each tightly, place seam-side down and brush with the 3 tbsp olive oil.",
+        "Bake for 15–20 minutes, turning halfway through, until crispy and the filling reaches 165°F. Rest 2 minutes and serve three taquitos per person."
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-046",
+      "name": "Smothered Pork Chops with Onion Gravy",
+      "serv": 4,
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "ingredients": [
+        [
+          "Boneless pork chops",
+          4,
+          "each"
+        ],
+        [
+          "Yellow onions",
+          2,
+          "each"
+        ],
+        [
+          "All-purpose flour",
+          0.5,
+          "cup"
+        ],
+        [
+          "Chicken broth",
+          2,
+          "cup"
+        ],
+        [
+          "Whole milk",
+          0.5,
+          "cup"
+        ],
+        [
+          "Olive oil",
+          2,
+          "tbsp"
+        ],
+        [
+          "Unsalted butter",
+          2,
+          "tbsp"
+        ],
+        [
+          "Garlic powder",
+          1,
+          "tsp"
+        ],
+        [
+          "Paprika",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          1,
+          "tsp"
+        ],
+        [
+          "Black pepper",
+          0.5,
+          "tsp"
+        ],
+        [
+          "Fresh thyme",
+          1,
+          "tsp"
+        ]
+      ],
+      "steps": [
+        "Pat four pork chops dry and season with 1 tsp salt, ½ tsp pepper, 1 tsp garlic powder and 1 tsp paprika. Put ½ cup flour in a shallow dish and dust both sides, setting aside flour that has not touched raw pork.",
+        "Heat 2 tbsp oil in a skillet over medium-high and brown chops for 3–4 minutes on each side. Transfer to a clean plate; they will finish cooking in the gravy.",
+        "Thinly slice two onions. Lower heat to medium, melt 2 tbsp butter and sauté onions for 12–15 minutes, stirring until softened and browned. Sprinkle in 2 tbsp safely reserved flour and stir one minute.",
+        "Slowly whisk in 2 cups chicken broth, scraping the pan, followed by ½ cup milk and 1 tsp thyme. Simmer 4–5 minutes, stirring until the gravy is smooth and thickened.",
+        "Return chops and any juices to gravy, cover loosely and simmer 6–10 minutes until the thickest pork reaches 145°F. Rest for at least 3 minutes, then serve with hot onion gravy."
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-047",
+      "name": "Country Fried Steak and Cream Gravy",
+      "serv": 4,
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "ingredients": [
+        [
+          "Beef cube steaks",
+          4,
+          "each"
+        ],
+        [
+          "All-purpose flour",
+          1.25,
+          "cup"
+        ],
+        [
+          "Buttermilk",
+          1,
+          "cup"
+        ],
+        [
+          "Egg",
+          1,
+          "each"
+        ],
+        [
+          "Whole milk",
+          2,
+          "cup"
+        ],
+        [
+          "Vegetable oil",
+          0.5,
+          "cup"
+        ],
+        [
+          "Paprika",
+          1,
+          "tsp"
+        ],
+        [
+          "Garlic powder",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          1.5,
+          "tsp"
+        ],
+        [
+          "Black pepper",
+          1,
+          "tsp"
+        ],
+        [
+          "Unsalted butter",
+          2,
+          "tbsp"
+        ]
+      ],
+      "steps": [
+        "Pat four cube steaks dry. Combine 1 cup flour with 1 tsp paprika, 1 tsp garlic powder, 1 tsp salt and ½ tsp pepper in a bowl. In another bowl, whisk one egg with 1 cup buttermilk.",
+        "Coat each steak in the seasoned flour, dip in buttermilk, then coat in flour again, pressing gently until the coating adheres. Rest on a wire rack while heating the oil.",
+        "Heat ½ cup vegetable oil to about 350°F in a wide skillet and fry steaks in batches for 3–5 minutes per side until golden and at least 145°F internally. Rest at least 3 minutes on a clean rack.",
+        "Discard used coating mixtures, safely pour off excess frying oil, and melt 2 tbsp butter in the skillet. Add remaining ¼ cup unused flour and whisk for 1–2 minutes until pale golden.",
+        "Gradually add 2 cups milk while whisking, then simmer for 4–6 minutes until thick. Season with remaining salt and pepper and spoon hot cream gravy over each steak."
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-048",
+      "name": "Cajun Shrimp and Grits",
+      "serv": 4,
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "ingredients": [
+        [
+          "Peeled deveined raw shrimp",
+          1.5,
+          "lb"
+        ],
+        [
+          "Quick-cooking grits",
+          1,
+          "cup"
+        ],
+        [
+          "Chicken broth",
+          2,
+          "cup"
+        ],
+        [
+          "Water",
+          2,
+          "cup"
+        ],
+        [
+          "Sharp cheddar",
+          1,
+          "cup"
+        ],
+        [
+          "Unsalted butter",
+          3,
+          "tbsp"
+        ],
+        [
+          "Fully cooked smoked sausage",
+          6,
+          "oz"
+        ],
+        [
+          "Bell pepper",
+          1,
+          "each"
+        ],
+        [
+          "Green onions",
+          4,
+          "each"
+        ],
+        [
+          "Garlic cloves",
+          3,
+          "each"
+        ],
+        [
+          "Cajun seasoning",
+          2,
+          "tsp"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Lemon",
+          1,
+          "each"
+        ]
+      ],
+      "steps": [
+        "Bring 2 cups chicken broth and 2 cups water to a boil. Slowly whisk in 1 cup grits, lower the heat and simmer following the package timing, whisking frequently until tender and thick.",
+        "Stir 2 tbsp butter and 1 cup shredded sharp cheddar into grits until smooth; cover over very low heat. Add warm water by the spoonful if they become too thick.",
+        "Slice 6 oz smoked sausage into coins, dice the bell pepper, slice four green onions and mince three garlic cloves. Dry the shrimp and toss with 2 tsp Cajun seasoning.",
+        "Heat 1 tbsp oil in a skillet over medium-high. Brown sausage for 3–4 minutes, sauté the bell pepper for 3 more minutes and garlic for 30 seconds, then arrange shrimp in a single layer.",
+        "Cook shrimp about 2–3 minutes per side until opaque, firm and 145°F in the thickest part. Melt in the remaining tbsp butter, squeeze in one lemon and stir in the green onions; serve over four portions of hot cheddar grits."
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
     }
   ]
 }
