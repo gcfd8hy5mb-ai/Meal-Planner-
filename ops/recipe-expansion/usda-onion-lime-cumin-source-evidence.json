@@ -1,0 +1,74 @@
+{
+  "source": "USDA FoodData Central API detail",
+  "originalActionRun": 39658864035,
+  "reviewed": "2026-10-21",
+  "verifiedRecipeNutrition": 0,
+  "sourceFindings": [
+    {
+      "ingredient": "Ground cumin",
+      "fdcId": 170923,
+      "description": "Spices, cumin seed",
+      "portion": {
+        "grams": 2.1,
+        "unit": "tsp, whole"
+      },
+      "disposition": "blocked",
+      "reason": "USDA record specifies whole cumin; cannot treat as ground cumin teaspoon."
+    },
+    {
+      "ingredient": "Yellow onion",
+      "fdcId": 790646,
+      "description": "Onions, yellow, raw",
+      "portion": {
+        "grams": 143,
+        "unit": "1 onion, edible"
+      },
+      "disposition": "candidate-only",
+      "reason": "USDA provides an edible onion portion; recipe does not define onion size, so 143 g is not yet appropriate for every instance."
+    },
+    {
+      "ingredient": "Yellow onion",
+      "fdcId": 170000,
+      "description": "Onions, raw",
+      "portions": [
+        {
+          "grams": 70,
+          "unit": "small"
+        },
+        {
+          "grams": 110,
+          "unit": "medium 2.5 inch diameter"
+        },
+        {
+          "grams": 150,
+          "unit": "large"
+        }
+      ],
+      "disposition": "conditional-size-reference",
+      "reason": "Different USDA whole onion sizes highlight missing recipe definition."
+    },
+    {
+      "ingredient": "Lime",
+      "fdcId": 168156,
+      "description": "Lime juice, raw",
+      "portions": [
+        {
+          "grams": 44,
+          "unit": "juice yielded by 1 lime"
+        },
+        {
+          "grams": 242,
+          "unit": "1 cup juice"
+        }
+      ],
+      "disposition": "candidate-only",
+      "reason": "The 44 g yield can support clearly specified full-juice use, but cannot be assumed for optional wedges, partial squeezes, or uncertain yields."
+    }
+  ],
+  "editorialRequirements": [
+    "Specify onion size or raw edible weight per recipe.",
+    "For lime recipes, explicitly state how much juice is squeezed and separate optional wedges.",
+    "Locate a ground-cumin-specific teaspoon or mass source; do not use whole-seed density."
+  ],
+  "automaticApprovals": 0
+}
