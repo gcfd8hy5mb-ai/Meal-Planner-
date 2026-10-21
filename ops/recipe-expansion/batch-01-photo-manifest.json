@@ -571,6 +571,60 @@
       "photoReview": "pending",
       "pairedWithInstructions": true,
       "photoBrief": "Golden baked breakfast egg casserole cut into squares showing sausage crumbles, cheddar, bell pepper and toasted bread, natural light"
+    },
+    {
+      "id": "exp01-065",
+      "name": "Slow-Cooker Beef Stew",
+      "expectedAsset": "assets/meal-photos/exp01-065.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Homemade beef stew in rustic bowl with brown beef chunks, potatoes and carrots in rich broth"
+    },
+    {
+      "id": "exp01-066",
+      "name": "Cajun Shrimp and Grits",
+      "expectedAsset": "assets/meal-photos/exp01-066.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Creamy cheese grits topped with Cajun-spiced pink shrimp, bacon and scallions in stoneware bowl"
+    },
+    {
+      "id": "exp01-067",
+      "name": "Skillet Lasagna",
+      "expectedAsset": "assets/meal-photos/exp01-067.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Deep skillet of chunky tomato beef lasagna with folded pasta sheets and melted mozzarella and ricotta"
+    },
+    {
+      "id": "exp01-068",
+      "name": "Maple Mustard Roasted Salmon",
+      "expectedAsset": "assets/meal-photos/exp01-068.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Oven-baked salmon fillet with glossy maple mustard glaze, lightly browned edges and lemon wedges"
+    },
+    {
+      "id": "exp01-069",
+      "name": "Classic Chicken Noodle Casserole",
+      "expectedAsset": "assets/meal-photos/exp01-069.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Golden baked chicken noodle casserole with visible egg noodles, peas and breadcrumb top"
+    },
+    {
+      "id": "exp01-070",
+      "name": "Garlic Butter Steak Bites and Potatoes",
+      "expectedAsset": "assets/meal-photos/exp01-070.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Seared bite-size steak cubes and crisp golden baby potatoes coated in garlic butter, skillet daylight"
     }
   ]
 }
