@@ -474,28 +474,38 @@
       "reviewStatus": "pending"
     },
     "Boneless skinless chicken breasts": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central Foundation",
+      "foodId": "2646170",
+      "description": "Chicken, breast, boneless, skinless, raw",
+      "state": "Chicken, breast, boneless, skinless, raw",
+      "kcalPer100g": 112.20227,
+      "proteinPer100g": 22.525,
+      "carbsPer100g": 0,
+      "fatPer100g": 1.934,
+      "gramsPerUnit": {
+        "lb": 453.59237
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/2646170/nutrients",
+      "portionSource": "1 lb = 453.59237 g; raw boneless skinless edible breast. USDA Foundation Atwater Specific Factor energy 2048 is selected explicitly",
+      "reviewNotes": "Source-linked ingredient input reference only. Brand variation, portions before peeling, cooking yield and prepared-meal nutrition are NOT certified."
     },
     "Boneless skinless chicken thighs": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central Foundation",
+      "foodId": "2646171",
+      "description": "Chicken, thigh, boneless, skinless, raw",
+      "state": "Chicken, thigh, boneless, skinless, raw",
+      "kcalPer100g": 149.306475,
+      "proteinPer100g": 18.6125,
+      "carbsPer100g": 0,
+      "fatPer100g": 7.916,
+      "gramsPerUnit": {
+        "lb": 453.59237
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/2646171/nutrients",
+      "portionSource": "1 lb = 453.59237 g; raw boneless skinless edible thigh. USDA Foundation Atwater Specific Factor energy 2048 is selected explicitly",
+      "reviewNotes": "Source-linked ingredient input reference only. Brand variation, portions before peeling, cooking yield and prepared-meal nutrition are NOT certified."
     },
     "Bread crumbs": {
       "source": "USDA FoodData Central",
@@ -2991,16 +3001,21 @@
       "reviewStatus": "pending"
     },
     "Raw shrimp": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "175179",
+      "description": "Crustaceans, shrimp, raw",
+      "state": "Crustaceans, shrimp, raw",
+      "kcalPer100g": 85,
+      "proteinPer100g": 20.1,
+      "carbsPer100g": 0,
+      "fatPer100g": 0.51,
+      "gramsPerUnit": {
+        "lb": 453.59237
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/175179/nutrients",
+      "portionSource": "1 lb = 453.59237 g; raw edible shrimp meat weight excludes peel/shell; cooking yield not claimed",
+      "reviewNotes": "Source-linked ingredient input reference only. Brand variation, portions before peeling, cooking yield and prepared-meal nutrition are NOT certified."
     },
     "Red bell pepper": {
       "source": "",
@@ -3564,16 +3579,21 @@
       "reviewStatus": "pending"
     },
     "Swiss cheese": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central Foundation",
+      "foodId": "746767",
+      "description": "Cheese, swiss",
+      "state": "Cheese, swiss",
+      "kcalPer100g": 393,
+      "proteinPer100g": 27,
+      "carbsPer100g": 1.44,
+      "fatPer100g": 31,
+      "gramsPerUnit": {
+        "slice": 21.9
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/746767/nutrients",
+      "portionSource": "USDA explicit 1 standard regular slice = 21.9 g; thin slices have a different weight",
+      "reviewNotes": "Source-linked ingredient input reference only. Brand variation, portions before peeling, cooking yield and prepared-meal nutrition are NOT certified."
     },
     "Tomatillos": {
       "source": "",
