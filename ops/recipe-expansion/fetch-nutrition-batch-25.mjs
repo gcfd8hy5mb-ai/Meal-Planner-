@@ -10,11 +10,13 @@ for(const recipe of recipes)for(const [name,,unit] of recipe.ingredients){
  const stat=uses.get(name)||{name,uses:0,recipes:new Set(),units:new Set()};
  stat.uses++;stat.recipes.add(recipe.id);stat.units.add(unit);uses.set(name,stat);
 }
-const batch=[...uses.values()].sort((a,b)=>b.uses-a.uses||a.name.localeCompare(b.name)).slice(0,25);
+const offset=Number(process.env.NUTRITION_BATCH_OFFSET||0);
+if(!Number.isInteger(offset)||offset<0)throw Error('Invalid NUTRITION_BATCH_OFFSET');
+const batch=[...uses.values()].sort((a,b)=>b.uses-a.uses||a.name.localeCompare(b.name)).slice(offset,offset+25);
 if(batch.length!==25)throw Error('Expected 25 unresolved source records');
 const tasks=batch.map(x=>({ingredient:x.name,uses:x.uses,recipesAffected:x.recipes.size,requiredUnits:[...x.units].sort(),status:'source-lookup-pending'}));
-const out={batchSize:25,approvedBefore:Object.values(source).filter(v=>v.reviewStatus==='approved').length,recipeCount:recipes.length,reviewTasks:tasks,approvalPolicy:'Do not mark approved until matched food identity/state, all macronutrients and each required gram conversion are reviewed.'};
-fs.writeFileSync(root+'nutrition-batch-25-review-queue.json',JSON.stringify(out,null,2)+'\n');
+const out={batchSize:25,offset,approvedBefore:Object.values(source).filter(v=>v.reviewStatus==='approved').length,recipeCount:recipes.length,reviewTasks:tasks,approvalPolicy:'Do not mark approved until matched food identity/state, all macronutrients and each required gram conversion are reviewed.'};
+fs.writeFileSync(root+'nutrition-batch-25-review-queue-'+offset+'.json',JSON.stringify(out,null,2)+'\n');
 console.log(JSON.stringify({batchSize:out.batchSize,approvedBefore:out.approvedBefore,topFive:tasks.slice(0,5)}));
 if(!process.env.USDA_FDC_API_KEY)throw Error('USDA_FDC_API_KEY needed for 25-item lookup');
 const sleep=ms=>new Promise(resolve=>setTimeout(resolve,ms));
@@ -46,7 +48,7 @@ for(const task of tasks){
   results.push({...task,query,candidates:choices,firstCandidateDetail:details,verification:'requires-editorial-review',approved:false});
  }catch(error){results.push({...task,error:String(error),approved:false,verification:'fetch-error'})}
 }
-const report={source:'USDA FoodData Central',requested:25,succeeded:results.filter(r=>r.firstCandidateDetail).length,failed:results.filter(r=>r.error).length,approvedByThisScript:0,review:results,note:'Source evidence from 25 high-use ingredients; top search hit is NOT approved for nutrient or portion calculations. No live recipe data modified.'};
-fs.writeFileSync(root+'nutrition-batch-25-usda-evidence.json',JSON.stringify(report,null,2)+'\n');
+const report={source:'USDA FoodData Central',offset,requested:25,succeeded:results.filter(r=>r.firstCandidateDetail).length,failed:results.filter(r=>r.error).length,approvedByThisScript:0,review:results,note:'Source evidence from 25 high-use ingredients; top search hit is NOT approved for nutrient or portion calculations. No live recipe data modified.'};
+fs.writeFileSync(root+'nutrition-batch-25-usda-evidence-'+offset+'.json',JSON.stringify(report,null,2)+'\n');
 console.log(JSON.stringify({requested:25,succeeded:report.succeeded,failed:report.failed,approved:0}));
 if(report.succeeded<20)process.exitCode=1;
