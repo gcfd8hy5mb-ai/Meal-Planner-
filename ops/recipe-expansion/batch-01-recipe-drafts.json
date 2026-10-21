@@ -98,7 +98,17 @@
       "p": 49,
       "c": 44,
       "f": 38,
-      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification",
+      "nutritionIngredientUsage": {
+        "Lime": {
+          "listedQuantity": 2,
+          "listedUnit": "each",
+          "instructionClassification": "wedges-served",
+          "consumedAmountGrams": null,
+          "reviewStatus": "requires-consumed-portion-review",
+          "notes": "Garnish wedges are optional; do not count whole-fruit mass as eaten."
+        }
+      }
     },
     {
       "id": "exp01-002",
@@ -191,7 +201,17 @@
       "p": 45,
       "c": 43,
       "f": 20,
-      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification",
+      "nutritionIngredientUsage": {
+        "Lime": {
+          "listedQuantity": 2,
+          "listedUnit": "each",
+          "instructionClassification": "juice-and-wedges",
+          "consumedAmountGrams": null,
+          "reviewStatus": "requires-consumed-portion-review",
+          "notes": "Split squeezed juice and optional wedges; quantities still need specification."
+        }
+      }
     },
     {
       "id": "exp01-003",
@@ -279,7 +299,17 @@
       "p": 40,
       "c": 40,
       "f": 32,
-      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification",
+      "nutritionIngredientUsage": {
+        "Lime": {
+          "listedQuantity": 2,
+          "listedUnit": "each",
+          "instructionClassification": "juice-and-wedges",
+          "consumedAmountGrams": null,
+          "reviewStatus": "requires-consumed-portion-review",
+          "notes": "Split squeezed juice and optional wedges; quantities still need specification."
+        }
+      }
     },
     {
       "id": "exp01-004",
@@ -372,7 +402,17 @@
       "p": 44,
       "c": 39,
       "f": 24,
-      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification",
+      "nutritionIngredientUsage": {
+        "Lime": {
+          "listedQuantity": 1,
+          "listedUnit": "each",
+          "instructionClassification": "juice-and-wedges",
+          "consumedAmountGrams": null,
+          "reviewStatus": "requires-consumed-portion-review",
+          "notes": "Split squeezed juice and optional wedges; quantities still need specification."
+        }
+      }
     },
     {
       "id": "exp01-005",
@@ -465,7 +505,17 @@
       "p": 45,
       "c": 49,
       "f": 26,
-      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification",
+      "nutritionIngredientUsage": {
+        "Lime": {
+          "listedQuantity": 2,
+          "listedUnit": "each",
+          "instructionClassification": "juice-used",
+          "consumedAmountGrams": null,
+          "reviewStatus": "requires-consumed-portion-review",
+          "notes": "Convert measured squeezed juice rather than whole-fruit mass."
+        }
+      }
     },
     {
       "id": "exp01-006",
@@ -900,7 +950,17 @@
       "p": 36,
       "c": 62,
       "f": 14,
-      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification",
+      "nutritionIngredientUsage": {
+        "Lime": {
+          "listedQuantity": 2,
+          "listedUnit": "each",
+          "instructionClassification": "wedges-served",
+          "consumedAmountGrams": null,
+          "reviewStatus": "requires-consumed-portion-review",
+          "notes": "Garnish wedges are optional; do not count whole-fruit mass as eaten."
+        }
+      }
     },
     {
       "id": "exp01-011",
@@ -1360,7 +1420,17 @@
       "p": 42,
       "c": 28,
       "f": 26,
-      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification",
+      "nutritionIngredientUsage": {
+        "Lime": {
+          "listedQuantity": 1,
+          "listedUnit": "each",
+          "instructionClassification": "juice-used",
+          "consumedAmountGrams": null,
+          "reviewStatus": "requires-consumed-portion-review",
+          "notes": "Convert measured squeezed juice rather than whole-fruit mass."
+        }
+      }
     },
     {
       "id": "exp01-016",
@@ -1531,7 +1601,17 @@
       "p": 38,
       "c": 34,
       "f": 17,
-      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification",
+      "nutritionIngredientUsage": {
+        "Lime": {
+          "listedQuantity": 2,
+          "listedUnit": "each",
+          "instructionClassification": "wedges-served",
+          "consumedAmountGrams": null,
+          "reviewStatus": "requires-consumed-portion-review",
+          "notes": "Garnish wedges are optional; do not count whole-fruit mass as eaten."
+        }
+      }
     },
     {
       "id": "exp01-018",
@@ -1629,7 +1709,17 @@
       "p": 40,
       "c": 39,
       "f": 24,
-      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification",
+      "nutritionIngredientUsage": {
+        "Lime": {
+          "listedQuantity": 2,
+          "listedUnit": "each",
+          "instructionClassification": "wedges-served",
+          "consumedAmountGrams": null,
+          "reviewStatus": "requires-consumed-portion-review",
+          "notes": "Garnish wedges are optional; do not count whole-fruit mass as eaten."
+        }
+      }
     },
     {
       "id": "exp01-019",
@@ -1727,7 +1817,17 @@
       "p": 39,
       "c": 62,
       "f": 17,
-      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification",
+      "nutritionIngredientUsage": {
+        "Lime": {
+          "listedQuantity": 2,
+          "listedUnit": "each",
+          "instructionClassification": "wedges-served",
+          "consumedAmountGrams": null,
+          "reviewStatus": "requires-consumed-portion-review",
+          "notes": "Garnish wedges are optional; do not count whole-fruit mass as eaten."
+        }
+      }
     },
     {
       "id": "exp01-020",
@@ -1795,7 +1895,17 @@
       "cal": 330,
       "p": 38,
       "c": 17,
-      "f": 12
+      "f": 12,
+      "nutritionIngredientUsage": {
+        "Lime": {
+          "listedQuantity": 4,
+          "listedUnit": "each",
+          "instructionClassification": "unspecified",
+          "consumedAmountGrams": null,
+          "reviewStatus": "requires-consumed-portion-review",
+          "notes": "Instructions require clarification before any edible gram assignment."
+        }
+      }
     },
     {
       "id": "exp01-021",
@@ -1893,7 +2003,17 @@
       "p": 39,
       "c": 61,
       "f": 35,
-      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification",
+      "nutritionIngredientUsage": {
+        "Lime": {
+          "listedQuantity": 1,
+          "listedUnit": "each",
+          "instructionClassification": "wedges-served",
+          "consumedAmountGrams": null,
+          "reviewStatus": "requires-consumed-portion-review",
+          "notes": "Garnish wedges are optional; do not count whole-fruit mass as eaten."
+        }
+      }
     },
     {
       "id": "exp01-022",
@@ -1976,7 +2096,17 @@
       "p": 37,
       "c": 62,
       "f": 31,
-      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification",
+      "nutritionIngredientUsage": {
+        "Lime": {
+          "listedQuantity": 1,
+          "listedUnit": "each",
+          "instructionClassification": "wedges-served",
+          "consumedAmountGrams": null,
+          "reviewStatus": "requires-consumed-portion-review",
+          "notes": "Garnish wedges are optional; do not count whole-fruit mass as eaten."
+        }
+      }
     },
     {
       "id": "exp01-023",
@@ -2343,7 +2473,17 @@
       "p": 40,
       "c": 36,
       "f": 18,
-      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification",
+      "nutritionIngredientUsage": {
+        "Lime": {
+          "listedQuantity": 2,
+          "listedUnit": "each",
+          "instructionClassification": "wedges-served",
+          "consumedAmountGrams": null,
+          "reviewStatus": "requires-consumed-portion-review",
+          "notes": "Garnish wedges are optional; do not count whole-fruit mass as eaten."
+        }
+      }
     },
     {
       "id": "exp01-027",
@@ -2710,7 +2850,17 @@
       "p": 36,
       "c": 21,
       "f": 20,
-      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification",
+      "nutritionIngredientUsage": {
+        "Lime": {
+          "listedQuantity": 1,
+          "listedUnit": "each",
+          "instructionClassification": "juice-used",
+          "consumedAmountGrams": null,
+          "reviewStatus": "requires-consumed-portion-review",
+          "notes": "Convert measured squeezed juice rather than whole-fruit mass."
+        }
+      }
     },
     {
       "id": "exp01-031",
@@ -2808,7 +2958,17 @@
       "p": 43,
       "c": 66,
       "f": 26,
-      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification",
+      "nutritionIngredientUsage": {
+        "Lime": {
+          "listedQuantity": 1,
+          "listedUnit": "each",
+          "instructionClassification": "juice-used",
+          "consumedAmountGrams": null,
+          "reviewStatus": "requires-consumed-portion-review",
+          "notes": "Convert measured squeezed juice rather than whole-fruit mass."
+        }
+      }
     },
     {
       "id": "exp01-032",
@@ -3107,7 +3267,17 @@
       "p": 44,
       "c": 48,
       "f": 26,
-      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification",
+      "nutritionIngredientUsage": {
+        "Lime": {
+          "listedQuantity": 2,
+          "listedUnit": "each",
+          "instructionClassification": "wedges-served",
+          "consumedAmountGrams": null,
+          "reviewStatus": "requires-consumed-portion-review",
+          "notes": "Garnish wedges are optional; do not count whole-fruit mass as eaten."
+        }
+      }
     },
     {
       "id": "exp01-035",
@@ -3278,7 +3448,17 @@
       "p": 52,
       "c": 55,
       "f": 34,
-      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification",
+      "nutritionIngredientUsage": {
+        "Lime": {
+          "listedQuantity": 2,
+          "listedUnit": "each",
+          "instructionClassification": "wedges-served",
+          "consumedAmountGrams": null,
+          "reviewStatus": "requires-consumed-portion-review",
+          "notes": "Garnish wedges are optional; do not count whole-fruit mass as eaten."
+        }
+      }
     },
     {
       "id": "exp01-037",
@@ -3640,7 +3820,17 @@
       "p": 38,
       "c": 42,
       "f": 17,
-      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification",
+      "nutritionIngredientUsage": {
+        "Lime": {
+          "listedQuantity": 2,
+          "listedUnit": "each",
+          "instructionClassification": "juice-and-wedges",
+          "consumedAmountGrams": null,
+          "reviewStatus": "requires-consumed-portion-review",
+          "notes": "Split squeezed juice and optional wedges; quantities still need specification."
+        }
+      }
     },
     {
       "id": "exp01-041",
@@ -3743,7 +3933,17 @@
       "p": 36,
       "c": 42,
       "f": 19,
-      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification",
+      "nutritionIngredientUsage": {
+        "Lime": {
+          "listedQuantity": 1,
+          "listedUnit": "each",
+          "instructionClassification": "unspecified",
+          "consumedAmountGrams": null,
+          "reviewStatus": "requires-consumed-portion-review",
+          "notes": "Instructions require clarification before any edible gram assignment."
+        }
+      }
     },
     {
       "id": "exp01-042",
@@ -4057,7 +4257,17 @@
       "p": 39,
       "c": 31,
       "f": 25,
-      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification",
+      "nutritionIngredientUsage": {
+        "Lime": {
+          "listedQuantity": 2,
+          "listedUnit": "each",
+          "instructionClassification": "juice-used",
+          "consumedAmountGrams": null,
+          "reviewStatus": "requires-consumed-portion-review",
+          "notes": "Convert measured squeezed juice rather than whole-fruit mass."
+        }
+      }
     },
     {
       "id": "exp01-045",
@@ -6544,6 +6754,16 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
+      },
+      "nutritionIngredientUsage": {
+        "Lime": {
+          "listedQuantity": 1,
+          "listedUnit": "each",
+          "instructionClassification": "juice-used",
+          "consumedAmountGrams": null,
+          "reviewStatus": "requires-consumed-portion-review",
+          "notes": "Convert measured squeezed juice rather than whole-fruit mass."
+        }
       }
     },
     {
@@ -7999,6 +8219,16 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
+      },
+      "nutritionIngredientUsage": {
+        "Lime": {
+          "listedQuantity": 2,
+          "listedUnit": "each",
+          "instructionClassification": "juice-used",
+          "consumedAmountGrams": null,
+          "reviewStatus": "requires-consumed-portion-review",
+          "notes": "Convert measured squeezed juice rather than whole-fruit mass."
+        }
       }
     },
     {
