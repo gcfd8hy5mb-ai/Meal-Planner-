@@ -5,7 +5,7 @@
   "stage": "editorial source-screening",
   "approvedMappings": 0,
   "recipeNutritionVerified": 0,
-  "note": "Proposed grams per recipe unit are evidence-supported candidates, not approved conversions. All food identities, preparation states, nutrients and portion interpretations still require verification. Do not propagate to ingredient-nutrition-sources.json.",
+  "note": "Evidence-supported PROPOSALS only, not approved. Specific garlic and cilantro USDA portion records corrected; onion blocked where size unspecified.",
   "items": [
     {
       "ingredient": "Olive oil",
@@ -20,12 +20,12 @@
     {
       "ingredient": "Garlic cloves",
       "unit": "each",
-      "fdcId": 2709786,
+      "fdcId": 169230,
       "usdaReferenceGrams": 3,
       "usdaDescription": "Garlic, raw",
       "portionDefinition": "1 clove",
       "status": "plausible-needs-review",
-      "reason": "Representative raw garlic clove; sizes vary"
+      "reason": "Use FDC 169230's explicit 1 clove = 3 g portion rather than coded measures"
     },
     {
       "ingredient": "Salt",
@@ -50,12 +50,12 @@
     {
       "ingredient": "Yellow onion",
       "unit": "each",
-      "fdcId": 2709795,
-      "usdaReferenceGrams": 148,
-      "usdaDescription": "Onions, raw",
-      "portionDefinition": "1 whole",
-      "status": "conditional-needs-review",
-      "reason": "USDA whole onion without specific yellow variety or size; recipe does not state size"
+      "fdcId": null,
+      "usdaReferenceGrams": null,
+      "usdaDescription": null,
+      "portionDefinition": null,
+      "status": "blocked-unspecified-onion-size",
+      "reason": "USDA onion weights differ by size; recipe only says each yellow onion and does not specify small, medium or large."
     },
     {
       "ingredient": "Chicken broth",
@@ -90,12 +90,12 @@
     {
       "ingredient": "Cilantro",
       "unit": "cup",
-      "fdcId": 2709782,
+      "fdcId": 169997,
       "usdaReferenceGrams": 16,
-      "usdaDescription": "Cilantro, raw",
-      "portionDefinition": "1 cup",
+      "usdaDescription": "Coriander (cilantro) leaves, raw",
+      "portionDefinition": "0.25 cup = 4 g; 1 cup inferred proportionally as 16 g",
       "status": "conditional-needs-review",
-      "reason": "Confirm loose leaf/chopped/packed preparation"
+      "reason": "Derived from USDA explicit quarter-cup portion; confirm loose leaf versus chopped or packed cilantro"
     },
     {
       "ingredient": "Butter",
