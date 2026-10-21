@@ -2351,16 +2351,21 @@
       "reviewStatus": "pending"
     },
     "Maple syrup": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central",
+      "foodId": "169661",
+      "description": "Syrups, maple",
+      "state": "Syrups, maple",
+      "kcalPer100g": 260,
+      "proteinPer100g": 0.04,
+      "carbsPer100g": 67.04,
+      "fatPer100g": 0.06,
+      "gramsPerUnit": {
+        "tbsp": 20
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169661/nutrients",
+      "portionSource": "USDA 1 tablespoon = 20g; pure maple syrup, not maple flavored table syrup.",
+      "reviewNotes": "Source-verified recipe ingredient inputs; cooking retention and per-serving yield not verified."
     },
     "Marinara": {
       "source": "",
@@ -2846,16 +2851,21 @@
       "reviewStatus": "pending"
     },
     "Raw Mexican-style pork chorizo": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central",
+      "foodId": "173859",
+      "description": "Sausage, pork, chorizo, link or ground, raw",
+      "state": "Sausage, pork, chorizo, link or ground, raw",
+      "kcalPer100g": 296,
+      "proteinPer100g": 13.63,
+      "carbsPer100g": 3.78,
+      "fatPer100g": 25.1,
+      "gramsPerUnit": {
+        "oz": 28.35
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/173859/nutrients",
+      "portionSource": "Raw pork chorizo; USDA 1oz = 28.35g. Both recipes explicitly state raw Mexican-style pork chorizo. Cooking fat discarded separately.",
+      "reviewNotes": "Source-verified recipe ingredient inputs; cooking retention and per-serving yield not verified."
     },
     "Raw peeled shrimp": {
       "source": "",
@@ -2978,16 +2988,21 @@
       "reviewStatus": "pending"
     },
     "Refrigerated cheese tortellini": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central",
+      "foodId": "172094",
+      "description": "Tortellini, pasta with cheese filling, fresh-refrigerated, as purchased",
+      "state": "Tortellini, pasta with cheese filling, fresh-refrigerated, as purchased",
+      "kcalPer100g": 307,
+      "proteinPer100g": 13.5,
+      "carbsPer100g": 47,
+      "fatPer100g": 7.23,
+      "gramsPerUnit": {
+        "oz": 28.349523125
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/172094/nutrients",
+      "portionSource": "Refrigerated uncooked cheese pasta purchased by weight; 1 oz avoirdupois = 28.349523125g. Cooked-water uptake changes cooked weight but not input dry nutrient mass.",
+      "reviewNotes": "Source-verified recipe ingredient inputs; cooking retention and per-serving yield not verified."
     },
     "Rice noodles": {
       "source": "",
@@ -3026,16 +3041,21 @@
       "reviewStatus": "pending"
     },
     "Ricotta cheese": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central",
+      "foodId": "746766",
+      "description": "Cheese, ricotta, whole milk",
+      "state": "Cheese, ricotta, whole milk",
+      "kcalPer100g": 157,
+      "proteinPer100g": 7.81,
+      "carbsPer100g": 6.86,
+      "fatPer100g": 11,
+      "gramsPerUnit": {
+        "cup": 258
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/746766/nutrients",
+      "portionSource": "USDA explicitly 1 cup whole-milk ricotta =258g; reduced fat ricotta differs. Recipes give cup of ricotta without reduced-fat designation.",
+      "reviewNotes": "Source-verified recipe ingredient inputs; cooking retention and per-serving yield not verified."
     },
     "Roasted red peppers": {
       "source": "",
@@ -3062,16 +3082,21 @@
       "reviewStatus": "pending"
     },
     "Romaine lettuce": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central",
+      "foodId": "169247",
+      "description": "Lettuce, cos or romaine, raw",
+      "state": "Lettuce, cos or romaine, raw",
+      "kcalPer100g": 17,
+      "proteinPer100g": 1.23,
+      "carbsPer100g": 3.29,
+      "fatPer100g": 0.3,
+      "gramsPerUnit": {
+        "cup": 47
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169247/nutrients",
+      "portionSource": "USDA 1 cup shredded romaine =47g. Both recipes explicitly call for chopped romaine by cups.",
+      "reviewNotes": "Source-verified recipe ingredient inputs; cooking retention and per-serving yield not verified."
     },
     "Rosemary": {
       "source": "",
