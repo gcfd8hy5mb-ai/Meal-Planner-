@@ -111,11 +111,10 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "ingredientState": "ground",
-          "sourceWeightGramsPerTsp": null,
-          "reviewStatus": "requires-ground-cumin-volume-source",
-          "marinadeReview": "no-obvious-marinade-mention",
-          "notes": "Ground cumin teaspoon mass must be sourced for ground spice; never substitute whole cumin seed cup or tsp weight."
+          "preparation": "ground",
+          "edibleGrams": null,
+          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
         }
       }
     },
@@ -223,11 +222,10 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "ingredientState": "ground",
-          "sourceWeightGramsPerTsp": null,
-          "reviewStatus": "requires-ground-cumin-volume-source",
-          "marinadeReview": "check-spice-retention-in-marinade",
-          "notes": "Ground cumin teaspoon mass must be sourced for ground spice; never substitute whole cumin seed cup or tsp weight."
+          "preparation": "ground",
+          "edibleGrams": null,
+          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
         }
       }
     },
@@ -330,11 +328,10 @@
         "Ground cumin": {
           "listedQuantity": 2,
           "listedUnit": "tsp",
-          "ingredientState": "ground",
-          "sourceWeightGramsPerTsp": null,
-          "reviewStatus": "requires-ground-cumin-volume-source",
-          "marinadeReview": "no-obvious-marinade-mention",
-          "notes": "Ground cumin teaspoon mass must be sourced for ground spice; never substitute whole cumin seed cup or tsp weight."
+          "preparation": "ground",
+          "edibleGrams": null,
+          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
         }
       }
     },
@@ -442,11 +439,10 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "ingredientState": "ground",
-          "sourceWeightGramsPerTsp": null,
-          "reviewStatus": "requires-ground-cumin-volume-source",
-          "marinadeReview": "no-obvious-marinade-mention",
-          "notes": "Ground cumin teaspoon mass must be sourced for ground spice; never substitute whole cumin seed cup or tsp weight."
+          "preparation": "ground",
+          "edibleGrams": null,
+          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
         }
       }
     },
@@ -554,11 +550,10 @@
         "Ground cumin": {
           "listedQuantity": 2,
           "listedUnit": "tsp",
-          "ingredientState": "ground",
-          "sourceWeightGramsPerTsp": null,
-          "reviewStatus": "requires-ground-cumin-volume-source",
-          "marinadeReview": "no-obvious-marinade-mention",
-          "notes": "Ground cumin teaspoon mass must be sourced for ground spice; never substitute whole cumin seed cup or tsp weight."
+          "preparation": "ground",
+          "edibleGrams": null,
+          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
         }
       }
     },
@@ -726,11 +721,10 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "ingredientState": "ground",
-          "sourceWeightGramsPerTsp": null,
-          "reviewStatus": "requires-ground-cumin-volume-source",
-          "marinadeReview": "no-obvious-marinade-mention",
-          "notes": "Ground cumin teaspoon mass must be sourced for ground spice; never substitute whole cumin seed cup or tsp weight."
+          "preparation": "ground",
+          "edibleGrams": null,
+          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
         }
       }
     },
@@ -830,11 +824,10 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "ingredientState": "ground",
-          "sourceWeightGramsPerTsp": null,
-          "reviewStatus": "requires-ground-cumin-volume-source",
-          "marinadeReview": "no-obvious-marinade-mention",
-          "notes": "Ground cumin teaspoon mass must be sourced for ground spice; never substitute whole cumin seed cup or tsp weight."
+          "preparation": "ground",
+          "edibleGrams": null,
+          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
         }
       }
     },
@@ -929,19 +922,18 @@
         "Yellow onion": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "portionDefinition": "size-not-specified",
-          "edibleWeightGrams": null,
-          "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe says whole or fractional onion without size. Specify small, medium, large or edible grams before calculating; chopping/slicing does not supply the mass."
+          "onionSize": null,
+          "edibleGrams": null,
+          "reviewStatus": "onion-size-or-weight-needed",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
         },
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "ingredientState": "ground",
-          "sourceWeightGramsPerTsp": null,
-          "reviewStatus": "requires-ground-cumin-volume-source",
-          "marinadeReview": "no-obvious-marinade-mention",
-          "notes": "Ground cumin teaspoon mass must be sourced for ground spice; never substitute whole cumin seed cup or tsp weight."
+          "preparation": "ground",
+          "edibleGrams": null,
+          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
         }
       }
     },
@@ -1049,11 +1041,10 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "ingredientState": "ground",
-          "sourceWeightGramsPerTsp": null,
-          "reviewStatus": "requires-ground-cumin-volume-source",
-          "marinadeReview": "no-obvious-marinade-mention",
-          "notes": "Ground cumin teaspoon mass must be sourced for ground spice; never substitute whole cumin seed cup or tsp weight."
+          "preparation": "ground",
+          "edibleGrams": null,
+          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
         }
       }
     },
@@ -1153,19 +1144,18 @@
         "Yellow onion": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "portionDefinition": "size-not-specified",
-          "edibleWeightGrams": null,
-          "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe says whole or fractional onion without size. Specify small, medium, large or edible grams before calculating; chopping/slicing does not supply the mass."
+          "onionSize": null,
+          "edibleGrams": null,
+          "reviewStatus": "onion-size-or-weight-needed",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
         },
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "ingredientState": "ground",
-          "sourceWeightGramsPerTsp": null,
-          "reviewStatus": "requires-ground-cumin-volume-source",
-          "marinadeReview": "no-obvious-marinade-mention",
-          "notes": "Ground cumin teaspoon mass must be sourced for ground spice; never substitute whole cumin seed cup or tsp weight."
+          "preparation": "ground",
+          "edibleGrams": null,
+          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
         }
       }
     },
@@ -1255,11 +1245,10 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "ingredientState": "ground",
-          "sourceWeightGramsPerTsp": null,
-          "reviewStatus": "requires-ground-cumin-volume-source",
-          "marinadeReview": "no-obvious-marinade-mention",
-          "notes": "Ground cumin teaspoon mass must be sourced for ground spice; never substitute whole cumin seed cup or tsp weight."
+          "preparation": "ground",
+          "edibleGrams": null,
+          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
         }
       }
     },
@@ -1359,19 +1348,18 @@
         "Yellow onion": {
           "listedQuantity": 0.5,
           "listedUnit": "each",
-          "portionDefinition": "size-not-specified",
-          "edibleWeightGrams": null,
-          "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe says whole or fractional onion without size. Specify small, medium, large or edible grams before calculating; chopping/slicing does not supply the mass."
+          "onionSize": null,
+          "edibleGrams": null,
+          "reviewStatus": "onion-size-or-weight-needed",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
         },
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "ingredientState": "ground",
-          "sourceWeightGramsPerTsp": null,
-          "reviewStatus": "requires-ground-cumin-volume-source",
-          "marinadeReview": "no-obvious-marinade-mention",
-          "notes": "Ground cumin teaspoon mass must be sourced for ground spice; never substitute whole cumin seed cup or tsp weight."
+          "preparation": "ground",
+          "edibleGrams": null,
+          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
         }
       }
     },
@@ -1471,19 +1459,18 @@
         "Yellow onion": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "portionDefinition": "size-not-specified",
-          "edibleWeightGrams": null,
-          "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe says whole or fractional onion without size. Specify small, medium, large or edible grams before calculating; chopping/slicing does not supply the mass."
+          "onionSize": null,
+          "edibleGrams": null,
+          "reviewStatus": "onion-size-or-weight-needed",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
         },
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "ingredientState": "ground",
-          "sourceWeightGramsPerTsp": null,
-          "reviewStatus": "requires-ground-cumin-volume-source",
-          "marinadeReview": "no-obvious-marinade-mention",
-          "notes": "Ground cumin teaspoon mass must be sourced for ground spice; never substitute whole cumin seed cup or tsp weight."
+          "preparation": "ground",
+          "edibleGrams": null,
+          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
         }
       }
     },
@@ -1596,11 +1583,10 @@
         "Ground cumin": {
           "listedQuantity": 1.5,
           "listedUnit": "tsp",
-          "ingredientState": "ground",
-          "sourceWeightGramsPerTsp": null,
-          "reviewStatus": "requires-ground-cumin-volume-source",
-          "marinadeReview": "no-obvious-marinade-mention",
-          "notes": "Ground cumin teaspoon mass must be sourced for ground spice; never substitute whole cumin seed cup or tsp weight."
+          "preparation": "ground",
+          "edibleGrams": null,
+          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
         }
       }
     },
@@ -1675,10 +1661,10 @@
         "Yellow onion": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "portionDefinition": "size-not-specified",
-          "edibleWeightGrams": null,
-          "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe says whole or fractional onion without size. Specify small, medium, large or edible grams before calculating; chopping/slicing does not supply the mass."
+          "onionSize": null,
+          "edibleGrams": null,
+          "reviewStatus": "onion-size-or-weight-needed",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
         }
       }
     },
@@ -1796,11 +1782,10 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "ingredientState": "ground",
-          "sourceWeightGramsPerTsp": null,
-          "reviewStatus": "requires-ground-cumin-volume-source",
-          "marinadeReview": "no-obvious-marinade-mention",
-          "notes": "Ground cumin teaspoon mass must be sourced for ground spice; never substitute whole cumin seed cup or tsp weight."
+          "preparation": "ground",
+          "edibleGrams": null,
+          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
         }
       }
     },
@@ -1913,11 +1898,10 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "ingredientState": "ground",
-          "sourceWeightGramsPerTsp": null,
-          "reviewStatus": "requires-ground-cumin-volume-source",
-          "marinadeReview": "no-obvious-marinade-mention",
-          "notes": "Ground cumin teaspoon mass must be sourced for ground spice; never substitute whole cumin seed cup or tsp weight."
+          "preparation": "ground",
+          "edibleGrams": null,
+          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
         }
       }
     },
@@ -2030,11 +2014,10 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "ingredientState": "ground",
-          "sourceWeightGramsPerTsp": null,
-          "reviewStatus": "requires-ground-cumin-volume-source",
-          "marinadeReview": "no-obvious-marinade-mention",
-          "notes": "Ground cumin teaspoon mass must be sourced for ground spice; never substitute whole cumin seed cup or tsp weight."
+          "preparation": "ground",
+          "edibleGrams": null,
+          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
         }
       }
     },
@@ -2225,11 +2208,10 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "ingredientState": "ground",
-          "sourceWeightGramsPerTsp": null,
-          "reviewStatus": "requires-ground-cumin-volume-source",
-          "marinadeReview": "no-obvious-marinade-mention",
-          "notes": "Ground cumin teaspoon mass must be sourced for ground spice; never substitute whole cumin seed cup or tsp weight."
+          "preparation": "ground",
+          "edibleGrams": null,
+          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
         }
       }
     },
@@ -2417,19 +2399,18 @@
         "Yellow onion": {
           "listedQuantity": 0.5,
           "listedUnit": "each",
-          "portionDefinition": "size-not-specified",
-          "edibleWeightGrams": null,
-          "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe says whole or fractional onion without size. Specify small, medium, large or edible grams before calculating; chopping/slicing does not supply the mass."
+          "onionSize": null,
+          "edibleGrams": null,
+          "reviewStatus": "onion-size-or-weight-needed",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
         },
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "ingredientState": "ground",
-          "sourceWeightGramsPerTsp": null,
-          "reviewStatus": "requires-ground-cumin-volume-source",
-          "marinadeReview": "no-obvious-marinade-mention",
-          "notes": "Ground cumin teaspoon mass must be sourced for ground spice; never substitute whole cumin seed cup or tsp weight."
+          "preparation": "ground",
+          "edibleGrams": null,
+          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
         }
       }
     },
@@ -2524,11 +2505,10 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "ingredientState": "ground",
-          "sourceWeightGramsPerTsp": null,
-          "reviewStatus": "requires-ground-cumin-volume-source",
-          "marinadeReview": "no-obvious-marinade-mention",
-          "notes": "Ground cumin teaspoon mass must be sourced for ground spice; never substitute whole cumin seed cup or tsp weight."
+          "preparation": "ground",
+          "edibleGrams": null,
+          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
         }
       }
     },
@@ -2633,19 +2613,18 @@
         "Yellow onion": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "portionDefinition": "size-not-specified",
-          "edibleWeightGrams": null,
-          "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe says whole or fractional onion without size. Specify small, medium, large or edible grams before calculating; chopping/slicing does not supply the mass."
+          "onionSize": null,
+          "edibleGrams": null,
+          "reviewStatus": "onion-size-or-weight-needed",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
         },
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "ingredientState": "ground",
-          "sourceWeightGramsPerTsp": null,
-          "reviewStatus": "requires-ground-cumin-volume-source",
-          "marinadeReview": "no-obvious-marinade-mention",
-          "notes": "Ground cumin teaspoon mass must be sourced for ground spice; never substitute whole cumin seed cup or tsp weight."
+          "preparation": "ground",
+          "edibleGrams": null,
+          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
         }
       }
     },
@@ -2753,11 +2732,10 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "ingredientState": "ground",
-          "sourceWeightGramsPerTsp": null,
-          "reviewStatus": "requires-ground-cumin-volume-source",
-          "marinadeReview": "no-obvious-marinade-mention",
-          "notes": "Ground cumin teaspoon mass must be sourced for ground spice; never substitute whole cumin seed cup or tsp weight."
+          "preparation": "ground",
+          "edibleGrams": null,
+          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
         }
       }
     },
@@ -2857,19 +2835,18 @@
         "Yellow onion": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "portionDefinition": "size-not-specified",
-          "edibleWeightGrams": null,
-          "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe says whole or fractional onion without size. Specify small, medium, large or edible grams before calculating; chopping/slicing does not supply the mass."
+          "onionSize": null,
+          "edibleGrams": null,
+          "reviewStatus": "onion-size-or-weight-needed",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
         },
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "ingredientState": "ground",
-          "sourceWeightGramsPerTsp": null,
-          "reviewStatus": "requires-ground-cumin-volume-source",
-          "marinadeReview": "no-obvious-marinade-mention",
-          "notes": "Ground cumin teaspoon mass must be sourced for ground spice; never substitute whole cumin seed cup or tsp weight."
+          "preparation": "ground",
+          "edibleGrams": null,
+          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
         }
       }
     },
@@ -3052,11 +3029,10 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "ingredientState": "ground",
-          "sourceWeightGramsPerTsp": null,
-          "reviewStatus": "requires-ground-cumin-volume-source",
-          "marinadeReview": "no-obvious-marinade-mention",
-          "notes": "Ground cumin teaspoon mass must be sourced for ground spice; never substitute whole cumin seed cup or tsp weight."
+          "preparation": "ground",
+          "edibleGrams": null,
+          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
         }
       }
     },
@@ -3277,19 +3253,18 @@
         "Yellow onion": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "portionDefinition": "size-not-specified",
-          "edibleWeightGrams": null,
-          "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe says whole or fractional onion without size. Specify small, medium, large or edible grams before calculating; chopping/slicing does not supply the mass."
+          "onionSize": null,
+          "edibleGrams": null,
+          "reviewStatus": "onion-size-or-weight-needed",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
         },
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "ingredientState": "ground",
-          "sourceWeightGramsPerTsp": null,
-          "reviewStatus": "requires-ground-cumin-volume-source",
-          "marinadeReview": "no-obvious-marinade-mention",
-          "notes": "Ground cumin teaspoon mass must be sourced for ground spice; never substitute whole cumin seed cup or tsp weight."
+          "preparation": "ground",
+          "edibleGrams": null,
+          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
         }
       }
     },
@@ -3394,19 +3369,18 @@
         "Yellow onion": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "portionDefinition": "size-not-specified",
-          "edibleWeightGrams": null,
-          "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe says whole or fractional onion without size. Specify small, medium, large or edible grams before calculating; chopping/slicing does not supply the mass."
+          "onionSize": null,
+          "edibleGrams": null,
+          "reviewStatus": "onion-size-or-weight-needed",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
         },
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "ingredientState": "ground",
-          "sourceWeightGramsPerTsp": null,
-          "reviewStatus": "requires-ground-cumin-volume-source",
-          "marinadeReview": "no-obvious-marinade-mention",
-          "notes": "Ground cumin teaspoon mass must be sourced for ground spice; never substitute whole cumin seed cup or tsp weight."
+          "preparation": "ground",
+          "edibleGrams": null,
+          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
         }
       }
     },
@@ -3511,19 +3485,18 @@
         "Yellow onion": {
           "listedQuantity": 0.5,
           "listedUnit": "each",
-          "portionDefinition": "size-not-specified",
-          "edibleWeightGrams": null,
-          "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe says whole or fractional onion without size. Specify small, medium, large or edible grams before calculating; chopping/slicing does not supply the mass."
+          "onionSize": null,
+          "edibleGrams": null,
+          "reviewStatus": "onion-size-or-weight-needed",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
         },
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "ingredientState": "ground",
-          "sourceWeightGramsPerTsp": null,
-          "reviewStatus": "requires-ground-cumin-volume-source",
-          "marinadeReview": "no-obvious-marinade-mention",
-          "notes": "Ground cumin teaspoon mass must be sourced for ground spice; never substitute whole cumin seed cup or tsp weight."
+          "preparation": "ground",
+          "edibleGrams": null,
+          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
         }
       }
     },
@@ -3641,11 +3614,10 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "ingredientState": "ground",
-          "sourceWeightGramsPerTsp": null,
-          "reviewStatus": "requires-ground-cumin-volume-source",
-          "marinadeReview": "check-spice-retention-in-marinade",
-          "notes": "Ground cumin teaspoon mass must be sourced for ground spice; never substitute whole cumin seed cup or tsp weight."
+          "preparation": "ground",
+          "edibleGrams": null,
+          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
         }
       }
     },
@@ -3831,11 +3803,10 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "ingredientState": "ground",
-          "sourceWeightGramsPerTsp": null,
-          "reviewStatus": "requires-ground-cumin-volume-source",
-          "marinadeReview": "no-obvious-marinade-mention",
-          "notes": "Ground cumin teaspoon mass must be sourced for ground spice; never substitute whole cumin seed cup or tsp weight."
+          "preparation": "ground",
+          "edibleGrams": null,
+          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
         }
       }
     },
@@ -3945,19 +3916,18 @@
         "Yellow onion": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "portionDefinition": "size-not-specified",
-          "edibleWeightGrams": null,
-          "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe says whole or fractional onion without size. Specify small, medium, large or edible grams before calculating; chopping/slicing does not supply the mass."
+          "onionSize": null,
+          "edibleGrams": null,
+          "reviewStatus": "onion-size-or-weight-needed",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
         },
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "ingredientState": "ground",
-          "sourceWeightGramsPerTsp": null,
-          "reviewStatus": "requires-ground-cumin-volume-source",
-          "marinadeReview": "no-obvious-marinade-mention",
-          "notes": "Ground cumin teaspoon mass must be sourced for ground spice; never substitute whole cumin seed cup or tsp weight."
+          "preparation": "ground",
+          "edibleGrams": null,
+          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
         }
       }
     },
@@ -4047,10 +4017,10 @@
         "Yellow onion": {
           "listedQuantity": 0.5,
           "listedUnit": "each",
-          "portionDefinition": "size-not-specified",
-          "edibleWeightGrams": null,
-          "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe says whole or fractional onion without size. Specify small, medium, large or edible grams before calculating; chopping/slicing does not supply the mass."
+          "onionSize": null,
+          "edibleGrams": null,
+          "reviewStatus": "onion-size-or-weight-needed",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
         }
       }
     },
@@ -4140,19 +4110,18 @@
         "Yellow onion": {
           "listedQuantity": 0.5,
           "listedUnit": "each",
-          "portionDefinition": "size-not-specified",
-          "edibleWeightGrams": null,
-          "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe says whole or fractional onion without size. Specify small, medium, large or edible grams before calculating; chopping/slicing does not supply the mass."
+          "onionSize": null,
+          "edibleGrams": null,
+          "reviewStatus": "onion-size-or-weight-needed",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
         },
         "Ground cumin": {
           "listedQuantity": 0.5,
           "listedUnit": "tsp",
-          "ingredientState": "ground",
-          "sourceWeightGramsPerTsp": null,
-          "reviewStatus": "requires-ground-cumin-volume-source",
-          "marinadeReview": "no-obvious-marinade-mention",
-          "notes": "Ground cumin teaspoon mass must be sourced for ground spice; never substitute whole cumin seed cup or tsp weight."
+          "preparation": "ground",
+          "edibleGrams": null,
+          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
         }
       }
     },
@@ -4260,11 +4229,10 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "ingredientState": "ground",
-          "sourceWeightGramsPerTsp": null,
-          "reviewStatus": "requires-ground-cumin-volume-source",
-          "marinadeReview": "no-obvious-marinade-mention",
-          "notes": "Ground cumin teaspoon mass must be sourced for ground spice; never substitute whole cumin seed cup or tsp weight."
+          "preparation": "ground",
+          "edibleGrams": null,
+          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
         }
       }
     },
@@ -4382,19 +4350,18 @@
         "Yellow onion": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "portionDefinition": "size-not-specified",
-          "edibleWeightGrams": null,
-          "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe says whole or fractional onion without size. Specify small, medium, large or edible grams before calculating; chopping/slicing does not supply the mass."
+          "onionSize": null,
+          "edibleGrams": null,
+          "reviewStatus": "onion-size-or-weight-needed",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
         },
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "ingredientState": "ground",
-          "sourceWeightGramsPerTsp": null,
-          "reviewStatus": "requires-ground-cumin-volume-source",
-          "marinadeReview": "no-obvious-marinade-mention",
-          "notes": "Ground cumin teaspoon mass must be sourced for ground spice; never substitute whole cumin seed cup or tsp weight."
+          "preparation": "ground",
+          "edibleGrams": null,
+          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
         }
       }
     },
@@ -4504,19 +4471,18 @@
         "Yellow onion": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "portionDefinition": "size-not-specified",
-          "edibleWeightGrams": null,
-          "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe says whole or fractional onion without size. Specify small, medium, large or edible grams before calculating; chopping/slicing does not supply the mass."
+          "onionSize": null,
+          "edibleGrams": null,
+          "reviewStatus": "onion-size-or-weight-needed",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
         },
         "Ground cumin": {
           "listedQuantity": 2,
           "listedUnit": "tsp",
-          "ingredientState": "ground",
-          "sourceWeightGramsPerTsp": null,
-          "reviewStatus": "requires-ground-cumin-volume-source",
-          "marinadeReview": "no-obvious-marinade-mention",
-          "notes": "Ground cumin teaspoon mass must be sourced for ground spice; never substitute whole cumin seed cup or tsp weight."
+          "preparation": "ground",
+          "edibleGrams": null,
+          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
         }
       }
     },
@@ -4631,19 +4597,18 @@
         "Yellow onion": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "portionDefinition": "size-not-specified",
-          "edibleWeightGrams": null,
-          "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe says whole or fractional onion without size. Specify small, medium, large or edible grams before calculating; chopping/slicing does not supply the mass."
+          "onionSize": null,
+          "edibleGrams": null,
+          "reviewStatus": "onion-size-or-weight-needed",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
         },
         "Ground cumin": {
           "listedQuantity": 2,
           "listedUnit": "tsp",
-          "ingredientState": "ground",
-          "sourceWeightGramsPerTsp": null,
-          "reviewStatus": "requires-ground-cumin-volume-source",
-          "marinadeReview": "no-obvious-marinade-mention",
-          "notes": "Ground cumin teaspoon mass must be sourced for ground spice; never substitute whole cumin seed cup or tsp weight."
+          "preparation": "ground",
+          "edibleGrams": null,
+          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
         }
       }
     },
@@ -4761,11 +4726,10 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "ingredientState": "ground",
-          "sourceWeightGramsPerTsp": null,
-          "reviewStatus": "requires-ground-cumin-volume-source",
-          "marinadeReview": "no-obvious-marinade-mention",
-          "notes": "Ground cumin teaspoon mass must be sourced for ground spice; never substitute whole cumin seed cup or tsp weight."
+          "preparation": "ground",
+          "edibleGrams": null,
+          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
         }
       }
     },
@@ -5492,10 +5456,10 @@
         "Yellow onion": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "portionDefinition": "size-not-specified",
-          "edibleWeightGrams": null,
-          "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe says whole or fractional onion without size. Specify small, medium, large or edible grams before calculating; chopping/slicing does not supply the mass."
+          "onionSize": null,
+          "edibleGrams": null,
+          "reviewStatus": "onion-size-or-weight-needed",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
         }
       }
     },
@@ -5580,19 +5544,18 @@
         "Yellow onion": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "portionDefinition": "size-not-specified",
-          "edibleWeightGrams": null,
-          "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe says whole or fractional onion without size. Specify small, medium, large or edible grams before calculating; chopping/slicing does not supply the mass."
+          "onionSize": null,
+          "edibleGrams": null,
+          "reviewStatus": "onion-size-or-weight-needed",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
         },
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "ingredientState": "ground",
-          "sourceWeightGramsPerTsp": null,
-          "reviewStatus": "requires-ground-cumin-volume-source",
-          "marinadeReview": "no-obvious-marinade-mention",
-          "notes": "Ground cumin teaspoon mass must be sourced for ground spice; never substitute whole cumin seed cup or tsp weight."
+          "preparation": "ground",
+          "edibleGrams": null,
+          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
         }
       }
     },
@@ -6042,10 +6005,10 @@
         "Yellow onion": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "portionDefinition": "size-not-specified",
-          "edibleWeightGrams": null,
-          "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe says whole or fractional onion without size. Specify small, medium, large or edible grams before calculating; chopping/slicing does not supply the mass."
+          "onionSize": null,
+          "edibleGrams": null,
+          "reviewStatus": "onion-size-or-weight-needed",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
         }
       }
     },
@@ -6271,10 +6234,10 @@
         "Yellow onion": {
           "listedQuantity": 0.5,
           "listedUnit": "each",
-          "portionDefinition": "size-not-specified",
-          "edibleWeightGrams": null,
-          "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe says whole or fractional onion without size. Specify small, medium, large or edible grams before calculating; chopping/slicing does not supply the mass."
+          "onionSize": null,
+          "edibleGrams": null,
+          "reviewStatus": "onion-size-or-weight-needed",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
         }
       }
     },
@@ -6427,10 +6390,10 @@
         "Yellow onion": {
           "listedQuantity": 0.5,
           "listedUnit": "each",
-          "portionDefinition": "size-not-specified",
-          "edibleWeightGrams": null,
-          "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe says whole or fractional onion without size. Specify small, medium, large or edible grams before calculating; chopping/slicing does not supply the mass."
+          "onionSize": null,
+          "edibleGrams": null,
+          "reviewStatus": "onion-size-or-weight-needed",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
         }
       }
     },
@@ -6943,10 +6906,10 @@
         "Yellow onion": {
           "listedQuantity": 0.5,
           "listedUnit": "each",
-          "portionDefinition": "size-not-specified",
-          "edibleWeightGrams": null,
-          "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe says whole or fractional onion without size. Specify small, medium, large or edible grams before calculating; chopping/slicing does not supply the mass."
+          "onionSize": null,
+          "edibleGrams": null,
+          "reviewStatus": "onion-size-or-weight-needed",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
         }
       }
     },
@@ -7104,10 +7067,10 @@
         "Yellow onion": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "portionDefinition": "size-not-specified",
-          "edibleWeightGrams": null,
-          "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe says whole or fractional onion without size. Specify small, medium, large or edible grams before calculating; chopping/slicing does not supply the mass."
+          "onionSize": null,
+          "edibleGrams": null,
+          "reviewStatus": "onion-size-or-weight-needed",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
         }
       }
     },
@@ -7346,19 +7309,18 @@
         "Yellow onion": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "portionDefinition": "size-not-specified",
-          "edibleWeightGrams": null,
-          "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe says whole or fractional onion without size. Specify small, medium, large or edible grams before calculating; chopping/slicing does not supply the mass."
+          "onionSize": null,
+          "edibleGrams": null,
+          "reviewStatus": "onion-size-or-weight-needed",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
         },
         "Ground cumin": {
           "listedQuantity": 2,
           "listedUnit": "tsp",
-          "ingredientState": "ground",
-          "sourceWeightGramsPerTsp": null,
-          "reviewStatus": "requires-ground-cumin-volume-source",
-          "marinadeReview": "no-obvious-marinade-mention",
-          "notes": "Ground cumin teaspoon mass must be sourced for ground spice; never substitute whole cumin seed cup or tsp weight."
+          "preparation": "ground",
+          "edibleGrams": null,
+          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
         }
       }
     },
@@ -7594,10 +7556,10 @@
         "Yellow onion": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "portionDefinition": "size-not-specified",
-          "edibleWeightGrams": null,
-          "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe says whole or fractional onion without size. Specify small, medium, large or edible grams before calculating; chopping/slicing does not supply the mass."
+          "onionSize": null,
+          "edibleGrams": null,
+          "reviewStatus": "onion-size-or-weight-needed",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
         }
       }
     },
@@ -7974,19 +7936,18 @@
         "Yellow onion": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "portionDefinition": "size-not-specified",
-          "edibleWeightGrams": null,
-          "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe says whole or fractional onion without size. Specify small, medium, large or edible grams before calculating; chopping/slicing does not supply the mass."
+          "onionSize": null,
+          "edibleGrams": null,
+          "reviewStatus": "onion-size-or-weight-needed",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
         },
         "Ground cumin": {
           "listedQuantity": 2,
           "listedUnit": "tsp",
-          "ingredientState": "ground",
-          "sourceWeightGramsPerTsp": null,
-          "reviewStatus": "requires-ground-cumin-volume-source",
-          "marinadeReview": "no-obvious-marinade-mention",
-          "notes": "Ground cumin teaspoon mass must be sourced for ground spice; never substitute whole cumin seed cup or tsp weight."
+          "preparation": "ground",
+          "edibleGrams": null,
+          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable."
         }
       }
     },
@@ -8134,10 +8095,10 @@
         "Yellow onion": {
           "listedQuantity": 0.5,
           "listedUnit": "each",
-          "portionDefinition": "size-not-specified",
-          "edibleWeightGrams": null,
-          "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe says whole or fractional onion without size. Specify small, medium, large or edible grams before calculating; chopping/slicing does not supply the mass."
+          "onionSize": null,
+          "edibleGrams": null,
+          "reviewStatus": "onion-size-or-weight-needed",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
         }
       }
     },
@@ -8290,10 +8251,10 @@
         "Yellow onion": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "portionDefinition": "size-not-specified",
-          "edibleWeightGrams": null,
-          "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe says whole or fractional onion without size. Specify small, medium, large or edible grams before calculating; chopping/slicing does not supply the mass."
+          "onionSize": null,
+          "edibleGrams": null,
+          "reviewStatus": "onion-size-or-weight-needed",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
         }
       }
     },
@@ -8796,10 +8757,10 @@
         "Yellow onion": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "portionDefinition": "size-not-specified",
-          "edibleWeightGrams": null,
-          "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe says whole or fractional onion without size. Specify small, medium, large or edible grams before calculating; chopping/slicing does not supply the mass."
+          "onionSize": null,
+          "edibleGrams": null,
+          "reviewStatus": "onion-size-or-weight-needed",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
         }
       }
     },
@@ -8887,10 +8848,10 @@
         "Yellow onion": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "portionDefinition": "size-not-specified",
-          "edibleWeightGrams": null,
-          "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe says whole or fractional onion without size. Specify small, medium, large or edible grams before calculating; chopping/slicing does not supply the mass."
+          "onionSize": null,
+          "edibleGrams": null,
+          "reviewStatus": "onion-size-or-weight-needed",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
         }
       }
     },
@@ -8970,10 +8931,10 @@
         "Yellow onion": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "portionDefinition": "size-not-specified",
-          "edibleWeightGrams": null,
-          "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe says whole or fractional onion without size. Specify small, medium, large or edible grams before calculating; chopping/slicing does not supply the mass."
+          "onionSize": null,
+          "edibleGrams": null,
+          "reviewStatus": "onion-size-or-weight-needed",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
         }
       }
     },
@@ -9262,10 +9223,10 @@
         "Yellow onion": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "portionDefinition": "size-not-specified",
-          "edibleWeightGrams": null,
-          "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe says whole or fractional onion without size. Specify small, medium, large or edible grams before calculating; chopping/slicing does not supply the mass."
+          "onionSize": null,
+          "edibleGrams": null,
+          "reviewStatus": "onion-size-or-weight-needed",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
         }
       }
     },
@@ -9418,10 +9379,10 @@
         "Yellow onion": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "portionDefinition": "size-not-specified",
-          "edibleWeightGrams": null,
-          "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe says whole or fractional onion without size. Specify small, medium, large or edible grams before calculating; chopping/slicing does not supply the mass."
+          "onionSize": null,
+          "edibleGrams": null,
+          "reviewStatus": "onion-size-or-weight-needed",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
         }
       }
     },
@@ -9559,10 +9520,10 @@
         "Yellow onion": {
           "listedQuantity": 0.5,
           "listedUnit": "each",
-          "portionDefinition": "size-not-specified",
-          "edibleWeightGrams": null,
-          "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe says whole or fractional onion without size. Specify small, medium, large or edible grams before calculating; chopping/slicing does not supply the mass."
+          "onionSize": null,
+          "edibleGrams": null,
+          "reviewStatus": "onion-size-or-weight-needed",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
         }
       }
     },
@@ -9715,10 +9676,10 @@
         "Yellow onion": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "portionDefinition": "size-not-specified",
-          "edibleWeightGrams": null,
-          "reviewStatus": "requires-onion-size-or-edible-weight",
-          "notes": "Recipe says whole or fractional onion without size. Specify small, medium, large or edible grams before calculating; chopping/slicing does not supply the mass."
+          "onionSize": null,
+          "edibleGrams": null,
+          "reviewStatus": "onion-size-or-weight-needed",
+          "notes": "Recipe must specify an onion size or weighed edible portion before whole-onion USDA conversion."
         }
       }
     },
