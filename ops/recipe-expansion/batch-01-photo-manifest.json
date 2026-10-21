@@ -524,21 +524,21 @@
     },
     {
       "id": "exp01-059",
-      "name": "Teriyaki Chicken Rice Bowls",
+      "name": "Pineapple Ginger Chicken Lettuce Cups",
       "expectedAsset": "assets/meal-photos/exp01-059.webp",
       "assetSaved": false,
       "photoReview": "pending",
       "pairedWithInstructions": true,
-      "photoBrief": "Realistic teriyaki chicken rice bowl with glossy brown chicken chunks, fluffy white jasmine rice and vibrant steamed broccoli, window light"
+      "photoBrief": "Fresh butter lettuce cups filled with diced ginger chicken and golden pineapple pieces, bright daylight"
     },
     {
       "id": "exp01-060",
-      "name": "Classic Beef Stroganoff",
+      "name": "Balsamic Steak and Roasted Grape Salad",
       "expectedAsset": "assets/meal-photos/exp01-060.webp",
       "assetSaved": false,
       "photoReview": "pending",
       "pairedWithInstructions": true,
-      "photoBrief": "Beef stroganoff with tender brown beef strips and mushrooms in pale creamy sauce over wide egg noodles, homemade daylight"
+      "photoBrief": "Mixed green salad with sliced seared steak, roasted red grapes, goat cheese and walnuts in window light"
     },
     {
       "id": "exp01-061",
@@ -578,12 +578,12 @@
     },
     {
       "id": "exp01-065",
-      "name": "Slow-Cooker Beef Stew",
+      "name": "Apple Cider Pork and Sweet Potato Sheet Pan",
       "expectedAsset": "assets/meal-photos/exp01-065.webp",
       "assetSaved": false,
       "photoReview": "pending",
       "pairedWithInstructions": true,
-      "photoBrief": "Homemade beef stew in rustic bowl with brown beef chunks, potatoes and carrots in rich broth"
+      "photoBrief": "Roasted cubed pork loin with orange sweet potato pieces, golden apples and red onion on baking tray"
     },
     {
       "id": "exp01-066",
@@ -596,12 +596,12 @@
     },
     {
       "id": "exp01-067",
-      "name": "Skillet Lasagna",
+      "name": "Ricotta Spinach Stuffed Portobellos",
       "expectedAsset": "assets/meal-photos/exp01-067.webp",
       "assetSaved": false,
       "photoReview": "pending",
       "pairedWithInstructions": true,
-      "photoBrief": "Deep skillet of chunky tomato beef lasagna with folded pasta sheets and melted mozzarella and ricotta"
+      "photoBrief": "Baked large portobello caps filled with creamy ricotta spinach and sun dried tomato, golden mozzarella"
     },
     {
       "id": "exp01-068",
