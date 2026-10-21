@@ -287,6 +287,56 @@ footer button.active::after{left:20%;width:60%;bottom:4px;height:2px}
 #luxuryMealPicker .picker-results-heading .meal-search-count{display:block;white-space:normal;overflow-wrap:anywhere;margin:6px 0 0;line-height:1.45}
 #luxuryMealPicker .picker-meal-copy{min-width:0;overflow-wrap:anywhere}
 #luxuryMealPicker .meal-search-results .grocery-item{min-width:0}
+
+/* Approved iPhone reference: confined heading text and monochrome/gold pantry. */
+#luxuryMealPicker .picker-results-heading{
+ display:grid;grid-template-columns:minmax(110px,0.85fr) minmax(0,1.65fr);
+ gap:12px;align-items:start;min-width:0;max-width:100%;overflow:hidden;
+}
+#luxuryMealPicker .picker-results-heading h3{
+ min-width:0;max-width:100%;margin:0;font:normal clamp(22px,5.7vw,27px)/1.16 Georgia,serif;
+ color:#f6f0e6;overflow-wrap:normal;white-space:normal;
+}
+#luxuryMealPicker .picker-results-heading .meal-search-count{
+ min-width:0;max-width:100%;display:block;margin:4px 0 0;
+ font-size:12px;line-height:1.5;color:#adb0b4;
+ white-space:normal!important;overflow-wrap:break-word;word-break:normal;
+}
+@media(max-width:355px){
+ #luxuryMealPicker .picker-results-heading{grid-template-columns:1fr;gap:3px}
+ #luxuryMealPicker .picker-results-heading h3{font-size:22px}
+}
+[data-page="week"] .pantry-discovery{
+ margin:18px 0;border:1px solid #94754b;border-radius:21px;
+ background:linear-gradient(145deg,#141717 0%,#0a0e10 100%);
+ color:#f1e9dc;overflow:hidden;box-shadow:0 16px 32px #0003;
+}
+[data-page="week"] .pantry-discovery .pantry-launch{
+ display:flex;align-items:center;justify-content:space-between;gap:12px;
+ width:100%;background:transparent;border:0;color:#f3eadd;
+ font:normal clamp(21px,5.5vw,28px)/1.2 Georgia,serif;
+ padding:21px 18px 14px;text-align:left;
+}
+[data-page="week"] .pantry-discovery .pantry-launch span:first-child{min-width:0;overflow-wrap:anywhere}
+[data-page="week"] .pantry-discovery .pantry-launch span:last-child{flex:none;color:#e1bd7b}
+[data-page="week"] #pantryDiscoverPanel{padding:0 18px 20px}
+[data-page="week"] #pantryDiscoverPanel .muted{color:#a7a9aa;font-size:13px;line-height:1.55}
+[data-page="week"] #pantryDiscoverPanel label{color:#ded1bd;font-size:13px;line-height:1.4}
+[data-page="week"] #pantryIngredients,
+[data-page="week"] #pantryCuisine,
+[data-page="week"] #pantryMissing{
+ background:#171b1d;border:1px solid #96784d;border-radius:13px;color:#f1ebe3;
+ min-width:0;max-width:100%;padding:12px 13px;box-shadow:none;
+}
+[data-page="week"] #pantryIngredients::placeholder{color:#919294}
+[data-page="week"] .pantry-fields{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px}
+[data-page="week"] #pantryFind{
+ margin-top:13px;background:linear-gradient(110deg,#d4ab6e,#f1ce90);
+ color:#151513;border:1px solid #f3d393;border-radius:14px;
+}
+[data-page="week"] #pantrySearchStatus{color:#a9aaad;line-height:1.55;overflow-wrap:anywhere}
+[data-page="week"] .pantry-recipe{background:#181c1e;border-color:#574a38;color:#f5eee3}
+[data-page="week"] .pantry-recipe small{color:#bcb1a1}
 </style></head><body><div class="app"><header><div><div class="mark">The art of everyday meals</div><div class="brand">tablewise.</div><p class="brand-subtitle">A calmer way to plan, shop and cook.</p></div><button class="profile" aria-label="Account preview" type="button">◌</button></header>
 <main><section id="luxuryRecoveryPanel" hidden aria-hidden="true" style="display:none"><button type="button" id="luxuryInspectPlan" hidden>Check saved plan</button><pre id="luxuryDiagnosticResults" hidden></pre></section><section id="luxuryAccountPanel" class="notice luxury-account-panel" hidden aria-label="Account sign in"><h2>Welcome back</h2><p id="luxuryAuthMessage" role="status">Sign in to view your saved meals. Your plan stays unchanged.</p><div id="luxuryAccountIdentity" class="luxury-account-identity" hidden><span class="luxury-account-avatar" aria-hidden="true">♙</span><span><strong>Account</strong><small>Signed in and ready</small></span><span class="luxury-account-chevron" aria-hidden="true">›</span></div><form id="luxurySignInForm"><label for="luxuryEmail">Email</label><input id="luxuryEmail" type="email" autocomplete="email" required><label for="luxuryPassword">Password</label><input id="luxuryPassword" type="password" autocomplete="current-password" required><button type="submit" class="primary full" id="luxurySignIn">Sign in</button></form><button type="button" class="luxury-account-signout" id="luxurySignOut" hidden>↪ &nbsp; Sign out</button><button type="button" class="luxury-account-close" id="luxuryCloseAccount">Close</button></section><div class="preview-banner" id="accountDataStatus" role="status" aria-live="polite">Loading your Tablewise plan… If this message stays visible, check your connection.</div><section data-page="today"><p class="eyebrow">Your table, beautifully planned</p><h1>Today’s menu</h1><article class="hero"><div class="hero-photo" role="img" aria-label="Saved dinner photo"></div><div class="hero-copy"><div class="mark">Tonight's dinner</div><h2>Loading your dinner…</h2><p class="muted">Checking for your saved meal plan.</p><p class="today-macros" id="luxuryTodayDinnerMacros" aria-label="Dinner nutrition">Nutrition details unavailable</p><div class="actions"><button class="primary" onclick="startPreviewCooking()">Cook now</button><button class="secondary" onclick="showPage('week')">Change meal</button></div></div></article><div class="simple" id="luxuryOptionalMeals"><button class="optional-meals-toggle" type="button" id="luxuryOptionalToggle" aria-expanded="false" aria-controls="luxuryOptionalDetails">Add breakfast or lunch</button><div id="luxuryOptionalDetails" hidden><button class="meal-row" type="button" data-optional-meal="breakfast"><div><strong>Breakfast</strong><small>Not planned</small><span class="optional-macros" aria-label="Breakfast nutrition"></span></div></button><button class="meal-row" type="button" data-optional-meal="lunch"><div><strong>Lunch</strong><small>Not planned</small><span class="optional-macros" aria-label="Lunch nutrition"></span></div></button></div></div></section>
 <section data-page="week" hidden><p class="eyebrow">Plan ahead</p><h1>Your two weeks</h1><p class="muted">A clear view of both weeks of your saved plan.</p><div class="week-switch"><button class="active" data-week="1">Week 1</button><button data-week="2">Week 2</button></div><div class="week-quick-actions"><button type="button" id="luxuryFillWeek" class="primary full">Choose this week's dinners faster</button><p class="muted">Pick a filter, then fill or replace all seven dinner previews. You can still change any day.</p></div><div id="days"></div><section class="pantry-discovery" aria-label="Cook with what you have"><button type="button" id="pantryDiscoverToggle" class="pantry-launch" aria-expanded="false" aria-controls="pantryDiscoverPanel"><span>Cook with what you have</span><span aria-hidden="true">⌄</span></button><div id="pantryDiscoverPanel" hidden><p class="muted">Find meals based on ingredients already in your kitchen.</p><label for="pantryIngredients">Your ingredients</label><textarea id="pantryIngredients" rows="3" placeholder="Chicken, rice, cheese, tomatoes…" maxlength="900"></textarea><div class="pantry-fields"><label for="pantryCuisine">What sounds good?<select id="pantryCuisine"><option>Any</option><option>Mexican</option><option>Tex-Mex</option><option>Italian</option><option>Chinese</option><option>Asian</option><option>Southern</option><option>American</option><option>Soups</option><option>Stews</option><option>Casseroles</option><option>Breakfast</option><option>BBQ</option><option>Seafood</option><option>Vegetarian</option></select></label><label for="pantryMissing">Extra ingredients<select id="pantryMissing"><option value="0">None</option><option value="2" selected>Up to 2</option><option value="5">Up to 5</option></select></label></div><button type="button" id="pantryFind" class="primary full">Find meals</button><p id="pantrySearchStatus" role="status" aria-live="polite">Start with Tablewise recipes. Thousands of additional recipes will become available when the recipe service is connected.</p><div id="pantrySearchResults"></div></div></section><section class="notice" id="luxuryDraftActions" hidden aria-label="Unsaved plan changes"><strong>Unsaved meal changes</strong><p id="luxuryDraftStatus">Your meal changes are a preview until saving is available.</p><button type="button" class="primary full" id="saveLuxuryEdits" disabled aria-describedby="luxuryDraftStatus">Save changes (not available yet)</button><button type="button" class="primary full" id="exportLuxuryEdits">Export my changes</button></section><section class="notice" id="luxuryRecoverActions" hidden aria-label="Recovered device draft"><strong>A previous draft is on this device</strong><p id="luxuryRecoverStatus">Review or export this draft before leaving.</p><button type="button" class="primary full" id="exportRecoveredLuxury">Export recovered draft</button></section><button type="button" class="secondary full" id="discardLuxuryEdits" hidden>Discard preview changes</button><section id="luxuryMealPicker" hidden aria-label="Preview replacement dinner"><div class="picker-topline"><span class="picker-handle" aria-hidden="true"></span><button type="button" id="luxuryPickerClose" aria-label="Close meal picker">×</button></div><h2>Choose Dinner</h2><p class="picker-subtitle">Find the perfect meal for your plan.</p><p class="notice picker-safety">Changes are a preview until saving is available. Your account stays unchanged.</p><label class="meal-search-label" for="luxuryMealSearch">Search meals</label><input id="luxuryMealSearch" type="search" placeholder="Search meals, cuisines or ingredients…" autocomplete="off"><div class="picker-quick-filters" role="group" aria-label="Meal preference filters"><button type="button" id="luxuryQuickOnly" aria-pressed="false">30 min or less</button><button type="button" id="luxuryHighProtein" aria-pressed="false">High protein</button><button type="button" id="luxuryLowCarb" aria-pressed="false">Low carb</button></div><p class="picker-filter-hint">High protein: 30g or more · Low carb: 30g or less per serving. Nutrition values are catalog estimates.</p><div id="luxuryMealTabs" class="meal-search-tabs" role="group" aria-label="Filter meals by category"></div><div class="picker-results-heading"><h3>Popular choices</h3><p class="meal-search-count" id="luxuryMealCount" role="status"></p></div><div id="luxuryMealChoices" class="meal-search-results"></div><button type="button" class="secondary full" id="luxuryLoadMoreMeals" hidden>Show more meals</button><button class="secondary full" type="button" id="cancelLuxuryMealPicker">Cancel</button></section></section>
