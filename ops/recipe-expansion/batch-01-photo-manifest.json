@@ -319,6 +319,42 @@
       "photoReview": "pending",
       "pairedWithInstructions": true,
       "photoBrief": "Three folded crispy red-braised beef and melted Oaxaca cheese corn tacos with cilantro and onion, hot deep-red birria consommé in a small dipping bowl beside the tacos"
+    },
+    {
+      "id": "exp01-037",
+      "name": "Tex-Mex Chili Mac",
+      "expectedAsset": "assets/meal-photos/exp01-037.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Short elbow macaroni visibly coated in hearty red beef-and-kidney-bean chili sauce topped with melting cheddar, served in rustic dark ceramic bowl"
+    },
+    {
+      "id": "exp01-038",
+      "name": "Cheesy Chorizo Breakfast Tacos",
+      "expectedAsset": "assets/meal-photos/exp01-038.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Two soft flour breakfast tacos filled with crumbled pork chorizo, yellow scrambled eggs, red-and-green sautéed peppers, shredded Monterey Jack and fresh salsa; no tofu"
+    },
+    {
+      "id": "exp01-039",
+      "name": "Chorizo and Potato Burritos",
+      "expectedAsset": "assets/meal-photos/exp01-039.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "One cut-open toasted flour burrito exposing distinct golden diced potatoes, pork chorizo crumbles, scrambled egg and melted cheddar beside salsa verde"
+    },
+    {
+      "id": "exp01-040",
+      "name": "Grilled Fish Baja Tacos",
+      "expectedAsset": "assets/meal-photos/exp01-040.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Three corn tortillas with grilled white fish fillet pieces, crunchy cabbage, fresh avocado, creamy white lime-yogurt drizzle, cilantro and lime wedges; no shrimp"
     }
   ]
 }
