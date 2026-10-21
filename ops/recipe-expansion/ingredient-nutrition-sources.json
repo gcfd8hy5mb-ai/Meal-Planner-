@@ -1199,28 +1199,39 @@
       "reviewStatus": "pending"
     },
     "Diced tomatoes": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central Foundation Foods",
+      "foodId": "333281",
+      "description": "Tomatoes, canned, red, ripe, diced",
+      "state": "canned diced tomatoes with accompanying juice, as-purchased",
+      "kcalPer100g": 18,
+      "proteinPer100g": 0.84,
+      "carbsPer100g": 3.32,
+      "fatPer100g": 0.5,
+      "gramsPerUnit": {
+        "cup": 245,
+        "oz": 28.349523125
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/333281/nutrients",
+      "portionSource": "USDA 1 cup=245g canned diced tomatoes. oz is mass ounce (not fluid oz).",
+      "reviewNotes": "Only for canned diced tomatoes including juice; drained recipes and cooking yields need different mapping. Source ingredient calculations do not certify finished dish nutrition."
     },
     "Diced tomatoes canned": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central Foundation Foods",
+      "foodId": "333281",
+      "description": "Tomatoes, canned, red, ripe, diced",
+      "state": "canned diced tomatoes with accompanying juice, as-purchased",
+      "kcalPer100g": 18,
+      "proteinPer100g": 0.84,
+      "carbsPer100g": 3.32,
+      "fatPer100g": 0.5,
+      "gramsPerUnit": {
+        "cup": 245
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/333281/nutrients",
+      "portionSource": "USDA 1 cup=245g canned diced tomatoes. oz is mass ounce (not fluid oz).",
+      "reviewNotes": "Only for canned diced tomatoes including juice; drained recipes and cooking yields need different mapping. Source ingredient calculations do not certify finished dish nutrition."
     },
     "Diced tomatoes, drained": {
       "source": "",
