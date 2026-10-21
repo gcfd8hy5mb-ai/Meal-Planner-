@@ -427,6 +427,42 @@
       "photoReview": "pending",
       "pairedWithInstructions": true,
       "photoBrief": "Opaque plump Cajun-spiced shrimp and slices of browned smoked sausage over creamy pale cheddar grits, sautéed peppers and green onion garnish"
+    },
+    {
+      "id": "exp01-049",
+      "name": "Buttermilk Fried Chicken",
+      "expectedAsset": "assets/meal-photos/exp01-049.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Individual golden crunchy skin-on Southern fried chicken thighs and drumsticks on a dark ceramic platter, juicy center and crisp craggy flour crust visible; no nuggets or fries"
+    },
+    {
+      "id": "exp01-050",
+      "name": "Crispy Southern Chicken Tenders",
+      "expectedAsset": "assets/meal-photos/exp01-050.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Golden elongated breaded chicken tenderloins with flaky panko coating, cut piece showing cooked white chicken meat, served on a dark restaurant plate; no fries"
+    },
+    {
+      "id": "exp01-051",
+      "name": "Sausage Gravy and Buttermilk Biscuits",
+      "expectedAsset": "assets/meal-photos/exp01-051.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Two split tall flaky buttermilk biscuits covered in creamy white gravy with clearly visible browned breakfast sausage crumbles, dark rustic wood setting"
+    },
+    {
+      "id": "exp01-052",
+      "name": "Slow-Cooker Pot Roast and Carrots",
+      "expectedAsset": "assets/meal-photos/exp01-052.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Tender fork-shredded beef pot roast with chunky cooked carrots, Yukon Gold potatoes and glossy brown gravy in a ceramic bowl, dark cinematic homestyle plating"
     }
   ]
 }
