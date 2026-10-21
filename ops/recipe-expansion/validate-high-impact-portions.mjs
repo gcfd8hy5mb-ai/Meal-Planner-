@@ -3,6 +3,7 @@
 import fs from 'node:fs';
 const base='ops/recipe-expansion/';
 const review=JSON.parse(fs.readFileSync(base+'high-impact-portions-editorial-review.json','utf8'));
+const evidence=JSON.parse(fs.readFileSync(base+'high-impact-usda-portion-candidates.json','utf8')).results;
 const sources=JSON.parse(fs.readFileSync(base+'ingredient-nutrition-sources.json','utf8')).ingredients;
 const recipes=JSON.parse(fs.readFileSync(base+'batch-01-recipe-drafts.json','utf8')).recipes;
 const seen=new Set();
