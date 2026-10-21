@@ -183,6 +183,38 @@
       "photoReview": "pending",
       "pairedWithInstructions": true,
       "previewGenerated": true
+    },
+    {
+      "id": "exp01-021",
+      "name": "Steak Nacho Supreme",
+      "expectedAsset": "assets/meal-photos/exp01-021.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true
+    },
+    {
+      "id": "exp01-022",
+      "name": "Pulled Pork Nachos",
+      "expectedAsset": "assets/meal-photos/exp01-022.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true
+    },
+    {
+      "id": "exp01-023",
+      "name": "Beef and Potato Taquitos",
+      "expectedAsset": "assets/meal-photos/exp01-023.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true
+    },
+    {
+      "id": "exp01-024",
+      "name": "Crispy Chicken Flautas",
+      "expectedAsset": "assets/meal-photos/exp01-024.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true
     }
   ]
 }
