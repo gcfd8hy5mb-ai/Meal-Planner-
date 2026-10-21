@@ -1659,16 +1659,21 @@
       "reviewStatus": "pending"
     },
     "Garlic cloves": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "169230",
+      "description": "Garlic, raw",
+      "state": "raw garlic clove, 3 g edible portion; input ingredient before cooking",
+      "kcalPer100g": 149,
+      "proteinPer100g": 6.36,
+      "carbsPer100g": 33.06,
+      "fatPer100g": 0.5,
+      "gramsPerUnit": {
+        "each": 3
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169230/nutrients",
+      "portionSource": "USDA FDC 169230 raw garlic 1 clove = 3g edible portion",
+      "reviewNotes": "Ingredient composition verified at recipe input. Cooking moisture, garlic size variation and ingredient retention are not estimated; recipe totals remain unverified until all source mappings and yields have been reviewed."
     },
     "Garlic powder": {
       "source": "",
