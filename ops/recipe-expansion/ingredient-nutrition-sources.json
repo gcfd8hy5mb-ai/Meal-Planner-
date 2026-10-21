@@ -2293,16 +2293,21 @@
       "reviewStatus": "pending"
     },
     "Lemon juice": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "167747",
+      "description": "Lemon juice, raw",
+      "state": "Lemon juice, raw",
+      "kcalPer100g": 22,
+      "proteinPer100g": 0.35,
+      "carbsPer100g": 6.9,
+      "fatPer100g": 0.24,
+      "gramsPerUnit": {
+        "tbsp": 15.25
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/167747/nutrients",
+      "portionSource": "USDA explicit 1 cup raw lemon juice=244g; inferred 1 tbsp=1/16 cup=15.25g.",
+      "reviewNotes": "Verified source-matched ingredient input; full meal nutrient yield and retained fractions not certified."
     },
     "Lemons": {
       "source": "",
@@ -2537,16 +2542,21 @@
       "reviewStatus": "pending"
     },
     "Okra": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "169260",
+      "description": "Okra, raw",
+      "state": "Okra, raw",
+      "kcalPer100g": 33,
+      "proteinPer100g": 1.93,
+      "carbsPer100g": 7.45,
+      "fatPer100g": 0.19,
+      "gramsPerUnit": {
+        "cup": 100
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169260/nutrients",
+      "portionSource": "USDA explicit 1 cup raw okra=100g; ensure recipe serving uses edible raw okra amount.",
+      "reviewNotes": "Verified source-matched ingredient input; full meal nutrient yield and retained fractions not certified."
     },
     "Olive oil": {
       "source": "USDA FoodData Central SR Legacy",
@@ -2590,16 +2600,21 @@
       "reviewStatus": "pending"
     },
     "Oyster sauce": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "174529",
+      "description": "Sauce, oyster, ready-to-serve",
+      "state": "Sauce, oyster, ready-to-serve",
+      "kcalPer100g": 51,
+      "proteinPer100g": 1.35,
+      "carbsPer100g": 10.92,
+      "fatPer100g": 0.25,
+      "gramsPerUnit": {
+        "tbsp": 18
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/174529/nutrients",
+      "portionSource": "USDA explicit 1 tbsp oyster sauce=18g; recipe specifies ready-made oyster sauce.",
+      "reviewNotes": "Verified source-matched ingredient input; full meal nutrient yield and retained fractions not certified."
     },
     "Panko breadcrumbs": {
       "source": "",
@@ -2852,16 +2867,21 @@
       "reviewStatus": "pending"
     },
     "Provolone cheese": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170850",
+      "description": "Cheese, provolone",
+      "state": "Cheese, provolone",
+      "kcalPer100g": 351,
+      "proteinPer100g": 25.58,
+      "carbsPer100g": 2.14,
+      "fatPer100g": 26.62,
+      "gramsPerUnit": {
+        "slice": 28
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170850/nutrients",
+      "portionSource": "USDA explicit 1 slice (1 oz)=28g; supermarket thickness and brands vary.",
+      "reviewNotes": "Verified source-matched ingredient input; full meal nutrient yield and retained fractions not certified."
     },
     "Quick polenta": {
       "source": "",
