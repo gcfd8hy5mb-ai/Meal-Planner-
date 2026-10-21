@@ -5,6 +5,7 @@ on:
     paths:
       - '.github/workflows/tablewise-usda-consolidate.yml'
       - 'ops/recipe-expansion/consolidate-usda-candidates.mjs'
+      - 'ops/recipe-expansion/audit-usda-candidate-identity.mjs'
 permissions:
   contents: read
   actions: read
@@ -24,9 +25,13 @@ jobs:
           path: /tmp/tablewise-usda-artifacts
       - name: Validate and consolidate all 294 search responses
         run: node ops/recipe-expansion/consolidate-usda-candidates.mjs /tmp/tablewise-usda-artifacts
+      - name: Flag likely wrong food identities without approving any match
+        run: node ops/recipe-expansion/audit-usda-candidate-identity.mjs
       - uses: actions/upload-artifact@v4
         with:
           name: tablewise-usda-294-consolidated-review
-          path: ops/recipe-expansion/usda-candidates-consolidated.json
+          path: |
+            ops/recipe-expansion/usda-candidates-consolidated.json
+            ops/recipe-expansion/usda-identity-audit.json
           retention-days: 30
 
