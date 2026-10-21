@@ -10,7 +10,7 @@ const approved=Object.entries(ingredients).filter(([name,v])=>v.reviewStatus==='
 const usage=[];
 for(const [name,item] of approved){
  assert.match(String(item.source),/USDA FoodData Central/,'Approved source must identify database: '+name);
- assert.match(String(item.foodId),/^\\d+$/,'Approved FDC ID required: '+name);
+ assert.match(String(item.foodId),/^[0-9]+$/,'Approved FDC ID required: '+name);
  for(const key of nutritionKeys)assert(Number.isFinite(item[key])&&item[key]>=0,'Invalid '+key+' for '+name);
  const units=new Set(recipes.flatMap(r=>r.ingredients.filter(i=>i[0]===name).map(i=>i[2])));
  assert(units.size>0,'Unused approved ingredient: '+name);
