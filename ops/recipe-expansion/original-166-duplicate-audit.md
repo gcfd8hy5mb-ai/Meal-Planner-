@@ -14,3 +14,7 @@
 
 ## Required release gates
 Replace four highly overlapping recipes with fully developed alternatives, update matching photo briefs, confirm no within-batch overlaps, verify actual ingredient-based nutrition values, photograph all recipes, test shopping and app integrations. Do not merge draft PR #200 yet.
+
+## Replacement update
+
+The four high-overlap recipe records were replaced on the staging branch, preserving their IDs: exp01-059 → Pineapple Ginger Chicken Lettuce Cups; exp01-060 → Balsamic Steak and Roasted Grape Salad; exp01-065 → Apple Cider Pork and Sweet Potato Sheet Pan; exp01-067 → Ricotta Spinach Stuffed Portobellos. Recipe instructions, measured ingredients, estimates and matching photographic briefs were updated. This is not a full semantic or nutrition certification.
