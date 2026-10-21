@@ -120,10 +120,19 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "reviewStatus": "ground-cumin-source-proposal-needs-review",
           "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
           "sourceWeightGramsPerTsp": null,
-          "ingredientState": "ground"
+          "ingredientState": "ground",
+          "candidateGramsPerGroundTeaspoon": 2,
+          "candidateSource": {
+            "type": "branded-ground-cumin-density",
+            "productUpc": "855269003404",
+            "sourceUrl": "https://www.aqua-calc.com/calculate/food-volume-to-weight/substance/ground-blank-cumin-coma-and-blank-upc-column--blank-855269003404",
+            "derivation": "96 g per US cup / 48 teaspoons per US cup = 2 g per teaspoon",
+            "scope": "This brand and grind; not a validated universal ground cumin measure",
+            "reviewStatus": "source-and-recipe-review-required"
+          }
         }
       }
     },
@@ -240,10 +249,19 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "reviewStatus": "ground-cumin-source-proposal-needs-review",
           "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
           "sourceWeightGramsPerTsp": null,
-          "ingredientState": "ground"
+          "ingredientState": "ground",
+          "candidateGramsPerGroundTeaspoon": 2,
+          "candidateSource": {
+            "type": "branded-ground-cumin-density",
+            "productUpc": "855269003404",
+            "sourceUrl": "https://www.aqua-calc.com/calculate/food-volume-to-weight/substance/ground-blank-cumin-coma-and-blank-upc-column--blank-855269003404",
+            "derivation": "96 g per US cup / 48 teaspoons per US cup = 2 g per teaspoon",
+            "scope": "This brand and grind; not a validated universal ground cumin measure",
+            "reviewStatus": "source-and-recipe-review-required"
+          }
         }
       }
     },
@@ -355,10 +373,19 @@
         "Ground cumin": {
           "listedQuantity": 2,
           "listedUnit": "tsp",
-          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "reviewStatus": "ground-cumin-source-proposal-needs-review",
           "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
           "sourceWeightGramsPerTsp": null,
-          "ingredientState": "ground"
+          "ingredientState": "ground",
+          "candidateGramsPerGroundTeaspoon": 2,
+          "candidateSource": {
+            "type": "branded-ground-cumin-density",
+            "productUpc": "855269003404",
+            "sourceUrl": "https://www.aqua-calc.com/calculate/food-volume-to-weight/substance/ground-blank-cumin-coma-and-blank-upc-column--blank-855269003404",
+            "derivation": "96 g per US cup / 48 teaspoons per US cup = 2 g per teaspoon",
+            "scope": "This brand and grind; not a validated universal ground cumin measure",
+            "reviewStatus": "source-and-recipe-review-required"
+          }
         }
       }
     },
@@ -475,10 +502,19 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "reviewStatus": "ground-cumin-source-proposal-needs-review",
           "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
           "sourceWeightGramsPerTsp": null,
-          "ingredientState": "ground"
+          "ingredientState": "ground",
+          "candidateGramsPerGroundTeaspoon": 2,
+          "candidateSource": {
+            "type": "branded-ground-cumin-density",
+            "productUpc": "855269003404",
+            "sourceUrl": "https://www.aqua-calc.com/calculate/food-volume-to-weight/substance/ground-blank-cumin-coma-and-blank-upc-column--blank-855269003404",
+            "derivation": "96 g per US cup / 48 teaspoons per US cup = 2 g per teaspoon",
+            "scope": "This brand and grind; not a validated universal ground cumin measure",
+            "reviewStatus": "source-and-recipe-review-required"
+          }
         }
       }
     },
@@ -595,10 +631,19 @@
         "Ground cumin": {
           "listedQuantity": 2,
           "listedUnit": "tsp",
-          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "reviewStatus": "ground-cumin-source-proposal-needs-review",
           "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
           "sourceWeightGramsPerTsp": null,
-          "ingredientState": "ground"
+          "ingredientState": "ground",
+          "candidateGramsPerGroundTeaspoon": 2,
+          "candidateSource": {
+            "type": "branded-ground-cumin-density",
+            "productUpc": "855269003404",
+            "sourceUrl": "https://www.aqua-calc.com/calculate/food-volume-to-weight/substance/ground-blank-cumin-coma-and-blank-upc-column--blank-855269003404",
+            "derivation": "96 g per US cup / 48 teaspoons per US cup = 2 g per teaspoon",
+            "scope": "This brand and grind; not a validated universal ground cumin measure",
+            "reviewStatus": "source-and-recipe-review-required"
+          }
         }
       }
     },
@@ -766,10 +811,19 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "reviewStatus": "ground-cumin-source-proposal-needs-review",
           "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
           "sourceWeightGramsPerTsp": null,
-          "ingredientState": "ground"
+          "ingredientState": "ground",
+          "candidateGramsPerGroundTeaspoon": 2,
+          "candidateSource": {
+            "type": "branded-ground-cumin-density",
+            "productUpc": "855269003404",
+            "sourceUrl": "https://www.aqua-calc.com/calculate/food-volume-to-weight/substance/ground-blank-cumin-coma-and-blank-upc-column--blank-855269003404",
+            "derivation": "96 g per US cup / 48 teaspoons per US cup = 2 g per teaspoon",
+            "scope": "This brand and grind; not a validated universal ground cumin measure",
+            "reviewStatus": "source-and-recipe-review-required"
+          }
         }
       }
     },
@@ -869,10 +923,19 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "reviewStatus": "ground-cumin-source-proposal-needs-review",
           "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
           "sourceWeightGramsPerTsp": null,
-          "ingredientState": "ground"
+          "ingredientState": "ground",
+          "candidateGramsPerGroundTeaspoon": 2,
+          "candidateSource": {
+            "type": "branded-ground-cumin-density",
+            "productUpc": "855269003404",
+            "sourceUrl": "https://www.aqua-calc.com/calculate/food-volume-to-weight/substance/ground-blank-cumin-coma-and-blank-upc-column--blank-855269003404",
+            "derivation": "96 g per US cup / 48 teaspoons per US cup = 2 g per teaspoon",
+            "scope": "This brand and grind; not a validated universal ground cumin measure",
+            "reviewStatus": "source-and-recipe-review-required"
+          }
         }
       }
     },
@@ -981,10 +1044,19 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "reviewStatus": "ground-cumin-source-proposal-needs-review",
           "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
           "sourceWeightGramsPerTsp": null,
-          "ingredientState": "ground"
+          "ingredientState": "ground",
+          "candidateGramsPerGroundTeaspoon": 2,
+          "candidateSource": {
+            "type": "branded-ground-cumin-density",
+            "productUpc": "855269003404",
+            "sourceUrl": "https://www.aqua-calc.com/calculate/food-volume-to-weight/substance/ground-blank-cumin-coma-and-blank-upc-column--blank-855269003404",
+            "derivation": "96 g per US cup / 48 teaspoons per US cup = 2 g per teaspoon",
+            "scope": "This brand and grind; not a validated universal ground cumin measure",
+            "reviewStatus": "source-and-recipe-review-required"
+          }
         }
       }
     },
@@ -1101,10 +1173,19 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "reviewStatus": "ground-cumin-source-proposal-needs-review",
           "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
           "sourceWeightGramsPerTsp": null,
-          "ingredientState": "ground"
+          "ingredientState": "ground",
+          "candidateGramsPerGroundTeaspoon": 2,
+          "candidateSource": {
+            "type": "branded-ground-cumin-density",
+            "productUpc": "855269003404",
+            "sourceUrl": "https://www.aqua-calc.com/calculate/food-volume-to-weight/substance/ground-blank-cumin-coma-and-blank-upc-column--blank-855269003404",
+            "derivation": "96 g per US cup / 48 teaspoons per US cup = 2 g per teaspoon",
+            "scope": "This brand and grind; not a validated universal ground cumin measure",
+            "reviewStatus": "source-and-recipe-review-required"
+          }
         }
       }
     },
@@ -1218,10 +1299,19 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "reviewStatus": "ground-cumin-source-proposal-needs-review",
           "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
           "sourceWeightGramsPerTsp": null,
-          "ingredientState": "ground"
+          "ingredientState": "ground",
+          "candidateGramsPerGroundTeaspoon": 2,
+          "candidateSource": {
+            "type": "branded-ground-cumin-density",
+            "productUpc": "855269003404",
+            "sourceUrl": "https://www.aqua-calc.com/calculate/food-volume-to-weight/substance/ground-blank-cumin-coma-and-blank-upc-column--blank-855269003404",
+            "derivation": "96 g per US cup / 48 teaspoons per US cup = 2 g per teaspoon",
+            "scope": "This brand and grind; not a validated universal ground cumin measure",
+            "reviewStatus": "source-and-recipe-review-required"
+          }
         }
       }
     },
@@ -1311,10 +1401,19 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "reviewStatus": "ground-cumin-source-proposal-needs-review",
           "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
           "sourceWeightGramsPerTsp": null,
-          "ingredientState": "ground"
+          "ingredientState": "ground",
+          "candidateGramsPerGroundTeaspoon": 2,
+          "candidateSource": {
+            "type": "branded-ground-cumin-density",
+            "productUpc": "855269003404",
+            "sourceUrl": "https://www.aqua-calc.com/calculate/food-volume-to-weight/substance/ground-blank-cumin-coma-and-blank-upc-column--blank-855269003404",
+            "derivation": "96 g per US cup / 48 teaspoons per US cup = 2 g per teaspoon",
+            "scope": "This brand and grind; not a validated universal ground cumin measure",
+            "reviewStatus": "source-and-recipe-review-required"
+          }
         }
       }
     },
@@ -1428,10 +1527,19 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "reviewStatus": "ground-cumin-source-proposal-needs-review",
           "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
           "sourceWeightGramsPerTsp": null,
-          "ingredientState": "ground"
+          "ingredientState": "ground",
+          "candidateGramsPerGroundTeaspoon": 2,
+          "candidateSource": {
+            "type": "branded-ground-cumin-density",
+            "productUpc": "855269003404",
+            "sourceUrl": "https://www.aqua-calc.com/calculate/food-volume-to-weight/substance/ground-blank-cumin-coma-and-blank-upc-column--blank-855269003404",
+            "derivation": "96 g per US cup / 48 teaspoons per US cup = 2 g per teaspoon",
+            "scope": "This brand and grind; not a validated universal ground cumin measure",
+            "reviewStatus": "source-and-recipe-review-required"
+          }
         }
       }
     },
@@ -1545,10 +1653,19 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "reviewStatus": "ground-cumin-source-proposal-needs-review",
           "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
           "sourceWeightGramsPerTsp": null,
-          "ingredientState": "ground"
+          "ingredientState": "ground",
+          "candidateGramsPerGroundTeaspoon": 2,
+          "candidateSource": {
+            "type": "branded-ground-cumin-density",
+            "productUpc": "855269003404",
+            "sourceUrl": "https://www.aqua-calc.com/calculate/food-volume-to-weight/substance/ground-blank-cumin-coma-and-blank-upc-column--blank-855269003404",
+            "derivation": "96 g per US cup / 48 teaspoons per US cup = 2 g per teaspoon",
+            "scope": "This brand and grind; not a validated universal ground cumin measure",
+            "reviewStatus": "source-and-recipe-review-required"
+          }
         }
       }
     },
@@ -1670,10 +1787,19 @@
         "Ground cumin": {
           "listedQuantity": 1.5,
           "listedUnit": "tsp",
-          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "reviewStatus": "ground-cumin-source-proposal-needs-review",
           "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
           "sourceWeightGramsPerTsp": null,
-          "ingredientState": "ground"
+          "ingredientState": "ground",
+          "candidateGramsPerGroundTeaspoon": 2,
+          "candidateSource": {
+            "type": "branded-ground-cumin-density",
+            "productUpc": "855269003404",
+            "sourceUrl": "https://www.aqua-calc.com/calculate/food-volume-to-weight/substance/ground-blank-cumin-coma-and-blank-upc-column--blank-855269003404",
+            "derivation": "96 g per US cup / 48 teaspoons per US cup = 2 g per teaspoon",
+            "scope": "This brand and grind; not a validated universal ground cumin measure",
+            "reviewStatus": "source-and-recipe-review-required"
+          }
         }
       }
     },
@@ -1884,10 +2010,19 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "reviewStatus": "ground-cumin-source-proposal-needs-review",
           "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
           "sourceWeightGramsPerTsp": null,
-          "ingredientState": "ground"
+          "ingredientState": "ground",
+          "candidateGramsPerGroundTeaspoon": 2,
+          "candidateSource": {
+            "type": "branded-ground-cumin-density",
+            "productUpc": "855269003404",
+            "sourceUrl": "https://www.aqua-calc.com/calculate/food-volume-to-weight/substance/ground-blank-cumin-coma-and-blank-upc-column--blank-855269003404",
+            "derivation": "96 g per US cup / 48 teaspoons per US cup = 2 g per teaspoon",
+            "scope": "This brand and grind; not a validated universal ground cumin measure",
+            "reviewStatus": "source-and-recipe-review-required"
+          }
         }
       }
     },
@@ -2009,10 +2144,19 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "reviewStatus": "ground-cumin-source-proposal-needs-review",
           "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
           "sourceWeightGramsPerTsp": null,
-          "ingredientState": "ground"
+          "ingredientState": "ground",
+          "candidateGramsPerGroundTeaspoon": 2,
+          "candidateSource": {
+            "type": "branded-ground-cumin-density",
+            "productUpc": "855269003404",
+            "sourceUrl": "https://www.aqua-calc.com/calculate/food-volume-to-weight/substance/ground-blank-cumin-coma-and-blank-upc-column--blank-855269003404",
+            "derivation": "96 g per US cup / 48 teaspoons per US cup = 2 g per teaspoon",
+            "scope": "This brand and grind; not a validated universal ground cumin measure",
+            "reviewStatus": "source-and-recipe-review-required"
+          }
         }
       }
     },
@@ -2134,10 +2278,19 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "reviewStatus": "ground-cumin-source-proposal-needs-review",
           "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
           "sourceWeightGramsPerTsp": null,
-          "ingredientState": "ground"
+          "ingredientState": "ground",
+          "candidateGramsPerGroundTeaspoon": 2,
+          "candidateSource": {
+            "type": "branded-ground-cumin-density",
+            "productUpc": "855269003404",
+            "sourceUrl": "https://www.aqua-calc.com/calculate/food-volume-to-weight/substance/ground-blank-cumin-coma-and-blank-upc-column--blank-855269003404",
+            "derivation": "96 g per US cup / 48 teaspoons per US cup = 2 g per teaspoon",
+            "scope": "This brand and grind; not a validated universal ground cumin measure",
+            "reviewStatus": "source-and-recipe-review-required"
+          }
         }
       }
     },
@@ -2346,10 +2499,19 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "reviewStatus": "ground-cumin-source-proposal-needs-review",
           "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
           "sourceWeightGramsPerTsp": null,
-          "ingredientState": "ground"
+          "ingredientState": "ground",
+          "candidateGramsPerGroundTeaspoon": 2,
+          "candidateSource": {
+            "type": "branded-ground-cumin-density",
+            "productUpc": "855269003404",
+            "sourceUrl": "https://www.aqua-calc.com/calculate/food-volume-to-weight/substance/ground-blank-cumin-coma-and-blank-upc-column--blank-855269003404",
+            "derivation": "96 g per US cup / 48 teaspoons per US cup = 2 g per teaspoon",
+            "scope": "This brand and grind; not a validated universal ground cumin measure",
+            "reviewStatus": "source-and-recipe-review-required"
+          }
         }
       }
     },
@@ -2560,10 +2722,19 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "reviewStatus": "ground-cumin-source-proposal-needs-review",
           "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
           "sourceWeightGramsPerTsp": null,
-          "ingredientState": "ground"
+          "ingredientState": "ground",
+          "candidateGramsPerGroundTeaspoon": 2,
+          "candidateSource": {
+            "type": "branded-ground-cumin-density",
+            "productUpc": "855269003404",
+            "sourceUrl": "https://www.aqua-calc.com/calculate/food-volume-to-weight/substance/ground-blank-cumin-coma-and-blank-upc-column--blank-855269003404",
+            "derivation": "96 g per US cup / 48 teaspoons per US cup = 2 g per teaspoon",
+            "scope": "This brand and grind; not a validated universal ground cumin measure",
+            "reviewStatus": "source-and-recipe-review-required"
+          }
         }
       }
     },
@@ -2658,10 +2829,19 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "reviewStatus": "ground-cumin-source-proposal-needs-review",
           "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
           "sourceWeightGramsPerTsp": null,
-          "ingredientState": "ground"
+          "ingredientState": "ground",
+          "candidateGramsPerGroundTeaspoon": 2,
+          "candidateSource": {
+            "type": "branded-ground-cumin-density",
+            "productUpc": "855269003404",
+            "sourceUrl": "https://www.aqua-calc.com/calculate/food-volume-to-weight/substance/ground-blank-cumin-coma-and-blank-upc-column--blank-855269003404",
+            "derivation": "96 g per US cup / 48 teaspoons per US cup = 2 g per teaspoon",
+            "scope": "This brand and grind; not a validated universal ground cumin measure",
+            "reviewStatus": "source-and-recipe-review-required"
+          }
         }
       }
     },
@@ -2780,10 +2960,19 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "reviewStatus": "ground-cumin-source-proposal-needs-review",
           "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
           "sourceWeightGramsPerTsp": null,
-          "ingredientState": "ground"
+          "ingredientState": "ground",
+          "candidateGramsPerGroundTeaspoon": 2,
+          "candidateSource": {
+            "type": "branded-ground-cumin-density",
+            "productUpc": "855269003404",
+            "sourceUrl": "https://www.aqua-calc.com/calculate/food-volume-to-weight/substance/ground-blank-cumin-coma-and-blank-upc-column--blank-855269003404",
+            "derivation": "96 g per US cup / 48 teaspoons per US cup = 2 g per teaspoon",
+            "scope": "This brand and grind; not a validated universal ground cumin measure",
+            "reviewStatus": "source-and-recipe-review-required"
+          }
         }
       }
     },
@@ -2900,10 +3089,19 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "reviewStatus": "ground-cumin-source-proposal-needs-review",
           "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
           "sourceWeightGramsPerTsp": null,
-          "ingredientState": "ground"
+          "ingredientState": "ground",
+          "candidateGramsPerGroundTeaspoon": 2,
+          "candidateSource": {
+            "type": "branded-ground-cumin-density",
+            "productUpc": "855269003404",
+            "sourceUrl": "https://www.aqua-calc.com/calculate/food-volume-to-weight/substance/ground-blank-cumin-coma-and-blank-upc-column--blank-855269003404",
+            "derivation": "96 g per US cup / 48 teaspoons per US cup = 2 g per teaspoon",
+            "scope": "This brand and grind; not a validated universal ground cumin measure",
+            "reviewStatus": "source-and-recipe-review-required"
+          }
         }
       }
     },
@@ -3017,10 +3215,19 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "reviewStatus": "ground-cumin-source-proposal-needs-review",
           "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
           "sourceWeightGramsPerTsp": null,
-          "ingredientState": "ground"
+          "ingredientState": "ground",
+          "candidateGramsPerGroundTeaspoon": 2,
+          "candidateSource": {
+            "type": "branded-ground-cumin-density",
+            "productUpc": "855269003404",
+            "sourceUrl": "https://www.aqua-calc.com/calculate/food-volume-to-weight/substance/ground-blank-cumin-coma-and-blank-upc-column--blank-855269003404",
+            "derivation": "96 g per US cup / 48 teaspoons per US cup = 2 g per teaspoon",
+            "scope": "This brand and grind; not a validated universal ground cumin measure",
+            "reviewStatus": "source-and-recipe-review-required"
+          }
         }
       }
     },
@@ -3203,10 +3410,19 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "reviewStatus": "ground-cumin-source-proposal-needs-review",
           "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
           "sourceWeightGramsPerTsp": null,
-          "ingredientState": "ground"
+          "ingredientState": "ground",
+          "candidateGramsPerGroundTeaspoon": 2,
+          "candidateSource": {
+            "type": "branded-ground-cumin-density",
+            "productUpc": "855269003404",
+            "sourceUrl": "https://www.aqua-calc.com/calculate/food-volume-to-weight/substance/ground-blank-cumin-coma-and-blank-upc-column--blank-855269003404",
+            "derivation": "96 g per US cup / 48 teaspoons per US cup = 2 g per teaspoon",
+            "scope": "This brand and grind; not a validated universal ground cumin measure",
+            "reviewStatus": "source-and-recipe-review-required"
+          }
         }
       }
     },
@@ -3459,10 +3675,19 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "reviewStatus": "ground-cumin-source-proposal-needs-review",
           "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
           "sourceWeightGramsPerTsp": null,
-          "ingredientState": "ground"
+          "ingredientState": "ground",
+          "candidateGramsPerGroundTeaspoon": 2,
+          "candidateSource": {
+            "type": "branded-ground-cumin-density",
+            "productUpc": "855269003404",
+            "sourceUrl": "https://www.aqua-calc.com/calculate/food-volume-to-weight/substance/ground-blank-cumin-coma-and-blank-upc-column--blank-855269003404",
+            "derivation": "96 g per US cup / 48 teaspoons per US cup = 2 g per teaspoon",
+            "scope": "This brand and grind; not a validated universal ground cumin measure",
+            "reviewStatus": "source-and-recipe-review-required"
+          }
         }
       }
     },
@@ -3581,10 +3806,19 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "reviewStatus": "ground-cumin-source-proposal-needs-review",
           "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
           "sourceWeightGramsPerTsp": null,
-          "ingredientState": "ground"
+          "ingredientState": "ground",
+          "candidateGramsPerGroundTeaspoon": 2,
+          "candidateSource": {
+            "type": "branded-ground-cumin-density",
+            "productUpc": "855269003404",
+            "sourceUrl": "https://www.aqua-calc.com/calculate/food-volume-to-weight/substance/ground-blank-cumin-coma-and-blank-upc-column--blank-855269003404",
+            "derivation": "96 g per US cup / 48 teaspoons per US cup = 2 g per teaspoon",
+            "scope": "This brand and grind; not a validated universal ground cumin measure",
+            "reviewStatus": "source-and-recipe-review-required"
+          }
         }
       }
     },
@@ -3703,10 +3937,19 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "reviewStatus": "ground-cumin-source-proposal-needs-review",
           "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
           "sourceWeightGramsPerTsp": null,
-          "ingredientState": "ground"
+          "ingredientState": "ground",
+          "candidateGramsPerGroundTeaspoon": 2,
+          "candidateSource": {
+            "type": "branded-ground-cumin-density",
+            "productUpc": "855269003404",
+            "sourceUrl": "https://www.aqua-calc.com/calculate/food-volume-to-weight/substance/ground-blank-cumin-coma-and-blank-upc-column--blank-855269003404",
+            "derivation": "96 g per US cup / 48 teaspoons per US cup = 2 g per teaspoon",
+            "scope": "This brand and grind; not a validated universal ground cumin measure",
+            "reviewStatus": "source-and-recipe-review-required"
+          }
         }
       }
     },
@@ -3833,10 +4076,19 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "reviewStatus": "ground-cumin-source-proposal-needs-review",
           "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
           "sourceWeightGramsPerTsp": null,
-          "ingredientState": "ground"
+          "ingredientState": "ground",
+          "candidateGramsPerGroundTeaspoon": 2,
+          "candidateSource": {
+            "type": "branded-ground-cumin-density",
+            "productUpc": "855269003404",
+            "sourceUrl": "https://www.aqua-calc.com/calculate/food-volume-to-weight/substance/ground-blank-cumin-coma-and-blank-upc-column--blank-855269003404",
+            "derivation": "96 g per US cup / 48 teaspoons per US cup = 2 g per teaspoon",
+            "scope": "This brand and grind; not a validated universal ground cumin measure",
+            "reviewStatus": "source-and-recipe-review-required"
+          }
         }
       }
     },
@@ -4031,10 +4283,19 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "reviewStatus": "ground-cumin-source-proposal-needs-review",
           "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
           "sourceWeightGramsPerTsp": null,
-          "ingredientState": "ground"
+          "ingredientState": "ground",
+          "candidateGramsPerGroundTeaspoon": 2,
+          "candidateSource": {
+            "type": "branded-ground-cumin-density",
+            "productUpc": "855269003404",
+            "sourceUrl": "https://www.aqua-calc.com/calculate/food-volume-to-weight/substance/ground-blank-cumin-coma-and-blank-upc-column--blank-855269003404",
+            "derivation": "96 g per US cup / 48 teaspoons per US cup = 2 g per teaspoon",
+            "scope": "This brand and grind; not a validated universal ground cumin measure",
+            "reviewStatus": "source-and-recipe-review-required"
+          }
         }
       }
     },
@@ -4158,10 +4419,19 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "reviewStatus": "ground-cumin-source-proposal-needs-review",
           "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
           "sourceWeightGramsPerTsp": null,
-          "ingredientState": "ground"
+          "ingredientState": "ground",
+          "candidateGramsPerGroundTeaspoon": 2,
+          "candidateSource": {
+            "type": "branded-ground-cumin-density",
+            "productUpc": "855269003404",
+            "sourceUrl": "https://www.aqua-calc.com/calculate/food-volume-to-weight/substance/ground-blank-cumin-coma-and-blank-upc-column--blank-855269003404",
+            "derivation": "96 g per US cup / 48 teaspoons per US cup = 2 g per teaspoon",
+            "scope": "This brand and grind; not a validated universal ground cumin measure",
+            "reviewStatus": "source-and-recipe-review-required"
+          }
         }
       }
     },
@@ -4364,10 +4634,19 @@
         "Ground cumin": {
           "listedQuantity": 0.5,
           "listedUnit": "tsp",
-          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "reviewStatus": "ground-cumin-source-proposal-needs-review",
           "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
           "sourceWeightGramsPerTsp": null,
-          "ingredientState": "ground"
+          "ingredientState": "ground",
+          "candidateGramsPerGroundTeaspoon": 2,
+          "candidateSource": {
+            "type": "branded-ground-cumin-density",
+            "productUpc": "855269003404",
+            "sourceUrl": "https://www.aqua-calc.com/calculate/food-volume-to-weight/substance/ground-blank-cumin-coma-and-blank-upc-column--blank-855269003404",
+            "derivation": "96 g per US cup / 48 teaspoons per US cup = 2 g per teaspoon",
+            "scope": "This brand and grind; not a validated universal ground cumin measure",
+            "reviewStatus": "source-and-recipe-review-required"
+          }
         }
       }
     },
@@ -4484,10 +4763,19 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "reviewStatus": "ground-cumin-source-proposal-needs-review",
           "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
           "sourceWeightGramsPerTsp": null,
-          "ingredientState": "ground"
+          "ingredientState": "ground",
+          "candidateGramsPerGroundTeaspoon": 2,
+          "candidateSource": {
+            "type": "branded-ground-cumin-density",
+            "productUpc": "855269003404",
+            "sourceUrl": "https://www.aqua-calc.com/calculate/food-volume-to-weight/substance/ground-blank-cumin-coma-and-blank-upc-column--blank-855269003404",
+            "derivation": "96 g per US cup / 48 teaspoons per US cup = 2 g per teaspoon",
+            "scope": "This brand and grind; not a validated universal ground cumin measure",
+            "reviewStatus": "source-and-recipe-review-required"
+          }
         }
       }
     },
@@ -4628,10 +4916,19 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "reviewStatus": "ground-cumin-source-proposal-needs-review",
           "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
           "sourceWeightGramsPerTsp": null,
-          "ingredientState": "ground"
+          "ingredientState": "ground",
+          "candidateGramsPerGroundTeaspoon": 2,
+          "candidateSource": {
+            "type": "branded-ground-cumin-density",
+            "productUpc": "855269003404",
+            "sourceUrl": "https://www.aqua-calc.com/calculate/food-volume-to-weight/substance/ground-blank-cumin-coma-and-blank-upc-column--blank-855269003404",
+            "derivation": "96 g per US cup / 48 teaspoons per US cup = 2 g per teaspoon",
+            "scope": "This brand and grind; not a validated universal ground cumin measure",
+            "reviewStatus": "source-and-recipe-review-required"
+          }
         }
       }
     },
@@ -4755,10 +5052,19 @@
         "Ground cumin": {
           "listedQuantity": 2,
           "listedUnit": "tsp",
-          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "reviewStatus": "ground-cumin-source-proposal-needs-review",
           "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
           "sourceWeightGramsPerTsp": null,
-          "ingredientState": "ground"
+          "ingredientState": "ground",
+          "candidateGramsPerGroundTeaspoon": 2,
+          "candidateSource": {
+            "type": "branded-ground-cumin-density",
+            "productUpc": "855269003404",
+            "sourceUrl": "https://www.aqua-calc.com/calculate/food-volume-to-weight/substance/ground-blank-cumin-coma-and-blank-upc-column--blank-855269003404",
+            "derivation": "96 g per US cup / 48 teaspoons per US cup = 2 g per teaspoon",
+            "scope": "This brand and grind; not a validated universal ground cumin measure",
+            "reviewStatus": "source-and-recipe-review-required"
+          }
         }
       }
     },
@@ -4887,10 +5193,19 @@
         "Ground cumin": {
           "listedQuantity": 2,
           "listedUnit": "tsp",
-          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "reviewStatus": "ground-cumin-source-proposal-needs-review",
           "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
           "sourceWeightGramsPerTsp": null,
-          "ingredientState": "ground"
+          "ingredientState": "ground",
+          "candidateGramsPerGroundTeaspoon": 2,
+          "candidateSource": {
+            "type": "branded-ground-cumin-density",
+            "productUpc": "855269003404",
+            "sourceUrl": "https://www.aqua-calc.com/calculate/food-volume-to-weight/substance/ground-blank-cumin-coma-and-blank-upc-column--blank-855269003404",
+            "derivation": "96 g per US cup / 48 teaspoons per US cup = 2 g per teaspoon",
+            "scope": "This brand and grind; not a validated universal ground cumin measure",
+            "reviewStatus": "source-and-recipe-review-required"
+          }
         }
       }
     },
@@ -5017,10 +5332,19 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "reviewStatus": "ground-cumin-source-proposal-needs-review",
           "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
           "sourceWeightGramsPerTsp": null,
-          "ingredientState": "ground"
+          "ingredientState": "ground",
+          "candidateGramsPerGroundTeaspoon": 2,
+          "candidateSource": {
+            "type": "branded-ground-cumin-density",
+            "productUpc": "855269003404",
+            "sourceUrl": "https://www.aqua-calc.com/calculate/food-volume-to-weight/substance/ground-blank-cumin-coma-and-blank-upc-column--blank-855269003404",
+            "derivation": "96 g per US cup / 48 teaspoons per US cup = 2 g per teaspoon",
+            "scope": "This brand and grind; not a validated universal ground cumin measure",
+            "reviewStatus": "source-and-recipe-review-required"
+          }
         }
       }
     },
@@ -5855,10 +6179,19 @@
         "Ground cumin": {
           "listedQuantity": 1,
           "listedUnit": "tsp",
-          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "reviewStatus": "ground-cumin-source-proposal-needs-review",
           "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
           "sourceWeightGramsPerTsp": null,
-          "ingredientState": "ground"
+          "ingredientState": "ground",
+          "candidateGramsPerGroundTeaspoon": 2,
+          "candidateSource": {
+            "type": "branded-ground-cumin-density",
+            "productUpc": "855269003404",
+            "sourceUrl": "https://www.aqua-calc.com/calculate/food-volume-to-weight/substance/ground-blank-cumin-coma-and-blank-upc-column--blank-855269003404",
+            "derivation": "96 g per US cup / 48 teaspoons per US cup = 2 g per teaspoon",
+            "scope": "This brand and grind; not a validated universal ground cumin measure",
+            "reviewStatus": "source-and-recipe-review-required"
+          }
         }
       }
     },
@@ -7665,10 +7998,19 @@
         "Ground cumin": {
           "listedQuantity": 2,
           "listedUnit": "tsp",
-          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "reviewStatus": "ground-cumin-source-proposal-needs-review",
           "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
           "sourceWeightGramsPerTsp": null,
-          "ingredientState": "ground"
+          "ingredientState": "ground",
+          "candidateGramsPerGroundTeaspoon": 2,
+          "candidateSource": {
+            "type": "branded-ground-cumin-density",
+            "productUpc": "855269003404",
+            "sourceUrl": "https://www.aqua-calc.com/calculate/food-volume-to-weight/substance/ground-blank-cumin-coma-and-blank-upc-column--blank-855269003404",
+            "derivation": "96 g per US cup / 48 teaspoons per US cup = 2 g per teaspoon",
+            "scope": "This brand and grind; not a validated universal ground cumin measure",
+            "reviewStatus": "source-and-recipe-review-required"
+          }
         }
       }
     },
@@ -8304,10 +8646,19 @@
         "Ground cumin": {
           "listedQuantity": 2,
           "listedUnit": "tsp",
-          "reviewStatus": "ground-cumin-teaspoon-weight-needed",
+          "reviewStatus": "ground-cumin-source-proposal-needs-review",
           "notes": "Use a documented ground-cumin teaspoon weight; whole cumin-seed portion weight is not interchangeable.",
           "sourceWeightGramsPerTsp": null,
-          "ingredientState": "ground"
+          "ingredientState": "ground",
+          "candidateGramsPerGroundTeaspoon": 2,
+          "candidateSource": {
+            "type": "branded-ground-cumin-density",
+            "productUpc": "855269003404",
+            "sourceUrl": "https://www.aqua-calc.com/calculate/food-volume-to-weight/substance/ground-blank-cumin-coma-and-blank-upc-column--blank-855269003404",
+            "derivation": "96 g per US cup / 48 teaspoons per US cup = 2 g per teaspoon",
+            "scope": "This brand and grind; not a validated universal ground cumin measure",
+            "reviewStatus": "source-and-recipe-review-required"
+          }
         }
       }
     },
