@@ -21,6 +21,27 @@ for(const recipe of recipes){
  existingIds.add(id);existingNames.add(name);
 }
 if(recipes.length!==plan.baseline)fail('Current catalog count changed unexpectedly ('+recipes.length+')');
+// Candidate selections are planning data, never counted as complete recipes.
+const candidateFile=resolve(root,'ops/recipe-expansion/batch-01-candidates.json');
+let proposedCount=0;
+if(existsSync(candidateFile)){
+ const selection=JSON.parse(readFileSync(candidateFile,'utf8'));
+ const proposals=selection.recipes;
+ if(!Array.isArray(proposals)||proposals.length!==plan.batches[0].add)fail('Batch 1 must have exactly 250 distinct candidate names');
+ else{
+  proposedCount=proposals.length;
+  const candidateNames=new Set(),candidateIds=new Set();
+  for(const item of proposals){
+   const key=String(item.name||'').trim().toLowerCase(),id=String(item.id||'').trim();
+   if(!key||candidateNames.has(key)||existingNames.has(key))fail('Duplicate or missing candidate name: '+key);
+   if(!id||candidateIds.has(id)||existingIds.has(id))fail('Duplicate or missing candidate ID: '+id);
+   candidateNames.add(key);candidateIds.add(id);
+   if(!['Breakfast','Lunch','Dinner','Snack'].includes(item.slot))fail('Invalid candidate meal slot: '+key);
+   if(item.stage!=='candidate'||item.ingredientsReady!==false||item.instructionsReady!==false||item.photoReady!==false)fail('Unreviewed candidate must remain clearly unfinished: '+key);
+   if((plan.recipePreferences?.excludeNewRecipesContaining||[]).some(word=>key.includes(word)))fail('Candidate violates food preference: '+key);
+  }
+ }
+}
 let completeBatches=0;
 for(const b of plan.batches){
  const file=resolve(root,'ops/recipe-expansion/batch-'+String(b.number).padStart(2,'0')+'.json');
@@ -47,4 +68,4 @@ for(const b of plan.batches){
  if(fullyReviewed)completeBatches++;
 }
 if(errors.length){for(const e of errors)console.error('FAIL:',e);process.exitCode=1}
-else console.log(JSON.stringify({status:'PASS',existing:recipes.length,target:plan.target,added:0,completedBatches:completeBatches,planned:plan.batches.map(b=>b.add),photoMappedNow:Object.keys(verifiedRecipePhotos).length,note:'Staged batches are not activated or counted until approved and published'}));
+else console.log(JSON.stringify({status:'PASS',existing:recipes.length,target:plan.target,added:0,proposedCount,completedBatches:completeBatches,planned:plan.batches.map(b=>b.add),photoMappedNow:Object.keys(verifiedRecipePhotos).length,note:'Staged batches are not activated or counted until approved and published'}));
