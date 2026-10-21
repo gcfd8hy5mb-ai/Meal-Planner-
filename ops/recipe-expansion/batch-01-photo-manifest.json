@@ -488,12 +488,12 @@
     },
     {
       "id": "exp01-055",
-      "name": "Homestyle Beef Pot Roast",
+      "name": "Moroccan Apricot Chicken with Couscous",
       "expectedAsset": "assets/meal-photos/exp01-055.webp",
       "assetSaved": false,
       "photoReview": "pending",
       "pairedWithInstructions": true,
-      "photoBrief": "Fork-tender pot roast with chunky carrots and potatoes in a shallow bowl, rich brown juices, natural home-kitchen daylight"
+      "photoBrief": "Golden Moroccan chicken with chickpeas dried apricots and fluffy couscous natural-light food photograph"
     },
     {
       "id": "exp01-056",
@@ -740,12 +740,12 @@
     },
     {
       "id": "exp01-083",
-      "name": "Salisbury Steak with Mushroom Gravy",
+      "name": "Ginger Scallion Beef and Cabbage Bowls",
       "expectedAsset": "assets/meal-photos/exp01-083.webp",
       "assetSaved": false,
       "photoReview": "pending",
       "pairedWithInstructions": true,
-      "photoBrief": "Four oval Salisbury beef steaks with mushroom and onion brown gravy on homestyle platter"
+      "photoBrief": "Bowl of ginger scallion ground beef with shredded cabbage on white rice, daylight natural food photograph"
     },
     {
       "id": "exp01-084",
