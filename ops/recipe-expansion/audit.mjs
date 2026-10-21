@@ -1,6 +1,7 @@
 // CI gate for expanding Tablewise without silent catalog or photography regressions.
 import {readFileSync,existsSync} from 'node:fs';
 import {resolve} from 'node:path';
+import {assertPhotoQuality} from './image-quality.mjs';
 import {recipes,verifiedRecipePhotos} from '../../luxury-v2/catalog.js';
 const root=resolve(import.meta.dirname,'../..');
 const plan=JSON.parse(readFileSync(resolve(root,'ops/recipe-expansion/plan.json'),'utf8'));
@@ -61,7 +62,9 @@ for(const b of plan.batches){
   if(prohibited.some(item=>foodText.split(/[^a-z0-9-]+/).includes(item)||foodText.includes(item)))fail('Excluded tofu or meat-substitute ingredient in new recipe: '+name);
   if(!Array.isArray(recipe.ingredients)||recipe.ingredients.length<3||recipe.ingredients.some(x=>!Array.isArray(x)||x.length<3||!x[0]||!(Number(x[1])>0)||!x[2]))fail('Unmeasured ingredients: '+name);
   if(!Array.isArray(recipe.steps)||recipe.steps.length<4||recipe.steps.some(x=>typeof x!=='string'||x.trim().length<25))fail('Incomplete cooking instructions: '+name);
-  if(!recipe.photo||typeof recipe.photo!=='string'||!recipe.photo.startsWith('assets/meal-photos/')||!existsSync(resolve(root,recipe.photo)))fail('Missing local recipe-specific photo: '+name);
+  const safePhoto=typeof recipe.photo==='string'&&/^assets\/meal-photos\/[a-z0-9-]+\.webp$/.test(recipe.photo)&&existsSync(resolve(root,recipe.photo));
+  if(!safePhoto)fail('Missing local recipe-specific photo: '+name);
+  else try{assertPhotoQuality(readFileSync(resolve(root,recipe.photo)))}catch(error){fail('Recipe photo quality failed: '+name+' - '+error.message)}
   if(recipe.source&&!recipe.source.license)fail('Imported recipe is missing usage/license documentation: '+name);
   if(recipe.photoReview!=='approved')fail('Unreviewed photo-to-recipe match: '+name);
  }
