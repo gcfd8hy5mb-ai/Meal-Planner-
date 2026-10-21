@@ -25,7 +25,7 @@ jobs:
       - name: Query USDA API for 10 ingredient pilot
         env:
           USDA_FDC_API_KEY: ${{ secrets.USDA_FDC_API_KEY }}
-        run: node ops/recipe-expansion/suggest-usda-food-matches.mjs 10 0
+        run: node ops/recipe-expansion/suggest-usda-food-matches.mjs 10 10
       - name: Upload review-only lookup report
         if: always()
         uses: actions/upload-artifact@v4
