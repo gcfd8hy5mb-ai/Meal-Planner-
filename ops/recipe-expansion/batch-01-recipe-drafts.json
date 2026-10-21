@@ -4781,70 +4781,70 @@
     },
     {
       "id": "exp01-055",
-      "name": "Homestyle Beef Pot Roast",
+      "name": "Moroccan Apricot Chicken with Couscous",
       "slot": "Dinner",
-      "cuisine": "American",
-      "serv": 6,
+      "cuisine": "Moroccan",
+      "serv": 4,
       "prepMinutes": 25,
-      "cookMinutes": 210,
-      "cal": 540,
+      "cookMinutes": 40,
+      "cal": 610,
       "p": 43,
-      "c": 22,
-      "f": 31,
-      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "c": 66,
+      "f": 18,
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification",
       "ingredients": [
         [
-          "Beef chuck roast",
-          3,
-          "lb"
-        ],
-        [
-          "Yukon gold potatoes",
+          "Boneless chicken thighs",
           1.5,
           "lb"
         ],
         [
-          "Carrots",
-          5,
-          "each"
+          "Dry couscous",
+          1.5,
+          "cup"
         ],
         [
-          "Yellow onion",
-          2,
-          "each"
+          "Dried apricots",
+          0.75,
+          "cup"
         ],
         [
-          "Beef broth",
+          "Chickpeas",
+          15,
+          "oz"
+        ],
+        [
+          "Chicken broth",
           2,
           "cup"
         ],
         [
-          "Tomato paste",
-          2,
-          "tbsp"
-        ],
-        [
-          "Olive oil",
-          2,
-          "tbsp"
-        ],
-        [
-          "Garlic cloves",
-          4,
+          "Yellow onion",
+          1,
           "each"
         ],
         [
-          "Dried thyme",
+          "Ground cumin",
           1,
           "tsp"
+        ],
+        [
+          "Ground cinnamon",
+          0.5,
+          "tsp"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
         ]
       ],
       "steps": [
-        "Preheat oven to 300°F. Pat 3 lb chuck roast dry and sear in 2 tbsp hot oil in a Dutch oven for 4 minutes on each broad side.",
-        "Add 2 sliced onions and 4 minced garlic cloves; soften for 4 minutes. Stir in 2 tbsp tomato paste and 1 tsp thyme.",
-        "Pour in 2 cups beef broth, scraping up browned bits. Cover and bake for 2 hours.",
-        "Add 1½ lb quartered potatoes and 5 carrots cut into large chunks. Cover and bake 1–1½ hours more, until beef is fork-tender and vegetables soft.",
-        "Rest beef 10 minutes, shred or slice, then divide meat, vegetables and cooking juices among six servings."
+        "Cut 1½ lb chicken thighs into 2-inch pieces and pat dry. Heat 1 tbsp oil in a deep skillet over medium-high heat and brown chicken for 5–6 minutes.",
+        "Add 1 diced onion, 1 tsp cumin and ½ tsp cinnamon, stirring for 3 minutes until fragrant and softened.",
+        "Pour in 1 cup chicken broth, add ¾ cup chopped dried apricots and one drained 15 oz can chickpeas. Cover and simmer 15–20 minutes until chicken reaches 165°F.",
+        "In a separate saucepan bring remaining 1 cup broth plus ½ cup water to a boil. Stir in 1½ cups couscous, remove from heat, cover and stand 5 minutes; fluff with a fork.",
+        "Divide couscous among four bowls and spoon chicken, chickpeas, apricots and spiced sauce on top."
       ],
       "stage": "recipe-draft",
       "ingredientsReady": true,
@@ -6850,70 +6850,70 @@
     },
     {
       "id": "exp01-083",
-      "name": "Salisbury Steak with Mushroom Gravy",
+      "name": "Ginger Scallion Beef and Cabbage Bowls",
       "slot": "Dinner",
-      "cuisine": "Southern & Comfort",
+      "cuisine": "Chinese & Asian",
       "serv": 4,
       "prepMinutes": 20,
-      "cookMinutes": 30,
+      "cookMinutes": 20,
       "cal": 510,
       "p": 38,
-      "c": 20,
-      "f": 30,
-      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "c": 33,
+      "f": 25,
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification",
       "ingredients": [
         [
-          "Ground beef",
+          "Lean ground beef",
           1.5,
           "lb"
         ],
         [
-          "Breadcrumbs",
+          "Green cabbage",
           0.5,
-          "cup"
+          "head"
         ],
         [
-          "Egg",
-          1,
-          "each"
-        ],
-        [
-          "Mushrooms",
-          8,
-          "oz"
-        ],
-        [
-          "Yellow onion",
-          1,
-          "each"
-        ],
-        [
-          "Beef broth",
-          2,
-          "cup"
-        ],
-        [
-          "Worcestershire sauce",
+          "Fresh ginger",
           2,
           "tbsp"
         ],
         [
-          "Cornstarch",
-          1.5,
+          "Green onions",
+          5,
+          "each"
+        ],
+        [
+          "Low-sodium soy sauce",
+          3,
           "tbsp"
         ],
         [
-          "Olive oil",
+          "Rice vinegar",
+          2,
+          "tbsp"
+        ],
+        [
+          "Brown sugar",
           1,
           "tbsp"
+        ],
+        [
+          "Sesame oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Jasmine rice",
+          1,
+          "cup"
         ]
       ],
       "steps": [
-        "Mix 1½ lb beef, ½ cup breadcrumbs, 1 egg and 1 tbsp Worcestershire sauce; shape into four oval patties.",
-        "Heat 1 tbsp oil in a skillet over medium heat; brown patties for 4 minutes on each side, then transfer to a plate.",
-        "Add sliced onion and 8 oz sliced mushrooms, sautéing 6 minutes until softened.",
-        "Whisk 1½ tbsp cornstarch into ¼ cup cold broth; pour remaining 1¾ cups broth and 1 tbsp Worcestershire into the pan, then add slurry and simmer until thickened.",
-        "Return patties to gravy and simmer 7–10 minutes until centers reach 160°F. Serve each patty with mushroom gravy."
+        "Rinse 1 cup jasmine rice and cook in water according to the package instructions; cover to keep warm.",
+        "Thinly shred half a head of cabbage, grate 2 tbsp ginger and slice five green onions, keeping some green tops for garnish.",
+        "Heat 1 tbsp sesame oil in a large skillet over medium-high heat and brown 1½ lb ground beef, breaking it apart for 8–10 minutes until it reaches 160°F. Drain excess fat.",
+        "Add shredded cabbage and ginger; stir-fry for 4 minutes. Add 3 tbsp soy sauce, 2 tbsp rice vinegar and 1 tbsp brown sugar, cooking 2 minutes until cabbage softens slightly.",
+        "Divide rice into four bowls and top with beef and cabbage, scattering the reserved green onion tops over each serving."
       ],
       "stage": "recipe-draft",
       "ingredientsReady": true,
