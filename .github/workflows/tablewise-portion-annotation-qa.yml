@@ -1,0 +1,20 @@
+name: Tablewise ingredient portion annotation QA
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'ops/recipe-expansion/batch-01-recipe-drafts.json'
+      - 'ops/recipe-expansion/validate-portion-annotations.mjs'
+      - '.github/workflows/tablewise-portion-annotation-qa.yml'
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate real recipe portion notes and no invented weights
+        run: node ops/recipe-expansion/validate-portion-annotations.mjs
