@@ -5231,6 +5231,360 @@
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
       }
+    },
+    {
+      "id": "exp01-061",
+      "name": "Cheddar Broccoli Chicken Bake",
+      "serv": 6,
+      "ingredients": [
+        [
+          "Boneless skinless chicken breasts",
+          1.5,
+          "lb"
+        ],
+        [
+          "Broccoli florets",
+          4,
+          "cup"
+        ],
+        [
+          "Cooked rice",
+          3,
+          "cup"
+        ],
+        [
+          "Shredded sharp cheddar",
+          2,
+          "cup"
+        ],
+        [
+          "Whole milk",
+          1.5,
+          "cup"
+        ],
+        [
+          "All-purpose flour",
+          3,
+          "tbsp"
+        ],
+        [
+          "Unsalted butter",
+          3,
+          "tbsp"
+        ],
+        [
+          "Garlic powder",
+          1,
+          "tsp"
+        ],
+        [
+          "Dijon mustard",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          1,
+          "tsp"
+        ],
+        [
+          "Black pepper",
+          0.5,
+          "tsp"
+        ],
+        [
+          "Panko breadcrumbs",
+          0.5,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Heat oven to 375°F and lightly grease a 9-by-13-inch baking dish. Cut 1½ lb chicken breasts into bite-size pieces, season with ½ tsp salt and ½ tsp black pepper, and spread evenly in the dish.",
+        "Steam 4 cups broccoli florets for 3–4 minutes until bright green but still slightly firm. Drain well and mix with 3 cups safely cooked rice and the chicken in the baking dish.",
+        "Melt 3 tbsp butter in a saucepan over medium heat. Whisk in 3 tbsp flour and cook for 1 minute, then slowly whisk in 1½ cups milk until smooth. Simmer for 3–4 minutes, stirring constantly, until thick enough to coat a spoon.",
+        "Remove sauce from heat and stir in 1½ cups cheddar, 1 tsp garlic powder, 1 tsp Dijon mustard and the remaining ½ tsp salt. Pour evenly over the chicken, broccoli and rice, mixing gently so the sauce reaches the bottom.",
+        "Cover tightly with foil and bake 25 minutes. Uncover, scatter remaining ½ cup cheddar and ½ cup panko over the top, then bake 15–20 minutes more until golden and all chicken pieces reach 165°F. Rest 5 minutes before serving six portions."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-062",
+      "name": "Bacon Cheeseburger Tater Tot Casserole",
+      "serv": 6,
+      "ingredients": [
+        [
+          "Lean ground beef",
+          1.5,
+          "lb"
+        ],
+        [
+          "Frozen tater tots",
+          28,
+          "oz"
+        ],
+        [
+          "Bacon",
+          6,
+          "slice"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Shredded cheddar cheese",
+          2,
+          "cup"
+        ],
+        [
+          "Diced tomatoes, drained",
+          1,
+          "cup"
+        ],
+        [
+          "Dill pickle slices",
+          0.5,
+          "cup"
+        ],
+        [
+          "Ketchup",
+          0.25,
+          "cup"
+        ],
+        [
+          "Yellow mustard",
+          2,
+          "tbsp"
+        ],
+        [
+          "Worcestershire sauce",
+          1,
+          "tbsp"
+        ],
+        [
+          "Salt",
+          0.75,
+          "tsp"
+        ],
+        [
+          "Black pepper",
+          0.5,
+          "tsp"
+        ]
+      ],
+      "steps": [
+        "Preheat oven to 400°F and lightly grease a 9-by-13-inch baking dish. Cook 6 bacon slices in a skillet over medium heat until crisp, then transfer to paper towels and crumble; carefully discard all but about 1 tbsp bacon drippings.",
+        "Dice 1 yellow onion and sauté it in the skillet for 4 minutes. Add 1½ lb ground beef, break into small pieces and cook until it reaches 160°F; drain excess fat.",
+        "Stir ¼ cup ketchup, 2 tbsp yellow mustard, 1 tbsp Worcestershire sauce, ¾ tsp salt and ½ tsp pepper into the beef. Add 1 cup well-drained diced tomatoes and simmer 2 minutes to reduce excess moisture.",
+        "Spread the beef mixture in the prepared dish, sprinkle with 1 cup cheddar and the crumbled bacon, then arrange 28 oz frozen tater tots evenly across the top in a single layer.",
+        "Bake uncovered 30–35 minutes until tots are crisp and the casserole reaches 165°F. Sprinkle remaining 1 cup cheddar over the tots and bake 3–5 minutes to melt. Rest 5 minutes, then top with ½ cup pickle slices just before serving."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-063",
+      "name": "Southern Baked Macaroni and Cheese",
+      "serv": 8,
+      "ingredients": [
+        [
+          "Dry elbow macaroni",
+          1,
+          "lb"
+        ],
+        [
+          "Sharp cheddar cheese, shredded",
+          3,
+          "cup"
+        ],
+        [
+          "Monterey Jack cheese, shredded",
+          2,
+          "cup"
+        ],
+        [
+          "Whole milk",
+          2,
+          "cup"
+        ],
+        [
+          "Evaporated milk",
+          1,
+          "cup"
+        ],
+        [
+          "Large eggs",
+          2,
+          "each"
+        ],
+        [
+          "Unsalted butter",
+          4,
+          "tbsp"
+        ],
+        [
+          "Dry mustard powder",
+          1,
+          "tsp"
+        ],
+        [
+          "Paprika",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          1,
+          "tsp"
+        ],
+        [
+          "Black pepper",
+          0.5,
+          "tsp"
+        ]
+      ],
+      "steps": [
+        "Preheat oven to 350°F and butter a deep 9-by-13-inch baking dish with 1 tbsp of the measured butter. Bring a large pot of water to a boil, cook 1 lb elbow macaroni 1–2 minutes less than package directions, then drain thoroughly.",
+        "In a large bowl whisk 2 cups whole milk, 1 cup evaporated milk, 2 eggs, 1 tsp dry mustard, 1 tsp paprika, 1 tsp salt and ½ tsp black pepper until the eggs are fully incorporated.",
+        "Melt the remaining 3 tbsp butter and toss with the drained warm pasta. Combine 3 cups cheddar and 2 cups Monterey Jack in a separate bowl; reserve 1 cup of the mixed cheese for the top.",
+        "Layer half the macaroni in the prepared dish, sprinkle with half the cheese that was not reserved, then repeat with the remaining macaroni and cheese. Pour the milk-and-egg mixture evenly over the layers and press gently so liquid reaches the bottom.",
+        "Cover loosely with foil and bake 25 minutes. Remove foil, sprinkle the reserved cup of cheese over the top and bake 15–20 minutes longer until the center is set, reaches 160°F and the edges bubble. Let rest 10 minutes before cutting into eight portions."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-064",
+      "name": "Cast-Iron Cornbread Chicken Pie",
+      "serv": 6,
+      "ingredients": [
+        [
+          "Cooked shredded chicken",
+          3,
+          "cup"
+        ],
+        [
+          "Frozen mixed vegetables",
+          2,
+          "cup"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Chicken broth",
+          1.5,
+          "cup"
+        ],
+        [
+          "Whole milk",
+          0.5,
+          "cup"
+        ],
+        [
+          "All-purpose flour",
+          3,
+          "tbsp"
+        ],
+        [
+          "Unsalted butter",
+          3,
+          "tbsp"
+        ],
+        [
+          "Cornmeal",
+          1,
+          "cup"
+        ],
+        [
+          "All-purpose flour for topping",
+          0.75,
+          "cup"
+        ],
+        [
+          "Baking powder",
+          2,
+          "tsp"
+        ],
+        [
+          "Large egg",
+          1,
+          "each"
+        ],
+        [
+          "Buttermilk",
+          1,
+          "cup"
+        ],
+        [
+          "Vegetable oil",
+          2,
+          "tbsp"
+        ],
+        [
+          "Salt",
+          1,
+          "tsp"
+        ],
+        [
+          "Black pepper",
+          0.5,
+          "tsp"
+        ]
+      ],
+      "steps": [
+        "Preheat oven to 400°F. Dice 1 yellow onion. In a 10- or 12-inch oven-safe cast-iron skillet melt 3 tbsp butter over medium heat, cook onion for 4 minutes, then whisk in 3 tbsp all-purpose flour and cook for 1 minute.",
+        "Slowly whisk 1½ cups chicken broth and ½ cup milk into the skillet until smooth. Simmer 3–5 minutes until the gravy thickens; add 3 cups fully cooked shredded chicken, 2 cups frozen mixed vegetables, ½ tsp salt and ½ tsp pepper. Stir and heat until steaming.",
+        "In a separate bowl whisk 1 cup cornmeal, ¾ cup flour, 2 tsp baking powder and the remaining ½ tsp salt. In another bowl whisk 1 egg, 1 cup buttermilk and 2 tbsp vegetable oil until combined.",
+        "Fold wet ingredients into dry just until no pockets of flour remain; do not overmix. Spread the cornbread batter gently over the hot chicken filling, leaving a little space around the skillet edge for bubbling.",
+        "Transfer the oven-safe skillet carefully to the oven and bake 22–28 minutes until the cornbread top is golden, a toothpick inserted into the topping comes out clean, and the filling reaches 165°F. Rest 10 minutes before spooning into six bowls."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
     }
   ]
 }
