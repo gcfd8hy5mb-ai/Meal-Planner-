@@ -4498,6 +4498,350 @@
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
       }
+    },
+    {
+      "id": "exp01-053",
+      "name": "Beef Tips and Brown Gravy",
+      "serv": 6,
+      "ingredients": [
+        [
+          "Beef sirloin tips",
+          2,
+          "lb"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Cremini mushrooms",
+          8,
+          "oz"
+        ],
+        [
+          "Beef broth",
+          3,
+          "cup"
+        ],
+        [
+          "Worcestershire sauce",
+          2,
+          "tbsp"
+        ],
+        [
+          "All-purpose flour",
+          3,
+          "tbsp"
+        ],
+        [
+          "Unsalted butter",
+          2,
+          "tbsp"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Garlic cloves",
+          3,
+          "each"
+        ],
+        [
+          "Dried thyme",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          1,
+          "tsp"
+        ],
+        [
+          "Black pepper",
+          0.5,
+          "tsp"
+        ],
+        [
+          "Mashed potatoes, prepared",
+          4,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Pat 2 lb beef sirloin tips dry and cut into 1½-inch pieces. Season with 1 tsp salt and ½ tsp pepper. Slice 1 onion and 8 oz mushrooms and mince 3 garlic cloves.",
+        "Heat 1 tbsp olive oil and 1 tbsp butter in a heavy skillet over medium-high heat. Sear the beef in two batches for 2–3 minutes per side until browned; move to a clean plate, reserving the browned bits in the pan.",
+        "Reduce heat to medium, melt the remaining 1 tbsp butter, and cook onion and mushrooms 6–7 minutes until softened. Add garlic and thyme for 30 seconds, then sprinkle 3 tbsp flour across the vegetables and stir continuously for 1 minute.",
+        "Slowly whisk in 3 cups beef broth and 2 tbsp Worcestershire sauce, scraping the pan to lift the browned bits. Return beef and any resting juices, bring to a gentle simmer, and cook covered for 15–20 minutes until tender and at least 145°F in the center; let stand 3 minutes.",
+        "If the gravy is thin, simmer uncovered 3–5 minutes, stirring until it coats a spoon. Heat 4 cups prepared mashed potatoes thoroughly, divide among six plates, and spoon beef tips, onions, mushrooms, and brown gravy over each portion."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-054",
+      "name": "Baked Chicken and Dressing",
+      "serv": 6,
+      "ingredients": [
+        [
+          "Boneless skinless chicken breasts",
+          1.5,
+          "lb"
+        ],
+        [
+          "Prepared cornbread, crumbled",
+          5,
+          "cup"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Celery stalks",
+          3,
+          "each"
+        ],
+        [
+          "Chicken broth",
+          2.5,
+          "cup"
+        ],
+        [
+          "Large eggs",
+          2,
+          "each"
+        ],
+        [
+          "Unsalted butter",
+          4,
+          "tbsp"
+        ],
+        [
+          "Dried rubbed sage",
+          1.5,
+          "tsp"
+        ],
+        [
+          "Dried thyme",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          1,
+          "tsp"
+        ],
+        [
+          "Black pepper",
+          0.5,
+          "tsp"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ]
+      ],
+      "steps": [
+        "Heat the oven to 375°F and grease a 9-by-13-inch baking dish. Dice the onion and 3 celery stalks. Cut 1½ lb chicken breasts into 1-inch pieces, keeping raw poultry on a separate cutting surface.",
+        "Melt 4 tbsp butter in a skillet over medium heat and cook onion and celery for 7–8 minutes until soft. Stir in 1½ tsp sage, 1 tsp thyme, 1 tsp salt, and ½ tsp pepper for 30 seconds, then set aside to cool slightly.",
+        "In a large bowl, combine 5 cups crumbled cooked cornbread and the sautéed vegetables. Whisk 2 eggs with 2½ cups chicken broth in a separate bowl, pour over the cornbread, and fold gently until evenly moistened but not soupy.",
+        "Heat 1 tbsp olive oil in the skillet, briefly sear the chicken pieces for 2–3 minutes, then transfer to the baking dish. Spread the moistened dressing evenly over and around the chicken. Cover the dish tightly with foil.",
+        "Bake covered for 30 minutes, uncover and bake another 15–20 minutes until the center of the chicken and dressing reaches 165°F. Rest 5 minutes, then divide into six portions with a spoon so each contains chicken and dressing."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-055",
+      "name": "Chicken Fried Chicken",
+      "serv": 4,
+      "ingredients": [
+        [
+          "Boneless skinless chicken breasts",
+          1.5,
+          "lb"
+        ],
+        [
+          "Buttermilk",
+          1,
+          "cup"
+        ],
+        [
+          "All-purpose flour",
+          1.5,
+          "cup"
+        ],
+        [
+          "Large egg",
+          1,
+          "each"
+        ],
+        [
+          "Paprika",
+          1,
+          "tsp"
+        ],
+        [
+          "Garlic powder",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          1.5,
+          "tsp"
+        ],
+        [
+          "Black pepper",
+          1,
+          "tsp"
+        ],
+        [
+          "Vegetable oil",
+          0.75,
+          "cup"
+        ],
+        [
+          "Whole milk",
+          2,
+          "cup"
+        ],
+        [
+          "Unsalted butter",
+          2,
+          "tbsp"
+        ]
+      ],
+      "steps": [
+        "Slice 1½ lb chicken breasts horizontally into four even cutlets and gently pound to about ½ inch thick. Whisk 1 cup buttermilk with 1 egg in a shallow bowl, and in a second bowl combine 1½ cups flour, 1 tsp paprika, 1 tsp garlic powder, 1 tsp salt, and ½ tsp pepper.",
+        "Dip each chicken cutlet in the buttermilk mixture, dredge thoroughly in seasoned flour, shake off excess, then let the coated pieces rest on a rack for 5 minutes. Set aside 3 tbsp of unused seasoned flour for the gravy; discard flour or buttermilk touched by raw chicken.",
+        "Pour ¾ cup vegetable oil into a deep, heavy skillet and heat over medium to about 350°F. Fry the cutlets in batches for roughly 4–6 minutes per side, turning carefully, until golden and the thickest part reaches 165°F. Transfer to a clean rack and keep warm.",
+        "Carefully remove frying oil to an appropriate heat-safe container, leaving about 1 tbsp clean-looking drippings in the skillet. Melt 2 tbsp butter over medium-low heat, whisk in 3 tbsp reserved unused flour, and cook for 1 minute until bubbling.",
+        "Gradually whisk in 2 cups milk, scraping any flavorful browned bits. Simmer 3–5 minutes, whisking, until thick; season with the remaining ½ tsp salt and ½ tsp pepper. Serve one crisp cutlet per person with warm peppered cream gravy spooned over the top."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-056",
+      "name": "Pulled Pork Mac and Cheese",
+      "serv": 6,
+      "ingredients": [
+        [
+          "Fully cooked pulled pork",
+          1.25,
+          "lb"
+        ],
+        [
+          "Dry elbow macaroni",
+          12,
+          "oz"
+        ],
+        [
+          "Sharp cheddar cheese, shredded",
+          2,
+          "cup"
+        ],
+        [
+          "Monterey Jack cheese, shredded",
+          1,
+          "cup"
+        ],
+        [
+          "Whole milk",
+          2.5,
+          "cup"
+        ],
+        [
+          "Unsalted butter",
+          3,
+          "tbsp"
+        ],
+        [
+          "All-purpose flour",
+          3,
+          "tbsp"
+        ],
+        [
+          "Barbecue sauce",
+          0.5,
+          "cup"
+        ],
+        [
+          "Smoked paprika",
+          0.5,
+          "tsp"
+        ],
+        [
+          "Salt",
+          0.75,
+          "tsp"
+        ],
+        [
+          "Black pepper",
+          0.5,
+          "tsp"
+        ],
+        [
+          "Panko breadcrumbs",
+          0.5,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Preheat oven to 375°F and grease a 9-by-13-inch baking dish. Bring salted water to a boil, cook 12 oz dry elbow macaroni 1 minute less than package directions, then drain and set aside.",
+        "Place 1¼ lb fully cooked pulled pork with ½ cup barbecue sauce in a saucepan over medium heat and warm until the pork reaches 165°F, stirring to coat evenly; set aside.",
+        "Melt 3 tbsp butter in a large saucepan over medium heat. Whisk in 3 tbsp flour and cook 1 minute. Slowly pour in 2½ cups milk, whisking constantly, then simmer 4–5 minutes until slightly thickened.",
+        "Reduce the heat to low and gradually stir in 2 cups sharp cheddar and 1 cup Monterey Jack until melted. Add ½ tsp smoked paprika, ¾ tsp salt, and ½ tsp pepper, then fold in the cooked macaroni until thoroughly coated.",
+        "Spread half the macaroni into the baking dish, layer the warm barbecue pork over it, and top with the remaining macaroni. Scatter ½ cup panko on top and bake 20–25 minutes until bubbling and the casserole reaches 165°F; rest 5 minutes and serve six portions."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
     }
   ]
 }
