@@ -28,4 +28,4 @@ const out={source:'USDA FoodData Central search',runArtifactCount:12,ingredients
  note:'All are search candidates, NOT validated food matches, measured portions, or verified nutrition. Food detail lookup, nutrients and gram conversions still required.',reviewItems:combined};
 const target='ops/recipe-expansion/usda-candidates-consolidated.json';
 fs.writeFileSync(target,JSON.stringify(out,null,2)+'\n');
-console.log(JSON.stringify({candidateSearches:combined.length,withCandidateResults:combined.filter(x=>x.candidates.length>0).length,noCandidates:combined.filter(x=>x.candidates.length===0).length,output:target}));
+console.log(JSON.stringify({candidateSearches:combined.length,withCandidateResults:combined.filter(x=>x.candidates.length>0).length,noCandidates:combined.filter(x=>x.candidates.length===0).map(x=>x.ingredient),output:target}));
