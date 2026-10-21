@@ -2209,16 +2209,22 @@
       "reviewStatus": "pending"
     },
     "Lime juice": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "168156",
+      "description": "Lime juice, raw",
+      "state": "raw expressed lime juice by measured volume; not whole lime wedges",
+      "kcalPer100g": 25,
+      "proteinPer100g": 0.42,
+      "carbsPer100g": 8.42,
+      "fatPer100g": 0.07,
+      "gramsPerUnit": {
+        "cup": 242,
+        "tbsp": 15.125
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/168156/nutrients",
+      "portionSource": "USDA 1 cup lime juice = 242g; 1 US tablespoon = 1/16 US cup, derived 15.125g",
+      "reviewNotes": "Measured lime juice ingredient only. Does not resolve distinct whole-lime garnish uses or actual amounts retained in marinades."
     },
     "Long grain rice": {
       "source": "",
