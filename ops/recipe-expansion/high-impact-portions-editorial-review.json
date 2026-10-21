@@ -1,0 +1,111 @@
+{
+  "source": "USDA FoodData Central",
+  "runId": 39655515528,
+  "date": "2026-10-21",
+  "stage": "editorial source-screening",
+  "approvedMappings": 0,
+  "recipeNutritionVerified": 0,
+  "note": "Proposed grams per recipe unit are evidence-supported candidates, not approved conversions. All food identities, preparation states, nutrients and portion interpretations still require verification. Do not propagate to ingredient-nutrition-sources.json.",
+  "items": [
+    {
+      "ingredient": "Olive oil",
+      "unit": "tbsp",
+      "fdcId": 171413,
+      "usdaReferenceGrams": 13.5,
+      "usdaDescription": "Oil, olive, salad or cooking",
+      "portionDefinition": "1 tablespoon",
+      "status": "plausible-needs-review",
+      "reason": "Check olive oil type and use by tablespoon"
+    },
+    {
+      "ingredient": "Garlic cloves",
+      "unit": "each",
+      "fdcId": 2709786,
+      "usdaReferenceGrams": 3,
+      "usdaDescription": "Garlic, raw",
+      "portionDefinition": "1 clove",
+      "status": "plausible-needs-review",
+      "reason": "Representative raw garlic clove; sizes vary"
+    },
+    {
+      "ingredient": "Salt",
+      "unit": "tsp",
+      "fdcId": 173468,
+      "usdaReferenceGrams": 6,
+      "usdaDescription": "Salt, table",
+      "portionDefinition": "1 teaspoon",
+      "status": "conditional-needs-review",
+      "reason": "Only for fine table salt; kosher/flaky salts differ strongly by volume"
+    },
+    {
+      "ingredient": "Ground cumin",
+      "unit": "tsp",
+      "fdcId": null,
+      "usdaReferenceGrams": null,
+      "usdaDescription": null,
+      "portionDefinition": null,
+      "status": "blocked-no-ground-cumin-weight",
+      "reason": "Search result measures whole cumin seed and must not be used for ground cumin"
+    },
+    {
+      "ingredient": "Yellow onion",
+      "unit": "each",
+      "fdcId": 2709795,
+      "usdaReferenceGrams": 148,
+      "usdaDescription": "Onions, raw",
+      "portionDefinition": "1 whole",
+      "status": "conditional-needs-review",
+      "reason": "USDA whole onion without specific yellow variety or size; recipe does not state size"
+    },
+    {
+      "ingredient": "Chicken broth",
+      "unit": "cup",
+      "fdcId": 174536,
+      "usdaReferenceGrams": 249,
+      "usdaDescription": "Soup, chicken broth, ready-to-serve",
+      "portionDefinition": "1 cup",
+      "status": "conditional-needs-review",
+      "reason": "Check full-sodium vs reduced-sodium vs concentrated broth"
+    },
+    {
+      "ingredient": "Lime",
+      "unit": "each",
+      "fdcId": null,
+      "usdaReferenceGrams": null,
+      "usdaDescription": null,
+      "portionDefinition": null,
+      "status": "blocked-juice-or-whole-ambiguous",
+      "reason": "Whole fruit weighs about 65–67g but recipes may mean juice/yield; check instructions before converting"
+    },
+    {
+      "ingredient": "Chili powder",
+      "unit": "tsp",
+      "fdcId": 171319,
+      "usdaReferenceGrams": 2.7,
+      "usdaDescription": "Spices, chili powder",
+      "portionDefinition": "1 teaspoon",
+      "status": "plausible-needs-review",
+      "reason": "Confirm blend vs pure ground chile"
+    },
+    {
+      "ingredient": "Cilantro",
+      "unit": "cup",
+      "fdcId": 2709782,
+      "usdaReferenceGrams": 16,
+      "usdaDescription": "Cilantro, raw",
+      "portionDefinition": "1 cup",
+      "status": "conditional-needs-review",
+      "reason": "Confirm loose leaf/chopped/packed preparation"
+    },
+    {
+      "ingredient": "Butter",
+      "unit": "tbsp",
+      "fdcId": 173410,
+      "usdaReferenceGrams": 14.2,
+      "usdaDescription": "Butter, salted",
+      "portionDefinition": "1 tablespoon",
+      "status": "conditional-needs-review",
+      "reason": "Verify salted vs unsalted vs whipped"
+    }
+  ]
+}
