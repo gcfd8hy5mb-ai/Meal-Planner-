@@ -8,6 +8,7 @@ on:
       - 'ops/recipe-expansion/usda-focused-identity-review.json'
       - 'ops/recipe-expansion/audit-focused-measurements.mjs'
       - 'ops/recipe-expansion/propose-exact-mass-conversions.mjs'
+      - 'ops/recipe-expansion/audit-all-ingredient-measurements.mjs'
 permissions:
   contents: read
 jobs:
@@ -27,6 +28,8 @@ jobs:
         run: node ops/recipe-expansion/audit-focused-measurements.mjs
       - name: Separate exact ounce weights from ingredient-specific conversions
         run: node ops/recipe-expansion/propose-exact-mass-conversions.mjs
+      - name: Audit all 308 recipe measurement combinations
+        run: node ops/recipe-expansion/audit-all-ingredient-measurements.mjs
       - name: Upload unapproved nutrient details
         if: always()
         uses: actions/upload-artifact@v4
@@ -36,4 +39,5 @@ jobs:
             ops/recipe-expansion/usda-focused-nutrient-details.json
             ops/recipe-expansion/usda-focused-measurement-review.json
             ops/recipe-expansion/usda-measurement-proposals.json
+            ops/recipe-expansion/all-ingredient-measurement-audit.json
           retention-days: 30
