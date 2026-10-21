@@ -715,6 +715,96 @@
       "photoReview": "pending",
       "pairedWithInstructions": true,
       "photoBrief": "Colorful orzo pasta with roast chicken chunks, zucchini, blistered cherry tomatoes, red onion and feta"
+    },
+    {
+      "id": "exp01-081",
+      "name": "Slow-Cooker Mississippi Pot Roast",
+      "expectedAsset": "assets/meal-photos/exp01-081.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Home cooked shredded pot roast with pepperoncini peppers and brown juices in rustic ceramic bowl"
+    },
+    {
+      "id": "exp01-082",
+      "name": "Lemon Garlic Shrimp Linguine",
+      "expectedAsset": "assets/meal-photos/exp01-082.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Bright linguine with pink shrimp, garlic butter, lemon slices and chopped parsley, natural light"
+    },
+    {
+      "id": "exp01-083",
+      "name": "Salisbury Steak with Mushroom Gravy",
+      "expectedAsset": "assets/meal-photos/exp01-083.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Four oval Salisbury beef steaks with mushroom and onion brown gravy on homestyle platter"
+    },
+    {
+      "id": "exp01-084",
+      "name": "Ham and Cheese Breakfast Sliders",
+      "expectedAsset": "assets/meal-photos/exp01-084.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Golden breakfast mini sandwiches filled with folded eggs, sliced ham and melted Swiss on baking tray"
+    },
+    {
+      "id": "exp01-085",
+      "name": "One-Pan Creamy Garlic Chicken and Rice",
+      "expectedAsset": "assets/meal-photos/exp01-085.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Creamy garlicky rice with golden chicken thighs and spinach cooked in one black skillet"
+    },
+    {
+      "id": "exp01-086",
+      "name": "Beef and Bean Chili",
+      "expectedAsset": "assets/meal-photos/exp01-086.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Thick hearty homemade beef chili with kidney beans and chunky tomatoes in ceramic bowl"
+    },
+    {
+      "id": "exp01-087",
+      "name": "Creamy Cajun Chicken Pasta",
+      "expectedAsset": "assets/meal-photos/exp01-087.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Creamy orange Cajun penne with blackened chicken strips and red peppers in natural daylight"
+    },
+    {
+      "id": "exp01-088",
+      "name": "Pork Tenderloin with Apple Pan Sauce",
+      "expectedAsset": "assets/meal-photos/exp01-088.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Sliced roasted pork tenderloin medallions with golden sautéed apple slices and glossy cider sauce"
+    },
+    {
+      "id": "exp01-089",
+      "name": "Baked Chicken Parmesan Meatballs",
+      "expectedAsset": "assets/meal-photos/exp01-089.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Golden chicken Parmesan meatballs nestled in red marinara with melted mozzarella and green basil garnish"
+    },
+    {
+      "id": "exp01-090",
+      "name": "Breakfast Potato and Chorizo Hash",
+      "expectedAsset": "assets/meal-photos/exp01-090.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Rustic breakfast skillet of crispy potatoes, red chorizo, bell peppers and four fully cooked eggs"
     }
   ]
 }
