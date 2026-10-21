@@ -1,0 +1,41 @@
+name: Tablewise remaining USDA evidence (no automatic approvals)
+on:
+  push:
+    branches:
+      - feature/recipe-expansion-110-content-20261021
+    paths:
+      - '.github/workflows/tablewise-nutrition-remaining-evidence.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  collect-evidence:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      max-parallel: 2
+      matrix:
+        offset: [0,25,50,75,100,125,150,175,200,225,250]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Confirm 40 approved sources remain independently validated
+        run: node ops/recipe-expansion/audit-approved-ingredient-inputs.mjs
+      - name: Retrieve and save original USDA evidence, never auto-approve mappings
+        env:
+          USDA_FDC_API_KEY: ${{ secrets.USDA_FDC_API_KEY }}
+          NUTRITION_BATCH_OFFSET: ${{ matrix.offset }}
+        run: node ops/recipe-expansion/fetch-nutrition-batch-25.mjs
+      - name: Preserve source and review queue for manual identity and portion checks
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: nutrition-remaining-evidence-${{ matrix.offset }}
+          path: |
+            ops/recipe-expansion/nutrition-batch-25-review-queue-*.json
+            ops/recipe-expansion/nutrition-batch-25-usda-evidence-*.json
+          if-no-files-found: warn
+          retention-days: 30
