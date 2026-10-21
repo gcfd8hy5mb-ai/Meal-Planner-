@@ -8,7 +8,8 @@ const data=JSON.parse(fs.readFileSync(dir+'ingredient-nutrition-sources.json','u
 const key=process.env.USDA_FDC_API_KEY || 'DEMO_KEY';
 // DEMO_KEY is USDA's published low-quota public example key. Override with a secret for scale.
 const limit=Math.min(300,Math.max(1,Number(process.argv[2])||20));
-const todo=Object.entries(data.ingredients).filter(([,v])=>v.reviewStatus!=='approved').slice(0,limit);
+const offset=Math.max(0,Number(process.argv[3])||0);
+const todo=Object.entries(data.ingredients).filter(([,v])=>v.reviewStatus!=='approved').slice(offset,offset+limit);
 const suggestions=[];
 for(const [name] of todo){
  try{
