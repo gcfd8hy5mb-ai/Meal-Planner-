@@ -1,0 +1,27 @@
+name: Tablewise verified ingredient nutrition QA
+on:
+  pull_request:
+    paths:
+      - 'ops/recipe-expansion/ingredient-nutrition-sources.json'
+      - 'ops/recipe-expansion/batch-01-recipe-drafts.json'
+      - 'ops/recipe-expansion/audit-approved-ingredient-inputs.mjs'
+      - '.github/workflows/tablewise-approved-ingredient-nutrition.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  approved-ingredient-inputs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Audit approved USDA nutrition inputs and hold incomplete meals
+        run: node ops/recipe-expansion/audit-approved-ingredient-inputs.mjs
+      - name: Upload evidence and readiness audit
+        uses: actions/upload-artifact@v4
+        with:
+          name: tablewise-approved-ingredient-nutrition
+          path: ops/recipe-expansion/approved-ingredient-audit.json
+          retention-days: 30
