@@ -51,12 +51,13 @@
     },
     {
       "id": "exp01-006",
-      "name": "Green Chile Chicken Enchiladas",
+      "name": "Creamy Roasted Poblano Mac and Cheese",
       "expectedAsset": "assets/meal-photos/exp01-006.webp",
       "assetSaved": false,
       "photoReview": "pending",
       "pairedWithInstructions": true,
-      "previewGenerated": true
+      "previewGenerated": true,
+      "photoBrief": "Roasted poblano macaroni and cheese with green pepper strips and browned crunchy topping"
     },
     {
       "id": "exp01-007",
@@ -141,12 +142,13 @@
     },
     {
       "id": "exp01-016",
-      "name": "Red Chile Beef Enchiladas",
+      "name": "Pork and Hominy Green Chile Skillet",
       "expectedAsset": "assets/meal-photos/exp01-016.webp",
       "assetSaved": false,
       "photoReview": "pending",
       "pairedWithInstructions": true,
-      "previewGenerated": true
+      "previewGenerated": true,
+      "photoBrief": "Green chile pork and white hominy in rustic skillet with salsa verde"
     },
     {
       "id": "exp01-017",
@@ -177,12 +179,13 @@
     },
     {
       "id": "exp01-020",
-      "name": "Chipotle Lime Shrimp Tacos",
+      "name": "Citrus Shrimp and Avocado Ceviche Cups",
       "expectedAsset": "assets/meal-photos/exp01-020.webp",
       "assetSaved": false,
       "photoReview": "pending",
       "pairedWithInstructions": true,
-      "previewGenerated": true
+      "previewGenerated": true,
+      "photoBrief": "Fresh chilled cooked shrimp ceviche cups with avocado cucumber citrus and cilantro"
     },
     {
       "id": "exp01-021",
@@ -242,11 +245,12 @@
     },
     {
       "id": "exp01-028",
-      "name": "Cheesy Chicken Taco Casserole",
+      "name": "Cornbread Crusted Turkey Tamale Pie",
       "expectedAsset": "assets/meal-photos/exp01-028.webp",
       "assetSaved": false,
       "photoReview": "pending",
-      "pairedWithInstructions": true
+      "pairedWithInstructions": true,
+      "photoBrief": "Cornbread topped turkey tamale pie with red beans and tomato filling visible in cut wedge"
     },
     {
       "id": "exp01-029",
@@ -304,12 +308,12 @@
     },
     {
       "id": "exp01-035",
-      "name": "Chicken Mole Enchiladas",
+      "name": "Charred Corn and Black Bean Chicken Stuffed Poblanos",
       "expectedAsset": "assets/meal-photos/exp01-035.webp",
       "assetSaved": false,
       "photoReview": "pending",
       "pairedWithInstructions": true,
-      "photoBrief": "Two rolled corn enchiladas filled with shredded chicken under a glossy dark mole sauce, melted Monterey Jack, sesame seeds, white onion and cilantro; no red tomato sauce"
+      "photoBrief": "Roasted poblano boats stuffed with shredded chicken black beans corn and melted pepper jack"
     },
     {
       "id": "exp01-036",
@@ -394,12 +398,12 @@
     },
     {
       "id": "exp01-045",
-      "name": "Southern Chicken and Dumplings",
+      "name": "Maple Glazed Breakfast Pork Sausage Patties",
       "expectedAsset": "assets/meal-photos/exp01-045.webp",
       "assetSaved": false,
       "photoReview": "pending",
       "pairedWithInstructions": true,
-      "photoBrief": "Rustic bowl of homemade chicken and dumplings, tender chicken, carrots, celery and fluffy pale dumplings in thick golden broth; natural window light"
+      "photoBrief": "Breakfast pork sausage patties glistening with maple glaze and sage on small ceramic plate"
     },
     {
       "id": "exp01-046",
@@ -430,21 +434,21 @@
     },
     {
       "id": "exp01-049",
-      "name": "Beef and Broccoli Stir-Fry",
+      "name": "Ginger Beef and Snow Pea Noodle Bowls",
       "expectedAsset": "assets/meal-photos/exp01-049.webp",
       "assetSaved": false,
       "photoReview": "pending",
       "pairedWithInstructions": true,
-      "photoBrief": "Thinly sliced beef strips and crisp green broccoli florets coated in glossy brown garlic ginger stir fry sauce, no noodles"
+      "photoBrief": "Rice noodle bowl with ginger steak strips and vivid green snow peas"
     },
     {
       "id": "exp01-050",
-      "name": "Loaded Baked Potato Soup",
+      "name": "French Onion Potato Gratin",
       "expectedAsset": "assets/meal-photos/exp01-050.webp",
       "assetSaved": false,
       "photoReview": "pending",
       "pairedWithInstructions": true,
-      "photoBrief": "Creamy chunky potato soup topped with cheddar, bacon crumbles, sliced green onions in simple stoneware bowl"
+      "photoBrief": "Bubbling golden French onion potato gratin topped with melted Gruyere and browned onions"
     },
     {
       "id": "exp01-051",
@@ -466,12 +470,12 @@
     },
     {
       "id": "exp01-053",
-      "name": "Chicken Fried Steak with Country Gravy",
+      "name": "Savory Cheddar Biscuit Breakfast Bake",
       "expectedAsset": "assets/meal-photos/exp01-053.webp",
       "assetSaved": false,
       "photoReview": "pending",
       "pairedWithInstructions": true,
-      "photoBrief": "Golden breaded country fried beef steak covered in thick white peppered country gravy on homestyle dinner plate"
+      "photoBrief": "Golden cheddar biscuit breakfast casserole with visible baked biscuit pieces ham and spinach"
     },
     {
       "id": "exp01-054",
@@ -556,12 +560,12 @@
     },
     {
       "id": "exp01-063",
-      "name": "Sweet and Sour Chicken",
+      "name": "Crispy Ginger Orange Pork Cutlets",
       "expectedAsset": "assets/meal-photos/exp01-063.webp",
       "assetSaved": false,
       "photoReview": "pending",
       "pairedWithInstructions": true,
-      "photoBrief": "Bright sweet and sour chicken with distinct golden chicken pieces, red and green bell peppers, pineapple chunks and orange-red glossy sauce in bowl"
+      "photoBrief": "Golden panko breaded pork cutlets with orange ginger drizzle and citrus slices"
     },
     {
       "id": "exp01-064",
@@ -583,12 +587,12 @@
     },
     {
       "id": "exp01-066",
-      "name": "Cajun Shrimp and Grits",
+      "name": "Creole Catfish with Tomato Okra Relish",
       "expectedAsset": "assets/meal-photos/exp01-066.webp",
       "assetSaved": false,
       "photoReview": "pending",
       "pairedWithInstructions": true,
-      "photoBrief": "Creamy cheese grits topped with Cajun-spiced pink shrimp, bacon and scallions in stoneware bowl"
+      "photoBrief": "Seared Cajun catfish fillet with chunky red tomato and green okra relish"
     },
     {
       "id": "exp01-067",
@@ -628,12 +632,12 @@
     },
     {
       "id": "exp01-71",
-      "name": "Smothered Pork Chops with Onion Gravy",
+      "name": "Chicken and Leek Pot Pie",
       "expectedAsset": "assets/meal-photos/exp01-71.webp",
       "assetSaved": false,
       "photoReview": "pending",
       "pairedWithInstructions": true,
-      "photoBrief": "Brown pan-seared pork chops tucked into creamy golden caramelized-onion gravy in shallow ceramic plate"
+      "photoBrief": "Golden chicken and leek pot pie with puff pastry crust and creamy filling"
     },
     {
       "id": "exp01-72",
@@ -664,12 +668,12 @@
     },
     {
       "id": "exp01-75",
-      "name": "Chicken and Sausage Jambalaya",
+      "name": "Smoky Sausage Cabbage and Apple Skillet",
       "expectedAsset": "assets/meal-photos/exp01-75.webp",
       "assetSaved": false,
       "photoReview": "pending",
       "pairedWithInstructions": true,
-      "photoBrief": "Deep skillet jambalaya with Cajun chicken chunks, smoked sausage coins, red pepper and seasoned red rice"
+      "photoBrief": "Skillet of browned sausage coins with silky green cabbage and apple wedges"
     },
     {
       "id": "exp01-76",
@@ -718,12 +722,12 @@
     },
     {
       "id": "exp01-081",
-      "name": "Slow-Cooker Mississippi Pot Roast",
+      "name": "Balsamic Beef Short Ribs with Polenta",
       "expectedAsset": "assets/meal-photos/exp01-081.webp",
       "assetSaved": false,
       "photoReview": "pending",
       "pairedWithInstructions": true,
-      "photoBrief": "Home cooked shredded pot roast with pepperoncini peppers and brown juices in rustic ceramic bowl"
+      "photoBrief": "Fork tender balsamic beef short ribs over creamy Parmesan polenta"
     },
     {
       "id": "exp01-082",
@@ -772,12 +776,12 @@
     },
     {
       "id": "exp01-087",
-      "name": "Creamy Cajun Chicken Pasta",
+      "name": "Roasted Red Pepper Turkey Burgers",
       "expectedAsset": "assets/meal-photos/exp01-087.webp",
       "assetSaved": false,
       "photoReview": "pending",
       "pairedWithInstructions": true,
-      "photoBrief": "Creamy orange Cajun penne with blackened chicken strips and red peppers in natural daylight"
+      "photoBrief": "Turkey burgers with visible roasted red pepper pieces feta and spinach on toasted buns"
     },
     {
       "id": "exp01-088",
