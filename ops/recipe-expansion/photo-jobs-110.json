@@ -1,0 +1,1546 @@
+{
+  "note": "Photo production instructions only; no generated image assets",
+  "count": 110,
+  "jobs": [
+    {
+      "id": "exp01-001",
+      "recipe": "Birria Beef Tacos",
+      "outputPath": "assets/meal-photos/exp01-001.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Birria Beef Tacos. Specific visual: undefined. Ingredients: 2 lb Beef chuck roast; 4 each Dried guajillo chiles; 2 each Dried ancho chiles; 3 cup Beef broth; 1 each White onion; 4 each Garlic cloves; 2 tbsp Apple cider vinegar; 1 tsp Dried oregano; 1 tsp Ground cumin; 12 each Corn tortillas; 1.5 cup Shredded Oaxaca cheese; 0.25 cup Cilantro; 2 each Lime. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-002",
+      "recipe": "Carne Asada Street Tacos",
+      "outputPath": "assets/meal-photos/exp01-002.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Carne Asada Street Tacos. Specific visual: undefined. Ingredients: 1.5 lb Flank steak; 0.25 cup Orange juice; 0.25 cup Lime juice; 2 tbsp Olive oil; 3 each Garlic cloves; 1 tsp Ground cumin; 1 tsp Chili powder; 1 tsp Salt; 12 each Corn tortillas; 0.5 each White onion; 0.25 cup Cilantro; 2 each Lime. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-003",
+      "recipe": "Slow-Cooker Pork Carnitas",
+      "outputPath": "assets/meal-photos/exp01-003.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Slow-Cooker Pork Carnitas. Specific visual: undefined. Ingredients: 3 lb Boneless pork shoulder; 0.5 cup Orange juice; 0.5 cup Chicken broth; 1 each White onion; 4 each Garlic cloves; 2 tsp Ground cumin; 2 tsp Dried oregano; 1.5 tsp Salt; 2 each Lime; 18 each Corn tortillas; 0.25 cup Cilantro. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-004",
+      "recipe": "Crispy Chicken Tostadas",
+      "outputPath": "assets/meal-photos/exp01-004.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Crispy Chicken Tostadas. Specific visual: undefined. Ingredients: 1 lb Boneless skinless chicken breasts; 8 each Corn tortillas; 1 cup Refried beans; 2 cup Shredded lettuce; 2 each Roma tomatoes; 1 cup Shredded Monterey Jack cheese; 0.5 cup Sour cream; 2 tbsp Olive oil; 1 tsp Chili powder; 1 tsp Ground cumin; 0.5 tsp Salt; 1 each Lime. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-005",
+      "recipe": "Beef Barbacoa Bowls",
+      "outputPath": "assets/meal-photos/exp01-005.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Beef Barbacoa Bowls. Specific visual: undefined. Ingredients: 2.5 lb Beef chuck roast; 2 each Chipotle peppers in adobo; 1 cup Beef broth; 2 tbsp Apple cider vinegar; 4 each Garlic cloves; 2 tsp Ground cumin; 2 tsp Dried oregano; 1.5 tsp Salt; 1.5 cup Long-grain rice dry; 2 cup Black beans canned; 3 cup Romaine lettuce; 2 each Lime. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-006",
+      "recipe": "Creamy Roasted Poblano Mac and Cheese",
+      "outputPath": "assets/meal-photos/exp01-006.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Creamy Roasted Poblano Mac and Cheese. Specific visual: Roasted poblano macaroni and cheese with green pepper strips and browned crunchy topping. Ingredients: 12 oz Elbow macaroni; 3 each Poblano peppers; 2 cup Cheddar cheese; 2 cup Milk; 3 tbsp Butter; 3 tbsp Flour; 0.5 cup Breadcrumbs. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-007",
+      "recipe": "Ground Beef Taco Skillet",
+      "outputPath": "assets/meal-photos/exp01-007.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Ground Beef Taco Skillet. Specific visual: undefined. Ingredients: 1 lb Lean ground beef; 1 each White onion; 1 each Bell pepper; 1 cup Black beans canned; 1 cup Diced tomatoes canned; 1 cup Frozen corn; 2 tsp Chili powder; 1 tsp Ground cumin; 0.5 tsp Salt; 1 cup Shredded cheddar cheese; 1 tbsp Olive oil; 8 each Corn tortillas. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-008",
+      "recipe": "Chicken Tinga Tacos",
+      "outputPath": "assets/meal-photos/exp01-008.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Chicken Tinga Tacos. Specific visual: undefined. Ingredients: 1.5 lb Boneless skinless chicken thighs; 1.5 cup Crushed tomatoes; 1 each Chipotle pepper in adobo; 1 each White onion; 3 each Garlic cloves; 0.5 cup Chicken broth; 1 tsp Dried oregano; 1 tsp Ground cumin; 0.75 tsp Salt; 12 each Corn tortillas; 0.25 cup Cilantro; 1 tbsp Olive oil. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-009",
+      "recipe": "Steak Fajita Quesadillas",
+      "outputPath": "assets/meal-photos/exp01-009.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Steak Fajita Quesadillas. Specific visual: undefined. Ingredients: 1.25 lb Flank steak; 8 each Flour tortillas; 2 each Bell peppers; 1 each Yellow onion; 2 cup Shredded Monterey Jack cheese; 2 tbsp Olive oil; 2 tbsp Lime juice; 2 tsp Chili powder; 1 tsp Ground cumin; 1 tsp Garlic powder; 0.75 tsp Salt. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-010",
+      "recipe": "Shrimp Fajita Rice Bowls",
+      "outputPath": "assets/meal-photos/exp01-010.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Shrimp Fajita Rice Bowls. Specific visual: undefined. Ingredients: 1.25 lb Peeled deveined raw shrimp; 1 cup Long-grain rice dry; 2 each Bell peppers; 1 each Red onion; 2 tbsp Olive oil; 2 tsp Chili powder; 1 tsp Ground cumin; 1 tsp Garlic powder; 0.75 tsp Salt; 2 each Lime; 0.25 cup Cilantro; 0.5 cup Salsa. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-011",
+      "recipe": "Smothered Beef Burritos",
+      "outputPath": "assets/meal-photos/exp01-011.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Smothered Beef Burritos. Specific visual: undefined. Ingredients: 1 lb Lean ground beef; 4 each Large flour tortillas; 2 cup Cooked rice; 1 cup Refried beans; 2 cup Red enchilada sauce; 1.5 cup Shredded cheddar cheese; 1 each Yellow onion; 1 tbsp Olive oil; 2 tsp Chili powder; 1 tsp Ground cumin; 0.5 tsp Salt; 0.5 cup Sour cream. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-012",
+      "recipe": "Chicken Chimichangas",
+      "outputPath": "assets/meal-photos/exp01-012.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Chicken Chimichangas. Specific visual: undefined. Ingredients: 3 cup Cooked shredded chicken; 4 each Large flour tortillas; 1.5 cup Shredded Monterey Jack cheese; 0.5 cup Salsa; 0.25 cup Canned diced green chiles; 1 tsp Ground cumin; 1 tsp Chili powder; 2 tbsp Olive oil; 0.5 cup Sour cream; 1 cup Shredded lettuce. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-013",
+      "recipe": "Tex-Mex Beef Stuffed Peppers",
+      "outputPath": "assets/meal-photos/exp01-013.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Tex-Mex Beef Stuffed Peppers. Specific visual: undefined. Ingredients: 4 each Large bell peppers; 1 lb Lean ground beef; 1.5 cup Cooked rice; 1 cup Black beans canned; 1 cup Diced tomatoes canned; 1 cup Shredded cheddar cheese; 0.5 each Yellow onion; 1 tbsp Olive oil; 2 tsp Chili powder; 1 tsp Ground cumin; 0.5 tsp Salt; 0.25 cup Water. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-014",
+      "recipe": "Cheesy Taco Pasta",
+      "outputPath": "assets/meal-photos/exp01-014.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Cheesy Taco Pasta. Specific visual: undefined. Ingredients: 1 lb Lean ground beef; 12 oz Dry elbow macaroni; 1 each Yellow onion; 2 cup Crushed tomatoes; 1 cup Beef broth; 2 cup Shredded cheddar cheese; 1 tbsp Olive oil; 2 tsp Chili powder; 1 tsp Ground cumin; 1 tsp Garlic powder; 0.75 tsp Salt; 0.5 cup Sour cream. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-015",
+      "recipe": "Pork Chile Verde",
+      "outputPath": "assets/meal-photos/exp01-015.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Pork Chile Verde. Specific visual: undefined. Ingredients: 2.5 lb Boneless pork shoulder; 1.5 lb Tomatillos; 2 each Poblano peppers; 2 each Jalapeño peppers; 1 each White onion; 4 each Garlic cloves; 1.5 cup Chicken broth; 2 tbsp Olive oil; 1.5 tsp Ground cumin; 1 tsp Dried oregano; 1.5 tsp Salt; 0.5 cup Cilantro; 1 each Lime. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-016",
+      "recipe": "Pork and Hominy Green Chile Skillet",
+      "outputPath": "assets/meal-photos/exp01-016.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Pork and Hominy Green Chile Skillet. Specific visual: Green chile pork and white hominy in rustic skillet with salsa verde. Ingredients: 1.5 lb Pork shoulder; 30 oz Hominy; 2 cup Salsa verde; 1 cup Chicken broth; 1 each Yellow onion; 3 each Garlic cloves; 1 tsp Cumin. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-017",
+      "recipe": "Chicken Pozole Verde",
+      "outputPath": "assets/meal-photos/exp01-017.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Chicken Pozole Verde. Specific visual: undefined. Ingredients: 1.5 lb Boneless skinless chicken thighs; 3 cup Hominy canned, drained; 1 lb Tomatillos; 2 each Poblano peppers; 1 each White onion; 3 each Garlic cloves; 6 cup Chicken broth; 1 tsp Ground cumin; 1 tsp Dried oregano; 1 tbsp Olive oil; 1 tsp Salt; 2 each Lime; 2 cup Shredded cabbage; 0.5 cup Cilantro. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-018",
+      "recipe": "Pork Pozole Rojo",
+      "outputPath": "assets/meal-photos/exp01-018.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Pork Pozole Rojo. Specific visual: undefined. Ingredients: 2 lb Boneless pork shoulder; 3 cup Hominy canned, drained; 4 each Dried guajillo chiles; 2 each Dried ancho chiles; 1 each White onion; 4 each Garlic cloves; 7 cup Chicken broth; 2 tsp Dried oregano; 1 tsp Ground cumin; 1.5 tsp Salt; 2 cup Shredded cabbage; 6 each Radishes; 2 each Lime. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-019",
+      "recipe": "Mexican Street Corn Chicken Bowls",
+      "outputPath": "assets/meal-photos/exp01-019.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Mexican Street Corn Chicken Bowls. Specific visual: undefined. Ingredients: 1.25 lb Boneless skinless chicken breasts; 1 cup Long-grain rice dry; 2 cup Corn kernels; 0.5 cup Cotija cheese; 0.25 cup Mayonnaise; 0.25 cup Sour cream; 2 each Lime; 2 tsp Chili powder; 1 tsp Ground cumin; 1 tsp Garlic powder; 2 tbsp Olive oil; 0.75 tsp Salt; 0.25 cup Cilantro. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-020",
+      "recipe": "Citrus Shrimp and Avocado Ceviche Cups",
+      "outputPath": "assets/meal-photos/exp01-020.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Citrus Shrimp and Avocado Ceviche Cups. Specific visual: Fresh chilled cooked shrimp ceviche cups with avocado cucumber citrus and cilantro. Ingredients: 1.5 lb Cooked shrimp; 4 each Lime; 1 each Orange; 2 each Avocados; 1 each Cucumber; 0.5 each Red onion; 0.25 cup Cilantro. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-021",
+      "recipe": "Steak Nacho Supreme",
+      "outputPath": "assets/meal-photos/exp01-021.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Steak Nacho Supreme. Specific visual: undefined. Ingredients: 1.25 lb Flank steak; 8 oz Tortilla chips; 1.5 cup Shredded cheddar cheese; 1 cup Canned black beans; 2 each Roma tomatoes; 0.25 cup Pickled jalapeño slices; 0.5 cup Sour cream; 1 each Avocado; 1 tbsp Olive oil; 1 tsp Chili powder; 1 tsp Ground cumin; 0.5 tsp Salt; 1 each Lime. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-022",
+      "recipe": "Pulled Pork Nachos",
+      "outputPath": "assets/meal-photos/exp01-022.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Pulled Pork Nachos. Specific visual: undefined. Ingredients: 1.5 lb Fully cooked pulled pork; 8 oz Tortilla chips; 1.5 cup Shredded Monterey Jack cheese; 1 cup Canned black beans; 0.5 cup Barbecue sauce; 0.5 each Red onion; 0.25 cup Pickled jalapeño slices; 0.5 cup Sour cream; 0.25 cup Cilantro; 1 each Lime. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-023",
+      "recipe": "Beef and Potato Taquitos",
+      "outputPath": "assets/meal-photos/exp01-023.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Beef and Potato Taquitos. Specific visual: undefined. Ingredients: 0.75 lb Lean ground beef; 1 lb Russet potatoes; 12 each Corn tortillas; 0.5 each Yellow onion; 1 cup Shredded cheddar cheese; 3 tbsp Olive oil; 1 tsp Chili powder; 1 tsp Ground cumin; 0.5 tsp Garlic powder; 0.75 tsp Salt; 0.5 cup Salsa. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-024",
+      "recipe": "Crispy Chicken Flautas",
+      "outputPath": "assets/meal-photos/exp01-024.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Crispy Chicken Flautas. Specific visual: undefined. Ingredients: 3 cup Cooked shredded chicken; 12 each Flour tortillas, fajita size; 1 cup Shredded Monterey Jack cheese; 0.5 cup Salsa verde; 1 tsp Ground cumin; 1 tsp Chili powder; 3 tbsp Olive oil; 2 cup Shredded lettuce; 2 each Roma tomatoes; 0.5 cup Sour cream; 0.25 tsp Salt. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-025",
+      "recipe": "Mexican Picadillo",
+      "outputPath": "assets/meal-photos/exp01-025.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Mexican Picadillo. Specific visual: undefined. Ingredients: 1 lb Lean ground beef; 1 lb Yukon Gold potatoes; 2 each Carrot; 3 each Roma tomatoes; 1 each Yellow onion; 3 each Garlic cloves; 1 cup Beef broth; 1 tbsp Olive oil; 1 tsp Ground cumin; 1 tsp Dried oregano; 0.75 tsp Salt; 0.25 tsp Black pepper; 0.5 cup Frozen peas. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-026",
+      "recipe": "Salsa Verde Chicken Tacos",
+      "outputPath": "assets/meal-photos/exp01-026.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Salsa Verde Chicken Tacos. Specific visual: undefined. Ingredients: 1.5 lb Boneless skinless chicken thighs; 1.5 cup Salsa verde; 0.5 cup Chicken broth; 0.5 each White onion; 2 each Garlic cloves; 1 tsp Ground cumin; 1 tbsp Olive oil; 0.5 tsp Salt; 12 each Corn tortillas; 0.25 cup Cilantro; 2 each Lime; 1 cup Shredded lettuce. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-027",
+      "recipe": "Beef and Cheese Empanadas",
+      "outputPath": "assets/meal-photos/exp01-027.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Beef and Cheese Empanadas. Specific visual: undefined. Ingredients: 1 lb Lean ground beef; 12 each Prepared refrigerated empanada dough discs; 1 cup Shredded Monterey Jack cheese; 1 each Yellow onion; 1 each Red bell pepper; 2 each Garlic cloves; 1 tbsp Olive oil; 1 tsp Ground cumin; 1 tsp Smoked paprika; 0.75 tsp Salt; 1 each Egg; 1 tbsp Water. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-028",
+      "recipe": "Cornbread Crusted Turkey Tamale Pie",
+      "outputPath": "assets/meal-photos/exp01-028.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Cornbread Crusted Turkey Tamale Pie. Specific visual: Cornbread topped turkey tamale pie with red beans and tomato filling visible in cut wedge. Ingredients: 1.5 lb Lean ground turkey; 15 oz Black beans; 14 oz Crushed tomatoes; 1 cup Cornmeal; 0.5 cup Flour; 1 cup Milk; 1 each Egg; 1 cup Cheddar; 1 tbsp Chili powder. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-029",
+      "recipe": "Chipotle Chicken Torta",
+      "outputPath": "assets/meal-photos/exp01-029.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Chipotle Chicken Torta. Specific visual: A toasted Mexican bolillo sandwich cut diagonally to reveal sliced grilled chicken, refried beans, melted pale Monterey Jack, avocado slices, tomato, shredded lettuce and chipotle mayonnaise; no beef, no seafood. Ingredients: 1.25 lb Boneless skinless chicken breasts; 4 each Bolillo rolls; 2 each Chipotle peppers in adobo; 0.25 cup Mayonnaise; 1 cup Refried beans; 4 oz Monterey Jack cheese; 1 each Avocado; 2 each Roma tomatoes; 1 cup Shredded lettuce; 2 tbsp Lime juice; 1 tbsp Olive oil; 1 tsp Ground cumin; 0.75 tsp Salt. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-030",
+      "recipe": "Shrimp Veracruz",
+      "outputPath": "assets/meal-photos/exp01-030.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Shrimp Veracruz. Specific visual: Large opaque shrimp simmered in a vivid red tomato sauce with visible green olive slices and capers, plated alongside white rice, bright lime garnish; no cheese or pasta. Ingredients: 1.5 lb Peeled deveined raw shrimp; 2 cup Crushed tomatoes; 1 each White onion; 3 each Garlic cloves; 0.5 cup Pitted green olives; 2 tbsp Capers, drained; 1 each Jalapeño; 2 tbsp Olive oil; 1 tsp Dried oregano; 1 each Bay leaf; 0.5 tsp Salt; 1 each Lime; 1 cup Long-grain rice dry. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-031",
+      "recipe": "Steak and Pinto Bean Burritos",
+      "outputPath": "assets/meal-photos/exp01-031.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Steak and Pinto Bean Burritos. Specific visual: A single cut-open toasted flour burrito displaying thin sliced steak, whole pinto beans, rice, sautéed bell peppers, onions, cheese and red salsa, luxury moody food photography. Ingredients: 1.25 lb Flank steak; 4 each Large flour tortillas; 1.5 cup Cooked rice; 1.5 cup Cooked pinto beans; 1 cup Shredded cheddar cheese; 1 each Bell pepper; 1 each Yellow onion; 0.5 cup Salsa; 2 tbsp Olive oil; 2 tsp Chili powder; 1 tsp Ground cumin; 0.75 tsp Salt; 1 each Lime. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-032",
+      "recipe": "Poblano Chicken Rice Bake",
+      "outputPath": "assets/meal-photos/exp01-032.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Poblano Chicken Rice Bake. Specific visual: Baked casserole in rustic dark ceramic with tender chicken pieces, fluffy rice, sliced poblano peppers, diced red tomato, melted Monterey Jack, chopped cilantro; no tortillas. Ingredients: 1.5 lb Boneless skinless chicken breasts; 1.5 cup Long-grain rice dry; 3 each Poblano peppers; 3 cup Chicken broth; 1 each Yellow onion; 3 each Garlic cloves; 1 cup Diced tomatoes, drained; 1.5 cup Shredded Monterey Jack cheese; 2 tbsp Olive oil; 1 tsp Ground cumin; 1 tsp Chili powder; 1 tsp Salt; 0.25 cup Cilantro. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-033",
+      "recipe": "Mexican Beef Stuffed Zucchini",
+      "outputPath": "assets/meal-photos/exp01-033.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Mexican Beef Stuffed Zucchini. Specific visual: Two baked zucchini halves filled with seasoned ground beef, rice, black beans and tomato, melted cheddar and cilantro; zucchini shells clearly visible, no tortillas. Ingredients: 4 each Medium zucchini; 1 lb Lean ground beef; 0.5 each Yellow onion; 2 each Garlic cloves; 1 cup Cooked rice; 1 cup Black beans, drained; 1 cup Diced tomatoes, drained; 1 cup Shredded cheddar cheese; 1 tbsp Olive oil; 2 tsp Chili powder; 1 tsp Ground cumin; 0.5 tsp Salt; 0.25 cup Cilantro. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-034",
+      "recipe": "Pork Al Pastor Tacos",
+      "outputPath": "assets/meal-photos/exp01-034.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Pork Al Pastor Tacos. Specific visual: Three warm corn tortillas filled with caramelized marinated pork and pineapple pieces, diced white onion, cilantro and lime; pineapple clearly visible. Ingredients: 2 lb Boneless pork shoulder; 1 cup Pineapple chunks; 0.5 cup Pineapple juice; 2 tbsp Achiote paste; 3 each Dried guajillo chiles; 2 tbsp White vinegar; 3 each Garlic cloves; 1 tsp Ground cumin; 1 tsp Dried oregano; 1 tsp Salt; 18 each Corn tortillas; 1 each White onion; 0.5 cup Cilantro; 2 each Lime. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-035",
+      "recipe": "Charred Corn and Black Bean Chicken Stuffed Poblanos",
+      "outputPath": "assets/meal-photos/exp01-035.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Charred Corn and Black Bean Chicken Stuffed Poblanos. Specific visual: Roasted poblano boats stuffed with shredded chicken black beans corn and melted pepper jack. Ingredients: 4 each Poblano peppers; 1.5 lb Cooked chicken; 15 oz Black beans; 1.5 cup Corn kernels; 1 cup Pepper jack; 1 cup Salsa; 1 tsp Cumin. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-036",
+      "recipe": "Beef Quesabirria",
+      "outputPath": "assets/meal-photos/exp01-036.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Beef Quesabirria. Specific visual: Three folded crispy red-braised beef and melted Oaxaca cheese corn tacos with cilantro and onion, hot deep-red birria consommé in a small dipping bowl beside the tacos. Ingredients: 2.5 lb Beef chuck roast; 4 each Dried guajillo chiles; 2 each Dried ancho chiles; 3 cup Beef broth; 1 each White onion; 4 each Garlic cloves; 2 tbsp Apple cider vinegar; 1 tsp Dried oregano; 1 tsp Ground cumin; 1.5 tsp Salt; 18 each Corn tortillas; 2 cup Shredded Oaxaca cheese; 0.5 cup Cilantro; 2 each Lime. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-037",
+      "recipe": "Tex-Mex Chili Mac",
+      "outputPath": "assets/meal-photos/exp01-037.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Tex-Mex Chili Mac. Specific visual: Short elbow macaroni visibly coated in hearty red beef-and-kidney-bean chili sauce topped with melting cheddar, served in rustic dark ceramic bowl. Ingredients: 1 lb Lean ground beef; 12 oz Dry elbow macaroni; 2 cup Diced tomatoes; 1.5 cup Kidney beans, rinsed; 1 each Yellow onion; 3 each Garlic cloves; 1.5 cup Beef broth; 2 tbsp Tomato paste; 2 tsp Chili powder; 1 tsp Ground cumin; 1 tsp Smoked paprika; 1.5 cup Shredded cheddar; 1 tbsp Olive oil; 0.5 tsp Salt. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-038",
+      "recipe": "Cheesy Chorizo Breakfast Tacos",
+      "outputPath": "assets/meal-photos/exp01-038.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Cheesy Chorizo Breakfast Tacos. Specific visual: Two soft flour breakfast tacos filled with crumbled pork chorizo, yellow scrambled eggs, red-and-green sautéed peppers, shredded Monterey Jack and fresh salsa; no tofu. Ingredients: 12 oz Raw Mexican-style pork chorizo; 8 each Large eggs; 8 each Small flour tortillas; 1 cup Shredded Monterey Jack cheese; 0.5 each Yellow onion; 1 each Bell pepper; 1 tsp Olive oil; 0.5 cup Salsa; 0.25 cup Cilantro; 0.25 tsp Salt. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-039",
+      "recipe": "Chorizo and Potato Burritos",
+      "outputPath": "assets/meal-photos/exp01-039.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Chorizo and Potato Burritos. Specific visual: One cut-open toasted flour burrito exposing distinct golden diced potatoes, pork chorizo crumbles, scrambled egg and melted cheddar beside salsa verde. Ingredients: 12 oz Raw Mexican-style pork chorizo; 1 lb Russet potatoes; 4 each Large flour tortillas; 1 cup Shredded cheddar; 4 each Large eggs; 0.5 each Yellow onion; 1 tbsp Olive oil; 0.5 tsp Ground cumin; 0.5 tsp Salt; 0.5 cup Salsa verde. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-040",
+      "recipe": "Grilled Fish Baja Tacos",
+      "outputPath": "assets/meal-photos/exp01-040.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Grilled Fish Baja Tacos. Specific visual: Three corn tortillas with grilled white fish fillet pieces, crunchy cabbage, fresh avocado, creamy white lime-yogurt drizzle, cilantro and lime wedges; no shrimp. Ingredients: 1.5 lb Skinless white fish fillets; 12 each Corn tortillas; 2 cup Shredded cabbage; 0.5 cup Plain Greek yogurt; 2 each Lime; 2 tbsp Olive oil; 1 tsp Chili powder; 1 tsp Ground cumin; 0.5 tsp Garlic powder; 0.75 tsp Salt; 0.25 cup Cilantro; 1 each Avocado. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-041",
+      "recipe": "Creamy Chicken Poblano Soup",
+      "outputPath": "assets/meal-photos/exp01-041.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Creamy Chicken Poblano Soup. Specific visual: Rustic dark bowl of creamy pale green poblano soup showing clearly shredded chicken, potato pieces, charred poblano strips, corn kernels, cilantro and lime; no tortillas. Ingredients: 1.25 lb Boneless skinless chicken breasts; 3 each Poblano peppers; 1 each Yellow onion; 3 each Garlic cloves; 5 cup Chicken broth; 0.75 cup Heavy cream; 1 lb Russet potatoes; 1 cup Frozen corn; 1 tbsp Olive oil; 1 tsp Ground cumin; 1 tsp Salt; 0.5 tsp Black pepper; 1 each Lime; 0.25 cup Cilantro. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-042",
+      "recipe": "Mexican Beef Meatballs",
+      "outputPath": "assets/meal-photos/exp01-042.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Mexican Beef Meatballs. Specific visual: Four rustic beef meatballs in bright red tomato-chipotle sauce over fluffy white rice, cilantro garnish; no spaghetti or pasta. Ingredients: 1.5 lb Lean ground beef; 1 each Egg; 0.5 cup Dry breadcrumbs; 1 each Yellow onion; 3 each Garlic cloves; 2 tsp Ground cumin; 2 tsp Chili powder; 1.25 tsp Salt; 1 tbsp Olive oil; 2 cup Crushed tomatoes; 1 cup Beef broth; 1 each Chipotle pepper in adobo; 0.25 cup Cilantro; 3 cup Cooked rice. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-043",
+      "recipe": "Smoky Chipotle Turkey Chili",
+      "outputPath": "assets/meal-photos/exp01-043.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Smoky Chipotle Turkey Chili. Specific visual: Deep stoneware bowl of hearty dark red turkey chili with kidney beans, black beans, crushed tomato, grated cheddar, steaming, spoon beside it. Ingredients: 1.5 lb Ground turkey; 1 each Yellow onion; 1 each Bell pepper; 3 each Garlic cloves; 2 cup Kidney beans, canned drained; 1 cup Black beans, canned drained; 3 cup Crushed tomatoes; 1 cup Chicken broth; 2 each Chipotle peppers in adobo; 2 tbsp Chili powder; 2 tsp Ground cumin; 1 tsp Smoked paprika; 1 tbsp Olive oil; 1 tsp Salt; 0.75 cup Shredded cheddar. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-044",
+      "recipe": "Steak Taco Salad",
+      "outputPath": "assets/meal-photos/exp01-044.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Steak Taco Salad. Specific visual: Luxury dark shallow salad bowl filled with romaine, thin sliced seared steak, sweet corn, black beans, diced tomatoes, avocado, red onion, cotija and creamy lime drizzle. Ingredients: 1.25 lb Flank steak; 8 cup Romaine lettuce; 1 cup Corn kernels; 1 cup Black beans, canned drained; 2 each Roma tomatoes; 1 each Avocado; 0.5 each Red onion; 0.5 cup Crumbled cotija cheese; 2 each Lime; 3 tbsp Olive oil; 2 tsp Chili powder; 1 tsp Ground cumin; 0.75 tsp Salt; 0.25 cup Sour cream. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-045",
+      "recipe": "Maple Glazed Breakfast Pork Sausage Patties",
+      "outputPath": "assets/meal-photos/exp01-045.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Maple Glazed Breakfast Pork Sausage Patties. Specific visual: Breakfast pork sausage patties glistening with maple glaze and sage on small ceramic plate. Ingredients: 1.5 lb Ground pork; 3 tbsp Maple syrup; 1 tsp Sage; 0.5 tsp Ground thyme; 0.75 tsp Salt; 0.5 tsp Black pepper; 1 tbsp Vegetable oil. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-046",
+      "recipe": "Baked Ziti with Italian Sausage",
+      "outputPath": "assets/meal-photos/exp01-046.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Baked Ziti with Italian Sausage. Specific visual: Baked pasta casserole of tubular ziti coated in red tomato sausage sauce, bubbling mozzarella, browned cheese edges; home kitchen natural daylight. Ingredients: 1 lb Dry ziti pasta; 1 lb Italian sausage; 4 cup Marinara sauce; 1 cup Ricotta cheese; 2 cup Shredded mozzarella; 0.5 cup Grated Parmesan; 1 tbsp Olive oil; 3 each Garlic cloves. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-047",
+      "recipe": "Honey Garlic Pork Chops",
+      "outputPath": "assets/meal-photos/exp01-047.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Honey Garlic Pork Chops. Specific visual: Two glazed golden-brown pork chops in glossy honey garlic sauce in a ceramic plate; sliced garlic visible, no breading. Ingredients: 1.5 lb Boneless pork chops; 0.25 cup Honey; 3 tbsp Low-sodium soy sauce; 4 each Garlic cloves; 1 tbsp Apple cider vinegar; 1 tbsp Olive oil; 0.5 tsp Black pepper. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-048",
+      "recipe": "Creamy Tuscan Chicken Pasta",
+      "outputPath": "assets/meal-photos/exp01-048.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Creamy Tuscan Chicken Pasta. Specific visual: Creamy penne pasta with sliced seared chicken breast, wilted baby spinach and sun-dried tomatoes in pale Parmesan sauce. Ingredients: 1.5 lb Boneless chicken breast; 12 oz Dry penne pasta; 1 cup Heavy cream; 3 cup Baby spinach; 0.5 cup Sun-dried tomatoes; 0.5 cup Grated Parmesan; 4 each Garlic cloves; 1 tbsp Olive oil; 1 tsp Italian seasoning. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-049",
+      "recipe": "Ginger Beef and Snow Pea Noodle Bowls",
+      "outputPath": "assets/meal-photos/exp01-049.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Ginger Beef and Snow Pea Noodle Bowls. Specific visual: Rice noodle bowl with ginger steak strips and vivid green snow peas. Ingredients: 1.5 lb Flank steak; 3 cup Snow peas; 12 oz Rice noodles; 0.25 cup Soy sauce; 2 tbsp Fresh ginger; 4 each Garlic cloves; 1 tbsp Sesame oil; 2 tbsp Honey. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-050",
+      "recipe": "French Onion Potato Gratin",
+      "outputPath": "assets/meal-photos/exp01-050.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: French Onion Potato Gratin. Specific visual: Bubbling golden French onion potato gratin topped with melted Gruyere and browned onions. Ingredients: 2 lb Yukon gold potatoes; 3 each Yellow onions; 1.5 cup Gruyere cheese; 1.5 cup Heavy cream; 3 tbsp Butter; 1 tsp Fresh thyme; 0.5 cup Beef broth. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-051",
+      "recipe": "Lemon Butter Baked Cod",
+      "outputPath": "assets/meal-photos/exp01-051.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Lemon Butter Baked Cod. Specific visual: Baked flaky white cod fillet in lemon butter sauce with lemon slices, garlic and chopped parsley, no salmon. Ingredients: 1.5 lb Cod fillets; 4 tbsp Butter; 2 each Lemon; 3 each Garlic cloves; 1 tsp Paprika; 0.25 cup Fresh parsley; 0.5 tsp Salt; 0.25 tsp Black pepper. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-052",
+      "recipe": "BBQ Pulled Chicken Sandwiches",
+      "outputPath": "assets/meal-photos/exp01-052.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: BBQ Pulled Chicken Sandwiches. Specific visual: Soft hamburger buns filled with shredded smoky barbecue chicken and crisp creamy cabbage slaw, two sandwiches in natural daylight. Ingredients: 2 lb Boneless chicken breast; 1.5 cup Barbecue sauce; 0.5 cup Chicken broth; 2 tbsp Apple cider vinegar; 1 tsp Smoked paprika; 6 each Hamburger buns; 3 cup Coleslaw mix; 0.25 cup Mayonnaise. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-053",
+      "recipe": "Savory Cheddar Biscuit Breakfast Bake",
+      "outputPath": "assets/meal-photos/exp01-053.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Savory Cheddar Biscuit Breakfast Bake. Specific visual: Golden cheddar biscuit breakfast casserole with visible baked biscuit pieces ham and spinach. Ingredients: 16 oz Refrigerated biscuit dough; 8 each Eggs; 0.75 cup Milk; 1.5 cup Cheddar; 2 cup Baby spinach; 8 oz Breakfast ham; 1 tbsp Butter. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-054",
+      "recipe": "Turkey and Wild Rice Soup",
+      "outputPath": "assets/meal-photos/exp01-054.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Turkey and Wild Rice Soup. Specific visual: Homey bowl of turkey and wild rice soup with shredded turkey, dark rice grains, carrots, celery and creamy golden broth. Ingredients: 1.5 lb Cooked shredded turkey; 1 cup Wild rice blend; 8 cup Chicken broth; 3 each Carrots; 3 each Celery stalks; 1 each Yellow onion; 1 tbsp Olive oil; 1 tsp Dried thyme; 1 cup Milk. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-055",
+      "recipe": "Moroccan Apricot Chicken with Couscous",
+      "outputPath": "assets/meal-photos/exp01-055.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Moroccan Apricot Chicken with Couscous. Specific visual: Golden Moroccan chicken with chickpeas dried apricots and fluffy couscous natural-light food photograph. Ingredients: 1.5 lb Boneless chicken thighs; 1.5 cup Dry couscous; 0.75 cup Dried apricots; 15 oz Chickpeas; 2 cup Chicken broth; 1 each Yellow onion; 1 tsp Ground cumin; 0.5 tsp Ground cinnamon; 1 tbsp Olive oil. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-056",
+      "recipe": "Garlic Parmesan Chicken Wings",
+      "outputPath": "assets/meal-photos/exp01-056.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Garlic Parmesan Chicken Wings. Specific visual: Crispy oven-baked chicken wings coated in garlic butter and fine Parmesan flecks, chopped parsley, simple platter daylight. Ingredients: 3 lb Chicken wings; 1 tbsp Baking powder; 1 tsp Garlic powder; 1 tsp Salt; 4 tbsp Butter; 4 each Garlic cloves; 0.5 cup Parmesan cheese; 0.25 cup Fresh parsley. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-057",
+      "recipe": "Sausage and Peppers Hoagies",
+      "outputPath": "assets/meal-photos/exp01-057.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Sausage and Peppers Hoagies. Specific visual: Toasted hoagie roll filled with sliced Italian sausage, red and green peppers, onions, melted provolone and tomato sauce, natural daylight. Ingredients: 1.5 lb Italian sausage links; 3 each Bell peppers; 2 each Yellow onions; 4 each Hoagie rolls; 1 tbsp Olive oil; 1 cup Marinara sauce; 4 slice Provolone cheese; 1 tsp Dried oregano. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-058",
+      "recipe": "One-Pot Chicken Alfredo",
+      "outputPath": "assets/meal-photos/exp01-058.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: One-Pot Chicken Alfredo. Specific visual: Creamy fettuccine Alfredo topped with juicy golden chicken strips and Parmesan, simple white ceramic bowl in daylight. Ingredients: 1.5 lb Boneless chicken breast; 12 oz Dry fettuccine; 1 cup Heavy cream; 3 cup Chicken broth; 1 cup Parmesan cheese; 2 tbsp Butter; 4 each Garlic cloves; 1 tsp Italian seasoning. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-059",
+      "recipe": "Pineapple Ginger Chicken Lettuce Cups",
+      "outputPath": "assets/meal-photos/exp01-059.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Pineapple Ginger Chicken Lettuce Cups. Specific visual: Fresh butter lettuce cups filled with diced ginger chicken and golden pineapple pieces, bright daylight. Ingredients: 1.5 lb Boneless chicken thighs; 1.5 cup Pineapple chunks; 1 head Butter lettuce; 2 tbsp Fresh ginger; 3 each Garlic cloves; 2 tbsp Low-sodium soy sauce; 2 tbsp Rice vinegar; 1 tbsp Sesame oil. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-060",
+      "recipe": "Balsamic Steak and Roasted Grape Salad",
+      "outputPath": "assets/meal-photos/exp01-060.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Balsamic Steak and Roasted Grape Salad. Specific visual: Mixed green salad with sliced seared steak, roasted red grapes, goat cheese and walnuts in window light. Ingredients: 1.5 lb Sirloin steak; 2 cup Red seedless grapes; 6 cup Mixed salad greens; 4 oz Goat cheese; 0.5 cup Walnuts; 3 tbsp Balsamic vinegar; 2 tbsp Olive oil; 1 tsp Dijon mustard. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-061",
+      "recipe": "Chicken Tortellini Soup",
+      "outputPath": "assets/meal-photos/exp01-061.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Chicken Tortellini Soup. Specific visual: Golden chicken broth soup with plump cheese tortellini, shredded chicken, sliced carrots, celery and leafy spinach in bowl. Ingredients: 1.5 lb Cooked shredded chicken; 18 oz Refrigerated cheese tortellini; 8 cup Chicken broth; 3 each Carrots; 3 each Celery stalks; 3 cup Baby spinach; 1 each Yellow onion; 1 tbsp Olive oil; 1 tsp Italian seasoning. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-062",
+      "recipe": "Sheet-Pan Lemon Herb Chicken and Potatoes",
+      "outputPath": "assets/meal-photos/exp01-062.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Sheet-Pan Lemon Herb Chicken and Potatoes. Specific visual: Natural roasted bone-in lemon herb chicken thighs with golden baby potatoes and green beans on one baking sheet, daylight. Ingredients: 2.5 lb Bone-in chicken thighs; 1.5 lb Baby potatoes; 1 lb Green beans; 3 tbsp Olive oil; 2 each Lemon; 4 each Garlic cloves; 1 tsp Dried rosemary; 1 tsp Dried thyme. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-063",
+      "recipe": "Crispy Ginger Orange Pork Cutlets",
+      "outputPath": "assets/meal-photos/exp01-063.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Crispy Ginger Orange Pork Cutlets. Specific visual: Golden panko breaded pork cutlets with orange ginger drizzle and citrus slices. Ingredients: 1.5 lb Pork loin cutlets; 1.5 cup Panko breadcrumbs; 2 each Eggs; 0.5 cup Flour; 0.75 cup Orange juice; 1 tbsp Fresh ginger; 2 tbsp Honey; 2 tbsp Vegetable oil. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-064",
+      "recipe": "Breakfast Sausage Egg Casserole",
+      "outputPath": "assets/meal-photos/exp01-064.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Breakfast Sausage Egg Casserole. Specific visual: Golden baked breakfast egg casserole cut into squares showing sausage crumbles, cheddar, bell pepper and toasted bread, natural light. Ingredients: 1 lb Breakfast sausage; 10 each Eggs; 1 cup Milk; 1.5 cup Shredded cheddar; 6 slice Sandwich bread; 1 each Bell pepper; 0.5 each Yellow onion; 1 tbsp Butter. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-065",
+      "recipe": "Apple Cider Pork and Sweet Potato Sheet Pan",
+      "outputPath": "assets/meal-photos/exp01-065.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Apple Cider Pork and Sweet Potato Sheet Pan. Specific visual: Roasted cubed pork loin with orange sweet potato pieces, golden apples and red onion on baking tray. Ingredients: 1.5 lb Boneless pork loin; 2 lb Sweet potatoes; 2 each Apples; 0.5 cup Apple cider; 2 tbsp Olive oil; 1 tbsp Dijon mustard; 1 tbsp Fresh rosemary; 1 each Red onion. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-066",
+      "recipe": "Creole Catfish with Tomato Okra Relish",
+      "outputPath": "assets/meal-photos/exp01-066.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Creole Catfish with Tomato Okra Relish. Specific visual: Seared Cajun catfish fillet with chunky red tomato and green okra relish. Ingredients: 1.5 lb Catfish fillets; 2 cup Okra; 14 oz Diced tomatoes; 1 each Bell pepper; 0.5 each Yellow onion; 2 tsp Cajun seasoning; 2 tbsp Olive oil; 1 each Lemon. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-067",
+      "recipe": "Ricotta Spinach Stuffed Portobellos",
+      "outputPath": "assets/meal-photos/exp01-067.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Ricotta Spinach Stuffed Portobellos. Specific visual: Baked large portobello caps filled with creamy ricotta spinach and sun dried tomato, golden mozzarella. Ingredients: 8 each Large portobello mushrooms; 1.5 cup Ricotta cheese; 4 cup Baby spinach; 0.5 cup Sun-dried tomatoes; 1 cup Mozzarella cheese; 3 each Garlic cloves; 2 tbsp Olive oil; 1 tsp Italian seasoning. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-068",
+      "recipe": "Maple Mustard Roasted Salmon",
+      "outputPath": "assets/meal-photos/exp01-068.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Maple Mustard Roasted Salmon. Specific visual: Oven-baked salmon fillet with glossy maple mustard glaze, lightly browned edges and lemon wedges. Ingredients: 1.5 lb Salmon fillets; 2 tbsp Dijon mustard; 3 tbsp Maple syrup; 1 each Lemon; 1 tbsp Olive oil; 2 each Garlic cloves; 0.5 tsp Black pepper. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-069",
+      "recipe": "Classic Chicken Noodle Casserole",
+      "outputPath": "assets/meal-photos/exp01-069.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Classic Chicken Noodle Casserole. Specific visual: Golden baked chicken noodle casserole with visible egg noodles, peas and breadcrumb top. Ingredients: 2 lb Cooked shredded chicken; 12 oz Egg noodles; 2 can Cream of chicken soup; 1 cup Milk; 2 cup Frozen peas; 1 cup Shredded cheddar; 0.75 cup Bread crumbs; 2 tbsp Butter. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-070",
+      "recipe": "Garlic Butter Steak Bites and Potatoes",
+      "outputPath": "assets/meal-photos/exp01-070.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Garlic Butter Steak Bites and Potatoes. Specific visual: Seared bite-size steak cubes and crisp golden baby potatoes coated in garlic butter, skillet daylight. Ingredients: 1.5 lb Sirloin steak; 1.5 lb Baby potatoes; 4 tbsp Butter; 1 tbsp Olive oil; 5 each Garlic cloves; 0.25 cup Fresh parsley; 1 tsp Paprika; 1 tsp Salt. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-071",
+      "recipe": "Lemon Dill Chicken and Barley Skillet",
+      "outputPath": "assets/meal-photos/exp01-071.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Lemon Dill Chicken and Barley Skillet. Specific visual: A natural daylight skillet meal of golden chicken pieces, plump barley grains, carrots, spinach, lemon zest and fresh dill. Ingredients: 1.5 lb Boneless chicken thighs; 1.25 cup Pearled barley; 3.5 cup Chicken broth; 2 each Carrots; 2 cup Baby spinach; 1 each Lemon; 0.25 cup Fresh dill; 1 tbsp Olive oil; 3 each Garlic cloves. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-072",
+      "recipe": "Baked Honey Mustard Chicken Thighs",
+      "outputPath": "assets/meal-photos/exp01-072.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Baked Honey Mustard Chicken Thighs. Specific visual: Golden glazed baked chicken thighs with glossy honey mustard sauce and thyme on home-style plate. Ingredients: 2 lb Boneless chicken thighs; 0.25 cup Dijon mustard; 0.25 cup Honey; 1 tbsp Apple cider vinegar; 3 each Garlic cloves; 1 tbsp Olive oil; 1 tsp Dried thyme. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-073",
+      "recipe": "Creamy Tomato Basil Tortellini",
+      "outputPath": "assets/meal-photos/exp01-073.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Creamy Tomato Basil Tortellini. Specific visual: Plump cheese tortellini in creamy red tomato basil sauce with grated Parmesan, natural daylight. Ingredients: 20 oz Refrigerated cheese tortellini; 28 oz Crushed tomatoes; 0.75 cup Heavy cream; 0.5 cup Fresh basil; 4 each Garlic cloves; 0.5 cup Parmesan cheese; 1 tbsp Olive oil; 0.5 each Yellow onion. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-074",
+      "recipe": "Ground Turkey Lettuce Wraps",
+      "outputPath": "assets/meal-photos/exp01-074.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Ground Turkey Lettuce Wraps. Specific visual: Fresh butter lettuce cups packed with glossy ground turkey, diced water chestnuts and green onion garnish. Ingredients: 1.5 lb Lean ground turkey; 1 head Butter lettuce; 8 oz Water chestnuts; 3 tbsp Low-sodium soy sauce; 3 tbsp Hoisin sauce; 1 tbsp Rice vinegar; 1 tbsp Fresh ginger; 3 each Garlic cloves; 1 tbsp Sesame oil; 4 each Green onions. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-075",
+      "recipe": "Smoky Sausage Cabbage and Apple Skillet",
+      "outputPath": "assets/meal-photos/exp01-075.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Smoky Sausage Cabbage and Apple Skillet. Specific visual: Skillet of browned sausage coins with silky green cabbage and apple wedges. Ingredients: 1.5 lb Smoked sausage; 1 head Green cabbage; 2 each Apples; 1 each Yellow onion; 2 tbsp Apple cider vinegar; 1 tbsp Dijon mustard; 1 tbsp Olive oil. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-076",
+      "recipe": "Crispy Baked Fish Sticks",
+      "outputPath": "assets/meal-photos/exp01-076.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Crispy Baked Fish Sticks. Specific visual: Homemade golden crunchy panko cod fish sticks arranged on plate with fresh lemon wedges and no commercial packaging. Ingredients: 1.5 lb Cod fillets; 1.5 cup Panko breadcrumbs; 0.5 cup All-purpose flour; 2 each Eggs; 1 tsp Paprika; 1 tsp Garlic powder; 2 tbsp Olive oil; 1 each Lemon. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-077",
+      "recipe": "Broccoli Cheddar Stuffed Chicken",
+      "outputPath": "assets/meal-photos/exp01-077.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Broccoli Cheddar Stuffed Chicken. Specific visual: Sliced juicy stuffed chicken breast revealing bright broccoli florets and melted cheddar cheese filling. Ingredients: 2 lb Boneless chicken breasts; 2 cup Broccoli florets; 1 cup Shredded cheddar; 4 oz Cream cheese; 1 tsp Garlic powder; 1 tbsp Olive oil; 1 tsp Paprika; 0.5 tsp Salt. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-078",
+      "recipe": "Slow-Cooker White Chicken Chili",
+      "outputPath": "assets/meal-photos/exp01-078.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Slow-Cooker White Chicken Chili. Specific visual: Creamy white chicken chili with shredded chicken, white beans, diced mild green chiles and thick pale broth. Ingredients: 2 lb Boneless chicken breast; 30 oz White beans; 4 cup Chicken broth; 8 oz Diced green chiles; 8 oz Cream cheese; 1 each Yellow onion; 2 tsp Ground cumin; 1 tsp Chili powder; 1 each Lime. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-079",
+      "recipe": "Italian Meatball Subs",
+      "outputPath": "assets/meal-photos/exp01-079.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Italian Meatball Subs. Specific visual: Toasted Italian sub roll overflowing with round beef meatballs in red tomato sauce and melted mozzarella. Ingredients: 1.5 lb Ground beef; 0.5 cup Breadcrumbs; 1 each Egg; 0.25 cup Parmesan; 2 cup Marinara sauce; 4 each Hoagie rolls; 1 cup Mozzarella cheese; 1 tsp Garlic powder; 1 tsp Italian seasoning. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-080",
+      "recipe": "Roasted Vegetable and Chicken Orzo",
+      "outputPath": "assets/meal-photos/exp01-080.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Roasted Vegetable and Chicken Orzo. Specific visual: Colorful orzo pasta with roast chicken chunks, zucchini, blistered cherry tomatoes, red onion and feta. Ingredients: 1.5 lb Boneless chicken breast; 1.5 cup Dry orzo; 2 each Zucchini; 2 cup Cherry tomatoes; 1 each Red onion; 3 cup Chicken broth; 3 tbsp Olive oil; 0.5 cup Feta cheese; 1 tsp Dried oregano. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-081",
+      "recipe": "Balsamic Beef Short Ribs with Polenta",
+      "outputPath": "assets/meal-photos/exp01-081.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Balsamic Beef Short Ribs with Polenta. Specific visual: Fork tender balsamic beef short ribs over creamy Parmesan polenta. Ingredients: 3 lb Beef short ribs; 0.5 cup Balsamic vinegar; 2 cup Beef broth; 1 each Yellow onion; 4 each Garlic cloves; 1 cup Quick polenta; 2 cup Milk; 0.5 cup Parmesan. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-082",
+      "recipe": "Lemon Garlic Shrimp Linguine",
+      "outputPath": "assets/meal-photos/exp01-082.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Lemon Garlic Shrimp Linguine. Specific visual: Bright linguine with pink shrimp, garlic butter, lemon slices and chopped parsley, natural light. Ingredients: 1.5 lb Raw peeled shrimp; 12 oz Dry linguine; 2 tbsp Olive oil; 3 tbsp Butter; 5 each Garlic cloves; 2 each Lemon; 0.25 cup Fresh parsley; 0.25 tsp Red pepper flakes. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-083",
+      "recipe": "Ginger Scallion Beef and Cabbage Bowls",
+      "outputPath": "assets/meal-photos/exp01-083.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Ginger Scallion Beef and Cabbage Bowls. Specific visual: Bowl of ginger scallion ground beef with shredded cabbage on white rice, daylight natural food photograph. Ingredients: 1.5 lb Lean ground beef; 0.5 head Green cabbage; 2 tbsp Fresh ginger; 5 each Green onions; 3 tbsp Low-sodium soy sauce; 2 tbsp Rice vinegar; 1 tbsp Brown sugar; 1 tbsp Sesame oil; 1 cup Jasmine rice. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-084",
+      "recipe": "Ham and Cheese Breakfast Sliders",
+      "outputPath": "assets/meal-photos/exp01-084.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Ham and Cheese Breakfast Sliders. Specific visual: Golden breakfast mini sandwiches filled with folded eggs, sliced ham and melted Swiss on baking tray. Ingredients: 12 each Hawaiian dinner rolls; 12 oz Deli ham; 6 slice Swiss cheese; 6 each Eggs; 0.25 cup Milk; 3 tbsp Butter; 1 tbsp Dijon mustard. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-085",
+      "recipe": "One-Pan Creamy Garlic Chicken and Rice",
+      "outputPath": "assets/meal-photos/exp01-085.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: One-Pan Creamy Garlic Chicken and Rice. Specific visual: Creamy garlicky rice with golden chicken thighs and spinach cooked in one black skillet. Ingredients: 1.5 lb Boneless chicken thighs; 1.5 cup Long grain white rice; 3 cup Chicken broth; 0.5 cup Heavy cream; 5 each Garlic cloves; 2 cup Baby spinach; 1 tbsp Olive oil; 1 tsp Italian seasoning. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-086",
+      "recipe": "Beef and Bean Chili",
+      "outputPath": "assets/meal-photos/exp01-086.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Beef and Bean Chili. Specific visual: Thick hearty homemade beef chili with kidney beans and chunky tomatoes in ceramic bowl. Ingredients: 2 lb Lean ground beef; 30 oz Kidney beans; 28 oz Crushed tomatoes; 15 oz Tomato sauce; 1 each Yellow onion; 1 each Bell pepper; 2 tbsp Chili powder; 2 tsp Ground cumin; 1 tbsp Olive oil. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-087",
+      "recipe": "Roasted Red Pepper Turkey Burgers",
+      "outputPath": "assets/meal-photos/exp01-087.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Roasted Red Pepper Turkey Burgers. Specific visual: Turkey burgers with visible roasted red pepper pieces feta and spinach on toasted buns. Ingredients: 1.5 lb Ground turkey; 0.75 cup Roasted red peppers; 0.33 cup Breadcrumbs; 1 each Egg; 0.5 cup Feta; 4 each Hamburger buns; 2 cup Baby spinach. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-088",
+      "recipe": "Pork Tenderloin with Apple Pan Sauce",
+      "outputPath": "assets/meal-photos/exp01-088.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Pork Tenderloin with Apple Pan Sauce. Specific visual: Sliced roasted pork tenderloin medallions with golden sautéed apple slices and glossy cider sauce. Ingredients: 1.5 lb Pork tenderloin; 2 each Apples; 1 cup Apple cider; 1 tbsp Dijon mustard; 2 tbsp Butter; 1 tbsp Olive oil; 1 tsp Fresh thyme; 0.5 each Yellow onion. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-089",
+      "recipe": "Baked Chicken Parmesan Meatballs",
+      "outputPath": "assets/meal-photos/exp01-089.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Baked Chicken Parmesan Meatballs. Specific visual: Golden chicken Parmesan meatballs nestled in red marinara with melted mozzarella and green basil garnish. Ingredients: 1.5 lb Ground chicken; 0.75 cup Breadcrumbs; 1 each Egg; 0.5 cup Grated Parmesan; 2 cup Marinara sauce; 1 cup Shredded mozzarella; 1 tsp Italian seasoning; 1 tbsp Olive oil. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-090",
+      "recipe": "Breakfast Potato and Chorizo Hash",
+      "outputPath": "assets/meal-photos/exp01-090.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Breakfast Potato and Chorizo Hash. Specific visual: Rustic breakfast skillet of crispy potatoes, red chorizo, bell peppers and four fully cooked eggs. Ingredients: 12 oz Fresh Mexican chorizo; 1.5 lb Yukon gold potatoes; 4 each Eggs; 1 each Bell pepper; 1 each Yellow onion; 1 tbsp Olive oil; 1 tsp Smoked paprika; 0.25 cup Fresh cilantro. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-091",
+      "recipe": "Creamy Mushroom Pork Tenderloin",
+      "outputPath": "assets/meal-photos/exp01-091.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Creamy Mushroom Pork Tenderloin. Specific visual: Pork medallions coated in creamy mushroom sauce on a simple plate. Ingredients: 1.5 lb Pork tenderloin; 12 oz Cremini mushrooms; 1 cup Chicken broth; 0.75 cup Heavy cream; 3 each Garlic cloves; 1 tbsp Dijon mustard; 1 tbsp Olive oil. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-092",
+      "recipe": "Greek Lemon Chicken Soup",
+      "outputPath": "assets/meal-photos/exp01-092.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Greek Lemon Chicken Soup. Specific visual: Pale yellow Greek lemon chicken and rice soup with carrot and dill. Ingredients: 1.5 lb Cooked chicken breast; 7 cup Chicken broth; 0.75 cup Long grain rice; 3 each Eggs; 2 each Lemons; 2 each Carrots; 0.25 cup Fresh dill. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-093",
+      "recipe": "Balsamic Turkey and Roasted Beet Grain Bowls",
+      "outputPath": "assets/meal-photos/exp01-093.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Balsamic Turkey and Roasted Beet Grain Bowls. Specific visual: Bright naturally photographed grain bowl showing farro, roasted ruby beets, browned ground turkey, arugula and crumbled feta. Ingredients: 1.5 lb Lean ground turkey; 1 lb Raw beets; 1.25 cup Farro; 4 cup Baby arugula; 0.5 cup Feta cheese; 3 tbsp Balsamic vinegar; 2 tbsp Olive oil; 1 tsp Garlic powder; 0.5 tsp Salt. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-094",
+      "recipe": "Orange Ginger Glazed Pork Tenderloin",
+      "outputPath": "assets/meal-photos/exp01-094.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Orange Ginger Glazed Pork Tenderloin. Specific visual: Sliced roasted pork tenderloin in orange ginger glaze with citrus wedges. Ingredients: 1.5 lb Pork tenderloin; 0.75 cup Orange juice; 3 tbsp Soy sauce; 3 tbsp Honey; 2 tbsp Fresh ginger; 3 each Garlic cloves; 1 tbsp Cornstarch. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-095",
+      "recipe": "Turkey Spinach Stuffed Manicotti",
+      "outputPath": "assets/meal-photos/exp01-095.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Turkey Spinach Stuffed Manicotti. Specific visual: Baked tubular manicotti stuffed with turkey and spinach in red marinara and mozzarella. Ingredients: 12 each Manicotti shells; 1.25 lb Lean ground turkey; 1.5 cup Ricotta; 4 cup Baby spinach; 1.5 cup Mozzarella; 3 cup Marinara; 1 tsp Italian seasoning. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-096",
+      "recipe": "Thai Basil Beef Rice",
+      "outputPath": "assets/meal-photos/exp01-096.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Thai Basil Beef Rice. Specific visual: Thai basil ground beef with bell pepper over steamed jasmine rice. Ingredients: 1.5 lb Ground beef; 1.5 cup Jasmine rice; 1 cup Fresh basil; 5 each Garlic cloves; 2 each Bell peppers; 3 tbsp Soy sauce; 2 tbsp Oyster sauce; 1 tbsp Brown sugar. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-097",
+      "recipe": "Rosemary Garlic Turkey Meatloaf",
+      "outputPath": "assets/meal-photos/exp01-097.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Rosemary Garlic Turkey Meatloaf. Specific visual: Slices of rosemary turkey meatloaf with red ketchup glaze and visible herbs. Ingredients: 2 lb Ground turkey; 2 each Eggs; 0.75 cup Breadcrumbs; 0.5 cup Milk; 1 each Yellow onion; 3 each Garlic cloves; 1 tbsp Rosemary; 0.5 cup Ketchup. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-098",
+      "recipe": "Coconut Lime Chicken Curry",
+      "outputPath": "assets/meal-photos/exp01-098.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Coconut Lime Chicken Curry. Specific visual: Golden coconut chicken curry with bell peppers served over fluffy rice and lime. Ingredients: 1.5 lb Chicken thighs; 14 oz Coconut milk; 2 tbsp Red curry paste; 2 each Bell peppers; 1 each Yellow onion; 1 tbsp Fresh ginger; 2 each Lime; 1.5 cup Jasmine rice. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-099",
+      "recipe": "Smoky Ham and Navy Bean Soup",
+      "outputPath": "assets/meal-photos/exp01-099.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Smoky Ham and Navy Bean Soup. Specific visual: Chunky white navy beans with diced pink ham and carrots in golden soup broth. Ingredients: 1.5 lb Cooked diced ham; 45 oz Canned navy beans; 7 cup Chicken broth; 3 each Carrots; 3 each Celery stalks; 1 each Yellow onion; 1 tsp Smoked paprika; 1 tbsp Olive oil. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-100",
+      "recipe": "Crispy Ranch Potato Wedges with Chicken",
+      "outputPath": "assets/meal-photos/exp01-100.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Crispy Ranch Potato Wedges with Chicken. Specific visual: Crispy oven-baked ranch potato wedges beside golden chicken tenderloins and creamy dip. Ingredients: 1.5 lb Chicken tenders; 2 lb Russet potatoes; 2 tbsp Ranch seasoning; 3 tbsp Olive oil; 1 tsp Paprika; 0.5 cup Greek yogurt; 1 tbsp Lemon juice. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-101",
+      "recipe": "Creamy Spinach and Artichoke Chicken Bake",
+      "outputPath": "assets/meal-photos/exp01-101.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Creamy Spinach and Artichoke Chicken Bake. Specific visual: Baked chicken breasts under creamy spinach artichoke cheesy topping in ceramic pan. Ingredients: 1.5 lb Chicken breasts; 14 oz Artichoke hearts; 4 cup Baby spinach; 6 oz Cream cheese; 1 cup Mozzarella; 0.5 cup Parmesan; 3 each Garlic cloves. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-102",
+      "recipe": "Apricot Glazed Pork Meatballs",
+      "outputPath": "assets/meal-photos/exp01-102.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Apricot Glazed Pork Meatballs. Specific visual: Glossy amber apricot glazed pork meatballs with sliced green onions on plate. Ingredients: 1.5 lb Ground pork; 0.5 cup Breadcrumbs; 1 each Egg; 0.5 cup Apricot preserves; 2 tbsp Soy sauce; 1 tbsp Rice vinegar; 1 tbsp Fresh ginger; 3 each Green onions. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-103",
+      "recipe": "Butternut Squash Sausage Risotto",
+      "outputPath": "assets/meal-photos/exp01-103.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Butternut Squash Sausage Risotto. Specific visual: Creamy orange butternut risotto with browned Italian sausage and flecks of sage. Ingredients: 1.5 cup Arborio rice; 1 lb Italian sausage; 1.5 lb Butternut squash; 5 cup Chicken broth; 0.75 cup Parmesan; 1 each Yellow onion; 2 tbsp Butter; 1 tbsp Fresh sage. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-104",
+      "recipe": "Honey Sesame Salmon Rice Bowls",
+      "outputPath": "assets/meal-photos/exp01-104.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Honey Sesame Salmon Rice Bowls. Specific visual: Sticky honey sesame baked salmon over brown rice with crisp cucumber and carrot. Ingredients: 1.5 lb Salmon fillets; 1.5 cup Brown rice; 3 tbsp Honey; 3 tbsp Soy sauce; 2 tbsp Sesame seeds; 1 each Cucumber; 2 each Carrots; 2 tbsp Rice vinegar. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-105",
+      "recipe": "Chicken and Corn Chowder",
+      "outputPath": "assets/meal-photos/exp01-105.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Chicken and Corn Chowder. Specific visual: Thick golden chicken corn chowder with potato cubes and sweet yellow corn. Ingredients: 1.5 lb Chicken breasts; 4 cup Corn kernels; 1 lb Yukon potatoes; 5 cup Chicken broth; 2 cup Milk; 1 each Yellow onion; 2 tbsp Butter; 0.25 cup Flour. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-106",
+      "recipe": "Crispy Oven Barbecue Pork Ribs",
+      "outputPath": "assets/meal-photos/exp01-106.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Crispy Oven Barbecue Pork Ribs. Specific visual: Oven barbecue pork ribs with caramelized smoky red glaze and exposed bones. Ingredients: 3 lb Pork baby back ribs; 1 cup Barbecue sauce; 2 tbsp Brown sugar; 2 tsp Smoked paprika; 1 tsp Garlic powder; 2 tbsp Apple cider vinegar. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-107",
+      "recipe": "Cheddar Bacon Broccoli Quiche",
+      "outputPath": "assets/meal-photos/exp01-107.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Cheddar Bacon Broccoli Quiche. Specific visual: Golden broccoli cheddar quiche slice with bacon pieces in flaky pastry crust. Ingredients: 1 each Pie crust; 6 each Eggs; 2 cup Broccoli florets; 6 slice Bacon; 1.5 cup Cheddar cheese; 1 cup Half and half; 0.5 each Yellow onion. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-108",
+      "recipe": "Garlic Chili Noodles with Ground Pork",
+      "outputPath": "assets/meal-photos/exp01-108.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Garlic Chili Noodles with Ground Pork. Specific visual: Rice noodles tossed with spicy garlic ground pork and scallions in natural daylight. Ingredients: 1.5 lb Ground pork; 12 oz Rice noodles; 0.25 cup Soy sauce; 2 tbsp Chili garlic sauce; 2 tbsp Brown sugar; 5 each Garlic cloves; 1 tbsp Sesame oil; 4 each Green onions. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-109",
+      "recipe": "Cider Braised Chicken with Apples",
+      "outputPath": "assets/meal-photos/exp01-109.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Cider Braised Chicken with Apples. Specific visual: Golden braised bone-in chicken thighs with softened apples and cider sauce. Ingredients: 2.5 lb Bone-in chicken thighs; 1.5 cup Apple cider; 2 each Apples; 1 each Yellow onion; 1 cup Chicken broth; 1 tbsp Dijon mustard; 1 tbsp Fresh thyme; 1 tbsp Olive oil. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    },
+    {
+      "id": "exp01-110",
+      "recipe": "Skillet Creamy Pesto Shrimp Gnocchi",
+      "outputPath": "assets/meal-photos/exp01-110.webp",
+      "status": "requires-generation-and-review",
+      "visualPrompt": "Realistic appetizing NATURAL DAYLIGHT home-cooked photograph. Dish: Skillet Creamy Pesto Shrimp Gnocchi. Specific visual: Soft pillowy gnocchi with shrimp, basil pesto cream and cherry tomatoes. Ingredients: 16 oz Potato gnocchi; 1.5 lb Raw shrimp; 0.5 cup Basil pesto; 0.5 cup Heavy cream; 2 cup Cherry tomatoes; 1 tbsp Olive oil; 0.5 cup Parmesan cheese. Natural food textures, no writing, logo, wrong protein or composite crops. Landscape 3:2 minimum 960x640.",
+      "reviewCriteria": [
+        "Individual WebP image >=960x640",
+        "Visible protein and meal type correct",
+        "Ingredient-accurate plating",
+        "No text or composite crops",
+        "Manual approval required"
+      ]
+    }
+  ]
+}
