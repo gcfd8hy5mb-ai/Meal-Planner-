@@ -1,0 +1,25 @@
+name: Tablewise nutrition readiness priorities
+on:
+  pull_request:
+    paths:
+      - 'ops/recipe-expansion/report-nutrition-readiness.mjs'
+      - '.github/workflows/tablewise-nutrition-readiness.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  readiness:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Audit nutrition readiness for 110 recipes
+        run: node ops/recipe-expansion/report-nutrition-readiness.mjs
+      - name: Save recipe blocker priority report
+        uses: actions/upload-artifact@v4
+        with:
+          name: nutrition-readiness-priorities
+          path: ops/recipe-expansion/nutrition-readiness-priority-report.json
+          retention-days: 30
