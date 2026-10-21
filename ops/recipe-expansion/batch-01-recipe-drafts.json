@@ -91,7 +91,14 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
-      }
+      },
+      "prepMinutes": 30,
+      "cookMinutes": 230,
+      "cal": 720,
+      "p": 49,
+      "c": 44,
+      "f": 38,
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
     },
     {
       "id": "exp01-002",
@@ -177,7 +184,14 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
-      }
+      },
+      "prepMinutes": 20,
+      "cookMinutes": 20,
+      "cal": 540,
+      "p": 45,
+      "c": 43,
+      "f": 20,
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
     },
     {
       "id": "exp01-003",
@@ -258,7 +272,14 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
-      }
+      },
+      "prepMinutes": 20,
+      "cookMinutes": 540,
+      "cal": 630,
+      "p": 40,
+      "c": 40,
+      "f": 32,
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
     },
     {
       "id": "exp01-004",
@@ -344,7 +365,14 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
-      }
+      },
+      "prepMinutes": 20,
+      "cookMinutes": 30,
+      "cal": 540,
+      "p": 44,
+      "c": 39,
+      "f": 24,
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
     },
     {
       "id": "exp01-005",
@@ -430,7 +458,14 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
-      }
+      },
+      "prepMinutes": 25,
+      "cookMinutes": 210,
+      "cal": 620,
+      "p": 45,
+      "c": 49,
+      "f": 26,
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
     },
     {
       "id": "exp01-006",
@@ -492,11 +527,13 @@
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
       },
-      "nutritionStatus": "requires-recalculation-after-duplicate-replacement",
-      "nutritionReview": "BLOCKED: calculate per-serving macros from ingredient database, do not reuse macros from replaced recipe",
-      "prepMinutes": null,
-      "cookMinutes": null,
-      "timeReview": "BLOCKED: recalculate for new recipe after duplicate replacement"
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification",
+      "prepMinutes": 20,
+      "cookMinutes": 40,
+      "cal": 510,
+      "p": 19,
+      "c": 49,
+      "f": 27
     },
     {
       "id": "exp01-007",
@@ -582,7 +619,14 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
-      }
+      },
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "cal": 490,
+      "p": 37,
+      "c": 28,
+      "f": 25,
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
     },
     {
       "id": "exp01-008",
@@ -668,7 +712,14 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
-      }
+      },
+      "prepMinutes": 20,
+      "cookMinutes": 35,
+      "cal": 490,
+      "p": 40,
+      "c": 39,
+      "f": 18,
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
     },
     {
       "id": "exp01-009",
@@ -749,7 +800,14 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
-      }
+      },
+      "prepMinutes": 20,
+      "cookMinutes": 20,
+      "cal": 590,
+      "p": 40,
+      "c": 45,
+      "f": 27,
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
     },
     {
       "id": "exp01-010",
@@ -835,7 +893,14 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
-      }
+      },
+      "prepMinutes": 20,
+      "cookMinutes": 25,
+      "cal": 530,
+      "p": 36,
+      "c": 62,
+      "f": 14,
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
     },
     {
       "id": "exp01-011",
@@ -921,7 +986,14 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
-      }
+      },
+      "prepMinutes": 25,
+      "cookMinutes": 40,
+      "cal": 730,
+      "p": 41,
+      "c": 67,
+      "f": 33,
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
     },
     {
       "id": "exp01-012",
@@ -997,7 +1069,14 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
-      }
+      },
+      "prepMinutes": 25,
+      "cookMinutes": 30,
+      "cal": 660,
+      "p": 40,
+      "c": 53,
+      "f": 31,
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
     },
     {
       "id": "exp01-013",
@@ -1083,7 +1162,14 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
-      }
+      },
+      "prepMinutes": 20,
+      "cookMinutes": 40,
+      "cal": 480,
+      "p": 39,
+      "c": 38,
+      "f": 18,
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
     },
     {
       "id": "exp01-014",
@@ -1169,7 +1255,14 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
-      }
+      },
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "cal": 610,
+      "p": 38,
+      "c": 66,
+      "f": 22,
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
     },
     {
       "id": "exp01-015",
@@ -1260,7 +1353,14 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
-      }
+      },
+      "prepMinutes": 25,
+      "cookMinutes": 150,
+      "cal": 520,
+      "p": 42,
+      "c": 28,
+      "f": 26,
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
     },
     {
       "id": "exp01-016",
@@ -1322,11 +1422,13 @@
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
       },
-      "nutritionStatus": "requires-recalculation-after-duplicate-replacement",
-      "nutritionReview": "BLOCKED: calculate per-serving macros from ingredient database, do not reuse macros from replaced recipe",
-      "prepMinutes": null,
-      "cookMinutes": null,
-      "timeReview": "BLOCKED: recalculate for new recipe after duplicate replacement"
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification",
+      "prepMinutes": 20,
+      "cookMinutes": 95,
+      "cal": 430,
+      "p": 36,
+      "c": 30,
+      "f": 18
     },
     {
       "id": "exp01-017",
@@ -1422,7 +1524,14 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
-      }
+      },
+      "prepMinutes": 25,
+      "cookMinutes": 55,
+      "cal": 450,
+      "p": 38,
+      "c": 34,
+      "f": 17,
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
     },
     {
       "id": "exp01-018",
@@ -1513,7 +1622,14 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
-      }
+      },
+      "prepMinutes": 25,
+      "cookMinutes": 170,
+      "cal": 540,
+      "p": 40,
+      "c": 39,
+      "f": 24,
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
     },
     {
       "id": "exp01-019",
@@ -1604,7 +1720,14 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
-      }
+      },
+      "prepMinutes": 20,
+      "cookMinutes": 30,
+      "cal": 550,
+      "p": 39,
+      "c": 62,
+      "f": 17,
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
     },
     {
       "id": "exp01-020",
@@ -1666,11 +1789,13 @@
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
       },
-      "nutritionStatus": "requires-recalculation-after-duplicate-replacement",
-      "nutritionReview": "BLOCKED: calculate per-serving macros from ingredient database, do not reuse macros from replaced recipe",
-      "prepMinutes": null,
-      "cookMinutes": null,
-      "timeReview": "BLOCKED: recalculate for new recipe after duplicate replacement"
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification",
+      "prepMinutes": 25,
+      "cookMinutes": 15,
+      "cal": 330,
+      "p": 38,
+      "c": 17,
+      "f": 12
     },
     {
       "id": "exp01-021",
@@ -1761,7 +1886,14 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
-      }
+      },
+      "prepMinutes": 20,
+      "cookMinutes": 20,
+      "cal": 720,
+      "p": 39,
+      "c": 61,
+      "f": 35,
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
     },
     {
       "id": "exp01-022",
@@ -1837,7 +1969,14 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
-      }
+      },
+      "prepMinutes": 20,
+      "cookMinutes": 30,
+      "cal": 680,
+      "p": 37,
+      "c": 62,
+      "f": 31,
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
     },
     {
       "id": "exp01-023",
@@ -1918,7 +2057,14 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
-      }
+      },
+      "prepMinutes": 25,
+      "cookMinutes": 30,
+      "cal": 520,
+      "p": 34,
+      "c": 43,
+      "f": 25,
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
     },
     {
       "id": "exp01-024",
@@ -1999,7 +2145,14 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
-      }
+      },
+      "prepMinutes": 25,
+      "cookMinutes": 25,
+      "cal": 540,
+      "p": 41,
+      "c": 43,
+      "f": 25,
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
     },
     {
       "id": "exp01-025",
@@ -2090,7 +2243,14 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
-      }
+      },
+      "prepMinutes": 20,
+      "cookMinutes": 30,
+      "cal": 470,
+      "p": 35,
+      "c": 40,
+      "f": 20,
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
     },
     {
       "id": "exp01-026",
@@ -2176,7 +2336,14 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
-      }
+      },
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "cal": 480,
+      "p": 40,
+      "c": 36,
+      "f": 18,
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
     },
     {
       "id": "exp01-027",
@@ -2262,7 +2429,14 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
-      }
+      },
+      "prepMinutes": 30,
+      "cookMinutes": 35,
+      "cal": 640,
+      "p": 37,
+      "c": 54,
+      "f": 31,
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
     },
     {
       "id": "exp01-028",
@@ -2334,11 +2508,13 @@
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
       },
-      "nutritionStatus": "requires-recalculation-after-duplicate-replacement",
-      "nutritionReview": "BLOCKED: calculate per-serving macros from ingredient database, do not reuse macros from replaced recipe",
-      "prepMinutes": null,
-      "cookMinutes": null,
-      "timeReview": "BLOCKED: recalculate for new recipe after duplicate replacement"
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification",
+      "prepMinutes": 20,
+      "cookMinutes": 40,
+      "cal": 520,
+      "p": 38,
+      "c": 48,
+      "f": 18
     },
     {
       "id": "exp01-029",
@@ -2429,7 +2605,14 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
-      }
+      },
+      "prepMinutes": 20,
+      "cookMinutes": 25,
+      "cal": 640,
+      "p": 43,
+      "c": 56,
+      "f": 28,
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
     },
     {
       "id": "exp01-030",
@@ -2520,7 +2703,14 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
-      }
+      },
+      "prepMinutes": 20,
+      "cookMinutes": 25,
+      "cal": 420,
+      "p": 36,
+      "c": 21,
+      "f": 20,
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
     },
     {
       "id": "exp01-031",
@@ -2611,7 +2801,14 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
-      }
+      },
+      "prepMinutes": 20,
+      "cookMinutes": 25,
+      "cal": 670,
+      "p": 43,
+      "c": 66,
+      "f": 26,
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
     },
     {
       "id": "exp01-032",
@@ -2702,7 +2899,14 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
-      }
+      },
+      "prepMinutes": 20,
+      "cookMinutes": 50,
+      "cal": 580,
+      "p": 46,
+      "c": 55,
+      "f": 20,
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
     },
     {
       "id": "exp01-033",
@@ -2793,7 +2997,14 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
-      }
+      },
+      "prepMinutes": 20,
+      "cookMinutes": 35,
+      "cal": 420,
+      "p": 37,
+      "c": 25,
+      "f": 18,
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
     },
     {
       "id": "exp01-034",
@@ -2889,7 +3100,14 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
-      }
+      },
+      "prepMinutes": 30,
+      "cookMinutes": 45,
+      "cal": 610,
+      "p": 44,
+      "c": 48,
+      "f": 26,
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
     },
     {
       "id": "exp01-035",
@@ -2951,11 +3169,13 @@
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
       },
-      "nutritionStatus": "requires-recalculation-after-duplicate-replacement",
-      "nutritionReview": "BLOCKED: calculate per-serving macros from ingredient database, do not reuse macros from replaced recipe",
-      "prepMinutes": null,
-      "cookMinutes": null,
-      "timeReview": "BLOCKED: recalculate for new recipe after duplicate replacement"
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification",
+      "prepMinutes": 25,
+      "cookMinutes": 25,
+      "cal": 490,
+      "p": 48,
+      "c": 34,
+      "f": 18
     },
     {
       "id": "exp01-036",
@@ -3051,7 +3271,14 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
-      }
+      },
+      "prepMinutes": 30,
+      "cookMinutes": 220,
+      "cal": 740,
+      "p": 52,
+      "c": 55,
+      "f": 34,
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
     },
     {
       "id": "exp01-037",
@@ -3147,7 +3374,14 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
-      }
+      },
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "cal": 630,
+      "p": 40,
+      "c": 63,
+      "f": 25,
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
     },
     {
       "id": "exp01-038",
@@ -3223,7 +3457,14 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
-      }
+      },
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "cal": 510,
+      "p": 25,
+      "c": 38,
+      "f": 28,
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
     },
     {
       "id": "exp01-039",
@@ -3299,7 +3540,14 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
-      }
+      },
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "cal": 560,
+      "p": 25,
+      "c": 55,
+      "f": 27,
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
     },
     {
       "id": "exp01-040",
@@ -3385,7 +3633,14 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
-      }
+      },
+      "prepMinutes": 20,
+      "cookMinutes": 20,
+      "cal": 480,
+      "p": 38,
+      "c": 42,
+      "f": 17,
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
     },
     {
       "id": "exp01-041",
@@ -3481,7 +3736,14 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
-      }
+      },
+      "prepMinutes": 25,
+      "cookMinutes": 50,
+      "cal": 480,
+      "p": 36,
+      "c": 42,
+      "f": 19,
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
     },
     {
       "id": "exp01-042",
@@ -3577,7 +3839,14 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
-      }
+      },
+      "prepMinutes": 25,
+      "cookMinutes": 35,
+      "cal": 550,
+      "p": 38,
+      "c": 49,
+      "f": 23,
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
     },
     {
       "id": "exp01-043",
@@ -3678,7 +3947,14 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
-      }
+      },
+      "prepMinutes": 20,
+      "cookMinutes": 45,
+      "cal": 470,
+      "p": 38,
+      "c": 45,
+      "f": 16,
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
     },
     {
       "id": "exp01-044",
@@ -3774,7 +4050,14 @@
       "source": {
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
-      }
+      },
+      "prepMinutes": 20,
+      "cookMinutes": 20,
+      "cal": 510,
+      "p": 39,
+      "c": 31,
+      "f": 25,
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification"
     },
     {
       "id": "exp01-045",
@@ -3782,9 +4065,9 @@
       "slot": "Dinner",
       "cuisine": "Southern & Comfort",
       "serv": 4,
-      "prepMinutes": null,
-      "cookMinutes": null,
-      "nutritionStatus": "requires-recalculation-after-duplicate-replacement",
+      "prepMinutes": 20,
+      "cookMinutes": 20,
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification",
       "ingredients": [
         [
           "Ground pork",
@@ -3839,8 +4122,10 @@
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
       },
-      "nutritionReview": "BLOCKED: calculate per-serving macros from ingredient database, do not reuse macros from replaced recipe",
-      "timeReview": "BLOCKED: recalculate for new recipe after duplicate replacement"
+      "cal": 460,
+      "p": 33,
+      "c": 11,
+      "f": 32
     },
     {
       "id": "exp01-046",
@@ -4067,9 +4352,9 @@
       "slot": "Dinner",
       "cuisine": "Chinese & Asian",
       "serv": 4,
-      "prepMinutes": null,
-      "cookMinutes": null,
-      "nutritionStatus": "requires-recalculation-after-duplicate-replacement",
+      "prepMinutes": 20,
+      "cookMinutes": 20,
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification",
       "ingredients": [
         [
           "Flank steak",
@@ -4129,8 +4414,10 @@
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
       },
-      "nutritionReview": "BLOCKED: calculate per-serving macros from ingredient database, do not reuse macros from replaced recipe",
-      "timeReview": "BLOCKED: recalculate for new recipe after duplicate replacement"
+      "cal": 590,
+      "p": 38,
+      "c": 64,
+      "f": 20
     },
     {
       "id": "exp01-050",
@@ -4138,9 +4425,9 @@
       "slot": "Dinner",
       "cuisine": "Soups & Stews",
       "serv": 6,
-      "prepMinutes": null,
-      "cookMinutes": null,
-      "nutritionStatus": "requires-recalculation-after-duplicate-replacement",
+      "prepMinutes": 30,
+      "cookMinutes": 90,
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification",
       "ingredients": [
         [
           "Yukon gold potatoes",
@@ -4195,8 +4482,10 @@
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
       },
-      "nutritionReview": "BLOCKED: calculate per-serving macros from ingredient database, do not reuse macros from replaced recipe",
-      "timeReview": "BLOCKED: recalculate for new recipe after duplicate replacement"
+      "cal": 540,
+      "p": 20,
+      "c": 41,
+      "f": 33
     },
     {
       "id": "exp01-051",
@@ -4350,9 +4639,9 @@
       "slot": "Dinner",
       "cuisine": "Southern & Comfort",
       "serv": 4,
-      "prepMinutes": null,
-      "cookMinutes": null,
-      "nutritionStatus": "requires-recalculation-after-duplicate-replacement",
+      "prepMinutes": 20,
+      "cookMinutes": 40,
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification",
       "ingredients": [
         [
           "Refrigerated biscuit dough",
@@ -4407,8 +4696,10 @@
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
       },
-      "nutritionReview": "BLOCKED: calculate per-serving macros from ingredient database, do not reuse macros from replaced recipe",
-      "timeReview": "BLOCKED: recalculate for new recipe after duplicate replacement"
+      "cal": 490,
+      "p": 28,
+      "c": 34,
+      "f": 28
     },
     {
       "id": "exp01-054",
@@ -5103,9 +5394,9 @@
       "slot": "Dinner",
       "cuisine": "Chinese & Asian",
       "serv": 4,
-      "prepMinutes": null,
-      "cookMinutes": null,
-      "nutritionStatus": "requires-recalculation-after-duplicate-replacement",
+      "prepMinutes": 25,
+      "cookMinutes": 20,
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification",
       "ingredients": [
         [
           "Pork loin cutlets",
@@ -5165,8 +5456,10 @@
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
       },
-      "nutritionReview": "BLOCKED: calculate per-serving macros from ingredient database, do not reuse macros from replaced recipe",
-      "timeReview": "BLOCKED: recalculate for new recipe after duplicate replacement"
+      "cal": 520,
+      "p": 39,
+      "c": 42,
+      "f": 22
     },
     {
       "id": "exp01-064",
@@ -5325,9 +5618,9 @@
       "slot": "Dinner",
       "cuisine": "Southern & Comfort",
       "serv": 4,
-      "prepMinutes": null,
-      "cookMinutes": null,
-      "nutritionStatus": "requires-recalculation-after-duplicate-replacement",
+      "prepMinutes": 20,
+      "cookMinutes": 20,
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification",
       "ingredients": [
         [
           "Catfish fillets",
@@ -5387,8 +5680,10 @@
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
       },
-      "nutritionReview": "BLOCKED: calculate per-serving macros from ingredient database, do not reuse macros from replaced recipe",
-      "timeReview": "BLOCKED: recalculate for new recipe after duplicate replacement"
+      "cal": 360,
+      "p": 38,
+      "c": 16,
+      "f": 16
     },
     {
       "id": "exp01-067",
@@ -5688,9 +5983,9 @@
       "slot": "Dinner",
       "cuisine": "Southern & Comfort",
       "serv": 4,
-      "prepMinutes": null,
-      "cookMinutes": null,
-      "nutritionStatus": "requires-recalculation-after-duplicate-replacement",
+      "prepMinutes": 25,
+      "cookMinutes": 35,
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification",
       "ingredients": [
         [
           "Cooked chicken",
@@ -5755,8 +6050,10 @@
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
       },
-      "nutritionReview": "BLOCKED: calculate per-serving macros from ingredient database, do not reuse macros from replaced recipe",
-      "timeReview": "BLOCKED: recalculate for new recipe after duplicate replacement"
+      "cal": 560,
+      "p": 39,
+      "c": 49,
+      "f": 24
     },
     {
       "id": "exp01-72",
@@ -5988,9 +6285,9 @@
       "slot": "Dinner",
       "cuisine": "Cajun & Creole",
       "serv": 6,
-      "prepMinutes": null,
-      "cookMinutes": null,
-      "nutritionStatus": "requires-recalculation-after-duplicate-replacement",
+      "prepMinutes": 20,
+      "cookMinutes": 25,
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification",
       "ingredients": [
         [
           "Smoked sausage",
@@ -6045,8 +6342,10 @@
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
       },
-      "nutritionReview": "BLOCKED: calculate per-serving macros from ingredient database, do not reuse macros from replaced recipe",
-      "timeReview": "BLOCKED: recalculate for new recipe after duplicate replacement"
+      "cal": 410,
+      "p": 26,
+      "c": 28,
+      "f": 21
     },
     {
       "id": "exp01-76",
@@ -6434,9 +6733,9 @@
       "slot": "Dinner",
       "cuisine": "American",
       "serv": 8,
-      "prepMinutes": null,
-      "cookMinutes": null,
-      "nutritionStatus": "requires-recalculation-after-duplicate-replacement",
+      "prepMinutes": 25,
+      "cookMinutes": 185,
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification",
       "ingredients": [
         [
           "Beef short ribs",
@@ -6496,8 +6795,10 @@
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
       },
-      "nutritionReview": "BLOCKED: calculate per-serving macros from ingredient database, do not reuse macros from replaced recipe",
-      "timeReview": "BLOCKED: recalculate for new recipe after duplicate replacement"
+      "cal": 690,
+      "p": 44,
+      "c": 37,
+      "f": 39
     },
     {
       "id": "exp01-082",
@@ -6875,9 +7176,9 @@
       "slot": "Dinner",
       "cuisine": "Cajun & Creole",
       "serv": 4,
-      "prepMinutes": null,
-      "cookMinutes": null,
-      "nutritionStatus": "requires-recalculation-after-duplicate-replacement",
+      "prepMinutes": 20,
+      "cookMinutes": 15,
+      "nutritionStatus": "rough-estimate-needs-ingredient-database-verification",
       "ingredients": [
         [
           "Ground turkey",
@@ -6932,8 +7233,10 @@
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
       },
-      "nutritionReview": "BLOCKED: calculate per-serving macros from ingredient database, do not reuse macros from replaced recipe",
-      "timeReview": "BLOCKED: recalculate for new recipe after duplicate replacement"
+      "cal": 510,
+      "p": 39,
+      "c": 42,
+      "f": 21
     },
     {
       "id": "exp01-088",
