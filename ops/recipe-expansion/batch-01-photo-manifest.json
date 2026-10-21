@@ -1,8 +1,8 @@
 {
   "batch": 1,
   "status": "individual-photo-previews-generated-not-yet-committed",
-  "note": "Twenty individual recipe-specific photo previews were extracted from a newly generated luxury-style composite during the development session. They must be uploaded as real assets to GitHub, reviewed for ingredient accuracy and resolution, and approved before any draft is published. No photoReady flags are set yet.",
-  "requiredStyle": "dark cinematic luxury restaurant food photography; ingredient-accurate; no text inside image; portrait/landscape thumbnail suitable for iPhone",
+  "note": "Photo assets must be saved as individual high-resolution licensed/generated files and visually reviewed before any recipe is publishable. Earlier composite previews are not counted as approved individual photos.",
+  "requiredStyle": "bright, natural food photography with realistic home-cooked presentation, daylight, true-to-recipe ingredients, no text, visually distinct thumbnail suitable for iPhone",
   "recipes": [
     {
       "id": "exp01-001",
@@ -391,6 +391,96 @@
       "photoReview": "pending",
       "pairedWithInstructions": true,
       "photoBrief": "Luxury dark shallow salad bowl filled with romaine, thin sliced seared steak, sweet corn, black beans, diced tomatoes, avocado, red onion, cotija and creamy lime drizzle"
+    },
+    {
+      "id": "exp01-045",
+      "name": "Southern Chicken and Dumplings",
+      "expectedAsset": "assets/meal-photos/exp01-045.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Rustic bowl of homemade chicken and dumplings, tender chicken, carrots, celery and fluffy pale dumplings in thick golden broth; natural window light"
+    },
+    {
+      "id": "exp01-046",
+      "name": "Baked Ziti with Italian Sausage",
+      "expectedAsset": "assets/meal-photos/exp01-046.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Baked pasta casserole of tubular ziti coated in red tomato sausage sauce, bubbling mozzarella, browned cheese edges; home kitchen natural daylight"
+    },
+    {
+      "id": "exp01-047",
+      "name": "Honey Garlic Pork Chops",
+      "expectedAsset": "assets/meal-photos/exp01-047.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Two glazed golden-brown pork chops in glossy honey garlic sauce in a ceramic plate; sliced garlic visible, no breading"
+    },
+    {
+      "id": "exp01-048",
+      "name": "Creamy Tuscan Chicken Pasta",
+      "expectedAsset": "assets/meal-photos/exp01-048.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Creamy penne pasta with sliced seared chicken breast, wilted baby spinach and sun-dried tomatoes in pale Parmesan sauce"
+    },
+    {
+      "id": "exp01-049",
+      "name": "Beef and Broccoli Stir-Fry",
+      "expectedAsset": "assets/meal-photos/exp01-049.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Thinly sliced beef strips and crisp green broccoli florets coated in glossy brown garlic ginger stir fry sauce, no noodles"
+    },
+    {
+      "id": "exp01-050",
+      "name": "Loaded Baked Potato Soup",
+      "expectedAsset": "assets/meal-photos/exp01-050.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Creamy chunky potato soup topped with cheddar, bacon crumbles, sliced green onions in simple stoneware bowl"
+    },
+    {
+      "id": "exp01-051",
+      "name": "Lemon Butter Baked Cod",
+      "expectedAsset": "assets/meal-photos/exp01-051.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Baked flaky white cod fillet in lemon butter sauce with lemon slices, garlic and chopped parsley, no salmon"
+    },
+    {
+      "id": "exp01-052",
+      "name": "BBQ Pulled Chicken Sandwiches",
+      "expectedAsset": "assets/meal-photos/exp01-052.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Soft hamburger buns filled with shredded smoky barbecue chicken and crisp creamy cabbage slaw, two sandwiches in natural daylight"
+    },
+    {
+      "id": "exp01-053",
+      "name": "Chicken Fried Steak with Country Gravy",
+      "expectedAsset": "assets/meal-photos/exp01-053.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Golden breaded country fried beef steak covered in thick white peppered country gravy on homestyle dinner plate"
+    },
+    {
+      "id": "exp01-054",
+      "name": "Turkey and Wild Rice Soup",
+      "expectedAsset": "assets/meal-photos/exp01-054.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Homey bowl of turkey and wild rice soup with shredded turkey, dark rice grains, carrots, celery and creamy golden broth"
     }
   ]
 }
