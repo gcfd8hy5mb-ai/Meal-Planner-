@@ -6,6 +6,7 @@ on:
       - '.github/workflows/tablewise-usda-nutrient-details.yml'
       - 'ops/recipe-expansion/fetch-focused-usda-nutrients.mjs'
       - 'ops/recipe-expansion/usda-focused-identity-review.json'
+      - 'ops/recipe-expansion/audit-focused-measurements.mjs'
 permissions:
   contents: read
 jobs:
@@ -21,10 +22,14 @@ jobs:
         env:
           USDA_FDC_API_KEY: ${{ secrets.USDA_FDC_API_KEY }}
         run: node ops/recipe-expansion/fetch-focused-usda-nutrients.mjs
+      - name: Check recipe quantities and unresolved edible-gram conversions
+        run: node ops/recipe-expansion/audit-focused-measurements.mjs
       - name: Upload unapproved nutrient details
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: tablewise-usda-9-candidate-nutrient-details
-          path: ops/recipe-expansion/usda-focused-nutrient-details.json
+          path: |
+            ops/recipe-expansion/usda-focused-nutrient-details.json
+            ops/recipe-expansion/usda-focused-measurement-review.json
           retention-days: 30
