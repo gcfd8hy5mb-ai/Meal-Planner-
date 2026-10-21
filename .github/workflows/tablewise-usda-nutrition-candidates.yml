@@ -6,29 +6,27 @@ on:
       - feature/recipe-expansion-110-content-20261021
     paths:
       - '.github/workflows/tablewise-usda-nutrition-candidates.yml'
-      - 'ops/recipe-expansion/import-usda-sr-legacy.py'
+      - 'ops/recipe-expansion/suggest-usda-food-matches.mjs'
 permissions:
   contents: read
 jobs:
   nutrition-candidates:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
-      - name: Download official USDA SR Legacy CSV
-        shell: bash
-        run: |
-          set -euo pipefail
-          curl --fail --location --retry 3 --max-time 180 \
-            'https://fdc.nal.usda.gov/fdc-datasets/FoodData_Central_sr_legacy_food_csv_2018-04.zip' \
-            --output /tmp/usda-sr-legacy.zip
-          unzip -t /tmp/usda-sr-legacy.zip >/dev/null
-      - name: Create unapproved candidate report
-        run: |
-          python3 ops/recipe-expansion/import-usda-sr-legacy.py /tmp/usda-sr-legacy.zip
-      - name: Upload report for manual review
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test real USDA API lookup on first 10 ingredients
+        env:
+          USDA_FDC_API_KEY: ${{ secrets.USDA_FDC_API_KEY }}
+        run: node ops/recipe-expansion/suggest-usda-food-matches.mjs 10
+      - name: Upload review-only lookup report
+        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: tablewise-usda-sr-candidates
-          path: ops/recipe-expansion/usda-sr-legacy-review-candidates.json
+          name: tablewise-usda-api-review-candidates
+          path: ops/recipe-expansion/usda-food-suggestions.json
+          if-no-files-found: warn
           retention-days: 14
