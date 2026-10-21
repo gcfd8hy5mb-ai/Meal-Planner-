@@ -7,6 +7,7 @@ on:
       - 'ops/recipe-expansion/fetch-focused-usda-nutrients.mjs'
       - 'ops/recipe-expansion/usda-focused-identity-review.json'
       - 'ops/recipe-expansion/audit-focused-measurements.mjs'
+      - 'ops/recipe-expansion/propose-exact-mass-conversions.mjs'
 permissions:
   contents: read
 jobs:
@@ -24,6 +25,8 @@ jobs:
         run: node ops/recipe-expansion/fetch-focused-usda-nutrients.mjs
       - name: Check recipe quantities and unresolved edible-gram conversions
         run: node ops/recipe-expansion/audit-focused-measurements.mjs
+      - name: Separate exact ounce weights from ingredient-specific conversions
+        run: node ops/recipe-expansion/propose-exact-mass-conversions.mjs
       - name: Upload unapproved nutrient details
         if: always()
         uses: actions/upload-artifact@v4
@@ -32,4 +35,5 @@ jobs:
           path: |
             ops/recipe-expansion/usda-focused-nutrient-details.json
             ops/recipe-expansion/usda-focused-measurement-review.json
+            ops/recipe-expansion/usda-measurement-proposals.json
           retention-days: 30
