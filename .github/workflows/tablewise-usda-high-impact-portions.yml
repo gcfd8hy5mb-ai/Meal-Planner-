@@ -8,6 +8,7 @@ on:
       - 'ops/recipe-expansion/prioritize-ingredient-portion-review.mjs'
       - 'ops/recipe-expansion/high-impact-portions-editorial-review.json'
       - 'ops/recipe-expansion/validate-high-impact-portions.mjs'
+      - 'ops/recipe-expansion/audit-high-impact-recipe-uses.mjs'
 permissions:
   contents: read
 jobs:
@@ -27,6 +28,8 @@ jobs:
         run: node ops/recipe-expansion/fetch-high-impact-usda-portions.mjs
       - name: Validate editorial weights against all real recipe uses
         run: node ops/recipe-expansion/validate-high-impact-portions.mjs
+      - name: Audit actual recipe instructions and potential consumed fractions
+        run: node ops/recipe-expansion/audit-high-impact-recipe-uses.mjs
       - name: Save unapproved USDA source evidence
         if: always()
         uses: actions/upload-artifact@v4
@@ -35,4 +38,5 @@ jobs:
           path: |
             ops/recipe-expansion/ingredient-portion-review-queue.json
             ops/recipe-expansion/high-impact-usda-portion-candidates.json
+            ops/recipe-expansion/high-impact-recipe-usage-audit.json
           retention-days: 30
