@@ -103,10 +103,14 @@
         "Lime": {
           "listedQuantity": 2,
           "listedUnit": "each",
-          "instructionClassification": "wedges-served",
+          "instructionClassification": "wedges-only",
           "consumedAmountGrams": null,
           "reviewStatus": "requires-consumed-portion-review",
-          "notes": "Garnish wedges are optional; do not count whole-fruit mass as eaten."
+          "notes": "Wedges served as garnish; actual juice consumed is optional.",
+          "explicitWholeLimesJuiced": 0,
+          "optionalGarnishLimes": 2,
+          "usdaJuiceYieldReferenceGramsPerLime": 44,
+          "usdaJuiceFdcId": 168156
         },
         "Ground cumin": {
           "listedQuantity": 1,
@@ -214,10 +218,14 @@
         "Lime": {
           "listedQuantity": 2,
           "listedUnit": "each",
-          "instructionClassification": "juice-and-wedges",
+          "instructionClassification": "wedges-only",
           "consumedAmountGrams": null,
           "reviewStatus": "requires-consumed-portion-review",
-          "notes": "Split squeezed juice and optional wedges; quantities still need specification."
+          "notes": "Quarter cup lime juice is a separate ingredient; do not double-count it as these two limes.",
+          "explicitWholeLimesJuiced": 0,
+          "optionalGarnishLimes": 2,
+          "usdaJuiceYieldReferenceGramsPerLime": 44,
+          "usdaJuiceFdcId": 168156
         },
         "Ground cumin": {
           "listedQuantity": 1,
@@ -323,7 +331,11 @@
           "instructionClassification": "juice-and-wedges",
           "consumedAmountGrams": null,
           "reviewStatus": "requires-consumed-portion-review",
-          "notes": "Split squeezed juice and optional wedges; quantities still need specification."
+          "notes": "Juice of one lime goes into the slow cooker; the other is served in wedges.",
+          "explicitWholeLimesJuiced": 1,
+          "optionalGarnishLimes": 1,
+          "usdaJuiceYieldReferenceGramsPerLime": 44,
+          "usdaJuiceFdcId": 168156
         },
         "Ground cumin": {
           "listedQuantity": 2,
@@ -431,10 +443,14 @@
         "Lime": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "instructionClassification": "juice-and-wedges",
+          "instructionClassification": "wedges-and-unspecified-squeeze",
           "consumedAmountGrams": null,
           "reviewStatus": "requires-consumed-portion-review",
-          "notes": "Split squeezed juice and optional wedges; quantities still need specification."
+          "notes": "Wedges cut from one lime; finishing juice amount not quantified.",
+          "explicitWholeLimesJuiced": null,
+          "optionalGarnishLimes": 1,
+          "usdaJuiceYieldReferenceGramsPerLime": 44,
+          "usdaJuiceFdcId": 168156
         },
         "Ground cumin": {
           "listedQuantity": 1,
@@ -542,10 +558,14 @@
         "Lime": {
           "listedQuantity": 2,
           "listedUnit": "each",
-          "instructionClassification": "juice-used",
+          "instructionClassification": "unspecified-squeeze",
           "consumedAmountGrams": null,
           "reviewStatus": "requires-consumed-portion-review",
-          "notes": "Convert measured squeezed juice rather than whole-fruit mass."
+          "notes": "Squeeze of lime from two limes does not establish whole-lime juice consumption.",
+          "explicitWholeLimesJuiced": null,
+          "optionalGarnishLimes": null,
+          "usdaJuiceYieldReferenceGramsPerLime": 44,
+          "usdaJuiceFdcId": 168156
         },
         "Ground cumin": {
           "listedQuantity": 2,
@@ -1033,10 +1053,14 @@
         "Lime": {
           "listedQuantity": 2,
           "listedUnit": "each",
-          "instructionClassification": "wedges-served",
+          "instructionClassification": "wedges-only",
           "consumedAmountGrams": null,
           "reviewStatus": "requires-consumed-portion-review",
-          "notes": "Garnish wedges are optional; do not count whole-fruit mass as eaten."
+          "notes": "Lime wedges served alongside bowls; optional consumption.",
+          "explicitWholeLimesJuiced": 0,
+          "optionalGarnishLimes": 2,
+          "usdaJuiceYieldReferenceGramsPerLime": 44,
+          "usdaJuiceFdcId": 168156
         },
         "Ground cumin": {
           "listedQuantity": 1,
@@ -1575,10 +1599,14 @@
         "Lime": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "instructionClassification": "juice-used",
+          "instructionClassification": "whole-lime-juice",
           "consumedAmountGrams": null,
           "reviewStatus": "requires-consumed-portion-review",
-          "notes": "Convert measured squeezed juice rather than whole-fruit mass."
+          "notes": "Recipe explicitly uses juice of one lime in sauce.",
+          "explicitWholeLimesJuiced": 1,
+          "optionalGarnishLimes": 0,
+          "usdaJuiceYieldReferenceGramsPerLime": 44,
+          "usdaJuiceFdcId": 168156
         },
         "Ground cumin": {
           "listedQuantity": 1.5,
@@ -1774,10 +1802,14 @@
         "Lime": {
           "listedQuantity": 2,
           "listedUnit": "each",
-          "instructionClassification": "wedges-served",
+          "instructionClassification": "wedges-only",
           "consumedAmountGrams": null,
           "reviewStatus": "requires-consumed-portion-review",
-          "notes": "Garnish wedges are optional; do not count whole-fruit mass as eaten."
+          "notes": "All limes served as wedges.",
+          "explicitWholeLimesJuiced": 0,
+          "optionalGarnishLimes": 2,
+          "usdaJuiceYieldReferenceGramsPerLime": 44,
+          "usdaJuiceFdcId": 168156
         },
         "Ground cumin": {
           "listedQuantity": 1,
@@ -1890,10 +1922,14 @@
         "Lime": {
           "listedQuantity": 2,
           "listedUnit": "each",
-          "instructionClassification": "wedges-served",
+          "instructionClassification": "wedges-only",
           "consumedAmountGrams": null,
           "reviewStatus": "requires-consumed-portion-review",
-          "notes": "Garnish wedges are optional; do not count whole-fruit mass as eaten."
+          "notes": "All limes served as wedges.",
+          "explicitWholeLimesJuiced": 0,
+          "optionalGarnishLimes": 2,
+          "usdaJuiceYieldReferenceGramsPerLime": 44,
+          "usdaJuiceFdcId": 168156
         },
         "Ground cumin": {
           "listedQuantity": 1,
@@ -2006,10 +2042,14 @@
         "Lime": {
           "listedQuantity": 2,
           "listedUnit": "each",
-          "instructionClassification": "wedges-served",
+          "instructionClassification": "juice-and-wedges",
           "consumedAmountGrams": null,
           "reviewStatus": "requires-consumed-portion-review",
-          "notes": "Garnish wedges are optional; do not count whole-fruit mass as eaten."
+          "notes": "Sauce uses juice of one lime; wedges from second lime are optional.",
+          "explicitWholeLimesJuiced": 1,
+          "optionalGarnishLimes": 1,
+          "usdaJuiceYieldReferenceGramsPerLime": 44,
+          "usdaJuiceFdcId": 168156
         },
         "Ground cumin": {
           "listedQuantity": 1,
@@ -2092,10 +2132,14 @@
         "Lime": {
           "listedQuantity": 4,
           "listedUnit": "each",
-          "instructionClassification": "unspecified",
+          "instructionClassification": "whole-lime-juice",
           "consumedAmountGrams": null,
           "reviewStatus": "requires-consumed-portion-review",
-          "notes": "Instructions require clarification before any edible gram assignment."
+          "notes": "Instructions say juice four limes for the ceviche.",
+          "explicitWholeLimesJuiced": 4,
+          "optionalGarnishLimes": 0,
+          "usdaJuiceYieldReferenceGramsPerLime": 44,
+          "usdaJuiceFdcId": 168156
         }
       }
     },
@@ -2200,10 +2244,14 @@
         "Lime": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "instructionClassification": "wedges-served",
+          "instructionClassification": "wedges-only",
           "consumedAmountGrams": null,
           "reviewStatus": "requires-consumed-portion-review",
-          "notes": "Garnish wedges are optional; do not count whole-fruit mass as eaten."
+          "notes": "Lime is cut into serving wedges.",
+          "explicitWholeLimesJuiced": 0,
+          "optionalGarnishLimes": 1,
+          "usdaJuiceYieldReferenceGramsPerLime": 44,
+          "usdaJuiceFdcId": 168156
         },
         "Ground cumin": {
           "listedQuantity": 1,
@@ -2301,10 +2349,14 @@
         "Lime": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "instructionClassification": "wedges-served",
+          "instructionClassification": "wedges-only",
           "consumedAmountGrams": null,
           "reviewStatus": "requires-consumed-portion-review",
-          "notes": "Garnish wedges are optional; do not count whole-fruit mass as eaten."
+          "notes": "Lime is cut into serving wedges.",
+          "explicitWholeLimesJuiced": 0,
+          "optionalGarnishLimes": 1,
+          "usdaJuiceYieldReferenceGramsPerLime": 44,
+          "usdaJuiceFdcId": 168156
         }
       }
     },
@@ -2724,10 +2776,14 @@
         "Lime": {
           "listedQuantity": 2,
           "listedUnit": "each",
-          "instructionClassification": "wedges-served",
+          "instructionClassification": "wedges-only",
           "consumedAmountGrams": null,
           "reviewStatus": "requires-consumed-portion-review",
-          "notes": "Garnish wedges are optional; do not count whole-fruit mass as eaten."
+          "notes": "All limes are serving wedges.",
+          "explicitWholeLimesJuiced": 0,
+          "optionalGarnishLimes": 2,
+          "usdaJuiceYieldReferenceGramsPerLime": 44,
+          "usdaJuiceFdcId": 168156
         },
         "Ground cumin": {
           "listedQuantity": 1,
@@ -3137,10 +3193,14 @@
         "Lime": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "instructionClassification": "juice-used",
+          "instructionClassification": "whole-lime-juice",
           "consumedAmountGrams": null,
           "reviewStatus": "requires-consumed-portion-review",
-          "notes": "Convert measured squeezed juice rather than whole-fruit mass."
+          "notes": "Sauce uses juice from one lime.",
+          "explicitWholeLimesJuiced": 1,
+          "optionalGarnishLimes": 0,
+          "usdaJuiceYieldReferenceGramsPerLime": 44,
+          "usdaJuiceFdcId": 168156
         }
       }
     },
@@ -3245,10 +3305,14 @@
         "Lime": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "instructionClassification": "juice-used",
+          "instructionClassification": "whole-lime-juice",
           "consumedAmountGrams": null,
           "reviewStatus": "requires-consumed-portion-review",
-          "notes": "Convert measured squeezed juice rather than whole-fruit mass."
+          "notes": "Steak marinade uses juice from one lime; retention must be reviewed.",
+          "explicitWholeLimesJuiced": 1,
+          "optionalGarnishLimes": 0,
+          "usdaJuiceYieldReferenceGramsPerLime": 44,
+          "usdaJuiceFdcId": 168156
         },
         "Yellow onion": {
           "listedQuantity": 1,
@@ -3606,10 +3670,14 @@
         "Lime": {
           "listedQuantity": 2,
           "listedUnit": "each",
-          "instructionClassification": "wedges-served",
+          "instructionClassification": "wedges-only",
           "consumedAmountGrams": null,
           "reviewStatus": "requires-consumed-portion-review",
-          "notes": "Garnish wedges are optional; do not count whole-fruit mass as eaten."
+          "notes": "Lime wedges are optional garnish.",
+          "explicitWholeLimesJuiced": 0,
+          "optionalGarnishLimes": 2,
+          "usdaJuiceYieldReferenceGramsPerLime": 44,
+          "usdaJuiceFdcId": 168156
         },
         "Ground cumin": {
           "listedQuantity": 1,
@@ -3795,10 +3863,14 @@
         "Lime": {
           "listedQuantity": 2,
           "listedUnit": "each",
-          "instructionClassification": "wedges-served",
+          "instructionClassification": "wedges-only",
           "consumedAmountGrams": null,
           "reviewStatus": "requires-consumed-portion-review",
-          "notes": "Garnish wedges are optional; do not count whole-fruit mass as eaten."
+          "notes": "Lime wedges are optional garnish.",
+          "explicitWholeLimesJuiced": 0,
+          "optionalGarnishLimes": 2,
+          "usdaJuiceYieldReferenceGramsPerLime": 44,
+          "usdaJuiceFdcId": 168156
         },
         "Ground cumin": {
           "listedQuantity": 1,
@@ -4224,7 +4296,11 @@
           "instructionClassification": "juice-and-wedges",
           "consumedAmountGrams": null,
           "reviewStatus": "requires-consumed-portion-review",
-          "notes": "Split squeezed juice and optional wedges; quantities still need specification."
+          "notes": "Sauce uses juice from one lime; remaining lime becomes wedges.",
+          "explicitWholeLimesJuiced": 1,
+          "optionalGarnishLimes": 1,
+          "usdaJuiceYieldReferenceGramsPerLime": 44,
+          "usdaJuiceFdcId": 168156
         },
         "Ground cumin": {
           "listedQuantity": 1,
@@ -4342,10 +4418,14 @@
         "Lime": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "instructionClassification": "unspecified",
+          "instructionClassification": "whole-lime-juice",
           "consumedAmountGrams": null,
           "reviewStatus": "requires-consumed-portion-review",
-          "notes": "Instructions require clarification before any edible gram assignment."
+          "notes": "Soup uses juice of one lime.",
+          "explicitWholeLimesJuiced": 1,
+          "optionalGarnishLimes": 0,
+          "usdaJuiceYieldReferenceGramsPerLime": 44,
+          "usdaJuiceFdcId": 168156
         },
         "Yellow onion": {
           "listedQuantity": 1,
@@ -4718,10 +4798,14 @@
         "Lime": {
           "listedQuantity": 2,
           "listedUnit": "each",
-          "instructionClassification": "juice-used",
+          "instructionClassification": "juice-with-unspecified-fraction",
           "consumedAmountGrams": null,
           "reviewStatus": "requires-consumed-portion-review",
-          "notes": "Convert measured squeezed juice rather than whole-fruit mass."
+          "notes": "Small squeeze for avocado; rest added to dressing. The total consumed portion needs an explicit amount.",
+          "explicitWholeLimesJuiced": null,
+          "optionalGarnishLimes": 0,
+          "usdaJuiceYieldReferenceGramsPerLime": 44,
+          "usdaJuiceFdcId": 168156
         },
         "Ground cumin": {
           "listedQuantity": 1,
@@ -7301,10 +7385,14 @@
         "Lime": {
           "listedQuantity": 1,
           "listedUnit": "each",
-          "instructionClassification": "juice-used",
+          "instructionClassification": "whole-lime-juice",
           "consumedAmountGrams": null,
           "reviewStatus": "requires-consumed-portion-review",
-          "notes": "Convert measured squeezed juice rather than whole-fruit mass."
+          "notes": "Chili uses juice from one lime.",
+          "explicitWholeLimesJuiced": 1,
+          "optionalGarnishLimes": 0,
+          "usdaJuiceYieldReferenceGramsPerLime": 44,
+          "usdaJuiceFdcId": 168156
         },
         "Yellow onion": {
           "listedQuantity": 1,
@@ -8840,10 +8928,14 @@
         "Lime": {
           "listedQuantity": 2,
           "listedUnit": "each",
-          "instructionClassification": "juice-used",
+          "instructionClassification": "whole-lime-juice",
           "consumedAmountGrams": null,
           "reviewStatus": "requires-consumed-portion-review",
-          "notes": "Convert measured squeezed juice rather than whole-fruit mass."
+          "notes": "Curry uses juice from two limes.",
+          "explicitWholeLimesJuiced": 2,
+          "optionalGarnishLimes": 0,
+          "usdaJuiceYieldReferenceGramsPerLime": 44,
+          "usdaJuiceFdcId": 168156
         },
         "Yellow onion": {
           "listedQuantity": 1,
