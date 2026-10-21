@@ -722,16 +722,21 @@
       "reviewStatus": "pending"
     },
     "Catfish fillets": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "175165",
+      "description": "Fish, catfish, channel, farmed, raw",
+      "state": "Fish, catfish, channel, farmed, raw",
+      "kcalPer100g": 119,
+      "proteinPer100g": 15.23,
+      "carbsPer100g": 0,
+      "fatPer100g": 5.94,
+      "gramsPerUnit": {
+        "lb": 453.59237
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/175165/nutrients",
+      "portionSource": "USDA raw farmed catfish edible fillet; 1 lb = 453.59237g net edible input; wild fish differs",
+      "reviewNotes": "Source-verified ingredient input for exact specified USDA form only. Product variation, packing, cooking retention and finished-recipe serving nutrition remain unverified."
     },
     "Celery stalks": {
       "source": "",
@@ -1591,16 +1596,21 @@
       "reviewStatus": "pending"
     },
     "Flank steak": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central Foundation",
+      "foodId": "2646175",
+      "description": "Beef, flank, steak, boneless, choice, raw",
+      "state": "Beef, flank, steak, boneless, choice, raw",
+      "kcalPer100g": 169.562744,
+      "proteinPer100g": 20.13125,
+      "carbsPer100g": 0,
+      "fatPer100g": 9.399,
+      "gramsPerUnit": {
+        "lb": 453.59237
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/2646175/nutrients",
+      "portionSource": "USDA Foundation boneless choice raw flank steak; 1 lb = 453.59237g edible raw input; grading varies",
+      "reviewNotes": "Source-verified ingredient input for exact specified USDA form only. Product variation, packing, cooking retention and finished-recipe serving nutrition remain unverified."
     },
     "Flour": {
       "source": "",
@@ -1957,16 +1967,21 @@
       "reviewStatus": "pending"
     },
     "Ground pork": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central Foundation",
+      "foodId": "2514745",
+      "description": "Pork, ground, raw",
+      "state": "Pork, ground, raw",
+      "kcalPer100g": 233.442059,
+      "proteinPer100g": 17.80625,
+      "carbsPer100g": 0,
+      "fatPer100g": 17.49,
+      "gramsPerUnit": {
+        "lb": 453.59237
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/2514745/nutrients",
+      "portionSource": "USDA Foundation raw ground pork; 1 lb = 453.59237g edible input weight; fat varies by grind",
+      "reviewNotes": "Source-verified ingredient input for exact specified USDA form only. Product variation, packing, cooking retention and finished-recipe serving nutrition remain unverified."
     },
     "Ground thyme": {
       "source": "",
@@ -3165,16 +3180,21 @@
       "reviewStatus": "pending"
     },
     "Ricotta": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central Foundation",
+      "foodId": "746766",
+      "description": "Cheese, ricotta, whole milk",
+      "state": "Cheese, ricotta, whole milk",
+      "kcalPer100g": 157,
+      "proteinPer100g": 7.81,
+      "carbsPer100g": 6.86,
+      "fatPer100g": 11,
+      "gramsPerUnit": {
+        "cup": 258
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/746766/nutrients",
+      "portionSource": "USDA explicit 1 cup whole milk ricotta 258g; same approved USDA reference as Ricotta cheese; reduced-fat differs",
+      "reviewNotes": "Source-verified ingredient input for exact specified USDA form only. Product variation, packing, cooking retention and finished-recipe serving nutrition remain unverified."
     },
     "Ricotta cheese": {
       "source": "USDA FoodData Central",
@@ -3555,16 +3575,21 @@
       "reviewStatus": "pending"
     },
     "Sun-dried tomatoes": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "168567",
+      "description": "Tomatoes, sun-dried",
+      "state": "Tomatoes, sun-dried",
+      "kcalPer100g": 258,
+      "proteinPer100g": 14.11,
+      "carbsPer100g": 55.76,
+      "fatPer100g": 2.97,
+      "gramsPerUnit": {
+        "cup": 54
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/168567/nutrients",
+      "portionSource": "USDA explicit dry sun-dried tomatoes 1 cup=54g; excludes tomatoes packed in oil",
+      "reviewNotes": "Source-verified ingredient input for exact specified USDA form only. Product variation, packing, cooking retention and finished-recipe serving nutrition remain unverified."
     },
     "Sweet potatoes": {
       "source": "",
