@@ -1,0 +1,99 @@
+{
+  "sourceRunId": 39685283967,
+  "offset": 175,
+  "requested": 25,
+  "returnedUSDAFoodDetails": 24,
+  "newApprovals": [
+    "Fresh rosemary",
+    "Ground cinnamon",
+    "Half and half",
+    "Hoisin sauce",
+    "Ground chicken"
+  ],
+  "held": [
+    {
+      "ingredient": "Elbow macaroni",
+      "reason": "Top hit macaroni-and-cheese baby food instead of dry plain pasta"
+    },
+    {
+      "ingredient": "Farro",
+      "reason": "USDA pearled dry farro record only has RACC grams, not cup measure"
+    },
+    {
+      "ingredient": "Feta",
+      "reason": "USDA only crumbled cup weight, recipe generic feta cup without crumbled preparation"
+    },
+    {
+      "ingredient": "Flour tortillas",
+      "reason": "Top candidate contains no nutrition or each-weight data"
+    },
+    {
+      "ingredient": "Flour tortillas, fajita size",
+      "reason": "Top candidate contains no nutrition or fajita-sized tortilla weight"
+    },
+    {
+      "ingredient": "Fresh cilantro",
+      "reason": "USDA entry cup may use 4g portion rather than loose/chopped cup; recipe explicitly chopped"
+    },
+    {
+      "ingredient": "Fresh Mexican chorizo",
+      "reason": "Top hit Mexican blended cheese, not sausage"
+    },
+    {
+      "ingredient": "Fresh sage",
+      "reason": "Top hit ground dried sage"
+    },
+    {
+      "ingredient": "Fully cooked pulled pork",
+      "reason": "Top hit precooked pork sausage"
+    },
+    {
+      "ingredient": "Goat cheese",
+      "reason": "Top hit hard goat cheese but recipe cheese style unspecified"
+    },
+    {
+      "ingredient": "Greek yogurt",
+      "reason": "Top hit blueberry flavored yogurt, not plain"
+    },
+    {
+      "ingredient": "Green beans",
+      "reason": "Top hit microwaved, not raw green beans"
+    },
+    {
+      "ingredient": "Ground thyme",
+      "reason": "Top hit fresh thyme, not ground dried thyme"
+    },
+    {
+      "ingredient": "Gruyere cheese",
+      "reason": "Source has ounce/cubic inch but no shredded cup weight"
+    },
+    {
+      "ingredient": "Hawaiian dinner rolls",
+      "reason": "Top hit egg dinner roll not Hawaiian sweet roll"
+    },
+    {
+      "ingredient": "Hominy",
+      "reason": "Source canned white hominy, but ounce recipe drained/undrained uncertain"
+    },
+    {
+      "ingredient": "Italian sausage links",
+      "reason": "USDA sweet Italian links while recipe sausage type unspecified"
+    },
+    {
+      "ingredient": "Jalapeño",
+      "reason": "No first candidate returned"
+    },
+    {
+      "ingredient": "Jalapeño peppers",
+      "reason": "Top hit banana peppers, not jalapeños"
+    },
+    {
+      "ingredient": "Ketchup",
+      "reason": "Top restaurant ketchup hit missing nutrient and cup details"
+    }
+  ],
+  "approvedIngredientSourcesAfterReview": 36,
+  "verifiedRecipeCount": 0,
+  "publishingDecision": "HOLD",
+  "note": "Approvals are ingredient source inputs only. No incomplete recipe nutrition is published."
+}
