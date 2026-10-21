@@ -12,9 +12,10 @@ export function ingredientMatches(needed,owned){
  const a=form(needed),b=form(owned);
  if(!a||!b)return false;
  if(a===b)return true;
- // Match only complete leading ingredient phrases, not interior substrings.
- // "chicken" -> "chicken breast"; "rice" -> "rice noodles".
- return a.startsWith(b+' ')||b.startsWith(a+' ');
+ // Only known varieties/cuts; "rice" is not "rice noodles".
+ const variants=new Set(["chicken","beef","pork","tomato","potato","onion","pepper"]);
+ const matchesCut=(whole,root)=>variants.has(root)&&whole.startsWith(root+" ");
+ return matchesCut(a,b)||matchesCut(b,a);
 }
 export function missingIngredientNames(needed,owned){
  const held=(Array.isArray(owned)?owned:[]).map(form).filter(Boolean);
