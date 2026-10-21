@@ -3102,6 +3102,340 @@
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
       }
+    },
+    {
+      "id": "exp01-037",
+      "name": "Tex-Mex Chili Mac",
+      "slot": "Dinner",
+      "serv": 6,
+      "ingredients": [
+        [
+          "Lean ground beef",
+          1,
+          "lb"
+        ],
+        [
+          "Dry elbow macaroni",
+          12,
+          "oz"
+        ],
+        [
+          "Diced tomatoes",
+          2,
+          "cup"
+        ],
+        [
+          "Kidney beans, rinsed",
+          1.5,
+          "cup"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Garlic cloves",
+          3,
+          "each"
+        ],
+        [
+          "Beef broth",
+          1.5,
+          "cup"
+        ],
+        [
+          "Tomato paste",
+          2,
+          "tbsp"
+        ],
+        [
+          "Chili powder",
+          2,
+          "tsp"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Smoked paprika",
+          1,
+          "tsp"
+        ],
+        [
+          "Shredded cheddar",
+          1.5,
+          "cup"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Salt",
+          0.5,
+          "tsp"
+        ]
+      ],
+      "steps": [
+        "Dice 1 onion and mince 3 garlic cloves; drain and rinse 1½ cups kidney beans, measure 12 oz dry elbow macaroni and set out the remaining ingredients.",
+        "Heat 1 tbsp olive oil in a deep skillet or Dutch oven over medium heat; sauté onion for 4–5 minutes, add garlic for 30 seconds, then add 1 lb ground beef and cook while breaking it apart until it reaches 160°F; drain excess fat.",
+        "Stir in 2 tbsp tomato paste, 2 tsp chili powder, 1 tsp cumin, 1 tsp smoked paprika and ½ tsp salt; cook for 1 minute, then add 2 cups diced tomatoes, 1½ cups broth and the beans.",
+        "Bring a separate large pot of water to a boil, cook the 12 oz macaroni according to package directions until barely al dente, reserve ½ cup cooking water, and drain; meanwhile simmer the beef mixture uncovered for 8–10 minutes.",
+        "Fold macaroni into the chili mixture, adding reserved pasta water a spoonful at a time if necessary; sprinkle with 1½ cups cheddar, cover for 2 minutes until melted and divide into six warm portions."
+      ],
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-038",
+      "name": "Cheesy Chorizo Breakfast Tacos",
+      "slot": "Breakfast",
+      "serv": 4,
+      "ingredients": [
+        [
+          "Raw Mexican-style pork chorizo",
+          12,
+          "oz"
+        ],
+        [
+          "Large eggs",
+          8,
+          "each"
+        ],
+        [
+          "Small flour tortillas",
+          8,
+          "each"
+        ],
+        [
+          "Shredded Monterey Jack cheese",
+          1,
+          "cup"
+        ],
+        [
+          "Yellow onion",
+          0.5,
+          "each"
+        ],
+        [
+          "Bell pepper",
+          1,
+          "each"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tsp"
+        ],
+        [
+          "Salsa",
+          0.5,
+          "cup"
+        ],
+        [
+          "Cilantro",
+          0.25,
+          "cup"
+        ],
+        [
+          "Salt",
+          0.25,
+          "tsp"
+        ]
+      ],
+      "steps": [
+        "Finely dice half an onion and 1 bell pepper, chop ¼ cup cilantro, and crack 8 eggs into a bowl; whisk with ¼ tsp salt until whites and yolks are combined.",
+        "Heat 1 tsp olive oil in a large nonstick skillet over medium heat, sauté the onion and pepper for 4–5 minutes, and transfer them to a clean plate.",
+        "Add 12 oz raw Mexican-style chorizo to the skillet, breaking it into small crumbles; cook thoroughly for 7–9 minutes until the pork chorizo reaches 160°F, then drain excess rendered fat if needed.",
+        "Lower the heat to medium-low, return the vegetables to the skillet and add the beaten eggs; stir slowly until eggs are softly set and fully cooked to 160°F, taking care not to dry them out.",
+        "Warm 8 tortillas in a dry skillet for 20 seconds on each side, divide the chorizo-egg mixture among them, add 1 cup Monterey Jack cheese and top with ½ cup salsa and cilantro; serve two tacos per person."
+      ],
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-039",
+      "name": "Chorizo and Potato Burritos",
+      "slot": "Dinner",
+      "serv": 4,
+      "ingredients": [
+        [
+          "Raw Mexican-style pork chorizo",
+          12,
+          "oz"
+        ],
+        [
+          "Russet potatoes",
+          1,
+          "lb"
+        ],
+        [
+          "Large flour tortillas",
+          4,
+          "each"
+        ],
+        [
+          "Shredded cheddar",
+          1,
+          "cup"
+        ],
+        [
+          "Large eggs",
+          4,
+          "each"
+        ],
+        [
+          "Yellow onion",
+          0.5,
+          "each"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Ground cumin",
+          0.5,
+          "tsp"
+        ],
+        [
+          "Salt",
+          0.5,
+          "tsp"
+        ],
+        [
+          "Salsa verde",
+          0.5,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Peel 1 lb russet potatoes and cut into even ½-inch cubes, then dice half a yellow onion; pat the potatoes dry to help them brown instead of steaming.",
+        "Heat 1 tbsp olive oil in a wide skillet over medium heat and cook potato cubes and onion with ½ tsp cumin and ½ tsp salt, covered for the first 8 minutes then uncovered for another 8–10 minutes, until potatoes are tender and browned.",
+        "Transfer the potatoes to a plate; crumble 12 oz raw pork chorizo into the skillet, cook over medium heat for 7–9 minutes until it reaches 160°F and drain excess grease.",
+        "Beat 4 eggs and pour them into the cooked chorizo over medium-low heat, stirring until the eggs are fully cooked; return potatoes to the pan and toss briefly with the chorizo and eggs.",
+        "Warm four large tortillas until pliable, divide the filling evenly, sprinkle with 1 cup cheddar and spoon on ½ cup salsa verde; fold sides inward and roll tightly, then toast the wrapped burritos seam-side down for 1–2 minutes before serving."
+      ],
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-040",
+      "name": "Grilled Fish Baja Tacos",
+      "slot": "Dinner",
+      "serv": 4,
+      "ingredients": [
+        [
+          "Skinless white fish fillets",
+          1.5,
+          "lb"
+        ],
+        [
+          "Corn tortillas",
+          12,
+          "each"
+        ],
+        [
+          "Shredded cabbage",
+          2,
+          "cup"
+        ],
+        [
+          "Plain Greek yogurt",
+          0.5,
+          "cup"
+        ],
+        [
+          "Lime",
+          2,
+          "each"
+        ],
+        [
+          "Olive oil",
+          2,
+          "tbsp"
+        ],
+        [
+          "Chili powder",
+          1,
+          "tsp"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Garlic powder",
+          0.5,
+          "tsp"
+        ],
+        [
+          "Salt",
+          0.75,
+          "tsp"
+        ],
+        [
+          "Cilantro",
+          0.25,
+          "cup"
+        ],
+        [
+          "Avocado",
+          1,
+          "each"
+        ]
+      ],
+      "steps": [
+        "Pat dry 1½ lb skinless white fish fillets and cut into roughly eight even pieces; whisk 1 tbsp olive oil with 1 tsp chili powder, 1 tsp cumin, ½ tsp garlic powder and ¾ tsp salt, then coat the fish.",
+        "Whisk ½ cup plain Greek yogurt with juice from 1 lime and 1 tbsp water to make a pourable sauce; prepare 2 cups shredded cabbage, dice 1 avocado and chop ¼ cup cilantro.",
+        "Preheat a clean, lightly oiled grill pan over medium-high heat; brush with the remaining tablespoon of olive oil and lay the fish pieces in a single layer without crowding.",
+        "Cook fish about 3–5 minutes per side, depending on thickness, until opaque, flaky and 145°F in the thickest part; use a wide spatula to keep the pieces intact and transfer to a clean platter.",
+        "Warm 12 corn tortillas on a dry skillet, divide fish into tortillas, top with cabbage, avocado and cilantro, and drizzle with lime-yogurt sauce; serve three tacos per person with wedges from the remaining lime."
+      ],
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
     }
   ]
 }
