@@ -463,6 +463,42 @@
       "photoReview": "pending",
       "pairedWithInstructions": true,
       "photoBrief": "Tender fork-shredded beef pot roast with chunky cooked carrots, Yukon Gold potatoes and glossy brown gravy in a ceramic bowl, dark cinematic homestyle plating"
+    },
+    {
+      "id": "exp01-053",
+      "name": "Beef Tips and Brown Gravy",
+      "expectedAsset": "assets/meal-photos/exp01-053.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Tender browned beef tips and sautéed mushrooms in glossy dark brown onion gravy generously spooned over fluffy mashed potatoes, dark ceramic plate, no noodles or rice"
+    },
+    {
+      "id": "exp01-054",
+      "name": "Baked Chicken and Dressing",
+      "expectedAsset": "assets/meal-photos/exp01-054.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Golden-baked Southern cornbread dressing with visible savory celery and onion, tender sliced chicken beneath, rustic ceramic casserole dish, warm restaurant lighting"
+    },
+    {
+      "id": "exp01-055",
+      "name": "Chicken Fried Chicken",
+      "expectedAsset": "assets/meal-photos/exp01-055.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "One large crisp golden breaded chicken cutlet covered partly in creamy black-pepper country gravy on a dark stoneware plate, no beef"
+    },
+    {
+      "id": "exp01-056",
+      "name": "Pulled Pork Mac and Cheese",
+      "expectedAsset": "assets/meal-photos/exp01-056.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Baked cheddar macaroni topped with smoky barbecue pulled pork and toasted panko crust in rustic black casserole dish, individual serving clearly showing both pork and pasta"
     }
   ]
 }
