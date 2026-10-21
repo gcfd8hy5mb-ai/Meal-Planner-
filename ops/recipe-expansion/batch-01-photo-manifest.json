@@ -1,7 +1,7 @@
 {
   "batch": 1,
-  "status": "image-generation-in-progress",
-  "note": "20 concept-photo previews were generated as a combined collage outside GitHub. This is NOT a deployable individual-image asset. Do not mark photoReady or publish without verified, separately saved recipe-specific image files.",
+  "status": "individual-photo-previews-generated-not-yet-committed",
+  "note": "Twenty individual recipe-specific photo previews were extracted from a newly generated luxury-style composite during the development session. They must be uploaded as real assets to GitHub, reviewed for ingredient accuracy and resolution, and approved before any draft is published. No photoReady flags are set yet.",
   "requiredStyle": "dark cinematic luxury restaurant food photography; ingredient-accurate; no text inside image; portrait/landscape thumbnail suitable for iPhone",
   "recipes": [
     {
@@ -10,7 +10,8 @@
       "expectedAsset": "assets/meal-photos/exp01-001.webp",
       "assetSaved": false,
       "photoReview": "pending",
-      "pairedWithInstructions": true
+      "pairedWithInstructions": true,
+      "previewGenerated": true
     },
     {
       "id": "exp01-002",
@@ -18,7 +19,8 @@
       "expectedAsset": "assets/meal-photos/exp01-002.webp",
       "assetSaved": false,
       "photoReview": "pending",
-      "pairedWithInstructions": true
+      "pairedWithInstructions": true,
+      "previewGenerated": true
     },
     {
       "id": "exp01-003",
@@ -26,7 +28,8 @@
       "expectedAsset": "assets/meal-photos/exp01-003.webp",
       "assetSaved": false,
       "photoReview": "pending",
-      "pairedWithInstructions": true
+      "pairedWithInstructions": true,
+      "previewGenerated": true
     },
     {
       "id": "exp01-004",
@@ -34,7 +37,8 @@
       "expectedAsset": "assets/meal-photos/exp01-004.webp",
       "assetSaved": false,
       "photoReview": "pending",
-      "pairedWithInstructions": true
+      "pairedWithInstructions": true,
+      "previewGenerated": true
     },
     {
       "id": "exp01-005",
@@ -42,7 +46,8 @@
       "expectedAsset": "assets/meal-photos/exp01-005.webp",
       "assetSaved": false,
       "photoReview": "pending",
-      "pairedWithInstructions": true
+      "pairedWithInstructions": true,
+      "previewGenerated": true
     },
     {
       "id": "exp01-006",
@@ -50,7 +55,8 @@
       "expectedAsset": "assets/meal-photos/exp01-006.webp",
       "assetSaved": false,
       "photoReview": "pending",
-      "pairedWithInstructions": true
+      "pairedWithInstructions": true,
+      "previewGenerated": true
     },
     {
       "id": "exp01-007",
@@ -58,7 +64,8 @@
       "expectedAsset": "assets/meal-photos/exp01-007.webp",
       "assetSaved": false,
       "photoReview": "pending",
-      "pairedWithInstructions": true
+      "pairedWithInstructions": true,
+      "previewGenerated": true
     },
     {
       "id": "exp01-008",
@@ -66,7 +73,8 @@
       "expectedAsset": "assets/meal-photos/exp01-008.webp",
       "assetSaved": false,
       "photoReview": "pending",
-      "pairedWithInstructions": true
+      "pairedWithInstructions": true,
+      "previewGenerated": true
     },
     {
       "id": "exp01-009",
@@ -74,7 +82,8 @@
       "expectedAsset": "assets/meal-photos/exp01-009.webp",
       "assetSaved": false,
       "photoReview": "pending",
-      "pairedWithInstructions": true
+      "pairedWithInstructions": true,
+      "previewGenerated": true
     },
     {
       "id": "exp01-010",
@@ -82,7 +91,8 @@
       "expectedAsset": "assets/meal-photos/exp01-010.webp",
       "assetSaved": false,
       "photoReview": "pending",
-      "pairedWithInstructions": true
+      "pairedWithInstructions": true,
+      "previewGenerated": true
     },
     {
       "id": "exp01-011",
@@ -90,7 +100,8 @@
       "expectedAsset": "assets/meal-photos/exp01-011.webp",
       "assetSaved": false,
       "photoReview": "pending",
-      "pairedWithInstructions": true
+      "pairedWithInstructions": true,
+      "previewGenerated": true
     },
     {
       "id": "exp01-012",
@@ -98,7 +109,8 @@
       "expectedAsset": "assets/meal-photos/exp01-012.webp",
       "assetSaved": false,
       "photoReview": "pending",
-      "pairedWithInstructions": true
+      "pairedWithInstructions": true,
+      "previewGenerated": true
     },
     {
       "id": "exp01-013",
@@ -106,7 +118,8 @@
       "expectedAsset": "assets/meal-photos/exp01-013.webp",
       "assetSaved": false,
       "photoReview": "pending",
-      "pairedWithInstructions": true
+      "pairedWithInstructions": true,
+      "previewGenerated": true
     },
     {
       "id": "exp01-014",
@@ -114,7 +127,8 @@
       "expectedAsset": "assets/meal-photos/exp01-014.webp",
       "assetSaved": false,
       "photoReview": "pending",
-      "pairedWithInstructions": true
+      "pairedWithInstructions": true,
+      "previewGenerated": true
     },
     {
       "id": "exp01-015",
@@ -122,7 +136,8 @@
       "expectedAsset": "assets/meal-photos/exp01-015.webp",
       "assetSaved": false,
       "photoReview": "pending",
-      "pairedWithInstructions": true
+      "pairedWithInstructions": true,
+      "previewGenerated": true
     },
     {
       "id": "exp01-016",
@@ -130,7 +145,8 @@
       "expectedAsset": "assets/meal-photos/exp01-016.webp",
       "assetSaved": false,
       "photoReview": "pending",
-      "pairedWithInstructions": true
+      "pairedWithInstructions": true,
+      "previewGenerated": true
     },
     {
       "id": "exp01-017",
@@ -138,7 +154,8 @@
       "expectedAsset": "assets/meal-photos/exp01-017.webp",
       "assetSaved": false,
       "photoReview": "pending",
-      "pairedWithInstructions": true
+      "pairedWithInstructions": true,
+      "previewGenerated": true
     },
     {
       "id": "exp01-018",
@@ -146,7 +163,8 @@
       "expectedAsset": "assets/meal-photos/exp01-018.webp",
       "assetSaved": false,
       "photoReview": "pending",
-      "pairedWithInstructions": true
+      "pairedWithInstructions": true,
+      "previewGenerated": true
     },
     {
       "id": "exp01-019",
@@ -154,7 +172,8 @@
       "expectedAsset": "assets/meal-photos/exp01-019.webp",
       "assetSaved": false,
       "photoReview": "pending",
-      "pairedWithInstructions": true
+      "pairedWithInstructions": true,
+      "previewGenerated": true
     },
     {
       "id": "exp01-020",
@@ -162,7 +181,8 @@
       "expectedAsset": "assets/meal-photos/exp01-020.webp",
       "assetSaved": false,
       "photoReview": "pending",
-      "pairedWithInstructions": true
+      "pairedWithInstructions": true,
+      "previewGenerated": true
     }
   ]
 }
