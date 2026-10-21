@@ -1584,16 +1584,21 @@
       "reviewStatus": "pending"
     },
     "Feta cheese": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "173420",
+      "description": "Cheese, feta",
+      "state": "Feta cheese, crumbled (as explicitly specified in both recipes)",
+      "kcalPer100g": 265,
+      "proteinPer100g": 14.21,
+      "carbsPer100g": 3.88,
+      "fatPer100g": 21.49,
+      "gramsPerUnit": {
+        "cup": 150
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/173420/nutrients",
+      "portionSource": "USDA FoodData Central SR Legacy 173420: 1 cup, crumbled = 150 g. Source API nutrient IDs: 1008=265 kcal; 1003=14.21 g protein; 1005=3.88 g carbohydrate; 1004=21.49 g fat per 100 g. Saved evidence: usda-review-evidence-20261021/evidence-075.json.",
+      "reviewNotes": "Ingredient input only, not finished-meal nutrition. Both staged recipes using Feta cheese by cup explicitly say crumbled feta: Roasted Vegetable and Chicken Orzo (1/2 cup) and Balsamic Turkey and Roasted Beet Grain Bowls (1/2 cup). Other ingredient label Feta is NOT approved because its burger recipe does not specify crumbled state."
     },
     "Flank steak": {
       "source": "USDA FoodData Central Foundation",
