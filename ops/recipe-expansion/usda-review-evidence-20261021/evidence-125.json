@@ -1,0 +1,2082 @@
+{
+  "source": "USDA FoodData Central",
+  "offset": 125,
+  "requested": 25,
+  "succeeded": 25,
+  "failed": 0,
+  "approvedByThisScript": 0,
+  "review": [
+    {
+      "ingredient": "Apricot preserves",
+      "uses": 1,
+      "recipesAffected": 1,
+      "requiredUnits": [
+        "cup"
+      ],
+      "status": "source-lookup-pending",
+      "query": "Apricot preserves",
+      "candidates": [
+        {
+          "fdcId": 170645,
+          "name": "Jams and preserves, apricot",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 171697,
+          "name": "Apricots, raw",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 169641,
+          "name": "Jams and preserves",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 2710815,
+          "name": "Apricot, with skin, raw",
+          "dataType": "Foundation"
+        },
+        {
+          "fdcId": 171703,
+          "name": "Apricots, frozen, sweetened",
+          "dataType": "SR Legacy"
+        }
+      ],
+      "firstCandidateDetail": {
+        "fdcId": 170645,
+        "description": "Jams and preserves, apricot",
+        "dataType": "SR Legacy",
+        "nutrientCandidates": [
+          {
+            "id": 1008,
+            "name": "Energy",
+            "unit": "kcal",
+            "amount": 242
+          },
+          {
+            "id": 1003,
+            "name": "Protein",
+            "unit": "g",
+            "amount": 0.7
+          },
+          {
+            "id": 1004,
+            "name": "Total lipid (fat)",
+            "unit": "g",
+            "amount": 0.2
+          },
+          {
+            "id": 1005,
+            "name": "Carbohydrate, by difference",
+            "unit": "g",
+            "amount": 64.4
+          }
+        ],
+        "portions": [
+          {
+            "grams": 14,
+            "amount": 1,
+            "unit": "undetermined",
+            "modifier": "packet (0.5 oz)"
+          },
+          {
+            "grams": 20,
+            "amount": 1,
+            "unit": "undetermined",
+            "modifier": "tbsp"
+          }
+        ]
+      },
+      "verification": "requires-editorial-review",
+      "approved": false
+    },
+    {
+      "ingredient": "Arborio rice",
+      "uses": 1,
+      "recipesAffected": 1,
+      "requiredUnits": [
+        "cup"
+      ],
+      "status": "source-lookup-pending",
+      "query": "Arborio rice",
+      "candidates": [
+        {
+          "fdcId": 173161,
+          "name": "Rice crackers",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 167967,
+          "name": "Snacks, rice cakes, brown rice, buckwheat",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 169679,
+          "name": "Snacks, rice cakes, brown rice, corn",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 169680,
+          "name": "Snacks, rice cakes, brown rice, multigrain",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 168855,
+          "name": "Snacks, rice cakes, brown rice, rye",
+          "dataType": "SR Legacy"
+        }
+      ],
+      "firstCandidateDetail": {
+        "fdcId": 173161,
+        "description": "Rice crackers",
+        "dataType": "SR Legacy",
+        "nutrientCandidates": [
+          {
+            "id": 1008,
+            "name": "Energy",
+            "unit": "kcal",
+            "amount": 416
+          },
+          {
+            "id": 1003,
+            "name": "Protein",
+            "unit": "g",
+            "amount": 10
+          },
+          {
+            "id": 1004,
+            "name": "Total lipid (fat)",
+            "unit": "g",
+            "amount": 5
+          },
+          {
+            "id": 1005,
+            "name": "Carbohydrate, by difference",
+            "unit": "g",
+            "amount": 82.64
+          }
+        ],
+        "portions": [
+          {
+            "grams": 30,
+            "amount": 1,
+            "unit": "undetermined",
+            "modifier": "serving"
+          }
+        ]
+      },
+      "verification": "requires-editorial-review",
+      "approved": false
+    },
+    {
+      "ingredient": "Artichoke hearts",
+      "uses": 1,
+      "recipesAffected": 1,
+      "requiredUnits": [
+        "oz"
+      ],
+      "status": "source-lookup-pending",
+      "query": "Artichoke hearts",
+      "candidates": [
+        {
+          "fdcId": 169236,
+          "name": "Jerusalem-artichokes, raw",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 169205,
+          "name": "Artichokes, (globe or french), raw",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 168569,
+          "name": "Hearts of palm, canned",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 167714,
+          "name": "Hearts of palm, raw",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 168387,
+          "name": "Artichokes, (globe or french), frozen, unprepared",
+          "dataType": "SR Legacy"
+        }
+      ],
+      "firstCandidateDetail": {
+        "fdcId": 169236,
+        "description": "Jerusalem-artichokes, raw",
+        "dataType": "SR Legacy",
+        "nutrientCandidates": [
+          {
+            "id": 1008,
+            "name": "Energy",
+            "unit": "kcal",
+            "amount": 73
+          },
+          {
+            "id": 1003,
+            "name": "Protein",
+            "unit": "g",
+            "amount": 2
+          },
+          {
+            "id": 1004,
+            "name": "Total lipid (fat)",
+            "unit": "g",
+            "amount": 0.01
+          },
+          {
+            "id": 1005,
+            "name": "Carbohydrate, by difference",
+            "unit": "g",
+            "amount": 17.44
+          }
+        ],
+        "portions": [
+          {
+            "grams": 150,
+            "amount": 1,
+            "unit": "undetermined",
+            "modifier": "cup slices"
+          }
+        ]
+      },
+      "verification": "requires-editorial-review",
+      "approved": false
+    },
+    {
+      "ingredient": "Avocados",
+      "uses": 1,
+      "recipesAffected": 1,
+      "requiredUnits": [
+        "each"
+      ],
+      "status": "source-lookup-pending",
+      "query": "Avocados",
+      "candidates": [
+        {
+          "fdcId": 173573,
+          "name": "Oil, avocado",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 171706,
+          "name": "Avocados, raw, California",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 171707,
+          "name": "Avocados, raw, Florida",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 2710824,
+          "name": "Avocado, Hass, peeled, raw",
+          "dataType": "Foundation"
+        },
+        {
+          "fdcId": 171705,
+          "name": "Avocados, raw, all commercial varieties",
+          "dataType": "SR Legacy"
+        }
+      ],
+      "firstCandidateDetail": {
+        "fdcId": 173573,
+        "description": "Oil, avocado",
+        "dataType": "SR Legacy",
+        "nutrientCandidates": [
+          {
+            "id": 1008,
+            "name": "Energy",
+            "unit": "kcal",
+            "amount": 884
+          },
+          {
+            "id": 1003,
+            "name": "Protein",
+            "unit": "g",
+            "amount": 0
+          },
+          {
+            "id": 1004,
+            "name": "Total lipid (fat)",
+            "unit": "g",
+            "amount": 100
+          },
+          {
+            "id": 1005,
+            "name": "Carbohydrate, by difference",
+            "unit": "g",
+            "amount": 0
+          }
+        ],
+        "portions": [
+          {
+            "grams": 4.5,
+            "amount": 1,
+            "unit": "undetermined",
+            "modifier": "tsp"
+          },
+          {
+            "grams": 14,
+            "amount": 1,
+            "unit": "undetermined",
+            "modifier": "tbsp"
+          },
+          {
+            "grams": 218,
+            "amount": 1,
+            "unit": "undetermined",
+            "modifier": "cup"
+          }
+        ]
+      },
+      "verification": "requires-editorial-review",
+      "approved": false
+    },
+    {
+      "ingredient": "Baby arugula",
+      "uses": 1,
+      "recipesAffected": 1,
+      "requiredUnits": [
+        "cup"
+      ],
+      "status": "source-lookup-pending",
+      "query": "Baby arugula",
+      "candidates": [
+        {
+          "fdcId": 2710822,
+          "name": "Arugula, baby, raw",
+          "dataType": "Foundation"
+        },
+        {
+          "fdcId": 169387,
+          "name": "Arugula, raw",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 1999632,
+          "name": "Spinach, baby",
+          "dataType": "Foundation"
+        },
+        {
+          "fdcId": 2258587,
+          "name": "Carrots, baby, raw",
+          "dataType": "Foundation"
+        },
+        {
+          "fdcId": 168568,
+          "name": "Carrots, baby, raw",
+          "dataType": "SR Legacy"
+        }
+      ],
+      "firstCandidateDetail": {
+        "fdcId": 2710822,
+        "description": "Arugula, baby, raw",
+        "dataType": "Foundation",
+        "nutrientCandidates": [
+          {
+            "id": 2047,
+            "name": "Energy (Atwater General Factors)",
+            "unit": "kcal",
+            "amount": 30.993
+          },
+          {
+            "id": 2048,
+            "name": "Energy (Atwater Specific Factors)",
+            "unit": "kcal",
+            "amount": 25.9078525
+          },
+          {
+            "id": 1003,
+            "name": "Protein",
+            "unit": "g",
+            "amount": 1.64875
+          },
+          {
+            "id": 1004,
+            "name": "Total lipid (fat)",
+            "unit": "g",
+            "amount": 0.325
+          },
+          {
+            "id": 1005,
+            "name": "Carbohydrate, by difference",
+            "unit": "g",
+            "amount": 5.36825
+          }
+        ],
+        "portions": [
+          {
+            "grams": 85,
+            "amount": 1,
+            "unit": "RACC"
+          }
+        ]
+      },
+      "verification": "requires-editorial-review",
+      "approved": false
+    },
+    {
+      "ingredient": "Bacon",
+      "uses": 1,
+      "recipesAffected": 1,
+      "requiredUnits": [
+        "slice"
+      ],
+      "status": "source-lookup-pending",
+      "query": "Bacon",
+      "candidates": [
+        {
+          "fdcId": 172439,
+          "name": "Bacon, meatless",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 174602,
+          "name": "Bacon and beef sticks",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 169893,
+          "name": "Bacon bits, meatless",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 171639,
+          "name": "Bacon, turkey, microwaved",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 174592,
+          "name": "Bacon, turkey, unprepared",
+          "dataType": "SR Legacy"
+        }
+      ],
+      "firstCandidateDetail": {
+        "fdcId": 172439,
+        "description": "Bacon, meatless",
+        "dataType": "SR Legacy",
+        "nutrientCandidates": [
+          {
+            "id": 1008,
+            "name": "Energy",
+            "unit": "kcal",
+            "amount": 309
+          },
+          {
+            "id": 1003,
+            "name": "Protein",
+            "unit": "g",
+            "amount": 11.69
+          },
+          {
+            "id": 1004,
+            "name": "Total lipid (fat)",
+            "unit": "g",
+            "amount": 29.52
+          },
+          {
+            "id": 1005,
+            "name": "Carbohydrate, by difference",
+            "unit": "g",
+            "amount": 5.31
+          }
+        ],
+        "portions": [
+          {
+            "grams": 144,
+            "amount": 1,
+            "unit": "undetermined",
+            "modifier": "cup"
+          },
+          {
+            "grams": 5,
+            "amount": 1,
+            "unit": "undetermined",
+            "modifier": "strip"
+          },
+          {
+            "grams": 16,
+            "amount": 1,
+            "unit": "undetermined",
+            "modifier": "oz cooked, yield"
+          }
+        ]
+      },
+      "verification": "requires-editorial-review",
+      "approved": false
+    },
+    {
+      "ingredient": "Baking powder",
+      "uses": 1,
+      "recipesAffected": 1,
+      "requiredUnits": [
+        "tbsp"
+      ],
+      "status": "source-lookup-pending",
+      "query": "Baking powder",
+      "candidates": [
+        {
+          "fdcId": 172805,
+          "name": "Leavening agents, baking powder, low-sodium",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 172804,
+          "name": "Leavening agents, baking powder, double-acting, straight phosphate",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 172803,
+          "name": "Leavening agents, baking powder, double-acting, sodium aluminum sulfate",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 167806,
+          "name": "Baobab powder",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 169656,
+          "name": "Sugars, powdered",
+          "dataType": "SR Legacy"
+        }
+      ],
+      "firstCandidateDetail": {
+        "fdcId": 172805,
+        "description": "Leavening agents, baking powder, low-sodium",
+        "dataType": "SR Legacy",
+        "nutrientCandidates": [
+          {
+            "id": 1008,
+            "name": "Energy",
+            "unit": "kcal",
+            "amount": 97
+          },
+          {
+            "id": 1003,
+            "name": "Protein",
+            "unit": "g",
+            "amount": 0.1
+          },
+          {
+            "id": 1004,
+            "name": "Total lipid (fat)",
+            "unit": "g",
+            "amount": 0.4
+          },
+          {
+            "id": 1005,
+            "name": "Carbohydrate, by difference",
+            "unit": "g",
+            "amount": 46.9
+          }
+        ],
+        "portions": [
+          {
+            "grams": 2.5,
+            "amount": 0.5,
+            "unit": "undetermined",
+            "modifier": "tsp"
+          },
+          {
+            "grams": 5,
+            "amount": 1,
+            "unit": "undetermined",
+            "modifier": "tsp"
+          }
+        ]
+      },
+      "verification": "requires-editorial-review",
+      "approved": false
+    },
+    {
+      "ingredient": "Basil pesto",
+      "uses": 1,
+      "recipesAffected": 1,
+      "requiredUnits": [
+        "cup"
+      ],
+      "status": "source-lookup-pending",
+      "query": "Basil pesto",
+      "candidates": [
+        {
+          "fdcId": 171582,
+          "name": "Sauce, pesto, CLASSICO, basil pesto, ready-to-serve",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 171581,
+          "name": "Sauce, pesto, BUITONI, pesto with basil, ready-to-serve, refrigerated",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 171185,
+          "name": "Sauce, pesto, MEZZETTA, NAPA VALLEY BISTRO, basil pesto, ready-to-serve",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 172232,
+          "name": "Basil, fresh",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 171579,
+          "name": "Sauce, pesto, ready-to-serve, refrigerated",
+          "dataType": "SR Legacy"
+        }
+      ],
+      "firstCandidateDetail": {
+        "fdcId": 171582,
+        "description": "Sauce, pesto, CLASSICO, basil pesto, ready-to-serve",
+        "dataType": "SR Legacy",
+        "nutrientCandidates": [
+          {
+            "id": 1008,
+            "name": "Energy",
+            "unit": "kcal",
+            "amount": 372
+          },
+          {
+            "id": 1003,
+            "name": "Protein",
+            "unit": "g",
+            "amount": 4.16
+          },
+          {
+            "id": 1004,
+            "name": "Total lipid (fat)",
+            "unit": "g",
+            "amount": 36.38
+          },
+          {
+            "id": 1005,
+            "name": "Carbohydrate, by difference",
+            "unit": "g",
+            "amount": 6.93
+          }
+        ],
+        "portions": [
+          {
+            "grams": 62,
+            "amount": 0.25,
+            "unit": "undetermined",
+            "modifier": "cup"
+          }
+        ]
+      },
+      "verification": "requires-editorial-review",
+      "approved": false
+    },
+    {
+      "ingredient": "Bay leaf",
+      "uses": 1,
+      "recipesAffected": 1,
+      "requiredUnits": [
+        "each"
+      ],
+      "status": "source-lookup-pending",
+      "query": "Bay leaf",
+      "candidates": [
+        {
+          "fdcId": 170917,
+          "name": "Spices, bay leaf",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 169249,
+          "name": "Lettuce, green leaf, raw",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 2346391,
+          "name": "Lettuce, leaf, green, raw",
+          "dataType": "Foundation"
+        },
+        {
+          "fdcId": 2346390,
+          "name": "Lettuce, leaf, red, raw",
+          "dataType": "Foundation"
+        },
+        {
+          "fdcId": 168431,
+          "name": "Lettuce, red leaf, raw",
+          "dataType": "SR Legacy"
+        }
+      ],
+      "firstCandidateDetail": {
+        "fdcId": 170917,
+        "description": "Spices, bay leaf",
+        "dataType": "SR Legacy",
+        "nutrientCandidates": [
+          {
+            "id": 1008,
+            "name": "Energy",
+            "unit": "kcal",
+            "amount": 313
+          },
+          {
+            "id": 1003,
+            "name": "Protein",
+            "unit": "g",
+            "amount": 7.61
+          },
+          {
+            "id": 1004,
+            "name": "Total lipid (fat)",
+            "unit": "g",
+            "amount": 8.36
+          },
+          {
+            "id": 1005,
+            "name": "Carbohydrate, by difference",
+            "unit": "g",
+            "amount": 74.97
+          }
+        ],
+        "portions": [
+          {
+            "grams": 1.8,
+            "amount": 1,
+            "unit": "undetermined",
+            "modifier": "tbsp, crumbled"
+          },
+          {
+            "grams": 0.6,
+            "amount": 1,
+            "unit": "undetermined",
+            "modifier": "tsp, crumbled"
+          }
+        ]
+      },
+      "verification": "requires-editorial-review",
+      "approved": false
+    },
+    {
+      "ingredient": "Beef short ribs",
+      "uses": 1,
+      "recipesAffected": 1,
+      "requiredUnits": [
+        "lb"
+      ],
+      "status": "source-lookup-pending",
+      "query": "Beef short ribs",
+      "candidates": [
+        {
+          "fdcId": 170827,
+          "name": "Beef, chuck, short ribs, boneless, separable lean and fat, trimmed to 0\" fat, choice, raw",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 170828,
+          "name": "Beef, chuck, short ribs, boneless, separable lean and fat, trimmed to 0\" fat, select, raw",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 170783,
+          "name": "Beef, chuck, short ribs, boneless, separable lean only, trimmed to 0\" fat, choice, raw",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 171193,
+          "name": "Beef, chuck, short ribs, boneless, separable lean only, trimmed to 0\" fat, select, raw",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 171223,
+          "name": "Beef, chuck, short ribs, boneless, separable lean and fat, trimmed to 0\" fat, choice, cooked, braised",
+          "dataType": "SR Legacy"
+        }
+      ],
+      "firstCandidateDetail": {
+        "fdcId": 170827,
+        "description": "Beef, chuck, short ribs, boneless, separable lean and fat, trimmed to 0\" fat, choice, raw",
+        "dataType": "SR Legacy",
+        "nutrientCandidates": [
+          {
+            "id": 1008,
+            "name": "Energy",
+            "unit": "kcal",
+            "amount": 240
+          },
+          {
+            "id": 1003,
+            "name": "Protein",
+            "unit": "g",
+            "amount": 17.22
+          },
+          {
+            "id": 1004,
+            "name": "Total lipid (fat)",
+            "unit": "g",
+            "amount": 19.03
+          },
+          {
+            "id": 1005,
+            "name": "Carbohydrate, by difference",
+            "unit": "g",
+            "amount": 0
+          }
+        ],
+        "portions": [
+          {
+            "grams": 434,
+            "amount": 1,
+            "unit": "undetermined",
+            "modifier": "piece"
+          },
+          {
+            "grams": 113,
+            "amount": 4,
+            "unit": "undetermined",
+            "modifier": "oz"
+          }
+        ]
+      },
+      "verification": "requires-editorial-review",
+      "approved": false
+    },
+    {
+      "ingredient": "Black beans, drained",
+      "uses": 1,
+      "recipesAffected": 1,
+      "requiredUnits": [
+        "cup"
+      ],
+      "status": "source-lookup-pending",
+      "query": "Black beans, drained",
+      "candidates": [
+        {
+          "fdcId": 2644285,
+          "name": "Beans, black, canned, sodium added, drained and rinsed",
+          "dataType": "Foundation"
+        },
+        {
+          "fdcId": 174286,
+          "name": "Beans, pinto, canned, drained solids",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 169359,
+          "name": "Yardlong bean, cooked, boiled, drained, with salt",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 2644287,
+          "name": "Beans, cannellini, canned, sodium added, drained and rinsed",
+          "dataType": "Foundation"
+        },
+        {
+          "fdcId": 2644286,
+          "name": "Beans, navy, canned, sodium added, drained and rinsed",
+          "dataType": "Foundation"
+        }
+      ],
+      "firstCandidateDetail": {
+        "fdcId": 2644285,
+        "description": "Beans, black, canned, sodium added, drained and rinsed",
+        "dataType": "Foundation",
+        "nutrientCandidates": [
+          {
+            "id": 2047,
+            "name": "Energy (Atwater General Factors)",
+            "unit": "kcal",
+            "amount": 118.361
+          },
+          {
+            "id": 2048,
+            "name": "Energy (Atwater Specific Factors)",
+            "unit": "kcal",
+            "amount": 115.28233
+          },
+          {
+            "id": 1003,
+            "name": "Protein",
+            "unit": "g",
+            "amount": 6.9125
+          },
+          {
+            "id": 1004,
+            "name": "Total lipid (fat)",
+            "unit": "g",
+            "amount": 1.273
+          },
+          {
+            "id": 1005,
+            "name": "Carbohydrate, by difference",
+            "unit": "g",
+            "amount": 19.8135
+          }
+        ],
+        "portions": [
+          {
+            "grams": 130,
+            "amount": 1,
+            "unit": "RACC"
+          }
+        ]
+      },
+      "verification": "requires-editorial-review",
+      "approved": false
+    },
+    {
+      "ingredient": "Bolillo rolls",
+      "uses": 1,
+      "recipesAffected": 1,
+      "requiredUnits": [
+        "each"
+      ],
+      "status": "source-lookup-pending",
+      "query": "Bolillo rolls",
+      "candidates": [
+        {
+          "fdcId": 172795,
+          "name": "Rolls, french",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 168126,
+          "name": "Rolls, pumpernickel",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 167971,
+          "name": "Candies, TOOTSIE ROLL, chocolate-flavor roll",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 175027,
+          "name": "Rolls, dinner, egg",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 175029,
+          "name": "Rolls, dinner, rye",
+          "dataType": "SR Legacy"
+        }
+      ],
+      "firstCandidateDetail": {
+        "fdcId": 172795,
+        "description": "Rolls, french",
+        "dataType": "SR Legacy",
+        "nutrientCandidates": [
+          {
+            "id": 1008,
+            "name": "Energy",
+            "unit": "kcal",
+            "amount": 277
+          },
+          {
+            "id": 1003,
+            "name": "Protein",
+            "unit": "g",
+            "amount": 8.6
+          },
+          {
+            "id": 1004,
+            "name": "Total lipid (fat)",
+            "unit": "g",
+            "amount": 4.3
+          },
+          {
+            "id": 1005,
+            "name": "Carbohydrate, by difference",
+            "unit": "g",
+            "amount": 50.2
+          }
+        ],
+        "portions": [
+          {
+            "grams": 28.35,
+            "amount": 1,
+            "unit": "undetermined",
+            "modifier": "oz"
+          },
+          {
+            "grams": 38,
+            "amount": 1,
+            "unit": "undetermined",
+            "modifier": "roll"
+          }
+        ]
+      },
+      "verification": "requires-editorial-review",
+      "approved": false
+    },
+    {
+      "ingredient": "Boneless chicken breasts",
+      "uses": 1,
+      "recipesAffected": 1,
+      "requiredUnits": [
+        "lb"
+      ],
+      "status": "source-lookup-pending",
+      "query": "Boneless chicken breasts",
+      "candidates": [
+        {
+          "fdcId": 2646170,
+          "name": "Chicken, breast, boneless, skinless, raw",
+          "dataType": "Foundation"
+        },
+        {
+          "fdcId": 171077,
+          "name": "Chicken, broiler or fryers, breast, skinless, boneless, meat only, raw",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 171140,
+          "name": "Chicken, broiler or fryers, breast, skinless, boneless, meat only, cooked, braised",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 331960,
+          "name": "Chicken, broiler or fryers, breast, skinless, boneless, meat only, cooked, braised",
+          "dataType": "Foundation"
+        },
+        {
+          "fdcId": 171534,
+          "name": "Chicken, broiler or fryers, breast, skinless, boneless, meat only, cooked, grilled",
+          "dataType": "SR Legacy"
+        }
+      ],
+      "firstCandidateDetail": {
+        "fdcId": 2646170,
+        "description": "Chicken, breast, boneless, skinless, raw",
+        "dataType": "Foundation",
+        "nutrientCandidates": [
+          {
+            "id": 2047,
+            "name": "Energy (Atwater General Factors)",
+            "unit": "kcal",
+            "amount": 106.034
+          },
+          {
+            "id": 2048,
+            "name": "Energy (Atwater Specific Factors)",
+            "unit": "kcal",
+            "amount": 112.20227
+          },
+          {
+            "id": 1003,
+            "name": "Protein",
+            "unit": "g",
+            "amount": 22.525
+          },
+          {
+            "id": 1004,
+            "name": "Total lipid (fat)",
+            "unit": "g",
+            "amount": 1.934
+          },
+          {
+            "id": 1005,
+            "name": "Carbohydrate, by difference",
+            "unit": "g",
+            "amount": 0
+          }
+        ],
+        "portions": [
+          {
+            "grams": 114,
+            "amount": 1,
+            "unit": "RACC"
+          }
+        ]
+      },
+      "verification": "requires-editorial-review",
+      "approved": false
+    },
+    {
+      "ingredient": "Boneless pork chops",
+      "uses": 1,
+      "recipesAffected": 1,
+      "requiredUnits": [
+        "lb"
+      ],
+      "status": "source-lookup-pending",
+      "query": "Boneless pork chops",
+      "candidates": [
+        {
+          "fdcId": 169196,
+          "name": "Pork, fresh, loin, blade (chops), boneless, separable lean only, boneless, cooked, broiled",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 168380,
+          "name": "Pork, fresh, blade, (chops), boneless, separable lean and fat, cooked, broiled",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 167839,
+          "name": "Pork, fresh, loin, top loin (chops), boneless, separable lean and fat, raw",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 168251,
+          "name": "Pork, fresh, loin, top loin (chops), boneless, separable lean only, raw",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 2646168,
+          "name": "Pork, loin, boneless, raw",
+          "dataType": "Foundation"
+        }
+      ],
+      "firstCandidateDetail": {
+        "fdcId": 169196,
+        "description": "Pork, fresh, loin, blade (chops), boneless, separable lean only, boneless, cooked, broiled",
+        "dataType": "SR Legacy",
+        "nutrientCandidates": [
+          {
+            "id": 1008,
+            "name": "Energy",
+            "unit": "kcal",
+            "amount": 169
+          },
+          {
+            "id": 1003,
+            "name": "Protein",
+            "unit": "g",
+            "amount": 26.14
+          },
+          {
+            "id": 1004,
+            "name": "Total lipid (fat)",
+            "unit": "g",
+            "amount": 6.74
+          },
+          {
+            "id": 1005,
+            "name": "Carbohydrate, by difference",
+            "unit": "g",
+            "amount": 0.89
+          }
+        ],
+        "portions": [
+          {
+            "grams": 85,
+            "amount": 3,
+            "unit": "undetermined",
+            "modifier": "oz"
+          },
+          {
+            "grams": 131,
+            "amount": 1,
+            "unit": "undetermined",
+            "modifier": "chop"
+          }
+        ]
+      },
+      "verification": "requires-editorial-review",
+      "approved": false
+    },
+    {
+      "ingredient": "Breakfast ham",
+      "uses": 1,
+      "recipesAffected": 1,
+      "requiredUnits": [
+        "oz"
+      ],
+      "status": "source-lookup-pending",
+      "query": "Breakfast ham",
+      "candidates": [
+        {
+          "fdcId": 173865,
+          "name": "Ham, minced",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 172064,
+          "name": "McDONALD'S, BIG BREAKFAST",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 171629,
+          "name": "Ham and cheese spread",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 173866,
+          "name": "Ham salad spread",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 171626,
+          "name": "Ham, chopped, canned",
+          "dataType": "SR Legacy"
+        }
+      ],
+      "firstCandidateDetail": {
+        "fdcId": 173865,
+        "description": "Ham, minced",
+        "dataType": "SR Legacy",
+        "nutrientCandidates": [
+          {
+            "id": 1008,
+            "name": "Energy",
+            "unit": "kcal",
+            "amount": 263
+          },
+          {
+            "id": 1003,
+            "name": "Protein",
+            "unit": "g",
+            "amount": 16.28
+          },
+          {
+            "id": 1004,
+            "name": "Total lipid (fat)",
+            "unit": "g",
+            "amount": 20.68
+          },
+          {
+            "id": 1005,
+            "name": "Carbohydrate, by difference",
+            "unit": "g",
+            "amount": 1.84
+          }
+        ],
+        "portions": [
+          {
+            "grams": 21,
+            "amount": 1,
+            "unit": "undetermined",
+            "modifier": "slice (4-1/4\" x 4-1/4\" x 1/16\")"
+          },
+          {
+            "grams": 28.35,
+            "amount": 1,
+            "unit": "undetermined",
+            "modifier": "oz"
+          }
+        ]
+      },
+      "verification": "requires-editorial-review",
+      "approved": false
+    },
+    {
+      "ingredient": "Breakfast sausage",
+      "uses": 1,
+      "recipesAffected": 1,
+      "requiredUnits": [
+        "lb"
+      ],
+      "status": "source-lookup-pending",
+      "query": "Breakfast sausage",
+      "candidates": [
+        {
+          "fdcId": 174616,
+          "name": "Sausage, breakfast sausage, beef, pre-cooked, unprepared",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 746779,
+          "name": "Sausage, breakfast sausage, beef, pre-cooked, unprepared",
+          "dataType": "Foundation"
+        },
+        {
+          "fdcId": 169781,
+          "name": "Sausage, egg and cheese breakfast biscuit",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 174600,
+          "name": "Sausage, turkey, breakfast links, mild, raw",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 746783,
+          "name": "Sausage, turkey, breakfast links, mild, raw",
+          "dataType": "Foundation"
+        }
+      ],
+      "firstCandidateDetail": {
+        "fdcId": 174616,
+        "description": "Sausage, breakfast sausage, beef, pre-cooked, unprepared",
+        "dataType": "SR Legacy",
+        "nutrientCandidates": [
+          {
+            "id": 1008,
+            "name": "Energy",
+            "unit": "kcal",
+            "amount": 327
+          },
+          {
+            "id": 1003,
+            "name": "Protein",
+            "unit": "g",
+            "amount": 12.9
+          },
+          {
+            "id": 1004,
+            "name": "Total lipid (fat)",
+            "unit": "g",
+            "amount": 28.22
+          },
+          {
+            "id": 1005,
+            "name": "Carbohydrate, by difference",
+            "unit": "g",
+            "amount": 4.61
+          }
+        ],
+        "portions": [
+          {
+            "grams": 19,
+            "amount": 1,
+            "unit": "undetermined",
+            "modifier": "link"
+          }
+        ]
+      },
+      "verification": "requires-editorial-review",
+      "approved": false
+    },
+    {
+      "ingredient": "Brown rice",
+      "uses": 1,
+      "recipesAffected": 1,
+      "requiredUnits": [
+        "cup"
+      ],
+      "status": "source-lookup-pending",
+      "query": "Brown rice",
+      "candidates": [
+        {
+          "fdcId": 1104812,
+          "name": "Flour, rice, brown",
+          "dataType": "Foundation"
+        },
+        {
+          "fdcId": 168898,
+          "name": "Rice flour, brown",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 167967,
+          "name": "Snacks, rice cakes, brown rice, buckwheat",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 169679,
+          "name": "Snacks, rice cakes, brown rice, corn",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 169680,
+          "name": "Snacks, rice cakes, brown rice, multigrain",
+          "dataType": "SR Legacy"
+        }
+      ],
+      "firstCandidateDetail": {
+        "fdcId": 1104812,
+        "description": "Flour, rice, brown",
+        "dataType": "Foundation",
+        "nutrientCandidates": [
+          {
+            "id": 1008,
+            "name": "Energy",
+            "unit": "kcal",
+            "amount": 365.25
+          },
+          {
+            "id": 1003,
+            "name": "Protein",
+            "unit": "g",
+            "amount": 7.19
+          },
+          {
+            "id": 1004,
+            "name": "Total lipid (fat)",
+            "unit": "g",
+            "amount": 3.85
+          },
+          {
+            "id": 1005,
+            "name": "Carbohydrate, by difference",
+            "unit": "g",
+            "amount": 75.5
+          }
+        ],
+        "portions": [
+          {
+            "grams": 30,
+            "amount": 1,
+            "unit": "RACC"
+          }
+        ]
+      },
+      "verification": "requires-editorial-review",
+      "approved": false
+    },
+    {
+      "ingredient": "Butternut squash",
+      "uses": 1,
+      "recipesAffected": 1,
+      "requiredUnits": [
+        "lb"
+      ],
+      "status": "source-lookup-pending",
+      "query": "Butternut squash",
+      "candidates": [
+        {
+          "fdcId": 169295,
+          "name": "Squash, winter, butternut, raw",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 2685570,
+          "name": "Squash, winter, butternut, raw",
+          "dataType": "Foundation"
+        },
+        {
+          "fdcId": 173510,
+          "name": "Babyfood, vegetable, butternut squash and corn",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 168473,
+          "name": "Squash, winter, butternut, frozen, unprepared",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 170130,
+          "name": "Squash, winter, butternut, cooked, baked, with salt",
+          "dataType": "SR Legacy"
+        }
+      ],
+      "firstCandidateDetail": {
+        "fdcId": 169295,
+        "description": "Squash, winter, butternut, raw",
+        "dataType": "SR Legacy",
+        "nutrientCandidates": [
+          {
+            "id": 1008,
+            "name": "Energy",
+            "unit": "kcal",
+            "amount": 45
+          },
+          {
+            "id": 1003,
+            "name": "Protein",
+            "unit": "g",
+            "amount": 1
+          },
+          {
+            "id": 1004,
+            "name": "Total lipid (fat)",
+            "unit": "g",
+            "amount": 0.1
+          },
+          {
+            "id": 1005,
+            "name": "Carbohydrate, by difference",
+            "unit": "g",
+            "amount": 11.69
+          }
+        ],
+        "portions": [
+          {
+            "grams": 140,
+            "amount": 1,
+            "unit": "undetermined",
+            "modifier": "cup, cubes"
+          }
+        ]
+      },
+      "verification": "requires-editorial-review",
+      "approved": false
+    },
+    {
+      "ingredient": "Cajun seasoning",
+      "uses": 1,
+      "recipesAffected": 1,
+      "requiredUnits": [
+        "tsp"
+      ],
+      "status": "source-lookup-pending",
+      "query": "Cajun seasoning",
+      "candidates": [
+        {
+          "fdcId": 172752,
+          "name": "Croutons, seasoned",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 171331,
+          "name": "Spices, poultry seasoning",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 172745,
+          "name": "Crackers, rye, wafers, seasoned",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 172806,
+          "name": "Bread, crumbs, dry, grated, seasoned",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 173476,
+          "name": "Seasoning mix, dry, chili, original",
+          "dataType": "SR Legacy"
+        }
+      ],
+      "firstCandidateDetail": {
+        "fdcId": 172752,
+        "description": "Croutons, seasoned",
+        "dataType": "SR Legacy",
+        "nutrientCandidates": [
+          {
+            "id": 1008,
+            "name": "Energy",
+            "unit": "kcal",
+            "amount": 465
+          },
+          {
+            "id": 1003,
+            "name": "Protein",
+            "unit": "g",
+            "amount": 10.8
+          },
+          {
+            "id": 1004,
+            "name": "Total lipid (fat)",
+            "unit": "g",
+            "amount": 18.3
+          },
+          {
+            "id": 1005,
+            "name": "Carbohydrate, by difference",
+            "unit": "g",
+            "amount": 63.5
+          }
+        ],
+        "portions": [
+          {
+            "grams": 14.2,
+            "amount": 0.5,
+            "unit": "undetermined",
+            "modifier": "oz"
+          },
+          {
+            "grams": 1,
+            "amount": 4,
+            "unit": "undetermined",
+            "modifier": "cubes"
+          },
+          {
+            "grams": 40,
+            "amount": 1,
+            "unit": "undetermined",
+            "modifier": "cup"
+          },
+          {
+            "grams": 10,
+            "amount": 1,
+            "unit": "undetermined",
+            "modifier": "package, fast food"
+          }
+        ]
+      },
+      "verification": "requires-editorial-review",
+      "approved": false
+    },
+    {
+      "ingredient": "Canned diced green chiles",
+      "uses": 1,
+      "recipesAffected": 1,
+      "requiredUnits": [
+        "cup"
+      ],
+      "status": "source-lookup-pending",
+      "query": "Canned diced green chiles",
+      "candidates": [
+        {
+          "fdcId": 333281,
+          "name": "Tomatoes, canned, red, ripe, diced",
+          "dataType": "Foundation"
+        },
+        {
+          "fdcId": 168577,
+          "name": "Peppers, chili, green, canned",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 169096,
+          "name": "Olives, pickled, canned or bottled, green",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 171554,
+          "name": "Soup, pea, green, canned, condensed",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 168119,
+          "name": "Turnip greens, canned, no salt added",
+          "dataType": "SR Legacy"
+        }
+      ],
+      "firstCandidateDetail": {
+        "fdcId": 333281,
+        "description": "Tomatoes, canned, red, ripe, diced",
+        "dataType": "Foundation",
+        "nutrientCandidates": [
+          {
+            "id": 1008,
+            "name": "Energy",
+            "unit": "kcal",
+            "amount": 18
+          },
+          {
+            "id": 1003,
+            "name": "Protein",
+            "unit": "g",
+            "amount": 0.84
+          },
+          {
+            "id": 1004,
+            "name": "Total lipid (fat)",
+            "unit": "g",
+            "amount": 0.5
+          },
+          {
+            "id": 1005,
+            "name": "Carbohydrate, by difference",
+            "unit": "g",
+            "amount": 3.32
+          }
+        ],
+        "portions": [
+          {
+            "grams": 245,
+            "amount": 1,
+            "unit": "cup",
+            "modifier": ""
+          },
+          {
+            "grams": 130,
+            "amount": 1,
+            "unit": "RACC"
+          }
+        ]
+      },
+      "verification": "requires-editorial-review",
+      "approved": false
+    },
+    {
+      "ingredient": "Canned navy beans",
+      "uses": 1,
+      "recipesAffected": 1,
+      "requiredUnits": [
+        "oz"
+      ],
+      "status": "source-lookup-pending",
+      "query": "Canned navy beans",
+      "candidates": [
+        {
+          "fdcId": 173747,
+          "name": "Beans, navy, mature seeds, canned",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 2644286,
+          "name": "Beans, navy, canned, sodium added, drained and rinsed",
+          "dataType": "Foundation"
+        },
+        {
+          "fdcId": 747441,
+          "name": "Beans, Dry, Navy (0% moisture)",
+          "dataType": "Foundation"
+        },
+        {
+          "fdcId": 173745,
+          "name": "Beans, navy, mature seeds, raw",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 169139,
+          "name": "Beans, navy, mature seeds, sprouted, raw",
+          "dataType": "SR Legacy"
+        }
+      ],
+      "firstCandidateDetail": {
+        "fdcId": 173747,
+        "description": "Beans, navy, mature seeds, canned",
+        "dataType": "SR Legacy",
+        "nutrientCandidates": [
+          {
+            "id": 1008,
+            "name": "Energy",
+            "unit": "kcal",
+            "amount": 113
+          },
+          {
+            "id": 1003,
+            "name": "Protein",
+            "unit": "g",
+            "amount": 7.53
+          },
+          {
+            "id": 1004,
+            "name": "Total lipid (fat)",
+            "unit": "g",
+            "amount": 0.43
+          },
+          {
+            "id": 1005,
+            "name": "Carbohydrate, by difference",
+            "unit": "g",
+            "amount": 20.45
+          }
+        ],
+        "portions": [
+          {
+            "grams": 262,
+            "amount": 1,
+            "unit": "undetermined",
+            "modifier": "cup"
+          }
+        ]
+      },
+      "verification": "requires-editorial-review",
+      "approved": false
+    },
+    {
+      "ingredient": "Carrot",
+      "uses": 1,
+      "recipesAffected": 1,
+      "requiredUnits": [
+        "each"
+      ],
+      "status": "source-lookup-pending",
+      "query": "Carrot",
+      "candidates": [
+        {
+          "fdcId": 170500,
+          "name": "Carrot, dehydrated",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 170393,
+          "name": "Carrots, raw",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 169871,
+          "name": "Babyfood, carrots, toddler",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 170491,
+          "name": "Carrot juice, canned",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 2258587,
+          "name": "Carrots, baby, raw",
+          "dataType": "Foundation"
+        }
+      ],
+      "firstCandidateDetail": {
+        "fdcId": 170500,
+        "description": "Carrot, dehydrated",
+        "dataType": "SR Legacy",
+        "nutrientCandidates": [
+          {
+            "id": 1008,
+            "name": "Energy",
+            "unit": "kcal",
+            "amount": 341
+          },
+          {
+            "id": 1003,
+            "name": "Protein",
+            "unit": "g",
+            "amount": 8.1
+          },
+          {
+            "id": 1004,
+            "name": "Total lipid (fat)",
+            "unit": "g",
+            "amount": 1.49
+          },
+          {
+            "id": 1005,
+            "name": "Carbohydrate, by difference",
+            "unit": "g",
+            "amount": 79.57
+          }
+        ],
+        "portions": [
+          {
+            "grams": 74,
+            "amount": 1,
+            "unit": "undetermined",
+            "modifier": "cup"
+          }
+        ]
+      },
+      "verification": "requires-editorial-review",
+      "approved": false
+    },
+    {
+      "ingredient": "Catfish fillets",
+      "uses": 1,
+      "recipesAffected": 1,
+      "requiredUnits": [
+        "lb"
+      ],
+      "status": "source-lookup-pending",
+      "query": "Catfish fillets",
+      "candidates": [
+        {
+          "fdcId": 175165,
+          "name": "Fish, catfish, channel, farmed, raw",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 174186,
+          "name": "Fish, catfish, channel, wild, raw",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 2684445,
+          "name": "Fish, catfish, farm raised, raw",
+          "dataType": "Foundation"
+        },
+        {
+          "fdcId": 168075,
+          "name": "CRACKER BARREL, farm raised catfish platter",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 174187,
+          "name": "Fish, catfish, channel, cooked, breaded and fried",
+          "dataType": "SR Legacy"
+        }
+      ],
+      "firstCandidateDetail": {
+        "fdcId": 175165,
+        "description": "Fish, catfish, channel, farmed, raw",
+        "dataType": "SR Legacy",
+        "nutrientCandidates": [
+          {
+            "id": 1008,
+            "name": "Energy",
+            "unit": "kcal",
+            "amount": 119
+          },
+          {
+            "id": 1003,
+            "name": "Protein",
+            "unit": "g",
+            "amount": 15.23
+          },
+          {
+            "id": 1004,
+            "name": "Total lipid (fat)",
+            "unit": "g",
+            "amount": 5.94
+          },
+          {
+            "id": 1005,
+            "name": "Carbohydrate, by difference",
+            "unit": "g",
+            "amount": 0
+          }
+        ],
+        "portions": [
+          {
+            "grams": 85,
+            "amount": 3,
+            "unit": "undetermined",
+            "modifier": "oz"
+          },
+          {
+            "grams": 159,
+            "amount": 1,
+            "unit": "undetermined",
+            "modifier": "fillet"
+          }
+        ]
+      },
+      "verification": "requires-editorial-review",
+      "approved": false
+    },
+    {
+      "ingredient": "Chicken tenders",
+      "uses": 1,
+      "recipesAffected": 1,
+      "requiredUnits": [
+        "lb"
+      ],
+      "status": "source-lookup-pending",
+      "query": "Chicken tenders",
+      "candidates": [
+        {
+          "fdcId": 173321,
+          "name": "Fast foods, chicken tenders",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 169841,
+          "name": "APPLEBEE'S, chicken tenders platter",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 171515,
+          "name": "Chicken breast tenders, breaded, uncooked",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 173346,
+          "name": "Chicken tenders, breaded, frozen, prepared",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 169847,
+          "name": "Restaurant, family style, chicken tenders",
+          "dataType": "SR Legacy"
+        }
+      ],
+      "firstCandidateDetail": {
+        "fdcId": 173321,
+        "description": "Fast foods, chicken tenders",
+        "dataType": "SR Legacy",
+        "nutrientCandidates": [
+          {
+            "id": 1008,
+            "name": "Energy",
+            "unit": "kcal",
+            "amount": 271
+          },
+          {
+            "id": 1003,
+            "name": "Protein",
+            "unit": "g",
+            "amount": 19.22
+          },
+          {
+            "id": 1004,
+            "name": "Total lipid (fat)",
+            "unit": "g",
+            "amount": 13.95
+          },
+          {
+            "id": 1005,
+            "name": "Carbohydrate, by difference",
+            "unit": "g",
+            "amount": 17.25
+          }
+        ],
+        "portions": [
+          {
+            "grams": 184,
+            "amount": 1,
+            "unit": "undetermined",
+            "modifier": "serving"
+          },
+          {
+            "grams": 30,
+            "amount": 1,
+            "unit": "undetermined",
+            "modifier": "strip"
+          }
+        ]
+      },
+      "verification": "requires-editorial-review",
+      "approved": false
+    },
+    {
+      "ingredient": "Chicken thighs",
+      "uses": 1,
+      "recipesAffected": 1,
+      "requiredUnits": [
+        "lb"
+      ],
+      "status": "source-lookup-pending",
+      "query": "Chicken thighs",
+      "candidates": [
+        {
+          "fdcId": 172855,
+          "name": "Chicken, skin (drumsticks and thighs), raw",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 2646171,
+          "name": "Chicken, thigh, boneless, skinless, raw",
+          "dataType": "Foundation"
+        },
+        {
+          "fdcId": 2727567,
+          "name": "Chicken, thigh, meat and skin, raw",
+          "dataType": "Foundation"
+        },
+        {
+          "fdcId": 168961,
+          "name": "Chicken, thighs, frozen, breaded, reheated",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 172854,
+          "name": "Chicken, skin (drumsticks and thighs), cooked, braised",
+          "dataType": "SR Legacy"
+        }
+      ],
+      "firstCandidateDetail": {
+        "fdcId": 172855,
+        "description": "Chicken, skin (drumsticks and thighs), raw",
+        "dataType": "SR Legacy",
+        "nutrientCandidates": [
+          {
+            "id": 1008,
+            "name": "Energy",
+            "unit": "kcal",
+            "amount": 440
+          },
+          {
+            "id": 1003,
+            "name": "Protein",
+            "unit": "g",
+            "amount": 9.58
+          },
+          {
+            "id": 1004,
+            "name": "Total lipid (fat)",
+            "unit": "g",
+            "amount": 44.23
+          },
+          {
+            "id": 1005,
+            "name": "Carbohydrate, by difference",
+            "unit": "g",
+            "amount": 0.79
+          }
+        ],
+        "portions": [
+          {
+            "grams": 453,
+            "amount": 1,
+            "unit": "undetermined",
+            "modifier": "lb"
+          },
+          {
+            "grams": 113,
+            "amount": 4,
+            "unit": "undetermined",
+            "modifier": "oz"
+          }
+        ]
+      },
+      "verification": "requires-editorial-review",
+      "approved": false
+    }
+  ],
+  "note": "Source evidence from 25 high-use ingredients; top search hit is NOT approved for nutrient or portion calculations. No live recipe data modified."
+}

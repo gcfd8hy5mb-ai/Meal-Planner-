@@ -1,0 +1,70 @@
+{
+  "sourceRun": 39686954505,
+  "recordStatus": "evidence-only\u2014NOT approved",
+  "batches": [
+    {
+      "offset": 0,
+      "records": 25,
+      "detailed": 25
+    },
+    {
+      "offset": 100,
+      "records": 25,
+      "detailed": 24
+    },
+    {
+      "offset": 125,
+      "records": 25,
+      "detailed": 25
+    },
+    {
+      "offset": 150,
+      "records": 25,
+      "detailed": 25
+    },
+    {
+      "offset": 175,
+      "records": 25,
+      "detailed": 24
+    },
+    {
+      "offset": 200,
+      "records": 25,
+      "detailed": 25
+    },
+    {
+      "offset": 225,
+      "records": 25,
+      "detailed": 25
+    },
+    {
+      "offset": 25,
+      "records": 25,
+      "detailed": 24
+    },
+    {
+      "offset": 250,
+      "records": 4,
+      "detailed": 4
+    },
+    {
+      "offset": 50,
+      "records": 25,
+      "detailed": 25
+    },
+    {
+      "offset": 75,
+      "records": 25,
+      "detailed": 25
+    }
+  ],
+  "missingDetail": [
+    "Panko breadcrumbs",
+    "Jalape\u00f1o",
+    "Breadcrumbs"
+  ],
+  "unresolvedCount": 254,
+  "detailedCount": 251,
+  "approvalCountChanged": 0,
+  "requires": "Editorial verification of exact food identity, food state, all 4 nutrients, every requested recipe unit in grams, and per-recipe yields"
+}

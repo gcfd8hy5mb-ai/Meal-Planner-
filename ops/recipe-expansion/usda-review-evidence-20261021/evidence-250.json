@@ -1,0 +1,334 @@
+{
+  "source": "USDA FoodData Central",
+  "offset": 250,
+  "requested": 25,
+  "succeeded": 4,
+  "failed": 0,
+  "approvedByThisScript": 0,
+  "review": [
+    {
+      "ingredient": "Wild rice blend",
+      "uses": 1,
+      "recipesAffected": 1,
+      "requiredUnits": [
+        "cup"
+      ],
+      "status": "source-lookup-pending",
+      "query": "Wild rice blend",
+      "candidates": [
+        {
+          "fdcId": 168897,
+          "name": "Wild rice, cooked",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 169726,
+          "name": "Wild rice, raw",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 2710821,
+          "name": "Wild rice, dry, raw",
+          "dataType": "Foundation"
+        },
+        {
+          "fdcId": 168964,
+          "name": "Rice mix, white and wild, flavored, unprepared",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 2747656,
+          "name": "Halibut, frozen, wild caught",
+          "dataType": "Foundation"
+        }
+      ],
+      "firstCandidateDetail": {
+        "fdcId": 168897,
+        "description": "Wild rice, cooked",
+        "dataType": "SR Legacy",
+        "nutrientCandidates": [
+          {
+            "id": 1008,
+            "name": "Energy",
+            "unit": "kcal",
+            "amount": 101
+          },
+          {
+            "id": 1003,
+            "name": "Protein",
+            "unit": "g",
+            "amount": 3.99
+          },
+          {
+            "id": 1004,
+            "name": "Total lipid (fat)",
+            "unit": "g",
+            "amount": 0.34
+          },
+          {
+            "id": 1005,
+            "name": "Carbohydrate, by difference",
+            "unit": "g",
+            "amount": 21.34
+          }
+        ],
+        "portions": [
+          {
+            "grams": 164,
+            "amount": 1,
+            "unit": "undetermined",
+            "modifier": "cup"
+          }
+        ]
+      },
+      "verification": "requires-editorial-review",
+      "approved": false
+    },
+    {
+      "ingredient": "Yukon Gold potatoes",
+      "uses": 1,
+      "recipesAffected": 1,
+      "requiredUnits": [
+        "lb"
+      ],
+      "status": "source-lookup-pending",
+      "query": "Yukon Gold potatoes",
+      "candidates": [
+        {
+          "fdcId": 2346403,
+          "name": "Potatoes, gold, without skin, raw",
+          "dataType": "Foundation"
+        },
+        {
+          "fdcId": 169579,
+          "name": "Candies, HERSHEY'S POT OF GOLD Almond Bar",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 167943,
+          "name": "Bread, potato",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 2261422,
+          "name": "Flour, potato",
+          "dataType": "Foundation"
+        },
+        {
+          "fdcId": 168446,
+          "name": "Potato flour",
+          "dataType": "SR Legacy"
+        }
+      ],
+      "firstCandidateDetail": {
+        "fdcId": 2346403,
+        "description": "Potatoes, gold, without skin, raw",
+        "dataType": "Foundation",
+        "nutrientCandidates": [
+          {
+            "id": 2047,
+            "name": "Energy (Atwater General Factors)",
+            "unit": "kcal",
+            "amount": 73.4738
+          },
+          {
+            "id": 2048,
+            "name": "Energy (Atwater Specific Factors)",
+            "unit": "kcal",
+            "amount": 71.575228
+          },
+          {
+            "id": 1003,
+            "name": "Protein",
+            "unit": "g",
+            "amount": 1.8125
+          },
+          {
+            "id": 1004,
+            "name": "Total lipid (fat)",
+            "unit": "g",
+            "amount": 0.2638
+          },
+          {
+            "id": 1005,
+            "name": "Carbohydrate, by difference",
+            "unit": "g",
+            "amount": 15.9624
+          }
+        ],
+        "portions": [
+          {
+            "grams": 110,
+            "amount": 1,
+            "unit": "RACC"
+          }
+        ]
+      },
+      "verification": "requires-editorial-review",
+      "approved": false
+    },
+    {
+      "ingredient": "Yukon potatoes",
+      "uses": 1,
+      "recipesAffected": 1,
+      "requiredUnits": [
+        "lb"
+      ],
+      "status": "source-lookup-pending",
+      "query": "Yukon potatoes",
+      "candidates": [
+        {
+          "fdcId": 167943,
+          "name": "Bread, potato",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 2261422,
+          "name": "Flour, potato",
+          "dataType": "Foundation"
+        },
+        {
+          "fdcId": 168446,
+          "name": "Potato flour",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 170092,
+          "name": "Potato pancakes",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 173508,
+          "name": "Babyfood, potatoes, toddler",
+          "dataType": "SR Legacy"
+        }
+      ],
+      "firstCandidateDetail": {
+        "fdcId": 167943,
+        "description": "Bread, potato",
+        "dataType": "SR Legacy",
+        "nutrientCandidates": [
+          {
+            "id": 1008,
+            "name": "Energy",
+            "unit": "kcal",
+            "amount": 266
+          },
+          {
+            "id": 1003,
+            "name": "Protein",
+            "unit": "g",
+            "amount": 12.5
+          },
+          {
+            "id": 1004,
+            "name": "Total lipid (fat)",
+            "unit": "g",
+            "amount": 3.13
+          },
+          {
+            "id": 1005,
+            "name": "Carbohydrate, by difference",
+            "unit": "g",
+            "amount": 47.07
+          }
+        ],
+        "portions": [
+          {
+            "grams": 32,
+            "amount": 1,
+            "unit": "undetermined",
+            "modifier": "slice"
+          }
+        ]
+      },
+      "verification": "requires-editorial-review",
+      "approved": false
+    },
+    {
+      "ingredient": "Zucchini",
+      "uses": 1,
+      "recipesAffected": 1,
+      "requiredUnits": [
+        "each"
+      ],
+      "status": "source-lookup-pending",
+      "query": "Zucchini",
+      "candidates": [
+        {
+          "fdcId": 168565,
+          "name": "Squash, zucchini, baby, raw",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 169291,
+          "name": "Squash, summer, zucchini, includes skin, raw",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 168471,
+          "name": "Squash, summer, zucchini, italian style, canned",
+          "dataType": "SR Legacy"
+        },
+        {
+          "fdcId": 2685568,
+          "name": "Squash, summer, green, zucchini, includes skin, raw",
+          "dataType": "Foundation"
+        },
+        {
+          "fdcId": 168469,
+          "name": "Squash, summer, zucchini, includes skin, frozen, unprepared",
+          "dataType": "SR Legacy"
+        }
+      ],
+      "firstCandidateDetail": {
+        "fdcId": 168565,
+        "description": "Squash, zucchini, baby, raw",
+        "dataType": "SR Legacy",
+        "nutrientCandidates": [
+          {
+            "id": 1008,
+            "name": "Energy",
+            "unit": "kcal",
+            "amount": 21
+          },
+          {
+            "id": 1003,
+            "name": "Protein",
+            "unit": "g",
+            "amount": 2.71
+          },
+          {
+            "id": 1004,
+            "name": "Total lipid (fat)",
+            "unit": "g",
+            "amount": 0.4
+          },
+          {
+            "id": 1005,
+            "name": "Carbohydrate, by difference",
+            "unit": "g",
+            "amount": 3.11
+          }
+        ],
+        "portions": [
+          {
+            "grams": 16,
+            "amount": 1,
+            "unit": "undetermined",
+            "modifier": "large"
+          },
+          {
+            "grams": 11,
+            "amount": 1,
+            "unit": "undetermined",
+            "modifier": "medium"
+          }
+        ]
+      },
+      "verification": "requires-editorial-review",
+      "approved": false
+    }
+  ],
+  "note": "Source evidence from 25 high-use ingredients; top search hit is NOT approved for nutrient or portion calculations. No live recipe data modified."
+}
