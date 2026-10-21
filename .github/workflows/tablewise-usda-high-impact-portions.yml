@@ -9,6 +9,7 @@ on:
       - 'ops/recipe-expansion/high-impact-portions-editorial-review.json'
       - 'ops/recipe-expansion/validate-high-impact-portions.mjs'
       - 'ops/recipe-expansion/audit-high-impact-recipe-uses.mjs'
+      - 'ops/recipe-expansion/prepare-high-impact-macro-proposals.mjs'
 permissions:
   contents: read
 jobs:
@@ -30,6 +31,8 @@ jobs:
         run: node ops/recipe-expansion/validate-high-impact-portions.mjs
       - name: Audit actual recipe instructions and potential consumed fractions
         run: node ops/recipe-expansion/audit-high-impact-recipe-uses.mjs
+      - name: Extract source-linked macronutrient proposals without approving values
+        run: node ops/recipe-expansion/prepare-high-impact-macro-proposals.mjs
       - name: Save unapproved USDA source evidence
         if: always()
         uses: actions/upload-artifact@v4
@@ -39,4 +42,5 @@ jobs:
             ops/recipe-expansion/ingredient-portion-review-queue.json
             ops/recipe-expansion/high-impact-usda-portion-candidates.json
             ops/recipe-expansion/high-impact-recipe-usage-audit.json
+            ops/recipe-expansion/usda-high-impact-macro-proposals.json
           retention-days: 30
