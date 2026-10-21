@@ -819,16 +819,21 @@
       "reviewStatus": "pending"
     },
     "Chili powder": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "171319",
+      "description": "Spices, chili powder",
+      "state": "dry blended chili powder; not pure ground chile or fresh chili",
+      "kcalPer100g": 282,
+      "proteinPer100g": 13.46,
+      "carbsPer100g": 49.7,
+      "fatPer100g": 14.28,
+      "gramsPerUnit": {
+        "tsp": 2.7,
+        "tbsp": 8
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171319/nutrients",
+      "reviewNotes": "USDA chili powder BLEND; recipes using a different pure ground chile require reclassification. Per-serving totals may require cooked retained quantity review."
     },
     "Chipotle pepper in adobo": {
       "source": "",
@@ -2408,16 +2413,21 @@
       "reviewStatus": "pending"
     },
     "Olive oil": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "171413",
+      "description": "Oil, olive, salad or cooking",
+      "state": "olive oil as measured before cooking; absorption and discarded oil depend on recipe",
+      "kcalPer100g": 884,
+      "proteinPer100g": 0,
+      "carbsPer100g": 0,
+      "fatPer100g": 100,
+      "gramsPerUnit": {
+        "tbsp": 13.5,
+        "tsp": 4.5
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171413/nutrients",
+      "reviewNotes": "Source composition and USDA tablespoon measure verified; fraction consumed in dressings, marinades, and pans must be reviewed separately."
     },
     "Orange": {
       "source": "",
