@@ -1675,16 +1675,21 @@
       "reviewStatus": "pending"
     },
     "Fresh rosemary": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central",
+      "foodId": "173473",
+      "description": "Rosemary, fresh",
+      "state": "Rosemary, fresh",
+      "kcalPer100g": 131,
+      "proteinPer100g": 3.31,
+      "carbsPer100g": 20.7,
+      "fatPer100g": 5.86,
+      "gramsPerUnit": {
+        "tbsp": 1.7
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/173473/nutrients",
+      "portionSource": "Fresh rosemary 1 USDA tablespoon 1.7g; recipe specifies minced fresh rosemary.",
+      "reviewNotes": "Verified USDA ingredient input, not verified finished-recipe nutrition."
     },
     "Fresh sage": {
       "source": "",
@@ -1865,28 +1870,38 @@
       "reviewStatus": "pending"
     },
     "Ground chicken": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central",
+      "foodId": "171116",
+      "description": "Chicken, ground, raw",
+      "state": "Chicken, ground, raw",
+      "kcalPer100g": 143,
+      "proteinPer100g": 17.44,
+      "carbsPer100g": 0.04,
+      "fatPer100g": 8.1,
+      "gramsPerUnit": {
+        "lb": 453.59237
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171116/nutrients",
+      "portionSource": "USDA raw ground chicken, recipe specifies uncooked ground chicken; cooked loss unknown.",
+      "reviewNotes": "Verified USDA ingredient input, not verified finished-recipe nutrition."
     },
     "Ground cinnamon": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central",
+      "foodId": "171320",
+      "description": "Spices, cinnamon, ground",
+      "state": "Spices, cinnamon, ground",
+      "kcalPer100g": 247,
+      "proteinPer100g": 3.99,
+      "carbsPer100g": 80.59,
+      "fatPer100g": 1.24,
+      "gramsPerUnit": {
+        "tsp": 2.6
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171320/nutrients",
+      "portionSource": "USDA ground cinnamon 1 tsp = 2.6g.",
+      "reviewNotes": "Verified USDA ingredient input, not verified finished-recipe nutrition."
     },
     "Ground cumin": {
       "source": "",
@@ -1949,16 +1964,21 @@
       "reviewStatus": "pending"
     },
     "Half and half": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central",
+      "foodId": "171255",
+      "description": "Cream, fluid, half and half",
+      "state": "Cream, fluid, half and half",
+      "kcalPer100g": 131,
+      "proteinPer100g": 3.13,
+      "carbsPer100g": 4.3,
+      "fatPer100g": 11.5,
+      "gramsPerUnit": {
+        "cup": 242
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171255/nutrients",
+      "portionSource": "USDA fluid half and half 1 cup =242g.",
+      "reviewNotes": "Verified USDA ingredient input, not verified finished-recipe nutrition."
     },
     "Hamburger buns": {
       "source": "",
@@ -2009,16 +2029,21 @@
       "reviewStatus": "pending"
     },
     "Hoisin sauce": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central",
+      "foodId": "172886",
+      "description": "Sauce, hoisin, ready-to-serve",
+      "state": "Sauce, hoisin, ready-to-serve",
+      "kcalPer100g": 220,
+      "proteinPer100g": 3.31,
+      "carbsPer100g": 44.08,
+      "fatPer100g": 3.39,
+      "gramsPerUnit": {
+        "tbsp": 16
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/172886/nutrients",
+      "portionSource": "USDA ready-to-serve hoisin 1 tbsp = 16g; brand variation.",
+      "reviewNotes": "Verified USDA ingredient input, not verified finished-recipe nutrition."
     },
     "Hominy": {
       "source": "",
