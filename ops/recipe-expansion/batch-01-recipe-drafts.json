@@ -4590,6 +4590,766 @@
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
       }
+    },
+    {
+      "id": "exp01-055",
+      "name": "Homestyle Beef Pot Roast",
+      "slot": "Dinner",
+      "cuisine": "American",
+      "serv": 6,
+      "prepMinutes": 25,
+      "cookMinutes": 210,
+      "cal": 540,
+      "p": 43,
+      "c": 22,
+      "f": 31,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Beef chuck roast",
+          3,
+          "lb"
+        ],
+        [
+          "Yukon gold potatoes",
+          1.5,
+          "lb"
+        ],
+        [
+          "Carrots",
+          5,
+          "each"
+        ],
+        [
+          "Yellow onion",
+          2,
+          "each"
+        ],
+        [
+          "Beef broth",
+          2,
+          "cup"
+        ],
+        [
+          "Tomato paste",
+          2,
+          "tbsp"
+        ],
+        [
+          "Olive oil",
+          2,
+          "tbsp"
+        ],
+        [
+          "Garlic cloves",
+          4,
+          "each"
+        ],
+        [
+          "Dried thyme",
+          1,
+          "tsp"
+        ]
+      ],
+      "steps": [
+        "Preheat oven to 300°F. Pat 3 lb chuck roast dry and sear in 2 tbsp hot oil in a Dutch oven for 4 minutes on each broad side.",
+        "Add 2 sliced onions and 4 minced garlic cloves; soften for 4 minutes. Stir in 2 tbsp tomato paste and 1 tsp thyme.",
+        "Pour in 2 cups beef broth, scraping up browned bits. Cover and bake for 2 hours.",
+        "Add 1½ lb quartered potatoes and 5 carrots cut into large chunks. Cover and bake 1–1½ hours more, until beef is fork-tender and vegetables soft.",
+        "Rest beef 10 minutes, shred or slice, then divide meat, vegetables and cooking juices among six servings."
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-056",
+      "name": "Garlic Parmesan Chicken Wings",
+      "slot": "Dinner",
+      "cuisine": "American",
+      "serv": 4,
+      "prepMinutes": 15,
+      "cookMinutes": 45,
+      "cal": 560,
+      "p": 43,
+      "c": 5,
+      "f": 39,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Chicken wings",
+          3,
+          "lb"
+        ],
+        [
+          "Baking powder",
+          1,
+          "tbsp"
+        ],
+        [
+          "Garlic powder",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          1,
+          "tsp"
+        ],
+        [
+          "Butter",
+          4,
+          "tbsp"
+        ],
+        [
+          "Garlic cloves",
+          4,
+          "each"
+        ],
+        [
+          "Parmesan cheese",
+          0.5,
+          "cup"
+        ],
+        [
+          "Fresh parsley",
+          0.25,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Heat oven to 425°F and line a large baking tray with a wire rack. Dry 3 lb split wings thoroughly.",
+        "Toss wings with 1 tbsp aluminum-free baking powder, 1 tsp garlic powder and 1 tsp salt. Arrange in one layer on the rack.",
+        "Bake 40–45 minutes, flipping at 25 minutes, until crisp and the thickest portions reach 165°F.",
+        "Melt 4 tbsp butter in a saucepan and gently cook 4 minced garlic cloves for 60 seconds. Stir in ½ cup grated Parmesan.",
+        "Toss hot wings in garlic butter, sprinkle with ¼ cup chopped parsley, and divide among four servings."
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-057",
+      "name": "Sausage and Peppers Hoagies",
+      "slot": "Dinner",
+      "cuisine": "Italian-American",
+      "serv": 4,
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "cal": 650,
+      "p": 30,
+      "c": 51,
+      "f": 36,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Italian sausage links",
+          1.5,
+          "lb"
+        ],
+        [
+          "Bell peppers",
+          3,
+          "each"
+        ],
+        [
+          "Yellow onions",
+          2,
+          "each"
+        ],
+        [
+          "Hoagie rolls",
+          4,
+          "each"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Marinara sauce",
+          1,
+          "cup"
+        ],
+        [
+          "Provolone cheese",
+          4,
+          "slice"
+        ],
+        [
+          "Dried oregano",
+          1,
+          "tsp"
+        ]
+      ],
+      "steps": [
+        "Slice 3 bell peppers and 2 onions into strips. Heat 1 tbsp olive oil in a skillet over medium heat and sauté for 8 minutes.",
+        "Add 1½ lb sausage links and ½ cup water, cover, and cook for 12–15 minutes, turning halfway, until sausage reaches 160°F.",
+        "Uncover, let remaining water evaporate and brown sausage 3 minutes per side. Slice links into thick coins.",
+        "Stir 1 cup marinara and 1 tsp oregano into softened peppers and onions; simmer 5 minutes.",
+        "Fill four split hoagie rolls with sausage and vegetables, add a slice of provolone to each and broil briefly until cheese melts."
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-058",
+      "name": "One-Pot Chicken Alfredo",
+      "slot": "Dinner",
+      "cuisine": "Italian",
+      "serv": 4,
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "cal": 710,
+      "p": 46,
+      "c": 59,
+      "f": 32,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Boneless chicken breast",
+          1.5,
+          "lb"
+        ],
+        [
+          "Dry fettuccine",
+          12,
+          "oz"
+        ],
+        [
+          "Heavy cream",
+          1,
+          "cup"
+        ],
+        [
+          "Chicken broth",
+          3,
+          "cup"
+        ],
+        [
+          "Parmesan cheese",
+          1,
+          "cup"
+        ],
+        [
+          "Butter",
+          2,
+          "tbsp"
+        ],
+        [
+          "Garlic cloves",
+          4,
+          "each"
+        ],
+        [
+          "Italian seasoning",
+          1,
+          "tsp"
+        ]
+      ],
+      "steps": [
+        "Cut 1½ lb chicken breast into bite-sized pieces and season with 1 tsp Italian seasoning.",
+        "Melt 2 tbsp butter in a wide pot over medium heat. Cook chicken for 6–8 minutes, stirring, until 165°F; remove to a clean plate.",
+        "Add 4 minced garlic cloves for 30 seconds, then 3 cups broth, 1 cup cream and 12 oz dry fettuccine, breaking noodles only if needed to fit.",
+        "Simmer uncovered for 10–13 minutes, stirring frequently, until pasta is al dente and liquid has thickened; add a little water if the pot gets dry.",
+        "Remove from heat, mix in 1 cup grated Parmesan and cooked chicken, heat through and divide into four bowls."
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-059",
+      "name": "Teriyaki Chicken Rice Bowls",
+      "slot": "Dinner",
+      "cuisine": "Chinese & Asian",
+      "serv": 4,
+      "prepMinutes": 20,
+      "cookMinutes": 25,
+      "cal": 570,
+      "p": 37,
+      "c": 74,
+      "f": 13,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Boneless chicken thighs",
+          1.5,
+          "lb"
+        ],
+        [
+          "Jasmine rice",
+          1.5,
+          "cup"
+        ],
+        [
+          "Low-sodium soy sauce",
+          0.25,
+          "cup"
+        ],
+        [
+          "Honey",
+          0.25,
+          "cup"
+        ],
+        [
+          "Rice vinegar",
+          2,
+          "tbsp"
+        ],
+        [
+          "Garlic cloves",
+          3,
+          "each"
+        ],
+        [
+          "Fresh ginger",
+          1,
+          "tbsp"
+        ],
+        [
+          "Broccoli florets",
+          4,
+          "cup"
+        ],
+        [
+          "Cornstarch",
+          1,
+          "tbsp"
+        ],
+        [
+          "Vegetable oil",
+          1,
+          "tbsp"
+        ]
+      ],
+      "steps": [
+        "Rinse 1½ cups jasmine rice and cook with 2¼ cups water according to package directions, about 15 minutes; keep covered.",
+        "Whisk ¼ cup soy sauce, ¼ cup honey, 2 tbsp rice vinegar, 3 minced garlic cloves, 1 tbsp ginger, 1 tbsp cornstarch and ½ cup water.",
+        "Heat 1 tbsp oil over medium-high heat; cook 1½ lb chopped chicken thighs for 8–10 minutes until 165°F.",
+        "Steam 4 cups broccoli for 4–5 minutes until bright green and tender-crisp.",
+        "Pour sauce into chicken skillet, simmer 2–3 minutes until glossy and thick. Divide rice, broccoli and teriyaki chicken among four bowls."
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-060",
+      "name": "Classic Beef Stroganoff",
+      "slot": "Dinner",
+      "cuisine": "American",
+      "serv": 4,
+      "prepMinutes": 20,
+      "cookMinutes": 30,
+      "cal": 680,
+      "p": 39,
+      "c": 59,
+      "f": 29,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Sirloin steak",
+          1.25,
+          "lb"
+        ],
+        [
+          "Egg noodles",
+          12,
+          "oz"
+        ],
+        [
+          "Mushrooms",
+          8,
+          "oz"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Beef broth",
+          2,
+          "cup"
+        ],
+        [
+          "Sour cream",
+          0.75,
+          "cup"
+        ],
+        [
+          "All-purpose flour",
+          2,
+          "tbsp"
+        ],
+        [
+          "Butter",
+          2,
+          "tbsp"
+        ],
+        [
+          "Dijon mustard",
+          1,
+          "tbsp"
+        ]
+      ],
+      "steps": [
+        "Cook 12 oz egg noodles in salted water according to package; drain.",
+        "Slice 1¼ lb sirloin thinly against the grain. Melt 1 tbsp butter in a large skillet and sear beef in batches for 2 minutes per side; remove to rest 3 minutes.",
+        "Melt remaining butter; cook sliced onion and 8 oz mushrooms for 7–8 minutes until softened.",
+        "Stir in 2 tbsp flour, cook 1 minute, then slowly whisk in 2 cups broth and 1 tbsp Dijon. Simmer 4 minutes until lightly thickened.",
+        "Reduce heat to low, stir in ¾ cup sour cream and cooked beef; warm without boiling, ensuring beef reached 145°F, then serve over noodles in four portions."
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-061",
+      "name": "Chicken Tortellini Soup",
+      "slot": "Dinner",
+      "cuisine": "Soups & Stews",
+      "serv": 6,
+      "prepMinutes": 15,
+      "cookMinutes": 25,
+      "cal": 390,
+      "p": 29,
+      "c": 36,
+      "f": 13,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Cooked shredded chicken",
+          1.5,
+          "lb"
+        ],
+        [
+          "Refrigerated cheese tortellini",
+          18,
+          "oz"
+        ],
+        [
+          "Chicken broth",
+          8,
+          "cup"
+        ],
+        [
+          "Carrots",
+          3,
+          "each"
+        ],
+        [
+          "Celery stalks",
+          3,
+          "each"
+        ],
+        [
+          "Baby spinach",
+          3,
+          "cup"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Italian seasoning",
+          1,
+          "tsp"
+        ]
+      ],
+      "steps": [
+        "Dice 1 onion, 3 carrots and 3 celery stalks. Heat 1 tbsp olive oil in a soup pot; sauté vegetables for 6–8 minutes.",
+        "Add 8 cups chicken broth and 1 tsp Italian seasoning. Bring to a boil and simmer until carrots are almost tender, about 8 minutes.",
+        "Add 18 oz refrigerated cheese tortellini and simmer for the time on the package, generally 3–5 minutes.",
+        "Stir in 1½ lb fully cooked shredded chicken and 3 cups spinach. Simmer 3 minutes until chicken is hot and reaches 165°F and spinach wilts.",
+        "Ladle into six bowls, dividing tortellini and chicken evenly. Refrigerate any leftovers promptly."
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-062",
+      "name": "Sheet-Pan Lemon Herb Chicken and Potatoes",
+      "slot": "Dinner",
+      "cuisine": "American",
+      "serv": 4,
+      "prepMinutes": 20,
+      "cookMinutes": 45,
+      "cal": 580,
+      "p": 43,
+      "c": 38,
+      "f": 28,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Bone-in chicken thighs",
+          2.5,
+          "lb"
+        ],
+        [
+          "Baby potatoes",
+          1.5,
+          "lb"
+        ],
+        [
+          "Green beans",
+          1,
+          "lb"
+        ],
+        [
+          "Olive oil",
+          3,
+          "tbsp"
+        ],
+        [
+          "Lemon",
+          2,
+          "each"
+        ],
+        [
+          "Garlic cloves",
+          4,
+          "each"
+        ],
+        [
+          "Dried rosemary",
+          1,
+          "tsp"
+        ],
+        [
+          "Dried thyme",
+          1,
+          "tsp"
+        ]
+      ],
+      "steps": [
+        "Preheat oven to 425°F. Halve 1½ lb baby potatoes and toss with 1 tbsp oil, 1 tsp rosemary and ½ tsp thyme.",
+        "Place potatoes on a large sheet pan and roast 15 minutes.",
+        "Pat 2½ lb chicken thighs dry. Toss with 1 tbsp oil, juice of 1 lemon, 4 minced garlic cloves and remaining ½ tsp thyme. Nestle chicken among potatoes.",
+        "Roast 20 minutes, then add 1 lb trimmed green beans mixed with remaining 1 tbsp oil and wedges of second lemon.",
+        "Roast 10–15 minutes more until potatoes are tender and chicken at its thickest part reaches 165°F. Divide everything among four plates."
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-063",
+      "name": "Sweet and Sour Chicken",
+      "slot": "Dinner",
+      "cuisine": "Chinese & Asian",
+      "serv": 4,
+      "prepMinutes": 25,
+      "cookMinutes": 20,
+      "cal": 580,
+      "p": 37,
+      "c": 68,
+      "f": 18,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Boneless chicken breast",
+          1.5,
+          "lb"
+        ],
+        [
+          "Bell peppers",
+          2,
+          "each"
+        ],
+        [
+          "Pineapple chunks",
+          1.5,
+          "cup"
+        ],
+        [
+          "Rice vinegar",
+          0.25,
+          "cup"
+        ],
+        [
+          "Ketchup",
+          0.25,
+          "cup"
+        ],
+        [
+          "Brown sugar",
+          0.25,
+          "cup"
+        ],
+        [
+          "Soy sauce",
+          2,
+          "tbsp"
+        ],
+        [
+          "Cornstarch",
+          2,
+          "tbsp"
+        ],
+        [
+          "Vegetable oil",
+          2,
+          "tbsp"
+        ]
+      ],
+      "steps": [
+        "Cut 1½ lb chicken breast into 1-inch cubes. Mix 1 tbsp cornstarch with chicken and set aside.",
+        "Whisk ¼ cup rice vinegar, ¼ cup ketchup, ¼ cup brown sugar, 2 tbsp soy sauce, remaining 1 tbsp cornstarch and ½ cup water.",
+        "Heat 2 tbsp oil in a wok over medium-high heat. Sauté chicken in batches for 5–7 minutes until cooked to 165°F; remove to a plate.",
+        "Stir-fry 2 chopped bell peppers for 3 minutes, then add 1½ cups pineapple chunks.",
+        "Pour in sauce and simmer 2 minutes until glossy and thick. Return chicken, toss until coated, and divide into four servings."
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-064",
+      "name": "Breakfast Sausage Egg Casserole",
+      "slot": "Breakfast",
+      "cuisine": "Breakfast",
+      "serv": 6,
+      "prepMinutes": 20,
+      "cookMinutes": 40,
+      "cal": 490,
+      "p": 29,
+      "c": 16,
+      "f": 34,
+      "nutritionStatus": "estimated-needs-ingredient-database-verification",
+      "ingredients": [
+        [
+          "Breakfast sausage",
+          1,
+          "lb"
+        ],
+        [
+          "Eggs",
+          10,
+          "each"
+        ],
+        [
+          "Milk",
+          1,
+          "cup"
+        ],
+        [
+          "Shredded cheddar",
+          1.5,
+          "cup"
+        ],
+        [
+          "Sandwich bread",
+          6,
+          "slice"
+        ],
+        [
+          "Bell pepper",
+          1,
+          "each"
+        ],
+        [
+          "Yellow onion",
+          0.5,
+          "each"
+        ],
+        [
+          "Butter",
+          1,
+          "tbsp"
+        ]
+      ],
+      "steps": [
+        "Preheat oven to 350°F and grease a 9-by-13-inch baking dish with 1 tbsp butter.",
+        "Cook 1 lb crumbled breakfast sausage in a skillet over medium heat until browned and reaches 160°F; drain excess fat.",
+        "Whisk 10 eggs and 1 cup milk in a large bowl. Stir in 1½ cups cheddar, 1 diced bell pepper and ½ finely diced onion.",
+        "Cube 6 slices bread; scatter in the prepared dish. Distribute sausage evenly and pour egg mixture over everything.",
+        "Bake uncovered 35–40 minutes until middle is set and reaches 160°F. Rest 5 minutes and slice into six squares."
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
     }
   ]
 }
