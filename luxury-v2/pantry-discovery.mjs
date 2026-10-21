@@ -1,3 +1,4 @@
+import {ingredientMatches} from './ingredient-match.mjs';
 // Local, private matching until a licensed recipe API is connected server-side.
 // Do not send pantry contents to a third party without a user-initiated search.
 export const foodTypes=['Any','Mexican','Tex-Mex','Italian','Chinese','Asian','Southern','American','Soups','Stews','Casseroles','Breakfast','BBQ','Seafood','Vegetarian'];
@@ -18,7 +19,7 @@ export function matchPantry(recipes,pantry,{type='Any',maxMissing=2}={}){
   if(cuisine!=='any' && ![cuisine,...(typeAliases[cuisine]||[])].some(t=>tag.includes(t)))return [];
   const needed=[...new Set((recipe.ingredients||[]).map(row=>normalize(row?.[0])).filter(Boolean))];
   if(!needed.length)return [];
-  const missing=needed.filter(item=>!owned.some(held=>item===held||item.includes(held)||held.includes(item)));
+  const missing=needed.filter(item=>!owned.some(held=>ingredientMatches(item,held)));
   if(missing.length>allowed)return [];
   return [{recipe,have:needed.length-missing.length,total:needed.length,missing,matchPercent:Math.round(100*(needed.length-missing.length)/needed.length)}];
  }).sort((a,b)=>a.missing.length-b.missing.length||b.matchPercent-a.matchPercent||a.recipe.name.localeCompare(b.recipe.name));
