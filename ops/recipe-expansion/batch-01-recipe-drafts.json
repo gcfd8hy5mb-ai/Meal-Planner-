@@ -674,6 +674,669 @@
         "type": "original draft",
         "license": "Tablewise original recipe instructions, pending editorial review"
       }
+    },
+    {
+      "id": "exp01-009",
+      "name": "Steak Fajita Quesadillas",
+      "serv": 4,
+      "ingredients": [
+        [
+          "Flank steak",
+          1.25,
+          "lb"
+        ],
+        [
+          "Flour tortillas",
+          8,
+          "each"
+        ],
+        [
+          "Bell peppers",
+          2,
+          "each"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Shredded Monterey Jack cheese",
+          2,
+          "cup"
+        ],
+        [
+          "Olive oil",
+          2,
+          "tbsp"
+        ],
+        [
+          "Lime juice",
+          2,
+          "tbsp"
+        ],
+        [
+          "Chili powder",
+          2,
+          "tsp"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Garlic powder",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          0.75,
+          "tsp"
+        ]
+      ],
+      "steps": [
+        "Slice 1¼ lb flank steak against the grain into thin strips. Toss with 2 tbsp lime juice, 2 tsp chili powder, 1 tsp cumin, 1 tsp garlic powder and ¾ tsp salt, then refrigerate while you prepare the vegetables.",
+        "Cut the 2 bell peppers and 1 onion into thin strips. Heat 1 tbsp olive oil in a wide skillet over medium-high heat and cook the vegetables for 6–8 minutes, stirring until softened and slightly browned; transfer to a plate.",
+        "Add the remaining 1 tbsp oil to the skillet. Cook the steak in two batches for about 3–5 minutes per batch, stirring occasionally, until the thickest pieces reach 145°F. Rest the steak for at least 3 minutes before assembling.",
+        "Lay out 8 flour tortillas. Sprinkle ¼ cup Monterey Jack cheese on each of four tortillas, then divide the steak and peppers evenly among them. Sprinkle the remaining cheese over the filling and cover with the other four tortillas.",
+        "Cook each quesadilla in a clean skillet over medium heat for about 2–3 minutes per side until golden and cheese melts. Slice each into wedges and serve one filled quesadilla per person."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-010",
+      "name": "Shrimp Fajita Rice Bowls",
+      "serv": 4,
+      "ingredients": [
+        [
+          "Peeled deveined raw shrimp",
+          1.25,
+          "lb"
+        ],
+        [
+          "Long-grain rice dry",
+          1,
+          "cup"
+        ],
+        [
+          "Bell peppers",
+          2,
+          "each"
+        ],
+        [
+          "Red onion",
+          1,
+          "each"
+        ],
+        [
+          "Olive oil",
+          2,
+          "tbsp"
+        ],
+        [
+          "Chili powder",
+          2,
+          "tsp"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Garlic powder",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          0.75,
+          "tsp"
+        ],
+        [
+          "Lime",
+          2,
+          "each"
+        ],
+        [
+          "Cilantro",
+          0.25,
+          "cup"
+        ],
+        [
+          "Salsa",
+          0.5,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Rinse 1 cup dry long-grain rice and cook it with the package-directed amount of water until tender, about 15–20 minutes. Keep covered off heat for 5 minutes, then fluff with a fork.",
+        "Cut 2 bell peppers and 1 red onion into strips. Toss the prepared shrimp with 2 tsp chili powder, 1 tsp cumin, 1 tsp garlic powder, and ¾ tsp salt in a separate bowl.",
+        "Heat 1 tbsp olive oil in a large skillet over medium-high heat. Cook the peppers and onion for 6–8 minutes until crisp-tender, then transfer to a plate.",
+        "Add the remaining tablespoon of oil to the skillet. Arrange the shrimp in a single layer and cook 2–3 minutes per side, turning once, until the flesh is opaque, firm, and reaches 145°F; return the vegetables to the skillet briefly to warm through.",
+        "Divide the rice among four bowls. Top evenly with shrimp and peppers, ½ cup salsa, ¼ cup chopped cilantro and lime wedges from 2 limes. Serve immediately while the shrimp are tender."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-011",
+      "name": "Smothered Beef Burritos",
+      "serv": 4,
+      "ingredients": [
+        [
+          "Lean ground beef",
+          1,
+          "lb"
+        ],
+        [
+          "Large flour tortillas",
+          4,
+          "each"
+        ],
+        [
+          "Cooked rice",
+          2,
+          "cup"
+        ],
+        [
+          "Refried beans",
+          1,
+          "cup"
+        ],
+        [
+          "Red enchilada sauce",
+          2,
+          "cup"
+        ],
+        [
+          "Shredded cheddar cheese",
+          1.5,
+          "cup"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Chili powder",
+          2,
+          "tsp"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          0.5,
+          "tsp"
+        ],
+        [
+          "Sour cream",
+          0.5,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Preheat the oven to 375°F. Dice 1 yellow onion. Warm 2 cups previously cooked rice and 1 cup refried beans separately until steaming, following safe storage and reheating instructions for cooked rice.",
+        "Heat 1 tbsp olive oil in a skillet over medium heat. Cook the onion for 4 minutes, then add 1 lb ground beef and break it up. Cook until browned and the center reaches 160°F; drain any excess fat.",
+        "Stir 2 tsp chili powder, 1 tsp cumin and ½ tsp salt into the beef. Spread ½ cup enchilada sauce across the bottom of a 9-by-13-inch baking dish.",
+        "Fill four large tortillas evenly with rice, beans, beef mixture and ½ cup shredded cheddar. Fold the sides in and roll tightly, then place seam-side down in the baking dish.",
+        "Pour the remaining 1½ cups sauce over the burritos, scatter the remaining 1 cup cheddar on top and bake uncovered 15–20 minutes until bubbling and the centers reach 165°F. Divide ½ cup sour cream across four servings."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-012",
+      "name": "Chicken Chimichangas",
+      "serv": 4,
+      "ingredients": [
+        [
+          "Cooked shredded chicken",
+          3,
+          "cup"
+        ],
+        [
+          "Large flour tortillas",
+          4,
+          "each"
+        ],
+        [
+          "Shredded Monterey Jack cheese",
+          1.5,
+          "cup"
+        ],
+        [
+          "Salsa",
+          0.5,
+          "cup"
+        ],
+        [
+          "Canned diced green chiles",
+          0.25,
+          "cup"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Chili powder",
+          1,
+          "tsp"
+        ],
+        [
+          "Olive oil",
+          2,
+          "tbsp"
+        ],
+        [
+          "Sour cream",
+          0.5,
+          "cup"
+        ],
+        [
+          "Shredded lettuce",
+          1,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Preheat the oven to 425°F. Line a baking sheet with parchment and brush lightly with 1 tsp from the measured olive oil.",
+        "In a large bowl, combine 3 cups fully cooked shredded chicken, ½ cup salsa, ¼ cup drained green chiles, 1 tsp cumin, 1 tsp chili powder and 1½ cups Monterey Jack cheese. Stir until evenly coated.",
+        "Warm four flour tortillas briefly so they bend without tearing. Place one quarter of the filling in the center of each tortilla; fold in the sides and roll into tight, closed parcels.",
+        "Put chimichangas seam-side down on the tray and brush the exposed surfaces with the remaining olive oil. Bake 18–22 minutes, turning carefully once, until crisp and golden and the fillings reach 165°F.",
+        "Allow the chimichangas to rest for 3 minutes. Serve one per person with ½ cup sour cream divided among them and 1 cup shredded lettuce."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-013",
+      "name": "Tex-Mex Beef Stuffed Peppers",
+      "serv": 4,
+      "ingredients": [
+        [
+          "Large bell peppers",
+          4,
+          "each"
+        ],
+        [
+          "Lean ground beef",
+          1,
+          "lb"
+        ],
+        [
+          "Cooked rice",
+          1.5,
+          "cup"
+        ],
+        [
+          "Black beans canned",
+          1,
+          "cup"
+        ],
+        [
+          "Diced tomatoes canned",
+          1,
+          "cup"
+        ],
+        [
+          "Shredded cheddar cheese",
+          1,
+          "cup"
+        ],
+        [
+          "Yellow onion",
+          0.5,
+          "each"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Chili powder",
+          2,
+          "tsp"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          0.5,
+          "tsp"
+        ],
+        [
+          "Water",
+          0.25,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Preheat the oven to 375°F. Slice the tops off four bell peppers, remove seeds and membranes, and place them upright in a baking dish with ¼ cup water at the bottom.",
+        "Finely dice half a yellow onion. Heat 1 tbsp olive oil in a skillet over medium heat and cook onion for 3–4 minutes. Add 1 lb ground beef, breaking it apart, and cook until the meat reaches 160°F; drain excess fat.",
+        "Mix beef and onion with 1½ cups safely reheated cooked rice, 1 cup rinsed black beans, 1 cup diced tomatoes, 2 tsp chili powder, 1 tsp cumin and ½ tsp salt. Simmer 3 minutes to combine flavors.",
+        "Divide the beef and rice mixture among the four peppers, pressing down gently. Cover the baking dish with foil and bake for 30 minutes until peppers begin to soften.",
+        "Remove foil, top evenly with 1 cup shredded cheddar and bake for another 10–15 minutes until peppers are tender, cheese melts and the centers reach 165°F. Rest 5 minutes before serving one pepper per person."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-014",
+      "name": "Cheesy Taco Pasta",
+      "serv": 6,
+      "ingredients": [
+        [
+          "Lean ground beef",
+          1,
+          "lb"
+        ],
+        [
+          "Dry elbow macaroni",
+          12,
+          "oz"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Crushed tomatoes",
+          2,
+          "cup"
+        ],
+        [
+          "Beef broth",
+          1,
+          "cup"
+        ],
+        [
+          "Shredded cheddar cheese",
+          2,
+          "cup"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Chili powder",
+          2,
+          "tsp"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Garlic powder",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          0.75,
+          "tsp"
+        ],
+        [
+          "Sour cream",
+          0.5,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Bring a large pot of salted water to a boil. Add 12 oz dry elbow macaroni and cook until just firm, following package directions; reserve ½ cup pasta water, then drain.",
+        "Meanwhile finely dice 1 yellow onion. Heat 1 tbsp olive oil in a large deep skillet over medium heat and sauté onion 4 minutes. Add 1 lb ground beef and cook 7–9 minutes until it reaches 160°F, breaking it into small pieces; drain excess fat.",
+        "Stir 2 tsp chili powder, 1 tsp cumin, 1 tsp garlic powder and ¾ tsp salt into the beef. Add 2 cups crushed tomatoes and 1 cup beef broth, then simmer uncovered for 7 minutes.",
+        "Fold cooked macaroni into the sauce and stir gently until coated. If too thick, add a few spoonfuls of the reserved pasta water. Sprinkle in 2 cups shredded cheddar in portions, stirring after each addition until melted.",
+        "Turn off heat and fold in ½ cup sour cream. Rest 3 minutes so the sauce thickens, then divide into six bowls and serve warm."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-015",
+      "name": "Pork Chile Verde",
+      "serv": 6,
+      "ingredients": [
+        [
+          "Boneless pork shoulder",
+          2.5,
+          "lb"
+        ],
+        [
+          "Tomatillos",
+          1.5,
+          "lb"
+        ],
+        [
+          "Poblano peppers",
+          2,
+          "each"
+        ],
+        [
+          "Jalapeño peppers",
+          2,
+          "each"
+        ],
+        [
+          "White onion",
+          1,
+          "each"
+        ],
+        [
+          "Garlic cloves",
+          4,
+          "each"
+        ],
+        [
+          "Chicken broth",
+          1.5,
+          "cup"
+        ],
+        [
+          "Olive oil",
+          2,
+          "tbsp"
+        ],
+        [
+          "Ground cumin",
+          1.5,
+          "tsp"
+        ],
+        [
+          "Dried oregano",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          1.5,
+          "tsp"
+        ],
+        [
+          "Cilantro",
+          0.5,
+          "cup"
+        ],
+        [
+          "Lime",
+          1,
+          "each"
+        ]
+      ],
+      "steps": [
+        "Remove papery husks from 1½ lb tomatillos and rinse thoroughly. Halve them, 2 poblanos, 2 jalapeños and 1 onion; place on a baking sheet with 4 peeled garlic cloves and broil 6–10 minutes, turning once, until lightly blistered. Remove pepper seeds for a milder sauce.",
+        "Blend the roasted vegetables with 1 cup of the chicken broth, ½ cup cilantro, 1½ tsp cumin and 1 tsp oregano until mostly smooth. Work in batches and vent the blender lid when handling hot ingredients.",
+        "Cut 2½ lb pork shoulder into roughly 2-inch cubes and season with 1½ tsp salt. Heat 2 tbsp olive oil in a heavy pot and brown the pork in two batches, 3–4 minutes per side, without crowding.",
+        "Return all pork to the pot with the green sauce and remaining ½ cup broth. Bring to a gentle simmer, cover partially and cook on low for 1½–2 hours, stirring occasionally, until the pork is tender enough to pull apart easily.",
+        "Taste the sauce and adjust seasoning if needed. Squeeze in juice of 1 lime and simmer uncovered 5 more minutes to thicken. Divide among six bowls with cooking juices and serve hot."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-016",
+      "name": "Red Chile Beef Enchiladas",
+      "serv": 4,
+      "ingredients": [
+        [
+          "Cooked shredded beef",
+          3,
+          "cup"
+        ],
+        [
+          "Corn tortillas",
+          12,
+          "each"
+        ],
+        [
+          "Red enchilada sauce",
+          2.5,
+          "cup"
+        ],
+        [
+          "Shredded Monterey Jack cheese",
+          2,
+          "cup"
+        ],
+        [
+          "White onion",
+          0.5,
+          "each"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Sour cream",
+          0.5,
+          "cup"
+        ],
+        [
+          "Cilantro",
+          0.25,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Heat oven to 375°F and grease a 9-by-13-inch baking dish with 1 tbsp olive oil. Spread ½ cup red enchilada sauce thinly across the bottom.",
+        "Combine 3 cups safely reheated cooked shredded beef with ½ finely diced white onion, 1 tsp cumin and ½ cup red enchilada sauce. Warm the filling until steaming.",
+        "Heat 12 corn tortillas one at a time in a dry skillet for 15–20 seconds per side to make them pliable. Spoon beef filling evenly along the center of each tortilla and sprinkle with half of the Monterey Jack cheese.",
+        "Roll each enchilada tightly, place seam-side down in the dish, pour the remaining 1½ cups enchilada sauce over the tops and scatter the remaining cheese across the dish.",
+        "Cover loosely with foil and bake 15 minutes, then uncover and bake 10–12 more minutes until bubbling and the centers reach 165°F. Rest 5 minutes; serve three enchiladas each with sour cream and chopped cilantro."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
     }
   ]
 }
