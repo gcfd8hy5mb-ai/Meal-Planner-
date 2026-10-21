@@ -1,0 +1,168 @@
+{
+  "batch": 1,
+  "status": "image-generation-in-progress",
+  "note": "20 concept-photo previews were generated as a combined collage outside GitHub. This is NOT a deployable individual-image asset. Do not mark photoReady or publish without verified, separately saved recipe-specific image files.",
+  "requiredStyle": "dark cinematic luxury restaurant food photography; ingredient-accurate; no text inside image; portrait/landscape thumbnail suitable for iPhone",
+  "recipes": [
+    {
+      "id": "exp01-001",
+      "name": "Birria Beef Tacos",
+      "expectedAsset": "assets/meal-photos/exp01-001.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true
+    },
+    {
+      "id": "exp01-002",
+      "name": "Carne Asada Street Tacos",
+      "expectedAsset": "assets/meal-photos/exp01-002.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true
+    },
+    {
+      "id": "exp01-003",
+      "name": "Slow-Cooker Pork Carnitas",
+      "expectedAsset": "assets/meal-photos/exp01-003.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true
+    },
+    {
+      "id": "exp01-004",
+      "name": "Crispy Chicken Tostadas",
+      "expectedAsset": "assets/meal-photos/exp01-004.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true
+    },
+    {
+      "id": "exp01-005",
+      "name": "Beef Barbacoa Bowls",
+      "expectedAsset": "assets/meal-photos/exp01-005.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true
+    },
+    {
+      "id": "exp01-006",
+      "name": "Green Chile Chicken Enchiladas",
+      "expectedAsset": "assets/meal-photos/exp01-006.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true
+    },
+    {
+      "id": "exp01-007",
+      "name": "Ground Beef Taco Skillet",
+      "expectedAsset": "assets/meal-photos/exp01-007.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true
+    },
+    {
+      "id": "exp01-008",
+      "name": "Chicken Tinga Tacos",
+      "expectedAsset": "assets/meal-photos/exp01-008.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true
+    },
+    {
+      "id": "exp01-009",
+      "name": "Steak Fajita Quesadillas",
+      "expectedAsset": "assets/meal-photos/exp01-009.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true
+    },
+    {
+      "id": "exp01-010",
+      "name": "Shrimp Fajita Rice Bowls",
+      "expectedAsset": "assets/meal-photos/exp01-010.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true
+    },
+    {
+      "id": "exp01-011",
+      "name": "Smothered Beef Burritos",
+      "expectedAsset": "assets/meal-photos/exp01-011.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true
+    },
+    {
+      "id": "exp01-012",
+      "name": "Chicken Chimichangas",
+      "expectedAsset": "assets/meal-photos/exp01-012.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true
+    },
+    {
+      "id": "exp01-013",
+      "name": "Tex-Mex Beef Stuffed Peppers",
+      "expectedAsset": "assets/meal-photos/exp01-013.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true
+    },
+    {
+      "id": "exp01-014",
+      "name": "Cheesy Taco Pasta",
+      "expectedAsset": "assets/meal-photos/exp01-014.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true
+    },
+    {
+      "id": "exp01-015",
+      "name": "Pork Chile Verde",
+      "expectedAsset": "assets/meal-photos/exp01-015.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true
+    },
+    {
+      "id": "exp01-016",
+      "name": "Red Chile Beef Enchiladas",
+      "expectedAsset": "assets/meal-photos/exp01-016.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true
+    },
+    {
+      "id": "exp01-017",
+      "name": "Chicken Pozole Verde",
+      "expectedAsset": "assets/meal-photos/exp01-017.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true
+    },
+    {
+      "id": "exp01-018",
+      "name": "Pork Pozole Rojo",
+      "expectedAsset": "assets/meal-photos/exp01-018.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true
+    },
+    {
+      "id": "exp01-019",
+      "name": "Mexican Street Corn Chicken Bowls",
+      "expectedAsset": "assets/meal-photos/exp01-019.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true
+    },
+    {
+      "id": "exp01-020",
+      "name": "Chipotle Lime Shrimp Tacos",
+      "expectedAsset": "assets/meal-photos/exp01-020.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true
+    }
+  ]
+}
