@@ -632,12 +632,12 @@
     },
     {
       "id": "exp01-071",
-      "name": "Chicken and Leek Pot Pie",
+      "name": "Lemon Dill Chicken and Barley Skillet",
       "expectedAsset": "assets/meal-photos/exp01-071.webp",
       "assetSaved": false,
       "photoReview": "pending",
       "pairedWithInstructions": true,
-      "photoBrief": "Golden chicken and leek pot pie with puff pastry crust and creamy filling"
+      "photoBrief": "A natural daylight skillet meal of golden chicken pieces, plump barley grains, carrots, spinach, lemon zest and fresh dill"
     },
     {
       "id": "exp01-072",
@@ -830,12 +830,12 @@
     },
     {
       "id": "exp01-093",
-      "name": "Bacon Cheeseburger Stuffed Shells",
+      "name": "Balsamic Turkey and Roasted Beet Grain Bowls",
       "expectedAsset": "assets/meal-photos/exp01-093.webp",
       "assetSaved": false,
       "photoReview": "pending",
       "pairedWithInstructions": true,
-      "photoBrief": "Jumbo pasta shells filled with cheeseburger beef, bacon, cheddar and red sauce"
+      "photoBrief": "Bright naturally photographed grain bowl showing farro, roasted ruby beets, browned ground turkey, arugula and crumbled feta"
     },
     {
       "id": "exp01-094",
