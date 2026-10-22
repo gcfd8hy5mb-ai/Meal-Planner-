@@ -160,16 +160,21 @@
       "portionSource": "USDA Agricultural Research Service CSFII food codebook, avocado raw: cup cubes 150g, cup sliced 146g, cup puree 230g, unspecified variety whole edible portion 201g. https://www.ars.usda.gov/ARSUserFiles/80400530/pdf/8586/csfii85_4days_codebook.pdf"
     },
     "Baby arugula": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "169387",
+      "description": "Arugula, raw (proxy for baby arugula)",
+      "state": "Raw loose baby arugula leaves; standard raw arugula nutrient proxy",
+      "kcalPer100g": 25,
+      "proteinPer100g": 2.58,
+      "carbsPer100g": 3.65,
+      "fatPer100g": 0.66,
+      "gramsPerUnit": {
+        "cup": 20
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169387/nutrients",
+      "portionSource": "20g per loosely filled cup is a practical recipe assumption, not a uniquely verified USDA baby-arugula cup weight; volume estimates vary (some references use 10g).",
+      "reviewNotes": "Only recipe use is 1 cup in Balsamic Turkey and Roasted Beet Grain Bowls. USDA raw arugula SR Legacy values verified; baby arugula is proxied by raw arugula. Cup mass varies by packing, so 20g is a declared standard estimate, not an exact measurement."
     },
     "Baby potatoes": {
       "source": "USDA FoodData Central SR Legacy (candidate; preparation requires confirmation)",
