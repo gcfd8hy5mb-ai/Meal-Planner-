@@ -1164,16 +1164,21 @@
       "reviewNotes": "All 19 recipe uses of cilantro are in cups (mostly 1/4 cup). Fresh cilantro leaves assumed, not dried coriander seed. Estimated macros depend on chopping/packing."
     },
     "Coconut milk": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy (documented proxy)",
+      "foodId": "170172",
+      "description": "Nuts, coconut milk, raw (liquid expressed from grated meat and water)",
+      "state": "Full-fat culinary coconut milk, not refrigerated beverage",
+      "kcalPer100g": 230,
+      "proteinPer100g": 2.29,
+      "carbsPer100g": 5.54,
+      "fatPer100g": 23.84,
+      "gramsPerUnit": {
+        "oz": 28.349523125
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170172/nutrients",
+      "portionSource": "Portion masses in grams; exact mass units use standard conversion, volume and count are approximate.",
+      "reviewNotes": "USDA rich coconut milk proxy; brands vary in water/fat content, and recipe oz is assumed to be mass not fl oz. Macros apply to ingredient input, not prepared meal."
     },
     "Cod fillets": {
       "source": "USDA FoodData Central SR Legacy",
@@ -1308,16 +1313,21 @@
       "reviewNotes": "Four recipes specify previously cooked chicken (two use cups, two use pounds). Cooked skinless breast is an explicit lean-meat proxy; thigh meat, rotisserie skin, added fat and packing of shredded pieces vary. Never apply raw-to-cooked yield again to pounds explicitly labeled cooked."
     },
     "Cooked shredded turkey": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy (documented proxy)",
+      "foodId": "171496",
+      "description": "Turkey, whole, breast, meat only, cooked, roasted",
+      "state": "Cooked roasted skinless turkey breast, shredded",
+      "kcalPer100g": 147,
+      "proteinPer100g": 30.13,
+      "carbsPer100g": 0,
+      "fatPer100g": 2.08,
+      "gramsPerUnit": {
+        "lb": 453.59237
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171496/nutrients",
+      "portionSource": "Portion masses in grams; exact mass units use standard conversion, volume and count are approximate.",
+      "reviewNotes": "Breast meat used as explicit proxy for shredded cooked turkey; dark meat or skin changes macros. Macros apply to ingredient input, not prepared meal."
     },
     "Cooked shrimp": {
       "source": "USDA FoodData Central",
@@ -1809,16 +1819,21 @@
       "reviewNotes": "Source-matched generic USDA enriched dry pasta proxy inherited from previously reviewed dry elbow macaroni. This is not shape-specific or brand-specific laboratory analysis. Recipe requires oz dry mass; do not use cooked pasta nutrition. Finished-recipe macros depend on yield, product and preparation."
     },
     "Dry orzo": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy (documented proxy)",
+      "foodId": "169736",
+      "description": "Pasta, dry, enriched",
+      "state": "Dry uncooked enriched wheat orzo",
+      "kcalPer100g": 371,
+      "proteinPer100g": 13.04,
+      "carbsPer100g": 74.67,
+      "fatPer100g": 1.51,
+      "gramsPerUnit": {
+        "cup": 180
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169736/nutrients",
+      "portionSource": "Portion masses in grams; exact mass units use standard conversion, volume and count are approximate.",
+      "reviewNotes": "Generic dry pasta proxy; cup mass 180g is approximate for small orzo shape; weighing improves accuracy. Macros apply to ingredient input, not prepared meal."
     },
     "Dry penne pasta": {
       "source": "USDA FoodData Central SR Legacy",
@@ -2488,16 +2503,21 @@
       "reviewNotes": "93 percent lean assumption; actual product fat ratio may vary."
     },
     "Gruyere cheese": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "171242",
+      "description": "Cheese, gruyere",
+      "state": "Shredded Gruyère cheese",
+      "kcalPer100g": 413,
+      "proteinPer100g": 29.81,
+      "carbsPer100g": 0.36,
+      "fatPer100g": 32.34,
+      "gramsPerUnit": {
+        "cup": 108
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171242/nutrients",
+      "portionSource": "Portion masses in grams; exact mass units use standard conversion, volume and count are approximate.",
+      "reviewNotes": "108g per cup shredded is an estimated portion mass; grate size and density change cup mass. Macros apply to ingredient input, not prepared meal."
     },
     "Half and half": {
       "source": "USDA FoodData Central",
@@ -2587,28 +2607,38 @@
       "reviewNotes": "Verified USDA ingredient input, not verified finished-recipe nutrition."
     },
     "Hominy": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy (documented proxy)",
+      "foodId": "169723",
+      "description": "Hominy, canned, yellow",
+      "state": "Canned hominy, edible solids as a generic ingredient assumption",
+      "kcalPer100g": 72,
+      "proteinPer100g": 1.5,
+      "carbsPer100g": 14.3,
+      "fatPer100g": 0.9,
+      "gramsPerUnit": {
+        "oz": 28.349523125
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169723/nutrients",
+      "portionSource": "Portion masses in grams; exact mass units use standard conversion, volume and count are approximate.",
+      "reviewNotes": "USDA-style canned hominy profile used as approximate proxy for unspecified hominy; dry hominy differs, and undrained can weight includes liquid. Macros apply to ingredient input, not prepared meal."
     },
     "Hominy canned, drained": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy (documented proxy)",
+      "foodId": "169723",
+      "description": "Hominy, canned, yellow",
+      "state": "Canned yellow hominy, drained solids",
+      "kcalPer100g": 72,
+      "proteinPer100g": 1.5,
+      "carbsPer100g": 14.3,
+      "fatPer100g": 0.9,
+      "gramsPerUnit": {
+        "cup": 165
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169723/nutrients",
+      "portionSource": "Portion masses in grams; exact mass units use standard conversion, volume and count are approximate.",
+      "reviewNotes": "USDA-style canned hominy reference is a proxy; 165g per cup drained is estimated; check brand label. Macros apply to ingredient input, not prepared meal."
     },
     "Honey": {
       "source": "USDA FoodData Central SR Legacy",
@@ -2629,28 +2659,38 @@
       "reviewNotes": "USDA source-linked ingredient input values. Preparation yield and retained ingredient fractions still require full-recipe review."
     },
     "Italian sausage": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy (documented proxy)",
+      "foodId": "171631",
+      "description": "Sausage, Italian, pork, mild, raw",
+      "state": "Raw mild Italian pork sausage without casing weight removed",
+      "kcalPer100g": 290,
+      "proteinPer100g": 13.9,
+      "carbsPer100g": 2.97,
+      "fatPer100g": 24.26,
+      "gramsPerUnit": {
+        "lb": 453.59237
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171631/nutrients",
+      "portionSource": "Portion masses in grams; exact mass units use standard conversion, volume and count are approximate.",
+      "reviewNotes": "Generic mild pork sausage proxy; sweet/hot recipes and meat-fat ratio differ. Macros apply to ingredient input, not prepared meal."
     },
     "Italian sausage links": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy (documented proxy)",
+      "foodId": "171631",
+      "description": "Sausage, Italian, pork, mild, raw",
+      "state": "Raw mild pork Italian sausage links, casing included",
+      "kcalPer100g": 290,
+      "proteinPer100g": 13.9,
+      "carbsPer100g": 2.97,
+      "fatPer100g": 24.26,
+      "gramsPerUnit": {
+        "lb": 453.59237
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171631/nutrients",
+      "portionSource": "Portion masses in grams; exact mass units use standard conversion, volume and count are approximate.",
+      "reviewNotes": "Uses USDA mild pork sausage as proxy; brands and casings vary. Macros apply to ingredient input, not prepared meal."
     },
     "Italian seasoning": {
       "source": "Spices Inc. Italian Seasoning manufacturer nutrition label",
@@ -2835,16 +2875,21 @@
       "reviewNotes": "Four recipes specify four large tortillas. Nutrient profile is verified generic refrigerated flour tortilla; 70g per large tortilla is an explicit estimate, not the USDA portion. Product label should override for exact macro totals."
     },
     "Large portobello mushrooms": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy (documented proxy)",
+      "foodId": "169255",
+      "description": "Mushrooms, portabella, raw",
+      "state": "Raw large portobello cap and edible stem",
+      "kcalPer100g": 22,
+      "proteinPer100g": 2.11,
+      "carbsPer100g": 3.87,
+      "fatPer100g": 0.35,
+      "gramsPerUnit": {
+        "each": 84
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169255/nutrients",
+      "portionSource": "Portion masses in grams; exact mass units use standard conversion, volume and count are approximate.",
+      "reviewNotes": "84g each is a rough portion proxy; mushrooms vary substantially by cap size. Weigh for accurate totals. Macros apply to ingredient input, not prepared meal."
     },
     "Lean ground beef": {
       "source": "USDA FoodData Central SR Legacy",
@@ -3871,16 +3916,21 @@
       "reviewNotes": "Source-verified recipe ingredient inputs; cooking retention and per-serving yield not verified."
     },
     "Rice noodles": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "169742",
+      "description": "Rice noodles, dry",
+      "state": "Dry uncooked rice noodles",
+      "kcalPer100g": 364,
+      "proteinPer100g": 5.95,
+      "carbsPer100g": 80.18,
+      "fatPer100g": 0.56,
+      "gramsPerUnit": {
+        "oz": 28.349523125
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169742/nutrients",
+      "portionSource": "Portion masses in grams; exact mass units use standard conversion, volume and count are approximate.",
+      "reviewNotes": "Recipe default is dry rice noodles; cooked noodles have different per-100g water content. Macros apply to ingredient input, not prepared meal."
     },
     "Rice vinegar": {
       "source": "USDA FoodData Central FNDDS (generic vinegar proxy)",
@@ -3934,16 +3984,21 @@
       "reviewNotes": "Source-verified recipe ingredient inputs; cooking retention and per-serving yield not verified."
     },
     "Roasted red peppers": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy (documented proxy)",
+      "foodId": "168546",
+      "description": "Peppers, sweet, red, canned, solids and liquids",
+      "state": "Jarred or canned red peppers, no oil; drained roast-pepper approximation",
+      "kcalPer100g": 18,
+      "proteinPer100g": 0.8,
+      "carbsPer100g": 3.9,
+      "fatPer100g": 0.3,
+      "gramsPerUnit": {
+        "cup": 150
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/168546/nutrients",
+      "portionSource": "Portion masses in grams; exact mass units use standard conversion, volume and count are approximate.",
+      "reviewNotes": "Canned red pepper USDA proxy, not oil-packed roasted peppers; 150g/cup is approximate, source values include packing liquid. Macros apply to ingredient input, not prepared meal."
     },
     "Roma tomatoes": {
       "source": "USDA FoodData Central SR Legacy",
@@ -4264,28 +4319,38 @@
       "reviewStatus": "pending"
     },
     "Sirloin steak": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central Foundation Foods",
+      "foodId": "2727574",
+      "description": "Beef, top sirloin steak, raw",
+      "state": "Raw boneless top sirloin steak, edible meat",
+      "kcalPer100g": 140,
+      "proteinPer100g": 22,
+      "carbsPer100g": 0.218,
+      "fatPer100g": 5.71,
+      "gramsPerUnit": {
+        "lb": 453.59237
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/2727574/nutrients",
+      "portionSource": "Portion masses in grams; exact mass units use standard conversion, volume and count are approximate.",
+      "reviewNotes": "USDA Foundation Foods top sirloin reference used as proxy; trim grade and cuts differ. Macros apply to ingredient input, not prepared meal."
     },
     "Skinless white fish fillets": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy (documented proxy)",
+      "foodId": "171955",
+      "description": "Fish, cod, Atlantic, raw",
+      "state": "Raw skinless boneless white fish fillets",
+      "kcalPer100g": 82,
+      "proteinPer100g": 17.81,
+      "carbsPer100g": 0,
+      "fatPer100g": 0.67,
+      "gramsPerUnit": {
+        "lb": 453.59237
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171955/nutrients",
+      "portionSource": "Portion masses in grams; exact mass units use standard conversion, volume and count are approximate.",
+      "reviewNotes": "Atlantic cod used as proxy; pollock, haddock and tilapia may differ. Macros apply to ingredient input, not prepared meal."
     },
     "Small flour tortillas": {
       "source": "USDA FoodData Central SR Legacy",
