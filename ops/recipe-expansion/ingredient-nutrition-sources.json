@@ -102,16 +102,20 @@
       "reviewStatus": "pending"
     },
     "Artichoke hearts": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy (candidate; preparation requires confirmation)",
+      "foodId": "168533",
+      "description": "Artichokes, (globe or french), raw",
+      "state": "Raw reference food; recipe preparation unspecified",
+      "kcalPer100g": 47,
+      "proteinPer100g": 3.27,
+      "carbsPer100g": 10.51,
+      "fatPer100g": 0.15,
+      "gramsPerUnit": {
+        "oz": 28.349523125
+      },
+      "reviewStatus": "pending",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/168533/nutrients",
+      "reviewNotes": "Recipe-unit audit completed: only exact mass units used in current 110 recipe drafts. Nutrition candidate needs independent food identity and preparation verification before approval; canned/drained artichoke hearts cannot automatically use raw artichoke macros."
     },
     "Avocado": {
       "source": "USDA FoodData Central SR Legacy",
@@ -168,16 +172,20 @@
       "reviewStatus": "pending"
     },
     "Baby potatoes": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy (candidate; preparation requires confirmation)",
+      "foodId": "170026",
+      "description": "Potatoes, flesh and skin, raw",
+      "state": "Raw reference food; recipe preparation unspecified",
+      "kcalPer100g": 77,
+      "proteinPer100g": 2.05,
+      "carbsPer100g": 17.49,
+      "fatPer100g": 0.09,
+      "gramsPerUnit": {
+        "lb": 453.59237
+      },
+      "reviewStatus": "pending",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170026/nutrients",
+      "reviewNotes": "Recipe-unit audit completed: only exact mass units used in current 110 recipe drafts. Nutrition candidate needs independent food identity and preparation verification before approval; canned/drained artichoke hearts cannot automatically use raw artichoke macros."
     },
     "Baby spinach": {
       "source": "",
