@@ -899,16 +899,21 @@
       "reviewNotes": "Ingredient-source mapping only. Finished-meal nutrition cannot be published without separate recipe yield and consumed-portion verification."
     },
     "Cherry tomatoes": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170457",
+      "description": "Tomatoes, red, ripe, raw, year round average",
+      "state": "Raw cherry tomatoes, standard red raw tomato nutrient proxy",
+      "kcalPer100g": 18,
+      "proteinPer100g": 0.88,
+      "carbsPer100g": 3.89,
+      "fatPer100g": 0.2,
+      "gramsPerUnit": {
+        "cup": 149
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170457/nutrients",
+      "portionSource": "Approximate 149 g per cup of whole cherry tomatoes; actual cup weight depends on tomato size and whether halved.",
+      "reviewNotes": "Both recipe uses are 2 cups. USDA red raw tomato macros used as a practical proxy for cherry tomatoes; volume-to-mass assumption is approximate."
     },
     "Chicken breasts": {
       "source": "",
