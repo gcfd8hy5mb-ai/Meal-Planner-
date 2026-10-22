@@ -2321,16 +2321,21 @@
       "reviewNotes": "Two recipes use 0.5 or 2 cups frozen green peas. Assumes plain unsauced frozen peas, weighed before cooking."
     },
     "Fully cooked pulled pork": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "167850",
+      "description": "Pork, fresh, shoulder, Boston butt, blade steaks, separable lean and fat, cooked, braised",
+      "state": "Cooked shredded pulled pork shoulder, without added BBQ sauce (generic braised pork proxy)",
+      "kcalPer100g": 267,
+      "proteinPer100g": 25.07,
+      "carbsPer100g": 0,
+      "fatPer100g": 17.69,
+      "gramsPerUnit": {
+        "lb": 453.59237
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/167850/nutrients",
+      "portionSource": "One pound COOKED edible pulled pork weight = 453.59237 grams; do not substitute raw pounds.",
+      "reviewNotes": "USDA Boston butt braised lean-plus-fat reference. Pulled-pork preparation, trimming, sauces, moisture and serving state affect true nutritional profile. Raw 1 lb does not yield 1 lb cooked."
     },
     "Garlic cloves": {
       "source": "USDA FoodData Central SR Legacy",
