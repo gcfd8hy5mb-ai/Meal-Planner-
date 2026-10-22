@@ -260,6 +260,23 @@ krogerDisconnectButton.onclick=async()=>{
  finally{if(actionEpoch===krogerActionEpoch)krogerActionPending=false;}
 };
 
+// iOS Safari may restore this page from the back-forward cache after Kroger OAuth.
+// Verify server status on return; never infer success from navigation or retry writes.
+let krogerLastResumeCheckAt=0;
+const checkKrogerOnResume=()=>{
+ if(!auth.currentUser||document.visibilityState==='hidden')return;
+ const now=Date.now();
+ if(now-krogerLastResumeCheckAt<1200)return; // pageshow and visibilitychange may both fire
+ krogerLastResumeCheckAt=now;
+ void refreshKroger(); // epoch and UID checks prevent cross-account updates
+};
+document.addEventListener('visibilitychange',()=>{
+ if(document.visibilityState==='visible')checkKrogerOnResume();
+});
+window.addEventListener('pageshow',event=>{
+ if(event.persisted)checkKrogerOnResume();
+});
+
 const optionalToggle=document.querySelector('#luxuryOptionalToggle'),optionalDetails=document.querySelector('#luxuryOptionalDetails');
 const setOptionalExpanded=expanded=>{optionalDetails.hidden=!expanded;optionalToggle.setAttribute('aria-expanded',String(expanded))};
 optionalToggle.onclick=()=>setOptionalExpanded(optionalDetails.hidden);
