@@ -3736,16 +3736,21 @@
       "reviewNotes": "Exact cited USDA food and recipe-unit input reference; does NOT verify individual product variation, cooking yield or final prepared recipe nutrition."
     },
     "Red pepper flakes": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy (dried cayenne proxy)",
+      "foodId": "170932",
+      "description": "Spices, pepper, red or cayenne, dried",
+      "state": "Crushed dry hot red chili pepper flakes, USDA cayenne nutrient proxy",
+      "kcalPer100g": 318,
+      "proteinPer100g": 12.01,
+      "carbsPer100g": 56.63,
+      "fatPer100g": 17.27,
+      "gramsPerUnit": {
+        "tsp": 1.8
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170932/nutrients",
+      "portionSource": "Approximately 1.8g per level teaspoon of dried red/cayenne pepper; crushed flakes and seeds may pack differently.",
+      "reviewNotes": "USDA 170932 is dried red/cayenne pepper rather than a laboratory-specific crushed chili flake product. Used as transparent small-portion proxy, not fresh red sweet peppers. Actual flake size and seed proportion affect composition and teaspoon weight."
     },
     "Red seedless grapes": {
       "source": "USDA FoodData Central Foundation Foods",
