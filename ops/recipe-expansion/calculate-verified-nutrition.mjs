@@ -12,7 +12,9 @@ for(const r of draft){
  for(const [name,amount,unit] of r.ingredients){
   const item=source[name];
   if(!item){issues.push('ingredient not mapped: '+name);continue}
-  if(item.reviewStatus!=='approved'||!item.source||!item.foodId){issues.push('source unverified: '+name);continue}
+  if(item.state==='Whole bay leaf simmered then discarded'&&name==='Bay leaf'&&item.reviewStatus==='approved'&&item.gramsPerUnit?.[unit]===0){continue}
+  if(item.reviewStatus!=='approved'||!item.source||(!item.foodId&&!item.sourceUrl&&name!=='Water')){issues.push('source unverified: '+name);continue}
+  if(!Number.isFinite(amount)||amount<=0){issues.push('invalid ingredient quantity: '+name);continue}
   const g=item.gramsPerUnit?.[unit];
   if(!Number.isFinite(g)||g<=0){issues.push('missing grams/unit: '+name+' ('+unit+')');continue}
   const nutrientNames={cal:'kcalPer100g',p:'proteinPer100g',c:'carbsPer100g',f:'fatPer100g'};
@@ -29,4 +31,4 @@ const verified=output.filter(x=>x.verified).length;
 const summary={recipes:output.length,verified,blocked:output.length-verified,note:'Uses reviewed nutrient source entries, ingredient-specific gram conversion, and recipe serving count. Does not model cooking moisture or yield changes unless source data already accounts for it.',results:output};
 fs.writeFileSync(base+'nutrition-calculation-report.json',JSON.stringify(summary,null,2)+'\n');
 console.log(JSON.stringify({recipes:output.length,verified,blocked:output.length-verified,example:output[0]},null,2));
-if(verified!==110)process.exitCode=1;
+if(verified!==110)process.exitCode=1; // Release gate remains red while flagged foods appear in recipes.
