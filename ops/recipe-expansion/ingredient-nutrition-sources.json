@@ -384,10 +384,26 @@
         "lb": 453.59237
       },
       "reviewStatus": "needs-review",
-      "reviewNotes": "USDA beef cut report supplies boneless raw lean-and-fat composition; 1 lb measured bone-in ribs includes inedible bone. Meat yield and actual cut (chuck/plate) unresolved; NOT approved for recipe calculations. Final batch review: do not treat 453.59237g purchased with bones as 453.59237g edible; no defensible cut-specific edible-yield fraction provided. Exclude from exact per-recipe macro output until yield or weighed edible input is known. Final batch disposition (2026-10-22): Blocked: raw bone-in purchase weight cannot use edible boneless USDA nutrient mass without a validated edible yield; short-rib cut and trim unspecified.",
+      "reviewNotes": "USDA beef cut report supplies boneless raw lean-and-fat composition; 1 lb measured bone-in ribs includes inedible bone. Meat yield and actual cut (chuck/plate) unresolved; NOT approved for recipe calculations. Final batch review: do not treat 453.59237g purchased with bones as 453.59237g edible; no defensible cut-specific edible-yield fraction provided. Exclude from exact per-recipe macro output until yield or weighed edible input is known. Final batch disposition (2026-10-22): Blocked: raw bone-in purchase weight cannot use edible boneless USDA nutrient mass without a validated edible yield; short-rib cut and trim unspecified. Added separately documented historical USDA yield + cooked braised reference as exploratory estimate, NOT release-approved.",
       "sourceUrl": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Meat/Retail_Beef_Cuts03.pdf",
       "portionSource": "1 lb purchased = 453.59237 g including bone; grams edible = purchased grams × measured edible yield fraction (currently unknown).",
-      "nutritionValidationBlocker": "Blocked: raw bone-in purchase weight cannot use edible boneless USDA nutrient mass without a validated edible yield; short-rib cut and trim unspecified."
+      "nutritionValidationBlocker": "Blocked: raw bone-in purchase weight cannot use edible boneless USDA nutrient mass without a validated edible yield; short-rib cut and trim unspecified.",
+      "standardCookedEstimate": {
+        "source": "USDA historical 1977-78 survey codebook cooked boneless short ribs from 1 oz raw, paired USDA FDC cooked braised lean+fat",
+        "foodId": "168613",
+        "description": "Beef rib shortribs separable lean and fat choice cooked braised",
+        "sourceUrl": "https://fdc.nal.usda.gov/food-details/168613/nutrients",
+        "yieldSource": "https://www.ars.usda.gov/ARSUserFiles/80400530/pdf/7778/cfe_admin_rep_352.pdf",
+        "gramsPerUnit": {
+          "lb": 256
+        },
+        "kcalPer100g": 471,
+        "proteinPer100g": 21.57,
+        "carbsPer100g": 0,
+        "fatPer100g": 41.98,
+        "confidence": "historical broad cut estimate, not exact",
+        "limitations": "Historical 1oz raw -> 16g cooked edible entry does not guarantee meat/fat selection or modern short rib cut; trimming and fat skimming alter fat totals; braised choice beef lean and fat can overestimate when fat is discarded."
+      }
     },
     "Bell pepper": {
       "source": "USDA FoodData Central SR Legacy",
@@ -3787,8 +3803,21 @@
       "reviewStatus": "needs-review",
       "sourceUrl": "https://fdc.nal.usda.gov/food-details/168299/nutrients",
       "portionSource": "1 lb purchase weight = 453.59237 g WITH bones. Nutrient values are for edible lean+fat only; edible yield percentage for this recipe is unconfirmed.",
-      "reviewNotes": "USDA exact backribs raw edible source; NOT approved for total recipe macros until bone-in purchase-weight-to-edible-meat yield and trimming are determined. Final batch disposition (2026-10-22): Blocked: bone-in purchased ribs require a measured or reliable edible yield for this cut; USDA edible lean+fat nutrients cannot be applied to bone weight.",
-      "nutritionValidationBlocker": "Blocked: bone-in purchased ribs require a measured or reliable edible yield for this cut; USDA edible lean+fat nutrients cannot be applied to bone weight."
+      "reviewNotes": "USDA exact backribs raw edible source; NOT approved for total recipe macros until bone-in purchase-weight-to-edible-meat yield and trimming are determined. Final batch disposition (2026-10-22): Blocked: bone-in purchased ribs require a measured or reliable edible yield for this cut; USDA edible lean+fat nutrients cannot be applied to bone weight. Cooked USDA backrib edible nutrition matched; no cut-specific raw bone-in to cooked edible yield source confirmed.",
+      "nutritionValidationBlocker": "Blocked: bone-in purchased ribs require a measured or reliable edible yield for this cut; USDA edible lean+fat nutrients cannot be applied to bone weight.",
+      "standardCookedEstimate": {
+        "source": "USDA SR Legacy roasted backribs, edible lean and fat; requires cut-specific yield",
+        "foodId": "168300",
+        "description": "Pork fresh backribs separable lean and fat cooked roasted",
+        "sourceUrl": "https://fdc.nal.usda.gov/food-details/168300/nutrients",
+        "kcalPer100g": 292,
+        "proteinPer100g": 23.01,
+        "carbsPer100g": 0,
+        "fatPer100g": 21.51,
+        "gramsPerUnit": null,
+        "confidence": "nutrient identity validated; cooked edible yield still unknown",
+        "limitations": "USDA 1985 survey has 11g cooked boneless per 1oz raw bone-in SPARERIBS, not backribs. Cannot transfer this yield to baby back ribs without qualification."
+      }
     },
     "Pork loin cutlets": {
       "source": "USDA FoodData Central",
