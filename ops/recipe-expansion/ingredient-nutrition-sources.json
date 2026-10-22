@@ -835,16 +835,21 @@
       "reviewNotes": "USDA SR Legacy raw butternut squash profile. Edible peeled weight must be distinguished from whole purchased weight. Cooking yield and oils are not included in ingredient nutrition."
     },
     "Cajun seasoning": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "Badia Spices manufacturer nutrient specification (documented branded proxy)",
+      "foodId": "Badia-00809",
+      "description": "Badia Cajun Seasoning, dry spice blend",
+      "state": "Dry Cajun seasoning; Badia formula proxy for unspecified seasoning",
+      "kcalPer100g": 278.42,
+      "proteinPer100g": 11.9,
+      "carbsPer100g": 56.8,
+      "fatPer100g": 3.83,
+      "gramsPerUnit": {
+        "tsp": 2.5
+      },
+      "reviewStatus": "needs-review",
+      "sourceUrl": "https://www.webstaurantstore.com/documents/nutrition/102bd00809_nutrition.pdf",
+      "portionSource": "Estimated 2.5 g per level teaspoon; verify the selected seasoning's mass by label or weighing.",
+      "reviewNotes": "Manufacturer specifies all four macros per 100g. The recipe ingredient has no brand and tsp weight is an estimate; kept needs-review until an appropriate product and volume mass are confirmed."
     },
     "Canned black beans": {
       "source": "USDA FoodData Central Foundation Foods",
