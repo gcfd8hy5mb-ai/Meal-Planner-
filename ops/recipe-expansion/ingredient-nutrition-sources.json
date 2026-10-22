@@ -3723,16 +3723,21 @@
       "reviewStatus": "pending"
     },
     "Red seedless grapes": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central Foundation Foods",
+      "foodId": "2346412",
+      "description": "Grapes, red, seedless, raw",
+      "state": "Raw red seedless grapes, edible fruit without stems",
+      "kcalPer100g": 77.2,
+      "proteinPer100g": 0.91,
+      "carbsPer100g": 20.2,
+      "fatPer100g": 0.16,
+      "gramsPerUnit": {
+        "cup": 151
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/2346412/nutrients",
+      "portionSource": "One cup grapes approximately 151g, USDA generic whole-grape volume reference; cultivar and fruit size vary",
+      "reviewNotes": "USDA Foundation Foods red seedless raw grapes per-100g values. The 151g cup weight comes from the USDA generic red/green seedless grapes cup measure, not this Foundation sample's measured volume. Values remain practical estimates, not exact recipe or batch analysis."
     },
     "Refried beans": {
       "source": "USDA FoodData Central SR Legacy",
