@@ -1512,16 +1512,21 @@
       "reviewNotes": "Only for canned diced tomatoes including juice; drained recipes and cooking yields need different mapping. Source ingredient calculations do not certify finished dish nutrition."
     },
     "Diced tomatoes, drained": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central Foundation Foods",
+      "foodId": "333281",
+      "description": "Tomatoes, canned, red, ripe, diced",
+      "state": "Canned diced tomatoes, drained of packing liquid",
+      "kcalPer100g": 18,
+      "proteinPer100g": 0.84,
+      "carbsPer100g": 3.32,
+      "fatPer100g": 0.5,
+      "gramsPerUnit": {
+        "cup": 180
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/333281/nutrients",
+      "portionSource": "Estimated 180g per cup of drained diced canned tomatoes; packing varies",
+      "reviewNotes": "Two recipes explicitly use one cup drained tomatoes. USDA 333281 provides canned diced tomatoes with juice, used as nutrient composition proxy only; drained solids may have different concentrations. Cup mass estimated, not USDA verified."
     },
     "Dijon mustard": {
       "source": "McCormick / French's Dijon mustard manufacturer nutritional datasheet (17 March 2023)",
@@ -2032,16 +2037,21 @@
       "reviewStatus": "pending"
     },
     "Frozen corn": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy (generic sweet yellow corn)",
+      "foodId": "169998",
+      "description": "Corn, sweet, yellow, raw",
+      "state": "Frozen plain sweet corn kernels, measured frozen before cooking",
+      "kcalPer100g": 86,
+      "proteinPer100g": 3.27,
+      "carbsPer100g": 18.7,
+      "fatPer100g": 1.35,
+      "gramsPerUnit": {
+        "cup": 140
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169998/nutrients",
+      "portionSource": "Estimated 140g per cup frozen corn kernels; packing and frost vary",
+      "reviewNotes": "Two recipes use one cup frozen corn. Raw sweet corn USDA nutrient composition used as explicit proxy; freezing/blanching can change moisture and nutrient values. Not valid for corn in sauces."
     },
     "Frozen peas": {
       "source": "",
