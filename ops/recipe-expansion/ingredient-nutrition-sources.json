@@ -1233,16 +1233,22 @@
       "reviewNotes": "Corrected wrong USDA identifier: FDC 169756 is RAW rice, not cooked. FDC 168878 matches this record's cooked enriched rice values (130 kcal, 2.69g protein, 28.17g carbohydrate, 0.28g fat per 100g) and 158g per cup. Five recipes use cooked rice by cup; cooking additions tracked separately."
     },
     "Cooked shredded chicken": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "171477",
+      "description": "Chicken, broilers or fryers, breast, meat only, cooked, roasted",
+      "state": "Fully cooked shredded boneless skinless chicken breast, edible cooked weight",
+      "kcalPer100g": 165,
+      "proteinPer100g": 31.02,
+      "carbsPer100g": 0,
+      "fatPer100g": 3.57,
+      "gramsPerUnit": {
+        "cup": 140,
+        "lb": 453.59237
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171477/nutrients",
+      "portionSource": "USDA cooked breast 1 cup chopped/diced = 140g, used as shredded-cup proxy; 1 lb cooked edible chicken = 453.59237g",
+      "reviewNotes": "Four recipes specify previously cooked chicken (two use cups, two use pounds). Cooked skinless breast is an explicit lean-meat proxy; thigh meat, rotisserie skin, added fat and packing of shredded pieces vary. Never apply raw-to-cooked yield again to pounds explicitly labeled cooked."
     },
     "Cooked shredded turkey": {
       "source": "",
