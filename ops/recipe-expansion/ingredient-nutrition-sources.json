@@ -3163,16 +3163,21 @@
       "reviewStatus": "pending"
     },
     "Poblano peppers": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central Foundation Foods",
+      "foodId": "2747662",
+      "description": "Peppers, poblano, seeded, raw",
+      "state": "Raw edible seeded poblano",
+      "kcalPer100g": 28,
+      "proteinPer100g": 1.43,
+      "carbsPer100g": 5.14,
+      "fatPer100g": 0.19,
+      "gramsPerUnit": {
+        "each": 100
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/2747662/nutrients",
+      "portionSource": "Estimated 100g edible seeded pepper per each; actual size and trimming vary",
+      "reviewNotes": "Six recipes use 2 to 4 peppers. Raw seeded USDA composition; cooking moisture loss does not change initial total nutrient contribution."
     },
     "Pork baby back ribs": {
       "source": "",
