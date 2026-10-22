@@ -2718,16 +2718,21 @@
       "reviewStatus": "pending"
     },
     "Kidney beans": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "174285",
+      "description": "Beans, kidney, red, mature seeds, canned, drained solids",
+      "state": "Canned red kidney beans, drained; proxy for unspecified kidney beans",
+      "kcalPer100g": 124,
+      "proteinPer100g": 8,
+      "carbsPer100g": 21.5,
+      "fatPer100g": 1.1,
+      "gramsPerUnit": {
+        "oz": 28.349523125
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/174285/nutrients",
+      "portionSource": "1 oz by weight = 28.349523125 g of edible drained canned beans; not dry beans or can liquid",
+      "reviewNotes": "Unspecified kidney beans mapped to canned drained red kidney beans as an explicitly labeled proxy. Raw dried kidney beans have very different nutrition per 100 g; use recipe preparation state to override if needed."
     },
     "Kidney beans, canned drained": {
       "source": "USDA FoodData Central SR Legacy",
