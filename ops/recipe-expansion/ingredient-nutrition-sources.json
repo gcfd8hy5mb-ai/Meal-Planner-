@@ -4384,16 +4384,21 @@
       "reviewNotes": "USDA raw tomatillo values and exact pound-to-gram conversion; husk/trimming loss and cooking yield remain separate recipe-level considerations."
     },
     "Tomato paste": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170459",
+      "description": "Tomato products, canned, paste, without salt added",
+      "state": "Canned concentrated tomato paste, unsalted standard preparation",
+      "kcalPer100g": 82,
+      "proteinPer100g": 4.32,
+      "carbsPer100g": 18.91,
+      "fatPer100g": 0.47,
+      "gramsPerUnit": {
+        "tbsp": 16
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170459/nutrients",
+      "portionSource": "USDA SR 28 reference: one tablespoon tomato paste weighs 16 grams",
+      "reviewNotes": "USDA canned tomato paste no-salt-added food and explicit 16g tablespoon serving. Recipes using seasoned/sweetened concentrated products differ. Final cooked dish nutrient yield is not certified."
     },
     "Tomato sauce": {
       "source": "",
