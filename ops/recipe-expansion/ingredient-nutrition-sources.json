@@ -1695,16 +1695,21 @@
       "reviewNotes": "Verified source and unit for ingredient input, not cooked recipe yield or served macro certification."
     },
     "Dry elbow macaroni": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "169736",
+      "description": "Pasta, dry, enriched",
+      "state": "Dry uncooked enriched wheat elbow macaroni",
+      "kcalPer100g": 371,
+      "proteinPer100g": 13.04,
+      "carbsPer100g": 74.67,
+      "fatPer100g": 1.51,
+      "gramsPerUnit": {
+        "oz": 28.349523125
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169736/nutrients",
+      "portionSource": "Ounces are dry pasta mass; 1 oz = 28.349523125g",
+      "reviewNotes": "Two recipes each specify 12 oz dry elbow macaroni. Generic enriched dry pasta nutrient composition is a documented shape-independent proxy; cooked pasta values must not be used for dry recipe input."
     },
     "Dry fettuccine": {
       "source": "",
@@ -3104,16 +3109,21 @@
       "reviewNotes": "Verified source-matched ingredient input; full meal nutrient yield and retained fractions not certified."
     },
     "Panko breadcrumbs": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "174928",
+      "description": "Generic dry breadcrumbs used as proxy for Japanese-style panko",
+      "state": "Dry plain panko breadcrumbs, before coating/frying",
+      "kcalPer100g": 395,
+      "proteinPer100g": 13.35,
+      "carbsPer100g": 71.98,
+      "fatPer100g": 5.3,
+      "gramsPerUnit": {
+        "cup": 60
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/174928/nutrients",
+      "portionSource": "Estimated 60g per loosely filled cup panko; airy flakes are lighter than ordinary fine breadcrumbs",
+      "reviewNotes": "Two recipes use 1.5 cups panko. USDA generic breadcrumbs nutrient profile is a proxy, not panko-specific lab analysis; panko cup weight estimated separately from ordinary breadcrumbs. Frying oil absorption not included in ingredient record."
     },
     "Paprika": {
       "source": "USDA FoodData Central SR Legacy",
