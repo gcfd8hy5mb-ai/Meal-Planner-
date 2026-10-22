@@ -2061,16 +2061,21 @@
       "reviewNotes": "Eight recipes measure 1–2 tbsp fresh ginger. Raw ginger root nutrient profile used for grated/minced fresh ginger; estimate assumes edible peeled root."
     },
     "Fresh Mexican chorizo": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central",
+      "foodId": "173859",
+      "description": "Sausage, pork, chorizo, link or ground, raw",
+      "state": "Fresh raw Mexican-style pork chorizo, by ounce",
+      "kcalPer100g": 296,
+      "proteinPer100g": 13.63,
+      "carbsPer100g": 3.78,
+      "fatPer100g": 25.1,
+      "gramsPerUnit": {
+        "oz": 28.349523125
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/173859/nutrients",
+      "portionSource": "Raw chorizo measured by mass, 1 oz = 28.349523125 g",
+      "reviewNotes": "Fresh uncooked Mexican pork chorizo matched to already reviewed USDA raw chorizo composition; beef chorizo or cured Spanish chorizo differ materially. Brand, fat rendered, and final cooked yield not verified."
     },
     "Fresh parsley": {
       "source": "USDA FoodData Central SR Legacy",
@@ -4397,16 +4402,21 @@
       "reviewNotes": "12 recipes use whole or half white onions, unit each. Exact white onion USDA Foundation ID 1104962. Nutrient values approximate (food composition varies); edible onion weight is generic medium onion proxy, not a weighed white onion. Cooking loss does not remove onion solids; final recipe yield not verified."
     },
     "White vinegar": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central FNDDS (generic vinegar proxy)",
+      "foodId": "2709351",
+      "description": "Generic unseasoned vinegar nutrient proxy, applied to plain white vinegar",
+      "state": "Plain unseasoned distilled white vinegar; generic unsweetened vinegar proxy",
+      "kcalPer100g": 21,
+      "proteinPer100g": 0,
+      "carbsPer100g": 0.9,
+      "fatPer100g": 0,
+      "gramsPerUnit": {
+        "tbsp": 15
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/2709351/nutrients",
+      "portionSource": "One US tablespoon liquid vinegar ~15g.",
+      "reviewNotes": "Generic unsweetened vinegar USDA proxy. Distilled white vinegar may have lower residual carbohydrate than generic vinegar. At tablespoon portions nutritional contribution is small; not exact product testing."
     },
     "Wild rice blend": {
       "source": "",
