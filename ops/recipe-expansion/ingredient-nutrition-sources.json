@@ -409,16 +409,21 @@
       "reviewStatus": "pending"
     },
     "Black beans canned": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central Foundation Foods",
+      "foodId": "2644285",
+      "description": "Beans, black, canned, sodium added, drained and rinsed",
+      "state": "Drained and rinsed canned black beans",
+      "kcalPer100g": 115,
+      "proteinPer100g": 6.91,
+      "carbsPer100g": 19.8,
+      "fatPer100g": 1.27,
+      "gramsPerUnit": {
+        "cup": 172
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/2644285/nutrients",
+      "portionSource": "Estimated 172g drained beans per cup; product packing and liquid retention vary.",
+      "reviewNotes": "Three recipes use one or two cups. Assumes canned beans drained and rinsed; if cooking liquid is included, macros and sodium may differ. USDA source nutrients confirmed, cup conversion estimated."
     },
     "Black beans, canned drained": {
       "source": "",
