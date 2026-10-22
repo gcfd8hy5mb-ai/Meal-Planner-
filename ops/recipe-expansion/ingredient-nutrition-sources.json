@@ -1494,16 +1494,23 @@
       "reviewStatus": "pending"
     },
     "Dijon mustard": {
-      "source": "",
+      "source": "McCormick / French's Dijon mustard manufacturer nutritional datasheet (17 March 2023)",
       "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "description": "French's Dijon mustard, unrounded manufacturer per-100g nutrients (brand proxy)",
+      "state": "Prepared Dijon mustard, not honey mustard",
+      "kcalPer100g": 116.734,
+      "proteinPer100g": 5.183,
+      "carbsPer100g": 8.355,
+      "fatPer100g": 7.192,
+      "gramsPerUnit": {
+        "tsp": 5,
+        "tbsp": 15,
+        "cup": 240
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://www.webstaurantstore.com/documents/nutrition/901621933_901603778_nutn_frenchs_mustard_dijon_pc_200-10g.pdf",
+      "portionSource": "Approximate condiment conversions: 1 tsp=5g; 1 tbsp=15g; 1 cup=240g.",
+      "reviewNotes": "Nine recipe uses checked: 1 tsp, 1–2 tbsp, and 0.25 cup. Manufacturer nutrition data is specific to French's Dijon and not universal to all Dijon products; cup mass estimated and mustard density varies. Values from unrounded manufacturer datasheet."
     },
     "Dried ancho chiles": {
       "source": "USDA FoodData Central SR Legacy",
@@ -3766,16 +3773,21 @@
       "reviewNotes": "Five recipes use 1–2 cups shredded lettuce for topping; raw romaine is a documented generic lettuce proxy. Variety and packing density are not specified, so edible weight is an estimate."
     },
     "Shredded Monterey Jack cheese": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170844",
+      "description": "Cheese, monterey jack",
+      "state": "Natural Monterey Jack cheese, shredded (generic solid-cheese nutrient proxy)",
+      "kcalPer100g": 373,
+      "proteinPer100g": 24.48,
+      "carbsPer100g": 0.68,
+      "fatPer100g": 30.28,
+      "gramsPerUnit": {
+        "cup": 113
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170844/nutrients",
+      "portionSource": "Shredded Monterey Jack approximately 113g per cup (4oz); shred thickness and packing affect weight.",
+      "reviewNotes": "Eight recipes use 1–2 cups shredded cheese. USDA SR Legacy generic Monterey Jack reference used; actual pre-shredded products may include anti-caking starch and differ. Portion mass is a practical estimate; not a lab-measured cup."
     },
     "Shredded mozzarella": {
       "source": "",
