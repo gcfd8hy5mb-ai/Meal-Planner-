@@ -1077,16 +1077,21 @@
       "reviewStatus": "pending"
     },
     "Chickpeas": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central Foundation Foods",
+      "foodId": "2644288",
+      "description": "Chickpeas (garbanzo beans), canned, sodium added, drained and rinsed",
+      "state": "Canned drained and rinsed chickpeas, assumed rather than dried uncooked chickpeas",
+      "kcalPer100g": 133,
+      "proteinPer100g": 7,
+      "carbsPer100g": 20.3,
+      "fatPer100g": 3.1,
+      "gramsPerUnit": {
+        "oz": 28.349523125
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/2644288/nutrients",
+      "portionSource": "1 oz mass = 28.349523125 g of edible drained beans, excluding packing liquid",
+      "reviewNotes": "USDA Foundation canned drained/rinsed beans are an explicit assumed state. Dried/raw chickpeas should be mapped separately. Energy uses reported Atwater specific factors (133 kcal)."
     },
     "Chili garlic sauce": {
       "source": "",
@@ -1188,16 +1193,21 @@
       "reviewNotes": "USDA SR Legacy Atlantic cod raw, verified against NOAA Fisheries; other cod species, glazing and water content vary. No cooking loss, breading or added fat included."
     },
     "Coleslaw mix": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy - composite estimate",
+      "foodId": "169975+170393",
+      "description": "Coleslaw mix, unsauced: modeled 80% raw green cabbage and 20% raw carrot",
+      "state": "Fresh raw shredded cabbage-and-carrot blend, no dressing",
+      "kcalPer100g": 28.2,
+      "proteinPer100g": 1.21,
+      "carbsPer100g": 6.56,
+      "fatPer100g": 0.13,
+      "gramsPerUnit": {
+        "cup": 70
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169975/nutrients",
+      "portionSource": "70 g per cup is an approximate loose-packed shredded slaw blend; actual volume-to-mass depends on cut and packing",
+      "reviewNotes": "Modeled blend, NOT a directly tested USDA product: 80% raw cabbage (USDA 169975) plus 20% raw carrot (USDA 170393). Excludes mayo/dressing. Actual packaged slaw proportions vary; use product weight/label for precision."
     },
     "Cooked chicken": {
       "source": "USDA FoodData Central SR Legacy",
@@ -2291,16 +2301,21 @@
       "reviewNotes": "Exact cited USDA food and recipe-unit input reference; does NOT verify individual product variation, cooking yield or final prepared recipe nutrition."
     },
     "Greek yogurt": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170894",
+      "description": "Yogurt, Greek, plain, nonfat",
+      "state": "Plain nonfat Greek yogurt, assumed where fat content is not specified",
+      "kcalPer100g": 59,
+      "proteinPer100g": 10.2,
+      "carbsPer100g": 3.6,
+      "fatPer100g": 0.4,
+      "gramsPerUnit": {
+        "cup": 245
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170894/nutrients",
+      "portionSource": "USDA cup-equivalent 245g, approximate depending on thickness and brand",
+      "reviewNotes": "Nonfat plain Greek yogurt is an explicit default proxy. 2% and whole-milk Greek yogurt differ significantly in calories and fat. Prefer brand and fat percent when known."
     },
     "Green beans": {
       "source": "USDA FoodData Central SR Legacy",
@@ -3466,16 +3481,21 @@
       "reviewNotes": "USDA SR Legacy FDC 169096 provides green brined olive nutrients. Cup size is an approximate surrogate from the USDA green olive survey portion, not exact for each pitted olive variety. Drain brine and weigh edible olives where precise macros are needed."
     },
     "Plain Greek yogurt": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170894",
+      "description": "Yogurt, Greek, plain, nonfat",
+      "state": "Plain nonfat Greek yogurt, assumed where fat content is not specified",
+      "kcalPer100g": 59,
+      "proteinPer100g": 10.2,
+      "carbsPer100g": 3.6,
+      "fatPer100g": 0.4,
+      "gramsPerUnit": {
+        "cup": 245
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170894/nutrients",
+      "portionSource": "USDA cup-equivalent 245g, approximate depending on thickness and brand",
+      "reviewNotes": "Nonfat plain Greek yogurt is an explicit default proxy. 2% and whole-milk Greek yogurt differ significantly in calories and fat. Prefer brand and fat percent when known."
     },
     "Poblano peppers": {
       "source": "USDA FoodData Central Foundation Foods",
