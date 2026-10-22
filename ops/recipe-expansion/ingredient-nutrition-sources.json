@@ -120,20 +120,21 @@
       "reviewNotes": "Verified Goya Arborio Rice branded USDA FoodData Central FDC 2596371: serving 1/4 cup dry (47g), 170 kcal, 3g protein, 37g total carbs, 0g fat. Values per 100g computed directly from label; exact fractions retained for accuracy. Only use is 1.5 cups uncooked in Butternut Squash Sausage Risotto. Brand proxy for other dry Arborio products; rounded label nutrients are estimates."
     },
     "Artichoke hearts": {
-      "source": "USDA FoodData Central SR Legacy (candidate; preparation requires confirmation)",
-      "foodId": "168533",
-      "description": "Artichokes, (globe or french), raw",
-      "state": "Raw reference food; recipe preparation unspecified",
-      "kcalPer100g": 47,
-      "proteinPer100g": 3.27,
-      "carbsPer100g": 10.51,
-      "fatPer100g": 0.15,
+      "source": "USDA FoodData Central branded food via GetFoodFacts",
+      "foodId": "2597636",
+      "description": "Cento 5-7 Count Artichoke Hearts branded canned",
+      "state": "Canned artichoke hearts in water/brine, not oil-packed",
+      "kcalPer100g": 38,
+      "proteinPer100g": 2.5,
+      "carbsPer100g": 7.5,
+      "fatPer100g": 0,
       "gramsPerUnit": {
         "oz": 28.349523125
       },
-      "reviewStatus": "pending",
-      "sourceUrl": "https://fdc.nal.usda.gov/food-details/168533/nutrients",
-      "reviewNotes": "Recipe-unit audit completed: only exact mass units used in current 110 recipe drafts. Nutrition candidate needs independent food identity and preparation verification before approval; canned/drained artichoke hearts cannot automatically use raw artichoke macros."
+      "reviewStatus": "needs-review",
+      "sourceUrl": "https://getfoodfacts.com/food/5-7-count-artichoke-hearts-2597636",
+      "portionSource": "Volume/count measurements depend on actual item mass; ounce is weight ounce, not fluid ounce.",
+      "reviewNotes": "Branded USDA-derived proxy; total carbohydrates roughly inferred from label energy and may not be exact. Brands vary."
     },
     "Avocado": {
       "source": "USDA FoodData Central SR Legacy",
@@ -1967,16 +1968,21 @@
       "reviewNotes": "Source-matched generic USDA enriched dry pasta proxy inherited from previously reviewed dry elbow macaroni. This is not shape-specific or brand-specific laboratory analysis. Recipe requires oz dry mass; do not use cooked pasta nutrition. Finished-recipe macros depend on yield, product and preparation."
     },
     "Farro": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central",
+      "foodId": "2710828",
+      "description": "Farro (raw)",
+      "state": "Raw dry farro, not cooked",
+      "kcalPer100g": 367,
+      "proteinPer100g": 12.63944,
+      "carbsPer100g": 72.13156,
+      "fatPer100g": 3.103,
+      "gramsPerUnit": {
+        "cup": 180
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/2710828/nutrients",
+      "portionSource": "Volume/count measurements depend on actual item mass; ounce is weight ounce, not fluid ounce.",
+      "reviewNotes": "180g per dry cup is an approximate packing-weight assumption; USDA source values are for dry grain."
     },
     "Feta": {
       "source": "USDA FoodData Central SR Legacy",
@@ -2805,16 +2811,21 @@
       "reviewNotes": "Three recipes measure 1 to 1.5 cups jasmine rice before cooking. USDA generic raw long-grain white rice 169756 used as documented proxy, not jasmine-specific lab data. Assumes 185g dry rice per cup; cooked rice is not interchangeable."
     },
     "Ketchup": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central",
+      "foodId": "168556",
+      "description": "Catsup",
+      "state": "Bottled standard ketchup",
+      "kcalPer100g": 101,
+      "proteinPer100g": 1,
+      "carbsPer100g": 27.4,
+      "fatPer100g": 0.1,
+      "gramsPerUnit": {
+        "cup": 240
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/168556/nutrients",
+      "portionSource": "Volume/count measurements depend on actual item mass; ounce is weight ounce, not fluid ounce.",
+      "reviewNotes": "1 cup 240g per USDA; added sugar levels vary by brand."
     },
     "Kidney beans": {
       "source": "USDA FoodData Central SR Legacy",
