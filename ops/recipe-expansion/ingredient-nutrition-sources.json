@@ -788,16 +788,21 @@
       "reviewNotes": "Both recipes explicitly use one head, separating leaves for lettuce cups/wraps. Standard edible leaves per head are an estimate; actual head size and discarded core vary."
     },
     "Butternut squash": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "169295",
+      "description": "Squash, winter, butternut, raw",
+      "state": "Raw butternut squash edible flesh, after peel and seed removal",
+      "kcalPer100g": 45,
+      "proteinPer100g": 1,
+      "carbsPer100g": 11.69,
+      "fatPer100g": 0.1,
+      "gramsPerUnit": {
+        "lb": 453.59237
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169295/nutrients",
+      "portionSource": "1 lb = 453.59237 g of raw edible squash flesh; purchased whole squash with peel/seeds weighs more",
+      "reviewNotes": "USDA SR Legacy raw butternut squash profile. Edible peeled weight must be distinguished from whole purchased weight. Cooking yield and oils are not included in ingredient nutrition."
     },
     "Cajun seasoning": {
       "source": "",
