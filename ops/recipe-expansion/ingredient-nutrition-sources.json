@@ -3570,16 +3570,21 @@
       "reviewStatus": "pending"
     },
     "Raw beets": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "169145",
+      "description": "Beets, raw",
+      "state": "Raw beetroot, edible part after trimming",
+      "kcalPer100g": 43,
+      "proteinPer100g": 1.61,
+      "carbsPer100g": 9.56,
+      "fatPer100g": 0.17,
+      "gramsPerUnit": {
+        "lb": 453.59237
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169145/nutrients",
+      "portionSource": "Pounds are raw edible mass, 1 lb = 453.59237g; USDA raw-beet database excludes 33% refuse for whole purchased beets",
+      "reviewNotes": "Nutrient values sourced from USDA SR Legacy raw beets. Recipe weight is treated as trimmed edible weight, not untrimmed purchased beet weight. Cooking and moisture changes require separate recipe review."
     },
     "Raw Mexican-style pork chorizo": {
       "source": "USDA FoodData Central",
