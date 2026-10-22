@@ -330,28 +330,38 @@
       "reviewNotes": "Audited all occurrences in 110 recipe drafts: only 'lb' is used. Exact conversion is 453.59237 g per pound of the weighed product. HOLD nutrition approval until USDA entry matches raw/cooked, skin, fat trimming, and bone status. Bone-in chicken thighs require an edible-yield adjustment; 1 lb bone-in purchase weight is NOT 453.59237 g edible meat. Beef cut and fat trim can materially alter macros."
     },
     "Bell pepper": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170108",
+      "description": "Peppers, sweet, green, raw",
+      "state": "Raw green sweet bell pepper, stem/core/seeds excluded; color unspecified recipes use green as practical default",
+      "kcalPer100g": 20,
+      "proteinPer100g": 0.86,
+      "carbsPer100g": 4.64,
+      "fatPer100g": 0.17,
+      "gramsPerUnit": {
+        "each": 119
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170108/nutrients",
+      "portionSource": "USDA standard 1 medium green sweet pepper, edible portion ~119g; 1 each estimate. Actual pepper size and color vary.",
+      "reviewNotes": "All 13 recipe occurrences of Bell pepper/Bell peppers in 110 recipe drafts are measured as 'each'. Unspecified color standardized to green bell pepper for estimated macros; red/yellow peppers and actual weights vary. Do not treat as exact per-pepper macros."
     },
     "Bell peppers": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170108",
+      "description": "Peppers, sweet, green, raw",
+      "state": "Raw green sweet bell pepper, stem/core/seeds excluded; color unspecified recipes use green as practical default",
+      "kcalPer100g": 20,
+      "proteinPer100g": 0.86,
+      "carbsPer100g": 4.64,
+      "fatPer100g": 0.17,
+      "gramsPerUnit": {
+        "each": 119
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170108/nutrients",
+      "portionSource": "USDA standard 1 medium green sweet pepper, edible portion ~119g; 1 each estimate. Actual pepper size and color vary.",
+      "reviewNotes": "All 13 recipe occurrences of Bell pepper/Bell peppers in 110 recipe drafts are measured as 'each'. Unspecified color standardized to green bell pepper for estimated macros; red/yellow peppers and actual weights vary. Do not treat as exact per-pepper macros."
     },
     "Black beans": {
       "source": "",
