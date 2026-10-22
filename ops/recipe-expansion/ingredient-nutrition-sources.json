@@ -1964,28 +1964,38 @@
       "portionSource": "USDA SR Legacy 1 cup 125g; recipe uses 0.5 cup for fish-stick breading."
     },
     "Flour tortillas": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "175037",
+      "description": "Tortillas, ready-to-bake or -fry, flour, refrigerated",
+      "state": "Wheat flour tortilla, estimated weight per piece",
+      "kcalPer100g": 306,
+      "proteinPer100g": 8.2,
+      "carbsPer100g": 49.38,
+      "fatPer100g": 7.99,
+      "gramsPerUnit": {
+        "each": 49
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/175037/nutrients",
+      "portionSource": "Estimated 49g per tortilla; check individual brand label",
+      "reviewNotes": "Uses existing USDA generic flour tortilla nutrient composition. Portion weight is an estimate based on tortilla size; not brand-verified."
     },
     "Flour tortillas, fajita size": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "175037",
+      "description": "Tortillas, ready-to-bake or -fry, flour, refrigerated",
+      "state": "Wheat flour tortilla, estimated weight per piece",
+      "kcalPer100g": 306,
+      "proteinPer100g": 8.2,
+      "carbsPer100g": 49.38,
+      "fatPer100g": 7.99,
+      "gramsPerUnit": {
+        "each": 40
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/175037/nutrients",
+      "portionSource": "Estimated 40g per tortilla; check individual brand label",
+      "reviewNotes": "Uses existing USDA generic flour tortilla nutrient composition. Portion weight is an estimate based on tortilla size; not brand-verified."
     },
     "Fresh basil": {
       "source": "USDA FoodData Central SR Legacy",
@@ -4113,16 +4123,21 @@
       "reviewStatus": "pending"
     },
     "Small flour tortillas": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "175037",
+      "description": "Tortillas, ready-to-bake or -fry, flour, refrigerated",
+      "state": "Wheat flour tortilla, estimated weight per piece",
+      "kcalPer100g": 306,
+      "proteinPer100g": 8.2,
+      "carbsPer100g": 49.38,
+      "fatPer100g": 7.99,
+      "gramsPerUnit": {
+        "each": 30
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/175037/nutrients",
+      "portionSource": "Estimated 30g per tortilla; check individual brand label",
+      "reviewNotes": "Uses existing USDA generic flour tortilla nutrient composition. Portion weight is an estimate based on tortilla size; not brand-verified."
     },
     "Smoked paprika": {
       "source": "USDA FoodData Central SR Legacy",
