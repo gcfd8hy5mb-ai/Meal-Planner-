@@ -1,5 +1,5 @@
 {
-  "description": "Ingredient-specific nutrition sources and measurement conversions. Each entry is UNVERIFIED until a human/editor has matched the ingredient, food composition source, usable edible grams per recipe unit, and prep state. No fake nutrient data is populated.",
+  "description": "Ingredient nutrition for recipe macro estimates. Approval policy: use a defensible USDA FoodData Central or documented manufacturer reference for the typical as-used ingredient; select a consistent, clearly labeled standard preparation and portion when the recipe is nonspecific. Require evidence for the actual recipe units and avoid unsupported food identities, FDC IDs, or conversion values. Prioritize precise weight/preparation for macro-sensitive meats, oils, grains, flour, cheeses and sauces; for lower-impact produce/spices, documented standard USDA portions and reasonable clearly identified defaults are acceptable. Mark estimates as estimates, not laboratory-exact macros. Recipe cooking yield, ingredient brands, and serving weights may differ. Never automatically approve blank records or infer all units from one unsupported conversion.",
   "units": "Nutrients per 100 g edible ingredient; gramsPerUnit keyed by the actual recipe unit.",
   "ingredients": {
     "Achiote paste": {
