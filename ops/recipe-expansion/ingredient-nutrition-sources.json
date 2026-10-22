@@ -24,7 +24,8 @@
       "carbsPer100g": null,
       "fatPer100g": null,
       "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "reviewStatus": "pending",
+      "reviewNotes": "Source research 2026-10-21: USDA Foods in Schools 100400 All Purpose Enriched flour sheet (https://fns-prod.azureedge.us/sites/default/files/resource-files/100400-%20Flour%20All%20Purpose%20Enriched.pdf) reports 1/2 cup = 63 g, but this is specifically enriched flour. USDA FoodData Central Foundation records 789951 (enriched unbleached) and 790018 (unenriched unbleached) differ in nutrients. HOLD pending recipe-specific flour enrichment/bleaching identity and confirmation of every recipe unit; do not assign generic nutrients or FDC ID by assumption."
     },
     "Apple cider": {
       "source": "",
