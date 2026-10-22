@@ -560,16 +560,21 @@
       "sourceUrl": "https://fdc.nal.usda.gov/food-details/2646171/nutrients"
     },
     "Boneless pork chops": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central",
+      "foodId": "2646168",
+      "description": "Pork, loin, boneless, raw",
+      "state": "Raw boneless pork loin chops, generic loin profile; excludes bone and breading",
+      "kcalPer100g": 167.769,
+      "proteinPer100g": 21.11875,
+      "carbsPer100g": 0,
+      "fatPer100g": 9.469,
+      "gramsPerUnit": {
+        "lb": 453.59237
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/2646168/nutrients",
+      "portionSource": "One pound raw edible boneless chops = 453.59237g; fat trim and the chop's location along the loin change composition",
+      "reviewNotes": "Boneless pork chops are standardized to raw boneless pork loin for a documented approximate USDA reference. Other pork cuts, marbling and trimmed visible fat vary materially. Finished cooking yield and oil absorption are not certified."
     },
     "Boneless pork loin": {
       "source": "USDA FoodData Central",
