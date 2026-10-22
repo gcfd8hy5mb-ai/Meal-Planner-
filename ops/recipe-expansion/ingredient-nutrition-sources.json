@@ -3541,16 +3541,21 @@
       "reviewStatus": "pending"
     },
     "Radishes": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "169276",
+      "description": "Radishes, raw",
+      "state": "Raw whole medium radish, edible part without tops",
+      "kcalPer100g": 16,
+      "proteinPer100g": 0.68,
+      "carbsPer100g": 3.4,
+      "fatPer100g": 0.1,
+      "gramsPerUnit": {
+        "each": 5
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169276/nutrients",
+      "portionSource": "USDA SR Legacy reference medium radish, 3/4–1 inch diameter, 5 grams edible portion per each",
+      "reviewNotes": "Raw radish USDA macronutrients and medium radish edible weight; actual radish size may vary. Recipe is measured by individual radishes; not cooked or pickled."
     },
     "Ranch seasoning": {
       "source": "",
