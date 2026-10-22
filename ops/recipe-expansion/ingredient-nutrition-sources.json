@@ -101,10 +101,10 @@
       "gramsPerUnit": {
         "cup": 195
       },
-      "reviewStatus": "approved",
+      "reviewStatus": "pending",
       "sourceUrl": "https://fdc.nal.usda.gov/food-details/169756/nutrients",
       "portionSource": "Dry Arborio rice approximately 195 g per cup (standard cooking ingredient estimate); actual brand differs.",
-      "reviewNotes": "Risotto steps explicitly toast 1½ cups dry Arborio rice before broth addition. Raw white rice macro proxy is approximate; Arborio starch composition and brand vary. USDA food ID should be independently checked for raw vs cooked before production use."
+      "reviewNotes": "Risotto steps explicitly toast 1½ cups dry Arborio rice before broth addition. Raw white rice macro proxy is approximate; Arborio starch composition and brand vary. USDA food ID should be independently checked for raw vs cooked before production use. QA correction: previous approval premature because FDC ID 169756 may identify cooked rice rather than the claimed raw rice; do not treat this as verified until exact food record and macros are confirmed."
     },
     "Artichoke hearts": {
       "source": "USDA FoodData Central SR Legacy (candidate; preparation requires confirmation)",
@@ -291,16 +291,20 @@
       "reviewStatus": "pending"
     },
     "Bay leaf": {
-      "source": "",
+      "source": "Recipe preparation audit (discarded ingredient; not consumed)",
       "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "description": "Bay leaf, removed from dish before serving",
+      "state": "Whole bay leaf simmered then discarded",
+      "kcalPer100g": 0,
+      "proteinPer100g": 0,
+      "carbsPer100g": 0,
+      "fatPer100g": 0,
+      "gramsPerUnit": {
+        "each": 0
+      },
+      "reviewStatus": "approved",
+      "portionSource": "Zero consumed mass because recipe explicitly discards the bay leaf before serving; this is not a claim that bay leaves have zero intrinsic nutrients.",
+      "reviewNotes": "Shrimp Veracruz is the only Bay leaf use (1 each). Step 4 explicitly says 'discard the bay leaf.' Zero retained mass is correct for estimated consumed macros; re-audit if recipe instructions change."
     },
     "Beef broth": {
       "source": "",
