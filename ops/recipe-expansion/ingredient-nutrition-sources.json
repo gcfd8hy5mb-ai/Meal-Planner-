@@ -2252,16 +2252,21 @@
       "reviewNotes": "Source-linked ingredient INPUT mapping. Does not imply final recipe serving nutrition is verified; recipe-specific cooking retention and yield must be checked."
     },
     "Goat cheese": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "173435",
+      "description": "Cheese, goat, soft type",
+      "state": "Plain soft fresh goat cheese (chèvre), not aged/hard",
+      "kcalPer100g": 264,
+      "proteinPer100g": 18.52,
+      "carbsPer100g": 0,
+      "fatPer100g": 21.08,
+      "gramsPerUnit": {
+        "oz": 28.349523125
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/173435/nutrients",
+      "portionSource": "1 ounce by weight = 28.349523125 g",
+      "reviewNotes": "Generic USDA soft goat cheese nutrient profile; brand moisture levels and aged cheese differ."
     },
     "Grated Parmesan": {
       "source": "USDA FoodData Central SR Legacy",
@@ -4438,16 +4443,21 @@
       "reviewNotes": "USDA SR Legacy canned tomato sauce 170054. Assumes the ingredient label refers to plain canned tomato sauce, not pasta marinara, pizza sauce or tomato paste. Added sugar, oil, seasoning and sodium vary by brand; check product labels for precision."
     },
     "Tortilla chips": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "173143",
+      "description": "Tortilla chips, yellow, plain, salted",
+      "state": "Commercial plain salted yellow-corn tortilla chips",
+      "kcalPer100g": 497,
+      "proteinPer100g": 6.62,
+      "carbsPer100g": 67.38,
+      "fatPer100g": 22.33,
+      "gramsPerUnit": {
+        "oz": 28.349523125
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/173143/nutrients",
+      "portionSource": "One ounce by weight = 28.349523125 g; chips count varies by brand",
+      "reviewNotes": "Generic USDA yellow corn plain salted tortilla-chip reference. Oil, salt, chip thickness and brand vary."
     },
     "Vegetable oil": {
       "source": "USDA FoodData Central SR Legacy",
