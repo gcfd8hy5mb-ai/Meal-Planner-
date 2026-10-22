@@ -66,7 +66,8 @@
       "carbsPer100g": null,
       "fatPer100g": null,
       "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "reviewStatus": "pending",
+      "reviewNotes": "HOLD: recipe preparation and units need audit before selecting USDA food and portions. Raw apples with skin, peeled apples, and cooked apples differ; sliced versus chopped cup portions are not interchangeable. Candidate raw-with-skin reference: USDA SR Legacy food 171688, subject to independent nutrient and portion source verification. Do not approve without checking every recipe use."
     },
     "Apricot preserves": {
       "source": "",
