@@ -1712,28 +1712,38 @@
       "reviewNotes": "Two recipes each specify 12 oz dry elbow macaroni. Generic enriched dry pasta nutrient composition is a documented shape-independent proxy; cooked pasta values must not be used for dry recipe input."
     },
     "Dry fettuccine": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "169736",
+      "description": "Pasta, dry, enriched (generic dry wheat pasta composition proxy)",
+      "state": "Uncooked dry enriched wheat pasta; specific shape: Dry fettuccine",
+      "kcalPer100g": 371,
+      "proteinPer100g": 13.04,
+      "carbsPer100g": 74.67,
+      "fatPer100g": 1.51,
+      "gramsPerUnit": {
+        "oz": 28.349523125
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169736/nutrients",
+      "portionSource": "1 oz dry mass = 28.349523125g",
+      "reviewNotes": "Source-matched generic USDA enriched dry pasta proxy inherited from previously reviewed dry elbow macaroni. This is not shape-specific or brand-specific laboratory analysis. Recipe requires oz dry mass; do not use cooked pasta nutrition. Finished-recipe macros depend on yield, product and preparation."
     },
     "Dry linguine": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "169736",
+      "description": "Pasta, dry, enriched (generic dry wheat pasta composition proxy)",
+      "state": "Uncooked dry enriched wheat pasta; specific shape: Dry linguine",
+      "kcalPer100g": 371,
+      "proteinPer100g": 13.04,
+      "carbsPer100g": 74.67,
+      "fatPer100g": 1.51,
+      "gramsPerUnit": {
+        "oz": 28.349523125
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169736/nutrients",
+      "portionSource": "1 oz dry mass = 28.349523125g",
+      "reviewNotes": "Source-matched generic USDA enriched dry pasta proxy inherited from previously reviewed dry elbow macaroni. This is not shape-specific or brand-specific laboratory analysis. Recipe requires oz dry mass; do not use cooked pasta nutrition. Finished-recipe macros depend on yield, product and preparation."
     },
     "Dry orzo": {
       "source": "",
@@ -1765,16 +1775,21 @@
       "reviewNotes": "Ingredient INPUT only; no finished-meal macros or yield/retention verified. Recipe preparation confirmation: Creamy Tuscan Chicken Pasta explicitly specifies standard enriched wheat dry penne, not whole-wheat or gluten-free."
     },
     "Dry ziti pasta": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "169736",
+      "description": "Pasta, dry, enriched (generic dry wheat pasta composition proxy)",
+      "state": "Uncooked dry enriched wheat pasta; specific shape: Dry ziti pasta",
+      "kcalPer100g": 371,
+      "proteinPer100g": 13.04,
+      "carbsPer100g": 74.67,
+      "fatPer100g": 1.51,
+      "gramsPerUnit": {
+        "lb": 453.59237
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169736/nutrients",
+      "portionSource": "1 lb dry mass = 453.59237g",
+      "reviewNotes": "Source-matched generic USDA enriched dry pasta proxy inherited from previously reviewed dry elbow macaroni. This is not shape-specific or brand-specific laboratory analysis. Recipe requires lb dry mass; do not use cooked pasta nutrition. Finished-recipe macros depend on yield, product and preparation."
     },
     "Egg": {
       "source": "USDA FoodData Central SR Legacy",
@@ -1828,16 +1843,21 @@
       "reviewNotes": "Audited 110 recipe drafts: all uses of Egg and Eggs are 'each'. Standard large egg (50g edible raw contents) is a practical recipe default. Recipe may vary by egg size; cooking does not create new input macros."
     },
     "Elbow macaroni": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "169736",
+      "description": "Pasta, dry, enriched (generic dry wheat pasta composition proxy)",
+      "state": "Uncooked dry enriched wheat pasta; specific shape: Elbow macaroni",
+      "kcalPer100g": 371,
+      "proteinPer100g": 13.04,
+      "carbsPer100g": 74.67,
+      "fatPer100g": 1.51,
+      "gramsPerUnit": {
+        "oz": 28.349523125
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169736/nutrients",
+      "portionSource": "1 oz dry mass = 28.349523125g",
+      "reviewNotes": "Source-matched generic USDA enriched dry pasta proxy inherited from previously reviewed dry elbow macaroni. This is not shape-specific or brand-specific laboratory analysis. Recipe requires oz dry mass; do not use cooked pasta nutrition. Finished-recipe macros depend on yield, product and preparation."
     },
     "Farro": {
       "source": "",
