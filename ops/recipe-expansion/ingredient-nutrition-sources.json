@@ -1571,16 +1571,21 @@
       "reviewStatus": "pending"
     },
     "Egg": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "171287",
+      "description": "Egg, whole, raw, fresh",
+      "state": "Raw whole egg without shell; large size standard",
+      "kcalPer100g": 143,
+      "proteinPer100g": 12.56,
+      "carbsPer100g": 0.72,
+      "fatPer100g": 9.51,
+      "gramsPerUnit": {
+        "each": 50
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171287/nutrients",
+      "portionSource": "USDA standard large whole egg, edible contents 50 g per egg; shell excluded.",
+      "reviewNotes": "Audited 110 recipe drafts: all uses of Egg and Eggs are 'each'. Standard large egg (50g edible raw contents) is a practical recipe default. Recipe may vary by egg size; cooking does not create new input macros."
     },
     "Egg noodles": {
       "source": "USDA FoodData Central SR Legacy",
@@ -1600,16 +1605,21 @@
       "reviewNotes": "Exact cited USDA food and recipe-unit input reference; does NOT verify individual product variation, cooking yield or final prepared recipe nutrition."
     },
     "Eggs": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "171287",
+      "description": "Egg, whole, raw, fresh",
+      "state": "Raw whole egg without shell; large size standard",
+      "kcalPer100g": 143,
+      "proteinPer100g": 12.56,
+      "carbsPer100g": 0.72,
+      "fatPer100g": 9.51,
+      "gramsPerUnit": {
+        "each": 50
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171287/nutrients",
+      "portionSource": "USDA standard large whole egg, edible contents 50 g per egg; shell excluded.",
+      "reviewNotes": "Audited 110 recipe drafts: all uses of Egg and Eggs are 'each'. Standard large egg (50g edible raw contents) is a practical recipe default. Recipe may vary by egg size; cooking does not create new input macros."
     },
     "Elbow macaroni": {
       "source": "",
