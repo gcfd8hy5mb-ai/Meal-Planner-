@@ -71,9 +71,9 @@
         "medium": 182
       },
       "reviewStatus": "pending",
-      "reviewNotes": "USDA reference food and reference portions now recorded. These gramsPerUnit labels are preparation-specific reference portions, not verified matches to all recipe units; pending recipe-unit inventory before approval.",
+      "reviewNotes": "USDA nutrient and portion reference independently cross-checked. Practical standard for unqualified raw apples with skin; still pending actual recipe unit inventory (e.g., cup vs each) before mapping can be used by calculator.",
       "sourceUrl": "https://fdc.nal.usda.gov/food-details/171688/nutrients",
-      "portionSource": "USDA SR Legacy FDC 171688 portions: cup slices 109g, cup quartered/chopped 125g, medium fruit 182g; https://fdc.nal.usda.gov/food-details/171688/nutrients"
+      "portionSource": "USDA National Nutrient Database SR26, Basic Report 09003, Apples raw with skin: 1 cup sliced 109g, 1 cup quartered/chopped 125g, medium 182g. https://resources.finalsite.net/images/v1703097875/chambersburgk12paus/mpitvq0yks6xou0i25os/apple__fresh.pdf"
     },
     "Apricot preserves": {
       "source": "",
@@ -129,8 +129,8 @@
       },
       "reviewStatus": "pending",
       "sourceUrl": "https://fdc.nal.usda.gov/food-details/171705/nutrients",
-      "reviewNotes": "USDA reference food and reference portions now recorded. These gramsPerUnit labels are preparation-specific reference portions, not verified matches to all recipe units; pending recipe-unit inventory before approval.",
-      "portionSource": "USDA SR Legacy FDC 171705 portions: cup sliced 146g, cup cubes 150g, cup pureed 230g, unspecified whole fruit edible flesh 201g; https://fdc.nal.usda.gov/food-details/171705/nutrients"
+      "reviewNotes": "Standard raw avocado edible flesh macro and portion reference cross-checked; pending actual recipe unit inventory and correct mapping of each/half versus grams. Do not treat 201g as universal avocado size.",
+      "portionSource": "USDA Agricultural Research Service CSFII food codebook, avocado raw: cup cubes 150g, cup sliced 146g, cup puree 230g, unspecified variety whole edible portion 201g. https://www.ars.usda.gov/ARSUserFiles/80400530/pdf/8586/csfii85_4days_codebook.pdf"
     },
     "Avocados": {
       "source": "USDA FoodData Central SR Legacy",
@@ -149,8 +149,8 @@
       },
       "reviewStatus": "pending",
       "sourceUrl": "https://fdc.nal.usda.gov/food-details/171705/nutrients",
-      "reviewNotes": "USDA reference food and reference portions now recorded. These gramsPerUnit labels are preparation-specific reference portions, not verified matches to all recipe units; pending recipe-unit inventory before approval.",
-      "portionSource": "USDA SR Legacy FDC 171705 portions: cup sliced 146g, cup cubes 150g, cup pureed 230g, unspecified whole fruit edible flesh 201g; https://fdc.nal.usda.gov/food-details/171705/nutrients"
+      "reviewNotes": "Standard raw avocado edible flesh macro and portion reference cross-checked; pending actual recipe unit inventory and correct mapping of each/half versus grams. Do not treat 201g as universal avocado size.",
+      "portionSource": "USDA Agricultural Research Service CSFII food codebook, avocado raw: cup cubes 150g, cup sliced 146g, cup puree 230g, unspecified variety whole edible portion 201g. https://www.ars.usda.gov/ARSUserFiles/80400530/pdf/8586/csfii85_4days_codebook.pdf"
     },
     "Baby arugula": {
       "source": "",
