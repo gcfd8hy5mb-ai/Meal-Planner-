@@ -17,6 +17,18 @@ for(const [name,fraction] of [['Bone-in chicken thighs',0.52],['Chicken wings',0
  assert.equal(item.reviewStatus,'needs-review','Raw nutrient profiles cannot be approved using cooked edible yields');
  assert.match(item.state,/Raw/i,'Expected raw source nutrient profile; do not silently mix states');
 }
+// Provisional estimates may exist, but must not enter the verified recipe calculator.
+for(const name of ['Bone-in chicken thighs','Chicken wings','Beef short ribs']){
+ const p=source[name].standardCookedEstimate;
+ assert.ok(p?.sourceUrl&&p?.kcalPer100g>0&&p?.proteinPer100g>0&&p?.fatPer100g>0,name+' missing sourced cooked estimate');
+ assert.equal(source[name].reviewStatus,'needs-review',name+' estimated nutrient values must not be treated as exact');
+}
+for(const name of ['Achiote paste','Chili garlic sauce']){
+ assert.ok(source[name].standardPortionEstimate?.requiredToVerify,name+' missing mass/product validation requirement');
+ assert.equal(source[name].reviewStatus,'needs-review');
+}
+assert.equal(source['Pork baby back ribs'].standardCookedEstimate?.gramsPerUnit,null,'Unknown edible yield must stay null');
+assert.ok(source['Ranch seasoning'].labelRoundingBound?.notes,'Ranch small-serving label rounding must be disclosed');
 for(const name of unresolved){
  assert.equal(source[name].reviewStatus,'needs-review',name+' must be quarantined until its source/yield is resolved');
 }
