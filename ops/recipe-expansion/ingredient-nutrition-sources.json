@@ -632,16 +632,21 @@
       "reviewNotes": "Ingredient as-purchased input only. Per-serving finished recipe nutrition not certified."
     },
     "Breadcrumbs": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "174928",
+      "description": "Bread crumbs dry grated plain",
+      "state": "Plain dry breadcrumbs",
+      "kcalPer100g": 395,
+      "proteinPer100g": 13.35,
+      "carbsPer100g": 71.98,
+      "fatPer100g": 5.3,
+      "gramsPerUnit": {
+        "cup": 108
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/174928/nutrients",
+      "portionSource": "Approximate 108g per cup of fine dry crumbs",
+      "reviewNotes": "Six recipes use plain breadcrumbs. Coarse and panko varieties have different cup weights."
     },
     "Breakfast ham": {
       "source": "",
@@ -3633,16 +3638,21 @@
       "reviewStatus": "pending"
     },
     "Salsa": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "174524",
+      "description": "Sauce salsa ready to serve",
+      "state": "Prepared tomato salsa",
+      "kcalPer100g": 29,
+      "proteinPer100g": 1.52,
+      "carbsPer100g": 6.64,
+      "fatPer100g": 0.17,
+      "gramsPerUnit": {
+        "cup": 260
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/174524/nutrients",
+      "portionSource": "Estimated 260g per cup",
+      "reviewNotes": "Six recipes use tomato salsa; product brand and sodium content vary."
     },
     "Salsa verde": {
       "source": "",
