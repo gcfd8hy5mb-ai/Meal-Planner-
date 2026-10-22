@@ -1576,16 +1576,21 @@
       "reviewNotes": "Verified source and unit for ingredient input, not cooked recipe yield or served macro certification."
     },
     "Dried thyme": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170938",
+      "description": "Spices, thyme, dried",
+      "state": "Dried thyme leaf",
+      "kcalPer100g": 276,
+      "proteinPer100g": 9.11,
+      "carbsPer100g": 63.94,
+      "fatPer100g": 7.43,
+      "gramsPerUnit": {
+        "tsp": 1
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170938/nutrients",
+      "portionSource": "Approximate 1g per level teaspoon dried thyme leaves; leaf size and packing vary.",
+      "reviewNotes": "Three recipes use 1 tsp each. Dried thyme is distinct from fresh thyme; source is a generic dried culinary herb profile. Volume-to-mass conversion is an estimate."
     },
     "Dry breadcrumbs": {
       "source": "",
@@ -3479,16 +3484,21 @@
       "reviewStatus": "pending"
     },
     "Roma tomatoes": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170457",
+      "description": "Tomatoes, red, ripe, raw (proxy for Roma/plum tomatoes)",
+      "state": "Raw cherry tomatoes, standard red raw tomato nutrient proxy",
+      "kcalPer100g": 18,
+      "proteinPer100g": 0.88,
+      "carbsPer100g": 3.89,
+      "fatPer100g": 0.2,
+      "gramsPerUnit": {
+        "each": 62
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170457/nutrients",
+      "portionSource": "Typical medium Roma tomato approximately 62g edible; size varies.",
+      "reviewNotes": "Six recipes use 2–3 whole Roma tomatoes. Generic USDA raw red tomato macro proxy, not a variety-specific laboratory measure; ~62g each. Existing cherry tomato record shares the generic tomato nutrient reference."
     },
     "Romaine lettuce": {
       "source": "USDA FoodData Central",
