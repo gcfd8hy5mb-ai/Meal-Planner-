@@ -2052,16 +2052,21 @@
       "reviewNotes": "Previously source-approved same ingredient identity reused from Cilantro. All 19 recipe uses of cilantro are in cups (mostly 1/4 cup). Fresh cilantro leaves assumed, not dried coriander seed. Estimated macros depend on chopping/packing. This record matches recipe label Fresh cilantro; ingredient input remains approximate and does not certify cooked recipe macros."
     },
     "Fresh dill": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "172233",
+      "description": "Dill weed, fresh",
+      "state": "Raw fresh dill weed sprigs; not dried dill seed",
+      "kcalPer100g": 43,
+      "proteinPer100g": 3.46,
+      "carbsPer100g": 7.02,
+      "fatPer100g": 1.12,
+      "gramsPerUnit": {
+        "cup": 8.9
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/172233/nutrients",
+      "portionSource": "USDA food portion: 1 cup loose fresh dill sprigs = 8.9 grams; chopped dill packed in a cup may differ.",
+      "reviewNotes": "USDA SR Legacy nutrient profile for fresh dill weed, FDC 172233, with USDA fresh sprig cup portion. Chopped or tightly packed dill has a different cup mass; ingredient macro values and prepared-meal nutrition are estimates."
     },
     "Fresh ginger": {
       "source": "USDA FoodData Central SR Legacy",
