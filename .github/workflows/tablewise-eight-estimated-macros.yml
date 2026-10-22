@@ -1,0 +1,26 @@
+name: Tablewise eight estimated macros regression
+on:
+  push:
+    branches:
+      - test/nutrition-eight-estimate-regression-20261022
+    paths:
+      - 'ops/recipe-expansion/**'
+      - '.github/workflows/tablewise-eight-estimated-macros.yml'
+  pull_request:
+    paths:
+      - 'ops/recipe-expansion/**'
+      - '.github/workflows/tablewise-eight-estimated-macros.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify-estimates:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify 102 mapped and eight explicitly estimated recipes; exact release gate remains blocked
+        run: node ops/recipe-expansion/test-nutrition-release-gate.mjs
