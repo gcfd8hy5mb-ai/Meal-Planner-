@@ -397,16 +397,21 @@
       "reviewNotes": "All 13 recipe occurrences of Bell pepper/Bell peppers in 110 recipe drafts are measured as 'each'. Unspecified color standardized to green bell pepper for estimated macros; red/yellow peppers and actual weights vary. Do not treat as exact per-pepper macros."
     },
     "Black beans": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central Foundation Foods",
+      "foodId": "2644285",
+      "description": "Beans, black, canned, sodium added, drained and rinsed",
+      "state": "Canned black beans, drained before use; 15 oz can size is nominal packaged weight",
+      "kcalPer100g": 115,
+      "proteinPer100g": 6.91,
+      "carbsPer100g": 19.8,
+      "fatPer100g": 1.27,
+      "gramsPerUnit": {
+        "oz": 28.349523125
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/2644285/nutrients",
+      "portionSource": "15 oz is nominal can weight, 425.24g; drained edible yield is assumed 60%, or approximately 255g per can.",
+      "reviewNotes": "Two recipes specify 15 oz canned black beans and explicitly drain them. USDA Foundation 2644285 supplies drained and rinsed composition. Weight conversion applies a 60% drained yield estimate to labeled can ounces; brand-specific yield varies, and a 15oz label is not 15oz drained beans."
     },
     "Black beans canned": {
       "source": "USDA FoodData Central Foundation Foods",
@@ -2200,16 +2205,21 @@
       "reviewNotes": "Four recipes measure 3–5 whole scallions, chopped/sliced and used as garnish or cooked. Edible weight varies by scallion size and trimming."
     },
     "Ground beef": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "174030",
+      "description": "Ground beef raw 90 percent lean",
+      "state": "Raw ground beef, assumed 90% lean as generic proxy",
+      "kcalPer100g": 176,
+      "proteinPer100g": 20,
+      "carbsPer100g": 0,
+      "fatPer100g": 10,
+      "gramsPerUnit": {
+        "lb": 453.592
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/174030/nutrients",
+      "portionSource": "453.592 grams per pound",
+      "reviewNotes": "Two recipes measure 1.5 lb raw ground beef, but fat percentage is unspecified. The existing USDA 90/10 lean ground beef record is a documented proxy, not an assertion that recipe uses lean meat. Actual higher-fat beef changes calories and fat; draining losses are not modeled."
     },
     "Ground chicken": {
       "source": "USDA FoodData Central",
