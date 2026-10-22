@@ -716,16 +716,21 @@
       "reviewNotes": "Ham formulation and smoke/cure vary. This is a standard-ingredient estimate and not an exact commercial brand or cooked recipe macro."
     },
     "Breakfast sausage": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA Nutrient Database Standard Reference via FitWatch",
+      "foodId": "NDB-07063",
+      "description": "Pork sausage, fresh, raw",
+      "state": "Raw fresh pork breakfast sausage; generic proxy",
+      "kcalPer100g": 304,
+      "proteinPer100g": 15.09,
+      "carbsPer100g": 0,
+      "fatPer100g": 26.53,
+      "gramsPerUnit": {
+        "lb": 453.59237
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://www.fitwatch.com/caloriecounter/viewfood?descr=Pork+sausage%2C+fresh%2C+raw&ndb_no=07063",
+      "portionSource": "Recipe pounds assumed to be raw fresh sausage weight, 453.59237 grams per pound.",
+      "reviewNotes": "Raw generic fresh pork sausage USDA NDB 07063 used as proxy for pork breakfast sausage; turkey, precooked and reduced-fat breakfast sausage differ. Source identifies a historical NDB number, not a modern FDC ID."
     },
     "Broccoli florets": {
       "source": "USDA FoodData Central SR Legacy",
@@ -4037,16 +4042,21 @@
       "reviewNotes": "Three recipes each specify one cup refried beans. Traditional canned variety assumed; homemade, vegetarian, fat-free or lard-enriched products may differ. Per-100g nutrient figures rounded from USDA; final cooked dish nutrition remains estimated."
     },
     "Refrigerated biscuit dough": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "172668",
+      "description": "Biscuits, plain or buttermilk, refrigerated dough, higher fat (unbaked)",
+      "state": "Unbaked refrigerated biscuit dough, higher fat generic type",
+      "kcalPer100g": 307,
+      "proteinPer100g": 6.66,
+      "carbsPer100g": 46.32,
+      "fatPer100g": 10.58,
+      "gramsPerUnit": {
+        "oz": 28.349523125
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/172668/nutrients",
+      "portionSource": "One ounce by weight = 28.349523125 grams, measured as unbaked refrigerated dough.",
+      "reviewNotes": "Higher-fat generic refrigerated biscuit dough, not baked biscuit. Brand, lower-fat formulations and cooking moisture losses change final values."
     },
     "Refrigerated cheese tortellini": {
       "source": "USDA FoodData Central",
