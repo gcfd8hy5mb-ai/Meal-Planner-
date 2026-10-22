@@ -2628,16 +2628,21 @@
       "reviewStatus": "pending"
     },
     "Large eggs": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "171287",
+      "description": "Egg, whole, raw, fresh",
+      "state": "Raw whole egg without shell; large size standard",
+      "kcalPer100g": 143,
+      "proteinPer100g": 12.56,
+      "carbsPer100g": 0.72,
+      "fatPer100g": 9.51,
+      "gramsPerUnit": {
+        "each": 50
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171287/nutrients",
+      "portionSource": "USDA standard large whole egg, edible contents 50 g per egg; shell excluded.",
+      "reviewNotes": "Two recipes specify 4 or 8 large eggs. Reuses USDA raw whole large egg reference 171287 at 50g edible egg per each, excluding shell. Cooking fat is separate."
     },
     "Large flour tortillas": {
       "source": "USDA FoodData Central SR Legacy",
@@ -4302,16 +4307,21 @@
       "reviewNotes": "Exact cited USDA food and recipe-unit input reference; does NOT verify individual product variation, cooking yield or final prepared recipe nutrition."
     },
     "Yukon gold potatoes": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170027",
+      "description": "Potatoes, russet, flesh and skin, raw (Yukon gold proxy)",
+      "state": "Raw Yukon gold potatoes, with skin; generic russet nutrition proxy",
+      "kcalPer100g": 79,
+      "proteinPer100g": 2.14,
+      "carbsPer100g": 18.1,
+      "fatPer100g": 0.08,
+      "gramsPerUnit": {
+        "lb": 453.592
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170027/nutrients",
+      "portionSource": "453.592 grams per pound; weighed raw",
+      "reviewNotes": "Two recipes measure 1.5 or 2 lb Yukon gold potatoes raw. Russet USDA values are a transparent proxy; Yukon gold composition varies. Peeling and cooking water/fat affect final dish weight."
     },
     "Yukon Gold potatoes": {
       "source": "",
