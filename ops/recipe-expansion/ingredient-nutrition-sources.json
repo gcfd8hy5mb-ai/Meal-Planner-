@@ -1624,16 +1624,21 @@
       "reviewNotes": "Exact cited USDA food and recipe-unit input reference; does NOT verify individual product variation, cooking yield or final prepared recipe nutrition."
     },
     "Dried apricots": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "173941",
+      "description": "Apricots, dried, sulfured, uncooked",
+      "state": "Uncooked dried apricot halves, not stewed or sugar-coated",
+      "kcalPer100g": 241,
+      "proteinPer100g": 3.39,
+      "carbsPer100g": 62.64,
+      "fatPer100g": 0.51,
+      "gramsPerUnit": {
+        "cup": 130
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/173941/nutrients",
+      "portionSource": "USDA SR Legacy 1 cup dried apricot halves = 130g; chopped fruit may pack differently",
+      "reviewNotes": "USDA dried sulfured apricot nutrient estimate and corresponding cup-of-halves conversion. Sulfur-free brands, sweetened products, chopped sizes and moisture content vary. Finished recipe nutrition is not certified."
     },
     "Dried guajillo chiles": {
       "source": "",
