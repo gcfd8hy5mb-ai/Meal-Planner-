@@ -5,6 +5,9 @@ on:
       - 'ops/recipe-expansion/ingredient-nutrition-sources.json'
       - 'ops/recipe-expansion/batch-01-recipe-drafts.json'
       - 'ops/recipe-expansion/audit-approved-ingredient-inputs.mjs'
+      - 'ops/recipe-expansion/validate-premerge-nutrition.mjs'
+      - 'ops/recipe-expansion/calculate-verified-nutrition.mjs'
+      - 'ops/recipe-expansion/nutrition-required-conversions.json'
       - '.github/workflows/tablewise-approved-ingredient-nutrition.yml'
   workflow_dispatch:
 permissions:
@@ -19,7 +22,10 @@ jobs:
           node-version: '22'
       - name: Audit approved USDA nutrition inputs and hold incomplete meals
         run: node ops/recipe-expansion/audit-approved-ingredient-inputs.mjs
+      - name: Run nutrition release gate (must block incomplete meals)
+        run: node ops/recipe-expansion/validate-premerge-nutrition.mjs
       - name: Upload evidence and readiness audit
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: tablewise-approved-ingredient-nutrition
