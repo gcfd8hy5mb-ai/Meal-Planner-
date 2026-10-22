@@ -974,16 +974,21 @@
       "reviewNotes": "Both recipe uses are 2 cups. USDA red raw tomato macros used as a practical proxy for cherry tomatoes; volume-to-mass assumption is approximate."
     },
     "Chicken breasts": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "171077",
+      "description": "Chicken breast boneless skinless meat only raw",
+      "state": "Raw skinless boneless chicken breast",
+      "kcalPer100g": 120,
+      "proteinPer100g": 22.5,
+      "carbsPer100g": 0,
+      "fatPer100g": 2.62,
+      "gramsPerUnit": {
+        "lb": 453.592
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171077/nutrients",
+      "portionSource": "One pound raw boneless skinless breast is 453.592 grams",
+      "reviewNotes": "Two recipes each use 1.5 lb. Skinless boneless is a declared assumption; skin-on and bone-in cuts differ. Cooking yield not applied."
     },
     "Chicken broth": {
       "source": "USDA FoodData Central SR Legacy",
@@ -2864,16 +2869,21 @@
       "reviewStatus": "pending"
     },
     "Mayonnaise": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "171009",
+      "description": "Salad dressing mayonnaise regular",
+      "state": "Regular full fat mayonnaise",
+      "kcalPer100g": 680,
+      "proteinPer100g": 0.96,
+      "carbsPer100g": 0.57,
+      "fatPer100g": 74.85,
+      "gramsPerUnit": {
+        "cup": 232
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171009/nutrients",
+      "portionSource": "Estimated 232 grams per cup regular mayonnaise; brands and packing vary",
+      "reviewNotes": "Three recipes each use one quarter cup. Regular mayonnaise is assumed, not light or reduced fat."
     },
     "Medium zucchini": {
       "source": "",
