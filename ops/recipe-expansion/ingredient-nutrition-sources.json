@@ -4258,16 +4258,21 @@
       "reviewNotes": "Source-verified ingredient input for exact specified USDA form only. Product variation, packing, cooking retention and finished-recipe serving nutrition remain unverified."
     },
     "Sweet potatoes": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "168482",
+      "description": "Sweet potato, raw, unprepared",
+      "state": "Raw sweet potatoes, edible weight before cooking",
+      "kcalPer100g": 86,
+      "proteinPer100g": 1.57,
+      "carbsPer100g": 20.12,
+      "fatPer100g": 0.05,
+      "gramsPerUnit": {
+        "lb": 453.59237
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/168482/nutrients",
+      "portionSource": "Recipe uses lb of raw edible sweet potato; 1 lb = 453.59237g. Skin removal or trimming changes usable mass.",
+      "reviewNotes": "USDA SR Legacy raw sweet potato nutrient composition. No cooking yield or preparation oil included; final meal nutrient estimates require separate recipe validation."
     },
     "Swiss cheese": {
       "source": "USDA FoodData Central Foundation",
