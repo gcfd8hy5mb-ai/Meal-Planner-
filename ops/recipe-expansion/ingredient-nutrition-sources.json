@@ -2025,16 +2025,22 @@
       "reviewStatus": "pending"
     },
     "Fresh thyme": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "173470",
+      "description": "Thyme, fresh",
+      "state": "Fresh thyme leaves, not dried thyme",
+      "kcalPer100g": 101,
+      "proteinPer100g": 5.56,
+      "carbsPer100g": 24.45,
+      "fatPer100g": 1.68,
+      "gramsPerUnit": {
+        "tsp": 0.8,
+        "tbsp": 2.4
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/173470/nutrients",
+      "portionSource": "Estimated fresh thyme leaves 0.8g per tsp and 2.4g per tbsp; loose packing varies",
+      "reviewNotes": "Three recipes use fresh thyme by tsp or tbsp. USDA fresh thyme reference confirmed; teaspoon weight is an estimate and differs from dried thyme."
     },
     "Frozen corn": {
       "source": "USDA FoodData Central SR Legacy (generic sweet yellow corn)",
@@ -3780,16 +3786,21 @@
       "reviewNotes": "Exact cited USDA food and recipe-unit input reference; does NOT verify individual product variation, cooking yield or final prepared recipe nutrition."
     },
     "Shredded cabbage": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "169975",
+      "description": "Cabbage, raw",
+      "state": "Raw shredded green cabbage, edible portion",
+      "kcalPer100g": 25,
+      "proteinPer100g": 1.28,
+      "carbsPer100g": 5.8,
+      "fatPer100g": 0.1,
+      "gramsPerUnit": {
+        "cup": 70
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169975/nutrients",
+      "portionSource": "Estimated 70g per cup loosely packed shredded cabbage; cut and packing vary",
+      "reviewNotes": "Three recipes use 2 cups shredded cabbage as garnish/slaw. Generic raw green cabbage source; red cabbage or dressed slaw would differ."
     },
     "Shredded cheddar": {
       "source": "USDA FoodData Central",
