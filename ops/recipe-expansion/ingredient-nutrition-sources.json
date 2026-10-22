@@ -1186,8 +1186,8 @@
     },
     "Cooked rice": {
       "source": "USDA FoodData Central SR Legacy",
-      "foodId": "169756",
-      "description": "Rice, white, long-grain, regular, enriched, cooked without salt",
+      "foodId": "168878",
+      "description": "Rice, white, long-grain, regular, enriched, cooked",
       "state": "Cooked plain long-grain white rice",
       "kcalPer100g": 130,
       "proteinPer100g": 2.69,
@@ -1197,9 +1197,9 @@
         "cup": 158
       },
       "reviewStatus": "approved",
-      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169756/nutrients",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/168878/nutrients",
       "portionSource": "USDA standard 1 cup cooked long-grain white rice ~158g; preparation and packing vary.",
-      "reviewNotes": "Five recipes use Cooked rice in cups. White long-grain plain cooked rice is the default for unspecified cooked rice. Not interchangeable with uncooked rice or brown rice; sauces/oils must be accounted separately."
+      "reviewNotes": "Corrected wrong USDA identifier: FDC 169756 is RAW rice, not cooked. FDC 168878 matches this record's cooked enriched rice values (130 kcal, 2.69g protein, 28.17g carbohydrate, 0.28g fat per 100g) and 158g per cup. Five recipes use cooked rice by cup; cooking additions tracked separately."
     },
     "Cooked shredded chicken": {
       "source": "",
@@ -2701,7 +2701,7 @@
     "Long-grain rice dry": {
       "source": "USDA FoodData Central SR Legacy",
       "foodId": "169756",
-      "description": "Rice, white, long-grain, regular, raw, unenriched (DRY; source ID requires independent record verification)",
+      "description": "Rice, white, long-grain, regular, raw, unenriched",
       "state": "Dry uncooked white long-grain rice",
       "kcalPer100g": 365,
       "proteinPer100g": 7.13,
@@ -2710,10 +2710,10 @@
       "gramsPerUnit": {
         "cup": 185
       },
-      "reviewStatus": "pending",
-      "sourceUrl": "",
-      "portionSource": "Approximate 185g per US cup dry long-grain white rice.",
-      "reviewNotes": "Five recipes use 1–1.5 cups dry rice. DO NOT APPROVE until correct USDA raw-rice FDC identifier is confirmed: 169756 was previously established as COOKED white rice and is NOT valid for this dry nutrition profile. Nutrients are provisional dry rice generic estimates."
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169756/nutrients",
+      "portionSource": "Approximate 185g per cup dry long-grain white rice; packing and brand vary.",
+      "reviewNotes": "Five recipes explicitly use dry rice (1–1.5 cups). FDC 169756 independently confirmed as RAW/UNCOOKED unenriched white long-grain rice (USDA NDB 20444). Previous note asserting cooked was mistaken; cooked rice is FDC 169757 or enriched FDC 168878."
     },
     "Low-sodium soy sauce": {
       "source": "USDA FoodData Central SR Legacy",
@@ -2921,16 +2921,21 @@
       "reviewStatus": "pending"
     },
     "Orange juice": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "169098",
+      "description": "Orange juice, raw",
+      "state": "Unflavored orange juice (fresh raw proxy for unspecified juice)",
+      "kcalPer100g": 45,
+      "proteinPer100g": 0.7,
+      "carbsPer100g": 10.4,
+      "fatPer100g": 0.2,
+      "gramsPerUnit": {
+        "cup": 248
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169098/nutrients",
+      "portionSource": "USDA 1 cup raw orange juice 248g.",
+      "reviewNotes": "Four recipes use 0.25–0.75 cup orange juice in marinades, sauces, and glazes. USDA raw orange juice reference; concentrate or sweetened product differs. Marinade may be discarded, so assuming all juice is consumed may overstate actual macros."
     },
     "Oyster sauce": {
       "source": "USDA FoodData Central SR Legacy",
