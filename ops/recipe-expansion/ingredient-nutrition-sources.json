@@ -3981,16 +3981,21 @@
       "reviewNotes": "Recipe specifies sage without fresh/dried state and measures teaspoons. Assumes ground dried culinary sage; fresh sage differs, so this is an explicit estimate needing override where recipe specifies fresh sage."
     },
     "Salmon fillets": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "175167",
+      "description": "Fish, salmon, Atlantic, farmed, raw",
+      "state": "Raw farmed Atlantic salmon edible fillet, generic proxy where salmon species unspecified",
+      "kcalPer100g": 208,
+      "proteinPer100g": 20.42,
+      "carbsPer100g": 0,
+      "fatPer100g": 13.42,
+      "gramsPerUnit": {
+        "lb": 453.59237
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/175167/nutrients",
+      "portionSource": "1 lb raw edible salmon fillet = 453.59237g, excluding packaging, bone and unwanted skin",
+      "reviewNotes": "Source USDA SR Legacy 175167. Farmed Atlantic used as explicit representative proxy; wild salmon or another species may have substantially less fat. Cooking yield, oils and glaze not included."
     },
     "Salsa": {
       "source": "USDA FoodData Central SR Legacy",
