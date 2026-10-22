@@ -3372,16 +3372,21 @@
       "reviewStatus": "pending"
     },
     "Pineapple juice": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "169947",
+      "description": "Pineapple juice, canned or bottled, unsweetened, without added ascorbic acid",
+      "state": "Ready-to-drink unsweetened pineapple juice, not concentrated or syrup-sweetened",
+      "kcalPer100g": 53,
+      "proteinPer100g": 0.36,
+      "carbsPer100g": 12.87,
+      "fatPer100g": 0.12,
+      "gramsPerUnit": {
+        "cup": 250
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169947/nutrients",
+      "portionSource": "USDA standard cup of pineapple juice 250 g; density and packaging may vary",
+      "reviewNotes": "Generic unsweetened pineapple juice profile used as explicit default for unspecified pineapple juice. Sweetened juice or concentrate will differ. Ingredient estimates do not certify finished-meal macros."
     },
     "Pitted green olives": {
       "source": "",
