@@ -2,7 +2,7 @@
   "batch": "expansion-110",
   "style": "Tablewise approved dark cinematic luxury restaurant photography",
   "target": 110,
-  "ready": 75,
+  "ready": 100,
   "productionStatus": "partial-photo-staging-not-released",
   "important": "A written image brief is NOT a photo asset; do not set photoReady or merge until a real reviewed file exists.",
   "photos": [
@@ -2207,8 +2207,8 @@
         "WebP output exists at expected path and decodes",
         "Image accessible in redesigned app"
       ],
-      "status": "needs-original-photo",
-      "photoVerified": false
+      "status": "accepted-staging-only",
+      "photoVerified": true
     },
     {
       "recipeId": "exp01-077",
@@ -2234,8 +2234,8 @@
         "WebP output exists at expected path and decodes",
         "Image accessible in redesigned app"
       ],
-      "status": "needs-original-photo",
-      "photoVerified": false
+      "status": "accepted-staging-only",
+      "photoVerified": true
     },
     {
       "recipeId": "exp01-078",
@@ -2263,8 +2263,8 @@
         "WebP output exists at expected path and decodes",
         "Image accessible in redesigned app"
       ],
-      "status": "needs-original-photo",
-      "photoVerified": false
+      "status": "accepted-staging-only",
+      "photoVerified": true
     },
     {
       "recipeId": "exp01-079",
@@ -2293,8 +2293,8 @@
         "WebP output exists at expected path and decodes",
         "Image accessible in redesigned app"
       ],
-      "status": "needs-original-photo",
-      "photoVerified": false
+      "status": "accepted-staging-only",
+      "photoVerified": true
     },
     {
       "recipeId": "exp01-080",
@@ -2322,8 +2322,8 @@
         "WebP output exists at expected path and decodes",
         "Image accessible in redesigned app"
       ],
-      "status": "needs-original-photo",
-      "photoVerified": false
+      "status": "accepted-staging-only",
+      "photoVerified": true
     },
     {
       "recipeId": "exp01-081",
@@ -2351,8 +2351,8 @@
         "WebP output exists at expected path and decodes",
         "Image accessible in redesigned app"
       ],
-      "status": "needs-original-photo",
-      "photoVerified": false
+      "status": "accepted-staging-only",
+      "photoVerified": true
     },
     {
       "recipeId": "exp01-082",
@@ -2378,8 +2378,8 @@
         "WebP output exists at expected path and decodes",
         "Image accessible in redesigned app"
       ],
-      "status": "needs-original-photo",
-      "photoVerified": false
+      "status": "accepted-staging-only",
+      "photoVerified": true
     },
     {
       "recipeId": "exp01-083",
@@ -2408,8 +2408,8 @@
         "WebP output exists at expected path and decodes",
         "Image accessible in redesigned app"
       ],
-      "status": "needs-original-photo",
-      "photoVerified": false
+      "status": "accepted-staging-only",
+      "photoVerified": true
     },
     {
       "recipeId": "exp01-084",
@@ -2436,8 +2436,8 @@
         "WebP output exists at expected path and decodes",
         "Image accessible in redesigned app"
       ],
-      "status": "needs-original-photo",
-      "photoVerified": false
+      "status": "accepted-staging-only",
+      "photoVerified": true
     },
     {
       "recipeId": "exp01-085",
@@ -2464,8 +2464,8 @@
         "WebP output exists at expected path and decodes",
         "Image accessible in redesigned app"
       ],
-      "status": "needs-original-photo",
-      "photoVerified": false
+      "status": "accepted-staging-only",
+      "photoVerified": true
     },
     {
       "recipeId": "exp01-086",
@@ -2492,8 +2492,8 @@
         "WebP output exists at expected path and decodes",
         "Image accessible in redesigned app"
       ],
-      "status": "needs-original-photo",
-      "photoVerified": false
+      "status": "accepted-staging-only",
+      "photoVerified": true
     },
     {
       "recipeId": "exp01-087",
@@ -2521,8 +2521,8 @@
         "WebP output exists at expected path and decodes",
         "Image accessible in redesigned app"
       ],
-      "status": "needs-original-photo",
-      "photoVerified": false
+      "status": "accepted-staging-only",
+      "photoVerified": true
     },
     {
       "recipeId": "exp01-088",
@@ -2549,8 +2549,8 @@
         "WebP output exists at expected path and decodes",
         "Image accessible in redesigned app"
       ],
-      "status": "needs-original-photo",
-      "photoVerified": false
+      "status": "accepted-staging-only",
+      "photoVerified": true
     },
     {
       "recipeId": "exp01-089",
@@ -2578,8 +2578,8 @@
         "WebP output exists at expected path and decodes",
         "Image accessible in redesigned app"
       ],
-      "status": "needs-original-photo",
-      "photoVerified": false
+      "status": "accepted-staging-only",
+      "photoVerified": true
     },
     {
       "recipeId": "exp01-090",
@@ -2607,8 +2607,8 @@
         "WebP output exists at expected path and decodes",
         "Image accessible in redesigned app"
       ],
-      "status": "needs-original-photo",
-      "photoVerified": false
+      "status": "accepted-staging-only",
+      "photoVerified": true
     },
     {
       "recipeId": "exp01-091",
@@ -2634,8 +2634,8 @@
         "WebP output exists at expected path and decodes",
         "Image accessible in redesigned app"
       ],
-      "status": "needs-original-photo",
-      "photoVerified": false
+      "status": "accepted-staging-only",
+      "photoVerified": true
     },
     {
       "recipeId": "exp01-092",
@@ -2663,8 +2663,8 @@
         "WebP output exists at expected path and decodes",
         "Image accessible in redesigned app"
       ],
-      "status": "needs-original-photo",
-      "photoVerified": false
+      "status": "accepted-staging-only",
+      "photoVerified": true
     },
     {
       "recipeId": "exp01-093",
@@ -2692,8 +2692,8 @@
         "WebP output exists at expected path and decodes",
         "Image accessible in redesigned app"
       ],
-      "status": "needs-original-photo",
-      "photoVerified": false
+      "status": "accepted-staging-only",
+      "photoVerified": true
     },
     {
       "recipeId": "exp01-094",
@@ -2720,8 +2720,8 @@
         "WebP output exists at expected path and decodes",
         "Image accessible in redesigned app"
       ],
-      "status": "needs-original-photo",
-      "photoVerified": false
+      "status": "accepted-staging-only",
+      "photoVerified": true
     },
     {
       "recipeId": "exp01-095",
@@ -2749,8 +2749,8 @@
         "WebP output exists at expected path and decodes",
         "Image accessible in redesigned app"
       ],
-      "status": "needs-original-photo",
-      "photoVerified": false
+      "status": "accepted-staging-only",
+      "photoVerified": true
     },
     {
       "recipeId": "exp01-096",
@@ -2778,8 +2778,8 @@
         "WebP output exists at expected path and decodes",
         "Image accessible in redesigned app"
       ],
-      "status": "needs-original-photo",
-      "photoVerified": false
+      "status": "accepted-staging-only",
+      "photoVerified": true
     },
     {
       "recipeId": "exp01-097",
@@ -2807,8 +2807,8 @@
         "WebP output exists at expected path and decodes",
         "Image accessible in redesigned app"
       ],
-      "status": "needs-original-photo",
-      "photoVerified": false
+      "status": "accepted-staging-only",
+      "photoVerified": true
     },
     {
       "recipeId": "exp01-098",
@@ -2837,8 +2837,8 @@
         "WebP output exists at expected path and decodes",
         "Image accessible in redesigned app"
       ],
-      "status": "needs-original-photo",
-      "photoVerified": false
+      "status": "accepted-staging-only",
+      "photoVerified": true
     },
     {
       "recipeId": "exp01-099",
@@ -2866,8 +2866,8 @@
         "WebP output exists at expected path and decodes",
         "Image accessible in redesigned app"
       ],
-      "status": "needs-original-photo",
-      "photoVerified": false
+      "status": "accepted-staging-only",
+      "photoVerified": true
     },
     {
       "recipeId": "exp01-100",
@@ -2893,8 +2893,8 @@
         "WebP output exists at expected path and decodes",
         "Image accessible in redesigned app"
       ],
-      "status": "needs-original-photo",
-      "photoVerified": false
+      "status": "accepted-staging-only",
+      "photoVerified": true
     },
     {
       "recipeId": "exp01-101",
