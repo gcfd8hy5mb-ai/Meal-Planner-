@@ -312,20 +312,21 @@
       "reviewNotes": "Shrimp Veracruz is the only Bay leaf use (1 each). Step 4 explicitly says 'discard the bay leaf.' Zero retained mass is correct for estimated consumed macros; re-audit if recipe instructions change."
     },
     "Beef broth": {
-      "source": "Standard commercial ready-to-serve broth nutrition estimate (provisional; manufacturer/USDA record verification pending)",
-      "foodId": "",
-      "description": "Beef broth, ready-to-serve, commercially prepared",
-      "state": "Prepared ready-to-use broth; not concentrated bouillon or dry stock",
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "171538",
+      "description": "Soup, beef broth or bouillon canned, ready-to-serve",
+      "state": "Ready-to-serve canned beef broth; not concentrated",
       "kcalPer100g": 7,
       "proteinPer100g": 1.14,
-      "carbsPer100g": 0.1,
+      "carbsPer100g": 0.04,
       "fatPer100g": 0.22,
       "gramsPerUnit": {
         "cup": 240
       },
-      "reviewStatus": "pending",
-      "portionSource": "Standard liquid broth 1 US cup approximately 240g; product density and sodium vary.",
-      "reviewNotes": "Recipe unit audit: all chicken broth (25 recipes) and beef broth (9 recipes) uses are cups. Nutrient numbers are provisional typical commercial broth estimates, not yet independently verified against an exact food record. Keep pending until source verified; brand and reduced-sodium variants differ."
+      "reviewStatus": "approved",
+      "portionSource": "Approximate 240 g per US cup ready-to-serve broth; recipe quantities use cups.",
+      "reviewNotes": "All nine recipes use cup measurements. USDA FDC 171538 nutrient values cross-checked against independently published USDA-derived listings. Generic canned ready-to-serve broth default; brand/sodium and stock variations affect nutrition.",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171538/nutrients"
     },
     "Beef chuck roast": {
       "source": "",
