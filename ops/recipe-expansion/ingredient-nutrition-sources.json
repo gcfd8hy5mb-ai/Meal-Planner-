@@ -1431,16 +1431,21 @@
       "reviewNotes": "Exact cited USDA food and recipe-unit input reference; does NOT verify individual product variation, cooking yield or final prepared recipe nutrition."
     },
     "Cremini mushrooms": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "168434",
+      "description": "Mushrooms, brown, italian, or crimini, raw",
+      "state": "Raw edible cremini mushrooms, trimming removed",
+      "kcalPer100g": 22,
+      "proteinPer100g": 2.5,
+      "carbsPer100g": 4.3,
+      "fatPer100g": 0.1,
+      "gramsPerUnit": {
+        "oz": 28.349523125
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/168434/nutrients",
+      "portionSource": "One ounce raw edible mushrooms = 28.349523125 grams; avoid including trimmings in edible weight",
+      "reviewNotes": "Source-matched raw brown cremini mushrooms (USDA SR Legacy); exact mass-unit conversion. Any cooking loss or added butter/oil is handled separately."
     },
     "Crumbled cotija cheese": {
       "source": "",
