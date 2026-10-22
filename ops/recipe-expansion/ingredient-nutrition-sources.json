@@ -2416,16 +2416,21 @@
       "reviewStatus": "pending"
     },
     "Italian seasoning": {
-      "source": "",
+      "source": "Spices Inc. Italian Seasoning manufacturer nutrition label",
       "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "description": "Italian seasoning dried mixed herbs, manufacturer per-teaspoon label proxy",
+      "state": "Dried mixed herb blend, no added salt",
+      "kcalPer100g": 300,
+      "proteinPer100g": 10,
+      "carbsPer100g": 60,
+      "fatPer100g": 0,
+      "gramsPerUnit": {
+        "tsp": 1
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://spicesinc.com/seasoning-blends/italian-seasoning",
+      "portionSource": "Manufacturer lists 1 tsp as 3 kcal, 0.1g protein, 0.6g carbohydrate, 0g fat; estimated 1g per teaspoon used to convert to per-100g storage.",
+      "reviewNotes": "Eight recipes each use 1 tsp. Brand recipe is rosemary, basil, oregano, sage, marjoram. Per-100g values are derived from manufacturer per-tsp rounded label using ESTIMATED 1g/tsp; NOT lab-verified per-100g. Calories are small per recipe, and other brands' salt/herb mixes vary."
     },
     "Jalapeño": {
       "source": "",
@@ -3456,16 +3461,21 @@
       "reviewStatus": "pending"
     },
     "Rice vinegar": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central FNDDS (generic vinegar proxy)",
+      "foodId": "2709351",
+      "description": "Vinegar, generic (unseasoned rice vinegar proxy)",
+      "state": "Unseasoned liquid rice vinegar, not sweetened sushi seasoning vinegar",
+      "kcalPer100g": 21,
+      "proteinPer100g": 0,
+      "carbsPer100g": 0.9,
+      "fatPer100g": 0,
+      "gramsPerUnit": {
+        "tbsp": 15
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/2709351/nutrients",
+      "portionSource": "One US tablespoon liquid vinegar ~15g.",
+      "reviewNotes": "Five recipes use 1–2 tbsp rice vinegar. Generic unsweetened vinegar USDA FNDDS 2709351 used as an explicitly labeled proxy. Seasoned/sweetened rice vinegar contains added sugar and is NOT equivalent; the recipe ingredient lacks a brand. Values are estimated, not brand-exact."
     },
     "Ricotta": {
       "source": "USDA FoodData Central Foundation",
