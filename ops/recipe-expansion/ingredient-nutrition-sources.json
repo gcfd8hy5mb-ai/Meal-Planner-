@@ -1018,16 +1018,20 @@
       "sourceUrl": "https://fdc.nal.usda.gov/food-details/174536/nutrients"
     },
     "Chicken tenders": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central Foundation",
+      "foodId": "2646170",
+      "description": "Chicken, breast, boneless, skinless, raw",
+      "state": "Raw boneless skinless chicken breast tenderloin, proxy from chicken breast",
+      "kcalPer100g": 112.20227,
+      "proteinPer100g": 22.525,
+      "carbsPer100g": 0,
+      "fatPer100g": 1.934,
+      "gramsPerUnit": {
+        "lb": 453.59237
+      },
+      "reviewStatus": "approved",
+      "reviewNotes": "Uses already approved USDA raw boneless skinless chicken breast nutrient profile for chicken breast tenderloins; both are lean breast muscle. Trim/brand and breading would alter macros. Recipe requires pound mass; assumes uncooked edible meat. Final cooked yield is not certified.",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/2646170/nutrients"
     },
     "Chicken thighs": {
       "source": "",
@@ -1666,16 +1670,21 @@
       "reviewNotes": "Three recipes use 1 tsp each. Dried thyme is distinct from fresh thyme; source is a generic dried culinary herb profile. Volume-to-mass conversion is an estimate."
     },
     "Dry breadcrumbs": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "174928",
+      "description": "Bread crumbs dry grated plain",
+      "state": "Plain dry breadcrumbs",
+      "kcalPer100g": 395,
+      "proteinPer100g": 13.35,
+      "carbsPer100g": 71.98,
+      "fatPer100g": 5.3,
+      "gramsPerUnit": {
+        "cup": 108
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/174928/nutrients",
+      "portionSource": "Approximate 108g per cup of fine dry crumbs",
+      "reviewNotes": "Identical plain dry breadcrumb ingredient identity to previously approved Breadcrumbs; 108g per cup of fine grated dry crumbs. Not panko, seasoned breading or moistened crumbs. Final recipe macros not certified."
     },
     "Dry couscous": {
       "source": "USDA FoodData Central",
@@ -2656,16 +2665,21 @@
       "reviewStatus": "pending"
     },
     "Large bell peppers": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170108",
+      "description": "Peppers, sweet, green, raw",
+      "state": "Raw large green bell pepper, edible portion; green used as color-unspecified default",
+      "kcalPer100g": 20,
+      "proteinPer100g": 0.86,
+      "carbsPer100g": 4.64,
+      "fatPer100g": 0.17,
+      "gramsPerUnit": {
+        "each": 164
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170108/nutrients",
+      "portionSource": "Estimated 164g edible portion of a large green bell pepper (vs 119g medium bell pepper reference). Large pepper weight, trimming and color vary.",
+      "reviewNotes": "Generic USDA raw green bell pepper nutrient profile reused from approved Bell peppers; large-size 164g edible weight is a documented practical estimate rather than a weighed recipe pepper. The recipe uses each, not oz. Actual weights and color can change macros."
     },
     "Large eggs": {
       "source": "USDA FoodData Central SR Legacy",
