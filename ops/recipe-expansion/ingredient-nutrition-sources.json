@@ -2610,28 +2610,38 @@
       "reviewNotes": "Eight recipes each use 1 tsp. Brand recipe is rosemary, basil, oregano, sage, marjoram. Per-100g values are derived from manufacturer per-tsp rounded label using ESTIMATED 1g/tsp; NOT lab-verified per-100g. Calories are small per recipe, and other brands' salt/herb mixes vary."
     },
     "Jalapeño": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "168576",
+      "description": "Peppers, jalapeno, raw",
+      "state": "Raw edible fresh jalapeño",
+      "kcalPer100g": 29,
+      "proteinPer100g": 0.91,
+      "carbsPer100g": 6.5,
+      "fatPer100g": 0.37,
+      "gramsPerUnit": {
+        "each": 14
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/168576/nutrients",
+      "portionSource": "USDA representative portion: 14g for one jalapeño; actual piece size varies",
+      "reviewNotes": "Raw produce USDA reference and single-piece standard serving size; ingredient-level macro estimate, not exact prepared meal nutrition."
     },
     "Jalapeño peppers": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "168576",
+      "description": "Peppers, jalapeno, raw",
+      "state": "Raw edible fresh jalapeño peppers",
+      "kcalPer100g": 29,
+      "proteinPer100g": 0.91,
+      "carbsPer100g": 6.5,
+      "fatPer100g": 0.37,
+      "gramsPerUnit": {
+        "each": 14
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/168576/nutrients",
+      "portionSource": "USDA representative portion: 14g for one jalapeño peppers; actual piece size varies",
+      "reviewNotes": "Raw produce USDA reference and single-piece standard serving size; ingredient-level macro estimate, not exact prepared meal nutrition."
     },
     "Jasmine rice": {
       "source": "USDA FoodData Central SR Legacy",
@@ -3030,16 +3040,21 @@
       "reviewNotes": "Three recipes each use one quarter cup. Regular mayonnaise is assumed, not light or reduced fat."
     },
     "Medium zucchini": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "169291",
+      "description": "Squash, summer, zucchini, includes skin, raw",
+      "state": "Raw edible fresh medium zucchini",
+      "kcalPer100g": 17,
+      "proteinPer100g": 1.21,
+      "carbsPer100g": 3.11,
+      "fatPer100g": 0.32,
+      "gramsPerUnit": {
+        "each": 196
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169291/nutrients",
+      "portionSource": "USDA representative portion: 196g for one medium zucchini; actual piece size varies",
+      "reviewNotes": "Raw produce USDA reference and single-piece standard serving size; ingredient-level macro estimate, not exact prepared meal nutrition."
     },
     "Milk": {
       "source": "USDA FoodData Central SR Legacy",
@@ -4521,16 +4536,21 @@
       "reviewNotes": "Previously approved generic raw russet potato USDA nutrition proxy for Yukon Gold variety. This is not cultivar-specific lab analysis; peeling, weight and cooking affect nutrition."
     },
     "Zucchini": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "169291",
+      "description": "Squash, summer, zucchini, includes skin, raw",
+      "state": "Raw edible fresh zucchini",
+      "kcalPer100g": 17,
+      "proteinPer100g": 1.21,
+      "carbsPer100g": 3.11,
+      "fatPer100g": 0.32,
+      "gramsPerUnit": {
+        "each": 196
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169291/nutrients",
+      "portionSource": "USDA representative portion: 196g for one zucchini; actual piece size varies",
+      "reviewNotes": "Raw produce USDA reference and single-piece standard serving size; ingredient-level macro estimate, not exact prepared meal nutrition."
     }
   }
 }
