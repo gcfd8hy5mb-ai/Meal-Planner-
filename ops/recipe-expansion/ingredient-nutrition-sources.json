@@ -3549,16 +3549,21 @@
       "reviewNotes": "Source-verified recipe ingredient inputs; cooking retention and per-serving yield not verified."
     },
     "Raw peeled shrimp": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "175179",
+      "description": "Crustaceans, shrimp, raw",
+      "state": "Raw peeled shrimp meat, excluding shell and head",
+      "kcalPer100g": 85,
+      "proteinPer100g": 20.1,
+      "carbsPer100g": 0,
+      "fatPer100g": 0.51,
+      "gramsPerUnit": {
+        "lb": 453.59237
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/175179/nutrients",
+      "portionSource": "1 lb = 453.59237 g; raw edible shrimp meat weight excludes peel/shell; cooking yield not claimed",
+      "reviewNotes": "Reuses approved USDA raw shrimp reference; one lb is edible peeled raw mass, not shell-on purchase weight. Species, water content and cooking loss vary."
     },
     "Raw shrimp": {
       "source": "USDA FoodData Central SR Legacy",
@@ -4452,28 +4457,38 @@
       "reviewNotes": "Two recipes measure 1.5 or 2 lb Yukon gold potatoes raw. Russet USDA values are a transparent proxy; Yukon gold composition varies. Peeling and cooking water/fat affect final dish weight."
     },
     "Yukon Gold potatoes": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170027",
+      "description": "Potatoes, russet, flesh and skin, raw (Yukon gold proxy)",
+      "state": "Raw Yukon Gold potatoes with skin, using generic russet potato nutrition proxy",
+      "kcalPer100g": 79,
+      "proteinPer100g": 2.14,
+      "carbsPer100g": 18.1,
+      "fatPer100g": 0.08,
+      "gramsPerUnit": {
+        "lb": 453.59237
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170027/nutrients",
+      "portionSource": "453.592 grams per pound; weighed raw",
+      "reviewNotes": "Previously approved generic raw russet potato USDA nutrition proxy for Yukon Gold variety. This is not cultivar-specific lab analysis; peeling, weight and cooking affect nutrition."
     },
     "Yukon potatoes": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170027",
+      "description": "Potatoes, russet, flesh and skin, raw (Yukon gold proxy)",
+      "state": "Raw Yukon Gold potatoes with skin, using generic russet potato nutrition proxy",
+      "kcalPer100g": 79,
+      "proteinPer100g": 2.14,
+      "carbsPer100g": 18.1,
+      "fatPer100g": 0.08,
+      "gramsPerUnit": {
+        "lb": 453.59237
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170027/nutrients",
+      "portionSource": "453.592 grams per pound; weighed raw",
+      "reviewNotes": "Previously approved generic raw russet potato USDA nutrition proxy for Yukon Gold variety. This is not cultivar-specific lab analysis; peeling, weight and cooking affect nutrition."
     },
     "Zucchini": {
       "source": "",
