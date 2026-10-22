@@ -10,6 +10,13 @@ const unresolved=['Achiote paste','Beef short ribs','Bone-in chicken thighs','Ch
 assert.equal(Object.keys(source).length,294);
 assert.equal(recipes.length,110);
 assert.deepEqual(Object.keys(source).filter(k=>source[k].reviewStatus!=='approved').sort(),unresolved.slice().sort());
+for(const [name,fraction] of [['Bone-in chicken thighs',0.52],['Chicken wings',0.34]]){
+ const item=source[name];
+ assert.equal(item.cookedEdibleYieldFraction,fraction,'Official USDA cooked yield expected for '+name);
+ assert.ok(item.cookedEdibleYieldSource?.includes('foodbuyingguide.fns.usda.gov'));
+ assert.equal(item.reviewStatus,'needs-review','Raw nutrient profiles cannot be approved using cooked edible yields');
+ assert.match(item.state,/Raw/i,'Expected raw source nutrient profile; do not silently mix states');
+}
 for(const name of unresolved){
  assert.equal(source[name].reviewStatus,'needs-review',name+' must be quarantined until its source/yield is resolved');
 }
