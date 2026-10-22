@@ -1483,16 +1483,21 @@
       "reviewStatus": "pending"
     },
     "Dry penne pasta": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "169736",
+      "description": "Pasta, dry, enriched",
+      "state": "Standard enriched wheat penne, dry",
+      "kcalPer100g": 371,
+      "proteinPer100g": 13.04,
+      "carbsPer100g": 74.67,
+      "fatPer100g": 1.51,
+      "gramsPerUnit": {
+        "oz": 28.349523125
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169736/nutrients",
+      "portionSource": "USDA enriched dry pasta lists 2 oz = 57 g (rounded) and specifically 1 cup penne = 95 g; international avoirdupois 1 oz = 28.349523125 g; saved USDA detail evidence: ops/recipe-expansion/usda-review-evidence-20261021/evidence-150.json.",
+      "reviewNotes": "Ingredient INPUT only; no finished-meal macros or yield/retention verified. Recipe preparation confirmation: Creamy Tuscan Chicken Pasta explicitly specifies standard enriched wheat dry penne, not whole-wheat or gluten-free."
     },
     "Dry ziti pasta": {
       "source": "",
@@ -1572,16 +1577,21 @@
       "reviewStatus": "pending"
     },
     "Feta": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "173420",
+      "description": "Cheese, feta",
+      "state": "Feta cheese, crumbled",
+      "kcalPer100g": 265,
+      "proteinPer100g": 14.21,
+      "carbsPer100g": 3.88,
+      "fatPer100g": 21.49,
+      "gramsPerUnit": {
+        "cup": 150
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/173420/nutrients",
+      "portionSource": "USDA 1 cup crumbled feta = 150 g; saved USDA detail evidence: ops/recipe-expansion/usda-review-evidence-20261021/evidence-175.json.",
+      "reviewNotes": "Ingredient INPUT only; no finished-meal macros or yield/retention verified. Recipe preparation confirmation: Roasted Red Pepper Turkey Burgers explicitly says 1/2 cup crumbled feta."
     },
     "Feta cheese": {
       "source": "USDA FoodData Central SR Legacy",
@@ -1714,16 +1724,21 @@
       "reviewStatus": "pending"
     },
     "Fresh parsley": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170416",
+      "description": "Parsley, fresh",
+      "state": "Parsley, fresh, chopped",
+      "kcalPer100g": 36,
+      "proteinPer100g": 2.97,
+      "carbsPer100g": 6.33,
+      "fatPer100g": 0.79,
+      "gramsPerUnit": {
+        "cup": 60
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170416/nutrients",
+      "portionSource": "USDA 1 cup chopped fresh parsley = 60 g; saved USDA detail evidence: ops/recipe-expansion/usda-review-evidence-20261021/evidence-050.json.",
+      "reviewNotes": "Ingredient INPUT only; no finished-meal macros or yield/retention verified. Recipe preparation confirmation: All four recipes explicitly call for chopped parsley."
     },
     "Fresh rosemary": {
       "source": "USDA FoodData Central",
@@ -2706,28 +2721,38 @@
       "reviewNotes": "USDA source-linked ingredient input values. Preparation yield and retained ingredient fractions still require full-recipe review."
     },
     "Parmesan": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "171247",
+      "description": "Cheese, parmesan, grated",
+      "state": "Cheese, parmesan, grated",
+      "kcalPer100g": 420,
+      "proteinPer100g": 28.42,
+      "carbsPer100g": 13.91,
+      "fatPer100g": 27.84,
+      "gramsPerUnit": {
+        "cup": 100
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171247/nutrients",
+      "portionSource": "USDA 1 cup grated Parmesan = 100 g; saved USDA detail evidence: ops/recipe-expansion/usda-review-evidence-20261021/evidence-050.json.",
+      "reviewNotes": "Ingredient INPUT only; no finished-meal macros or yield/retention verified. Recipe preparation confirmation: All four recipes explicitly specify grated Parmesan."
     },
     "Parmesan cheese": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "171247",
+      "description": "Cheese, parmesan, grated",
+      "state": "Cheese, parmesan, grated",
+      "kcalPer100g": 420,
+      "proteinPer100g": 28.42,
+      "carbsPer100g": 13.91,
+      "fatPer100g": 27.84,
+      "gramsPerUnit": {
+        "cup": 100
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171247/nutrients",
+      "portionSource": "USDA 1 cup grated Parmesan = 100 g; saved USDA detail evidence: ops/recipe-expansion/usda-review-evidence-20261021/evidence-050.json.",
+      "reviewNotes": "Ingredient INPUT only; no finished-meal macros or yield/retention verified. Recipe preparation confirmation: All four recipes explicitly specify grated Parmesan."
     },
     "Pearled barley": {
       "source": "",
