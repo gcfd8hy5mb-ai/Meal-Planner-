@@ -2304,16 +2304,21 @@
       "reviewStatus": "pending"
     },
     "Heavy cream": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170859",
+      "description": "Cream, fluid, heavy whipping",
+      "state": "Unwhipped liquid heavy whipping cream",
+      "kcalPer100g": 340,
+      "proteinPer100g": 2.84,
+      "carbsPer100g": 2.84,
+      "fatPer100g": 36.08,
+      "gramsPerUnit": {
+        "cup": 238
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170859/nutrients",
+      "portionSource": "USDA SR Legacy 1 cup fluid (not whipped) = 238g; whipped volume differs substantially.",
+      "reviewNotes": "All eight recipes use 0.5–1.5 cups liquid heavy cream stirred into savory dishes. Exact USDA SR Legacy record and fluid cup portion verified; cream fat content varies by product."
     },
     "Hoagie rolls": {
       "source": "",
@@ -2800,16 +2805,21 @@
       "reviewStatus": "pending"
     },
     "Milk": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "171265",
+      "description": "Milk, whole, 3.25% milkfat, with added vitamin D",
+      "state": "Fluid whole cow's milk, unflavored; proxy because recipes do not specify fat percentage",
+      "kcalPer100g": 61,
+      "proteinPer100g": 3.15,
+      "carbsPer100g": 4.8,
+      "fatPer100g": 3.25,
+      "gramsPerUnit": {
+        "cup": 244
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171265/nutrients",
+      "portionSource": "USDA SR Legacy 1 cup fluid whole milk = 244g.",
+      "reviewNotes": "All 10 recipes use 0.25–2 cups fluid milk, fat percentage unspecified. Whole milk is a declared proxy; users using skim/2% will consume fewer calories and fat. Source nutrients and USDA ID verified against USDA-derived listings."
     },
     "Mixed salad greens": {
       "source": "",
