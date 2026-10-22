@@ -18,7 +18,20 @@
       "sourceUrl": "https://www.ocado.com/products/el-yucateco-achiote-paste/656071011",
       "portionSource": "15g per tbsp is provisional, not an established manufacturer serving mass.",
       "reviewNotes": "Label per 100g verified, but recipe brand unspecified and tablespoon mass for dense paste not established. Hold before treating as precise. Manufacturer confirms commercial 100g format, but this does not establish a tablespoon weight; 15g is only an assumed density. Recipe brand unspecified. Final batch disposition (2026-10-22): Blocked: no verified grams per tablespoon for the selected paste and unspecified brand; 15g/tbsp is an estimate, not a validated conversion.",
-      "nutritionValidationBlocker": "Blocked: no verified grams per tablespoon for the selected paste and unspecified brand; 15g/tbsp is an estimate, not a validated conversion."
+      "nutritionValidationBlocker": "Blocked: no verified grams per tablespoon for the selected paste and unspecified brand; 15g/tbsp is an estimate, not a validated conversion.",
+      "standardPortionEstimate": {
+        "source": "El Yucateco branded per100g nutrition; density assumption only",
+        "sourceUrl": "https://www.ocado.com/products/el-yucateco-achiote-paste/656071011",
+        "assumedGramsPerTbsp": 15,
+        "perTbspApprox": {
+          "kcal": 28.2,
+          "protein": 0.855,
+          "carbs": 5.25,
+          "fat": 0.42
+        },
+        "confidence": "low: tablespoon weight is not established; recipe uses 2 tbsp",
+        "requiredToVerify": "Measure mass of 1 level tablespoon of the actual paste OR enter grams from product label."
+      }
     },
     "All-purpose flour": {
       "source": "USDA FoodData Central SR Legacy",
@@ -1227,7 +1240,20 @@
       "sourceUrl": "https://getfoodfacts.com/food/chili-garlic-sauce-chili-garlic-1095731",
       "portionSource": "Retail label identifies 1 tsp = 5g; 1 tbsp=3 tsp ~=15g",
       "reviewNotes": "Huy Fong brand USDA entry reports zero-rounded values but Kroger retail label lists up to 1g carbohydrate per 5g, so precise per-100g macros cannot be derived reliably. Kept unapproved pending nonrounded nutrient data or exact product selection. Checked current retailer listings: some list 0g carbs per 5g and others 1g per 5g for matching product UPC variants; precision impossible from rounded label. Retain documented brand proxy but unapproved. Final batch disposition (2026-10-22): Blocked: branded small-serving rounded nutrition label cannot establish unrounded per-100g carbs or calories. Do not treat rounded 0g as an exact zero.",
-      "nutritionValidationBlocker": "Blocked: branded small-serving rounded nutrition label cannot establish unrounded per-100g carbs or calories."
+      "nutritionValidationBlocker": "Blocked: branded small-serving rounded nutrition label cannot establish unrounded per-100g carbs or calories.",
+      "standardPortionEstimate": {
+        "source": "Huy Fong Foods UPC 0024463061040 public product composition record and USDA 5g teaspoon reference",
+        "sourceUrl": "https://www.foodnutrifacts.com/products/huy-fong-foods-chili-garlic-sauce-0024463061040",
+        "assumedGramsPerTbsp": 15,
+        "perTbspApprox": {
+          "kcal": 3,
+          "protein": 0,
+          "carbs": 0.75,
+          "fat": 0
+        },
+        "confidence": "low: public record reports sugars > total carbs and conflicts with rounded manufacturer label; NOT exact",
+        "requiredToVerify": "Obtain actual brand nutrition facts for a larger serving or lab/unrounded per-100g values."
+      }
     },
     "Chili powder": {
       "source": "USDA FoodData Central SR Legacy",
@@ -3971,7 +3997,15 @@
       "sourceUrl": "https://www.hiddenvalley.com/products/ranch-seasonings/seasoning-mix-packets/original-ranch-seasoning-mix-packet/",
       "portionSource": "Manufacturer: 1 oz (28g) packet ≈ 3 tbsp (9 tsp), approximately 9.33g per tablespoon; exact mass depends on packing.",
       "reviewNotes": "Nutrition per 1/4 tsp shows rounded zero calories and macros; cannot use these zero values to infer true per-100g composition. Product variant and ingredient differences remain. Historical Hidden Valley 1.8g half-tsp label shows 5 kcal/1g carbs and current product listings show differing rounded servings (e.g. 3g tsp, 10 kcal/2g carbs); do not derive exact per100g values. Manufacturer confirms 28g packet approx. 3 tbsp. Complete source investigation, flagged pending exact formulation. Final batch disposition (2026-10-22): Blocked: original seasoning packet's 1/4 tsp zero-rounded label is insufficient for exact per-100g macros; manufacturer confirms 28g ≈ 3 tbsp but not unrounded nutrient analysis.",
-      "nutritionValidationBlocker": "Blocked: original seasoning packet's 1/4 tsp zero-rounded label is insufficient for exact per-100g macros; manufacturer confirms 28g ≈ 3 tbsp but not unrounded nutrient analysis."
+      "nutritionValidationBlocker": "Blocked: original seasoning packet's 1/4 tsp zero-rounded label is insufficient for exact per-100g macros; manufacturer confirms 28g ≈ 3 tbsp but not unrounded nutrient analysis.",
+      "labelRoundingBound": {
+        "source": "Hidden Valley Original Ranch seasoning packet: 0g macros per 0.8g serving is rounded",
+        "sourceUrl": "https://www.target.com/p/-/A-13105928",
+        "perServingGrams": 0.8,
+        "assumedGramsPerTbsp": 9.333333333333334,
+        "recipeUsesTbsp": 2,
+        "notes": "Do not interpret zero label values as precisely zero for the recipe; 0g per 0.8g is a regulatory rounding artifact. Identical formulation not guaranteed across ranch packets and dips."
+      }
     },
     "Raw beets": {
       "source": "USDA FoodData Central SR Legacy",
