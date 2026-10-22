@@ -1542,16 +1542,21 @@
       "reviewStatus": "pending"
     },
     "Dried oregano": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "171328",
+      "description": "Spices, oregano, dried",
+      "state": "Dried culinary spice",
+      "kcalPer100g": 265,
+      "proteinPer100g": 9,
+      "carbsPer100g": 68.92,
+      "fatPer100g": 4.28,
+      "gramsPerUnit": {
+        "tsp": 1
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171328/nutrients",
+      "portionSource": "USDA food portion: 1 tsp dried oregano leaves = 1g.",
+      "reviewNotes": "13 recipes use tsp; 1 tsp leaves weighs 1g per USDA food portion; do not use ground oregano 1.8g tsp conversion."
     },
     "Dried rosemary": {
       "source": "USDA FoodData Central",
@@ -2162,16 +2167,21 @@
       "reviewNotes": "Verified USDA ingredient input, not verified finished-recipe nutrition."
     },
     "Ground cumin": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170923",
+      "description": "Spices, cumin seed (ground cumin proxy)",
+      "state": "Dried culinary spice",
+      "kcalPer100g": 375,
+      "proteinPer100g": 17.81,
+      "carbsPer100g": 44.24,
+      "fatPer100g": 22.27,
+      "gramsPerUnit": {
+        "tsp": 2.1
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170923/nutrients",
+      "portionSource": "Typical ground cumin powder: ~2.1g per level teaspoon; powder density varies.",
+      "reviewNotes": "39 recipes use tsp; USDA cumin seed profile used for ground dried cumin, teaspoon mass is an estimate."
     },
     "Ground pork": {
       "source": "USDA FoodData Central Foundation",
