@@ -1820,16 +1820,22 @@
       "reviewNotes": "Source-verified ingredient input for exact specified USDA form only. Product variation, packing, cooking retention and finished-recipe serving nutrition remain unverified."
     },
     "Flour": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "168936",
+      "description": "Wheat flour, white, all-purpose, enriched, unbleached",
+      "state": "Dry raw white all-purpose flour, enriched unbleached proxy",
+      "kcalPer100g": 364,
+      "proteinPer100g": 10.3,
+      "carbsPer100g": 76.3,
+      "fatPer100g": 0.98,
+      "gramsPerUnit": {
+        "cup": 125,
+        "tbsp": 7.8125
+      },
+      "reviewStatus": "approved",
+      "reviewNotes": "Four recipe uses: 3 tbsp roux, 1/2 cup tamale pie, 1/2 cup cutlet dredging, 1/4 cup chowder. Unqualified 'flour' interpreted as standard dry all-purpose wheat flour (same USDA reference as already approved All-purpose flour). For dredging, leftover unused flour means actual intake may be less; no retention factor assumed.",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/168936/nutrients",
+      "portionSource": "USDA SR Legacy 1 cup 125g; recipe uses 0.5 cup for fish-stick breading."
     },
     "Flour tortillas": {
       "source": "",
@@ -3688,16 +3694,21 @@
       "reviewNotes": "Same edible food and preparation as previously approved 'Cheddar cheese'. Actual recipe units verified (shrimp lb; shredded cheddar cup). USDA ingredient estimate; shrimp must be weighed peeled/deveined, cheese cup means shredded not block. Finished-meal macros remain estimates."
     },
     "Shredded lettuce": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central",
+      "foodId": "169247",
+      "description": "Lettuce, cos or romaine, raw (shredded lettuce proxy)",
+      "state": "Lettuce, cos or romaine, raw",
+      "kcalPer100g": 17,
+      "proteinPer100g": 1.23,
+      "carbsPer100g": 3.29,
+      "fatPer100g": 0.3,
+      "gramsPerUnit": {
+        "cup": 47
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169247/nutrients",
+      "portionSource": "Approximate 47g per cup shredded raw romaine; volume varies with shred size and packing.",
+      "reviewNotes": "Five recipes use 1–2 cups shredded lettuce for topping; raw romaine is a documented generic lettuce proxy. Variety and packing density are not specified, so edible weight is an estimate."
     },
     "Shredded Monterey Jack cheese": {
       "source": "",
@@ -3830,16 +3841,22 @@
       "reviewNotes": "Exact cited USDA food and recipe-unit input reference; does NOT verify individual product variation, cooking yield or final prepared recipe nutrition."
     },
     "Soy sauce": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "172473",
+      "description": "Soy sauce, reduced sodium (nutrition proxy for unspecified soy sauce)",
+      "state": "Soy sauce made from soy and wheat (shoyu), low sodium",
+      "kcalPer100g": 57,
+      "proteinPer100g": 9.05,
+      "carbsPer100g": 5.59,
+      "fatPer100g": 0.3,
+      "gramsPerUnit": {
+        "tbsp": 14.2,
+        "cup": 227.2
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/172473/nutrients",
+      "portionSource": "USDA low-sodium shoyu 1 tbsp = 14.2g; brands/ingredient proportions vary, especially sodium.",
+      "reviewNotes": "Six recipes measure 2–3 tbsp or 1/4 cup. Uses existing approved low-sodium soy sauce USDA nutrition proxy for unspecified soy sauce. Calories/macros approximate; sodium may be substantially UNDERestimated for regular soy sauce. This does not certify sodium accuracy."
     },
     "Sun-dried tomatoes": {
       "source": "USDA FoodData Central SR Legacy",
