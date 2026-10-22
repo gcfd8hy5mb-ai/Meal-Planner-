@@ -3617,16 +3617,21 @@
       "reviewNotes": "Practical default for unspecified rosemary: fresh minced rosemary. The only recipe use is 1 tbsp in Rosemary Garlic Turkey Meatloaf. USDA fresh rosemary nutrient and portion data reused; dried rosemary would require different weight and values. This is an estimated macro default."
     },
     "Russet potatoes": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170027",
+      "description": "Potatoes, russet, flesh and skin, raw",
+      "state": "Raw russet potatoes with skin",
+      "kcalPer100g": 79,
+      "proteinPer100g": 2.14,
+      "carbsPer100g": 18.1,
+      "fatPer100g": 0.08,
+      "gramsPerUnit": {
+        "lb": 453.592
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170027/nutrients",
+      "portionSource": "453.592 grams per pound; weighed raw",
+      "reviewNotes": "Four recipes measure one or two pounds. Peeling changes edible yield. Added cooking fat counted separately."
     },
     "Sage": {
       "source": "",
