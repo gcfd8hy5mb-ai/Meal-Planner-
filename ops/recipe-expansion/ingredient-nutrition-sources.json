@@ -2394,16 +2394,21 @@
       "reviewNotes": "Source-verified ingredient input for exact specified USDA form only. Product variation, packing, cooking retention and finished-recipe serving nutrition remain unverified."
     },
     "Ground thyme": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170938",
+      "description": "Spices, thyme, dried",
+      "state": "Dried ground thyme spice",
+      "kcalPer100g": 276,
+      "proteinPer100g": 9.11,
+      "carbsPer100g": 63.94,
+      "fatPer100g": 7.43,
+      "gramsPerUnit": {
+        "tsp": 1.4
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170938/nutrients",
+      "portionSource": "USDA SR Legacy FDC 170938: 1 tsp ground thyme = 1.4 g, versus 1 tsp dried leaves = 1 g",
+      "reviewNotes": "Ground thyme uses identical dried-thyme composition per 100g, with a separate USDA ground thyme household-weight measure. This is ingredient-input estimation; actual fill and recipe yield vary."
     },
     "Ground turkey": {
       "source": "USDA FoodData Central SR Legacy",
