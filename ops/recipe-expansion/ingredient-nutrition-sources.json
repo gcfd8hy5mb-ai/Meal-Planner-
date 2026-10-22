@@ -727,16 +727,21 @@
       "reviewNotes": "All 14 Butter recipe uses in 110 drafts are tablespoons. Unsalted butter selected as macro proxy for unspecified butter; salted butter primarily differs in sodium. Butter is macro-significant; verify brand and tablespoon portion when precise results needed."
     },
     "Butter lettuce": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy (raw butterhead lettuce)",
+      "foodId": "169249",
+      "description": "Lettuce, butterhead (includes Boston and Bibb types), raw",
+      "state": "Raw washed butterhead lettuce leaves, core discarded",
+      "kcalPer100g": 13,
+      "proteinPer100g": 1.35,
+      "carbsPer100g": 2.23,
+      "fatPer100g": 0.22,
+      "gramsPerUnit": {
+        "head": 163
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169249/nutrients",
+      "portionSource": "Approximately 163g edible leaves per medium butterhead lettuce head; head size and trimming vary.",
+      "reviewNotes": "Both recipes explicitly use one head, separating leaves for lettuce cups/wraps. Standard edible leaves per head are an estimate; actual head size and discarded core vary."
     },
     "Butternut squash": {
       "source": "",
