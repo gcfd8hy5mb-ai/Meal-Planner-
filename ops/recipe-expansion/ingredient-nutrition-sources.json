@@ -1016,16 +1016,21 @@
       "reviewStatus": "pending"
     },
     "Cilantro": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "169997",
+      "description": "Coriander (cilantro) leaves, raw",
+      "state": "Fresh raw cilantro leaves, loosely chopped",
+      "kcalPer100g": 23,
+      "proteinPer100g": 2.13,
+      "carbsPer100g": 3.67,
+      "fatPer100g": 0.52,
+      "gramsPerUnit": {
+        "cup": 16
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169997/nutrients",
+      "portionSource": "USDA standard chopped cilantro approximately 16 g per cup; loosely filled volume may vary.",
+      "reviewNotes": "All 19 recipe uses of cilantro are in cups (mostly 1/4 cup). Fresh cilantro leaves assumed, not dried coriander seed. Estimated macros depend on chopping/packing."
     },
     "Coconut milk": {
       "source": "",
