@@ -1166,16 +1166,21 @@
       "reviewStatus": "pending"
     },
     "Cod fillets": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "171955",
+      "description": "Fish, cod, Atlantic, raw",
+      "state": "Raw boneless skinless Atlantic cod fillet; generic cod species proxy if unspecified",
+      "kcalPer100g": 82,
+      "proteinPer100g": 17.81,
+      "carbsPer100g": 0,
+      "fatPer100g": 0.67,
+      "gramsPerUnit": {
+        "lb": 453.59237
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171955/nutrients",
+      "portionSource": "1 lb = 453.59237g of raw edible fillet, excluding bone, skin, packaging and glaze",
+      "reviewNotes": "USDA SR Legacy Atlantic cod raw, verified against NOAA Fisheries; other cod species, glazing and water content vary. No cooking loss, breading or added fat included."
     },
     "Coleslaw mix": {
       "source": "",
