@@ -17,7 +17,7 @@
       "reviewStatus": "needs-review",
       "sourceUrl": "https://www.ocado.com/products/el-yucateco-achiote-paste/656071011",
       "portionSource": "15g per tbsp is provisional, not an established manufacturer serving mass.",
-      "reviewNotes": "Label per 100g verified, but recipe brand unspecified and tablespoon mass for dense paste not established. Hold before treating as precise."
+      "reviewNotes": "Label per 100g verified, but recipe brand unspecified and tablespoon mass for dense paste not established. Hold before treating as precise. Manufacturer confirms commercial 100g format, but this does not establish a tablespoon weight; 15g is only an assumed density. Recipe brand unspecified."
     },
     "All-purpose flour": {
       "source": "USDA FoodData Central SR Legacy",
@@ -383,7 +383,7 @@
         "lb": 453.59237
       },
       "reviewStatus": "needs-review",
-      "reviewNotes": "USDA beef cut report supplies boneless raw lean-and-fat composition; 1 lb measured bone-in ribs includes inedible bone. Meat yield and actual cut (chuck/plate) unresolved; NOT approved for recipe calculations.",
+      "reviewNotes": "USDA beef cut report supplies boneless raw lean-and-fat composition; 1 lb measured bone-in ribs includes inedible bone. Meat yield and actual cut (chuck/plate) unresolved; NOT approved for recipe calculations. Final batch review: do not treat 453.59237g purchased with bones as 453.59237g edible; no defensible cut-specific edible-yield fraction provided. Exclude from exact per-recipe macro output until yield or weighed edible input is known.",
       "sourceUrl": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Meat/Retail_Beef_Cuts03.pdf",
       "portionSource": "1 lb purchased = 453.59237 g including bone; grams edible = purchased grams × measured edible yield fraction (currently unknown)."
     },
@@ -536,7 +536,7 @@
         "lb": 453.59237
       },
       "reviewStatus": "needs-review",
-      "reviewNotes": "USDA sampled edible meat and skin values; an exact purchased bone-in thigh mass includes bone. Edible-yield factor needed; not approved.",
+      "reviewNotes": "USDA sampled edible meat and skin values; an exact purchased bone-in thigh mass includes bone. Edible-yield factor needed; not approved. Final batch review: do not treat 453.59237g purchased with bones as 453.59237g edible; no defensible cut-specific edible-yield fraction provided. Exclude from exact per-recipe macro output until yield or weighed edible input is known.",
       "sourceUrl": "https://fdc.nal.usda.gov/food-details/2727567/nutrients",
       "portionSource": "1 lb purchased = 453.59237 g including bone; grams edible = purchased grams × measured edible yield fraction (currently unknown)."
     },
@@ -1128,7 +1128,7 @@
       "reviewStatus": "needs-review",
       "sourceUrl": "https://fdc.nal.usda.gov/food-details/172390/nutrients",
       "portionSource": "A pound is 453.59237g purchased bone-in weight; edible wing meat and skin is less. Yield fraction not validated.",
-      "reviewNotes": "USDA nutrient reference is edible raw meat and skin; recipe pounds of bone-in whole wings INCLUDE BONE and MUST be adjusted by edible-yield factor before using macro calculations. This record is a proxy only, not a valid whole-wing conversion. Distinguish raw purchased weight and edible cooked portion; cannot approve until weight yield and recipe preparation are matched."
+      "reviewNotes": "USDA nutrient reference is edible raw meat and skin; recipe pounds of bone-in whole wings INCLUDE BONE and MUST be adjusted by edible-yield factor before using macro calculations. This record is a proxy only, not a valid whole-wing conversion. Distinguish raw purchased weight and edible cooked portion; cannot approve until weight yield and recipe preparation are matched. Final batch review: do not treat 453.59237g purchased with bones as 453.59237g edible; no defensible cut-specific edible-yield fraction provided. Exclude from exact per-recipe macro output until yield or weighed edible input is known."
     },
     "Chickpeas": {
       "source": "USDA FoodData Central Foundation Foods",
@@ -1162,7 +1162,7 @@
       "reviewStatus": "needs-review",
       "sourceUrl": "https://getfoodfacts.com/food/chili-garlic-sauce-chili-garlic-1095731",
       "portionSource": "Retail label identifies 1 tsp = 5g; 1 tbsp=3 tsp ~=15g",
-      "reviewNotes": "Huy Fong brand USDA entry reports zero-rounded values but Kroger retail label lists up to 1g carbohydrate per 5g, so precise per-100g macros cannot be derived reliably. Kept unapproved pending nonrounded nutrient data or exact product selection."
+      "reviewNotes": "Huy Fong brand USDA entry reports zero-rounded values but Kroger retail label lists up to 1g carbohydrate per 5g, so precise per-100g macros cannot be derived reliably. Kept unapproved pending nonrounded nutrient data or exact product selection. Checked current retailer listings: some list 0g carbs per 5g and others 1g per 5g for matching product UPC variants; precision impossible from rounded label. Retain documented brand proxy but unapproved."
     },
     "Chili powder": {
       "source": "USDA FoodData Central SR Legacy",
@@ -3724,16 +3724,21 @@
       "reviewNotes": "Six recipes use 2 to 4 peppers. Raw seeded USDA composition; cooking moisture loss does not change initial total nutrient contribution."
     },
     "Pork baby back ribs": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "168299",
+      "description": "Pork, fresh, backribs, separable lean and fat, raw",
+      "state": "Raw edible pork backrib lean and fat; excludes bones",
+      "kcalPer100g": 224,
+      "proteinPer100g": 19.07,
+      "carbsPer100g": 0,
+      "fatPer100g": 16.33,
+      "gramsPerUnit": {
+        "lb": 453.59237
+      },
+      "reviewStatus": "needs-review",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/168299/nutrients",
+      "portionSource": "1 lb purchase weight = 453.59237 g WITH bones. Nutrient values are for edible lean+fat only; edible yield percentage for this recipe is unconfirmed.",
+      "reviewNotes": "USDA exact backribs raw edible source; NOT approved for total recipe macros until bone-in purchase-weight-to-edible-meat yield and trimming are determined."
     },
     "Pork loin cutlets": {
       "source": "USDA FoodData Central",
@@ -3885,8 +3890,8 @@
       },
       "reviewStatus": "needs-review",
       "sourceUrl": "https://www.hiddenvalley.com/products/ranch-seasonings/seasoning-mix-packets/original-ranch-seasoning-mix-packet/",
-      "portionSource": "Manufacturer: 1 oz (28g) packet approximately 3 tbsp; hence 9.33g per tbsp approximate.",
-      "reviewNotes": "Nutrition per 1/4 tsp shows rounded zero calories and macros; cannot use these zero values to infer true per-100g composition. Product variant and ingredient differences remain."
+      "portionSource": "Hidden Valley manufacturer confirms 28 g packet approximately 3 tbsp = 9.33 g/tbsp, approximate not a measured density.",
+      "reviewNotes": "Nutrition per 1/4 tsp shows rounded zero calories and macros; cannot use these zero values to infer true per-100g composition. Product variant and ingredient differences remain. Historical Hidden Valley 1.8g half-tsp label shows 5 kcal/1g carbs and current product listings show differing rounded servings (e.g. 3g tsp, 10 kcal/2g carbs); do not derive exact per100g values. Manufacturer confirms 28g packet approx. 3 tbsp. Complete source investigation, flagged pending exact formulation."
     },
     "Raw beets": {
       "source": "USDA FoodData Central SR Legacy",
