@@ -3528,16 +3528,21 @@
       "reviewStatus": "pending"
     },
     "Refried beans": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "172438",
+      "description": "Refried beans, canned, traditional style",
+      "state": "Prepared canned traditional refried beans, heated without added ingredients",
+      "kcalPer100g": 90,
+      "proteinPer100g": 5,
+      "carbsPer100g": 13.6,
+      "fatPer100g": 2,
+      "gramsPerUnit": {
+        "cup": 238
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/172438/nutrients",
+      "portionSource": "USDA traditional canned refried beans: one cup 238g",
+      "reviewNotes": "Three recipes each specify one cup refried beans. Traditional canned variety assumed; homemade, vegetarian, fat-free or lard-enriched products may differ. Per-100g nutrient figures rounded from USDA; final cooked dish nutrition remains estimated."
     },
     "Refrigerated biscuit dough": {
       "source": "",
