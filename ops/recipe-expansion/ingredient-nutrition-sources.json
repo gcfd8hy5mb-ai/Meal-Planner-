@@ -90,16 +90,21 @@
       "reviewNotes": "Hold: USDA provides 20g per tbsp, but editorial review has not approved extrapolating full cup to 320g across apricot preserve formulations; require explicit cup measure or tested density."
     },
     "Arborio rice": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy (raw white rice proxy)",
+      "foodId": "169756",
+      "description": "Rice, white, long-grain, regular, enriched, raw (proxy for dry Arborio)",
+      "state": "Dry uncooked Arborio rice; raw white rice proxy",
+      "kcalPer100g": 365,
+      "proteinPer100g": 7.13,
+      "carbsPer100g": 79.95,
+      "fatPer100g": 0.66,
+      "gramsPerUnit": {
+        "cup": 195
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169756/nutrients",
+      "portionSource": "Dry Arborio rice approximately 195 g per cup (standard cooking ingredient estimate); actual brand differs.",
+      "reviewNotes": "Risotto steps explicitly toast 1½ cups dry Arborio rice before broth addition. Raw white rice macro proxy is approximate; Arborio starch composition and brand vary. USDA food ID should be independently checked for raw vs cooked before production use."
     },
     "Artichoke hearts": {
       "source": "USDA FoodData Central SR Legacy (candidate; preparation requires confirmation)",
@@ -662,16 +667,21 @@
       "reviewNotes": "Both recipes use 2 cups Broccoli florets. Raw broccoli used as practical proxy; floret-only density and pre-cooked versus cooked volume affect estimates."
     },
     "Brown rice": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "169703",
+      "description": "Rice, brown, long-grain, raw",
+      "state": "Dry uncooked long-grain brown rice",
+      "kcalPer100g": 367,
+      "proteinPer100g": 7.54,
+      "carbsPer100g": 76.25,
+      "fatPer100g": 3.2,
+      "gramsPerUnit": {
+        "cup": 190
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169703/nutrients",
+      "portionSource": "Standard dry brown long-grain rice approximately 190 g per cup; brand and cup fill vary.",
+      "reviewNotes": "Recipe steps explicitly say cook 1½ cups DRY brown rice. Use uncooked rice macros and mass, not cooked rice cup conversion. One recipe occurrence."
     },
     "Brown sugar": {
       "source": "USDA FoodData Central SR Legacy",
