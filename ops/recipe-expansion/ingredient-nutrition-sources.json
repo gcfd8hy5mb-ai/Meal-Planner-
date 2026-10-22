@@ -833,16 +833,21 @@
       "reviewNotes": "Source-verified ingredient input for exact specified USDA form only. Product variation, packing, cooking retention and finished-recipe serving nutrition remain unverified."
     },
     "Celery stalks": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "169988",
+      "description": "Celery, raw",
+      "state": "Raw celery stalks, trimmed edible portion",
+      "kcalPer100g": 14,
+      "proteinPer100g": 0.69,
+      "carbsPer100g": 2.97,
+      "fatPer100g": 0.17,
+      "gramsPerUnit": {
+        "each": 40
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169988/nutrients",
+      "portionSource": "Standard medium celery stalk about 40 g edible portion; varies by stalk size.",
+      "reviewNotes": "Three recipe uses, all 'each' (3 stalks per soup). Standard medium stalk assumption; celery heart versus outer stalk may vary."
     },
     "Cheddar": {
       "source": "USDA FoodData Central",
@@ -1316,16 +1321,21 @@
       "reviewNotes": "Source-linked ingredient INPUT mapping. Does not imply final recipe serving nutrition is verified; recipe-specific cooking retention and yield must be checked."
     },
     "Cucumber": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "168409",
+      "description": "Cucumber, with peel, raw",
+      "state": "Raw cucumber with peel; ends removed",
+      "kcalPer100g": 15,
+      "proteinPer100g": 0.65,
+      "carbsPer100g": 3.63,
+      "fatPer100g": 0.11,
+      "gramsPerUnit": {
+        "each": 301
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/168409/nutrients",
+      "portionSource": "Standard medium cucumber with peel approximately 301 g edible; size varies substantially.",
+      "reviewNotes": "Both uses in the 110 recipe drafts are 1 each. Assumes standard medium cucumber with peel, not small Persian cucumber or large English cucumber. Macro estimates vary by cucumber size."
     },
     "Cumin": {
       "source": "",
