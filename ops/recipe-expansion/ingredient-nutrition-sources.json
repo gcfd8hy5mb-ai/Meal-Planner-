@@ -57,17 +57,18 @@
       "reviewNotes": "Source-linked ingredient INPUT mapping. Does not imply final recipe serving nutrition is verified; recipe-specific cooking retention and yield must be checked."
     },
     "Apples": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "171688",
+      "description": "Apples, raw, with skin",
+      "state": "Raw, with skin; edible portion",
+      "kcalPer100g": 52,
+      "proteinPer100g": 0.26,
+      "carbsPer100g": 13.81,
+      "fatPer100g": 0.17,
       "gramsPerUnit": {},
       "reviewStatus": "pending",
-      "reviewNotes": "HOLD: recipe preparation and units need audit before selecting USDA food and portions. Raw apples with skin, peeled apples, and cooked apples differ; sliced versus chopped cup portions are not interchangeable. Candidate raw-with-skin reference: USDA SR Legacy food 171688, subject to independent nutrient and portion source verification. Do not approve without checking every recipe use."
+      "reviewNotes": "USDA-backed standard macro candidate populated for practical estimated macros. Hold final approval until all actual recipe units are inventoried and appropriate edible-portion gram mappings are recorded; do not equate whole fruit weight with edible flesh or assume every cup preparation is equivalent.",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171688/nutrients"
     },
     "Apricot preserves": {
       "source": "",
@@ -107,28 +108,32 @@
       "reviewStatus": "pending"
     },
     "Avocado": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "171705",
+      "description": "Avocados, raw, all commercial varieties",
+      "state": "Raw, edible flesh only",
+      "kcalPer100g": 160,
+      "proteinPer100g": 2,
+      "carbsPer100g": 8.53,
+      "fatPer100g": 14.66,
       "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "reviewStatus": "pending",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171705/nutrients",
+      "reviewNotes": "USDA-backed standard macro candidate populated for practical estimated macros. Hold final approval until all actual recipe units are inventoried and appropriate edible-portion gram mappings are recorded; do not equate whole fruit weight with edible flesh or assume every cup preparation is equivalent."
     },
     "Avocados": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "171705",
+      "description": "Avocados, raw, all commercial varieties",
+      "state": "Raw, edible flesh only",
+      "kcalPer100g": 160,
+      "proteinPer100g": 2,
+      "carbsPer100g": 8.53,
+      "fatPer100g": 14.66,
       "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "reviewStatus": "pending",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171705/nutrients",
+      "reviewNotes": "USDA-backed standard macro candidate populated for practical estimated macros. Hold final approval until all actual recipe units are inventoried and appropriate edible-portion gram mappings are recorded; do not equate whole fruit weight with edible flesh or assume every cup preparation is equivalent."
     },
     "Baby arugula": {
       "source": "",
