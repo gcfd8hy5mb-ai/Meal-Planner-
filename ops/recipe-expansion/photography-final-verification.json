@@ -1,0 +1,905 @@
+{
+  "date": "2026-10-22",
+  "scope": "Photography staging only; expansion remains unpublished",
+  "newPhotos": 110,
+  "decodedWebP": 110,
+  "acceptedRecipeMappings": 110,
+  "missing": 0,
+  "exactDuplicates": 0,
+  "thumbnailSimilarityFlags": [],
+  "similarityMethod": "64-bit horizontal difference hash; flag Hamming distance under 4; all pairs compared",
+  "duplicatesOfOriginalLocalAssets": [],
+  "originalRecipeCoverage": 166,
+  "originalLocalWebPFilesUnchanged": 158,
+  "originalExternalPhotoMappingsUnchanged": 8,
+  "nutritionAndRecipeDraftsUnchanged": true,
+  "estimatedRecipesPreserved": 8,
+  "localTests": {
+    "passed": 15,
+    "skipped": 1,
+    "skipReason": "External URL reachability is opt-in; original image URLs remain unchanged"
+  },
+  "productionReleaseEnabled": false,
+  "photos": [
+    {
+      "path": "assets/recipe-expansion/exp01-001.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 131446,
+      "sha256": "132a8e15b5d93e94add5d7b3595d4e118226a8f540b6184f0a079bc813470b80",
+      "dhash64": "7fe92c4c26f4189f"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-002.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 139140,
+      "sha256": "030d23780af64fa32e06fc961e5e193d150b4897f18d7ec6055ed049cfbb07a1",
+      "dhash64": "0bf0c69158668cdc"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-003.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 149902,
+      "sha256": "ed32d613909e5be2a71ddef2204b6da9e20b12870dc0f640bf049218c6bffe8e",
+      "dhash64": "0360aa056a37a0e0"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-004.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 129694,
+      "sha256": "ccc9ac72bbffd3b3ec2eaf35de331dae57c69d2be8013629ec2a07675fe8bc4c",
+      "dhash64": "8f79c2e474b8f1e3"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-005.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 143224,
+      "sha256": "18c5f49051a3def6343de04e68ecdf6db6d4a9869e996933ac739943bb15bec0",
+      "dhash64": "83a046e22081e8e0"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-006.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 142114,
+      "sha256": "653457d92cf25272749fb908180b68afdad898dba4f01e30266965c7240af73b",
+      "dhash64": "1fe3a4dcc9aab8e0"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-007.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 150134,
+      "sha256": "9dc6ca7f909c357769ddd07084f27ca677d47709b6714c26e9031c01afc89bc1",
+      "dhash64": "3fc12a45d9666cf9"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-008.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 153098,
+      "sha256": "23d37178ac9b83ca420e3c06f6177b457250e97211ccc37b2e9dd5781418fdf8",
+      "dhash64": "77f1f6f3da68e2c5"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-009.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 137448,
+      "sha256": "4d97f2f348313e2d3de894985533f29a7ae50007d14d2e4a0b79a7de788357a9",
+      "dhash64": "f7c3864e0726a8a3"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-010.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 143766,
+      "sha256": "622d4c1330a4e5c8a593ddcf7ccc72287c2937358d25bd653d63beaf0623c3d5",
+      "dhash64": "0358586815839498"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-011.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 136292,
+      "sha256": "3aac25e16e81375156057dd77831dcd2bae44ae5f0b22184aefa42254dcbdc87",
+      "dhash64": "87f1d6b0f2f061a7"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-012.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 149726,
+      "sha256": "8a01f72b0388d743214a348140fdeed2cbaf91151046cdd917d5bda94e6f87cd",
+      "dhash64": "f0dceaeaec72b0d8"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-013.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 130958,
+      "sha256": "efffa6722ac70110544ead94171baa0e19daac0088931b03559cad21401a328f",
+      "dhash64": "c3cde7e4cccecccd"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-014.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 140858,
+      "sha256": "85795e3826e13e67dc579b3ba9d170a67fd7e72b5ddfbb2e37724bde050bcfea",
+      "dhash64": "1fefead4bcecf1df"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-015.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 135664,
+      "sha256": "c0351f76ee24e2cf0c57940a9f339714873fa726047922bd50d7f2604d9bd10d",
+      "dhash64": "3ffbd4526e3491cf"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-016.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 129880,
+      "sha256": "97a257b5a87041d84f4f8badf098c625216f2f671600ce503c7f374afd72bc01",
+      "dhash64": "1f77face783291ce"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-017.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 145348,
+      "sha256": "4175b2eea3ca4a0b6347c5768553b93bb1fc35218bfcbdb8f4924349934d1b57",
+      "dhash64": "3efbc8bc8ed4f1ec"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-018.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 131770,
+      "sha256": "1dbd1dd2dfbdf3b1ebb5ca2e574194f274195d3614c564f39d8637315e0de673",
+      "dhash64": "1ef3e588c2b0a3ef"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-019.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 138280,
+      "sha256": "c9c39d42335c5dea376f7070d1d04909c01c21077137b4d77360af17dd9c4411",
+      "dhash64": "1fe3d2d8e89495ab"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-020.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 129470,
+      "sha256": "95a45ff5c1da54069d796b5f63ad1f4926f894426ed8a7a9e744d0140bcf6b8d",
+      "dhash64": "ed697979cbcff8f1"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-021.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 152554,
+      "sha256": "100d337f6e89a3b8547348edeabfee3b50880eb099c4371c34238c1a510d8c2b",
+      "dhash64": "77ec46bdedeacca9"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-022.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 148614,
+      "sha256": "8e21e65d50ab8d69ee73c6f92de8f8101b2df7af00aed29bf93140a0de00e97b",
+      "dhash64": "6fe5d6acd5eaacd0"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-023.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 142348,
+      "sha256": "99b7211bed90b380292d7dd3c022816fe0f27867681f49e81ed8c9dc8928b629",
+      "dhash64": "5ff1f9dcdefc0ca4"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-024.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 144082,
+      "sha256": "ce5b260368e16facd218b8bf57617253e2f01abaf9f37d28971af62c2f65e48d",
+      "dhash64": "4bb4f4e0f0f4f1b7"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-025.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 149290,
+      "sha256": "20f8c786b012362108a48b20c76b6f749868fd69552416f5c23ee9091258abe1",
+      "dhash64": "1ff5edc8d434b1c7"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-026.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 152144,
+      "sha256": "355a6337d09ebe7ca728b2064df2e8241362bc42ceb3a7030f3e13828159ea24",
+      "dhash64": "3ff1a8bab616dcfd"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-027.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 145806,
+      "sha256": "af9f123403d08bc45a034e595c55eda8e3c12514d7055384954064fd90aa62ee",
+      "dhash64": "2fe3e2e6e4ce3cbb"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-028.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 130048,
+      "sha256": "4fd90b25881074c725974979c133ce6c09a8b235ed0f2e90d706712cc8ae773e",
+      "dhash64": "072830b8b0e0f023"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-029.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 137238,
+      "sha256": "9e4747a02c56dcd524479a4b4f52ab0d3941a804e742084744330b1c1651d7bc",
+      "dhash64": "7ffbc876faf4f871"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-030.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 134852,
+      "sha256": "aac2f214b2ec5a15b6833b0b440ac95acc5e1145a3169e52067e3aa66451ebd1",
+      "dhash64": "67d8eecaca6c69c3"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-031.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 153126,
+      "sha256": "68e991164e0c52bff9cbd158d7c233148b4b3f18877674da4944a6902023024a",
+      "dhash64": "3f6bdef4b4c9e973"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-032.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 136262,
+      "sha256": "3cf504da5bf96c1017dfd94af40195a4f795b3c88c29ae254b8f2285c34a7394",
+      "dhash64": "77e9b9f6ca6cb4ff"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-033.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 152124,
+      "sha256": "c2bcdf4117a368451b30b4470c4108c9a9061315ff7ce49c3fbd37c2612679c6",
+      "dhash64": "cdd3f8acac735cf9"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-034.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 141258,
+      "sha256": "dc78c42d750ec6695d742012e02f8915e6d92c1bcc64397090c0e322dd34e732",
+      "dhash64": "f7c9a8eb556aecc4"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-035.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 146400,
+      "sha256": "61dc5c32f9c4e4c268b7b60ea467a2cbaa027b0820f82f6f3988efe2728b4075",
+      "dhash64": "bf4bd974986063bf"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-036.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 152046,
+      "sha256": "c5bee4ec014e74a33da8a2a4e30326acf794c9208b1131e2fc0d18a9ceb186a2",
+      "dhash64": "27d1d6ac305809b2"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-037.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 148320,
+      "sha256": "c0aa4153a674413a75e1629aa762840e9b5798bc59299e43ef04067bc8b2ac12",
+      "dhash64": "1f73d159dad0f1ae"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-038.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 151228,
+      "sha256": "5ddc2b5146ffd4adee99ef5c06073d70ce084af3906824d1c98bfb00435b91e9",
+      "dhash64": "b1f8dc8eae22b1f3"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-039.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 135280,
+      "sha256": "684515c8ceb770719be2a4b719ca15e32f897787da179730f4efd0d68efcbc24",
+      "dhash64": "1f7cf4decee8e177"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-040.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 153512,
+      "sha256": "391585daf869d66fdbf4d0fb35de9c52b97c392735a77892e18c9c37bb0e70b9",
+      "dhash64": "67d068b0381e9ccc"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-041.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 144618,
+      "sha256": "3258f774f63e56ad01421cf2387760cb64c5f5304a3e10dfbd954b9400596e50",
+      "dhash64": "67e3e53214a8d17f"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-042.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 135504,
+      "sha256": "9d2d3a3f50b35ade6ff3335af5aa256d7b7a5194e34f4c3040e611b0e9ddc288",
+      "dhash64": "f3d09edfdb3425e6"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-043.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 148430,
+      "sha256": "702ab30df220e4f5a91089d783187751701b4ff9155ade51abfb7213f55ac902",
+      "dhash64": "0e6ff5e27031a3ff"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-044.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 134360,
+      "sha256": "e541ec72c4157d0839aaee6496fcf21dc65809fe133112ee2cee170f7ff8f192",
+      "dhash64": "0fd9d4db9e74e8ea"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-045.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 148544,
+      "sha256": "4db8bd534d5efe33432208ad515777698ef054a73fa80d998e17670a7b887b23",
+      "dhash64": "7fcedcdcf65071e7"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-046.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 145502,
+      "sha256": "114e305e4f1a6cdf8293a02adda7a0198ed787c4f6abfb045fd8b20ec22c23c2",
+      "dhash64": "1febc9928ae851d6"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-047.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 151850,
+      "sha256": "9004de007601d2e6823aedf6c650f7a5fbf693da41729085018439875c77b3b5",
+      "dhash64": "dfad74a8cf3431d7"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-048.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 152518,
+      "sha256": "ba08729340c208708878cff267d4876a7a679c80c1ec9092b9e5988ac7455e17",
+      "dhash64": "37ec7c62ac6cf8d3"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-049.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 146572,
+      "sha256": "bc629f6fc16a425c0e32cc8217e57896b3c5f1064c569a5e535a5ddb23c4d7ff",
+      "dhash64": "0f43a08048c2e628"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-050.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 133602,
+      "sha256": "f68b5c64ecefdd714f13809f0b1b830e70304171d0b5a44430b5f05568f2c80d",
+      "dhash64": "1f7bfbb2f4b8003c"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-051.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 139184,
+      "sha256": "86e9037712846f38af30c1f04da788eb81ec36ea4b6961842bf67aa01d322117",
+      "dhash64": "67c1e47a4bef2497"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-052.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 133036,
+      "sha256": "6bb6d72f1432bd70b6dd4a8c35bbebb5a89e01edb88ef14138fa2fe74b734e35",
+      "dhash64": "3fd9ecdc3d99cf9e"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-053.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 145004,
+      "sha256": "4f086cd2683d3548f93c50302956e791a43b15e62c531a43056937e62f200282",
+      "dhash64": "1f61e8aad8dcf067"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-054.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 120422,
+      "sha256": "a75ec3f73145b39a5318650ebfb9c718c6c79ebc19d21cb1add0aada0a9bb37a",
+      "dhash64": "0303f0cccdeefc99"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-055.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 150874,
+      "sha256": "00370c040b05bc5090e16ae2a51e0e81f24f796657df8d5480a35c9281a22841",
+      "dhash64": "0ef39cda362869cf"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-056.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 148542,
+      "sha256": "590916b07971b4c155850125da220cd3e3d73bdbdce393340122ee1954f0c22a",
+      "dhash64": "5fb1b1d64d7470f3"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-057.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 133180,
+      "sha256": "567f7ed68a8d1552f05eb7ca65192671d4a2cccd09f20bf940335e7b322c3cb9",
+      "dhash64": "e3f0f6e0ba8ee6f1"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-058.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 136156,
+      "sha256": "a694c25f09a1a77a2a8f3378b6fe8c3aefb8a8269dce20e4ae791e531e165ddd",
+      "dhash64": "0fe1f2f5ddd8f0eb"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-059.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 150148,
+      "sha256": "32b218f3351501baac01c9942e12d2b93fd7a7fc8e0e7a174cc8de719151838e",
+      "dhash64": "3ffdd858ca5ad0f3"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-060.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 148314,
+      "sha256": "af6b4d75fef479d7989bbeb0b2ac11a9ca29f6ecef492f0c942fc414a792c3d8",
+      "dhash64": "bff5a5e4ce3ca9ef"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-061.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 145492,
+      "sha256": "9e9776860cdfa5b3dd970e4cf19f4813bd6b0568eca475e487c5f3cf1d96670f",
+      "dhash64": "0f77f99cb2f4d1cf"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-062.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 151360,
+      "sha256": "02df1471bdca00e591d7c14ad4bee2f2c93f84e5182cf7f571275fb51844f50c",
+      "dhash64": "67dbcc73b3744cf5"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-063.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 145856,
+      "sha256": "0682090a6c905308fcee17c640a6aa64450dc10a837d3e9766900da45c28746c",
+      "dhash64": "01e443e299c9e018"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-064.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 131332,
+      "sha256": "891d6ceb6555ce6a5cca79b86e4be40d7193c2cf2912eb950c403bfd48624a1b",
+      "dhash64": "cfb0f0a8fa74f1b4"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-065.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 133160,
+      "sha256": "2d78fba43c8d569077b640dadc30b9a9761dee375befc13cb860d100090cf050",
+      "dhash64": "57a9aa924a6c2493"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-066.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 144654,
+      "sha256": "8465d447e82d62db4e0e4802deaee819f3859664e01bf75e5803957f967bfec2",
+      "dhash64": "f394cbb51f26b8f7"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-067.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 148124,
+      "sha256": "3ceb3f299edf15d1d4eea8437e2a62f31b89381d550181e0611f61e692061f97",
+      "dhash64": "ffbf74667cf0c3cf"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-068.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 137472,
+      "sha256": "a979cc85d45a3581ab8ca3d88480982a6b2b3fd7415069bf112360cde39a2bf3",
+      "dhash64": "f160f2d88ecce8f3"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-069.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 130090,
+      "sha256": "6e8ad700e012e94321ee94c3ab8b8a0adef8252674b0e7b355c4cca4e9123a25",
+      "dhash64": "0fe1e1f4b468b1df"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-070.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 145688,
+      "sha256": "454c650252e342b10e66a9d0a8264723b586954482ca174f54373baa5e545e0d",
+      "dhash64": "bfebcb2fbc481af3"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-071.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 135032,
+      "sha256": "80bc838d2d759289d68c9e4e5a82d20ed54a9bd557a528ba40ffdca94d6e134b",
+      "dhash64": "3ff7f0eaca64a1c7"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-072.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 145144,
+      "sha256": "649581245f99511503784e7e76732de24d3111e323f79c9e449606cba561cfde",
+      "dhash64": "f3d9dc3d8b9e399b"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-073.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 145838,
+      "sha256": "b47e1ae9f71e0eebfd26038dd8302c0996be4ef8f318970f811e058f40489ada",
+      "dhash64": "07d9c8c9a2e829c3"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-074.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 150052,
+      "sha256": "8b75fdd9c65cfb8d32b3939123c3dad87f0a394954604430e95116935695c520",
+      "dhash64": "aff196decd56faf3"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-075.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 141002,
+      "sha256": "ee7f6f08b2215f503bf329275e36085eda403b02e14e693cf15c2a3fb1362a21",
+      "dhash64": "67f939bcce4c2182"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-076.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 142968,
+      "sha256": "06a7c4824b9db3e928b05e0e614534a1683f0017580a97799cdd9e4afb7568b0",
+      "dhash64": "e7d91c366c66b8b8"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-077.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 132600,
+      "sha256": "c8d6570f847a3954849c29f8282a1aa5409ad0036edddc1d2f168bb1b7a595c0",
+      "dhash64": "6ff1f8bc9ccedcb9"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-078.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 122926,
+      "sha256": "1e7696555fc594e2dc4fc7588c498b61c0cf3b0855bc7e11406ce7eae7102421",
+      "dhash64": "021970ec8cecf0c2"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-079.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 146898,
+      "sha256": "173e7bf12cf1f7b524ee1926ed2f0d0b8d8d6dcb8be8e89190f3878b560322c7",
+      "dhash64": "0354e412e5ccf0b0"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-080.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 134606,
+      "sha256": "335c154134692136b0a1d63b4f00c8ba2949ca6d062402d56e7e5f4d381ca6f7",
+      "dhash64": "1fe9ece4ca78b193"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-081.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 141206,
+      "sha256": "36e3068931386a670c947764fa907a5bdd4eb447fef9e659ef2744c649cbd9d2",
+      "dhash64": "1fe4ce8b9b3031d5"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-082.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 137556,
+      "sha256": "c14e8092901fdbb0921a24144244ef8e331d808a0e3ad9d40b98788e989cf5d7",
+      "dhash64": "77f0ee587a2a34c7"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-083.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 150778,
+      "sha256": "6fd463153a2e7b54cc4873a8395af83d8d96cadeb0a77381b4a2dbf2e2f2fe24",
+      "dhash64": "8febd69eded451b7"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-084.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 130766,
+      "sha256": "771a56e5423c97bb1a4b9dcadbecf3301b70b638541dc674fb1b5f8e827aa3af",
+      "dhash64": "1fe1e4e6666659d0"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-085.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 138858,
+      "sha256": "cb84a6467df487308215bc2f3a0ef07912e2f742e7cce11a6dbd76aa02b67ce8",
+      "dhash64": "0ff1dc9ce42c218e"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-086.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 132916,
+      "sha256": "bf35fa1e4b316325e1e855d2f91af04434246ee7f944e0a83cab2b2d95350b60",
+      "dhash64": "1f7ff3f24e7cb1c7"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-087.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 142144,
+      "sha256": "bedd7cd5f4d24ca6b224aed5b1e51e7ed64c75fd9a2ed7c31aed0932fc4be9bc",
+      "dhash64": "3fd89ef69eccfc71"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-088.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 147582,
+      "sha256": "0021c76680583cedecddf2fc5e173f45226705d27c241af2342cc2f7dda0f72f",
+      "dhash64": "f3e9ecf45a1cb4e7"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-089.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 145656,
+      "sha256": "1cec951b19a99cc648631b61783b493894e8db8453724a25f80148d5b8da8191",
+      "dhash64": "11c4a6242899b210"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-090.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 136224,
+      "sha256": "621123340d1c175e80a9624930c9f8e554e03806b8b6f807f39efac337ed4cf1",
+      "dhash64": "77d1d0e4f06219c3"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-091.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 135108,
+      "sha256": "92c93b6d2eda0a3992fbc75392be3fe5bdd037bd369de24984e1d712d6e16304",
+      "dhash64": "33d89e99c67431a7"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-092.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 139940,
+      "sha256": "d048a0e1b87278904a63b6c9b9f918e0283ff883c54493b9695f30446b97d49a",
+      "dhash64": "5e7ff99cbcb8e0c4"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-093.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 139002,
+      "sha256": "b9fec96bf3ab557a92ddb768edf2cfea456d44edfcef7077e247bb1bf2359a27",
+      "dhash64": "2fd3c958ba3431cb"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-094.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 137308,
+      "sha256": "c4f857ccfea3e6d58e75ffcac12370745f2846bc083a3d4015f16768bbb0e6ac",
+      "dhash64": "f386167afcd1400c"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-095.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 143102,
+      "sha256": "1759d6914cdb0f2689400bff3080fbc08ab02923e8fe79eb0a2a634001d845ab",
+      "dhash64": "7fe0c4eccb7810c3"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-096.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 137522,
+      "sha256": "0ef6bf6b020368db0a6c353026ea285dd0944db1a11c48160e42ddcdc2aa7262",
+      "dhash64": "67c9de6f5b24c1df"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-097.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 132978,
+      "sha256": "e57f645476beba89fa1f890cdff5d8f53e2f6a6814a60dd538afc7a850c51d7e",
+      "dhash64": "37eaa1e6f2f7fef0"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-098.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 124238,
+      "sha256": "8d5df11bb5c64f526377036727baea0c64c2b43d308434527682b6f83726584f",
+      "dhash64": "7ff17e96dcb8e3cf"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-099.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 137386,
+      "sha256": "8525a2737e4522a54e62a3ebaaf11b7e92f2c89ad8464a795b2f0d188abd7f9e",
+      "dhash64": "ce1ff1d8b0e8e0f0"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-100.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 150294,
+      "sha256": "205e60f3404e9eb2a4b04334cecb73a68501a1b8d4d95fbb1f2b0cf80a6f8621",
+      "dhash64": "cfb169d3a79694f3"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-101.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 141468,
+      "sha256": "237a9a42b3b129645454e87efef2d80970469027ac3f1dd37d952253e2a09e59",
+      "dhash64": "f8f8b2cce178fc79"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-102.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 144518,
+      "sha256": "ce872069cc4ee8dbd9cc15057a33401dd315e1a74ed8eb9879dd4e73b26ab3f9",
+      "dhash64": "7fb5f9b2363831d2"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-103.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 144766,
+      "sha256": "2eb4f579f4382997cb397136e84bf5c6861bbfa7667322dbf6efee335a6e2987",
+      "dhash64": "0ff5f4ea723899cf"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-104.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 132562,
+      "sha256": "0b8d5aca2e130c99d1bd8d078b851c9c2db906a9819cf8a22ce162bdee434efd",
+      "dhash64": "1f7fe5cc9e3edcce"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-105.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 106262,
+      "sha256": "74cedcf37ef692ce3b22d2406df8e529bedec311e5e3d43902a6f823e9033417",
+      "dhash64": "2f37f1ecf6d0e1df"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-106.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 139948,
+      "sha256": "2e4360096a87cf5a1fd33df10e12f98675de103562ea4957a8ce5935c00914e5",
+      "dhash64": "1fc7e3e4de7033fd"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-107.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 141500,
+      "sha256": "e80d67a49676a1e25f7aa64ef8b91264f6b7d570f9784a033da597d2d5f0eaca",
+      "dhash64": "1feb8a51a5b5c4e7"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-108.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 148562,
+      "sha256": "a5bb531caf09a0eddd829f0e67814c5082222abc6ba1db1fa3e0ab2d9ed4b4ac",
+      "dhash64": "1ef7ccdcbc3891df"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-109.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 150852,
+      "sha256": "06d81b4814499049eaa28c880b1a6a02eae12484bfed12ca095216467c1f3cfa",
+      "dhash64": "e368460dce6421cf"
+    },
+    {
+      "path": "assets/recipe-expansion/exp01-110.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 148136,
+      "sha256": "38db82eb590f58cdbda93c6d312b1d6c7ad3acb2b9b0efb400660b1d210ddb52",
+      "dhash64": "6ff1b4a4e4d8138e"
+    }
+  ]
+}

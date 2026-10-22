@@ -1102,6 +1102,116 @@
       "width": 960,
       "height": 960,
       "bytes": 150294
+    },
+    "exp01-101": {
+      "verdict": "accepted",
+      "sha256": "237a9a42b3b129645454e87efef2d80970469027ac3f1dd37d952253e2a09e59",
+      "recipeSha256": "350376beffc7b158be8f98a145bdafc88f5f0d8c62e0c3df67da6f5dc903eaae",
+      "notes": "Chicken breast bake with visible artichoke hearts and spinach under creamy cream-cheese, mozzarella and Parmesan topping.",
+      "generationTool": "built-in image_gen",
+      "reviewedOn": "2026-10-22",
+      "width": 960,
+      "height": 960,
+      "bytes": 141468
+    },
+    "exp01-102": {
+      "verdict": "accepted",
+      "sha256": "ce872069cc4ee8dbd9cc15057a33401dd315e1a74ed8eb9879dd4e73b26ab3f9",
+      "recipeSha256": "d47a99c99a45dd6c1dc8dab7b1ef88fb8b768296728b98604e7e6b26a9550317",
+      "notes": "Pork meatballs in glossy apricot-soy-ginger glaze with sliced green onions; no sesame or other toppings.",
+      "generationTool": "built-in image_gen",
+      "reviewedOn": "2026-10-22",
+      "width": 960,
+      "height": 960,
+      "bytes": 144518
+    },
+    "exp01-103": {
+      "verdict": "accepted",
+      "sha256": "2eb4f579f4382997cb397136e84bf5c6861bbfa7667322dbf6efee335a6e2987",
+      "recipeSha256": "7eb175b95caf642db74f6fc973cb00b33e0c7d6e774a418fb0b6a309e7f1fd3b",
+      "notes": "Creamy Arborio risotto with Italian sausage, butternut squash cubes, Parmesan and chopped sage folded throughout.",
+      "generationTool": "built-in image_gen",
+      "reviewedOn": "2026-10-22",
+      "width": 960,
+      "height": 960,
+      "bytes": 144766
+    },
+    "exp01-104": {
+      "verdict": "accepted",
+      "sha256": "0b8d5aca2e130c99d1bd8d078b851c9c2db906a9819cf8a22ce162bdee434efd",
+      "recipeSha256": "3d6761be6fc53cbbcbad7ffbc14df2c1a0a867b7f1f2f8607f517df160130993",
+      "notes": "Honey-soy glazed salmon with sesame seeds over brown rice, sliced cucumber and shredded carrot; no unlisted vegetables.",
+      "generationTool": "built-in image_gen",
+      "reviewedOn": "2026-10-22",
+      "width": 960,
+      "height": 960,
+      "bytes": 132562
+    },
+    "exp01-105": {
+      "verdict": "accepted",
+      "sha256": "74cedcf37ef692ce3b22d2406df8e529bedec311e5e3d43902a6f823e9033417",
+      "recipeSha256": "12e980f698be71b9c5f533775a63addcf66180b5095dce9e8281fe48436ebb17",
+      "notes": "Chicken and corn chowder with potato cubes and cooked onion in milk-thickened broth; no invented herb garnish.",
+      "generationTool": "built-in image_gen",
+      "reviewedOn": "2026-10-22",
+      "width": 960,
+      "height": 960,
+      "bytes": 106262
+    },
+    "exp01-106": {
+      "verdict": "accepted",
+      "sha256": "2e4360096a87cf5a1fd33df10e12f98675de103562ea4957a8ce5935c00914e5",
+      "recipeSha256": "001e4c1f36344f09040cf658740ff0b2d8693c65df11f0ba9669b0f99c6a797d",
+      "notes": "Caramelized barbecue baby back pork rib sections with visible bones and glaze; no extra side dishes.",
+      "generationTool": "built-in image_gen",
+      "reviewedOn": "2026-10-22",
+      "width": 960,
+      "height": 960,
+      "bytes": 139948
+    },
+    "exp01-107": {
+      "verdict": "accepted",
+      "sha256": "e80d67a49676a1e25f7aa64ef8b91264f6b7d570f9784a033da597d2d5f0eaca",
+      "recipeSha256": "464f9344b906b09b370d71d14f849ee87eec48165139df1e976cb279f3bc8fd2",
+      "notes": "Flaky-crust quiche with set egg custard, broccoli florets, bacon, cheddar and cooked onion; cut portion reveals filling.",
+      "generationTool": "built-in image_gen",
+      "reviewedOn": "2026-10-22",
+      "width": 960,
+      "height": 960,
+      "bytes": 141500
+    },
+    "exp01-108": {
+      "verdict": "accepted",
+      "sha256": "a5bb531caf09a0eddd829f0e67814c5082222abc6ba1db1fa3e0ab2d9ed4b4ac",
+      "recipeSha256": "518f4b7c4c0ef12f7dfa189f7bb4ea98ef3741567baade9b529d37e4b9d4f17c",
+      "notes": "Rice noodles with ground pork, chili-garlic soy sauce and sliced green onion topping; no extra vegetables.",
+      "generationTool": "built-in image_gen",
+      "reviewedOn": "2026-10-22",
+      "width": 960,
+      "height": 960,
+      "bytes": 148562
+    },
+    "exp01-109": {
+      "verdict": "accepted",
+      "sha256": "06d81b4814499049eaa28c880b1a6a02eae12484bfed12ca095216467c1f3cfa",
+      "recipeSha256": "80d4055b9359d784f31d004d39659fa24cd7ca35770e91fffc7d201d105562d5",
+      "notes": "Browned bone-in chicken thighs with braised apple wedges and cooked onion in cider-Dijon-thyme sauce.",
+      "generationTool": "built-in image_gen",
+      "reviewedOn": "2026-10-22",
+      "width": 960,
+      "height": 960,
+      "bytes": 150852
+    },
+    "exp01-110": {
+      "verdict": "accepted",
+      "sha256": "38db82eb590f58cdbda93c6d312b1d6c7ad3acb2b9b0efb400660b1d210ddb52",
+      "recipeSha256": "4c18e7e5f5e9dd2b9deda0600c8ee37c9488eaa1c68760b0ffd100d206398370",
+      "notes": "Potato gnocchi, peeled cooked shrimp and cherry tomatoes in creamy basil pesto sauce, topped with grated Parmesan.",
+      "generationTool": "built-in image_gen",
+      "reviewedOn": "2026-10-22",
+      "width": 960,
+      "height": 960,
+      "bytes": 148136
     }
   }
 }
