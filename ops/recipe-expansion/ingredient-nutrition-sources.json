@@ -3623,16 +3623,21 @@
       "reviewNotes": "Source-linked ingredient input reference only. Brand variation, portions before peeling, cooking yield and prepared-meal nutrition are NOT certified."
     },
     "Red bell pepper": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170108",
+      "description": "Peppers, sweet, red, raw",
+      "state": "Raw red sweet bell pepper, edible stemmed and seeded flesh",
+      "kcalPer100g": 26,
+      "proteinPer100g": 0.99,
+      "carbsPer100g": 6.03,
+      "fatPer100g": 0.3,
+      "gramsPerUnit": {
+        "each": 119
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170108/nutrients",
+      "portionSource": "One medium pepper 119g edible portion; actual size and seed/core removal vary",
+      "reviewNotes": "Verified red sweet pepper food identity and reference profile; not interchangeable with green bell pepper nutrient data. Input raw pepper weight only, cooking yield not included."
     },
     "Red curry paste": {
       "source": "",
