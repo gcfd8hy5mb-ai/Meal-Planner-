@@ -1450,16 +1450,21 @@
       "reviewNotes": "Verified source and unit for ingredient input, not cooked recipe yield or served macro certification."
     },
     "Cotija cheese": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170898",
+      "description": "Cheese, mexican, queso cotija",
+      "state": "Crumbled cotija cheese",
+      "kcalPer100g": 366,
+      "proteinPer100g": 20,
+      "carbsPer100g": 3.97,
+      "fatPer100g": 30,
+      "gramsPerUnit": {
+        "cup": 112
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170898/nutrients",
+      "portionSource": "Weight- or volume-based recipe conversion; cup weights are approximations unless specified by USDA.",
+      "reviewNotes": "USDA SR Legacy cotija composition; 112 g/cup is an estimated crumbled packing mass, not an exact USDA portion."
     },
     "Cream cheese": {
       "source": "USDA FoodData Central SR Legacy",
@@ -1513,16 +1518,21 @@
       "reviewNotes": "Source-matched raw brown cremini mushrooms (USDA SR Legacy); exact mass-unit conversion. Any cooking loss or added butter/oil is handled separately."
     },
     "Crumbled cotija cheese": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170898",
+      "description": "Cheese, mexican, queso cotija",
+      "state": "Crumbled Mexican cotija cheese",
+      "kcalPer100g": 366,
+      "proteinPer100g": 20,
+      "carbsPer100g": 3.97,
+      "fatPer100g": 30,
+      "gramsPerUnit": {
+        "cup": 112
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170898/nutrients",
+      "portionSource": "Weight- or volume-based recipe conversion; cup weights are approximations unless specified by USDA.",
+      "reviewNotes": "112 grams per cup is an approximate loose crumble portion; use actual weighing if precision needed."
     },
     "Crushed tomatoes": {
       "source": "USDA FoodData Central SR Legacy",
@@ -3536,16 +3546,21 @@
       "reviewNotes": "Monterey Jack dairy base used as proxy for pepper Jack with chilies; chili additions and cheese brands differ. This is a standard-ingredient estimate and not an exact commercial brand or cooked recipe macro."
     },
     "Pickled jalapeño slices": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170080",
+      "description": "Peppers, jalapeno, canned, solids and liquids",
+      "state": "Pickled canned jalapeño slices, drained for serving",
+      "kcalPer100g": 27,
+      "proteinPer100g": 0.92,
+      "carbsPer100g": 4.74,
+      "fatPer100g": 0.94,
+      "gramsPerUnit": {
+        "cup": 150
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170080/nutrients",
+      "portionSource": "Weight- or volume-based recipe conversion; cup weights are approximations unless specified by USDA.",
+      "reviewNotes": "USDA canned jalapeño solids and liquid serves as a proxy; pickling liquid and draining change nutrition; 150 g/cup estimated."
     },
     "Pie crust": {
       "source": "USDA FoodData Central SR Legacy (generic estimate)",
@@ -4789,16 +4804,21 @@
       "reviewNotes": "Generic unsweetened vinegar USDA proxy. Distilled white vinegar may have lower residual carbohydrate than generic vinegar. At tablespoon portions nutritional contribution is small; not exact product testing."
     },
     "Wild rice blend": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central Foundation Foods",
+      "foodId": "2710821",
+      "description": "Wild rice, dry, raw",
+      "state": "Dry wild rice blend, raw",
+      "kcalPer100g": 358.553,
+      "proteinPer100g": 12.788,
+      "carbsPer100g": 75.67,
+      "fatPer100g": 1.704,
+      "gramsPerUnit": {
+        "cup": 160
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/2710821/nutrients",
+      "portionSource": "Weight- or volume-based recipe conversion; cup weights are approximations unless specified by USDA.",
+      "reviewNotes": "Pure wild rice USDA Foundation profile used as transparent proxy for an unspecified blend; white/brown rice blend ratios significantly affect nutrients; 160 g/cup reflects pure wild rice reference."
     },
     "Yellow onion": {
       "source": "USDA FoodData Central Foundation",
