@@ -1158,28 +1158,38 @@
       "reviewNotes": "USDA chili powder BLEND; recipes using a different pure ground chile require reclassification. Per-serving totals may require cooked retained quantity review."
     },
     "Chipotle pepper in adobo": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central Branded (Embasa)",
+      "foodId": "2570289",
+      "description": "Embasa, chipotle peppers in adobo sauce (branded proxy)",
+      "state": "One canned chipotle pepper plus adhering adobo sauce",
+      "kcalPer100g": 65,
+      "proteinPer100g": 3.2258,
+      "carbsPer100g": 9.6774,
+      "fatPer100g": 3.2258,
+      "gramsPerUnit": {
+        "each": 10
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://getfoodfacts.com/food/adobo-sauce-chipotle-peppers-2570289",
+      "portionSource": "Mass conversion uses ounces by weight or an explicitly provisional per-piece/herb volume assumption",
+      "reviewNotes": "Per-100g values inferred from Embasa declared 31g serving label; 10g per pepper including adhering sauce is a rough mass assumption. Brands and solids/sauce ratio vary."
     },
     "Chipotle peppers in adobo": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central Branded (Embasa)",
+      "foodId": "2570289",
+      "description": "Embasa, chipotle peppers in adobo sauce (branded proxy)",
+      "state": "Canned chipotle pepper and adhering adobo sauce",
+      "kcalPer100g": 65,
+      "proteinPer100g": 3.2258,
+      "carbsPer100g": 9.6774,
+      "fatPer100g": 3.2258,
+      "gramsPerUnit": {
+        "each": 10
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://getfoodfacts.com/food/adobo-sauce-chipotle-peppers-2570289",
+      "portionSource": "Mass conversion uses ounces by weight or an explicitly provisional per-piece/herb volume assumption",
+      "reviewNotes": "Same base food as singular label, per pepper estimated 10g; product varies between cans; label serving 31g includes sauce."
     },
     "Cilantro": {
       "source": "USDA FoodData Central SR Legacy",
@@ -1731,16 +1741,21 @@
       "reviewNotes": "USDA dried sulfured apricot nutrient estimate and corresponding cup-of-halves conversion. Sulfur-free brands, sweetened products, chopped sizes and moisture content vary. Finished recipe nutrition is not certified."
     },
     "Dried guajillo chiles": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "168570",
+      "description": "Peppers, hot chile, sun-dried (guajillo proxy)",
+      "state": "Whole dried guajillo chile, stem removed; raw dried mass",
+      "kcalPer100g": 324,
+      "proteinPer100g": 10.6,
+      "carbsPer100g": 69.9,
+      "fatPer100g": 5.81,
+      "gramsPerUnit": {
+        "each": 5
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/168570/nutrients",
+      "portionSource": "Mass conversion uses ounces by weight or an explicitly provisional per-piece/herb volume assumption",
+      "reviewNotes": "USDA generic hot chile, sun-dried is proxy for guajillo. One chile assumed 5g, variable size/seeds and hydration alter edible grams."
     },
     "Dried oregano": {
       "source": "USDA FoodData Central SR Legacy",
@@ -2237,16 +2252,21 @@
       "reviewNotes": "Verified USDA ingredient input, not verified finished-recipe nutrition."
     },
     "Fresh sage": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "UK CoFID 2021 via Thrive Nutrition",
+      "foodId": "CoFID-2021-13-853",
+      "description": "Sage, fresh, raw leaves",
+      "state": "Fresh chopped sage leaves, raw",
+      "kcalPer100g": 119,
+      "proteinPer100g": 3.9,
+      "carbsPer100g": 15.6,
+      "fatPer100g": 4.6,
+      "gramsPerUnit": {
+        "tbsp": 2
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://thrivenutrition.app/foods/sage/",
+      "portionSource": "Mass conversion uses ounces by weight or an explicitly provisional per-piece/herb volume assumption",
+      "reviewNotes": "Composition from CoFID 2021 (not dried sage). 2g/tbsp chopped leaves is a provisional volume conversion; weigh or validate with actual chopped-leaf packing."
     },
     "Fresh thyme": {
       "source": "USDA FoodData Central SR Legacy",
@@ -3738,16 +3758,21 @@
       "reviewNotes": "Ingredient-source mapping only. Finished-meal nutrition cannot be published without separate recipe yield and consumed-portion verification."
     },
     "Potato gnocchi": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central branded record as reproduced by Aqua-Calc",
+      "foodId": "UPC-077890364246",
+      "description": "Potato gnocchi, branded uncooked packaged product",
+      "state": "Packaged shelf-stable potato gnocchi, as sold (uncooked)",
+      "kcalPer100g": 156,
+      "proteinPer100g": 4.44,
+      "carbsPer100g": 32.22,
+      "fatPer100g": 0.83,
+      "gramsPerUnit": {
+        "oz": 28.349523125
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://www.aqua-calc.com/calculate/food-calories/substance/potato-blank-gnocchi-coma-and-blank-upc-column--blank-077890364246",
+      "portionSource": "Mass conversion uses ounces by weight or an explicitly provisional per-piece/herb volume assumption",
+      "reviewNotes": "Branded product reference. Avoid cooked USDA gnocchi entry (135 kcal with fat added) because it differs from packaged raw input; brand ratios vary."
     },
     "Prepared refrigerated empanada dough discs": {
       "source": "",
