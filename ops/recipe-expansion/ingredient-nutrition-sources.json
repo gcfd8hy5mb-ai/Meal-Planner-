@@ -312,16 +312,20 @@
       "reviewNotes": "Shrimp Veracruz is the only Bay leaf use (1 each). Step 4 explicitly says 'discard the bay leaf.' Zero retained mass is correct for estimated consumed macros; re-audit if recipe instructions change."
     },
     "Beef broth": {
-      "source": "",
+      "source": "Standard commercial ready-to-serve broth nutrition estimate (provisional; manufacturer/USDA record verification pending)",
       "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "description": "Beef broth, ready-to-serve, commercially prepared",
+      "state": "Prepared ready-to-use broth; not concentrated bouillon or dry stock",
+      "kcalPer100g": 7,
+      "proteinPer100g": 1.14,
+      "carbsPer100g": 0.1,
+      "fatPer100g": 0.22,
+      "gramsPerUnit": {
+        "cup": 240
+      },
+      "reviewStatus": "pending",
+      "portionSource": "Standard liquid broth 1 US cup approximately 240g; product density and sodium vary.",
+      "reviewNotes": "Recipe unit audit: all chicken broth (25 recipes) and beef broth (9 recipes) uses are cups. Nutrient numbers are provisional typical commercial broth estimates, not yet independently verified against an exact food record. Keep pending until source verified; brand and reduced-sodium variants differ."
     },
     "Beef chuck roast": {
       "source": "",
@@ -952,16 +956,20 @@
       "reviewStatus": "pending"
     },
     "Chicken broth": {
-      "source": "",
+      "source": "Standard commercial ready-to-serve broth nutrition estimate (provisional; manufacturer/USDA record verification pending)",
       "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "description": "Chicken broth, ready-to-serve, commercially prepared",
+      "state": "Prepared ready-to-use broth; not concentrated bouillon or dry stock",
+      "kcalPer100g": 5,
+      "proteinPer100g": 0.39,
+      "carbsPer100g": 0.44,
+      "fatPer100g": 0.21,
+      "gramsPerUnit": {
+        "cup": 240
+      },
+      "reviewStatus": "pending",
+      "portionSource": "Standard liquid broth 1 US cup approximately 240g; product density and sodium vary.",
+      "reviewNotes": "Recipe unit audit: all chicken broth (25 recipes) and beef broth (9 recipes) uses are cups. Nutrient numbers are provisional typical commercial broth estimates, not yet independently verified against an exact food record. Keep pending until source verified; brand and reduced-sodium variants differ."
     },
     "Chicken tenders": {
       "source": "",
