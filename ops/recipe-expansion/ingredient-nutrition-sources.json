@@ -3424,16 +3424,21 @@
       "reviewNotes": "Generic unsweetened pineapple juice profile used as explicit default for unspecified pineapple juice. Sweetened juice or concentrate will differ. Ingredient estimates do not certify finished-meal macros."
     },
     "Pitted green olives": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "169096",
+      "description": "Olives, pickled, canned or bottled, green",
+      "state": "Drained pitted green olives in brine, not stuffed with other ingredients",
+      "kcalPer100g": 145,
+      "proteinPer100g": 1.03,
+      "carbsPer100g": 3.84,
+      "fatPer100g": 15.32,
+      "gramsPerUnit": {
+        "cup": 135
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169096/nutrients",
+      "portionSource": "Approximate 135 grams per cup of drained green olives based on USDA survey green olive cup; pitted olive sizes and packing density vary.",
+      "reviewNotes": "USDA SR Legacy FDC 169096 provides green brined olive nutrients. Cup size is an approximate surrogate from the USDA green olive survey portion, not exact for each pitted olive variety. Drain brine and weigh edible olives where precise macros are needed."
     },
     "Plain Greek yogurt": {
       "source": "",
