@@ -95,21 +95,21 @@
       "reviewNotes": "Hold: USDA provides 20g per tbsp, but editorial review has not approved extrapolating full cup to 320g across apricot preserve formulations; require explicit cup measure or tested density."
     },
     "Arborio rice": {
-      "source": "USDA FoodData Central SR Legacy (raw white rice proxy)",
-      "foodId": "169756",
-      "description": "Rice, white, long-grain, regular, enriched, raw (proxy for dry Arborio)",
-      "state": "Dry uncooked Arborio rice; raw white rice proxy",
-      "kcalPer100g": 365,
-      "proteinPer100g": 7.13,
-      "carbsPer100g": 79.95,
-      "fatPer100g": 0.66,
+      "source": "USDA FoodData Central branded foods (Goya Arborio Rice)",
+      "foodId": "2596371",
+      "description": "Goya Arborio Rice, dry uncooked, branded reference",
+      "state": "Dry uncooked Arborio rice, not cooked",
+      "kcalPer100g": 362,
+      "proteinPer100g": 6.38,
+      "carbsPer100g": 78.72,
+      "fatPer100g": 0,
       "gramsPerUnit": {
-        "cup": 195
+        "cup": 188
       },
       "reviewStatus": "pending",
-      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169756/nutrients",
-      "portionSource": "Dry Arborio rice approximately 195 g per cup (standard cooking ingredient estimate); actual brand differs.",
-      "reviewNotes": "Risotto steps explicitly toast 1½ cups dry Arborio rice before broth addition. Raw white rice macro proxy is approximate; Arborio starch composition and brand vary. USDA food ID should be independently checked for raw vs cooked before production use. QA correction: previous approval premature because FDC ID 169756 may identify cooked rice rather than the claimed raw rice; do not treat this as verified until exact food record and macros are confirmed."
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/2596371/nutrients",
+      "portionSource": "Goya label 1/4 cup dry=47g; 1 cup dry=188g, not the prior 195g estimate.",
+      "reviewNotes": "Confirmed branded FDC 2596371 is dry Goya Arborio (170 kcal/47g). Protein and carbohydrate approximated from product serving label and require direct exact nutrient record confirmation before approval; keep pending. Replaces incorrectly described generic USDA 169756 as Arborio source. Risotto recipe uses 1.5 cups dry."
     },
     "Artichoke hearts": {
       "source": "USDA FoodData Central SR Legacy (candidate; preparation requires confirmation)",
