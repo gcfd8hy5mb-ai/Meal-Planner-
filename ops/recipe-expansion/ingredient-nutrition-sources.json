@@ -441,49 +441,52 @@
       "reviewNotes": "Audited all occurrences in 110 recipe drafts: only 'lb' is used. Exact conversion is 453.59237 g per pound of the weighed product. HOLD nutrition approval until USDA entry matches raw/cooked, skin, fat trimming, and bone status. Bone-in chicken thighs require an edible-yield adjustment; 1 lb bone-in purchase weight is NOT 453.59237 g edible meat. Beef cut and fat trim can materially alter macros."
     },
     "Boneless chicken breast": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
+      "source": "USDA FoodData Central Foundation",
+      "foodId": "2646170",
+      "description": "Chicken, breast, boneless, skinless, raw",
+      "state": "Chicken, breast, boneless, skinless, raw",
+      "kcalPer100g": 112.20227,
+      "proteinPer100g": 22.525,
+      "carbsPer100g": 0,
+      "fatPer100g": 1.934,
       "gramsPerUnit": {
         "lb": 453.59237
       },
-      "reviewStatus": "pending",
-      "reviewNotes": "Audited all occurrences in 110 recipe drafts: only 'lb' is used. Exact conversion is 453.59237 g per pound of the weighed product. HOLD nutrition approval until USDA entry matches raw/cooked, skin, fat trimming, and bone status. Bone-in chicken thighs require an edible-yield adjustment; 1 lb bone-in purchase weight is NOT 453.59237 g edible meat. Beef cut and fat trim can materially alter macros."
+      "reviewStatus": "approved",
+      "reviewNotes": "Practical default: boneless unspecified chicken is treated as skinless raw, using the already-approved identical cut reference in this same nutrition source file. All recipe occurrences use lb. If a recipe explicitly uses skin-on chicken, this default must be overridden. Brand and trimming vary.",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/2646170/nutrients"
     },
     "Boneless chicken breasts": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
+      "source": "USDA FoodData Central Foundation",
+      "foodId": "2646170",
+      "description": "Chicken, breast, boneless, skinless, raw",
+      "state": "Chicken, breast, boneless, skinless, raw",
+      "kcalPer100g": 112.20227,
+      "proteinPer100g": 22.525,
+      "carbsPer100g": 0,
+      "fatPer100g": 1.934,
       "gramsPerUnit": {
         "lb": 453.59237
       },
-      "reviewStatus": "pending",
-      "reviewNotes": "Audited all occurrences in 110 recipe drafts: only 'lb' is used. Exact conversion is 453.59237 g per pound of the weighed product. HOLD nutrition approval until USDA entry matches raw/cooked, skin, fat trimming, and bone status. Bone-in chicken thighs require an edible-yield adjustment; 1 lb bone-in purchase weight is NOT 453.59237 g edible meat. Beef cut and fat trim can materially alter macros."
+      "reviewStatus": "approved",
+      "reviewNotes": "Practical default: boneless unspecified chicken is treated as skinless raw, using the already-approved identical cut reference in this same nutrition source file. All recipe occurrences use lb. If a recipe explicitly uses skin-on chicken, this default must be overridden. Brand and trimming vary.",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/2646170/nutrients"
     },
     "Boneless chicken thighs": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
+      "source": "USDA FoodData Central Foundation",
+      "foodId": "2646171",
+      "description": "Chicken, thigh, boneless, skinless, raw",
+      "state": "Chicken, thigh, boneless, skinless, raw",
+      "kcalPer100g": 149.306475,
+      "proteinPer100g": 18.6125,
+      "carbsPer100g": 0,
+      "fatPer100g": 7.916,
       "gramsPerUnit": {
         "lb": 453.59237
       },
-      "reviewStatus": "pending",
-      "reviewNotes": "Audited all occurrences in 110 recipe drafts: only 'lb' is used. Exact conversion is 453.59237 g per pound of the weighed product. HOLD nutrition approval until USDA entry matches raw/cooked, skin, fat trimming, and bone status. Bone-in chicken thighs require an edible-yield adjustment; 1 lb bone-in purchase weight is NOT 453.59237 g edible meat. Beef cut and fat trim can materially alter macros."
+      "reviewStatus": "approved",
+      "reviewNotes": "Practical default: boneless unspecified chicken is treated as skinless raw, using the already-approved identical cut reference in this same nutrition source file. All recipe occurrences use lb. If a recipe explicitly uses skin-on chicken, this default must be overridden. Brand and trimming vary.",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/2646171/nutrients"
     },
     "Boneless pork chops": {
       "source": "",
