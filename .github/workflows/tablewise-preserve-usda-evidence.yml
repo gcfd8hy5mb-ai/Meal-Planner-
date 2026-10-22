@@ -1,0 +1,61 @@
+name: Tablewise archive remaining USDA evidence for editorial review
+on:
+  push:
+    branches: [feature/recipe-expansion-110-content-20261021]
+    paths:
+      - '.github/workflows/tablewise-preserve-usda-evidence.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: read
+jobs:
+  archive-evidence:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feature/recipe-expansion-110-content-20261021
+          persist-credentials: true
+      - name: Download all eleven source-evidence artifacts (no USDA credentials)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh run download 39686954505 --repo "${{ github.repository }}" --dir /tmp/tablewise-usda-evidence
+      - name: Preserve each source record and report gaps without approving any mapping
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json,glob,pathlib,shutil
+          files=sorted(glob.glob('/tmp/tablewise-usda-evidence/**/nutrition-batch-25-usda-evidence-*.json',recursive=True))
+          assert len(files)==11, f'Expected 11 evidence files, found {len(files)}'
+          dest=pathlib.Path('ops/recipe-expansion/usda-review-evidence-20261021')
+          dest.mkdir(parents=True,exist_ok=True)
+          seen=set()
+          report={'sourceRun':39686954505,'recordStatus':'evidence-only—NOT approved','batches':[],'missingDetail':[]}
+          for file in files:
+            obj=json.loads(pathlib.Path(file).read_text())
+            offset=obj['offset']
+            rows=obj['review']
+            assert len(rows)==min(25,254-offset),(offset,len(rows))
+            for item in rows:
+              key=item['ingredient']
+              assert key not in seen,f'Duplicate ingredient: {key}'
+              seen.add(key)
+              if not item.get('firstCandidateDetail'):
+                report['missingDetail'].append(key)
+            shutil.copyfile(file,dest/f'evidence-{offset:03}.json')
+            report['batches'].append({'offset':offset,'records':len(rows),'detailed':sum(bool(x.get('firstCandidateDetail')) for x in rows)})
+          assert len(seen)==254,f'Expected 254 unique unresolved ingredients, got {len(seen)}'
+          report.update({'unresolvedCount':len(seen),'detailedCount':sum(x['detailed'] for x in report['batches']),'approvalCountChanged':0,'requires':'Editorial verification of exact food identity, food state, all 4 nutrients, every requested recipe unit in grams, and per-recipe yields'})
+          (dest/'review-index.json').write_text(json.dumps(report,indent=2)+'\n')
+          print(json.dumps(report))
+          PY
+      - name: Commit evidence only to the existing working branch
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add ops/recipe-expansion/usda-review-evidence-20261021
+          git diff --cached --quiet && exit 0
+          git commit -m "Archive 254 USDA ingredient candidate records for careful editorial review without approvals"
+          git push origin HEAD:feature/recipe-expansion-110-content-20261021

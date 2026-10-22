@@ -1,0 +1,4418 @@
+{
+  "description": "Ingredient nutrition for recipe macro estimates. Approval policy: use a defensible USDA FoodData Central or documented manufacturer reference for the typical as-used ingredient; select a consistent, clearly labeled standard preparation and portion when the recipe is nonspecific. Require evidence for the actual recipe units and avoid unsupported food identities, FDC IDs, or conversion values. Prioritize precise weight/preparation for macro-sensitive meats, oils, grains, flour, cheeses and sauces; for lower-impact produce/spices, documented standard USDA portions and reasonable clearly identified defaults are acceptable. Mark estimates as estimates, not laboratory-exact macros. Recipe cooking yield, ingredient brands, and serving weights may differ. Never automatically approve blank records or infer all units from one unsupported conversion.",
+  "units": "Nutrients per 100 g edible ingredient; gramsPerUnit keyed by the actual recipe unit.",
+  "ingredients": {
+    "Achiote paste": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "All-purpose flour": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "168936",
+      "description": "Wheat flour, white, all-purpose, enriched, unbleached",
+      "state": "Dry raw white all-purpose flour, enriched unbleached proxy",
+      "kcalPer100g": 364,
+      "proteinPer100g": 10.3,
+      "carbsPer100g": 76.3,
+      "fatPer100g": 0.98,
+      "gramsPerUnit": {
+        "cup": 125
+      },
+      "reviewStatus": "approved",
+      "reviewNotes": "Only occurrence is 0.5 cup raw all-purpose flour used for dredging Crispy Baked Fish Sticks. Generic enriched unbleached USDA proxy since recipe does not specify enrichment/bleaching. Important: some flour and other breading may remain in dredging bowl; recipe nutrition calculation based on full measured flour will overestimate actual consumed unless retention is modeled.",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/168936/nutrients",
+      "portionSource": "USDA SR Legacy 1 cup 125g; recipe uses 0.5 cup for fish-stick breading."
+    },
+    "Apple cider": {
+      "source": "USDA FoodData Central SR Legacy (unsweetened apple juice proxy)",
+      "foodId": "171688",
+      "description": "Apple juice, canned or bottled, unsweetened, without added ascorbic acid (proxy for sweet apple cider)",
+      "state": "Nonalcoholic sweet apple cider, liquid; not apple cider vinegar",
+      "kcalPer100g": 46,
+      "proteinPer100g": 0.1,
+      "carbsPer100g": 11.3,
+      "fatPer100g": 0.13,
+      "gramsPerUnit": {
+        "cup": 248
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171688/nutrients",
+      "portionSource": "One US cup unsweetened apple juice approximately 248g; sweet apple cider varies by brand and sediment.",
+      "reviewNotes": "All three recipes use cups (0.5, 1, 1.5); instructions indicate sweet cider for braising/sauce, not vinegar or hard cider. Unsweetened apple juice is a documented approximate nutrition proxy; added-sugar brands differ. Sauce reduction does not remove sugar."
+    },
+    "Apple cider vinegar": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "173469",
+      "description": "Vinegar, cider",
+      "state": "Vinegar, cider",
+      "kcalPer100g": 21,
+      "proteinPer100g": 0,
+      "carbsPer100g": 0.93,
+      "fatPer100g": 0,
+      "gramsPerUnit": {
+        "tbsp": 14.9
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/173469/nutrients",
+      "portionSource": "USDA explicit 1 tbsp = 14.9 g; food use/retention still must be reviewed.",
+      "reviewNotes": "Source-linked ingredient INPUT mapping. Does not imply final recipe serving nutrition is verified; recipe-specific cooking retention and yield must be checked."
+    },
+    "Apples": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "171688",
+      "description": "Apples, raw, with skin",
+      "state": "Raw, with skin; edible portion",
+      "kcalPer100g": 52,
+      "proteinPer100g": 0.26,
+      "carbsPer100g": 13.81,
+      "fatPer100g": 0.17,
+      "gramsPerUnit": {
+        "cup, sliced": 109,
+        "cup, chopped": 125,
+        "medium": 182,
+        "each": 182
+      },
+      "reviewStatus": "approved",
+      "reviewNotes": "USDA nutrient and portion reference independently cross-checked. Practical standard for unqualified raw apples with skin; still pending actual recipe unit inventory (e.g., cup vs each) before mapping can be used by calculator. Recipe audit: every occurrence in 110 recipe drafts uses unit 'each' (Apples 4 recipes; Avocado 4; Avocados 1). Standard raw edible portion per each used as a clearly disclosed estimate, not an exact fruit weight; actual fruit sizes vary. Cooking may change water content, but ingredient macros are based on raw input weight. Other reference units remain informational only.",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171688/nutrients",
+      "portionSource": "USDA National Nutrient Database SR26, Basic Report 09003, Apples raw with skin: 1 cup sliced 109g, 1 cup quartered/chopped 125g, medium 182g. https://resources.finalsite.net/images/v1703097875/chambersburgk12paus/mpitvq0yks6xou0i25os/apple__fresh.pdf"
+    },
+    "Apricot preserves": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending",
+      "reviewNotes": "Hold: USDA provides 20g per tbsp, but editorial review has not approved extrapolating full cup to 320g across apricot preserve formulations; require explicit cup measure or tested density."
+    },
+    "Arborio rice": {
+      "source": "USDA FoodData Central branded foods (Goya Arborio Rice)",
+      "foodId": "2596371",
+      "description": "Goya Arborio Rice, dry uncooked, branded reference",
+      "state": "Dry uncooked Arborio rice, not cooked",
+      "kcalPer100g": 361.7021276595745,
+      "proteinPer100g": 6.382978723404255,
+      "carbsPer100g": 78.72340425531915,
+      "fatPer100g": 0,
+      "gramsPerUnit": {
+        "cup": 188
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/2596371/nutrients",
+      "portionSource": "Goya label 1/4 cup dry=47g; 1 cup dry=188g, not the prior 195g estimate.",
+      "reviewNotes": "Verified Goya Arborio Rice branded USDA FoodData Central FDC 2596371: serving 1/4 cup dry (47g), 170 kcal, 3g protein, 37g total carbs, 0g fat. Values per 100g computed directly from label; exact fractions retained for accuracy. Only use is 1.5 cups uncooked in Butternut Squash Sausage Risotto. Brand proxy for other dry Arborio products; rounded label nutrients are estimates."
+    },
+    "Artichoke hearts": {
+      "source": "USDA FoodData Central SR Legacy (candidate; preparation requires confirmation)",
+      "foodId": "168533",
+      "description": "Artichokes, (globe or french), raw",
+      "state": "Raw reference food; recipe preparation unspecified",
+      "kcalPer100g": 47,
+      "proteinPer100g": 3.27,
+      "carbsPer100g": 10.51,
+      "fatPer100g": 0.15,
+      "gramsPerUnit": {
+        "oz": 28.349523125
+      },
+      "reviewStatus": "pending",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/168533/nutrients",
+      "reviewNotes": "Recipe-unit audit completed: only exact mass units used in current 110 recipe drafts. Nutrition candidate needs independent food identity and preparation verification before approval; canned/drained artichoke hearts cannot automatically use raw artichoke macros."
+    },
+    "Avocado": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "171705",
+      "description": "Avocados, raw, all commercial varieties",
+      "state": "Raw, edible flesh only",
+      "kcalPer100g": 160,
+      "proteinPer100g": 2,
+      "carbsPer100g": 8.53,
+      "fatPer100g": 14.66,
+      "gramsPerUnit": {
+        "cup, sliced": 146,
+        "cup, cubes": 150,
+        "cup, pureed": 230,
+        "whole, edible flesh": 201,
+        "each": 201
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171705/nutrients",
+      "reviewNotes": "Standard raw avocado edible flesh macro and portion reference cross-checked; pending actual recipe unit inventory and correct mapping of each/half versus grams. Do not treat 201g as universal avocado size. Recipe audit: every occurrence in 110 recipe drafts uses unit 'each' (Apples 4 recipes; Avocado 4; Avocados 1). Standard raw edible portion per each used as a clearly disclosed estimate, not an exact fruit weight; actual fruit sizes vary. Cooking may change water content, but ingredient macros are based on raw input weight. Other reference units remain informational only.",
+      "portionSource": "USDA Agricultural Research Service CSFII food codebook, avocado raw: cup cubes 150g, cup sliced 146g, cup puree 230g, unspecified variety whole edible portion 201g. https://www.ars.usda.gov/ARSUserFiles/80400530/pdf/8586/csfii85_4days_codebook.pdf"
+    },
+    "Avocados": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "171705",
+      "description": "Avocados, raw, all commercial varieties",
+      "state": "Raw, edible flesh only",
+      "kcalPer100g": 160,
+      "proteinPer100g": 2,
+      "carbsPer100g": 8.53,
+      "fatPer100g": 14.66,
+      "gramsPerUnit": {
+        "cup, sliced": 146,
+        "cup, cubes": 150,
+        "cup, pureed": 230,
+        "whole, edible flesh": 201,
+        "each": 201
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171705/nutrients",
+      "reviewNotes": "Standard raw avocado edible flesh macro and portion reference cross-checked; pending actual recipe unit inventory and correct mapping of each/half versus grams. Do not treat 201g as universal avocado size. Recipe audit: every occurrence in 110 recipe drafts uses unit 'each' (Apples 4 recipes; Avocado 4; Avocados 1). Standard raw edible portion per each used as a clearly disclosed estimate, not an exact fruit weight; actual fruit sizes vary. Cooking may change water content, but ingredient macros are based on raw input weight. Other reference units remain informational only.",
+      "portionSource": "USDA Agricultural Research Service CSFII food codebook, avocado raw: cup cubes 150g, cup sliced 146g, cup puree 230g, unspecified variety whole edible portion 201g. https://www.ars.usda.gov/ARSUserFiles/80400530/pdf/8586/csfii85_4days_codebook.pdf"
+    },
+    "Baby arugula": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "169387",
+      "description": "Arugula, raw (proxy for baby arugula)",
+      "state": "Raw loose baby arugula leaves; standard raw arugula nutrient proxy",
+      "kcalPer100g": 25,
+      "proteinPer100g": 2.58,
+      "carbsPer100g": 3.65,
+      "fatPer100g": 0.66,
+      "gramsPerUnit": {
+        "cup": 20
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169387/nutrients",
+      "portionSource": "20g per loosely filled cup is a practical recipe assumption, not a uniquely verified USDA baby-arugula cup weight; volume estimates vary (some references use 10g).",
+      "reviewNotes": "Only recipe use is 1 cup in Balsamic Turkey and Roasted Beet Grain Bowls. USDA raw arugula SR Legacy values verified; baby arugula is proxied by raw arugula. Cup mass varies by packing, so 20g is a declared standard estimate, not an exact measurement."
+    },
+    "Baby potatoes": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170027",
+      "description": "Raw potatoes with skin; russet potato proxy for unspecified baby potatoes",
+      "state": "Raw whole baby potatoes, skin on",
+      "kcalPer100g": 79,
+      "proteinPer100g": 2.14,
+      "carbsPer100g": 18.1,
+      "fatPer100g": 0.08,
+      "gramsPerUnit": {
+        "lb": 453.592
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170027/nutrients",
+      "reviewNotes": "Two recipes each use 1.5 lb baby potatoes. Reuses approved raw russet potato USDA values as a generic potato proxy; baby potato cultivar differs. Raw mass includes skin; added butter and oil separate.",
+      "portionSource": "453.592 grams per pound; weighed raw"
+    },
+    "Baby spinach": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "168462",
+      "description": "Spinach, raw",
+      "state": "Raw loose spinach leaves; baby spinach treated as standard raw spinach for macro estimates",
+      "kcalPer100g": 23,
+      "proteinPer100g": 2.86,
+      "carbsPer100g": 3.63,
+      "fatPer100g": 0.39,
+      "gramsPerUnit": {
+        "cup": 30
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/168462/nutrients",
+      "portionSource": "USDA SR Legacy raw spinach 1 cup = 30 g; https://getfoodfacts.com/food/spinach-raw-168462",
+      "reviewNotes": "Nine recipes in 110-draft batch use baby spinach, all in cups. Raw loose-leaf spinach is a practical default for baby spinach. Cooking shrinks volume but input recipe cup is measured before cooking; packed cup and brand can vary."
+    },
+    "Bacon": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Baking powder": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "172804",
+      "description": "Leavening agents, baking powder, double-acting, sodium aluminum sulfate",
+      "state": "Dry baking powder, double acting",
+      "kcalPer100g": 53,
+      "proteinPer100g": 0,
+      "carbsPer100g": 27.7,
+      "fatPer100g": 0,
+      "gramsPerUnit": {
+        "tbsp": 13.8
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/172804/nutrients",
+      "portionSource": "USDA 1 tsp baking powder ~4.6 g; 1 tbsp = 3 tsp = 13.8g as standardized volume estimate.",
+      "reviewNotes": "The only recipe use in the 110 drafts is 1 tbsp. Standard double-acting baking powder is the practical default; exact formulation varies by brand. Ingredient macros are estimated; sodium not included."
+    },
+    "Balsamic vinegar": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "172241",
+      "description": "Vinegar, balsamic",
+      "state": "Vinegar, balsamic",
+      "kcalPer100g": 88,
+      "proteinPer100g": 0.49,
+      "carbsPer100g": 17.03,
+      "fatPer100g": 0,
+      "gramsPerUnit": {
+        "cup": 255,
+        "tbsp": 16
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/172241/nutrients",
+      "portionSource": "USDA portion 1 cup = 255g, 1 tbsp = 16g; generic balsamic vinegar, not glaze or reduction.",
+      "reviewNotes": "Source-matched raw or as-purchased ingredient input. Final recipe nutrient yields/retention unverified."
+    },
+    "Barbecue sauce": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "174523",
+      "description": "Sauce, barbecue",
+      "state": "Sauce, barbecue",
+      "kcalPer100g": 172,
+      "proteinPer100g": 0.82,
+      "carbsPer100g": 40.77,
+      "fatPer100g": 0.63,
+      "gramsPerUnit": {
+        "cup": 279
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/174523/nutrients",
+      "portionSource": "USDA explicit 1 cup = 279 g; actual brand recipes vary",
+      "reviewNotes": "Exact cited USDA food and recipe-unit input reference; does NOT verify individual product variation, cooking yield or final prepared recipe nutrition."
+    },
+    "Basil pesto": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Bay leaf": {
+      "source": "Recipe preparation audit (discarded ingredient; not consumed)",
+      "foodId": "",
+      "description": "Bay leaf, removed from dish before serving",
+      "state": "Whole bay leaf simmered then discarded",
+      "kcalPer100g": 0,
+      "proteinPer100g": 0,
+      "carbsPer100g": 0,
+      "fatPer100g": 0,
+      "gramsPerUnit": {
+        "each": 0
+      },
+      "reviewStatus": "approved",
+      "portionSource": "Zero consumed mass because recipe explicitly discards the bay leaf before serving; this is not a claim that bay leaves have zero intrinsic nutrients.",
+      "reviewNotes": "Shrimp Veracruz is the only Bay leaf use (1 each). Step 4 explicitly says 'discard the bay leaf.' Zero retained mass is correct for estimated consumed macros; re-audit if recipe instructions change."
+    },
+    "Beef broth": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "171538",
+      "description": "Soup, beef broth or bouillon canned, ready-to-serve",
+      "state": "Ready-to-serve canned beef broth; not concentrated",
+      "kcalPer100g": 7,
+      "proteinPer100g": 1.14,
+      "carbsPer100g": 0.04,
+      "fatPer100g": 0.22,
+      "gramsPerUnit": {
+        "cup": 240
+      },
+      "reviewStatus": "approved",
+      "portionSource": "Approximate 240 g per US cup ready-to-serve broth; recipe quantities use cups.",
+      "reviewNotes": "All nine recipes use cup measurements. USDA FDC 171538 nutrient values cross-checked against independently published USDA-derived listings. Generic canned ready-to-serve broth default; brand/sodium and stock variations affect nutrition.",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171538/nutrients"
+    },
+    "Beef chuck roast": {
+      "source": "USDA FoodData Central Foundation Foods",
+      "foodId": "2646174",
+      "description": "Beef, chuck, roast, boneless, choice, raw",
+      "state": "Raw boneless choice chuck roast, with its natural fat",
+      "kcalPer100g": 231.71,
+      "proteinPer100g": 18.4,
+      "carbsPer100g": 0,
+      "fatPer100g": 17.8,
+      "gramsPerUnit": {
+        "lb": 453.59237
+      },
+      "reviewStatus": "approved",
+      "reviewNotes": "Three recipes use 2–2.5 lb beef chuck roast. USDA Foundation 2646174 is raw boneless choice chuck; fat trimming, cut grade, and rendered fat lost during braising change finished dish macros. Recipe unspecified grade assumed choice.",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/2646174/nutrients",
+      "portionSource": "1 lb raw boneless chuck roast = 453.59237 g; assumes entire raw weight edible"
+    },
+    "Beef short ribs": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {
+        "lb": 453.59237
+      },
+      "reviewStatus": "pending",
+      "reviewNotes": "Audited all occurrences in 110 recipe drafts: only 'lb' is used. Exact conversion is 453.59237 g per pound of the weighed product. HOLD nutrition approval until USDA entry matches raw/cooked, skin, fat trimming, and bone status. Bone-in chicken thighs require an edible-yield adjustment; 1 lb bone-in purchase weight is NOT 453.59237 g edible meat. Beef cut and fat trim can materially alter macros."
+    },
+    "Bell pepper": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170108",
+      "description": "Peppers, sweet, green, raw",
+      "state": "Raw green sweet bell pepper, stem/core/seeds excluded; color unspecified recipes use green as practical default",
+      "kcalPer100g": 20,
+      "proteinPer100g": 0.86,
+      "carbsPer100g": 4.64,
+      "fatPer100g": 0.17,
+      "gramsPerUnit": {
+        "each": 119
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170108/nutrients",
+      "portionSource": "USDA standard 1 medium green sweet pepper, edible portion ~119g; 1 each estimate. Actual pepper size and color vary.",
+      "reviewNotes": "All 13 recipe occurrences of Bell pepper/Bell peppers in 110 recipe drafts are measured as 'each'. Unspecified color standardized to green bell pepper for estimated macros; red/yellow peppers and actual weights vary. Do not treat as exact per-pepper macros."
+    },
+    "Bell peppers": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170108",
+      "description": "Peppers, sweet, green, raw",
+      "state": "Raw green sweet bell pepper, stem/core/seeds excluded; color unspecified recipes use green as practical default",
+      "kcalPer100g": 20,
+      "proteinPer100g": 0.86,
+      "carbsPer100g": 4.64,
+      "fatPer100g": 0.17,
+      "gramsPerUnit": {
+        "each": 119
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170108/nutrients",
+      "portionSource": "USDA standard 1 medium green sweet pepper, edible portion ~119g; 1 each estimate. Actual pepper size and color vary.",
+      "reviewNotes": "All 13 recipe occurrences of Bell pepper/Bell peppers in 110 recipe drafts are measured as 'each'. Unspecified color standardized to green bell pepper for estimated macros; red/yellow peppers and actual weights vary. Do not treat as exact per-pepper macros."
+    },
+    "Black beans": {
+      "source": "USDA FoodData Central Foundation Foods",
+      "foodId": "2644285",
+      "description": "Beans, black, canned, sodium added, drained and rinsed",
+      "state": "Canned black beans, drained before use; 15 oz can size is nominal packaged weight",
+      "kcalPer100g": 115,
+      "proteinPer100g": 6.91,
+      "carbsPer100g": 19.8,
+      "fatPer100g": 1.27,
+      "gramsPerUnit": {
+        "oz": 28.349523125
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/2644285/nutrients",
+      "portionSource": "15 oz is nominal can weight, 425.24g; drained edible yield is assumed 60%, or approximately 255g per can.",
+      "reviewNotes": "Two recipes specify 15 oz canned black beans and explicitly drain them. USDA Foundation 2644285 supplies drained and rinsed composition. Weight conversion applies a 60% drained yield estimate to labeled can ounces; brand-specific yield varies, and a 15oz label is not 15oz drained beans."
+    },
+    "Black beans canned": {
+      "source": "USDA FoodData Central Foundation Foods",
+      "foodId": "2644285",
+      "description": "Beans, black, canned, sodium added, drained and rinsed",
+      "state": "Drained and rinsed canned black beans",
+      "kcalPer100g": 115,
+      "proteinPer100g": 6.91,
+      "carbsPer100g": 19.8,
+      "fatPer100g": 1.27,
+      "gramsPerUnit": {
+        "cup": 172
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/2644285/nutrients",
+      "portionSource": "Estimated 172g drained beans per cup; product packing and liquid retention vary.",
+      "reviewNotes": "Three recipes use one or two cups. Assumes canned beans drained and rinsed; if cooking liquid is included, macros and sodium may differ. USDA source nutrients confirmed, cup conversion estimated."
+    },
+    "Black beans, canned drained": {
+      "source": "USDA FoodData Central Foundation Foods",
+      "foodId": "2644285",
+      "description": "Beans, black, canned, sodium added, drained and rinsed",
+      "state": "Drained and rinsed canned black beans",
+      "kcalPer100g": 115,
+      "proteinPer100g": 6.91,
+      "carbsPer100g": 19.8,
+      "fatPer100g": 1.27,
+      "gramsPerUnit": {
+        "cup": 172
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/2644285/nutrients",
+      "portionSource": "Estimated 172g drained beans per cup; product packing and liquid retention vary.",
+      "reviewNotes": "Two recipes explicitly drain and rinse one cup canned black beans. Reuses the verified USDA 2644285 reference; 172g per cup is an estimated edible volume weight, not a USDA-measured portion."
+    },
+    "Black beans, drained": {
+      "source": "USDA FoodData Central Foundation Foods",
+      "foodId": "2644285",
+      "description": "Beans, black, canned, sodium added, drained and rinsed",
+      "state": "Drained and rinsed canned black beans",
+      "kcalPer100g": 115,
+      "proteinPer100g": 6.91,
+      "carbsPer100g": 19.8,
+      "fatPer100g": 1.27,
+      "gramsPerUnit": {
+        "cup": 172
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/2644285/nutrients",
+      "portionSource": "Estimated 172g drained beans per cup; product packing and liquid retention vary.",
+      "reviewNotes": "One recipe specifies one cup drained black beans. USDA 2644285 for canned drained/rinsed black beans used as proxy; recipe says drained but does not explicitly say rinsed. Estimated 172g per cup."
+    },
+    "Black pepper": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170931",
+      "description": "Spices, pepper, black",
+      "state": "Spices, pepper, black",
+      "kcalPer100g": 251,
+      "proteinPer100g": 10.39,
+      "carbsPer100g": 63.95,
+      "fatPer100g": 3.26,
+      "gramsPerUnit": {
+        "tsp": 2.3
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170931/nutrients",
+      "portionSource": "Ground black pepper, USDA explicit 1 teaspoon ground = 2.3g; whole peppercorn teaspoon differs.",
+      "reviewNotes": "USDA source-linked ingredient input values. Preparation yield and retained ingredient fractions still require full-recipe review."
+    },
+    "Bolillo rolls": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Bone-in chicken thighs": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {
+        "lb": 453.59237
+      },
+      "reviewStatus": "pending",
+      "reviewNotes": "Audited all occurrences in 110 recipe drafts: only 'lb' is used. Exact conversion is 453.59237 g per pound of the weighed product. HOLD nutrition approval until USDA entry matches raw/cooked, skin, fat trimming, and bone status. Bone-in chicken thighs require an edible-yield adjustment; 1 lb bone-in purchase weight is NOT 453.59237 g edible meat. Beef cut and fat trim can materially alter macros."
+    },
+    "Boneless chicken breast": {
+      "source": "USDA FoodData Central Foundation",
+      "foodId": "2646170",
+      "description": "Chicken, breast, boneless, skinless, raw",
+      "state": "Chicken, breast, boneless, skinless, raw",
+      "kcalPer100g": 112.20227,
+      "proteinPer100g": 22.525,
+      "carbsPer100g": 0,
+      "fatPer100g": 1.934,
+      "gramsPerUnit": {
+        "lb": 453.59237
+      },
+      "reviewStatus": "approved",
+      "reviewNotes": "Practical default: boneless unspecified chicken is treated as skinless raw, using the already-approved identical cut reference in this same nutrition source file. All recipe occurrences use lb. If a recipe explicitly uses skin-on chicken, this default must be overridden. Brand and trimming vary.",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/2646170/nutrients"
+    },
+    "Boneless chicken breasts": {
+      "source": "USDA FoodData Central Foundation",
+      "foodId": "2646170",
+      "description": "Chicken, breast, boneless, skinless, raw",
+      "state": "Chicken, breast, boneless, skinless, raw",
+      "kcalPer100g": 112.20227,
+      "proteinPer100g": 22.525,
+      "carbsPer100g": 0,
+      "fatPer100g": 1.934,
+      "gramsPerUnit": {
+        "lb": 453.59237
+      },
+      "reviewStatus": "approved",
+      "reviewNotes": "Practical default: boneless unspecified chicken is treated as skinless raw, using the already-approved identical cut reference in this same nutrition source file. All recipe occurrences use lb. If a recipe explicitly uses skin-on chicken, this default must be overridden. Brand and trimming vary.",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/2646170/nutrients"
+    },
+    "Boneless chicken thighs": {
+      "source": "USDA FoodData Central Foundation",
+      "foodId": "2646171",
+      "description": "Chicken, thigh, boneless, skinless, raw",
+      "state": "Chicken, thigh, boneless, skinless, raw",
+      "kcalPer100g": 149.306475,
+      "proteinPer100g": 18.6125,
+      "carbsPer100g": 0,
+      "fatPer100g": 7.916,
+      "gramsPerUnit": {
+        "lb": 453.59237
+      },
+      "reviewStatus": "approved",
+      "reviewNotes": "Practical default: boneless unspecified chicken is treated as skinless raw, using the already-approved identical cut reference in this same nutrition source file. All recipe occurrences use lb. If a recipe explicitly uses skin-on chicken, this default must be overridden. Brand and trimming vary.",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/2646171/nutrients"
+    },
+    "Boneless pork chops": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Boneless pork loin": {
+      "source": "USDA FoodData Central",
+      "foodId": "2646168",
+      "description": "Pork, loin, boneless, raw",
+      "state": "Pork, loin, boneless, raw",
+      "kcalPer100g": 167.769,
+      "proteinPer100g": 21.11875,
+      "carbsPer100g": 0,
+      "fatPer100g": 9.469,
+      "gramsPerUnit": {
+        "lb": 453.59237
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/2646168/nutrients",
+      "portionSource": "Boneless uncooked loin input. USDA Foundation data; fat trimming and cooking loss not included.",
+      "reviewNotes": "Ingredient as-purchased input only. Per-serving finished recipe nutrition not certified."
+    },
+    "Boneless pork shoulder": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "167843",
+      "description": "Pork, fresh, shoulder, whole, separable lean and fat, raw",
+      "state": "Raw boneless pork shoulder with lean and fat, not trimmed lean-only",
+      "kcalPer100g": 236,
+      "proteinPer100g": 17.2,
+      "carbsPer100g": 0,
+      "fatPer100g": 18,
+      "gramsPerUnit": {
+        "lb": 453.59237
+      },
+      "reviewStatus": "approved",
+      "reviewNotes": "Four recipes specify boneless shoulder by raw pound. USDA whole shoulder lean-and-fat profile is a documented proxy for boneless shoulder, since cut trim and fat cap differ. Braising fat rendered and discarded changes final macros; no cooking yield applied.",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/167843/nutrients",
+      "portionSource": "One pound raw boneless edible shoulder equals 453.59237 grams"
+    },
+    "Boneless skinless chicken breasts": {
+      "source": "USDA FoodData Central Foundation",
+      "foodId": "2646170",
+      "description": "Chicken, breast, boneless, skinless, raw",
+      "state": "Chicken, breast, boneless, skinless, raw",
+      "kcalPer100g": 112.20227,
+      "proteinPer100g": 22.525,
+      "carbsPer100g": 0,
+      "fatPer100g": 1.934,
+      "gramsPerUnit": {
+        "lb": 453.59237
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/2646170/nutrients",
+      "portionSource": "1 lb = 453.59237 g; raw boneless skinless edible breast. USDA Foundation Atwater Specific Factor energy 2048 is selected explicitly",
+      "reviewNotes": "Source-linked ingredient input reference only. Brand variation, portions before peeling, cooking yield and prepared-meal nutrition are NOT certified."
+    },
+    "Boneless skinless chicken thighs": {
+      "source": "USDA FoodData Central Foundation",
+      "foodId": "2646171",
+      "description": "Chicken, thigh, boneless, skinless, raw",
+      "state": "Chicken, thigh, boneless, skinless, raw",
+      "kcalPer100g": 149.306475,
+      "proteinPer100g": 18.6125,
+      "carbsPer100g": 0,
+      "fatPer100g": 7.916,
+      "gramsPerUnit": {
+        "lb": 453.59237
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/2646171/nutrients",
+      "portionSource": "1 lb = 453.59237 g; raw boneless skinless edible thigh. USDA Foundation Atwater Specific Factor energy 2048 is selected explicitly",
+      "reviewNotes": "Source-linked ingredient input reference only. Brand variation, portions before peeling, cooking yield and prepared-meal nutrition are NOT certified."
+    },
+    "Bread crumbs": {
+      "source": "USDA FoodData Central",
+      "foodId": "174928",
+      "description": "Bread, crumbs, dry, grated, plain",
+      "state": "Bread, crumbs, dry, grated, plain",
+      "kcalPer100g": 395,
+      "proteinPer100g": 13.35,
+      "carbsPer100g": 71.98,
+      "fatPer100g": 5.3,
+      "gramsPerUnit": {
+        "cup": 108
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/174928/nutrients",
+      "portionSource": "USDA 1 cup plain dry grated breadcrumbs = 108g; the recipe says bread crumbs, not seasoned panko.",
+      "reviewNotes": "Ingredient as-purchased input only. Per-serving finished recipe nutrition not certified."
+    },
+    "Breadcrumbs": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "174928",
+      "description": "Bread crumbs dry grated plain",
+      "state": "Plain dry breadcrumbs",
+      "kcalPer100g": 395,
+      "proteinPer100g": 13.35,
+      "carbsPer100g": 71.98,
+      "fatPer100g": 5.3,
+      "gramsPerUnit": {
+        "cup": 108
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/174928/nutrients",
+      "portionSource": "Approximate 108g per cup of fine dry crumbs",
+      "reviewNotes": "Six recipes use plain breadcrumbs. Coarse and panko varieties have different cup weights."
+    },
+    "Breakfast ham": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Breakfast sausage": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Broccoli florets": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170379",
+      "description": "Broccoli, raw",
+      "state": "Raw broccoli florets, chopped; stems mostly excluded",
+      "kcalPer100g": 34,
+      "proteinPer100g": 2.82,
+      "carbsPer100g": 6.64,
+      "fatPer100g": 0.37,
+      "gramsPerUnit": {
+        "cup": 91
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170379/nutrients",
+      "portionSource": "USDA standard 1 cup chopped raw broccoli ~91g; floret-only cup may vary by cut and packing.",
+      "reviewNotes": "Both recipes use 2 cups Broccoli florets. Raw broccoli used as practical proxy; floret-only density and pre-cooked versus cooked volume affect estimates."
+    },
+    "Brown rice": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "169703",
+      "description": "Rice, brown, long-grain, raw",
+      "state": "Dry uncooked long-grain brown rice",
+      "kcalPer100g": 367,
+      "proteinPer100g": 7.54,
+      "carbsPer100g": 76.25,
+      "fatPer100g": 3.2,
+      "gramsPerUnit": {
+        "cup": 190
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169703/nutrients",
+      "portionSource": "Standard dry brown long-grain rice approximately 190 g per cup; brand and cup fill vary.",
+      "reviewNotes": "Recipe steps explicitly say cook 1½ cups DRY brown rice. Use uncooked rice macros and mass, not cooked rice cup conversion. One recipe occurrence."
+    },
+    "Brown sugar": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "168833",
+      "description": "Sugars, brown",
+      "state": "Brown sugar, standard packed tablespoon",
+      "kcalPer100g": 380,
+      "proteinPer100g": 0.12,
+      "carbsPer100g": 98.09,
+      "fatPer100g": 0,
+      "gramsPerUnit": {
+        "tbsp": 13.75
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/168833/nutrients",
+      "portionSource": "Standard packed brown sugar 1 cup ~220g, hence 1 tbsp ~13.75g; unpacked volume weighs less.",
+      "reviewNotes": "All four Brown sugar recipe uses are tbsp. Packed brown sugar standard assumption; recipes do not specify packing. Sugar weight affects carb and calorie estimates."
+    },
+    "Butter": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "173430",
+      "description": "Butter, without salt",
+      "state": "Regular unsalted dairy butter; salted butter has similar macros",
+      "kcalPer100g": 717,
+      "proteinPer100g": 0.85,
+      "carbsPer100g": 0.06,
+      "fatPer100g": 81.11,
+      "gramsPerUnit": {
+        "tbsp": 14.2
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/173430/nutrients",
+      "portionSource": "USDA standard 1 tablespoon butter ~14.2 g.",
+      "reviewNotes": "All 14 Butter recipe uses in 110 drafts are tablespoons. Unsalted butter selected as macro proxy for unspecified butter; salted butter primarily differs in sodium. Butter is macro-significant; verify brand and tablespoon portion when precise results needed."
+    },
+    "Butter lettuce": {
+      "source": "USDA FoodData Central SR Legacy (raw butterhead lettuce)",
+      "foodId": "169249",
+      "description": "Lettuce, butterhead (includes Boston and Bibb types), raw",
+      "state": "Raw washed butterhead lettuce leaves, core discarded",
+      "kcalPer100g": 13,
+      "proteinPer100g": 1.35,
+      "carbsPer100g": 2.23,
+      "fatPer100g": 0.22,
+      "gramsPerUnit": {
+        "head": 163
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169249/nutrients",
+      "portionSource": "Approximately 163g edible leaves per medium butterhead lettuce head; head size and trimming vary.",
+      "reviewNotes": "Both recipes explicitly use one head, separating leaves for lettuce cups/wraps. Standard edible leaves per head are an estimate; actual head size and discarded core vary."
+    },
+    "Butternut squash": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Cajun seasoning": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Canned black beans": {
+      "source": "USDA FoodData Central Foundation Foods",
+      "foodId": "2644285",
+      "description": "Beans, black, canned, sodium added, drained and rinsed",
+      "state": "Drained and rinsed canned black beans",
+      "kcalPer100g": 115,
+      "proteinPer100g": 6.91,
+      "carbsPer100g": 19.8,
+      "fatPer100g": 1.27,
+      "gramsPerUnit": {
+        "cup": 172
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/2644285/nutrients",
+      "portionSource": "Estimated 172g drained beans per cup; product packing and liquid retention vary.",
+      "reviewNotes": "Two recipes explicitly drain and rinse one cup canned black beans. Reuses the verified USDA 2644285 reference; 172g per cup is an estimated edible volume weight, not a USDA-measured portion."
+    },
+    "Canned diced green chiles": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Canned navy beans": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Capers, drained": {
+      "source": "USDA FoodData Central",
+      "foodId": "172238",
+      "description": "Capers, canned",
+      "state": "Capers, canned",
+      "kcalPer100g": 23,
+      "proteinPer100g": 2.36,
+      "carbsPer100g": 4.89,
+      "fatPer100g": 0.86,
+      "gramsPerUnit": {
+        "tbsp": 8.6
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/172238/nutrients",
+      "portionSource": "USDA 1 tbsp drained capers = 8.6g, matching recipe's drained capers.",
+      "reviewNotes": "Ingredient as-purchased input only. Per-serving finished recipe nutrition not certified."
+    },
+    "Carrot": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170393",
+      "description": "Carrots, raw",
+      "state": "Raw carrot, edible portion without tops",
+      "kcalPer100g": 41,
+      "proteinPer100g": 0.93,
+      "carbsPer100g": 9.58,
+      "fatPer100g": 0.24,
+      "gramsPerUnit": {
+        "each": 61
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170393/nutrients",
+      "portionSource": "Standard medium raw carrot approximately 61g edible portion; recipe sizes vary.",
+      "reviewNotes": "All seven recipe occurrences of Carrot/Carrots use 'each'. Raw medium carrot is a practical default; actual carrot sizes vary."
+    },
+    "Carrots": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170393",
+      "description": "Carrots, raw",
+      "state": "Raw carrot, edible portion without tops",
+      "kcalPer100g": 41,
+      "proteinPer100g": 0.93,
+      "carbsPer100g": 9.58,
+      "fatPer100g": 0.24,
+      "gramsPerUnit": {
+        "each": 61
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170393/nutrients",
+      "portionSource": "Standard medium raw carrot approximately 61g edible portion; recipe sizes vary.",
+      "reviewNotes": "All seven recipe occurrences of Carrot/Carrots use 'each'. Raw medium carrot is a practical default; actual carrot sizes vary."
+    },
+    "Catfish fillets": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "175165",
+      "description": "Fish, catfish, channel, farmed, raw",
+      "state": "Fish, catfish, channel, farmed, raw",
+      "kcalPer100g": 119,
+      "proteinPer100g": 15.23,
+      "carbsPer100g": 0,
+      "fatPer100g": 5.94,
+      "gramsPerUnit": {
+        "lb": 453.59237
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/175165/nutrients",
+      "portionSource": "USDA raw farmed catfish edible fillet; 1 lb = 453.59237g net edible input; wild fish differs",
+      "reviewNotes": "Source-verified ingredient input for exact specified USDA form only. Product variation, packing, cooking retention and finished-recipe serving nutrition remain unverified."
+    },
+    "Celery stalks": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "169988",
+      "description": "Celery, raw",
+      "state": "Raw celery stalks, trimmed edible portion",
+      "kcalPer100g": 14,
+      "proteinPer100g": 0.69,
+      "carbsPer100g": 2.97,
+      "fatPer100g": 0.17,
+      "gramsPerUnit": {
+        "each": 40
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169988/nutrients",
+      "portionSource": "Standard medium celery stalk about 40 g edible portion; varies by stalk size.",
+      "reviewNotes": "Three recipe uses, all 'each' (3 stalks per soup). Standard medium stalk assumption; celery heart versus outer stalk may vary."
+    },
+    "Cheddar": {
+      "source": "USDA FoodData Central",
+      "foodId": "328637",
+      "description": "Cheese, cheddar",
+      "state": "Cheese, cheddar",
+      "kcalPer100g": 408,
+      "proteinPer100g": 23.3,
+      "carbsPer100g": 2.44,
+      "fatPer100g": 34,
+      "gramsPerUnit": {
+        "cup": 105
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/328637/nutrients",
+      "portionSource": "USDA FDC explicit 1 cup shredded cheddar = 105 g. Recipe instructions specify sprinkling or melting cups of cheddar, assumed shredded rather than block; brand variation remains.",
+      "reviewNotes": "Ingredient-source mapping only. Finished-meal nutrition cannot be published without separate recipe yield and consumed-portion verification."
+    },
+    "Cheddar cheese": {
+      "source": "USDA FoodData Central",
+      "foodId": "328637",
+      "description": "Cheese, cheddar",
+      "state": "Cheese, cheddar",
+      "kcalPer100g": 408,
+      "proteinPer100g": 23.3,
+      "carbsPer100g": 2.44,
+      "fatPer100g": 34,
+      "gramsPerUnit": {
+        "cup": 105
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/328637/nutrients",
+      "portionSource": "USDA FDC explicit 1 cup shredded cheddar = 105 g. Recipe directions melt or stir cups of cheddar; shredded state assumed; brand variation remains.",
+      "reviewNotes": "Ingredient-source mapping only. Finished-meal nutrition cannot be published without separate recipe yield and consumed-portion verification."
+    },
+    "Cherry tomatoes": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170457",
+      "description": "Tomatoes, red, ripe, raw, year round average",
+      "state": "Raw cherry tomatoes, standard red raw tomato nutrient proxy",
+      "kcalPer100g": 18,
+      "proteinPer100g": 0.88,
+      "carbsPer100g": 3.89,
+      "fatPer100g": 0.2,
+      "gramsPerUnit": {
+        "cup": 149
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170457/nutrients",
+      "portionSource": "Approximate 149 g per cup of whole cherry tomatoes; actual cup weight depends on tomato size and whether halved.",
+      "reviewNotes": "Both recipe uses are 2 cups. USDA red raw tomato macros used as a practical proxy for cherry tomatoes; volume-to-mass assumption is approximate."
+    },
+    "Chicken breasts": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "171077",
+      "description": "Chicken breast boneless skinless meat only raw",
+      "state": "Raw skinless boneless chicken breast",
+      "kcalPer100g": 120,
+      "proteinPer100g": 22.5,
+      "carbsPer100g": 0,
+      "fatPer100g": 2.62,
+      "gramsPerUnit": {
+        "lb": 453.592
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171077/nutrients",
+      "portionSource": "One pound raw boneless skinless breast is 453.592 grams",
+      "reviewNotes": "Two recipes each use 1.5 lb. Skinless boneless is a declared assumption; skin-on and bone-in cuts differ. Cooking yield not applied."
+    },
+    "Chicken broth": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "174536",
+      "description": "Soup, chicken broth, ready-to-serve",
+      "state": "Ready-to-serve chicken broth, not condensed or dry bouillon",
+      "kcalPer100g": 6,
+      "proteinPer100g": 0.64,
+      "carbsPer100g": 0.44,
+      "fatPer100g": 0.21,
+      "gramsPerUnit": {
+        "cup": 240
+      },
+      "reviewStatus": "approved",
+      "portionSource": "Approximate 240g per US cup ready-to-serve chicken broth; density/brand can vary.",
+      "reviewNotes": "All 25 recipe occurrences use cups. Exact USDA SR Legacy FDC 174536 ready-to-serve record and macronutrients cross-checked against USDA-derived sources (e.g. batchbase.com.au/usda-foods/174536). Not equivalent to concentrated, reduced-sodium, or homemade bone broth; sodium and protein vary by brand.",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/174536/nutrients"
+    },
+    "Chicken tenders": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Chicken thighs": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Chicken wings": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Chickpeas": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Chili garlic sauce": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Chili powder": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "171319",
+      "description": "Spices, chili powder",
+      "state": "dry blended chili powder; not pure ground chile or fresh chili",
+      "kcalPer100g": 282,
+      "proteinPer100g": 13.46,
+      "carbsPer100g": 49.7,
+      "fatPer100g": 14.28,
+      "gramsPerUnit": {
+        "tsp": 2.7,
+        "tbsp": 8
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171319/nutrients",
+      "reviewNotes": "USDA chili powder BLEND; recipes using a different pure ground chile require reclassification. Per-serving totals may require cooked retained quantity review."
+    },
+    "Chipotle pepper in adobo": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Chipotle peppers in adobo": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Cilantro": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "169997",
+      "description": "Coriander (cilantro) leaves, raw",
+      "state": "Fresh raw cilantro leaves, loosely chopped",
+      "kcalPer100g": 23,
+      "proteinPer100g": 2.13,
+      "carbsPer100g": 3.67,
+      "fatPer100g": 0.52,
+      "gramsPerUnit": {
+        "cup": 16
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169997/nutrients",
+      "portionSource": "USDA standard chopped cilantro approximately 16 g per cup; loosely filled volume may vary.",
+      "reviewNotes": "All 19 recipe uses of cilantro are in cups (mostly 1/4 cup). Fresh cilantro leaves assumed, not dried coriander seed. Estimated macros depend on chopping/packing."
+    },
+    "Coconut milk": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Cod fillets": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Coleslaw mix": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Cooked chicken": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Cooked chicken breast": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Cooked diced ham": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Cooked pinto beans": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "173796",
+      "description": "Beans, pinto, mature seeds, cooked, boiled, with salt",
+      "state": "Beans, pinto, mature seeds, cooked, boiled, with salt",
+      "kcalPer100g": 143,
+      "proteinPer100g": 9.01,
+      "carbsPer100g": 26.22,
+      "fatPer100g": 0.65,
+      "gramsPerUnit": {
+        "cup": 171
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/173796/nutrients",
+      "portionSource": "USDA explicit 1 cup cooked pinto beans = 171 g",
+      "reviewNotes": "Exact cited USDA food and recipe-unit input reference; does NOT verify individual product variation, cooking yield or final prepared recipe nutrition."
+    },
+    "Cooked rice": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "168878",
+      "description": "Rice, white, long-grain, regular, enriched, cooked",
+      "state": "Cooked plain long-grain white rice",
+      "kcalPer100g": 130,
+      "proteinPer100g": 2.69,
+      "carbsPer100g": 28.17,
+      "fatPer100g": 0.28,
+      "gramsPerUnit": {
+        "cup": 158
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/168878/nutrients",
+      "portionSource": "USDA standard 1 cup cooked long-grain white rice ~158g; preparation and packing vary.",
+      "reviewNotes": "Corrected wrong USDA identifier: FDC 169756 is RAW rice, not cooked. FDC 168878 matches this record's cooked enriched rice values (130 kcal, 2.69g protein, 28.17g carbohydrate, 0.28g fat per 100g) and 158g per cup. Five recipes use cooked rice by cup; cooking additions tracked separately."
+    },
+    "Cooked shredded chicken": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "171477",
+      "description": "Chicken, broilers or fryers, breast, meat only, cooked, roasted",
+      "state": "Fully cooked shredded boneless skinless chicken breast, edible cooked weight",
+      "kcalPer100g": 165,
+      "proteinPer100g": 31.02,
+      "carbsPer100g": 0,
+      "fatPer100g": 3.57,
+      "gramsPerUnit": {
+        "cup": 140,
+        "lb": 453.59237
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171477/nutrients",
+      "portionSource": "USDA cooked breast 1 cup chopped/diced = 140g, used as shredded-cup proxy; 1 lb cooked edible chicken = 453.59237g",
+      "reviewNotes": "Four recipes specify previously cooked chicken (two use cups, two use pounds). Cooked skinless breast is an explicit lean-meat proxy; thigh meat, rotisserie skin, added fat and packing of shredded pieces vary. Never apply raw-to-cooked yield again to pounds explicitly labeled cooked."
+    },
+    "Cooked shredded turkey": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Cooked shrimp": {
+      "source": "USDA FoodData Central",
+      "foodId": "175180",
+      "description": "Crustaceans, shrimp, cooked",
+      "state": "Crustaceans, shrimp, cooked",
+      "kcalPer100g": 99,
+      "proteinPer100g": 23.98,
+      "carbsPer100g": 0.2,
+      "fatPer100g": 0.28,
+      "gramsPerUnit": {
+        "lb": 453.59237
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/175180/nutrients",
+      "portionSource": "Cooked shrimp USDA per-100g values, mass pound edible cooked shrimp; recipe specifies already-cooked peeled shrimp, 145F chilled before using.",
+      "reviewNotes": "Verified source and unit for ingredient input, not cooked recipe yield or served macro certification."
+    },
+    "Corn kernels": {
+      "source": "USDA FoodData Central SR Legacy (generic sweet yellow corn)",
+      "foodId": "169998",
+      "description": "Corn, sweet, yellow, raw",
+      "state": "Edible corn kernels, raw/frozen unspecified (raw sweet corn proxy)",
+      "kcalPer100g": 86,
+      "proteinPer100g": 3.27,
+      "carbsPer100g": 18.7,
+      "fatPer100g": 1.35,
+      "gramsPerUnit": {
+        "cup": 145
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169998/nutrients",
+      "portionSource": "Approximate 145g per cup raw sweet corn kernels.",
+      "reviewNotes": "Four recipes use 1–4 cups corn kernels, warmed, charred, or simmered. Generic raw sweet yellow corn reference; frozen/canned corn differ in drained weight and sodium, which recipes do not specify. One-cup kernel weight is an estimate."
+    },
+    "Corn tortillas": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "173241",
+      "description": "Corn tortillas ready to bake or fry without added salt",
+      "state": "Corn tortilla before frying",
+      "kcalPer100g": 222,
+      "proteinPer100g": 5.7,
+      "carbsPer100g": 46.6,
+      "fatPer100g": 2.5,
+      "gramsPerUnit": {
+        "each": 26
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/173241/nutrients",
+      "portionSource": "USDA medium tortilla 26 grams; street taco size varies",
+      "reviewNotes": "11 recipes use 8 to 18 tortillas. Generic unsalted reference; brand sodium and added cooking oil differ."
+    },
+    "Cornmeal": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "169698",
+      "description": "Cornmeal, whole-grain, yellow",
+      "state": "Dry yellow whole-grain cornmeal, uncooked",
+      "kcalPer100g": 362,
+      "proteinPer100g": 8.12,
+      "carbsPer100g": 76.89,
+      "fatPer100g": 3.59,
+      "gramsPerUnit": {
+        "cup": 138
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169698/nutrients",
+      "portionSource": "Standard dry cornmeal ~138 g per cup; grain grind, brand, and packing may vary.",
+      "reviewNotes": "Single recipe use in Cornbread Crusted Turkey Tamale Pie is 1 cup. Dry cornmeal (not cooked polenta) assumed; whole-grain yellow variety is practical standard, but degermed cornmeal may have different fat and protein."
+    },
+    "Cornstarch": {
+      "source": "USDA FoodData Central",
+      "foodId": "169698",
+      "description": "Cornstarch",
+      "state": "Cornstarch",
+      "kcalPer100g": 381,
+      "proteinPer100g": 0.26,
+      "carbsPer100g": 91.27,
+      "fatPer100g": 0.05,
+      "gramsPerUnit": {
+        "tbsp": 8
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169698/nutrients",
+      "portionSource": "USDA dry cornstarch 1 cup = 128g; standard US 1 tbsp=1/16 cup => 8g, volume conversion assumes level scoop.",
+      "reviewNotes": "Verified source and unit for ingredient input, not cooked recipe yield or served macro certification."
+    },
+    "Cotija cheese": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Cream cheese": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "173418",
+      "description": "Cheese, cream",
+      "state": "Cheese, cream",
+      "kcalPer100g": 350,
+      "proteinPer100g": 6.15,
+      "carbsPer100g": 5.52,
+      "fatPer100g": 34.44,
+      "gramsPerUnit": {
+        "oz": 28.349523125
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/173418/nutrients",
+      "portionSource": "Full-fat regular cream cheese reference; oz is avoirdupois mass ounce; excludes whipped and reduced-fat variants.",
+      "reviewNotes": "Source-matched raw or as-purchased ingredient input. Final recipe nutrient yields/retention unverified."
+    },
+    "Cream of chicken soup": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "171146",
+      "description": "Soup, cream of chicken, canned, condensed",
+      "state": "Soup, cream of chicken, canned, condensed",
+      "kcalPer100g": 90,
+      "proteinPer100g": 2.38,
+      "carbsPer100g": 7.16,
+      "fatPer100g": 5.77,
+      "gramsPerUnit": {
+        "can": 305
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171146/nutrients",
+      "portionSource": "USDA explicit standard condensed can (10.75 oz) = 305 g; not prepared/diluted soup",
+      "reviewNotes": "Exact cited USDA food and recipe-unit input reference; does NOT verify individual product variation, cooking yield or final prepared recipe nutrition."
+    },
+    "Cremini mushrooms": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Crumbled cotija cheese": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Crushed tomatoes": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170501",
+      "description": "Tomatoes, crushed, canned",
+      "state": "Tomatoes, crushed, canned",
+      "kcalPer100g": 32,
+      "proteinPer100g": 1.64,
+      "carbsPer100g": 7.29,
+      "fatPer100g": 0.28,
+      "gramsPerUnit": {
+        "cup": 242,
+        "oz": 28.349523125
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170501/nutrients",
+      "portionSource": "USDA lists 0.5 cup = 121 g, scaled to 1 cup = 242g; oz interpreted as mass ounce not fluid ounce. Brands and drained liquid may vary.",
+      "reviewNotes": "Source-linked ingredient INPUT mapping. Does not imply final recipe serving nutrition is verified; recipe-specific cooking retention and yield must be checked."
+    },
+    "Cucumber": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "168409",
+      "description": "Cucumber, with peel, raw",
+      "state": "Raw cucumber with peel; ends removed",
+      "kcalPer100g": 15,
+      "proteinPer100g": 0.65,
+      "carbsPer100g": 3.63,
+      "fatPer100g": 0.11,
+      "gramsPerUnit": {
+        "each": 301
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/168409/nutrients",
+      "portionSource": "Standard medium cucumber with peel approximately 301 g edible; size varies substantially.",
+      "reviewNotes": "Both uses in the 110 recipe drafts are 1 each. Assumes standard medium cucumber with peel, not small Persian cucumber or large English cucumber. Macro estimates vary by cucumber size."
+    },
+    "Cumin": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170923",
+      "description": "Spices, cumin seed (ground cumin proxy)",
+      "state": "Dried culinary spice",
+      "kcalPer100g": 375,
+      "proteinPer100g": 17.81,
+      "carbsPer100g": 44.24,
+      "fatPer100g": 22.27,
+      "gramsPerUnit": {
+        "tsp": 2.1
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170923/nutrients",
+      "portionSource": "Typical ground cumin powder: ~2.1g per level teaspoon; powder density varies.",
+      "reviewNotes": "Two recipes specify 1 tsp cumin without form; interpreted as ground dried cumin used in seasoning. Reuses the approved ground cumin USDA cumin seed proxy. Whole seeds would weigh differently."
+    },
+    "Deli ham": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Diced green chiles": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Diced tomatoes": {
+      "source": "USDA FoodData Central Foundation Foods",
+      "foodId": "333281",
+      "description": "Tomatoes, canned, red, ripe, diced",
+      "state": "canned diced tomatoes with accompanying juice, as-purchased",
+      "kcalPer100g": 18,
+      "proteinPer100g": 0.84,
+      "carbsPer100g": 3.32,
+      "fatPer100g": 0.5,
+      "gramsPerUnit": {
+        "cup": 245,
+        "oz": 28.349523125
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/333281/nutrients",
+      "portionSource": "USDA 1 cup=245g canned diced tomatoes. oz is mass ounce (not fluid oz).",
+      "reviewNotes": "Only for canned diced tomatoes including juice; drained recipes and cooking yields need different mapping. Source ingredient calculations do not certify finished dish nutrition."
+    },
+    "Diced tomatoes canned": {
+      "source": "USDA FoodData Central Foundation Foods",
+      "foodId": "333281",
+      "description": "Tomatoes, canned, red, ripe, diced",
+      "state": "canned diced tomatoes with accompanying juice, as-purchased",
+      "kcalPer100g": 18,
+      "proteinPer100g": 0.84,
+      "carbsPer100g": 3.32,
+      "fatPer100g": 0.5,
+      "gramsPerUnit": {
+        "cup": 245
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/333281/nutrients",
+      "portionSource": "USDA 1 cup=245g canned diced tomatoes. oz is mass ounce (not fluid oz).",
+      "reviewNotes": "Only for canned diced tomatoes including juice; drained recipes and cooking yields need different mapping. Source ingredient calculations do not certify finished dish nutrition."
+    },
+    "Diced tomatoes, drained": {
+      "source": "USDA FoodData Central Foundation Foods",
+      "foodId": "333281",
+      "description": "Tomatoes, canned, red, ripe, diced",
+      "state": "Canned diced tomatoes, drained of packing liquid",
+      "kcalPer100g": 18,
+      "proteinPer100g": 0.84,
+      "carbsPer100g": 3.32,
+      "fatPer100g": 0.5,
+      "gramsPerUnit": {
+        "cup": 180
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/333281/nutrients",
+      "portionSource": "Estimated 180g per cup of drained diced canned tomatoes; packing varies",
+      "reviewNotes": "Two recipes explicitly use one cup drained tomatoes. USDA 333281 provides canned diced tomatoes with juice, used as nutrient composition proxy only; drained solids may have different concentrations. Cup mass estimated, not USDA verified."
+    },
+    "Dijon mustard": {
+      "source": "McCormick / French's Dijon mustard manufacturer nutritional datasheet (17 March 2023)",
+      "foodId": "",
+      "description": "French's Dijon mustard, unrounded manufacturer per-100g nutrients (brand proxy)",
+      "state": "Prepared Dijon mustard, not honey mustard",
+      "kcalPer100g": 116.734,
+      "proteinPer100g": 5.183,
+      "carbsPer100g": 8.355,
+      "fatPer100g": 7.192,
+      "gramsPerUnit": {
+        "tsp": 5,
+        "tbsp": 15,
+        "cup": 240
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://www.webstaurantstore.com/documents/nutrition/901621933_901603778_nutn_frenchs_mustard_dijon_pc_200-10g.pdf",
+      "portionSource": "Approximate condiment conversions: 1 tsp=5g; 1 tbsp=15g; 1 cup=240g.",
+      "reviewNotes": "Nine recipe uses checked: 1 tsp, 1–2 tbsp, and 0.25 cup. Manufacturer nutrition data is specific to French's Dijon and not universal to all Dijon products; cup mass estimated and mustard density varies. Values from unrounded manufacturer datasheet."
+    },
+    "Dried ancho chiles": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "169396",
+      "description": "Peppers, ancho, dried",
+      "state": "Peppers, ancho, dried",
+      "kcalPer100g": 281,
+      "proteinPer100g": 11.86,
+      "carbsPer100g": 51.42,
+      "fatPer100g": 8.2,
+      "gramsPerUnit": {
+        "each": 17
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169396/nutrients",
+      "portionSource": "USDA explicit 1 dried ancho pepper = 17 g",
+      "reviewNotes": "Exact cited USDA food and recipe-unit input reference; does NOT verify individual product variation, cooking yield or final prepared recipe nutrition."
+    },
+    "Dried apricots": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Dried guajillo chiles": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Dried oregano": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "171328",
+      "description": "Spices, oregano, dried",
+      "state": "Dried culinary spice",
+      "kcalPer100g": 265,
+      "proteinPer100g": 9,
+      "carbsPer100g": 68.92,
+      "fatPer100g": 4.28,
+      "gramsPerUnit": {
+        "tsp": 1
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171328/nutrients",
+      "portionSource": "USDA food portion: 1 tsp dried oregano leaves = 1g.",
+      "reviewNotes": "13 recipes use tsp; 1 tsp leaves weighs 1g per USDA food portion; do not use ground oregano 1.8g tsp conversion."
+    },
+    "Dried rosemary": {
+      "source": "USDA FoodData Central",
+      "foodId": "171333",
+      "description": "Spices, rosemary, dried",
+      "state": "Spices, rosemary, dried",
+      "kcalPer100g": 331,
+      "proteinPer100g": 4.88,
+      "carbsPer100g": 64.06,
+      "fatPer100g": 15.22,
+      "gramsPerUnit": {
+        "tsp": 1.2
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171333/nutrients",
+      "portionSource": "USDA 1 tsp dried rosemary = 1.2g.",
+      "reviewNotes": "Verified source and unit for ingredient input, not cooked recipe yield or served macro certification."
+    },
+    "Dried thyme": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170938",
+      "description": "Spices, thyme, dried",
+      "state": "Dried thyme leaf",
+      "kcalPer100g": 276,
+      "proteinPer100g": 9.11,
+      "carbsPer100g": 63.94,
+      "fatPer100g": 7.43,
+      "gramsPerUnit": {
+        "tsp": 1
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170938/nutrients",
+      "portionSource": "Approximate 1g per level teaspoon dried thyme leaves; leaf size and packing vary.",
+      "reviewNotes": "Three recipes use 1 tsp each. Dried thyme is distinct from fresh thyme; source is a generic dried culinary herb profile. Volume-to-mass conversion is an estimate."
+    },
+    "Dry breadcrumbs": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Dry couscous": {
+      "source": "USDA FoodData Central",
+      "foodId": "169699",
+      "description": "Couscous, dry",
+      "state": "Couscous, dry",
+      "kcalPer100g": 376,
+      "proteinPer100g": 12.76,
+      "carbsPer100g": 77.43,
+      "fatPer100g": 0.64,
+      "gramsPerUnit": {
+        "cup": 173
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169699/nutrients",
+      "portionSource": "USDA 1 cup dry couscous = 173g; recipe explicitly specifies dry couscous.",
+      "reviewNotes": "Verified source and unit for ingredient input, not cooked recipe yield or served macro certification."
+    },
+    "Dry elbow macaroni": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "169736",
+      "description": "Pasta, dry, enriched",
+      "state": "Dry uncooked enriched wheat elbow macaroni",
+      "kcalPer100g": 371,
+      "proteinPer100g": 13.04,
+      "carbsPer100g": 74.67,
+      "fatPer100g": 1.51,
+      "gramsPerUnit": {
+        "oz": 28.349523125
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169736/nutrients",
+      "portionSource": "Ounces are dry pasta mass; 1 oz = 28.349523125g",
+      "reviewNotes": "Two recipes each specify 12 oz dry elbow macaroni. Generic enriched dry pasta nutrient composition is a documented shape-independent proxy; cooked pasta values must not be used for dry recipe input."
+    },
+    "Dry fettuccine": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Dry linguine": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Dry orzo": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Dry penne pasta": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "169736",
+      "description": "Pasta, dry, enriched",
+      "state": "Standard enriched wheat penne, dry",
+      "kcalPer100g": 371,
+      "proteinPer100g": 13.04,
+      "carbsPer100g": 74.67,
+      "fatPer100g": 1.51,
+      "gramsPerUnit": {
+        "oz": 28.349523125
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169736/nutrients",
+      "portionSource": "USDA enriched dry pasta lists 2 oz = 57 g (rounded) and specifically 1 cup penne = 95 g; international avoirdupois 1 oz = 28.349523125 g; saved USDA detail evidence: ops/recipe-expansion/usda-review-evidence-20261021/evidence-150.json.",
+      "reviewNotes": "Ingredient INPUT only; no finished-meal macros or yield/retention verified. Recipe preparation confirmation: Creamy Tuscan Chicken Pasta explicitly specifies standard enriched wheat dry penne, not whole-wheat or gluten-free."
+    },
+    "Dry ziti pasta": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Egg": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "171287",
+      "description": "Egg, whole, raw, fresh",
+      "state": "Raw whole egg without shell; large size standard",
+      "kcalPer100g": 143,
+      "proteinPer100g": 12.56,
+      "carbsPer100g": 0.72,
+      "fatPer100g": 9.51,
+      "gramsPerUnit": {
+        "each": 50
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171287/nutrients",
+      "portionSource": "USDA standard large whole egg, edible contents 50 g per egg; shell excluded.",
+      "reviewNotes": "Audited 110 recipe drafts: all uses of Egg and Eggs are 'each'. Standard large egg (50g edible raw contents) is a practical recipe default. Recipe may vary by egg size; cooking does not create new input macros."
+    },
+    "Egg noodles": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "169731",
+      "description": "Noodles, egg, dry, enriched",
+      "state": "Noodles, egg, dry, enriched",
+      "kcalPer100g": 384,
+      "proteinPer100g": 14.16,
+      "carbsPer100g": 71.27,
+      "fatPer100g": 4.44,
+      "gramsPerUnit": {
+        "oz": 28.5
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169731/nutrients",
+      "portionSource": "USDA explicit 2 oz dry egg noodles = 57 g; 1 oz by source conversion = 28.5 g",
+      "reviewNotes": "Exact cited USDA food and recipe-unit input reference; does NOT verify individual product variation, cooking yield or final prepared recipe nutrition."
+    },
+    "Eggs": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "171287",
+      "description": "Egg, whole, raw, fresh",
+      "state": "Raw whole egg without shell; large size standard",
+      "kcalPer100g": 143,
+      "proteinPer100g": 12.56,
+      "carbsPer100g": 0.72,
+      "fatPer100g": 9.51,
+      "gramsPerUnit": {
+        "each": 50
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171287/nutrients",
+      "portionSource": "USDA standard large whole egg, edible contents 50 g per egg; shell excluded.",
+      "reviewNotes": "Audited 110 recipe drafts: all uses of Egg and Eggs are 'each'. Standard large egg (50g edible raw contents) is a practical recipe default. Recipe may vary by egg size; cooking does not create new input macros."
+    },
+    "Elbow macaroni": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Farro": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Feta": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "173420",
+      "description": "Cheese, feta",
+      "state": "Feta cheese, crumbled",
+      "kcalPer100g": 265,
+      "proteinPer100g": 14.21,
+      "carbsPer100g": 3.88,
+      "fatPer100g": 21.49,
+      "gramsPerUnit": {
+        "cup": 150
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/173420/nutrients",
+      "portionSource": "USDA 1 cup crumbled feta = 150 g; saved USDA detail evidence: ops/recipe-expansion/usda-review-evidence-20261021/evidence-175.json.",
+      "reviewNotes": "Ingredient INPUT only; no finished-meal macros or yield/retention verified. Recipe preparation confirmation: Roasted Red Pepper Turkey Burgers explicitly says 1/2 cup crumbled feta."
+    },
+    "Feta cheese": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "173420",
+      "description": "Cheese, feta",
+      "state": "Feta cheese, crumbled (as explicitly specified in both recipes)",
+      "kcalPer100g": 265,
+      "proteinPer100g": 14.21,
+      "carbsPer100g": 3.88,
+      "fatPer100g": 21.49,
+      "gramsPerUnit": {
+        "cup": 150
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/173420/nutrients",
+      "portionSource": "USDA FoodData Central SR Legacy 173420: 1 cup, crumbled = 150 g. Source API nutrient IDs: 1008=265 kcal; 1003=14.21 g protein; 1005=3.88 g carbohydrate; 1004=21.49 g fat per 100 g. Saved evidence: usda-review-evidence-20261021/evidence-075.json.",
+      "reviewNotes": "Ingredient input only, not finished-meal nutrition. Both staged recipes using Feta cheese by cup explicitly say crumbled feta: Roasted Vegetable and Chicken Orzo (1/2 cup) and Balsamic Turkey and Roasted Beet Grain Bowls (1/2 cup). Other ingredient label Feta is NOT approved because its burger recipe does not specify crumbled state."
+    },
+    "Flank steak": {
+      "source": "USDA FoodData Central Foundation",
+      "foodId": "2646175",
+      "description": "Beef, flank, steak, boneless, choice, raw",
+      "state": "Beef, flank, steak, boneless, choice, raw",
+      "kcalPer100g": 169.562744,
+      "proteinPer100g": 20.13125,
+      "carbsPer100g": 0,
+      "fatPer100g": 9.399,
+      "gramsPerUnit": {
+        "lb": 453.59237
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/2646175/nutrients",
+      "portionSource": "USDA Foundation boneless choice raw flank steak; 1 lb = 453.59237g edible raw input; grading varies",
+      "reviewNotes": "Source-verified ingredient input for exact specified USDA form only. Product variation, packing, cooking retention and finished-recipe serving nutrition remain unverified."
+    },
+    "Flour": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "168936",
+      "description": "Wheat flour, white, all-purpose, enriched, unbleached",
+      "state": "Dry raw white all-purpose flour, enriched unbleached proxy",
+      "kcalPer100g": 364,
+      "proteinPer100g": 10.3,
+      "carbsPer100g": 76.3,
+      "fatPer100g": 0.98,
+      "gramsPerUnit": {
+        "cup": 125,
+        "tbsp": 7.8125
+      },
+      "reviewStatus": "approved",
+      "reviewNotes": "Four recipe uses: 3 tbsp roux, 1/2 cup tamale pie, 1/2 cup cutlet dredging, 1/4 cup chowder. Unqualified 'flour' interpreted as standard dry all-purpose wheat flour (same USDA reference as already approved All-purpose flour). For dredging, leftover unused flour means actual intake may be less; no retention factor assumed.",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/168936/nutrients",
+      "portionSource": "USDA SR Legacy 1 cup 125g; recipe uses 0.5 cup for fish-stick breading."
+    },
+    "Flour tortillas": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Flour tortillas, fajita size": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Fresh basil": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "172232",
+      "description": "Basil, fresh",
+      "state": "Fresh whole basil leaves, loosely packed",
+      "kcalPer100g": 23,
+      "proteinPer100g": 3.15,
+      "carbsPer100g": 2.65,
+      "fatPer100g": 0.64,
+      "gramsPerUnit": {
+        "cup": 24
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/172232/nutrients",
+      "portionSource": "USDA reference 0.25 cup whole leaves = 6g, extrapolated to 24g/cup; chopping and packing change weight",
+      "reviewNotes": "Two recipes use 0.5 and 1 cup fresh basil. Applies to whole fresh leaves, not dried basil or pesto."
+    },
+    "Fresh cilantro": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Fresh dill": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "172233",
+      "description": "Dill weed, fresh",
+      "state": "Fresh dill sprigs, raw",
+      "kcalPer100g": 43,
+      "proteinPer100g": 3.46,
+      "carbsPer100g": 7.02,
+      "fatPer100g": 1.12,
+      "gramsPerUnit": {
+        "cup": 8.9
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/172233/nutrients",
+      "portionSource": "USDA portion 1 cup fresh dill sprigs = 8.9g; recipe specifies 0.25 cup, assumes loosely packed sprigs",
+      "reviewNotes": "Two recipes use 0.25 cup fresh dill. Actual weight varies with chopped versus whole sprigs and packing; USDA cup sprigs used as an explicit estimate."
+    },
+    "Fresh ginger": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "169231",
+      "description": "Ginger root, raw",
+      "state": "Raw fresh peeled/grated ginger root",
+      "kcalPer100g": 80,
+      "proteinPer100g": 1.82,
+      "carbsPer100g": 17.77,
+      "fatPer100g": 0.75,
+      "gramsPerUnit": {
+        "tbsp": 6
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169231/nutrients",
+      "portionSource": "Approximately 6g per tablespoon fresh grated ginger; preparation/packing varies.",
+      "reviewNotes": "Eight recipes measure 1–2 tbsp fresh ginger. Raw ginger root nutrient profile used for grated/minced fresh ginger; estimate assumes edible peeled root."
+    },
+    "Fresh Mexican chorizo": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Fresh parsley": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170416",
+      "description": "Parsley, fresh",
+      "state": "Parsley, fresh, chopped",
+      "kcalPer100g": 36,
+      "proteinPer100g": 2.97,
+      "carbsPer100g": 6.33,
+      "fatPer100g": 0.79,
+      "gramsPerUnit": {
+        "cup": 60
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170416/nutrients",
+      "portionSource": "USDA 1 cup chopped fresh parsley = 60 g; saved USDA detail evidence: ops/recipe-expansion/usda-review-evidence-20261021/evidence-050.json.",
+      "reviewNotes": "Ingredient INPUT only; no finished-meal macros or yield/retention verified. Recipe preparation confirmation: All four recipes explicitly call for chopped parsley."
+    },
+    "Fresh rosemary": {
+      "source": "USDA FoodData Central",
+      "foodId": "173473",
+      "description": "Rosemary, fresh",
+      "state": "Rosemary, fresh",
+      "kcalPer100g": 131,
+      "proteinPer100g": 3.31,
+      "carbsPer100g": 20.7,
+      "fatPer100g": 5.86,
+      "gramsPerUnit": {
+        "tbsp": 1.7
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/173473/nutrients",
+      "portionSource": "Fresh rosemary 1 USDA tablespoon 1.7g; recipe specifies minced fresh rosemary.",
+      "reviewNotes": "Verified USDA ingredient input, not verified finished-recipe nutrition."
+    },
+    "Fresh sage": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Fresh thyme": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "173470",
+      "description": "Thyme, fresh",
+      "state": "Fresh thyme leaves, not dried thyme",
+      "kcalPer100g": 101,
+      "proteinPer100g": 5.56,
+      "carbsPer100g": 24.45,
+      "fatPer100g": 1.68,
+      "gramsPerUnit": {
+        "tsp": 0.8,
+        "tbsp": 2.4
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/173470/nutrients",
+      "portionSource": "Estimated fresh thyme leaves 0.8g per tsp and 2.4g per tbsp; loose packing varies",
+      "reviewNotes": "Three recipes use fresh thyme by tsp or tbsp. USDA fresh thyme reference confirmed; teaspoon weight is an estimate and differs from dried thyme."
+    },
+    "Frozen corn": {
+      "source": "USDA FoodData Central SR Legacy (generic sweet yellow corn)",
+      "foodId": "169998",
+      "description": "Corn, sweet, yellow, raw",
+      "state": "Frozen plain sweet corn kernels, measured frozen before cooking",
+      "kcalPer100g": 86,
+      "proteinPer100g": 3.27,
+      "carbsPer100g": 18.7,
+      "fatPer100g": 1.35,
+      "gramsPerUnit": {
+        "cup": 140
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169998/nutrients",
+      "portionSource": "Estimated 140g per cup frozen corn kernels; packing and frost vary",
+      "reviewNotes": "Two recipes use one cup frozen corn. Raw sweet corn USDA nutrient composition used as explicit proxy; freezing/blanching can change moisture and nutrient values. Not valid for corn in sauces."
+    },
+    "Frozen peas": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170016",
+      "description": "Peas, green, frozen, unprepared",
+      "state": "Frozen plain green peas, before cooking",
+      "kcalPer100g": 77,
+      "proteinPer100g": 5.22,
+      "carbsPer100g": 13.6,
+      "fatPer100g": 0.4,
+      "gramsPerUnit": {
+        "cup": 134
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170016/nutrients",
+      "portionSource": "Estimated 134g per cup frozen peas; packing varies",
+      "reviewNotes": "Two recipes use 0.5 or 2 cups frozen green peas. Assumes plain unsauced frozen peas, weighed before cooking."
+    },
+    "Fully cooked pulled pork": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Garlic cloves": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "169230",
+      "description": "Garlic, raw",
+      "state": "raw garlic clove, 3 g edible portion; input ingredient before cooking",
+      "kcalPer100g": 149,
+      "proteinPer100g": 6.36,
+      "carbsPer100g": 33.06,
+      "fatPer100g": 0.5,
+      "gramsPerUnit": {
+        "each": 3
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169230/nutrients",
+      "portionSource": "USDA FDC 169230 raw garlic 1 clove = 3g edible portion",
+      "reviewNotes": "Ingredient composition verified at recipe input. Cooking moisture, garlic size variation and ingredient retention are not estimated; recipe totals remain unverified until all source mappings and yields have been reviewed."
+    },
+    "Garlic powder": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "171325",
+      "description": "Spices, garlic powder",
+      "state": "Spices, garlic powder",
+      "kcalPer100g": 331,
+      "proteinPer100g": 16.55,
+      "carbsPer100g": 72.73,
+      "fatPer100g": 0.73,
+      "gramsPerUnit": {
+        "tsp": 3.1
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171325/nutrients",
+      "portionSource": "USDA explicit 1 tsp = 3.1 g; dry garlic powder, not garlic salt.",
+      "reviewNotes": "Source-linked ingredient INPUT mapping. Does not imply final recipe serving nutrition is verified; recipe-specific cooking retention and yield must be checked."
+    },
+    "Goat cheese": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Grated Parmesan": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "171247",
+      "description": "Cheese, parmesan, grated",
+      "state": "Cheese, parmesan, grated",
+      "kcalPer100g": 420,
+      "proteinPer100g": 28.42,
+      "carbsPer100g": 13.91,
+      "fatPer100g": 27.84,
+      "gramsPerUnit": {
+        "cup": 100
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171247/nutrients",
+      "portionSource": "USDA explicit 1 cup grated Parmesan = 100 g",
+      "reviewNotes": "Exact cited USDA food and recipe-unit input reference; does NOT verify individual product variation, cooking yield or final prepared recipe nutrition."
+    },
+    "Greek yogurt": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Green beans": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Green cabbage": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "169975",
+      "description": "Cabbage, raw, green",
+      "state": "Raw green cabbage, whole head edible portion",
+      "kcalPer100g": 25,
+      "proteinPer100g": 1.28,
+      "carbsPer100g": 5.8,
+      "fatPer100g": 0.1,
+      "gramsPerUnit": {
+        "head": 900
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169975/nutrients",
+      "portionSource": "Estimated 900g edible cabbage per medium head; head sizes vary substantially",
+      "reviewNotes": "Two recipes specify 1 or 0.5 head green cabbage. Reuses USDA raw cabbage 169975; 900g per head is an estimate after discarding core/outer damaged leaves. Small head could be far lighter; ideally specify grams in recipe."
+    },
+    "Green onions": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170005",
+      "description": "Onions, spring or scallions (includes tops and bulb), raw",
+      "state": "Raw scallion white and green portions",
+      "kcalPer100g": 32,
+      "proteinPer100g": 1.83,
+      "carbsPer100g": 7.34,
+      "fatPer100g": 0.19,
+      "gramsPerUnit": {
+        "each": 15
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170005/nutrients",
+      "portionSource": "Approximately 15g edible per medium scallion, including green tops.",
+      "reviewNotes": "Four recipes measure 3–5 whole scallions, chopped/sliced and used as garnish or cooked. Edible weight varies by scallion size and trimming."
+    },
+    "Ground beef": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "174030",
+      "description": "Ground beef raw 90 percent lean",
+      "state": "Raw ground beef, assumed 90% lean as generic proxy",
+      "kcalPer100g": 176,
+      "proteinPer100g": 20,
+      "carbsPer100g": 0,
+      "fatPer100g": 10,
+      "gramsPerUnit": {
+        "lb": 453.592
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/174030/nutrients",
+      "portionSource": "453.592 grams per pound",
+      "reviewNotes": "Two recipes measure 1.5 lb raw ground beef, but fat percentage is unspecified. The existing USDA 90/10 lean ground beef record is a documented proxy, not an assertion that recipe uses lean meat. Actual higher-fat beef changes calories and fat; draining losses are not modeled."
+    },
+    "Ground chicken": {
+      "source": "USDA FoodData Central",
+      "foodId": "171116",
+      "description": "Chicken, ground, raw",
+      "state": "Chicken, ground, raw",
+      "kcalPer100g": 143,
+      "proteinPer100g": 17.44,
+      "carbsPer100g": 0.04,
+      "fatPer100g": 8.1,
+      "gramsPerUnit": {
+        "lb": 453.59237
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171116/nutrients",
+      "portionSource": "USDA raw ground chicken, recipe specifies uncooked ground chicken; cooked loss unknown.",
+      "reviewNotes": "Verified USDA ingredient input, not verified finished-recipe nutrition."
+    },
+    "Ground cinnamon": {
+      "source": "USDA FoodData Central",
+      "foodId": "171320",
+      "description": "Spices, cinnamon, ground",
+      "state": "Spices, cinnamon, ground",
+      "kcalPer100g": 247,
+      "proteinPer100g": 3.99,
+      "carbsPer100g": 80.59,
+      "fatPer100g": 1.24,
+      "gramsPerUnit": {
+        "tsp": 2.6
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171320/nutrients",
+      "portionSource": "USDA ground cinnamon 1 tsp = 2.6g.",
+      "reviewNotes": "Verified USDA ingredient input, not verified finished-recipe nutrition."
+    },
+    "Ground cumin": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170923",
+      "description": "Spices, cumin seed (ground cumin proxy)",
+      "state": "Dried culinary spice",
+      "kcalPer100g": 375,
+      "proteinPer100g": 17.81,
+      "carbsPer100g": 44.24,
+      "fatPer100g": 22.27,
+      "gramsPerUnit": {
+        "tsp": 2.1
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170923/nutrients",
+      "portionSource": "Typical ground cumin powder: ~2.1g per level teaspoon; powder density varies.",
+      "reviewNotes": "39 recipes use tsp; USDA cumin seed profile used for ground dried cumin, teaspoon mass is an estimate."
+    },
+    "Ground pork": {
+      "source": "USDA FoodData Central Foundation",
+      "foodId": "2514745",
+      "description": "Pork, ground, raw",
+      "state": "Pork, ground, raw",
+      "kcalPer100g": 233.442059,
+      "proteinPer100g": 17.80625,
+      "carbsPer100g": 0,
+      "fatPer100g": 17.49,
+      "gramsPerUnit": {
+        "lb": 453.59237
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/2514745/nutrients",
+      "portionSource": "USDA Foundation raw ground pork; 1 lb = 453.59237g edible input weight; fat varies by grind",
+      "reviewNotes": "Source-verified ingredient input for exact specified USDA form only. Product variation, packing, cooking retention and finished-recipe serving nutrition remain unverified."
+    },
+    "Ground thyme": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Ground turkey": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "172850",
+      "description": "Turkey ground 93 percent lean 7 percent fat raw",
+      "state": "Raw turkey assumed 93 percent lean",
+      "kcalPer100g": 150,
+      "proteinPer100g": 18.73,
+      "carbsPer100g": 0,
+      "fatPer100g": 8.34,
+      "gramsPerUnit": {
+        "lb": 453.592
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/172850/nutrients",
+      "portionSource": "One pound is 453.592 grams",
+      "reviewNotes": "93 percent lean assumption; actual product fat ratio may vary."
+    },
+    "Gruyere cheese": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Half and half": {
+      "source": "USDA FoodData Central",
+      "foodId": "171255",
+      "description": "Cream, fluid, half and half",
+      "state": "Cream, fluid, half and half",
+      "kcalPer100g": 131,
+      "proteinPer100g": 3.13,
+      "carbsPer100g": 4.3,
+      "fatPer100g": 11.5,
+      "gramsPerUnit": {
+        "cup": 242
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171255/nutrients",
+      "portionSource": "USDA fluid half and half 1 cup =242g.",
+      "reviewNotes": "Verified USDA ingredient input, not verified finished-recipe nutrition."
+    },
+    "Hamburger buns": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Hawaiian dinner rolls": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Heavy cream": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170859",
+      "description": "Cream, fluid, heavy whipping",
+      "state": "Unwhipped liquid heavy whipping cream",
+      "kcalPer100g": 340,
+      "proteinPer100g": 2.84,
+      "carbsPer100g": 2.84,
+      "fatPer100g": 36.08,
+      "gramsPerUnit": {
+        "cup": 238
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170859/nutrients",
+      "portionSource": "USDA SR Legacy 1 cup fluid (not whipped) = 238g; whipped volume differs substantially.",
+      "reviewNotes": "All eight recipes use 0.5–1.5 cups liquid heavy cream stirred into savory dishes. Exact USDA SR Legacy record and fluid cup portion verified; cream fat content varies by product."
+    },
+    "Hoagie rolls": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Hoisin sauce": {
+      "source": "USDA FoodData Central",
+      "foodId": "172886",
+      "description": "Sauce, hoisin, ready-to-serve",
+      "state": "Sauce, hoisin, ready-to-serve",
+      "kcalPer100g": 220,
+      "proteinPer100g": 3.31,
+      "carbsPer100g": 44.08,
+      "fatPer100g": 3.39,
+      "gramsPerUnit": {
+        "tbsp": 16
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/172886/nutrients",
+      "portionSource": "USDA ready-to-serve hoisin 1 tbsp = 16g; brand variation.",
+      "reviewNotes": "Verified USDA ingredient input, not verified finished-recipe nutrition."
+    },
+    "Hominy": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Hominy canned, drained": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Honey": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "169640",
+      "description": "Honey",
+      "state": "Honey",
+      "kcalPer100g": 304,
+      "proteinPer100g": 0.3,
+      "carbsPer100g": 82.4,
+      "fatPer100g": 0,
+      "gramsPerUnit": {
+        "cup": 339,
+        "tbsp": 21
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169640/nutrients",
+      "portionSource": "USDA explicit cup and tablespoon values; specific floral/brand honeys can vary.",
+      "reviewNotes": "USDA source-linked ingredient input values. Preparation yield and retained ingredient fractions still require full-recipe review."
+    },
+    "Italian sausage": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Italian sausage links": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Italian seasoning": {
+      "source": "Spices Inc. Italian Seasoning manufacturer nutrition label",
+      "foodId": "",
+      "description": "Italian seasoning dried mixed herbs, manufacturer per-teaspoon label proxy",
+      "state": "Dried mixed herb blend, no added salt",
+      "kcalPer100g": 300,
+      "proteinPer100g": 10,
+      "carbsPer100g": 60,
+      "fatPer100g": 0,
+      "gramsPerUnit": {
+        "tsp": 1
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://spicesinc.com/seasoning-blends/italian-seasoning",
+      "portionSource": "Manufacturer lists 1 tsp as 3 kcal, 0.1g protein, 0.6g carbohydrate, 0g fat; estimated 1g per teaspoon used to convert to per-100g storage.",
+      "reviewNotes": "Eight recipes each use 1 tsp. Brand recipe is rosemary, basil, oregano, sage, marjoram. Per-100g values are derived from manufacturer per-tsp rounded label using ESTIMATED 1g/tsp; NOT lab-verified per-100g. Calories are small per recipe, and other brands' salt/herb mixes vary."
+    },
+    "Jalapeño": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Jalapeño peppers": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Jasmine rice": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "169756",
+      "description": "Raw white long grain rice as proxy for uncooked jasmine rice",
+      "state": "Dry uncooked jasmine rice",
+      "kcalPer100g": 365,
+      "proteinPer100g": 7.13,
+      "carbsPer100g": 79.95,
+      "fatPer100g": 0.66,
+      "gramsPerUnit": {
+        "cup": 185
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169756/nutrients",
+      "portionSource": "Approximate 185g per cup dry long-grain white rice; packing and brand vary.",
+      "reviewNotes": "Three recipes measure 1 to 1.5 cups jasmine rice before cooking. USDA generic raw long-grain white rice 169756 used as documented proxy, not jasmine-specific lab data. Assumes 185g dry rice per cup; cooked rice is not interchangeable."
+    },
+    "Ketchup": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Kidney beans": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Kidney beans, canned drained": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Kidney beans, rinsed": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Large bell peppers": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Large eggs": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "171287",
+      "description": "Egg, whole, raw, fresh",
+      "state": "Raw whole egg without shell; large size standard",
+      "kcalPer100g": 143,
+      "proteinPer100g": 12.56,
+      "carbsPer100g": 0.72,
+      "fatPer100g": 9.51,
+      "gramsPerUnit": {
+        "each": 50
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171287/nutrients",
+      "portionSource": "USDA standard large whole egg, edible contents 50 g per egg; shell excluded.",
+      "reviewNotes": "Two recipes specify 4 or 8 large eggs. Reuses USDA raw whole large egg reference 171287 at 50g edible egg per each, excluding shell. Cooking fat is separate."
+    },
+    "Large flour tortillas": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "175037",
+      "description": "Tortillas, ready-to-bake or -fry, flour, refrigerated",
+      "state": "Large burrito-size wheat flour tortillas, ready to heat",
+      "kcalPer100g": 306,
+      "proteinPer100g": 8.2,
+      "carbsPer100g": 49.38,
+      "fatPer100g": 7.99,
+      "gramsPerUnit": {
+        "each": 70
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/175037/nutrients",
+      "portionSource": "Estimated 70g per large burrito tortilla; USDA reference 48–49g tortilla is smaller; retail size and brand vary widely",
+      "reviewNotes": "Four recipes specify four large tortillas. Nutrient profile is verified generic refrigerated flour tortilla; 70g per large tortilla is an explicit estimate, not the USDA portion. Product label should override for exact macro totals."
+    },
+    "Large portobello mushrooms": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Lean ground beef": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "174030",
+      "description": "Ground beef raw 90 percent lean",
+      "state": "Raw 90 percent lean beef",
+      "kcalPer100g": 176,
+      "proteinPer100g": 20,
+      "carbsPer100g": 0,
+      "fatPer100g": 10,
+      "gramsPerUnit": {
+        "lb": 453.592
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/174030/nutrients",
+      "portionSource": "453.592 grams per pound",
+      "reviewNotes": "Twelve recipes; lean interpreted as 90 percent lean. Drained cooking fat not subtracted."
+    },
+    "Lean ground turkey": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "172850",
+      "description": "Turkey ground 93 percent lean 7 percent fat raw",
+      "state": "Raw turkey assumed 93 percent lean",
+      "kcalPer100g": 150,
+      "proteinPer100g": 18.73,
+      "carbsPer100g": 0,
+      "fatPer100g": 8.34,
+      "gramsPerUnit": {
+        "lb": 453.592
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/172850/nutrients",
+      "portionSource": "One pound is 453.592 grams",
+      "reviewNotes": "93 percent lean assumption; actual product fat ratio may vary."
+    },
+    "Lemon": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "167746",
+      "description": "Lemons, raw, without peel",
+      "state": "Raw lemon edible flesh and juice; peel excluded",
+      "kcalPer100g": 29,
+      "proteinPer100g": 1.1,
+      "carbsPer100g": 9.32,
+      "fatPer100g": 0.3,
+      "gramsPerUnit": {
+        "each": 58
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/167746/nutrients",
+      "portionSource": "USDA standard lemon without peel approximately 58g edible portion per fruit (standard 2⅛-inch diameter lemon).",
+      "reviewNotes": "All uses of Lemon/Lemons in 110 recipe drafts are each. Practical whole edible lemon estimate; recipes using only juice or zest may have different consumed fraction, so finished-dish macro estimates may slightly overcount. Typical citrus macro impact is small."
+    },
+    "Lemon juice": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "167747",
+      "description": "Lemon juice, raw",
+      "state": "Lemon juice, raw",
+      "kcalPer100g": 22,
+      "proteinPer100g": 0.35,
+      "carbsPer100g": 6.9,
+      "fatPer100g": 0.24,
+      "gramsPerUnit": {
+        "tbsp": 15.25
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/167747/nutrients",
+      "portionSource": "USDA explicit 1 cup raw lemon juice=244g; inferred 1 tbsp=1/16 cup=15.25g.",
+      "reviewNotes": "Verified source-matched ingredient input; full meal nutrient yield and retained fractions not certified."
+    },
+    "Lemons": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "167746",
+      "description": "Lemons, raw, without peel",
+      "state": "Raw lemon edible flesh and juice; peel excluded",
+      "kcalPer100g": 29,
+      "proteinPer100g": 1.1,
+      "carbsPer100g": 9.32,
+      "fatPer100g": 0.3,
+      "gramsPerUnit": {
+        "each": 58
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/167746/nutrients",
+      "portionSource": "USDA standard lemon without peel approximately 58g edible portion per fruit (standard 2⅛-inch diameter lemon).",
+      "reviewNotes": "All uses of Lemon/Lemons in 110 recipe drafts are each. Practical whole edible lemon estimate; recipes using only juice or zest may have different consumed fraction, so finished-dish macro estimates may slightly overcount. Typical citrus macro impact is small."
+    },
+    "Lime": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "168155",
+      "description": "Limes, raw",
+      "state": "Raw lime edible flesh and juice; peel excluded",
+      "kcalPer100g": 30,
+      "proteinPer100g": 0.7,
+      "carbsPer100g": 10.54,
+      "fatPer100g": 0.2,
+      "gramsPerUnit": {
+        "each": 67
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/168155/nutrients",
+      "portionSource": "USDA standard raw lime edible portion approximately 67 g per fruit (2-inch diameter).",
+      "reviewNotes": "Audited 110 recipe drafts: all 23 recipes using Lime measure in 'each'. Standard raw edible lime is a practical macro estimate. Recipes squeezing only juice or using wedges/garnish may consume less than whole edible portion; recipe-level consumption remains an estimate."
+    },
+    "Lime juice": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "168156",
+      "description": "Lime juice, raw",
+      "state": "raw expressed lime juice by measured volume; not whole lime wedges",
+      "kcalPer100g": 25,
+      "proteinPer100g": 0.42,
+      "carbsPer100g": 8.42,
+      "fatPer100g": 0.07,
+      "gramsPerUnit": {
+        "cup": 242,
+        "tbsp": 15.125
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/168156/nutrients",
+      "portionSource": "USDA 1 cup lime juice = 242g; 1 US tablespoon = 1/16 US cup, derived 15.125g",
+      "reviewNotes": "Measured lime juice ingredient only. Does not resolve distinct whole-lime garnish uses or actual amounts retained in marinades."
+    },
+    "Long grain rice": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Long grain white rice": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Long-grain rice dry": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "169756",
+      "description": "Rice, white, long-grain, regular, raw, unenriched",
+      "state": "Dry uncooked white long-grain rice",
+      "kcalPer100g": 365,
+      "proteinPer100g": 7.13,
+      "carbsPer100g": 79.95,
+      "fatPer100g": 0.66,
+      "gramsPerUnit": {
+        "cup": 185
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169756/nutrients",
+      "portionSource": "Approximate 185g per cup dry long-grain white rice; packing and brand vary.",
+      "reviewNotes": "Five recipes explicitly use dry rice (1–1.5 cups). FDC 169756 independently confirmed as RAW/UNCOOKED unenriched white long-grain rice (USDA NDB 20444). Previous note asserting cooked was mistaken; cooked rice is FDC 169757 or enriched FDC 168878."
+    },
+    "Low-sodium soy sauce": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "172473",
+      "description": "Soy sauce made from soy and wheat (shoyu), low sodium",
+      "state": "Soy sauce made from soy and wheat (shoyu), low sodium",
+      "kcalPer100g": 57,
+      "proteinPer100g": 9.05,
+      "carbsPer100g": 5.59,
+      "fatPer100g": 0.3,
+      "gramsPerUnit": {
+        "tbsp": 14.2
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/172473/nutrients",
+      "portionSource": "USDA low-sodium shoyu 1 tbsp = 14.2g; brands/ingredient proportions vary, especially sodium.",
+      "reviewNotes": "Source-matched raw or as-purchased ingredient input. Final recipe nutrient yields/retention unverified."
+    },
+    "Manicotti shells": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Maple syrup": {
+      "source": "USDA FoodData Central",
+      "foodId": "169661",
+      "description": "Syrups, maple",
+      "state": "Syrups, maple",
+      "kcalPer100g": 260,
+      "proteinPer100g": 0.04,
+      "carbsPer100g": 67.04,
+      "fatPer100g": 0.06,
+      "gramsPerUnit": {
+        "tbsp": 20
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169661/nutrients",
+      "portionSource": "USDA 1 tablespoon = 20g; pure maple syrup, not maple flavored table syrup.",
+      "reviewNotes": "Source-verified recipe ingredient inputs; cooking retention and per-serving yield not verified."
+    },
+    "Marinara": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Marinara sauce": {
+      "source": "USDA FoodData Central Foundation Foods",
+      "foodId": "332282",
+      "description": "Sauce, pasta, spaghetti/marinara, ready-to-serve",
+      "state": "Prepared ready-to-serve marinara pasta sauce",
+      "kcalPer100g": 45,
+      "proteinPer100g": 1.41,
+      "carbsPer100g": 8.05,
+      "fatPer100g": 1.48,
+      "gramsPerUnit": {
+        "cup": 270
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/332282/nutrients",
+      "portionSource": "USDA portion 1/2 cup = 135g; 1 cup = 270g by volume extrapolation",
+      "reviewNotes": "Four recipes use 1–4 cups ready-made marinara. USDA Foundation Foods representative sauce, not a brand-specific label; oil, sugar, meat, cheese and homemade variants differ. 1 cup weight assumes same packing density as 1/2 cup USDA portion."
+    },
+    "Mayonnaise": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "171009",
+      "description": "Salad dressing mayonnaise regular",
+      "state": "Regular full fat mayonnaise",
+      "kcalPer100g": 680,
+      "proteinPer100g": 0.96,
+      "carbsPer100g": 0.57,
+      "fatPer100g": 74.85,
+      "gramsPerUnit": {
+        "cup": 232
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171009/nutrients",
+      "portionSource": "Estimated 232 grams per cup regular mayonnaise; brands and packing vary",
+      "reviewNotes": "Three recipes each use one quarter cup. Regular mayonnaise is assumed, not light or reduced fat."
+    },
+    "Medium zucchini": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Milk": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "171265",
+      "description": "Milk, whole, 3.25% milkfat, with added vitamin D",
+      "state": "Fluid whole cow's milk, unflavored; proxy because recipes do not specify fat percentage",
+      "kcalPer100g": 61,
+      "proteinPer100g": 3.15,
+      "carbsPer100g": 4.8,
+      "fatPer100g": 3.25,
+      "gramsPerUnit": {
+        "cup": 244
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171265/nutrients",
+      "portionSource": "USDA SR Legacy 1 cup fluid whole milk = 244g.",
+      "reviewNotes": "All 10 recipes use 0.25–2 cups fluid milk, fat percentage unspecified. Whole milk is a declared proxy; users using skim/2% will consume fewer calories and fat. Source nutrients and USDA ID verified against USDA-derived listings."
+    },
+    "Mixed salad greens": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Monterey Jack cheese": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Mozzarella": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170845",
+      "description": "Cheese, mozzarella, whole milk",
+      "state": "Whole-milk mozzarella, shredded for measured cup",
+      "kcalPer100g": 300,
+      "proteinPer100g": 22.17,
+      "carbsPer100g": 2.19,
+      "fatPer100g": 22.35,
+      "gramsPerUnit": {
+        "cup": 112
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170845/nutrients",
+      "portionSource": "Estimated 112g per loosely filled cup shredded mozzarella (4oz); brand and shred size vary",
+      "reviewNotes": "Two recipes use this ingredient name; each measures 1–2 cups. Assumes shredded whole-milk mozzarella, not fresh water-packed or part-skim. USDA generic whole-milk mozzarella profile; cup weight estimated."
+    },
+    "Mozzarella cheese": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170845",
+      "description": "Cheese, mozzarella, whole milk",
+      "state": "Whole-milk mozzarella, shredded for measured cup",
+      "kcalPer100g": 300,
+      "proteinPer100g": 22.17,
+      "carbsPer100g": 2.19,
+      "fatPer100g": 22.35,
+      "gramsPerUnit": {
+        "cup": 112
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170845/nutrients",
+      "portionSource": "Estimated 112g per loosely filled cup shredded mozzarella (4oz); brand and shred size vary",
+      "reviewNotes": "Two recipes use this ingredient name; each measures 1–2 cups. Assumes shredded whole-milk mozzarella, not fresh water-packed or part-skim. USDA generic whole-milk mozzarella profile; cup weight estimated."
+    },
+    "Okra": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "169260",
+      "description": "Okra, raw",
+      "state": "Okra, raw",
+      "kcalPer100g": 33,
+      "proteinPer100g": 1.93,
+      "carbsPer100g": 7.45,
+      "fatPer100g": 0.19,
+      "gramsPerUnit": {
+        "cup": 100
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169260/nutrients",
+      "portionSource": "USDA explicit 1 cup raw okra=100g; ensure recipe serving uses edible raw okra amount.",
+      "reviewNotes": "Verified source-matched ingredient input; full meal nutrient yield and retained fractions not certified."
+    },
+    "Olive oil": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "171413",
+      "description": "Oil, olive, salad or cooking",
+      "state": "olive oil as measured before cooking; absorption and discarded oil depend on recipe",
+      "kcalPer100g": 884,
+      "proteinPer100g": 0,
+      "carbsPer100g": 0,
+      "fatPer100g": 100,
+      "gramsPerUnit": {
+        "tbsp": 13.5,
+        "tsp": 4.5
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171413/nutrients",
+      "reviewNotes": "Source composition and USDA tablespoon measure verified; fraction consumed in dressings, marinades, and pans must be reviewed separately."
+    },
+    "Orange": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Orange juice": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "169098",
+      "description": "Orange juice, raw",
+      "state": "Unflavored orange juice (fresh raw proxy for unspecified juice)",
+      "kcalPer100g": 45,
+      "proteinPer100g": 0.7,
+      "carbsPer100g": 10.4,
+      "fatPer100g": 0.2,
+      "gramsPerUnit": {
+        "cup": 248
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169098/nutrients",
+      "portionSource": "USDA 1 cup raw orange juice 248g.",
+      "reviewNotes": "Four recipes use 0.25–0.75 cup orange juice in marinades, sauces, and glazes. USDA raw orange juice reference; concentrate or sweetened product differs. Marinade may be discarded, so assuming all juice is consumed may overstate actual macros."
+    },
+    "Oyster sauce": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "174529",
+      "description": "Sauce, oyster, ready-to-serve",
+      "state": "Sauce, oyster, ready-to-serve",
+      "kcalPer100g": 51,
+      "proteinPer100g": 1.35,
+      "carbsPer100g": 10.92,
+      "fatPer100g": 0.25,
+      "gramsPerUnit": {
+        "tbsp": 18
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/174529/nutrients",
+      "portionSource": "USDA explicit 1 tbsp oyster sauce=18g; recipe specifies ready-made oyster sauce.",
+      "reviewNotes": "Verified source-matched ingredient input; full meal nutrient yield and retained fractions not certified."
+    },
+    "Panko breadcrumbs": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "174928",
+      "description": "Generic dry breadcrumbs used as proxy for Japanese-style panko",
+      "state": "Dry plain panko breadcrumbs, before coating/frying",
+      "kcalPer100g": 395,
+      "proteinPer100g": 13.35,
+      "carbsPer100g": 71.98,
+      "fatPer100g": 5.3,
+      "gramsPerUnit": {
+        "cup": 60
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/174928/nutrients",
+      "portionSource": "Estimated 60g per loosely filled cup panko; airy flakes are lighter than ordinary fine breadcrumbs",
+      "reviewNotes": "Two recipes use 1.5 cups panko. USDA generic breadcrumbs nutrient profile is a proxy, not panko-specific lab analysis; panko cup weight estimated separately from ordinary breadcrumbs. Frying oil absorption not included in ingredient record."
+    },
+    "Paprika": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "171329",
+      "description": "Spices, paprika",
+      "state": "Spices, paprika",
+      "kcalPer100g": 282,
+      "proteinPer100g": 14.14,
+      "carbsPer100g": 53.99,
+      "fatPer100g": 12.89,
+      "gramsPerUnit": {
+        "tsp": 2.3
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171329/nutrients",
+      "portionSource": "Regular paprika ground, not smoked paprika; USDA explicit 1 tsp = 2.3g.",
+      "reviewNotes": "USDA source-linked ingredient input values. Preparation yield and retained ingredient fractions still require full-recipe review."
+    },
+    "Parmesan": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "171247",
+      "description": "Cheese, parmesan, grated",
+      "state": "Cheese, parmesan, grated",
+      "kcalPer100g": 420,
+      "proteinPer100g": 28.42,
+      "carbsPer100g": 13.91,
+      "fatPer100g": 27.84,
+      "gramsPerUnit": {
+        "cup": 100
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171247/nutrients",
+      "portionSource": "USDA 1 cup grated Parmesan = 100 g; saved USDA detail evidence: ops/recipe-expansion/usda-review-evidence-20261021/evidence-050.json.",
+      "reviewNotes": "Ingredient INPUT only; no finished-meal macros or yield/retention verified. Recipe preparation confirmation: All four recipes explicitly specify grated Parmesan."
+    },
+    "Parmesan cheese": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "171247",
+      "description": "Cheese, parmesan, grated",
+      "state": "Cheese, parmesan, grated",
+      "kcalPer100g": 420,
+      "proteinPer100g": 28.42,
+      "carbsPer100g": 13.91,
+      "fatPer100g": 27.84,
+      "gramsPerUnit": {
+        "cup": 100
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171247/nutrients",
+      "portionSource": "USDA 1 cup grated Parmesan = 100 g; saved USDA detail evidence: ops/recipe-expansion/usda-review-evidence-20261021/evidence-050.json.",
+      "reviewNotes": "Ingredient INPUT only; no finished-meal macros or yield/retention verified. Recipe preparation confirmation: All four recipes explicitly specify grated Parmesan."
+    },
+    "Pearled barley": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Peeled deveined raw shrimp": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "175179",
+      "description": "Crustaceans, shrimp, raw",
+      "state": "Crustaceans, shrimp, raw",
+      "kcalPer100g": 85,
+      "proteinPer100g": 20.1,
+      "carbsPer100g": 0,
+      "fatPer100g": 0.51,
+      "gramsPerUnit": {
+        "lb": 453.59237
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/175179/nutrients",
+      "portionSource": "1 lb = 453.59237 g; raw edible shrimp meat weight excludes peel/shell; cooking yield not claimed",
+      "reviewNotes": "Same edible food and preparation as previously approved 'Raw shrimp'. Actual recipe units verified (shrimp lb; shredded cheddar cup). USDA ingredient estimate; shrimp must be weighed peeled/deveined, cheese cup means shredded not block. Finished-meal macros remain estimates."
+    },
+    "Pepper jack": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Pickled jalapeño slices": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Pie crust": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Pineapple chunks": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Pineapple juice": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Pitted green olives": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Plain Greek yogurt": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Poblano peppers": {
+      "source": "USDA FoodData Central Foundation Foods",
+      "foodId": "2747662",
+      "description": "Peppers, poblano, seeded, raw",
+      "state": "Raw edible seeded poblano",
+      "kcalPer100g": 28,
+      "proteinPer100g": 1.43,
+      "carbsPer100g": 5.14,
+      "fatPer100g": 0.19,
+      "gramsPerUnit": {
+        "each": 100
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/2747662/nutrients",
+      "portionSource": "Estimated 100g edible seeded pepper per each; actual size and trimming vary",
+      "reviewNotes": "Six recipes use 2 to 4 peppers. Raw seeded USDA composition; cooking moisture loss does not change initial total nutrient contribution."
+    },
+    "Pork baby back ribs": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Pork loin cutlets": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Pork shoulder": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Pork tenderloin": {
+      "source": "USDA FoodData Central",
+      "foodId": "2646169",
+      "description": "Pork, loin, tenderloin, boneless, raw",
+      "state": "Pork, loin, tenderloin, boneless, raw",
+      "kcalPer100g": 119.039,
+      "proteinPer100g": 21.58125,
+      "carbsPer100g": 0,
+      "fatPer100g": 3.899,
+      "gramsPerUnit": {
+        "lb": 453.59237
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/2646169/nutrients",
+      "portionSource": "USDA FDC Foundation raw boneless pork tenderloin; pound is mass conversion. Recipe cook-loss and served yield still require review.",
+      "reviewNotes": "Ingredient-source mapping only. Finished-meal nutrition cannot be published without separate recipe yield and consumed-portion verification."
+    },
+    "Potato gnocchi": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Prepared refrigerated empanada dough discs": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Provolone cheese": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170850",
+      "description": "Cheese, provolone",
+      "state": "Cheese, provolone",
+      "kcalPer100g": 351,
+      "proteinPer100g": 25.58,
+      "carbsPer100g": 2.14,
+      "fatPer100g": 26.62,
+      "gramsPerUnit": {
+        "slice": 28
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170850/nutrients",
+      "portionSource": "USDA explicit 1 slice (1 oz)=28g; supermarket thickness and brands vary.",
+      "reviewNotes": "Verified source-matched ingredient input; full meal nutrient yield and retained fractions not certified."
+    },
+    "Quick polenta": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Radishes": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Ranch seasoning": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Raw beets": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Raw Mexican-style pork chorizo": {
+      "source": "USDA FoodData Central",
+      "foodId": "173859",
+      "description": "Sausage, pork, chorizo, link or ground, raw",
+      "state": "Sausage, pork, chorizo, link or ground, raw",
+      "kcalPer100g": 296,
+      "proteinPer100g": 13.63,
+      "carbsPer100g": 3.78,
+      "fatPer100g": 25.1,
+      "gramsPerUnit": {
+        "oz": 28.35
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/173859/nutrients",
+      "portionSource": "Raw pork chorizo; USDA 1oz = 28.35g. Both recipes explicitly state raw Mexican-style pork chorizo. Cooking fat discarded separately.",
+      "reviewNotes": "Source-verified recipe ingredient inputs; cooking retention and per-serving yield not verified."
+    },
+    "Raw peeled shrimp": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Raw shrimp": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "175179",
+      "description": "Crustaceans, shrimp, raw",
+      "state": "Crustaceans, shrimp, raw",
+      "kcalPer100g": 85,
+      "proteinPer100g": 20.1,
+      "carbsPer100g": 0,
+      "fatPer100g": 0.51,
+      "gramsPerUnit": {
+        "lb": 453.59237
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/175179/nutrients",
+      "portionSource": "1 lb = 453.59237 g; raw edible shrimp meat weight excludes peel/shell; cooking yield not claimed",
+      "reviewNotes": "Source-linked ingredient input reference only. Brand variation, portions before peeling, cooking yield and prepared-meal nutrition are NOT certified."
+    },
+    "Red bell pepper": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Red curry paste": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Red enchilada sauce": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "174074",
+      "description": "Sauce, enchilada, red, mild, ready to serve",
+      "state": "Sauce, enchilada, red, mild, ready to serve",
+      "kcalPer100g": 30,
+      "proteinPer100g": 0.62,
+      "carbsPer100g": 4.87,
+      "fatPer100g": 0.91,
+      "gramsPerUnit": {
+        "cup": 224
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/174074/nutrients",
+      "portionSource": "USDA explicit 1 cup red enchilada sauce = 224 g; mild ready-to-serve style",
+      "reviewNotes": "Exact cited USDA food and recipe-unit input reference; does NOT verify individual product variation, cooking yield or final prepared recipe nutrition."
+    },
+    "Red onion": {
+      "source": "USDA FoodData Central Foundation",
+      "foodId": "790577",
+      "description": "Onions, red, raw",
+      "state": "Onions, red, raw",
+      "kcalPer100g": 44,
+      "proteinPer100g": 0.94,
+      "carbsPer100g": 9.93,
+      "fatPer100g": 0.1,
+      "gramsPerUnit": {
+        "each": 197
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/790577/nutrients",
+      "portionSource": "USDA Foundation 1 edible red onion = 197 g; individual onion sizes vary",
+      "reviewNotes": "Exact cited USDA food and recipe-unit input reference; does NOT verify individual product variation, cooking yield or final prepared recipe nutrition."
+    },
+    "Red pepper flakes": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Red seedless grapes": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Refried beans": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "172438",
+      "description": "Refried beans, canned, traditional style",
+      "state": "Prepared canned traditional refried beans, heated without added ingredients",
+      "kcalPer100g": 90,
+      "proteinPer100g": 5,
+      "carbsPer100g": 13.6,
+      "fatPer100g": 2,
+      "gramsPerUnit": {
+        "cup": 238
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/172438/nutrients",
+      "portionSource": "USDA traditional canned refried beans: one cup 238g",
+      "reviewNotes": "Three recipes each specify one cup refried beans. Traditional canned variety assumed; homemade, vegetarian, fat-free or lard-enriched products may differ. Per-100g nutrient figures rounded from USDA; final cooked dish nutrition remains estimated."
+    },
+    "Refrigerated biscuit dough": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Refrigerated cheese tortellini": {
+      "source": "USDA FoodData Central",
+      "foodId": "172094",
+      "description": "Tortellini, pasta with cheese filling, fresh-refrigerated, as purchased",
+      "state": "Tortellini, pasta with cheese filling, fresh-refrigerated, as purchased",
+      "kcalPer100g": 307,
+      "proteinPer100g": 13.5,
+      "carbsPer100g": 47,
+      "fatPer100g": 7.23,
+      "gramsPerUnit": {
+        "oz": 28.349523125
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/172094/nutrients",
+      "portionSource": "Refrigerated uncooked cheese pasta purchased by weight; 1 oz avoirdupois = 28.349523125g. Cooked-water uptake changes cooked weight but not input dry nutrient mass.",
+      "reviewNotes": "Source-verified recipe ingredient inputs; cooking retention and per-serving yield not verified."
+    },
+    "Rice noodles": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Rice vinegar": {
+      "source": "USDA FoodData Central FNDDS (generic vinegar proxy)",
+      "foodId": "2709351",
+      "description": "Vinegar, generic (unseasoned rice vinegar proxy)",
+      "state": "Unseasoned liquid rice vinegar, not sweetened sushi seasoning vinegar",
+      "kcalPer100g": 21,
+      "proteinPer100g": 0,
+      "carbsPer100g": 0.9,
+      "fatPer100g": 0,
+      "gramsPerUnit": {
+        "tbsp": 15
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/2709351/nutrients",
+      "portionSource": "One US tablespoon liquid vinegar ~15g.",
+      "reviewNotes": "Five recipes use 1–2 tbsp rice vinegar. Generic unsweetened vinegar USDA FNDDS 2709351 used as an explicitly labeled proxy. Seasoned/sweetened rice vinegar contains added sugar and is NOT equivalent; the recipe ingredient lacks a brand. Values are estimated, not brand-exact."
+    },
+    "Ricotta": {
+      "source": "USDA FoodData Central Foundation",
+      "foodId": "746766",
+      "description": "Cheese, ricotta, whole milk",
+      "state": "Cheese, ricotta, whole milk",
+      "kcalPer100g": 157,
+      "proteinPer100g": 7.81,
+      "carbsPer100g": 6.86,
+      "fatPer100g": 11,
+      "gramsPerUnit": {
+        "cup": 258
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/746766/nutrients",
+      "portionSource": "USDA explicit 1 cup whole milk ricotta 258g; same approved USDA reference as Ricotta cheese; reduced-fat differs",
+      "reviewNotes": "Source-verified ingredient input for exact specified USDA form only. Product variation, packing, cooking retention and finished-recipe serving nutrition remain unverified."
+    },
+    "Ricotta cheese": {
+      "source": "USDA FoodData Central",
+      "foodId": "746766",
+      "description": "Cheese, ricotta, whole milk",
+      "state": "Cheese, ricotta, whole milk",
+      "kcalPer100g": 157,
+      "proteinPer100g": 7.81,
+      "carbsPer100g": 6.86,
+      "fatPer100g": 11,
+      "gramsPerUnit": {
+        "cup": 258
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/746766/nutrients",
+      "portionSource": "USDA explicitly 1 cup whole-milk ricotta =258g; reduced fat ricotta differs. Recipes give cup of ricotta without reduced-fat designation.",
+      "reviewNotes": "Source-verified recipe ingredient inputs; cooking retention and per-serving yield not verified."
+    },
+    "Roasted red peppers": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Roma tomatoes": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170457",
+      "description": "Tomatoes, red, ripe, raw (proxy for Roma/plum tomatoes)",
+      "state": "Raw cherry tomatoes, standard red raw tomato nutrient proxy",
+      "kcalPer100g": 18,
+      "proteinPer100g": 0.88,
+      "carbsPer100g": 3.89,
+      "fatPer100g": 0.2,
+      "gramsPerUnit": {
+        "each": 62
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170457/nutrients",
+      "portionSource": "Typical medium Roma tomato approximately 62g edible; size varies.",
+      "reviewNotes": "Six recipes use 2–3 whole Roma tomatoes. Generic USDA raw red tomato macro proxy, not a variety-specific laboratory measure; ~62g each. Existing cherry tomato record shares the generic tomato nutrient reference."
+    },
+    "Romaine lettuce": {
+      "source": "USDA FoodData Central",
+      "foodId": "169247",
+      "description": "Lettuce, cos or romaine, raw",
+      "state": "Lettuce, cos or romaine, raw",
+      "kcalPer100g": 17,
+      "proteinPer100g": 1.23,
+      "carbsPer100g": 3.29,
+      "fatPer100g": 0.3,
+      "gramsPerUnit": {
+        "cup": 47
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169247/nutrients",
+      "portionSource": "USDA 1 cup shredded romaine =47g. Both recipes explicitly call for chopped romaine by cups.",
+      "reviewNotes": "Source-verified recipe ingredient inputs; cooking retention and per-serving yield not verified."
+    },
+    "Rosemary": {
+      "source": "USDA FoodData Central",
+      "foodId": "173473",
+      "description": "Rosemary, fresh",
+      "state": "Rosemary, fresh",
+      "kcalPer100g": 131,
+      "proteinPer100g": 3.31,
+      "carbsPer100g": 20.7,
+      "fatPer100g": 5.86,
+      "gramsPerUnit": {
+        "tbsp": 1.7
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/173473/nutrients",
+      "portionSource": "Fresh rosemary 1 USDA tablespoon 1.7g; recipe specifies minced fresh rosemary.",
+      "reviewNotes": "Practical default for unspecified rosemary: fresh minced rosemary. The only recipe use is 1 tbsp in Rosemary Garlic Turkey Meatloaf. USDA fresh rosemary nutrient and portion data reused; dried rosemary would require different weight and values. This is an estimated macro default."
+    },
+    "Russet potatoes": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170027",
+      "description": "Potatoes, russet, flesh and skin, raw",
+      "state": "Raw russet potatoes with skin",
+      "kcalPer100g": 79,
+      "proteinPer100g": 2.14,
+      "carbsPer100g": 18.1,
+      "fatPer100g": 0.08,
+      "gramsPerUnit": {
+        "lb": 453.592
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170027/nutrients",
+      "portionSource": "453.592 grams per pound; weighed raw",
+      "reviewNotes": "Four recipes measure one or two pounds. Peeling changes edible yield. Added cooking fat counted separately."
+    },
+    "Sage": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Salmon fillets": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Salsa": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "174524",
+      "description": "Sauce salsa ready to serve",
+      "state": "Prepared tomato salsa",
+      "kcalPer100g": 29,
+      "proteinPer100g": 1.52,
+      "carbsPer100g": 6.64,
+      "fatPer100g": 0.17,
+      "gramsPerUnit": {
+        "cup": 260
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/174524/nutrients",
+      "portionSource": "Estimated 260g per cup",
+      "reviewNotes": "Six recipes use tomato salsa; product brand and sodium content vary."
+    },
+    "Salsa verde": {
+      "source": "USDA FoodData Central Survey Foods",
+      "foodId": "2709743",
+      "description": "Salsa verde or salsa, green",
+      "state": "Ready-to-serve green salsa, tomatillo-style",
+      "kcalPer100g": 38,
+      "proteinPer100g": 1.1,
+      "carbsPer100g": 6.4,
+      "fatPer100g": 0.9,
+      "gramsPerUnit": {
+        "cup": 260
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/2709743/nutrients",
+      "portionSource": "Estimated 260g per cup based on existing salsa portion proxy; specific salsa verde density not verified",
+      "reviewNotes": "Four recipes use 0.5 to 2 cups. USDA survey category represents typical green salsa, not a specific brand. Cup weight estimated; tomatillo content, oil and salt vary."
+    },
+    "Salt": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "173468",
+      "description": "Salt, table",
+      "state": "Salt, table",
+      "kcalPer100g": 0,
+      "proteinPer100g": 0,
+      "carbsPer100g": 0,
+      "fatPer100g": 0,
+      "gramsPerUnit": {
+        "tsp": 6
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/173468/nutrients",
+      "portionSource": "USDA explicit 1 tsp = 6 g",
+      "reviewNotes": "Exact cited USDA food and recipe-unit input reference; does NOT verify individual product variation, cooking yield or final prepared recipe nutrition."
+    },
+    "Sandwich bread": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Sesame oil": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "171016",
+      "description": "Oil, sesame, salad or cooking",
+      "state": "Oil, sesame, salad or cooking",
+      "kcalPer100g": 884,
+      "proteinPer100g": 0,
+      "carbsPer100g": 0,
+      "fatPer100g": 100,
+      "gramsPerUnit": {
+        "tbsp": 13.6
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171016/nutrients",
+      "portionSource": "USDA explicit 1 tablespoon = 13.6g; toasted versus refined sesame oil and consumed fraction depend on recipe.",
+      "reviewNotes": "USDA source-linked ingredient input values. Preparation yield and retained ingredient fractions still require full-recipe review."
+    },
+    "Sesame seeds": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170150",
+      "description": "Seeds, sesame seeds, whole, dried",
+      "state": "Seeds, sesame seeds, whole, dried",
+      "kcalPer100g": 573,
+      "proteinPer100g": 17.73,
+      "carbsPer100g": 23.45,
+      "fatPer100g": 49.67,
+      "gramsPerUnit": {
+        "tbsp": 9
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170150/nutrients",
+      "portionSource": "USDA explicit 1 tbsp sesame seeds = 9 g",
+      "reviewNotes": "Exact cited USDA food and recipe-unit input reference; does NOT verify individual product variation, cooking yield or final prepared recipe nutrition."
+    },
+    "Shredded cabbage": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "169975",
+      "description": "Cabbage, raw",
+      "state": "Raw shredded green cabbage, edible portion",
+      "kcalPer100g": 25,
+      "proteinPer100g": 1.28,
+      "carbsPer100g": 5.8,
+      "fatPer100g": 0.1,
+      "gramsPerUnit": {
+        "cup": 70
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169975/nutrients",
+      "portionSource": "Estimated 70g per cup loosely packed shredded cabbage; cut and packing vary",
+      "reviewNotes": "Three recipes use 2 cups shredded cabbage as garnish/slaw. Generic raw green cabbage source; red cabbage or dressed slaw would differ."
+    },
+    "Shredded cheddar": {
+      "source": "USDA FoodData Central",
+      "foodId": "328637",
+      "description": "Cheese, cheddar",
+      "state": "Cheese, cheddar",
+      "kcalPer100g": 408,
+      "proteinPer100g": 23.3,
+      "carbsPer100g": 2.44,
+      "fatPer100g": 34,
+      "gramsPerUnit": {
+        "cup": 105
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/328637/nutrients",
+      "portionSource": "USDA FDC explicit 1 cup shredded cheddar = 105 g. Recipe directions melt or stir cups of cheddar; shredded state assumed; brand variation remains.",
+      "reviewNotes": "Same edible food and preparation as previously approved 'Cheddar cheese'. Actual recipe units verified (shrimp lb; shredded cheddar cup). USDA ingredient estimate; shrimp must be weighed peeled/deveined, cheese cup means shredded not block. Finished-meal macros remain estimates."
+    },
+    "Shredded cheddar cheese": {
+      "source": "USDA FoodData Central",
+      "foodId": "328637",
+      "description": "Cheese, cheddar",
+      "state": "Cheese, cheddar",
+      "kcalPer100g": 408,
+      "proteinPer100g": 23.3,
+      "carbsPer100g": 2.44,
+      "fatPer100g": 34,
+      "gramsPerUnit": {
+        "cup": 105
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/328637/nutrients",
+      "portionSource": "USDA FDC explicit 1 cup shredded cheddar = 105 g. Recipe directions melt or stir cups of cheddar; shredded state assumed; brand variation remains.",
+      "reviewNotes": "Same edible food and preparation as previously approved 'Cheddar cheese'. Actual recipe units verified (shrimp lb; shredded cheddar cup). USDA ingredient estimate; shrimp must be weighed peeled/deveined, cheese cup means shredded not block. Finished-meal macros remain estimates."
+    },
+    "Shredded lettuce": {
+      "source": "USDA FoodData Central",
+      "foodId": "169247",
+      "description": "Lettuce, cos or romaine, raw (shredded lettuce proxy)",
+      "state": "Lettuce, cos or romaine, raw",
+      "kcalPer100g": 17,
+      "proteinPer100g": 1.23,
+      "carbsPer100g": 3.29,
+      "fatPer100g": 0.3,
+      "gramsPerUnit": {
+        "cup": 47
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169247/nutrients",
+      "portionSource": "Approximate 47g per cup shredded raw romaine; volume varies with shred size and packing.",
+      "reviewNotes": "Five recipes use 1–2 cups shredded lettuce for topping; raw romaine is a documented generic lettuce proxy. Variety and packing density are not specified, so edible weight is an estimate."
+    },
+    "Shredded Monterey Jack cheese": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170844",
+      "description": "Cheese, monterey jack",
+      "state": "Natural Monterey Jack cheese, shredded (generic solid-cheese nutrient proxy)",
+      "kcalPer100g": 373,
+      "proteinPer100g": 24.48,
+      "carbsPer100g": 0.68,
+      "fatPer100g": 30.28,
+      "gramsPerUnit": {
+        "cup": 113
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170844/nutrients",
+      "portionSource": "Shredded Monterey Jack approximately 113g per cup (4oz); shred thickness and packing affect weight.",
+      "reviewNotes": "Eight recipes use 1–2 cups shredded cheese. USDA SR Legacy generic Monterey Jack reference used; actual pre-shredded products may include anti-caking starch and differ. Portion mass is a practical estimate; not a lab-measured cup."
+    },
+    "Shredded mozzarella": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170845",
+      "description": "Cheese, mozzarella, whole milk",
+      "state": "Whole-milk mozzarella, shredded for measured cup",
+      "kcalPer100g": 300,
+      "proteinPer100g": 22.17,
+      "carbsPer100g": 2.19,
+      "fatPer100g": 22.35,
+      "gramsPerUnit": {
+        "cup": 112
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170845/nutrients",
+      "portionSource": "Estimated 112g per loosely filled cup shredded mozzarella (4oz); brand and shred size vary",
+      "reviewNotes": "Two recipes use this ingredient name; each measures 1–2 cups. Assumes shredded whole-milk mozzarella, not fresh water-packed or part-skim. USDA generic whole-milk mozzarella profile; cup weight estimated."
+    },
+    "Shredded Oaxaca cheese": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Sirloin steak": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Skinless white fish fillets": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Small flour tortillas": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Smoked paprika": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "171329",
+      "description": "Spices, paprika",
+      "state": "Spices, paprika",
+      "kcalPer100g": 282,
+      "proteinPer100g": 14.14,
+      "carbsPer100g": 53.99,
+      "fatPer100g": 12.89,
+      "gramsPerUnit": {
+        "tsp": 2.3
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171329/nutrients",
+      "portionSource": "USDA paprika ground standard 1 tsp = 2.3g; used as an explicitly approximate weight for ground smoked paprika.",
+      "reviewNotes": "Practical standard macro estimate: ground smoked paprika approximated using USDA ground paprika; smoking changes flavor and moisture, but negligible macro effect at teaspoon quantities. Recipe unit inventory confirms tsp only. Not an exact smoked-paprika lab analysis."
+    },
+    "Smoked sausage": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Snow peas": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Sour cream": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "171257",
+      "description": "Cream, sour, cultured",
+      "state": "Cream, sour, cultured",
+      "kcalPer100g": 198,
+      "proteinPer100g": 2.44,
+      "carbsPer100g": 4.63,
+      "fatPer100g": 19.35,
+      "gramsPerUnit": {
+        "cup": 230
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171257/nutrients",
+      "portionSource": "USDA explicit 1 cup = 230 g; standard cultured sour cream, not reduced-fat",
+      "reviewNotes": "Exact cited USDA food and recipe-unit input reference; does NOT verify individual product variation, cooking yield or final prepared recipe nutrition."
+    },
+    "Soy sauce": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "172473",
+      "description": "Soy sauce, reduced sodium (nutrition proxy for unspecified soy sauce)",
+      "state": "Soy sauce made from soy and wheat (shoyu), low sodium",
+      "kcalPer100g": 57,
+      "proteinPer100g": 9.05,
+      "carbsPer100g": 5.59,
+      "fatPer100g": 0.3,
+      "gramsPerUnit": {
+        "tbsp": 14.2,
+        "cup": 227.2
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/172473/nutrients",
+      "portionSource": "USDA low-sodium shoyu 1 tbsp = 14.2g; brands/ingredient proportions vary, especially sodium.",
+      "reviewNotes": "Six recipes measure 2–3 tbsp or 1/4 cup. Uses existing approved low-sodium soy sauce USDA nutrition proxy for unspecified soy sauce. Calories/macros approximate; sodium may be substantially UNDERestimated for regular soy sauce. This does not certify sodium accuracy."
+    },
+    "Sun-dried tomatoes": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "168567",
+      "description": "Tomatoes, sun-dried",
+      "state": "Tomatoes, sun-dried",
+      "kcalPer100g": 258,
+      "proteinPer100g": 14.11,
+      "carbsPer100g": 55.76,
+      "fatPer100g": 2.97,
+      "gramsPerUnit": {
+        "cup": 54
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/168567/nutrients",
+      "portionSource": "USDA explicit dry sun-dried tomatoes 1 cup=54g; excludes tomatoes packed in oil",
+      "reviewNotes": "Source-verified ingredient input for exact specified USDA form only. Product variation, packing, cooking retention and finished-recipe serving nutrition remain unverified."
+    },
+    "Sweet potatoes": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Swiss cheese": {
+      "source": "USDA FoodData Central Foundation",
+      "foodId": "746767",
+      "description": "Cheese, swiss",
+      "state": "Cheese, swiss",
+      "kcalPer100g": 393,
+      "proteinPer100g": 27,
+      "carbsPer100g": 1.44,
+      "fatPer100g": 31,
+      "gramsPerUnit": {
+        "slice": 21.9
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/746767/nutrients",
+      "portionSource": "USDA explicit 1 standard regular slice = 21.9 g; thin slices have a different weight",
+      "reviewNotes": "Source-linked ingredient input reference only. Brand variation, portions before peeling, cooking yield and prepared-meal nutrition are NOT certified."
+    },
+    "Tomatillos": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "168566",
+      "description": "Tomatillos, raw",
+      "state": "Raw tomatillos, husks removed, edible portion",
+      "kcalPer100g": 32,
+      "proteinPer100g": 0.96,
+      "carbsPer100g": 5.84,
+      "fatPer100g": 1.02,
+      "gramsPerUnit": {
+        "lb": 453.59237
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/168566/nutrients",
+      "portionSource": "1 lb = 453.59237g; recipes use 1 and 1.5 lb. Assumes weight refers to husked edible tomatillos.",
+      "reviewNotes": "Two recipes use pounds of tomatillos. If purchased weight includes husks or discarded portions, edible mass is lower; roasting changes water weight but not input macros."
+    },
+    "Tomato paste": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Tomato sauce": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Tortilla chips": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Vegetable oil": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "171413",
+      "description": "Oil, vegetable, soybean, salad or cooking",
+      "state": "Refined liquid vegetable cooking oil (soybean oil proxy)",
+      "kcalPer100g": 884,
+      "proteinPer100g": 0,
+      "carbsPer100g": 0,
+      "fatPer100g": 100,
+      "gramsPerUnit": {
+        "tbsp": 13.6
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171413/nutrients",
+      "portionSource": "Typical 1 tbsp liquid cooking oil weighs 13.6g",
+      "reviewNotes": "Two recipes use 1–2 tbsp generic vegetable oil. Soybean oil is a USDA proxy; blended vegetable oil fatty acid composition differs. Assumes all measured oil remains in dish, which may overstate absorbed fat for frying."
+    },
+    "Walnuts": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Water": {
+      "source": "Standard nutritional definition (plain potable water)",
+      "foodId": "",
+      "description": "Water, plain drinking",
+      "state": "Plain water added to recipe",
+      "kcalPer100g": 0,
+      "proteinPer100g": 0,
+      "carbsPer100g": 0,
+      "fatPer100g": 0,
+      "gramsPerUnit": {
+        "cup": 236.588,
+        "tbsp": 14.787
+      },
+      "reviewStatus": "approved",
+      "portionSource": "US customary volume: 1 cup = 236.588 mL; 1 tbsp = 14.787 mL; assumes water density ~1 g/mL",
+      "reviewNotes": "Two recipes use 0.25 cup and 1 tbsp plain water. Zero energy and macronutrients is intrinsic to plain water; no USDA ID necessary. Added water changes cooked weight but not total input macros."
+    },
+    "Water chestnuts": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "White beans": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "White onion": {
+      "source": "USDA FoodData Central Foundation Foods",
+      "foodId": "1104962",
+      "description": "Onions, white, raw",
+      "state": "Raw white onion edible portion",
+      "kcalPer100g": 35,
+      "proteinPer100g": 0.89,
+      "carbsPer100g": 7.68,
+      "fatPer100g": 0.13,
+      "gramsPerUnit": {
+        "each": 110
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/1104962/nutrients",
+      "portionSource": "USDA generic medium onion edible weight 110g; applied as size proxy to white onion, actual size varies.",
+      "reviewNotes": "12 recipes use whole or half white onions, unit each. Exact white onion USDA Foundation ID 1104962. Nutrient values approximate (food composition varies); edible onion weight is generic medium onion proxy, not a weighed white onion. Cooking loss does not remove onion solids; final recipe yield not verified."
+    },
+    "White vinegar": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Wild rice blend": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Yellow onion": {
+      "source": "USDA FoodData Central Foundation",
+      "foodId": "790646",
+      "description": "Onions, yellow, raw",
+      "state": "Onions, yellow, raw",
+      "kcalPer100g": 38,
+      "proteinPer100g": 0.83,
+      "carbsPer100g": 8.61,
+      "fatPer100g": 0.05,
+      "gramsPerUnit": {
+        "each": 143
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/790646/nutrients",
+      "portionSource": "USDA Foundation 1 edible onion = 143 g; individual onion sizes vary",
+      "reviewNotes": "Exact cited USDA food and recipe-unit input reference; does NOT verify individual product variation, cooking yield or final prepared recipe nutrition."
+    },
+    "Yellow onions": {
+      "source": "USDA FoodData Central Foundation",
+      "foodId": "790646",
+      "description": "Onions, yellow, raw",
+      "state": "Onions, yellow, raw",
+      "kcalPer100g": 38,
+      "proteinPer100g": 0.83,
+      "carbsPer100g": 8.61,
+      "fatPer100g": 0.05,
+      "gramsPerUnit": {
+        "each": 143
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/790646/nutrients",
+      "portionSource": "USDA Foundation 1 edible onion = 143 g; individual onion sizes vary",
+      "reviewNotes": "Exact cited USDA food and recipe-unit input reference; does NOT verify individual product variation, cooking yield or final prepared recipe nutrition."
+    },
+    "Yukon gold potatoes": {
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170027",
+      "description": "Potatoes, russet, flesh and skin, raw (Yukon gold proxy)",
+      "state": "Raw Yukon gold potatoes, with skin; generic russet nutrition proxy",
+      "kcalPer100g": 79,
+      "proteinPer100g": 2.14,
+      "carbsPer100g": 18.1,
+      "fatPer100g": 0.08,
+      "gramsPerUnit": {
+        "lb": 453.592
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170027/nutrients",
+      "portionSource": "453.592 grams per pound; weighed raw",
+      "reviewNotes": "Two recipes measure 1.5 or 2 lb Yukon gold potatoes raw. Russet USDA values are a transparent proxy; Yukon gold composition varies. Peeling and cooking water/fat affect final dish weight."
+    },
+    "Yukon Gold potatoes": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Yukon potatoes": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    },
+    "Zucchini": {
+      "source": "",
+      "foodId": "",
+      "description": "",
+      "state": "",
+      "kcalPer100g": null,
+      "proteinPer100g": null,
+      "carbsPer100g": null,
+      "fatPer100g": null,
+      "gramsPerUnit": {},
+      "reviewStatus": "pending"
+    }
+  }
+}

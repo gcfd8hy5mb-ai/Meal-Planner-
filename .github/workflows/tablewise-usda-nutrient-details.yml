@@ -1,0 +1,51 @@
+name: USDA focused nutrient details
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - '.github/workflows/tablewise-usda-nutrient-details.yml'
+      - 'ops/recipe-expansion/fetch-focused-usda-nutrients.mjs'
+      - 'ops/recipe-expansion/usda-focused-identity-review.json'
+      - 'ops/recipe-expansion/audit-focused-measurements.mjs'
+      - 'ops/recipe-expansion/propose-exact-mass-conversions.mjs'
+      - 'ops/recipe-expansion/audit-all-ingredient-measurements.mjs'
+      - 'ops/recipe-expansion/build-usda-portion-review.mjs'
+      - 'ops/recipe-expansion/prioritize-ingredient-portion-review.mjs'
+permissions:
+  contents: read
+jobs:
+  candidate-nutrient-details:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Retrieve reviewed candidate nutrient detail
+        env:
+          USDA_FDC_API_KEY: ${{ secrets.USDA_FDC_API_KEY }}
+        run: node ops/recipe-expansion/fetch-focused-usda-nutrients.mjs
+      - name: Check recipe quantities and unresolved edible-gram conversions
+        run: node ops/recipe-expansion/audit-focused-measurements.mjs
+      - name: Separate exact ounce weights from ingredient-specific conversions
+        run: node ops/recipe-expansion/propose-exact-mass-conversions.mjs
+      - name: Audit all 308 recipe measurement combinations
+        run: node ops/recipe-expansion/audit-all-ingredient-measurements.mjs
+      - name: Find candidate USDA food portions for actual recipe units
+        run: node ops/recipe-expansion/build-usda-portion-review.mjs
+      - name: Prioritize all 220 ingredient-specific conversion reviews
+        run: node ops/recipe-expansion/prioritize-ingredient-portion-review.mjs
+      - name: Upload unapproved nutrient details
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: tablewise-usda-9-candidate-nutrient-details
+          path: |
+            ops/recipe-expansion/usda-focused-nutrient-details.json
+            ops/recipe-expansion/usda-focused-measurement-review.json
+            ops/recipe-expansion/usda-measurement-proposals.json
+            ops/recipe-expansion/all-ingredient-measurement-audit.json
+            ops/recipe-expansion/usda-portion-review.json
+            ops/recipe-expansion/ingredient-portion-review-queue.json
+          retention-days: 30

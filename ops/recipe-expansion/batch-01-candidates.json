@@ -1,0 +1,2508 @@
+{
+  "batch": 1,
+  "target": 250,
+  "status": "candidate-selection-only",
+  "note": "These are approved-for-development meal concepts, NOT ready-to-cook recipes, not published, and not included in the catalog until measurements, directions and matching photographs are reviewed.",
+  "recipes": [
+    {
+      "id": "exp01-001",
+      "name": "Birria Beef Tacos",
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-002",
+      "name": "Carne Asada Street Tacos",
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-003",
+      "name": "Slow-Cooker Pork Carnitas",
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-004",
+      "name": "Crispy Chicken Tostadas",
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-005",
+      "name": "Beef Barbacoa Bowls",
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-006",
+      "name": "Green Chile Chicken Enchiladas",
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-007",
+      "name": "Ground Beef Taco Skillet",
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-008",
+      "name": "Chicken Tinga Tacos",
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-009",
+      "name": "Steak Fajita Quesadillas",
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-010",
+      "name": "Shrimp Fajita Rice Bowls",
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-011",
+      "name": "Smothered Beef Burritos",
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-012",
+      "name": "Chicken Chimichangas",
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-013",
+      "name": "Tex-Mex Beef Stuffed Peppers",
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-014",
+      "name": "Cheesy Taco Pasta",
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-015",
+      "name": "Pork Chile Verde",
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-016",
+      "name": "Red Chile Beef Enchiladas",
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-017",
+      "name": "Chicken Pozole Verde",
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-018",
+      "name": "Pork Pozole Rojo",
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-019",
+      "name": "Mexican Street Corn Chicken Bowls",
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-020",
+      "name": "Chipotle Lime Shrimp Tacos",
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-021",
+      "name": "Steak Nacho Supreme",
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-022",
+      "name": "Pulled Pork Nachos",
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-023",
+      "name": "Beef and Potato Taquitos",
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-024",
+      "name": "Crispy Chicken Flautas",
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-025",
+      "name": "Mexican Picadillo",
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-026",
+      "name": "Salsa Verde Chicken Tacos",
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-027",
+      "name": "Beef and Cheese Empanadas",
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-028",
+      "name": "Cheesy Chicken Taco Casserole",
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-029",
+      "name": "Chipotle Chicken Torta",
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-030",
+      "name": "Shrimp Veracruz",
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-031",
+      "name": "Steak and Pinto Bean Burritos",
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-032",
+      "name": "Poblano Chicken Rice Bake",
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-033",
+      "name": "Mexican Beef Stuffed Zucchini",
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-034",
+      "name": "Pork Al Pastor Tacos",
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-035",
+      "name": "Chicken Mole Enchiladas",
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-036",
+      "name": "Beef Quesabirria",
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-037",
+      "name": "Tex-Mex Chili Mac",
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-038",
+      "name": "Cheesy Chorizo Breakfast Tacos",
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-039",
+      "name": "Chorizo and Potato Burritos",
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-040",
+      "name": "Grilled Fish Baja Tacos",
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-041",
+      "name": "Creamy Chicken Poblano Soup",
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-042",
+      "name": "Mexican Beef Meatballs",
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-043",
+      "name": "Smoky Chipotle Turkey Chili",
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-044",
+      "name": "Steak Taco Salad",
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-045",
+      "name": "Cilantro Lime Chicken Taquitos",
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-046",
+      "name": "Smothered Pork Chops with Onion Gravy",
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-047",
+      "name": "Country Fried Steak and Cream Gravy",
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-048",
+      "name": "Cajun Shrimp and Grits",
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-049",
+      "name": "Buttermilk Fried Chicken",
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-050",
+      "name": "Crispy Southern Chicken Tenders",
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-051",
+      "name": "Sausage Gravy and Buttermilk Biscuits",
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-052",
+      "name": "Slow-Cooker Pot Roast and Carrots",
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-053",
+      "name": "Beef Tips and Brown Gravy",
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-054",
+      "name": "Baked Chicken and Dressing",
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-055",
+      "name": "Chicken Fried Chicken",
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-056",
+      "name": "Pulled Pork Mac and Cheese",
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-057",
+      "name": "Smoked Sausage Jambalaya",
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-058",
+      "name": "Cajun Chicken and Sausage Gumbo",
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-059",
+      "name": "Shrimp Étouffée",
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-060",
+      "name": "Red Beans and Sausage Rice",
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-061",
+      "name": "Cheddar Broccoli Chicken Bake",
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-062",
+      "name": "Bacon Cheeseburger Tater Tot Casserole",
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-063",
+      "name": "Southern Baked Macaroni and Cheese",
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-064",
+      "name": "Cast-Iron Cornbread Chicken Pie",
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-065",
+      "name": "Honey Butter Fried Chicken Biscuits",
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-066",
+      "name": "BBQ Meatloaf with Mashed Potatoes",
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-067",
+      "name": "Brown Sugar Glazed Ham Steak",
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-068",
+      "name": "Creamy Chicken Pot Pie",
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-069",
+      "name": "Salisbury Steak with Mushroom Gravy",
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-070",
+      "name": "Beef and Noodles",
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-071",
+      "name": "Loaded Baked Potato Soup",
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-072",
+      "name": "Southern Green Beans and Ham",
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-073",
+      "name": "Bourbon Glazed Pork Chops",
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-074",
+      "name": "Cajun Blackened Catfish",
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-075",
+      "name": "Oven-Baked BBQ Chicken Thighs",
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-076",
+      "name": "Country Ham and Potato Hash",
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-077",
+      "name": "Chicken and Wild Rice Casserole",
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-078",
+      "name": "Creamed Corn Chicken Skillet",
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-079",
+      "name": "Cajun Shrimp Boil",
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-080",
+      "name": "Smoked Sausage Potato Skillet",
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-081",
+      "name": "Kentucky Hot Brown Sandwiches",
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-082",
+      "name": "Biscuit-Topped Beef Pot Pie",
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-083",
+      "name": "Sweet Tea Brined Chicken",
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-084",
+      "name": "Crispy Fried Catfish Sandwich",
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-085",
+      "name": "Slow-Cooker Country Ribs",
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-086",
+      "name": "Creamy Tuscan Chicken",
+      "slot": "Dinner",
+      "cuisine": "Italian & Pasta",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-087",
+      "name": "Baked Four-Cheese Ziti",
+      "slot": "Dinner",
+      "cuisine": "Italian & Pasta",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-088",
+      "name": "Italian Sausage Rigatoni",
+      "slot": "Dinner",
+      "cuisine": "Italian & Pasta",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-089",
+      "name": "Garlic Butter Shrimp Linguine",
+      "slot": "Dinner",
+      "cuisine": "Italian & Pasta",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-090",
+      "name": "Chicken Alfredo Stuffed Shells",
+      "slot": "Dinner",
+      "cuisine": "Italian & Pasta",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-091",
+      "name": "Spinach Ricotta Ravioli Bake",
+      "slot": "Dinner",
+      "cuisine": "Italian & Pasta",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-092",
+      "name": "Slow-Simmered Beef Bolognese",
+      "slot": "Dinner",
+      "cuisine": "Italian & Pasta",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-093",
+      "name": "Pesto Chicken Tortellini",
+      "slot": "Dinner",
+      "cuisine": "Italian & Pasta",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-094",
+      "name": "Sausage and Peppers Subs",
+      "slot": "Dinner",
+      "cuisine": "Italian & Pasta",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-095",
+      "name": "Chicken Marsala",
+      "slot": "Dinner",
+      "cuisine": "Italian & Pasta",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-096",
+      "name": "Creamy Tomato Gnocchi",
+      "slot": "Dinner",
+      "cuisine": "Italian & Pasta",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-097",
+      "name": "Beef Lasagna Roll-Ups",
+      "slot": "Dinner",
+      "cuisine": "Italian & Pasta",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-098",
+      "name": "Italian Meatball Subs",
+      "slot": "Dinner",
+      "cuisine": "Italian & Pasta",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-099",
+      "name": "Parmesan Crusted Tilapia",
+      "slot": "Dinner",
+      "cuisine": "Italian & Pasta",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-100",
+      "name": "Sausage and Kale Tortellini Soup",
+      "slot": "Dinner",
+      "cuisine": "Italian & Pasta",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-101",
+      "name": "Lemon Garlic Chicken Piccata",
+      "slot": "Dinner",
+      "cuisine": "Italian & Pasta",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-102",
+      "name": "Garlic Parmesan Chicken Orzo",
+      "slot": "Dinner",
+      "cuisine": "Italian & Pasta",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-103",
+      "name": "Creamy Mushroom Fettuccine",
+      "slot": "Dinner",
+      "cuisine": "Italian & Pasta",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-104",
+      "name": "Penne alla Vodka with Chicken",
+      "slot": "Dinner",
+      "cuisine": "Italian & Pasta",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-105",
+      "name": "Baked Eggplant Parmesan",
+      "slot": "Dinner",
+      "cuisine": "Italian & Pasta",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-106",
+      "name": "Italian Wedding Soup",
+      "slot": "Dinner",
+      "cuisine": "Italian & Pasta",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-107",
+      "name": "Chicken Pesto Panini",
+      "slot": "Dinner",
+      "cuisine": "Italian & Pasta",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-108",
+      "name": "Beef and Ricotta Cannelloni",
+      "slot": "Dinner",
+      "cuisine": "Italian & Pasta",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-109",
+      "name": "Creamy Garlic Shrimp Risotto",
+      "slot": "Dinner",
+      "cuisine": "Italian & Pasta",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-110",
+      "name": "One-Pot Sausage Tortellini",
+      "slot": "Dinner",
+      "cuisine": "Italian & Pasta",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-111",
+      "name": "Baked Meatball Penne",
+      "slot": "Dinner",
+      "cuisine": "Italian & Pasta",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-112",
+      "name": "Creamy Sun-Dried Tomato Chicken",
+      "slot": "Dinner",
+      "cuisine": "Italian & Pasta",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-113",
+      "name": "Lemon Butter Salmon Pasta",
+      "slot": "Dinner",
+      "cuisine": "Italian & Pasta",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-114",
+      "name": "Italian Beef Ragu Pappardelle",
+      "slot": "Dinner",
+      "cuisine": "Italian & Pasta",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-115",
+      "name": "Sausage and Spinach Lasagna",
+      "slot": "Dinner",
+      "cuisine": "Italian & Pasta",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-116",
+      "name": "Caprese Chicken Bake",
+      "slot": "Dinner",
+      "cuisine": "Italian & Pasta",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-117",
+      "name": "Cheesy Italian Stuffed Peppers",
+      "slot": "Dinner",
+      "cuisine": "Italian & Pasta",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-118",
+      "name": "Chicken Carbonara",
+      "slot": "Dinner",
+      "cuisine": "Italian & Pasta",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-119",
+      "name": "Garlic Bread Chicken Parmesan Sliders",
+      "slot": "Dinner",
+      "cuisine": "Italian & Pasta",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-120",
+      "name": "Sausage and White Bean Soup",
+      "slot": "Dinner",
+      "cuisine": "Italian & Pasta",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-121",
+      "name": "Shrimp Scampi Orzo",
+      "slot": "Dinner",
+      "cuisine": "Italian & Pasta",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-122",
+      "name": "Baked Pesto Chicken Meatballs",
+      "slot": "Dinner",
+      "cuisine": "Italian & Pasta",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-123",
+      "name": "Mushroom and Beef Stroganoff Pasta",
+      "slot": "Dinner",
+      "cuisine": "Italian & Pasta",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-124",
+      "name": "Chicken Cacciatore",
+      "slot": "Dinner",
+      "cuisine": "Italian & Pasta",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-125",
+      "name": "Parmesan Garlic Butter Pasta",
+      "slot": "Dinner",
+      "cuisine": "Italian & Pasta",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-126",
+      "name": "Italian Sausage Stuffed Zucchini",
+      "slot": "Dinner",
+      "cuisine": "Italian & Pasta",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-127",
+      "name": "Creamy Cajun Shrimp Alfredo",
+      "slot": "Dinner",
+      "cuisine": "Italian & Pasta",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-128",
+      "name": "Meatball Tortellini Bake",
+      "slot": "Dinner",
+      "cuisine": "Italian & Pasta",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-129",
+      "name": "Tomato Basil Chicken Penne",
+      "slot": "Dinner",
+      "cuisine": "Italian & Pasta",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-130",
+      "name": "Baked Beef Manicotti",
+      "slot": "Dinner",
+      "cuisine": "Italian & Pasta",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-131",
+      "name": "Honey Garlic Chicken Stir-Fry",
+      "slot": "Dinner",
+      "cuisine": "Chinese & Asian",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-132",
+      "name": "Mongolian Beef",
+      "slot": "Dinner",
+      "cuisine": "Chinese & Asian",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-133",
+      "name": "Cashew Chicken",
+      "slot": "Dinner",
+      "cuisine": "Chinese & Asian",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-134",
+      "name": "Kung Pao Shrimp",
+      "slot": "Dinner",
+      "cuisine": "Chinese & Asian",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-135",
+      "name": "Teriyaki Beef Bowls",
+      "slot": "Dinner",
+      "cuisine": "Chinese & Asian",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-136",
+      "name": "Sweet and Sour Pork",
+      "slot": "Dinner",
+      "cuisine": "Chinese & Asian",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-137",
+      "name": "Crispy Sesame Chicken",
+      "slot": "Dinner",
+      "cuisine": "Chinese & Asian",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-138",
+      "name": "Chinese Garlic Green Bean Beef",
+      "slot": "Dinner",
+      "cuisine": "Chinese & Asian",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-139",
+      "name": "Beef Chow Mein",
+      "slot": "Dinner",
+      "cuisine": "Chinese & Asian",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-140",
+      "name": "Shrimp Fried Rice",
+      "slot": "Dinner",
+      "cuisine": "Chinese & Asian",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-141",
+      "name": "Pineapple Chicken Fried Rice",
+      "slot": "Dinner",
+      "cuisine": "Chinese & Asian",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-142",
+      "name": "Thai Basil Beef",
+      "slot": "Dinner",
+      "cuisine": "Chinese & Asian",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-143",
+      "name": "Thai Red Curry Chicken",
+      "slot": "Dinner",
+      "cuisine": "Chinese & Asian",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-144",
+      "name": "Thai Green Curry Shrimp",
+      "slot": "Dinner",
+      "cuisine": "Chinese & Asian",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-145",
+      "name": "Pad See Ew with Chicken",
+      "slot": "Dinner",
+      "cuisine": "Chinese & Asian",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-146",
+      "name": "Pad Thai with Shrimp",
+      "slot": "Dinner",
+      "cuisine": "Chinese & Asian",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-147",
+      "name": "Korean Beef Rice Bowls",
+      "slot": "Dinner",
+      "cuisine": "Chinese & Asian",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-148",
+      "name": "Korean BBQ Pork Lettuce Wraps",
+      "slot": "Dinner",
+      "cuisine": "Chinese & Asian",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-149",
+      "name": "Ginger Scallion Chicken",
+      "slot": "Dinner",
+      "cuisine": "Chinese & Asian",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-150",
+      "name": "Garlic Chili Shrimp Noodles",
+      "slot": "Dinner",
+      "cuisine": "Chinese & Asian",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-151",
+      "name": "Orange Glazed Salmon",
+      "slot": "Dinner",
+      "cuisine": "Chinese & Asian",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-152",
+      "name": "Honey Soy Pork Chops",
+      "slot": "Dinner",
+      "cuisine": "Chinese & Asian",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-153",
+      "name": "Japanese Chicken Katsu",
+      "slot": "Dinner",
+      "cuisine": "Chinese & Asian",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-154",
+      "name": "Japanese Beef Curry",
+      "slot": "Dinner",
+      "cuisine": "Chinese & Asian",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-155",
+      "name": "Chicken Yakisoba",
+      "slot": "Dinner",
+      "cuisine": "Chinese & Asian",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-156",
+      "name": "Beef Bulgogi Lettuce Wraps",
+      "slot": "Dinner",
+      "cuisine": "Chinese & Asian",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-157",
+      "name": "General Tso's Chicken",
+      "slot": "Dinner",
+      "cuisine": "Chinese & Asian",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-158",
+      "name": "Szechuan Pepper Beef Stir-Fry",
+      "slot": "Dinner",
+      "cuisine": "Chinese & Asian",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-159",
+      "name": "Garlic Ginger Pork Noodles",
+      "slot": "Dinner",
+      "cuisine": "Chinese & Asian",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-160",
+      "name": "Vietnamese Lemongrass Chicken",
+      "slot": "Dinner",
+      "cuisine": "Chinese & Asian",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-161",
+      "name": "Vietnamese Beef Pho",
+      "slot": "Dinner",
+      "cuisine": "Chinese & Asian",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-162",
+      "name": "Chicken Ramen Bowls",
+      "slot": "Dinner",
+      "cuisine": "Chinese & Asian",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-163",
+      "name": "Beef and Snow Pea Stir-Fry",
+      "slot": "Dinner",
+      "cuisine": "Chinese & Asian",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-164",
+      "name": "Coconut Curry Chicken Rice",
+      "slot": "Dinner",
+      "cuisine": "Chinese & Asian",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-165",
+      "name": "Sweet Chili Shrimp Bowls",
+      "slot": "Dinner",
+      "cuisine": "Chinese & Asian",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-166",
+      "name": "Crispy Honey Walnut Shrimp",
+      "slot": "Dinner",
+      "cuisine": "Chinese & Asian",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-167",
+      "name": "Korean Spicy Chicken Bowls",
+      "slot": "Dinner",
+      "cuisine": "Chinese & Asian",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-168",
+      "name": "Chinese Pepper Steak",
+      "slot": "Dinner",
+      "cuisine": "Chinese & Asian",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-169",
+      "name": "Teriyaki Pork Meatballs",
+      "slot": "Dinner",
+      "cuisine": "Chinese & Asian",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-170",
+      "name": "Garlic Soy Chicken Wings",
+      "slot": "Dinner",
+      "cuisine": "Chinese & Asian",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-171",
+      "name": "Thai Peanut Chicken Noodles",
+      "slot": "Dinner",
+      "cuisine": "Chinese & Asian",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-172",
+      "name": "Pineapple Teriyaki Pork",
+      "slot": "Dinner",
+      "cuisine": "Chinese & Asian",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-173",
+      "name": "Black Pepper Beef Noodles",
+      "slot": "Dinner",
+      "cuisine": "Chinese & Asian",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-174",
+      "name": "Hoisin Chicken Lettuce Wraps",
+      "slot": "Dinner",
+      "cuisine": "Chinese & Asian",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-175",
+      "name": "Sticky Garlic Beef Skewers",
+      "slot": "Dinner",
+      "cuisine": "Chinese & Asian",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-176",
+      "name": "Bacon Cheeseburger Sliders",
+      "slot": "Dinner",
+      "cuisine": "American & Grill",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-177",
+      "name": "Philly Cheesesteak Stuffed Peppers",
+      "slot": "Dinner",
+      "cuisine": "American & Grill",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-178",
+      "name": "BBQ Pulled Pork Baked Potatoes",
+      "slot": "Dinner",
+      "cuisine": "American & Grill",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-179",
+      "name": "Grilled Buffalo Chicken Sandwiches",
+      "slot": "Dinner",
+      "cuisine": "American & Grill",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-180",
+      "name": "Honey Mustard Chicken Wraps",
+      "slot": "Dinner",
+      "cuisine": "American & Grill",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-181",
+      "name": "Smash Burgers with Caramelized Onion",
+      "slot": "Dinner",
+      "cuisine": "American & Grill",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-182",
+      "name": "French Dip Roast Beef Sandwiches",
+      "slot": "Dinner",
+      "cuisine": "American & Grill",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-183",
+      "name": "BBQ Bacon Chicken Flatbreads",
+      "slot": "Dinner",
+      "cuisine": "American & Grill",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-184",
+      "name": "Grilled Steak and Loaded Potatoes",
+      "slot": "Dinner",
+      "cuisine": "American & Grill",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-185",
+      "name": "Turkey Club Sandwiches",
+      "slot": "Dinner",
+      "cuisine": "American & Grill",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-186",
+      "name": "Buffalo Chicken Mac and Cheese",
+      "slot": "Dinner",
+      "cuisine": "American & Grill",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-187",
+      "name": "Crispy Fish Sandwiches",
+      "slot": "Dinner",
+      "cuisine": "American & Grill",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-188",
+      "name": "BBQ Chicken Bacon Ranch Pizza",
+      "slot": "Dinner",
+      "cuisine": "American & Grill",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-189",
+      "name": "Grilled Pork Chop and Apples",
+      "slot": "Dinner",
+      "cuisine": "American & Grill",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-190",
+      "name": "Mushroom Swiss Burgers",
+      "slot": "Dinner",
+      "cuisine": "American & Grill",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-191",
+      "name": "Chicken Bacon Ranch Wraps",
+      "slot": "Dinner",
+      "cuisine": "American & Grill",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-192",
+      "name": "Beef Patty Melts",
+      "slot": "Dinner",
+      "cuisine": "American & Grill",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-193",
+      "name": "Baked Cheeseburger Pasta",
+      "slot": "Dinner",
+      "cuisine": "American & Grill",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-194",
+      "name": "Grilled Lemon Pepper Chicken",
+      "slot": "Dinner",
+      "cuisine": "American & Grill",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-195",
+      "name": "Honey Garlic Pork Tenderloin",
+      "slot": "Dinner",
+      "cuisine": "American & Grill",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-196",
+      "name": "Maple Dijon Salmon",
+      "slot": "Dinner",
+      "cuisine": "American & Grill",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-197",
+      "name": "Turkey Meatloaf and Roasted Potatoes",
+      "slot": "Dinner",
+      "cuisine": "American & Grill",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-198",
+      "name": "Homestyle Hamburger Steak",
+      "slot": "Dinner",
+      "cuisine": "American & Grill",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-199",
+      "name": "Bacon Ranch Potato Salad with Chicken",
+      "slot": "Dinner",
+      "cuisine": "American & Grill",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-200",
+      "name": "Buffalo Chicken Stuffed Potatoes",
+      "slot": "Dinner",
+      "cuisine": "American & Grill",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-201",
+      "name": "Steak and Cheese Hoagies",
+      "slot": "Dinner",
+      "cuisine": "American & Grill",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-202",
+      "name": "Beer-Battered Fish and Chips",
+      "slot": "Dinner",
+      "cuisine": "American & Grill",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-203",
+      "name": "Grilled BBQ Shrimp Skewers",
+      "slot": "Dinner",
+      "cuisine": "American & Grill",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-204",
+      "name": "Smoked Turkey and Cheddar Panini",
+      "slot": "Dinner",
+      "cuisine": "American & Grill",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-205",
+      "name": "Crispy Chicken Caesar Wraps",
+      "slot": "Dinner",
+      "cuisine": "American & Grill",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-206",
+      "name": "Garlic Herb Roast Beef",
+      "slot": "Dinner",
+      "cuisine": "American & Grill",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-207",
+      "name": "Slow-Cooker French Onion Chicken",
+      "slot": "Dinner",
+      "cuisine": "American & Grill",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-208",
+      "name": "Bacon Wrapped Pork Tenderloin",
+      "slot": "Dinner",
+      "cuisine": "American & Grill",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-209",
+      "name": "Buffalo Ranch Chicken Bake",
+      "slot": "Dinner",
+      "cuisine": "American & Grill",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-210",
+      "name": "Honey Barbecue Turkey Meatballs",
+      "slot": "Dinner",
+      "cuisine": "American & Grill",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-211",
+      "name": "Garlic Butter Steak Bites",
+      "slot": "Dinner",
+      "cuisine": "American & Grill",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-212",
+      "name": "Grilled Cajun Chicken Burgers",
+      "slot": "Dinner",
+      "cuisine": "American & Grill",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-213",
+      "name": "BBQ Beef Brisket Sandwiches",
+      "slot": "Dinner",
+      "cuisine": "American & Grill",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "id": "exp01-214",
+      "name": "Turkey and Swiss Melt",
+      "slot": "Dinner",
+      "cuisine": "American & Grill",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "name": "Cheesy Bacon Ranch Chicken Skillet",
+      "cuisine": "American & Grill",
+      "slot": "Dinner",
+      "id": "exp01-215",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "name": "Grilled Salmon with Lemon Dill",
+      "cuisine": "American & Grill",
+      "slot": "Dinner",
+      "id": "exp01-216",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "name": "Chicken Cobb Salad",
+      "cuisine": "American & Grill",
+      "slot": "Dinner",
+      "id": "exp01-217",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "name": "Steak Fajita Stuffed Potatoes",
+      "cuisine": "American & Grill",
+      "slot": "Dinner",
+      "id": "exp01-218",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "name": "Bacon Cheeseburger Egg Rolls",
+      "cuisine": "American & Grill",
+      "slot": "Dinner",
+      "id": "exp01-219",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "name": "Roasted Garlic Chicken Thighs",
+      "cuisine": "American & Grill",
+      "slot": "Dinner",
+      "id": "exp01-220",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "name": "Sausage Egg and Cheese Biscuit Bake",
+      "cuisine": "Breakfast & Brunch",
+      "slot": "Breakfast",
+      "id": "exp01-221",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "name": "Bacon Cheddar Breakfast Hash",
+      "cuisine": "Breakfast & Brunch",
+      "slot": "Breakfast",
+      "id": "exp01-222",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "name": "Blueberry Buttermilk Pancakes",
+      "cuisine": "Breakfast & Brunch",
+      "slot": "Breakfast",
+      "id": "exp01-223",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "name": "Cinnamon French Toast Sticks",
+      "cuisine": "Breakfast & Brunch",
+      "slot": "Breakfast",
+      "id": "exp01-224",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "name": "Ham and Swiss Breakfast Croissants",
+      "cuisine": "Breakfast & Brunch",
+      "slot": "Breakfast",
+      "id": "exp01-225",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "name": "Western Breakfast Omelets",
+      "cuisine": "Breakfast & Brunch",
+      "slot": "Breakfast",
+      "id": "exp01-226",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "name": "Loaded Breakfast Quesadillas",
+      "cuisine": "Breakfast & Brunch",
+      "slot": "Breakfast",
+      "id": "exp01-227",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "name": "Sausage and Potato Breakfast Skillet",
+      "cuisine": "Breakfast & Brunch",
+      "slot": "Breakfast",
+      "id": "exp01-228",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "name": "Strawberry Cream Cheese French Toast",
+      "cuisine": "Breakfast & Brunch",
+      "slot": "Breakfast",
+      "id": "exp01-229",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "name": "Breakfast Sausage Gravy Casserole",
+      "cuisine": "Breakfast & Brunch",
+      "slot": "Breakfast",
+      "id": "exp01-230",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "name": "Crispy Bacon Breakfast Burrito",
+      "cuisine": "Breakfast & Brunch",
+      "slot": "Breakfast",
+      "id": "exp01-231",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "name": "Maple Sausage Waffle Sandwiches",
+      "cuisine": "Breakfast & Brunch",
+      "slot": "Breakfast",
+      "id": "exp01-232",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "name": "Cheddar Ham Egg Muffins",
+      "cuisine": "Breakfast & Brunch",
+      "slot": "Breakfast",
+      "id": "exp01-233",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "name": "Apple Cinnamon Baked Oatmeal",
+      "cuisine": "Breakfast & Brunch",
+      "slot": "Breakfast",
+      "id": "exp01-234",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "name": "Peach Cobbler French Toast",
+      "cuisine": "Breakfast & Brunch",
+      "slot": "Breakfast",
+      "id": "exp01-235",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "name": "Breakfast Pizza with Sausage",
+      "cuisine": "Breakfast & Brunch",
+      "slot": "Breakfast",
+      "id": "exp01-236",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "name": "Breakfast Steak and Eggs",
+      "cuisine": "Breakfast & Brunch",
+      "slot": "Breakfast",
+      "id": "exp01-237",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "name": "Chorizo Breakfast Hash",
+      "cuisine": "Breakfast & Brunch",
+      "slot": "Breakfast",
+      "id": "exp01-238",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "name": "Bacon Spinach Quiche",
+      "cuisine": "Breakfast & Brunch",
+      "slot": "Breakfast",
+      "id": "exp01-239",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "name": "Loaded Breakfast Tater Tot Bake",
+      "cuisine": "Breakfast & Brunch",
+      "slot": "Breakfast",
+      "id": "exp01-240",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "name": "Country Breakfast Scramble",
+      "cuisine": "Breakfast & Brunch",
+      "slot": "Breakfast",
+      "id": "exp01-241",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "name": "Breakfast Chicken Biscuit Sandwiches",
+      "cuisine": "Breakfast & Brunch",
+      "slot": "Breakfast",
+      "id": "exp01-242",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "name": "Banana Walnut Pancakes",
+      "cuisine": "Breakfast & Brunch",
+      "slot": "Breakfast",
+      "id": "exp01-243",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "name": "Ham and Potato Egg Bake",
+      "cuisine": "Breakfast & Brunch",
+      "slot": "Breakfast",
+      "id": "exp01-244",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "name": "Sausage Pepper Breakfast Tacos",
+      "cuisine": "Breakfast & Brunch",
+      "slot": "Breakfast",
+      "id": "exp01-245",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "name": "Cheesy Grits with Eggs and Bacon",
+      "cuisine": "Breakfast & Brunch",
+      "slot": "Breakfast",
+      "id": "exp01-246",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "name": "Spinach Mushroom Egg Bake",
+      "cuisine": "Breakfast & Brunch",
+      "slot": "Breakfast",
+      "id": "exp01-247",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "name": "Cinnamon Roll French Toast Bake",
+      "cuisine": "Breakfast & Brunch",
+      "slot": "Breakfast",
+      "id": "exp01-248",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "name": "Smoked Salmon Bagels",
+      "cuisine": "Breakfast & Brunch",
+      "slot": "Breakfast",
+      "id": "exp01-249",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    },
+    {
+      "name": "Biscuits and Chorizo Gravy",
+      "cuisine": "Breakfast & Brunch",
+      "slot": "Breakfast",
+      "id": "exp01-250",
+      "stage": "candidate",
+      "ingredientsReady": false,
+      "instructionsReady": false,
+      "photoReady": false
+    }
+  ]
+}

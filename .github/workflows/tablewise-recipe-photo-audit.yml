@@ -1,0 +1,27 @@
+name: Tablewise recipe expansion photo audit
+on:
+  pull_request:
+    paths:
+      - 'ops/recipe-expansion/recipe-photo-production-manifest.json'
+      - 'ops/recipe-expansion/audit-recipe-expansion-photos.mjs'
+      - 'assets/recipe-expansion/**'
+      - '.github/workflows/tablewise-recipe-photo-audit.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check all 110 planned photo mappings and real image files
+        run: node ops/recipe-expansion/audit-recipe-expansion-photos.mjs
+      - name: Publish photo inventory
+        uses: actions/upload-artifact@v4
+        with:
+          name: tablewise-110-photo-readiness
+          path: ops/recipe-expansion/recipe-photo-coverage-audit.json
+          retention-days: 30

@@ -1,0 +1,42 @@
+name: Prepare USDA recipe nutrition candidates
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - '.github/workflows/tablewise-usda-nutrition-candidates.yml'
+      - 'ops/recipe-expansion/suggest-usda-food-matches.mjs'
+  push:
+    branches:
+      - feature/recipe-expansion-110-content-20261021
+    paths:
+      - '.github/workflows/tablewise-usda-nutrition-candidates.yml'
+      - 'ops/recipe-expansion/suggest-usda-food-matches.mjs'
+permissions:
+  contents: read
+jobs:
+  nutrition-candidates:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        offset: [0, 25, 50, 75, 100, 125, 150, 175, 200, 225, 250, 275]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Query USDA API with dedicated repository key
+        env:
+          USDA_FDC_API_KEY: ${{ secrets.USDA_FDC_API_KEY }}
+        run: |
+          if [ -z "$USDA_FDC_API_KEY" ]; then echo 'Missing USDA_FDC_API_KEY repository secret'; exit 1; fi
+          node ops/recipe-expansion/suggest-usda-food-matches.mjs 25 ${{ matrix.offset }}
+      - name: Upload review-only lookup report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: tablewise-usda-api-review-candidates-${{ matrix.offset }}
+          path: ops/recipe-expansion/usda-food-suggestions.json
+          if-no-files-found: warn
+          retention-days: 14

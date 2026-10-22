@@ -1,0 +1,26 @@
+name: Luxury v2 quick meal and macro QA
+on:
+  pull_request:
+    paths:
+      - 'luxury-v2/index.html'
+      - 'luxury-v2/live.js'
+      - 'luxury-v2/meal-search.mjs'
+      - 'luxury-v2/quick-meal-filters.test.mjs'
+      - '.github/workflows/tablewise-quick-meal-ui.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Run quick meal and macro safety tests
+        run: node --test luxury-v2/quick-meal-filters.test.mjs
+      - name: Validate JavaScript syntax
+        run: |
+          node --check luxury-v2/meal-search.mjs
+          node --check luxury-v2/live.js

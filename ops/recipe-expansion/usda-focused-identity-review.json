@@ -1,0 +1,90 @@
+{
+  "source": "USDA FoodData Central",
+  "sourceRun": 39651416056,
+  "reviewType": "identity-screening-not-nutrition-approval",
+  "reviewedAt": "2026-10-21",
+  "results": [
+    {
+      "ingredient": "Achiote paste",
+      "status": "blocked-incorrect-food",
+      "candidateFdcId": null,
+      "reason": "Seasoning with annatto is not equivalent to concentrated achiote paste; almond paste is wrong."
+    },
+    {
+      "ingredient": "Apples",
+      "status": "candidate-for-nutrient-detail",
+      "candidateFdcId": 1750340,
+      "description": "Apples, fuji, with skin, raw",
+      "reason": "Representative raw apple type; variety and edible portions require verification."
+    },
+    {
+      "ingredient": "Bread crumbs",
+      "status": "candidate-for-nutrient-detail",
+      "candidateFdcId": 174928,
+      "description": "Bread, crumbs, dry, grated, plain",
+      "reason": "Plain dried bread crumbs; check recipe's exact type."
+    },
+    {
+      "ingredient": "Breadcrumbs",
+      "status": "candidate-for-nutrient-detail",
+      "candidateFdcId": 174928,
+      "description": "Bread, crumbs, dry, grated, plain",
+      "reason": "Plain dried bread crumbs; check recipe's exact type."
+    },
+    {
+      "ingredient": "Dried guajillo chiles",
+      "status": "blocked-no-exact-food",
+      "candidateFdcId": null,
+      "reason": "Ancho, pasilla, and generic sun-dried chile are not specifically guajillo."
+    },
+    {
+      "ingredient": "Dry breadcrumbs",
+      "status": "candidate-for-nutrient-detail",
+      "candidateFdcId": 174928,
+      "description": "Bread, crumbs, dry, grated, plain",
+      "reason": "Plain dried bread crumbs."
+    },
+    {
+      "ingredient": "Dry fettuccine",
+      "status": "candidate-for-nutrient-detail",
+      "candidateFdcId": 169736,
+      "description": "Pasta, dry, enriched",
+      "reason": "Generic wheat pasta is a plausible nutrient proxy; verify pasta ingredients before using."
+    },
+    {
+      "ingredient": "Dry linguine",
+      "status": "candidate-for-nutrient-detail",
+      "candidateFdcId": 169736,
+      "description": "Pasta, dry, enriched",
+      "reason": "Generic wheat pasta is a plausible nutrient proxy; verify pasta ingredients before using."
+    },
+    {
+      "ingredient": "Dry orzo",
+      "status": "candidate-for-nutrient-detail",
+      "candidateFdcId": 169736,
+      "description": "Pasta, dry, enriched",
+      "reason": "Generic wheat pasta is a plausible nutrient proxy; verify pasta ingredients before using."
+    },
+    {
+      "ingredient": "Jalapeño",
+      "status": "candidate-for-nutrient-detail",
+      "candidateFdcId": 168576,
+      "description": "Peppers, jalapeno, raw",
+      "reason": "Exact pepper type, assuming raw ingredient."
+    },
+    {
+      "ingredient": "Lemons",
+      "status": "candidate-for-nutrient-detail",
+      "candidateFdcId": 2709168,
+      "description": "Lemon, raw",
+      "reason": "Check whether recipe uses juice, zest or whole peeled fruit before conversion."
+    },
+    {
+      "ingredient": "Panko breadcrumbs",
+      "status": "blocked-variant-not-confirmed",
+      "candidateFdcId": null,
+      "reason": "Standard bread crumbs not confirmed equivalent to airy panko; seek specific product data."
+    }
+  ],
+  "notice": "These are candidate identities for subsequent nutrient-detail and portion review, not approved nutrient values. No gram conversions or verified recipes."
+}

@@ -1,0 +1,85 @@
+{
+  "sourceRunId": 39682891679,
+  "sourceArtifact": "nutrition-25-usda-source-evidence",
+  "offset": 25,
+  "requested": 25,
+  "recordsWithUSDAFoodDetail": 24,
+  "verifiedInThisReview": [
+    "Black pepper",
+    "Honey",
+    "Paprika",
+    "Sesame oil"
+  ],
+  "approvedSourceCountAfterReview": 11,
+  "doNotApproveExamples": [
+    {
+      "ingredient": "Smoked paprika",
+      "reason": "Top record is ordinary paprika; smoking variant not confirmed"
+    },
+    {
+      "ingredient": "Breadcrumbs",
+      "reason": "No candidate returned"
+    },
+    {
+      "ingredient": "Carrots",
+      "reason": "Top result dehydrated rather than fresh"
+    },
+    {
+      "ingredient": "Salsa",
+      "reason": "Top result salsa con queso"
+    },
+    {
+      "ingredient": "Shredded cheddar",
+      "reason": "Top result shredded Parmesan"
+    },
+    {
+      "ingredient": "Cooked rice",
+      "reason": "Top result cooked rice noodles"
+    },
+    {
+      "ingredient": "Rice vinegar",
+      "reason": "Top result balsamic vinegar"
+    },
+    {
+      "ingredient": "Apples",
+      "reason": "Top result apple croissant"
+    },
+    {
+      "ingredient": "Avocado",
+      "reason": "Top result avocado oil"
+    },
+    {
+      "ingredient": "Soy sauce",
+      "reason": "Top result tamari; not necessarily conventional soy sauce"
+    },
+    {
+      "ingredient": "Poblano peppers",
+      "reason": "No clear edible weight per whole pepper"
+    },
+    {
+      "ingredient": "Red onion",
+      "reason": "No specific size for whole onion"
+    },
+    {
+      "ingredient": "Roma tomatoes",
+      "reason": "No edible grams per whole tomato"
+    },
+    {
+      "ingredient": "Boneless chicken breast",
+      "reason": "Meat composition/selection requires matching recipe's stated preparation and skinlessness"
+    },
+    {
+      "ingredient": "Boneless chicken thighs",
+      "reason": "Meat composition/selection requires matching recipe's stated preparation and skinlessness"
+    },
+    {
+      "ingredient": "Long-grain rice dry",
+      "reason": "Top food parboiled enriched rice; recipe does not specify parboiled"
+    },
+    {
+      "ingredient": "Shredded lettuce",
+      "reason": "Cups vary by shreds and packing; top USDA portion is RACC, not cup"
+    }
+  ],
+  "note": "Additional ambiguous candidate records remain unapproved; source lookup alone is insufficient for verified recipe nutrition. No production recipe data modified."
+}

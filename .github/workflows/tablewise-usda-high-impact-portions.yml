@@ -1,0 +1,46 @@
+name: USDA high impact portion evidence
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - '.github/workflows/tablewise-usda-high-impact-portions.yml'
+      - 'ops/recipe-expansion/fetch-high-impact-usda-portions.mjs'
+      - 'ops/recipe-expansion/prioritize-ingredient-portion-review.mjs'
+      - 'ops/recipe-expansion/high-impact-portions-editorial-review.json'
+      - 'ops/recipe-expansion/validate-high-impact-portions.mjs'
+      - 'ops/recipe-expansion/audit-high-impact-recipe-uses.mjs'
+      - 'ops/recipe-expansion/prepare-high-impact-macro-proposals.mjs'
+permissions:
+  contents: read
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Rebuild 220-pair priority queue
+        run: node ops/recipe-expansion/prioritize-ingredient-portion-review.mjs
+      - name: Query USDA for ten highest-impact food records and weights
+        env:
+          USDA_FDC_API_KEY: ${{ secrets.USDA_FDC_API_KEY }}
+        run: node ops/recipe-expansion/fetch-high-impact-usda-portions.mjs
+      - name: Validate editorial weights against all real recipe uses
+        run: node ops/recipe-expansion/validate-high-impact-portions.mjs
+      - name: Audit actual recipe instructions and potential consumed fractions
+        run: node ops/recipe-expansion/audit-high-impact-recipe-uses.mjs
+      - name: Extract source-linked macronutrient proposals without approving values
+        run: node ops/recipe-expansion/prepare-high-impact-macro-proposals.mjs
+      - name: Save unapproved USDA source evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: tablewise-usda-top-ten-source-portions
+          path: |
+            ops/recipe-expansion/ingredient-portion-review-queue.json
+            ops/recipe-expansion/high-impact-usda-portion-candidates.json
+            ops/recipe-expansion/high-impact-recipe-usage-audit.json
+            ops/recipe-expansion/usda-high-impact-macro-proposals.json
+          retention-days: 30

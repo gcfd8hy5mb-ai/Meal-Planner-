@@ -1,0 +1,102 @@
+{
+  "batch": "First 25 high-use unresolved ingredient labels",
+  "sourceRunId": 39682257263,
+  "verifiedInThisReview": [
+    "Garlic powder",
+    "Apple cider vinegar",
+    "Crushed tomatoes"
+  ],
+  "approvedSourceCountAfterReview": 7,
+  "needsSpecificIdentityOrMeasure": [
+    {
+      "ingredient": "Salt",
+      "reason": "Table salt USDA teaspoon match; original recipes do not specify fine table versus kosher/flaky."
+    },
+    {
+      "ingredient": "Ground cumin",
+      "reason": "Top USDA candidate is whole cumin seed, not ground cumin."
+    },
+    {
+      "ingredient": "Yellow onion",
+      "reason": "One onion has no stated size; USDA edible 143 g is a specific reference onion, not a universal size."
+    },
+    {
+      "ingredient": "Chicken broth",
+      "reason": "Top hit was canned chicken meat without broth."
+    },
+    {
+      "ingredient": "Lime",
+      "reason": "Whole lime count does not identify juice yield versus garnish and edible portion."
+    },
+    {
+      "ingredient": "Cilantro",
+      "reason": "USDA cup derived from quarter-cup leaves; chopped/packed state uncertain."
+    },
+    {
+      "ingredient": "Butter",
+      "reason": "Top USDA candidate was clarified butter (ghee), not standard butter."
+    },
+    {
+      "ingredient": "Dried oregano",
+      "reason": "USDA tsp values differ for leaves (1g) and ground (1.8g); recipe texture unspecified."
+    },
+    {
+      "ingredient": "Lean ground beef",
+      "reason": "Top USDA hit is 70% lean beef / 30% fat, contradicting lean."
+    },
+    {
+      "ingredient": "White onion",
+      "reason": "No definite USDA edible grams per whole onion of unspecified size."
+    },
+    {
+      "ingredient": "Corn tortillas",
+      "reason": "Top result lacks four core macronutrient data and whole tortilla weight."
+    },
+    {
+      "ingredient": "Milk",
+      "reason": "Top USDA hit was milk crackers, not fluid milk; fat percentage unspecified."
+    },
+    {
+      "ingredient": "Baby spinach",
+      "reason": "USDA portion is 85 g RACC, not a cup; packing ambiguity."
+    },
+    {
+      "ingredient": "Beef broth",
+      "reason": "Top USDA match was dry bouillon cubes rather than liquid broth."
+    },
+    {
+      "ingredient": "Dijon mustard",
+      "reason": "Top hit was mustard oil."
+    },
+    {
+      "ingredient": "Eggs",
+      "reason": "Top hit was egg whites, not whole eggs."
+    },
+    {
+      "ingredient": "Sour cream",
+      "reason": "USDA generic cultured sour cream match; recipe does not state fat type, so calories may differ."
+    },
+    {
+      "ingredient": "Bell pepper",
+      "reason": "USDA top hit green pepper; recipe does not define pepper color or size."
+    },
+    {
+      "ingredient": "Fresh ginger",
+      "reason": "Top hit was fresh basil rather than ginger."
+    },
+    {
+      "ingredient": "Heavy cream",
+      "reason": "USDA candidate available but only RACC 15 g; cup weight requires evidence."
+    },
+    {
+      "ingredient": "Italian seasoning",
+      "reason": "Top hit was Italian bread rather than seasoning."
+    },
+    {
+      "ingredient": "Shredded cheddar cheese",
+      "reason": "Top hit was shredded Parmesan, not cheddar."
+    }
+  ],
+  "auditNotes": "Evidence artifacts are archived in the 25-ingredient source workflow. No false approvals for search-ranking mismatches. Some approvals rely on portion scaling between compatible units. No complete recipe macros approved.",
+  "publishedChanges": false
+}

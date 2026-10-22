@@ -1,0 +1,32 @@
+name: Focused USDA candidate retry
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - '.github/workflows/tablewise-usda-focused-retry.yml'
+      - 'ops/recipe-expansion/suggest-usda-food-matches.mjs'
+permissions:
+  contents: read
+jobs:
+  focused-ingredient-retry:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Search questionable ingredients with corrected terms
+        env:
+          USDA_FDC_API_KEY: ${{ secrets.USDA_FDC_API_KEY }}
+          USDA_FOCUS_INGREDIENTS: 'Achiote paste|Apples|Bread crumbs|Breadcrumbs|Dried guajillo chiles|Dry breadcrumbs|Dry fettuccine|Dry linguine|Dry orzo|Jalapeño|Lemons|Panko breadcrumbs'
+        run: |
+          if [ -z "$USDA_FDC_API_KEY" ]; then echo 'Missing USDA key'; exit 1; fi
+          node ops/recipe-expansion/suggest-usda-food-matches.mjs 25 0
+      - name: Upload focused match candidates, still unverified
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: tablewise-usda-12-problem-ingredients
+          path: ops/recipe-expansion/usda-focused-review.json
+          retention-days: 30

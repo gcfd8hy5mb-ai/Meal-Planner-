@@ -1,0 +1,144 @@
+name: Luxury v2 design isolation
+on:
+  pull_request:
+    paths:
+      - 'luxury-v2/**'
+      - '.github/workflows/luxury-v2-isolation.yml'
+      - 'tests/luxury-v2-isolation.cjs'
+      - 'tests/luxury-recipe-details.test.mjs'
+      - 'tests/luxury-batch1-catalog.test.mjs'
+      - 'tests/luxury-batch2-catalog.test.mjs'
+      - 'tests/luxury-batch3-catalog.test.mjs'
+      - 'tests/luxury-batch4-catalog.test.mjs'
+      - 'tests/luxury-recipe-slow-cook-times.test.mjs'
+      - 'tests/luxury-pot-pie-recipe.test.mjs'
+      - 'tests/luxury-recipe-all-directions.test.mjs'
+      - 'tests/luxury-recipe-specific-descriptions.test.mjs'
+      - 'tests/luxury-loaded-potato-times.test.mjs'
+      - 'tests/luxury-all-grocery-ingredients.test.mjs'
+      - 'tests/luxury-cook-ingredients-button.test.mjs'
+      - 'tests/luxury-meal-search.test.mjs'
+      - 'tests/luxury-meal-picker-footer.test.mjs'
+      - 'tests/luxury-kroger-connect.test.mjs'
+      - 'tests/luxury-picker-approved-layout.test.mjs'
+      - 'tests/luxury-v2-week-controls.cjs'
+      - 'tests/luxury-v2-header-cleanup.cjs'
+      - 'tests/luxury-v2-success-notice.cjs'
+      - 'tests/luxury-v2-optional-meals.cjs'
+      - 'tests/luxury-v2-cold-start.cjs'
+      - 'tests/luxury-v2-groceries.test.mjs'
+      - 'tests/luxury-v2-checklist.test.mjs'
+      - 'tests/luxury-v2-meal-preview.test.mjs'
+      - 'tests/luxury-v2-iphone-journey.test.mjs'
+      - 'tests/luxury-v2-save-guard.test.mjs'
+      - 'tests/luxury-v2-save-transaction.test.mjs'
+      - 'tests/luxury-v2-save-flow.test.mjs'
+      - 'tests/hosted-firebase-disposable.test.mjs'
+      - 'tests/luxury-v2-recovery-ui.cjs'
+      - 'tests/luxury-v2-recovery-diagnostic.test.mjs'
+      - 'tests/luxury-v2-cloud-write-gate.cjs'
+      - 'tests/luxury-v2-legacy-save.test.mjs'
+  push:
+    paths:
+      - 'luxury-v2/**'
+      - '.github/workflows/luxury-v2-isolation.yml'
+      - 'tests/luxury-v2-isolation.cjs'
+      - 'tests/luxury-recipe-details.test.mjs'
+      - 'tests/luxury-batch1-catalog.test.mjs'
+      - 'tests/luxury-batch2-catalog.test.mjs'
+      - 'tests/luxury-batch3-catalog.test.mjs'
+      - 'tests/luxury-batch4-catalog.test.mjs'
+      - 'tests/luxury-recipe-slow-cook-times.test.mjs'
+      - 'tests/luxury-pot-pie-recipe.test.mjs'
+      - 'tests/luxury-recipe-all-directions.test.mjs'
+      - 'tests/luxury-recipe-specific-descriptions.test.mjs'
+      - 'tests/luxury-loaded-potato-times.test.mjs'
+      - 'tests/luxury-all-grocery-ingredients.test.mjs'
+      - 'tests/luxury-v2-week-controls.cjs'
+      - 'tests/luxury-v2-header-cleanup.cjs'
+      - 'tests/luxury-v2-success-notice.cjs'
+      - 'tests/luxury-v2-optional-meals.cjs'
+      - 'tests/luxury-v2-cold-start.cjs'
+      - 'tests/luxury-v2-groceries.test.mjs'
+      - 'tests/luxury-v2-checklist.test.mjs'
+      - 'tests/luxury-v2-meal-preview.test.mjs'
+      - 'tests/luxury-v2-iphone-journey.test.mjs'
+      - 'tests/luxury-v2-save-guard.test.mjs'
+      - 'tests/luxury-v2-save-transaction.test.mjs'
+      - 'tests/luxury-v2-save-flow.test.mjs'
+      - 'tests/hosted-firebase-disposable.test.mjs'
+      - 'tests/luxury-v2-recovery-ui.cjs'
+      - 'tests/luxury-v2-recovery-diagnostic.test.mjs'
+      - 'tests/luxury-v2-cloud-write-gate.cjs'
+      - 'tests/luxury-v2-legacy-save.test.mjs'
+jobs:
+  no-legacy-leak:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Guard first-paint luxury shell against old layout
+        run: node tests/luxury-v2-cold-start.cjs
+      - name: Validate compact optional meal controls
+        run: node tests/luxury-v2-optional-meals.cjs
+      - name: Check quiet successful account restore
+        run: node tests/luxury-v2-success-notice.cjs
+      - name: Check compact luxury header
+        run: node tests/luxury-v2-header-cleanup.cjs
+      - name: Verify approved week typography and actions
+        run: node tests/luxury-v2-week-controls.cjs
+      - name: Validate first 42 recipes and cooking metadata
+        run: node --test tests/luxury-recipe-details.test.mjs tests/luxury-batch1-catalog.test.mjs tests/luxury-batch2-catalog.test.mjs tests/luxury-batch3-catalog.test.mjs tests/luxury-batch4-catalog.test.mjs tests/luxury-recipe-slow-cook-times.test.mjs tests/luxury-pot-pie-recipe.test.mjs tests/luxury-recipe-all-directions.test.mjs tests/luxury-recipe-specific-descriptions.test.mjs tests/luxury-loaded-potato-times.test.mjs tests/luxury-all-grocery-ingredients.test.mjs tests/luxury-cook-ingredients-button.test.mjs tests/luxury-meal-search.test.mjs tests/luxury-meal-picker-footer.test.mjs tests/luxury-picker-approved-layout.test.mjs
+      - name: Run standalone legacy-leak regression test
+        run: node tests/luxury-v2-isolation.cjs
+      - name: Diagnose Kroger Worker OPTIONS/CORS without credentials
+        run: node tests/kroger-cors-origin-probe.mjs
+      - name: Verify saved two-week grocery aggregation
+        run: node tests/luxury-v2-groceries.test.mjs
+      - name: Verify account-scoped checklist persistence
+        run: node tests/luxury-v2-checklist.test.mjs
+      - name: Verify preview dinner replacement and grocery recalculation
+        run: node tests/luxury-v2-meal-preview.test.mjs
+      - name: Exercise dual-week iPhone edits and interruption recovery
+        run: node tests/luxury-v2-iphone-journey.test.mjs
+      - name: Reject conflicting concurrent cloud plan changes
+        run: node tests/luxury-v2-save-guard.test.mjs
+      - name: Verify isolated transaction safety without live writes
+        run: node tests/luxury-v2-save-transaction.test.mjs
+      - name: Verify recoverable staged luxury-save flow
+        run: node tests/luxury-v2-save-flow.test.mjs
+      - name: Verify luxury draft export and recovery UI
+        run: node tests/luxury-v2-recovery-ui.cjs
+      - name: Check private read-only account diagnostic
+        run: node tests/luxury-v2-recovery-diagnostic.test.mjs
+      - name: Block cross-version unsafe cloud writes
+        run: node tests/luxury-v2-cloud-write-gate.cjs
+      - name: Simulate safe original-planner save migration
+        run: node tests/luxury-v2-legacy-save.test.mjs
+      - name: Validate hosted test script syntax without touching Firebase
+        run: node --check tests/hosted-firebase-disposable.test.mjs
+      - name: Verify isolated JavaScript module syntax
+        run: |
+          node --input-type=module --check < luxury-v2/live.js
+          node --input-type=module --check < luxury-v2/catalog.js
+      - name: Verify v2 cannot inherit legacy layout or styling
+        run: |
+          node <<'NODE'
+          const fs=require('node:fs');
+          const assert=require('node:assert/strict');
+          const html=fs.readFileSync('luxury-v2/index.html','utf8');
+          assert.match(html,/<!doctype html>/i,'v2 must be a standalone document');
+          assert.match(html,/<style>[\s\S]*<\/style>/i,'v2 must define its own CSS');
+          assert.doesNotMatch(html,/<link\b[^>]*rel\s*=\s*["']?stylesheet/i,'external/legacy stylesheets are forbidden');
+          assert.match(html,/<script type="module" src="\.\/live\.js"><\/script>/i,'Only the local read-only bridge is loaded');
+          assert.doesNotMatch(html,/<iframe\b/i,'legacy embedded pages are forbidden');
+          assert.doesNotMatch(html,/@import\b/i,'imported CSS is forbidden');
+          assert.doesNotMatch(html,/(?:href|src)\s*=\s*["'](?:\/index\.html|legacy)/i,'legacy asset references are forbidden');
+          for (const legacy of ['primaryNav','navMoreMenu','assignmentChoices','shoppingHeading','recipegrid','todayMealImage']) {
+            assert.ok(!html.includes(legacy),`legacy selector found: ${legacy}`);
+          }
+          assert.match(html,/data-page="today"/);
+          assert.match(html,/data-page="week"/);
+          assert.match(html,/data-page="groceries"/);
+          assert.match(html,/data-page="cook"/);
+          console.log('PASS: luxury v2 standalone HTML, no legacy CSS/JS/markup dependencies');
+          NODE

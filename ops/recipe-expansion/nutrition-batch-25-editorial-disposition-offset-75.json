@@ -1,0 +1,98 @@
+{
+  "sourceRunId": 39683834061,
+  "sourceArtifactId": 12385272815,
+  "offset": 75,
+  "requested": 25,
+  "succeeded": 25,
+  "approvedInThisReview": [
+    "Diced tomatoes",
+    "Diced tomatoes canned",
+    "Pork tenderloin",
+    "Cheddar",
+    "Cheddar cheese"
+  ],
+  "approvedTotalAfterReview": 19,
+  "remainingOnHold": [
+    {
+      "ingredient": "Mayonnaise",
+      "reason": "Source lacks core nutrient values and cup weight"
+    },
+    {
+      "ingredient": "Refried beans",
+      "reason": "Brand-specific first hit; volume and preparation vary"
+    },
+    {
+      "ingredient": "Shredded cabbage",
+      "reason": "Top hit kimchi, not raw shredded cabbage"
+    },
+    {
+      "ingredient": "Baby potatoes",
+      "reason": "Top hit baby spinach"
+    },
+    {
+      "ingredient": "Black beans",
+      "reason": "Raw dry beans versus canned or cooked unclear"
+    },
+    {
+      "ingredient": "Black beans, canned drained",
+      "reason": "Candidate drained and rinsed beans, but cup edible weight still needed"
+    },
+    {
+      "ingredient": "Bone-in chicken thighs",
+      "reason": "Top hit chicken skin alone"
+    },
+    {
+      "ingredient": "Broccoli florets",
+      "reason": "Source specifies chopped cup while recipe says florets; preparation density differs"
+    },
+    {
+      "ingredient": "Butter lettuce",
+      "reason": "Top hit iceberg lettuce"
+    },
+    {
+      "ingredient": "Canned black beans",
+      "reason": "Top hit condensed black bean soup"
+    },
+    {
+      "ingredient": "Cherry tomatoes",
+      "reason": "Top hit powdered tomato"
+    },
+    {
+      "ingredient": "Chicken breasts",
+      "reason": "Top hit sliced lunchmeat"
+    },
+    {
+      "ingredient": "Chipotle pepper in adobo",
+      "reason": "Top hit banana pepper"
+    },
+    {
+      "ingredient": "Cod fillets",
+      "reason": "Top hit cod liver oil"
+    },
+    {
+      "ingredient": "Cucumber",
+      "reason": "USDA peeled cucumber 158-280g each depending size; recipe size unspecified"
+    },
+    {
+      "ingredient": "Cumin",
+      "reason": "Whole cumin seed vs ground recipe state unconfirmed"
+    },
+    {
+      "ingredient": "Diced tomatoes, drained",
+      "reason": "Top hit oil-packed sun-dried tomato"
+    },
+    {
+      "ingredient": "Dry elbow macaroni",
+      "reason": "Top hit vegetable macaroni, not standard plain pasta"
+    },
+    {
+      "ingredient": "Feta cheese",
+      "reason": "USDA cup measure for crumbled feta; recipe does not identify crumbled state"
+    },
+    {
+      "ingredient": "Fresh basil",
+      "reason": "USDA whole-leaf cup measure, while recipes may chop herbs"
+    }
+  ],
+  "note": "Food search hits and missing cup/each edible weights are not verified. Approved inputs never imply a fully verified finished recipe. Neither live nor luxury preview recipes changed."
+}

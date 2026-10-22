@@ -1,0 +1,36 @@
+name: Tablewise nutrition source batch 25
+on:
+  pull_request:
+    paths:
+      - 'ops/recipe-expansion/fetch-nutrition-batch-25.mjs'
+      - 'ops/recipe-expansion/ingredient-nutrition-sources.json'
+      - '.github/workflows/tablewise-nutrition-batch-25.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify-source-evidence:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Audit ingredient mapping already approved
+        run: node ops/recipe-expansion/audit-approved-ingredient-inputs.mjs
+      - name: Fetch real USDA candidate foods and nutrients for 25 highest-use unresolved ingredients
+        env:
+          USDA_FDC_API_KEY: ${{ secrets.USDA_FDC_API_KEY }}
+          NUTRITION_BATCH_OFFSET: '225'
+        run: node ops/recipe-expansion/fetch-nutrition-batch-25.mjs
+      - name: Save source evidence for editorial approval
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: nutrition-25-usda-source-evidence
+          path: |
+            ops/recipe-expansion/nutrition-batch-25-review-queue-*.json
+            ops/recipe-expansion/nutrition-batch-25-usda-evidence-*.json
+            ops/recipe-expansion/approved-ingredient-audit.json
+          retention-days: 30

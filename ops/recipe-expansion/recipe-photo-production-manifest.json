@@ -1,0 +1,3189 @@
+{
+  "batch": "expansion-110",
+  "style": "Tablewise approved dark cinematic luxury restaurant photography",
+  "target": 110,
+  "ready": 0,
+  "productionStatus": "images-not-yet-generated",
+  "important": "A written image brief is NOT a photo asset; do not set photoReady or merge until a real reviewed file exists.",
+  "photos": [
+    {
+      "recipeId": "exp01-001",
+      "name": "Birria Beef Tacos",
+      "cuisine": "Mexican & Tex-Mex",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Beef chuck roast",
+        "Dried guajillo chiles",
+        "Dried ancho chiles",
+        "Beef broth",
+        "White onion",
+        "Apple cider vinegar",
+        "Corn tortillas",
+        "Shredded Oaxaca cheese"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-001.webp",
+      "altText": "Finished Birria Beef Tacos, with Beef chuck roast, Dried guajillo chiles, Dried ancho chiles",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Birria Beef Tacos\". Its plated visual must faithfully represent the recipe; recognizable components include Beef chuck roast, Dried guajillo chiles, Dried ancho chiles, Beef broth, White onion, Apple cider vinegar, Corn tortillas, Shredded Oaxaca cheese. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-002",
+      "name": "Carne Asada Street Tacos",
+      "cuisine": "Mexican & Tex-Mex",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Flank steak",
+        "Orange juice",
+        "Lime juice",
+        "Corn tortillas",
+        "White onion",
+        "Cilantro",
+        "Lime"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-002.webp",
+      "altText": "Finished Carne Asada Street Tacos, with Flank steak, Orange juice, Lime juice",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Carne Asada Street Tacos\". Its plated visual must faithfully represent the recipe; recognizable components include Flank steak, Orange juice, Lime juice, Corn tortillas, White onion, Cilantro, Lime. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-003",
+      "name": "Slow-Cooker Pork Carnitas",
+      "cuisine": "Mexican & Tex-Mex",
+      "servings": 6,
+      "requiredVisibleIngredients": [
+        "Boneless pork shoulder",
+        "Orange juice",
+        "Chicken broth",
+        "White onion",
+        "Lime",
+        "Corn tortillas",
+        "Cilantro"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-003.webp",
+      "altText": "Finished Slow-Cooker Pork Carnitas, with Boneless pork shoulder, Orange juice, Chicken broth",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Slow-Cooker Pork Carnitas\". Its plated visual must faithfully represent the recipe; recognizable components include Boneless pork shoulder, Orange juice, Chicken broth, White onion, Lime, Corn tortillas, Cilantro. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-004",
+      "name": "Crispy Chicken Tostadas",
+      "cuisine": "Mexican & Tex-Mex",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Boneless skinless chicken breasts",
+        "Corn tortillas",
+        "Refried beans",
+        "Shredded lettuce",
+        "Roma tomatoes",
+        "Shredded Monterey Jack cheese",
+        "Sour cream",
+        "Lime"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-004.webp",
+      "altText": "Finished Crispy Chicken Tostadas, with Boneless skinless chicken breasts, Corn tortillas, Refried beans",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Crispy Chicken Tostadas\". Its plated visual must faithfully represent the recipe; recognizable components include Boneless skinless chicken breasts, Corn tortillas, Refried beans, Shredded lettuce, Roma tomatoes, Shredded Monterey Jack cheese, Sour cream, Lime. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-005",
+      "name": "Beef Barbacoa Bowls",
+      "cuisine": "Mexican & Tex-Mex",
+      "servings": 6,
+      "requiredVisibleIngredients": [
+        "Beef chuck roast",
+        "Chipotle peppers in adobo",
+        "Beef broth",
+        "Apple cider vinegar",
+        "Long-grain rice dry",
+        "Black beans canned",
+        "Romaine lettuce",
+        "Lime"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-005.webp",
+      "altText": "Finished Beef Barbacoa Bowls, with Beef chuck roast, Chipotle peppers in adobo, Beef broth",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Beef Barbacoa Bowls\". Its plated visual must faithfully represent the recipe; recognizable components include Beef chuck roast, Chipotle peppers in adobo, Beef broth, Apple cider vinegar, Long-grain rice dry, Black beans canned, Romaine lettuce, Lime. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-006",
+      "name": "Creamy Roasted Poblano Mac and Cheese",
+      "cuisine": "Mexican & Tex-Mex",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Elbow macaroni",
+        "Poblano peppers",
+        "Cheddar cheese",
+        "Milk",
+        "Flour",
+        "Breadcrumbs"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-006.webp",
+      "altText": "Finished Creamy Roasted Poblano Mac and Cheese, with Elbow macaroni, Poblano peppers, Cheddar cheese",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Creamy Roasted Poblano Mac and Cheese\". Its plated visual must faithfully represent the recipe; recognizable components include Elbow macaroni, Poblano peppers, Cheddar cheese, Milk, Flour, Breadcrumbs. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-007",
+      "name": "Ground Beef Taco Skillet",
+      "cuisine": "Mexican & Tex-Mex",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Lean ground beef",
+        "White onion",
+        "Bell pepper",
+        "Black beans canned",
+        "Diced tomatoes canned",
+        "Frozen corn",
+        "Shredded cheddar cheese",
+        "Corn tortillas"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-007.webp",
+      "altText": "Finished Ground Beef Taco Skillet, with Lean ground beef, White onion, Bell pepper",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Ground Beef Taco Skillet\". Its plated visual must faithfully represent the recipe; recognizable components include Lean ground beef, White onion, Bell pepper, Black beans canned, Diced tomatoes canned, Frozen corn, Shredded cheddar cheese, Corn tortillas. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-008",
+      "name": "Chicken Tinga Tacos",
+      "cuisine": "Mexican & Tex-Mex",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Boneless skinless chicken thighs",
+        "Crushed tomatoes",
+        "Chipotle pepper in adobo",
+        "White onion",
+        "Chicken broth",
+        "Corn tortillas",
+        "Cilantro"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-008.webp",
+      "altText": "Finished Chicken Tinga Tacos, with Boneless skinless chicken thighs, Crushed tomatoes, Chipotle pepper in adobo",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Chicken Tinga Tacos\". Its plated visual must faithfully represent the recipe; recognizable components include Boneless skinless chicken thighs, Crushed tomatoes, Chipotle pepper in adobo, White onion, Chicken broth, Corn tortillas, Cilantro. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-009",
+      "name": "Steak Fajita Quesadillas",
+      "cuisine": "Mexican & Tex-Mex",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Flank steak",
+        "Flour tortillas",
+        "Bell peppers",
+        "Yellow onion",
+        "Shredded Monterey Jack cheese",
+        "Lime juice",
+        "Garlic powder"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-009.webp",
+      "altText": "Finished Steak Fajita Quesadillas, with Flank steak, Flour tortillas, Bell peppers",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Steak Fajita Quesadillas\". Its plated visual must faithfully represent the recipe; recognizable components include Flank steak, Flour tortillas, Bell peppers, Yellow onion, Shredded Monterey Jack cheese, Lime juice, Garlic powder. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-010",
+      "name": "Shrimp Fajita Rice Bowls",
+      "cuisine": "Mexican & Tex-Mex",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Peeled deveined raw shrimp",
+        "Long-grain rice dry",
+        "Bell peppers",
+        "Red onion",
+        "Garlic powder",
+        "Lime",
+        "Cilantro",
+        "Salsa"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-010.webp",
+      "altText": "Finished Shrimp Fajita Rice Bowls, with Peeled deveined raw shrimp, Long-grain rice dry, Bell peppers",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Shrimp Fajita Rice Bowls\". Its plated visual must faithfully represent the recipe; recognizable components include Peeled deveined raw shrimp, Long-grain rice dry, Bell peppers, Red onion, Garlic powder, Lime, Cilantro, Salsa. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-011",
+      "name": "Smothered Beef Burritos",
+      "cuisine": "Mexican & Tex-Mex",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Lean ground beef",
+        "Large flour tortillas",
+        "Cooked rice",
+        "Refried beans",
+        "Red enchilada sauce",
+        "Shredded cheddar cheese",
+        "Yellow onion",
+        "Sour cream"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-011.webp",
+      "altText": "Finished Smothered Beef Burritos, with Lean ground beef, Large flour tortillas, Cooked rice",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Smothered Beef Burritos\". Its plated visual must faithfully represent the recipe; recognizable components include Lean ground beef, Large flour tortillas, Cooked rice, Refried beans, Red enchilada sauce, Shredded cheddar cheese, Yellow onion, Sour cream. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-012",
+      "name": "Chicken Chimichangas",
+      "cuisine": "Mexican & Tex-Mex",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Cooked shredded chicken",
+        "Large flour tortillas",
+        "Shredded Monterey Jack cheese",
+        "Salsa",
+        "Canned diced green chiles",
+        "Sour cream",
+        "Shredded lettuce"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-012.webp",
+      "altText": "Finished Chicken Chimichangas, with Cooked shredded chicken, Large flour tortillas, Shredded Monterey Jack cheese",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Chicken Chimichangas\". Its plated visual must faithfully represent the recipe; recognizable components include Cooked shredded chicken, Large flour tortillas, Shredded Monterey Jack cheese, Salsa, Canned diced green chiles, Sour cream, Shredded lettuce. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-013",
+      "name": "Tex-Mex Beef Stuffed Peppers",
+      "cuisine": "Mexican & Tex-Mex",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Large bell peppers",
+        "Lean ground beef",
+        "Cooked rice",
+        "Black beans canned",
+        "Diced tomatoes canned",
+        "Shredded cheddar cheese",
+        "Yellow onion"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-013.webp",
+      "altText": "Finished Tex-Mex Beef Stuffed Peppers, with Large bell peppers, Lean ground beef, Cooked rice",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Tex-Mex Beef Stuffed Peppers\". Its plated visual must faithfully represent the recipe; recognizable components include Large bell peppers, Lean ground beef, Cooked rice, Black beans canned, Diced tomatoes canned, Shredded cheddar cheese, Yellow onion. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-014",
+      "name": "Cheesy Taco Pasta",
+      "cuisine": "Mexican & Tex-Mex",
+      "servings": 6,
+      "requiredVisibleIngredients": [
+        "Lean ground beef",
+        "Dry elbow macaroni",
+        "Yellow onion",
+        "Crushed tomatoes",
+        "Beef broth",
+        "Shredded cheddar cheese",
+        "Garlic powder",
+        "Sour cream"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-014.webp",
+      "altText": "Finished Cheesy Taco Pasta, with Lean ground beef, Dry elbow macaroni, Yellow onion",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Cheesy Taco Pasta\". Its plated visual must faithfully represent the recipe; recognizable components include Lean ground beef, Dry elbow macaroni, Yellow onion, Crushed tomatoes, Beef broth, Shredded cheddar cheese, Garlic powder, Sour cream. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-015",
+      "name": "Pork Chile Verde",
+      "cuisine": "Mexican & Tex-Mex",
+      "servings": 6,
+      "requiredVisibleIngredients": [
+        "Boneless pork shoulder",
+        "Tomatillos",
+        "Poblano peppers",
+        "Jalapeño peppers",
+        "White onion",
+        "Chicken broth",
+        "Cilantro",
+        "Lime"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-015.webp",
+      "altText": "Finished Pork Chile Verde, with Boneless pork shoulder, Tomatillos, Poblano peppers",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Pork Chile Verde\". Its plated visual must faithfully represent the recipe; recognizable components include Boneless pork shoulder, Tomatillos, Poblano peppers, Jalapeño peppers, White onion, Chicken broth, Cilantro, Lime. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-016",
+      "name": "Pork and Hominy Green Chile Skillet",
+      "cuisine": "Mexican & Tex-Mex",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Pork shoulder",
+        "Hominy",
+        "Salsa verde",
+        "Chicken broth",
+        "Yellow onion",
+        "Cumin"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-016.webp",
+      "altText": "Finished Pork and Hominy Green Chile Skillet, with Pork shoulder, Hominy, Salsa verde",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Pork and Hominy Green Chile Skillet\". Its plated visual must faithfully represent the recipe; recognizable components include Pork shoulder, Hominy, Salsa verde, Chicken broth, Yellow onion, Cumin. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-017",
+      "name": "Chicken Pozole Verde",
+      "cuisine": "Mexican & Tex-Mex",
+      "servings": 6,
+      "requiredVisibleIngredients": [
+        "Boneless skinless chicken thighs",
+        "Hominy canned, drained",
+        "Tomatillos",
+        "Poblano peppers",
+        "White onion",
+        "Chicken broth",
+        "Lime",
+        "Shredded cabbage"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-017.webp",
+      "altText": "Finished Chicken Pozole Verde, with Boneless skinless chicken thighs, Hominy canned, drained, Tomatillos",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Chicken Pozole Verde\". Its plated visual must faithfully represent the recipe; recognizable components include Boneless skinless chicken thighs, Hominy canned, drained, Tomatillos, Poblano peppers, White onion, Chicken broth, Lime, Shredded cabbage. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-018",
+      "name": "Pork Pozole Rojo",
+      "cuisine": "Mexican & Tex-Mex",
+      "servings": 6,
+      "requiredVisibleIngredients": [
+        "Boneless pork shoulder",
+        "Hominy canned, drained",
+        "Dried guajillo chiles",
+        "Dried ancho chiles",
+        "White onion",
+        "Chicken broth",
+        "Shredded cabbage",
+        "Radishes"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-018.webp",
+      "altText": "Finished Pork Pozole Rojo, with Boneless pork shoulder, Hominy canned, drained, Dried guajillo chiles",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Pork Pozole Rojo\". Its plated visual must faithfully represent the recipe; recognizable components include Boneless pork shoulder, Hominy canned, drained, Dried guajillo chiles, Dried ancho chiles, White onion, Chicken broth, Shredded cabbage, Radishes. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-019",
+      "name": "Mexican Street Corn Chicken Bowls",
+      "cuisine": "Mexican & Tex-Mex",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Boneless skinless chicken breasts",
+        "Long-grain rice dry",
+        "Corn kernels",
+        "Cotija cheese",
+        "Mayonnaise",
+        "Sour cream",
+        "Lime",
+        "Garlic powder"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-019.webp",
+      "altText": "Finished Mexican Street Corn Chicken Bowls, with Boneless skinless chicken breasts, Long-grain rice dry, Corn kernels",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Mexican Street Corn Chicken Bowls\". Its plated visual must faithfully represent the recipe; recognizable components include Boneless skinless chicken breasts, Long-grain rice dry, Corn kernels, Cotija cheese, Mayonnaise, Sour cream, Lime, Garlic powder. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-020",
+      "name": "Citrus Shrimp and Avocado Ceviche Cups",
+      "cuisine": "Mexican & Tex-Mex",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Cooked shrimp",
+        "Lime",
+        "Orange",
+        "Avocados",
+        "Cucumber",
+        "Red onion",
+        "Cilantro"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-020.webp",
+      "altText": "Finished Citrus Shrimp and Avocado Ceviche Cups, with Cooked shrimp, Lime, Orange",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Citrus Shrimp and Avocado Ceviche Cups\". Its plated visual must faithfully represent the recipe; recognizable components include Cooked shrimp, Lime, Orange, Avocados, Cucumber, Red onion, Cilantro. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-021",
+      "name": "Steak Nacho Supreme",
+      "cuisine": "Mexican & Tex-Mex",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Flank steak",
+        "Tortilla chips",
+        "Shredded cheddar cheese",
+        "Canned black beans",
+        "Roma tomatoes",
+        "Pickled jalapeño slices",
+        "Sour cream",
+        "Avocado"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-021.webp",
+      "altText": "Finished Steak Nacho Supreme, with Flank steak, Tortilla chips, Shredded cheddar cheese",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Steak Nacho Supreme\". Its plated visual must faithfully represent the recipe; recognizable components include Flank steak, Tortilla chips, Shredded cheddar cheese, Canned black beans, Roma tomatoes, Pickled jalapeño slices, Sour cream, Avocado. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-022",
+      "name": "Pulled Pork Nachos",
+      "cuisine": "Mexican & Tex-Mex",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Fully cooked pulled pork",
+        "Tortilla chips",
+        "Shredded Monterey Jack cheese",
+        "Canned black beans",
+        "Barbecue sauce",
+        "Red onion",
+        "Pickled jalapeño slices",
+        "Sour cream"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-022.webp",
+      "altText": "Finished Pulled Pork Nachos, with Fully cooked pulled pork, Tortilla chips, Shredded Monterey Jack cheese",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Pulled Pork Nachos\". Its plated visual must faithfully represent the recipe; recognizable components include Fully cooked pulled pork, Tortilla chips, Shredded Monterey Jack cheese, Canned black beans, Barbecue sauce, Red onion, Pickled jalapeño slices, Sour cream. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-023",
+      "name": "Beef and Potato Taquitos",
+      "cuisine": "Mexican & Tex-Mex",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Lean ground beef",
+        "Russet potatoes",
+        "Corn tortillas",
+        "Yellow onion",
+        "Shredded cheddar cheese",
+        "Garlic powder",
+        "Salsa"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-023.webp",
+      "altText": "Finished Beef and Potato Taquitos, with Lean ground beef, Russet potatoes, Corn tortillas",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Beef and Potato Taquitos\". Its plated visual must faithfully represent the recipe; recognizable components include Lean ground beef, Russet potatoes, Corn tortillas, Yellow onion, Shredded cheddar cheese, Garlic powder, Salsa. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-024",
+      "name": "Crispy Chicken Flautas",
+      "cuisine": "Mexican & Tex-Mex",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Cooked shredded chicken",
+        "Flour tortillas, fajita size",
+        "Shredded Monterey Jack cheese",
+        "Salsa verde",
+        "Shredded lettuce",
+        "Roma tomatoes",
+        "Sour cream"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-024.webp",
+      "altText": "Finished Crispy Chicken Flautas, with Cooked shredded chicken, Flour tortillas, fajita size, Shredded Monterey Jack cheese",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Crispy Chicken Flautas\". Its plated visual must faithfully represent the recipe; recognizable components include Cooked shredded chicken, Flour tortillas, fajita size, Shredded Monterey Jack cheese, Salsa verde, Shredded lettuce, Roma tomatoes, Sour cream. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-025",
+      "name": "Mexican Picadillo",
+      "cuisine": "Mexican & Tex-Mex",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Lean ground beef",
+        "Yukon Gold potatoes",
+        "Carrot",
+        "Roma tomatoes",
+        "Yellow onion",
+        "Beef broth",
+        "Frozen peas"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-025.webp",
+      "altText": "Finished Mexican Picadillo, with Lean ground beef, Yukon Gold potatoes, Carrot",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Mexican Picadillo\". Its plated visual must faithfully represent the recipe; recognizable components include Lean ground beef, Yukon Gold potatoes, Carrot, Roma tomatoes, Yellow onion, Beef broth, Frozen peas. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-026",
+      "name": "Salsa Verde Chicken Tacos",
+      "cuisine": "Mexican & Tex-Mex",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Boneless skinless chicken thighs",
+        "Salsa verde",
+        "Chicken broth",
+        "White onion",
+        "Corn tortillas",
+        "Cilantro",
+        "Lime",
+        "Shredded lettuce"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-026.webp",
+      "altText": "Finished Salsa Verde Chicken Tacos, with Boneless skinless chicken thighs, Salsa verde, Chicken broth",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Salsa Verde Chicken Tacos\". Its plated visual must faithfully represent the recipe; recognizable components include Boneless skinless chicken thighs, Salsa verde, Chicken broth, White onion, Corn tortillas, Cilantro, Lime, Shredded lettuce. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-027",
+      "name": "Beef and Cheese Empanadas",
+      "cuisine": "Mexican & Tex-Mex",
+      "servings": 6,
+      "requiredVisibleIngredients": [
+        "Lean ground beef",
+        "Prepared refrigerated empanada dough discs",
+        "Shredded Monterey Jack cheese",
+        "Yellow onion",
+        "Red bell pepper",
+        "Smoked paprika",
+        "Egg"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-027.webp",
+      "altText": "Finished Beef and Cheese Empanadas, with Lean ground beef, Prepared refrigerated empanada dough discs, Shredded Monterey Jack cheese",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Beef and Cheese Empanadas\". Its plated visual must faithfully represent the recipe; recognizable components include Lean ground beef, Prepared refrigerated empanada dough discs, Shredded Monterey Jack cheese, Yellow onion, Red bell pepper, Smoked paprika, Egg. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-028",
+      "name": "Cornbread Crusted Turkey Tamale Pie",
+      "cuisine": "Mexican & Tex-Mex",
+      "servings": 6,
+      "requiredVisibleIngredients": [
+        "Lean ground turkey",
+        "Black beans",
+        "Crushed tomatoes",
+        "Cornmeal",
+        "Flour",
+        "Milk",
+        "Egg",
+        "Cheddar"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-028.webp",
+      "altText": "Finished Cornbread Crusted Turkey Tamale Pie, with Lean ground turkey, Black beans, Crushed tomatoes",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Cornbread Crusted Turkey Tamale Pie\". Its plated visual must faithfully represent the recipe; recognizable components include Lean ground turkey, Black beans, Crushed tomatoes, Cornmeal, Flour, Milk, Egg, Cheddar. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-029",
+      "name": "Chipotle Chicken Torta",
+      "cuisine": "Mexican & Tex-Mex",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Boneless skinless chicken breasts",
+        "Bolillo rolls",
+        "Chipotle peppers in adobo",
+        "Mayonnaise",
+        "Refried beans",
+        "Monterey Jack cheese",
+        "Avocado",
+        "Roma tomatoes"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-029.webp",
+      "altText": "Finished Chipotle Chicken Torta, with Boneless skinless chicken breasts, Bolillo rolls, Chipotle peppers in adobo",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Chipotle Chicken Torta\". Its plated visual must faithfully represent the recipe; recognizable components include Boneless skinless chicken breasts, Bolillo rolls, Chipotle peppers in adobo, Mayonnaise, Refried beans, Monterey Jack cheese, Avocado, Roma tomatoes. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-030",
+      "name": "Shrimp Veracruz",
+      "cuisine": "Mexican & Tex-Mex",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Peeled deveined raw shrimp",
+        "Crushed tomatoes",
+        "White onion",
+        "Pitted green olives",
+        "Capers, drained",
+        "Jalapeño",
+        "Bay leaf",
+        "Lime"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-030.webp",
+      "altText": "Finished Shrimp Veracruz, with Peeled deveined raw shrimp, Crushed tomatoes, White onion",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Shrimp Veracruz\". Its plated visual must faithfully represent the recipe; recognizable components include Peeled deveined raw shrimp, Crushed tomatoes, White onion, Pitted green olives, Capers, drained, Jalapeño, Bay leaf, Lime. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-031",
+      "name": "Steak and Pinto Bean Burritos",
+      "cuisine": "Mexican & Tex-Mex",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Flank steak",
+        "Large flour tortillas",
+        "Cooked rice",
+        "Cooked pinto beans",
+        "Shredded cheddar cheese",
+        "Bell pepper",
+        "Yellow onion",
+        "Salsa"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-031.webp",
+      "altText": "Finished Steak and Pinto Bean Burritos, with Flank steak, Large flour tortillas, Cooked rice",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Steak and Pinto Bean Burritos\". Its plated visual must faithfully represent the recipe; recognizable components include Flank steak, Large flour tortillas, Cooked rice, Cooked pinto beans, Shredded cheddar cheese, Bell pepper, Yellow onion, Salsa. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-032",
+      "name": "Poblano Chicken Rice Bake",
+      "cuisine": "Mexican & Tex-Mex",
+      "servings": 6,
+      "requiredVisibleIngredients": [
+        "Boneless skinless chicken breasts",
+        "Long-grain rice dry",
+        "Poblano peppers",
+        "Chicken broth",
+        "Yellow onion",
+        "Diced tomatoes, drained",
+        "Shredded Monterey Jack cheese",
+        "Cilantro"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-032.webp",
+      "altText": "Finished Poblano Chicken Rice Bake, with Boneless skinless chicken breasts, Long-grain rice dry, Poblano peppers",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Poblano Chicken Rice Bake\". Its plated visual must faithfully represent the recipe; recognizable components include Boneless skinless chicken breasts, Long-grain rice dry, Poblano peppers, Chicken broth, Yellow onion, Diced tomatoes, drained, Shredded Monterey Jack cheese, Cilantro. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-033",
+      "name": "Mexican Beef Stuffed Zucchini",
+      "cuisine": "Mexican & Tex-Mex",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Medium zucchini",
+        "Lean ground beef",
+        "Yellow onion",
+        "Cooked rice",
+        "Black beans, drained",
+        "Diced tomatoes, drained",
+        "Shredded cheddar cheese",
+        "Cilantro"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-033.webp",
+      "altText": "Finished Mexican Beef Stuffed Zucchini, with Medium zucchini, Lean ground beef, Yellow onion",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Mexican Beef Stuffed Zucchini\". Its plated visual must faithfully represent the recipe; recognizable components include Medium zucchini, Lean ground beef, Yellow onion, Cooked rice, Black beans, drained, Diced tomatoes, drained, Shredded cheddar cheese, Cilantro. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-034",
+      "name": "Pork Al Pastor Tacos",
+      "cuisine": "Mexican & Tex-Mex",
+      "servings": 6,
+      "requiredVisibleIngredients": [
+        "Boneless pork shoulder",
+        "Pineapple chunks",
+        "Pineapple juice",
+        "Achiote paste",
+        "Dried guajillo chiles",
+        "White vinegar",
+        "Corn tortillas",
+        "White onion"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-034.webp",
+      "altText": "Finished Pork Al Pastor Tacos, with Boneless pork shoulder, Pineapple chunks, Pineapple juice",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Pork Al Pastor Tacos\". Its plated visual must faithfully represent the recipe; recognizable components include Boneless pork shoulder, Pineapple chunks, Pineapple juice, Achiote paste, Dried guajillo chiles, White vinegar, Corn tortillas, White onion. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-035",
+      "name": "Charred Corn and Black Bean Chicken Stuffed Poblanos",
+      "cuisine": "Mexican & Tex-Mex",
+      "servings": 6,
+      "requiredVisibleIngredients": [
+        "Poblano peppers",
+        "Cooked chicken",
+        "Black beans",
+        "Corn kernels",
+        "Pepper jack",
+        "Salsa",
+        "Cumin"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-035.webp",
+      "altText": "Finished Charred Corn and Black Bean Chicken Stuffed Poblanos, with Poblano peppers, Cooked chicken, Black beans",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Charred Corn and Black Bean Chicken Stuffed Poblanos\". Its plated visual must faithfully represent the recipe; recognizable components include Poblano peppers, Cooked chicken, Black beans, Corn kernels, Pepper jack, Salsa, Cumin. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-036",
+      "name": "Beef Quesabirria",
+      "cuisine": "Mexican & Tex-Mex",
+      "servings": 6,
+      "requiredVisibleIngredients": [
+        "Beef chuck roast",
+        "Dried guajillo chiles",
+        "Dried ancho chiles",
+        "Beef broth",
+        "White onion",
+        "Apple cider vinegar",
+        "Corn tortillas",
+        "Shredded Oaxaca cheese"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-036.webp",
+      "altText": "Finished Beef Quesabirria, with Beef chuck roast, Dried guajillo chiles, Dried ancho chiles",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Beef Quesabirria\". Its plated visual must faithfully represent the recipe; recognizable components include Beef chuck roast, Dried guajillo chiles, Dried ancho chiles, Beef broth, White onion, Apple cider vinegar, Corn tortillas, Shredded Oaxaca cheese. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-037",
+      "name": "Tex-Mex Chili Mac",
+      "cuisine": "Mexican & Tex-Mex",
+      "servings": 6,
+      "requiredVisibleIngredients": [
+        "Lean ground beef",
+        "Dry elbow macaroni",
+        "Diced tomatoes",
+        "Kidney beans, rinsed",
+        "Yellow onion",
+        "Beef broth",
+        "Tomato paste",
+        "Smoked paprika"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-037.webp",
+      "altText": "Finished Tex-Mex Chili Mac, with Lean ground beef, Dry elbow macaroni, Diced tomatoes",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Tex-Mex Chili Mac\". Its plated visual must faithfully represent the recipe; recognizable components include Lean ground beef, Dry elbow macaroni, Diced tomatoes, Kidney beans, rinsed, Yellow onion, Beef broth, Tomato paste, Smoked paprika. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-038",
+      "name": "Cheesy Chorizo Breakfast Tacos",
+      "cuisine": "Mexican & Tex-Mex",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Raw Mexican-style pork chorizo",
+        "Large eggs",
+        "Small flour tortillas",
+        "Shredded Monterey Jack cheese",
+        "Yellow onion",
+        "Bell pepper",
+        "Salsa",
+        "Cilantro"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-038.webp",
+      "altText": "Finished Cheesy Chorizo Breakfast Tacos, with Raw Mexican-style pork chorizo, Large eggs, Small flour tortillas",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Cheesy Chorizo Breakfast Tacos\". Its plated visual must faithfully represent the recipe; recognizable components include Raw Mexican-style pork chorizo, Large eggs, Small flour tortillas, Shredded Monterey Jack cheese, Yellow onion, Bell pepper, Salsa, Cilantro. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-039",
+      "name": "Chorizo and Potato Burritos",
+      "cuisine": "Mexican & Tex-Mex",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Raw Mexican-style pork chorizo",
+        "Russet potatoes",
+        "Large flour tortillas",
+        "Shredded cheddar",
+        "Large eggs",
+        "Yellow onion",
+        "Salsa verde"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-039.webp",
+      "altText": "Finished Chorizo and Potato Burritos, with Raw Mexican-style pork chorizo, Russet potatoes, Large flour tortillas",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Chorizo and Potato Burritos\". Its plated visual must faithfully represent the recipe; recognizable components include Raw Mexican-style pork chorizo, Russet potatoes, Large flour tortillas, Shredded cheddar, Large eggs, Yellow onion, Salsa verde. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-040",
+      "name": "Grilled Fish Baja Tacos",
+      "cuisine": "Mexican & Tex-Mex",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Skinless white fish fillets",
+        "Corn tortillas",
+        "Shredded cabbage",
+        "Plain Greek yogurt",
+        "Lime",
+        "Garlic powder",
+        "Cilantro",
+        "Avocado"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-040.webp",
+      "altText": "Finished Grilled Fish Baja Tacos, with Skinless white fish fillets, Corn tortillas, Shredded cabbage",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Grilled Fish Baja Tacos\". Its plated visual must faithfully represent the recipe; recognizable components include Skinless white fish fillets, Corn tortillas, Shredded cabbage, Plain Greek yogurt, Lime, Garlic powder, Cilantro, Avocado. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-041",
+      "name": "Creamy Chicken Poblano Soup",
+      "cuisine": "Mexican & Tex-Mex",
+      "servings": 6,
+      "requiredVisibleIngredients": [
+        "Boneless skinless chicken breasts",
+        "Poblano peppers",
+        "Yellow onion",
+        "Chicken broth",
+        "Heavy cream",
+        "Russet potatoes",
+        "Frozen corn",
+        "Lime"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-041.webp",
+      "altText": "Finished Creamy Chicken Poblano Soup, with Boneless skinless chicken breasts, Poblano peppers, Yellow onion",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Creamy Chicken Poblano Soup\". Its plated visual must faithfully represent the recipe; recognizable components include Boneless skinless chicken breasts, Poblano peppers, Yellow onion, Chicken broth, Heavy cream, Russet potatoes, Frozen corn, Lime. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-042",
+      "name": "Mexican Beef Meatballs",
+      "cuisine": "Mexican & Tex-Mex",
+      "servings": 6,
+      "requiredVisibleIngredients": [
+        "Lean ground beef",
+        "Egg",
+        "Dry breadcrumbs",
+        "Yellow onion",
+        "Crushed tomatoes",
+        "Beef broth",
+        "Chipotle pepper in adobo",
+        "Cilantro"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-042.webp",
+      "altText": "Finished Mexican Beef Meatballs, with Lean ground beef, Egg, Dry breadcrumbs",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Mexican Beef Meatballs\". Its plated visual must faithfully represent the recipe; recognizable components include Lean ground beef, Egg, Dry breadcrumbs, Yellow onion, Crushed tomatoes, Beef broth, Chipotle pepper in adobo, Cilantro. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-043",
+      "name": "Smoky Chipotle Turkey Chili",
+      "cuisine": "Mexican & Tex-Mex",
+      "servings": 6,
+      "requiredVisibleIngredients": [
+        "Ground turkey",
+        "Yellow onion",
+        "Bell pepper",
+        "Kidney beans, canned drained",
+        "Black beans, canned drained",
+        "Crushed tomatoes",
+        "Chicken broth",
+        "Chipotle peppers in adobo"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-043.webp",
+      "altText": "Finished Smoky Chipotle Turkey Chili, with Ground turkey, Yellow onion, Bell pepper",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Smoky Chipotle Turkey Chili\". Its plated visual must faithfully represent the recipe; recognizable components include Ground turkey, Yellow onion, Bell pepper, Kidney beans, canned drained, Black beans, canned drained, Crushed tomatoes, Chicken broth, Chipotle peppers in adobo. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-044",
+      "name": "Steak Taco Salad",
+      "cuisine": "Mexican & Tex-Mex",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Flank steak",
+        "Romaine lettuce",
+        "Corn kernels",
+        "Black beans, canned drained",
+        "Roma tomatoes",
+        "Avocado",
+        "Red onion",
+        "Crumbled cotija cheese"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-044.webp",
+      "altText": "Finished Steak Taco Salad, with Flank steak, Romaine lettuce, Corn kernels",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Steak Taco Salad\". Its plated visual must faithfully represent the recipe; recognizable components include Flank steak, Romaine lettuce, Corn kernels, Black beans, canned drained, Roma tomatoes, Avocado, Red onion, Crumbled cotija cheese. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-045",
+      "name": "Maple Glazed Breakfast Pork Sausage Patties",
+      "cuisine": "Southern & Comfort",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Ground pork",
+        "Maple syrup",
+        "Sage",
+        "Ground thyme"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-045.webp",
+      "altText": "Finished Maple Glazed Breakfast Pork Sausage Patties, with Ground pork, Maple syrup, Sage",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Maple Glazed Breakfast Pork Sausage Patties\". Its plated visual must faithfully represent the recipe; recognizable components include Ground pork, Maple syrup, Sage, Ground thyme. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-046",
+      "name": "Baked Ziti with Italian Sausage",
+      "cuisine": "Italian",
+      "servings": 6,
+      "requiredVisibleIngredients": [
+        "Dry ziti pasta",
+        "Italian sausage",
+        "Marinara sauce",
+        "Ricotta cheese",
+        "Shredded mozzarella",
+        "Grated Parmesan"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-046.webp",
+      "altText": "Finished Baked Ziti with Italian Sausage, with Dry ziti pasta, Italian sausage, Marinara sauce",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Baked Ziti with Italian Sausage\". Its plated visual must faithfully represent the recipe; recognizable components include Dry ziti pasta, Italian sausage, Marinara sauce, Ricotta cheese, Shredded mozzarella, Grated Parmesan. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-047",
+      "name": "Honey Garlic Pork Chops",
+      "cuisine": "American",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Boneless pork chops",
+        "Honey",
+        "Low-sodium soy sauce",
+        "Apple cider vinegar"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-047.webp",
+      "altText": "Finished Honey Garlic Pork Chops, with Boneless pork chops, Honey, Low-sodium soy sauce",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Honey Garlic Pork Chops\". Its plated visual must faithfully represent the recipe; recognizable components include Boneless pork chops, Honey, Low-sodium soy sauce, Apple cider vinegar. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-048",
+      "name": "Creamy Tuscan Chicken Pasta",
+      "cuisine": "Italian",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Boneless chicken breast",
+        "Dry penne pasta",
+        "Heavy cream",
+        "Baby spinach",
+        "Sun-dried tomatoes",
+        "Grated Parmesan",
+        "Italian seasoning"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-048.webp",
+      "altText": "Finished Creamy Tuscan Chicken Pasta, with Boneless chicken breast, Dry penne pasta, Heavy cream",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Creamy Tuscan Chicken Pasta\". Its plated visual must faithfully represent the recipe; recognizable components include Boneless chicken breast, Dry penne pasta, Heavy cream, Baby spinach, Sun-dried tomatoes, Grated Parmesan, Italian seasoning. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-049",
+      "name": "Ginger Beef and Snow Pea Noodle Bowls",
+      "cuisine": "Chinese & Asian",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Flank steak",
+        "Snow peas",
+        "Rice noodles",
+        "Soy sauce",
+        "Fresh ginger",
+        "Sesame oil",
+        "Honey"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-049.webp",
+      "altText": "Finished Ginger Beef and Snow Pea Noodle Bowls, with Flank steak, Snow peas, Rice noodles",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Ginger Beef and Snow Pea Noodle Bowls\". Its plated visual must faithfully represent the recipe; recognizable components include Flank steak, Snow peas, Rice noodles, Soy sauce, Fresh ginger, Sesame oil, Honey. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-050",
+      "name": "French Onion Potato Gratin",
+      "cuisine": "Soups & Stews",
+      "servings": 6,
+      "requiredVisibleIngredients": [
+        "Yukon gold potatoes",
+        "Yellow onions",
+        "Gruyere cheese",
+        "Heavy cream",
+        "Fresh thyme",
+        "Beef broth"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-050.webp",
+      "altText": "Finished French Onion Potato Gratin, with Yukon gold potatoes, Yellow onions, Gruyere cheese",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"French Onion Potato Gratin\". Its plated visual must faithfully represent the recipe; recognizable components include Yukon gold potatoes, Yellow onions, Gruyere cheese, Heavy cream, Fresh thyme, Beef broth. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-051",
+      "name": "Lemon Butter Baked Cod",
+      "cuisine": "Seafood",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Cod fillets",
+        "Lemon",
+        "Fresh parsley"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-051.webp",
+      "altText": "Finished Lemon Butter Baked Cod, with Cod fillets, Lemon, Fresh parsley",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Lemon Butter Baked Cod\". Its plated visual must faithfully represent the recipe; recognizable components include Cod fillets, Lemon, Fresh parsley. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-052",
+      "name": "BBQ Pulled Chicken Sandwiches",
+      "cuisine": "American",
+      "servings": 6,
+      "requiredVisibleIngredients": [
+        "Boneless chicken breast",
+        "Barbecue sauce",
+        "Chicken broth",
+        "Apple cider vinegar",
+        "Smoked paprika",
+        "Hamburger buns",
+        "Coleslaw mix",
+        "Mayonnaise"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-052.webp",
+      "altText": "Finished BBQ Pulled Chicken Sandwiches, with Boneless chicken breast, Barbecue sauce, Chicken broth",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"BBQ Pulled Chicken Sandwiches\". Its plated visual must faithfully represent the recipe; recognizable components include Boneless chicken breast, Barbecue sauce, Chicken broth, Apple cider vinegar, Smoked paprika, Hamburger buns, Coleslaw mix, Mayonnaise. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-053",
+      "name": "Savory Cheddar Biscuit Breakfast Bake",
+      "cuisine": "Southern & Comfort",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Refrigerated biscuit dough",
+        "Eggs",
+        "Milk",
+        "Cheddar",
+        "Baby spinach",
+        "Breakfast ham"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-053.webp",
+      "altText": "Finished Savory Cheddar Biscuit Breakfast Bake, with Refrigerated biscuit dough, Eggs, Milk",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Savory Cheddar Biscuit Breakfast Bake\". Its plated visual must faithfully represent the recipe; recognizable components include Refrigerated biscuit dough, Eggs, Milk, Cheddar, Baby spinach, Breakfast ham. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-054",
+      "name": "Turkey and Wild Rice Soup",
+      "cuisine": "Soups & Stews",
+      "servings": 6,
+      "requiredVisibleIngredients": [
+        "Cooked shredded turkey",
+        "Wild rice blend",
+        "Chicken broth",
+        "Carrots",
+        "Celery stalks",
+        "Yellow onion",
+        "Dried thyme",
+        "Milk"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-054.webp",
+      "altText": "Finished Turkey and Wild Rice Soup, with Cooked shredded turkey, Wild rice blend, Chicken broth",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Turkey and Wild Rice Soup\". Its plated visual must faithfully represent the recipe; recognizable components include Cooked shredded turkey, Wild rice blend, Chicken broth, Carrots, Celery stalks, Yellow onion, Dried thyme, Milk. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-055",
+      "name": "Moroccan Apricot Chicken with Couscous",
+      "cuisine": "Moroccan",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Boneless chicken thighs",
+        "Dry couscous",
+        "Dried apricots",
+        "Chickpeas",
+        "Chicken broth",
+        "Yellow onion",
+        "Ground cinnamon"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-055.webp",
+      "altText": "Finished Moroccan Apricot Chicken with Couscous, with Boneless chicken thighs, Dry couscous, Dried apricots",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Moroccan Apricot Chicken with Couscous\". Its plated visual must faithfully represent the recipe; recognizable components include Boneless chicken thighs, Dry couscous, Dried apricots, Chickpeas, Chicken broth, Yellow onion, Ground cinnamon. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-056",
+      "name": "Garlic Parmesan Chicken Wings",
+      "cuisine": "American",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Chicken wings",
+        "Baking powder",
+        "Garlic powder",
+        "Parmesan cheese",
+        "Fresh parsley"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-056.webp",
+      "altText": "Finished Garlic Parmesan Chicken Wings, with Chicken wings, Baking powder, Garlic powder",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Garlic Parmesan Chicken Wings\". Its plated visual must faithfully represent the recipe; recognizable components include Chicken wings, Baking powder, Garlic powder, Parmesan cheese, Fresh parsley. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-057",
+      "name": "Sausage and Peppers Hoagies",
+      "cuisine": "Italian-American",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Italian sausage links",
+        "Bell peppers",
+        "Yellow onions",
+        "Hoagie rolls",
+        "Marinara sauce",
+        "Provolone cheese"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-057.webp",
+      "altText": "Finished Sausage and Peppers Hoagies, with Italian sausage links, Bell peppers, Yellow onions",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Sausage and Peppers Hoagies\". Its plated visual must faithfully represent the recipe; recognizable components include Italian sausage links, Bell peppers, Yellow onions, Hoagie rolls, Marinara sauce, Provolone cheese. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-058",
+      "name": "One-Pot Chicken Alfredo",
+      "cuisine": "Italian",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Boneless chicken breast",
+        "Dry fettuccine",
+        "Heavy cream",
+        "Chicken broth",
+        "Parmesan cheese",
+        "Italian seasoning"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-058.webp",
+      "altText": "Finished One-Pot Chicken Alfredo, with Boneless chicken breast, Dry fettuccine, Heavy cream",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"One-Pot Chicken Alfredo\". Its plated visual must faithfully represent the recipe; recognizable components include Boneless chicken breast, Dry fettuccine, Heavy cream, Chicken broth, Parmesan cheese, Italian seasoning. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-059",
+      "name": "Pineapple Ginger Chicken Lettuce Cups",
+      "cuisine": "Chinese & Asian",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Boneless chicken thighs",
+        "Pineapple chunks",
+        "Butter lettuce",
+        "Fresh ginger",
+        "Low-sodium soy sauce",
+        "Rice vinegar",
+        "Sesame oil"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-059.webp",
+      "altText": "Finished Pineapple Ginger Chicken Lettuce Cups, with Boneless chicken thighs, Pineapple chunks, Butter lettuce",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Pineapple Ginger Chicken Lettuce Cups\". Its plated visual must faithfully represent the recipe; recognizable components include Boneless chicken thighs, Pineapple chunks, Butter lettuce, Fresh ginger, Low-sodium soy sauce, Rice vinegar, Sesame oil. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-060",
+      "name": "Balsamic Steak and Roasted Grape Salad",
+      "cuisine": "American",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Sirloin steak",
+        "Red seedless grapes",
+        "Mixed salad greens",
+        "Goat cheese",
+        "Walnuts",
+        "Balsamic vinegar",
+        "Dijon mustard"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-060.webp",
+      "altText": "Finished Balsamic Steak and Roasted Grape Salad, with Sirloin steak, Red seedless grapes, Mixed salad greens",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Balsamic Steak and Roasted Grape Salad\". Its plated visual must faithfully represent the recipe; recognizable components include Sirloin steak, Red seedless grapes, Mixed salad greens, Goat cheese, Walnuts, Balsamic vinegar, Dijon mustard. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-061",
+      "name": "Chicken Tortellini Soup",
+      "cuisine": "Soups & Stews",
+      "servings": 6,
+      "requiredVisibleIngredients": [
+        "Cooked shredded chicken",
+        "Refrigerated cheese tortellini",
+        "Chicken broth",
+        "Carrots",
+        "Celery stalks",
+        "Baby spinach",
+        "Yellow onion",
+        "Italian seasoning"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-061.webp",
+      "altText": "Finished Chicken Tortellini Soup, with Cooked shredded chicken, Refrigerated cheese tortellini, Chicken broth",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Chicken Tortellini Soup\". Its plated visual must faithfully represent the recipe; recognizable components include Cooked shredded chicken, Refrigerated cheese tortellini, Chicken broth, Carrots, Celery stalks, Baby spinach, Yellow onion, Italian seasoning. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-062",
+      "name": "Sheet-Pan Lemon Herb Chicken and Potatoes",
+      "cuisine": "American",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Bone-in chicken thighs",
+        "Baby potatoes",
+        "Green beans",
+        "Lemon",
+        "Dried rosemary",
+        "Dried thyme"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-062.webp",
+      "altText": "Finished Sheet-Pan Lemon Herb Chicken and Potatoes, with Bone-in chicken thighs, Baby potatoes, Green beans",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Sheet-Pan Lemon Herb Chicken and Potatoes\". Its plated visual must faithfully represent the recipe; recognizable components include Bone-in chicken thighs, Baby potatoes, Green beans, Lemon, Dried rosemary, Dried thyme. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-063",
+      "name": "Crispy Ginger Orange Pork Cutlets",
+      "cuisine": "Chinese & Asian",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Pork loin cutlets",
+        "Panko breadcrumbs",
+        "Eggs",
+        "Flour",
+        "Orange juice",
+        "Fresh ginger",
+        "Honey"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-063.webp",
+      "altText": "Finished Crispy Ginger Orange Pork Cutlets, with Pork loin cutlets, Panko breadcrumbs, Eggs",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Crispy Ginger Orange Pork Cutlets\". Its plated visual must faithfully represent the recipe; recognizable components include Pork loin cutlets, Panko breadcrumbs, Eggs, Flour, Orange juice, Fresh ginger, Honey. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-064",
+      "name": "Breakfast Sausage Egg Casserole",
+      "cuisine": "Breakfast",
+      "servings": 6,
+      "requiredVisibleIngredients": [
+        "Breakfast sausage",
+        "Eggs",
+        "Milk",
+        "Shredded cheddar",
+        "Sandwich bread",
+        "Bell pepper",
+        "Yellow onion"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-064.webp",
+      "altText": "Finished Breakfast Sausage Egg Casserole, with Breakfast sausage, Eggs, Milk",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Breakfast Sausage Egg Casserole\". Its plated visual must faithfully represent the recipe; recognizable components include Breakfast sausage, Eggs, Milk, Shredded cheddar, Sandwich bread, Bell pepper, Yellow onion. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-065",
+      "name": "Apple Cider Pork and Sweet Potato Sheet Pan",
+      "cuisine": "American",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Boneless pork loin",
+        "Sweet potatoes",
+        "Apples",
+        "Apple cider",
+        "Dijon mustard",
+        "Fresh rosemary",
+        "Red onion"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-065.webp",
+      "altText": "Finished Apple Cider Pork and Sweet Potato Sheet Pan, with Boneless pork loin, Sweet potatoes, Apples",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Apple Cider Pork and Sweet Potato Sheet Pan\". Its plated visual must faithfully represent the recipe; recognizable components include Boneless pork loin, Sweet potatoes, Apples, Apple cider, Dijon mustard, Fresh rosemary, Red onion. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-066",
+      "name": "Creole Catfish with Tomato Okra Relish",
+      "cuisine": "Southern & Comfort",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Catfish fillets",
+        "Okra",
+        "Diced tomatoes",
+        "Bell pepper",
+        "Yellow onion",
+        "Cajun seasoning",
+        "Lemon"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-066.webp",
+      "altText": "Finished Creole Catfish with Tomato Okra Relish, with Catfish fillets, Okra, Diced tomatoes",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Creole Catfish with Tomato Okra Relish\". Its plated visual must faithfully represent the recipe; recognizable components include Catfish fillets, Okra, Diced tomatoes, Bell pepper, Yellow onion, Cajun seasoning, Lemon. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-067",
+      "name": "Ricotta Spinach Stuffed Portobellos",
+      "cuisine": "Italian",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Large portobello mushrooms",
+        "Ricotta cheese",
+        "Baby spinach",
+        "Sun-dried tomatoes",
+        "Mozzarella cheese",
+        "Italian seasoning"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-067.webp",
+      "altText": "Finished Ricotta Spinach Stuffed Portobellos, with Large portobello mushrooms, Ricotta cheese, Baby spinach",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Ricotta Spinach Stuffed Portobellos\". Its plated visual must faithfully represent the recipe; recognizable components include Large portobello mushrooms, Ricotta cheese, Baby spinach, Sun-dried tomatoes, Mozzarella cheese, Italian seasoning. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-068",
+      "name": "Maple Mustard Roasted Salmon",
+      "cuisine": "Seafood",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Salmon fillets",
+        "Dijon mustard",
+        "Maple syrup",
+        "Lemon"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-068.webp",
+      "altText": "Finished Maple Mustard Roasted Salmon, with Salmon fillets, Dijon mustard, Maple syrup",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Maple Mustard Roasted Salmon\". Its plated visual must faithfully represent the recipe; recognizable components include Salmon fillets, Dijon mustard, Maple syrup, Lemon. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-069",
+      "name": "Classic Chicken Noodle Casserole",
+      "cuisine": "American",
+      "servings": 6,
+      "requiredVisibleIngredients": [
+        "Cooked shredded chicken",
+        "Egg noodles",
+        "Cream of chicken soup",
+        "Milk",
+        "Frozen peas",
+        "Shredded cheddar",
+        "Bread crumbs"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-069.webp",
+      "altText": "Finished Classic Chicken Noodle Casserole, with Cooked shredded chicken, Egg noodles, Cream of chicken soup",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Classic Chicken Noodle Casserole\". Its plated visual must faithfully represent the recipe; recognizable components include Cooked shredded chicken, Egg noodles, Cream of chicken soup, Milk, Frozen peas, Shredded cheddar, Bread crumbs. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-070",
+      "name": "Garlic Butter Steak Bites and Potatoes",
+      "cuisine": "American",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Sirloin steak",
+        "Baby potatoes",
+        "Fresh parsley"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-070.webp",
+      "altText": "Finished Garlic Butter Steak Bites and Potatoes, with Sirloin steak, Baby potatoes, Fresh parsley",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Garlic Butter Steak Bites and Potatoes\". Its plated visual must faithfully represent the recipe; recognizable components include Sirloin steak, Baby potatoes, Fresh parsley. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-071",
+      "name": "Lemon Dill Chicken and Barley Skillet",
+      "cuisine": "American",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Boneless chicken thighs",
+        "Pearled barley",
+        "Chicken broth",
+        "Carrots",
+        "Baby spinach",
+        "Lemon",
+        "Fresh dill"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-071.webp",
+      "altText": "Finished Lemon Dill Chicken and Barley Skillet, with Boneless chicken thighs, Pearled barley, Chicken broth",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Lemon Dill Chicken and Barley Skillet\". Its plated visual must faithfully represent the recipe; recognizable components include Boneless chicken thighs, Pearled barley, Chicken broth, Carrots, Baby spinach, Lemon, Fresh dill. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-072",
+      "name": "Baked Honey Mustard Chicken Thighs",
+      "cuisine": "American",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Boneless chicken thighs",
+        "Dijon mustard",
+        "Honey",
+        "Apple cider vinegar",
+        "Dried thyme"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-072.webp",
+      "altText": "Finished Baked Honey Mustard Chicken Thighs, with Boneless chicken thighs, Dijon mustard, Honey",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Baked Honey Mustard Chicken Thighs\". Its plated visual must faithfully represent the recipe; recognizable components include Boneless chicken thighs, Dijon mustard, Honey, Apple cider vinegar, Dried thyme. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-073",
+      "name": "Creamy Tomato Basil Tortellini",
+      "cuisine": "Italian",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Refrigerated cheese tortellini",
+        "Crushed tomatoes",
+        "Heavy cream",
+        "Fresh basil",
+        "Parmesan cheese",
+        "Yellow onion"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-073.webp",
+      "altText": "Finished Creamy Tomato Basil Tortellini, with Refrigerated cheese tortellini, Crushed tomatoes, Heavy cream",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Creamy Tomato Basil Tortellini\". Its plated visual must faithfully represent the recipe; recognizable components include Refrigerated cheese tortellini, Crushed tomatoes, Heavy cream, Fresh basil, Parmesan cheese, Yellow onion. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-074",
+      "name": "Ground Turkey Lettuce Wraps",
+      "cuisine": "Chinese & Asian",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Lean ground turkey",
+        "Butter lettuce",
+        "Water chestnuts",
+        "Low-sodium soy sauce",
+        "Hoisin sauce",
+        "Rice vinegar",
+        "Fresh ginger",
+        "Sesame oil"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-074.webp",
+      "altText": "Finished Ground Turkey Lettuce Wraps, with Lean ground turkey, Butter lettuce, Water chestnuts",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Ground Turkey Lettuce Wraps\". Its plated visual must faithfully represent the recipe; recognizable components include Lean ground turkey, Butter lettuce, Water chestnuts, Low-sodium soy sauce, Hoisin sauce, Rice vinegar, Fresh ginger, Sesame oil. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-075",
+      "name": "Smoky Sausage Cabbage and Apple Skillet",
+      "cuisine": "Cajun & Creole",
+      "servings": 6,
+      "requiredVisibleIngredients": [
+        "Smoked sausage",
+        "Green cabbage",
+        "Apples",
+        "Yellow onion",
+        "Apple cider vinegar",
+        "Dijon mustard"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-075.webp",
+      "altText": "Finished Smoky Sausage Cabbage and Apple Skillet, with Smoked sausage, Green cabbage, Apples",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Smoky Sausage Cabbage and Apple Skillet\". Its plated visual must faithfully represent the recipe; recognizable components include Smoked sausage, Green cabbage, Apples, Yellow onion, Apple cider vinegar, Dijon mustard. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-076",
+      "name": "Crispy Baked Fish Sticks",
+      "cuisine": "Seafood",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Cod fillets",
+        "Panko breadcrumbs",
+        "All-purpose flour",
+        "Eggs",
+        "Garlic powder",
+        "Lemon"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-076.webp",
+      "altText": "Finished Crispy Baked Fish Sticks, with Cod fillets, Panko breadcrumbs, All-purpose flour",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Crispy Baked Fish Sticks\". Its plated visual must faithfully represent the recipe; recognizable components include Cod fillets, Panko breadcrumbs, All-purpose flour, Eggs, Garlic powder, Lemon. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-077",
+      "name": "Broccoli Cheddar Stuffed Chicken",
+      "cuisine": "American",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Boneless chicken breasts",
+        "Broccoli florets",
+        "Shredded cheddar",
+        "Cream cheese",
+        "Garlic powder"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-077.webp",
+      "altText": "Finished Broccoli Cheddar Stuffed Chicken, with Boneless chicken breasts, Broccoli florets, Shredded cheddar",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Broccoli Cheddar Stuffed Chicken\". Its plated visual must faithfully represent the recipe; recognizable components include Boneless chicken breasts, Broccoli florets, Shredded cheddar, Cream cheese, Garlic powder. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-078",
+      "name": "Slow-Cooker White Chicken Chili",
+      "cuisine": "Soups & Stews",
+      "servings": 6,
+      "requiredVisibleIngredients": [
+        "Boneless chicken breast",
+        "White beans",
+        "Chicken broth",
+        "Diced green chiles",
+        "Cream cheese",
+        "Yellow onion",
+        "Lime"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-078.webp",
+      "altText": "Finished Slow-Cooker White Chicken Chili, with Boneless chicken breast, White beans, Chicken broth",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Slow-Cooker White Chicken Chili\". Its plated visual must faithfully represent the recipe; recognizable components include Boneless chicken breast, White beans, Chicken broth, Diced green chiles, Cream cheese, Yellow onion, Lime. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-079",
+      "name": "Italian Meatball Subs",
+      "cuisine": "Italian-American",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Ground beef",
+        "Breadcrumbs",
+        "Egg",
+        "Parmesan",
+        "Marinara sauce",
+        "Hoagie rolls",
+        "Mozzarella cheese",
+        "Garlic powder"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-079.webp",
+      "altText": "Finished Italian Meatball Subs, with Ground beef, Breadcrumbs, Egg",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Italian Meatball Subs\". Its plated visual must faithfully represent the recipe; recognizable components include Ground beef, Breadcrumbs, Egg, Parmesan, Marinara sauce, Hoagie rolls, Mozzarella cheese, Garlic powder. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-080",
+      "name": "Roasted Vegetable and Chicken Orzo",
+      "cuisine": "Mediterranean",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Boneless chicken breast",
+        "Dry orzo",
+        "Zucchini",
+        "Cherry tomatoes",
+        "Red onion",
+        "Chicken broth",
+        "Feta cheese"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-080.webp",
+      "altText": "Finished Roasted Vegetable and Chicken Orzo, with Boneless chicken breast, Dry orzo, Zucchini",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Roasted Vegetable and Chicken Orzo\". Its plated visual must faithfully represent the recipe; recognizable components include Boneless chicken breast, Dry orzo, Zucchini, Cherry tomatoes, Red onion, Chicken broth, Feta cheese. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-081",
+      "name": "Balsamic Beef Short Ribs with Polenta",
+      "cuisine": "American",
+      "servings": 8,
+      "requiredVisibleIngredients": [
+        "Beef short ribs",
+        "Balsamic vinegar",
+        "Beef broth",
+        "Yellow onion",
+        "Quick polenta",
+        "Milk",
+        "Parmesan"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-081.webp",
+      "altText": "Finished Balsamic Beef Short Ribs with Polenta, with Beef short ribs, Balsamic vinegar, Beef broth",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Balsamic Beef Short Ribs with Polenta\". Its plated visual must faithfully represent the recipe; recognizable components include Beef short ribs, Balsamic vinegar, Beef broth, Yellow onion, Quick polenta, Milk, Parmesan. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-082",
+      "name": "Lemon Garlic Shrimp Linguine",
+      "cuisine": "Italian",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Raw peeled shrimp",
+        "Dry linguine",
+        "Lemon",
+        "Fresh parsley",
+        "Red pepper flakes"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-082.webp",
+      "altText": "Finished Lemon Garlic Shrimp Linguine, with Raw peeled shrimp, Dry linguine, Lemon",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Lemon Garlic Shrimp Linguine\". Its plated visual must faithfully represent the recipe; recognizable components include Raw peeled shrimp, Dry linguine, Lemon, Fresh parsley, Red pepper flakes. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-083",
+      "name": "Ginger Scallion Beef and Cabbage Bowls",
+      "cuisine": "Chinese & Asian",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Lean ground beef",
+        "Green cabbage",
+        "Fresh ginger",
+        "Green onions",
+        "Low-sodium soy sauce",
+        "Rice vinegar",
+        "Brown sugar",
+        "Sesame oil"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-083.webp",
+      "altText": "Finished Ginger Scallion Beef and Cabbage Bowls, with Lean ground beef, Green cabbage, Fresh ginger",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Ginger Scallion Beef and Cabbage Bowls\". Its plated visual must faithfully represent the recipe; recognizable components include Lean ground beef, Green cabbage, Fresh ginger, Green onions, Low-sodium soy sauce, Rice vinegar, Brown sugar, Sesame oil. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-084",
+      "name": "Ham and Cheese Breakfast Sliders",
+      "cuisine": "Breakfast",
+      "servings": 6,
+      "requiredVisibleIngredients": [
+        "Hawaiian dinner rolls",
+        "Deli ham",
+        "Swiss cheese",
+        "Eggs",
+        "Milk",
+        "Dijon mustard"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-084.webp",
+      "altText": "Finished Ham and Cheese Breakfast Sliders, with Hawaiian dinner rolls, Deli ham, Swiss cheese",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Ham and Cheese Breakfast Sliders\". Its plated visual must faithfully represent the recipe; recognizable components include Hawaiian dinner rolls, Deli ham, Swiss cheese, Eggs, Milk, Dijon mustard. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-085",
+      "name": "One-Pan Creamy Garlic Chicken and Rice",
+      "cuisine": "American",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Boneless chicken thighs",
+        "Long grain white rice",
+        "Chicken broth",
+        "Heavy cream",
+        "Baby spinach",
+        "Italian seasoning"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-085.webp",
+      "altText": "Finished One-Pan Creamy Garlic Chicken and Rice, with Boneless chicken thighs, Long grain white rice, Chicken broth",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"One-Pan Creamy Garlic Chicken and Rice\". Its plated visual must faithfully represent the recipe; recognizable components include Boneless chicken thighs, Long grain white rice, Chicken broth, Heavy cream, Baby spinach, Italian seasoning. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-086",
+      "name": "Beef and Bean Chili",
+      "cuisine": "Soups & Stews",
+      "servings": 6,
+      "requiredVisibleIngredients": [
+        "Lean ground beef",
+        "Kidney beans",
+        "Crushed tomatoes",
+        "Tomato sauce",
+        "Yellow onion",
+        "Bell pepper"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-086.webp",
+      "altText": "Finished Beef and Bean Chili, with Lean ground beef, Kidney beans, Crushed tomatoes",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Beef and Bean Chili\". Its plated visual must faithfully represent the recipe; recognizable components include Lean ground beef, Kidney beans, Crushed tomatoes, Tomato sauce, Yellow onion, Bell pepper. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-087",
+      "name": "Roasted Red Pepper Turkey Burgers",
+      "cuisine": "Cajun & Creole",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Ground turkey",
+        "Roasted red peppers",
+        "Breadcrumbs",
+        "Egg",
+        "Feta",
+        "Hamburger buns",
+        "Baby spinach"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-087.webp",
+      "altText": "Finished Roasted Red Pepper Turkey Burgers, with Ground turkey, Roasted red peppers, Breadcrumbs",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Roasted Red Pepper Turkey Burgers\". Its plated visual must faithfully represent the recipe; recognizable components include Ground turkey, Roasted red peppers, Breadcrumbs, Egg, Feta, Hamburger buns, Baby spinach. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-088",
+      "name": "Pork Tenderloin with Apple Pan Sauce",
+      "cuisine": "American",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Pork tenderloin",
+        "Apples",
+        "Apple cider",
+        "Dijon mustard",
+        "Fresh thyme",
+        "Yellow onion"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-088.webp",
+      "altText": "Finished Pork Tenderloin with Apple Pan Sauce, with Pork tenderloin, Apples, Apple cider",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Pork Tenderloin with Apple Pan Sauce\". Its plated visual must faithfully represent the recipe; recognizable components include Pork tenderloin, Apples, Apple cider, Dijon mustard, Fresh thyme, Yellow onion. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-089",
+      "name": "Baked Chicken Parmesan Meatballs",
+      "cuisine": "Italian",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Ground chicken",
+        "Breadcrumbs",
+        "Egg",
+        "Grated Parmesan",
+        "Marinara sauce",
+        "Shredded mozzarella",
+        "Italian seasoning"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-089.webp",
+      "altText": "Finished Baked Chicken Parmesan Meatballs, with Ground chicken, Breadcrumbs, Egg",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Baked Chicken Parmesan Meatballs\". Its plated visual must faithfully represent the recipe; recognizable components include Ground chicken, Breadcrumbs, Egg, Grated Parmesan, Marinara sauce, Shredded mozzarella, Italian seasoning. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-090",
+      "name": "Breakfast Potato and Chorizo Hash",
+      "cuisine": "Breakfast",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Fresh Mexican chorizo",
+        "Yukon gold potatoes",
+        "Eggs",
+        "Bell pepper",
+        "Yellow onion",
+        "Smoked paprika",
+        "Fresh cilantro"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-090.webp",
+      "altText": "Finished Breakfast Potato and Chorizo Hash, with Fresh Mexican chorizo, Yukon gold potatoes, Eggs",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Breakfast Potato and Chorizo Hash\". Its plated visual must faithfully represent the recipe; recognizable components include Fresh Mexican chorizo, Yukon gold potatoes, Eggs, Bell pepper, Yellow onion, Smoked paprika, Fresh cilantro. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-091",
+      "name": "Creamy Mushroom Pork Tenderloin",
+      "cuisine": "American",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Pork tenderloin",
+        "Cremini mushrooms",
+        "Chicken broth",
+        "Heavy cream",
+        "Dijon mustard"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-091.webp",
+      "altText": "Finished Creamy Mushroom Pork Tenderloin, with Pork tenderloin, Cremini mushrooms, Chicken broth",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Creamy Mushroom Pork Tenderloin\". Its plated visual must faithfully represent the recipe; recognizable components include Pork tenderloin, Cremini mushrooms, Chicken broth, Heavy cream, Dijon mustard. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-092",
+      "name": "Greek Lemon Chicken Soup",
+      "cuisine": "Soups & Stews",
+      "servings": 6,
+      "requiredVisibleIngredients": [
+        "Cooked chicken breast",
+        "Chicken broth",
+        "Long grain rice",
+        "Eggs",
+        "Lemons",
+        "Carrots",
+        "Fresh dill"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-092.webp",
+      "altText": "Finished Greek Lemon Chicken Soup, with Cooked chicken breast, Chicken broth, Long grain rice",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Greek Lemon Chicken Soup\". Its plated visual must faithfully represent the recipe; recognizable components include Cooked chicken breast, Chicken broth, Long grain rice, Eggs, Lemons, Carrots, Fresh dill. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-093",
+      "name": "Balsamic Turkey and Roasted Beet Grain Bowls",
+      "cuisine": "American",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Lean ground turkey",
+        "Raw beets",
+        "Farro",
+        "Baby arugula",
+        "Feta cheese",
+        "Balsamic vinegar",
+        "Garlic powder"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-093.webp",
+      "altText": "Finished Balsamic Turkey and Roasted Beet Grain Bowls, with Lean ground turkey, Raw beets, Farro",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Balsamic Turkey and Roasted Beet Grain Bowls\". Its plated visual must faithfully represent the recipe; recognizable components include Lean ground turkey, Raw beets, Farro, Baby arugula, Feta cheese, Balsamic vinegar, Garlic powder. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-094",
+      "name": "Orange Ginger Glazed Pork Tenderloin",
+      "cuisine": "Chinese & Asian",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Pork tenderloin",
+        "Orange juice",
+        "Soy sauce",
+        "Honey",
+        "Fresh ginger",
+        "Cornstarch"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-094.webp",
+      "altText": "Finished Orange Ginger Glazed Pork Tenderloin, with Pork tenderloin, Orange juice, Soy sauce",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Orange Ginger Glazed Pork Tenderloin\". Its plated visual must faithfully represent the recipe; recognizable components include Pork tenderloin, Orange juice, Soy sauce, Honey, Fresh ginger, Cornstarch. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-095",
+      "name": "Turkey Spinach Stuffed Manicotti",
+      "cuisine": "Italian",
+      "servings": 6,
+      "requiredVisibleIngredients": [
+        "Manicotti shells",
+        "Lean ground turkey",
+        "Ricotta",
+        "Baby spinach",
+        "Mozzarella",
+        "Marinara",
+        "Italian seasoning"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-095.webp",
+      "altText": "Finished Turkey Spinach Stuffed Manicotti, with Manicotti shells, Lean ground turkey, Ricotta",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Turkey Spinach Stuffed Manicotti\". Its plated visual must faithfully represent the recipe; recognizable components include Manicotti shells, Lean ground turkey, Ricotta, Baby spinach, Mozzarella, Marinara, Italian seasoning. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-096",
+      "name": "Thai Basil Beef Rice",
+      "cuisine": "Chinese & Asian",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Ground beef",
+        "Jasmine rice",
+        "Fresh basil",
+        "Bell peppers",
+        "Soy sauce",
+        "Oyster sauce",
+        "Brown sugar"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-096.webp",
+      "altText": "Finished Thai Basil Beef Rice, with Ground beef, Jasmine rice, Fresh basil",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Thai Basil Beef Rice\". Its plated visual must faithfully represent the recipe; recognizable components include Ground beef, Jasmine rice, Fresh basil, Bell peppers, Soy sauce, Oyster sauce, Brown sugar. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-097",
+      "name": "Rosemary Garlic Turkey Meatloaf",
+      "cuisine": "American",
+      "servings": 8,
+      "requiredVisibleIngredients": [
+        "Ground turkey",
+        "Eggs",
+        "Breadcrumbs",
+        "Milk",
+        "Yellow onion",
+        "Rosemary",
+        "Ketchup"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-097.webp",
+      "altText": "Finished Rosemary Garlic Turkey Meatloaf, with Ground turkey, Eggs, Breadcrumbs",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Rosemary Garlic Turkey Meatloaf\". Its plated visual must faithfully represent the recipe; recognizable components include Ground turkey, Eggs, Breadcrumbs, Milk, Yellow onion, Rosemary, Ketchup. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-098",
+      "name": "Coconut Lime Chicken Curry",
+      "cuisine": "Chinese & Asian",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Chicken thighs",
+        "Coconut milk",
+        "Red curry paste",
+        "Bell peppers",
+        "Yellow onion",
+        "Fresh ginger",
+        "Lime",
+        "Jasmine rice"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-098.webp",
+      "altText": "Finished Coconut Lime Chicken Curry, with Chicken thighs, Coconut milk, Red curry paste",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Coconut Lime Chicken Curry\". Its plated visual must faithfully represent the recipe; recognizable components include Chicken thighs, Coconut milk, Red curry paste, Bell peppers, Yellow onion, Fresh ginger, Lime, Jasmine rice. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-099",
+      "name": "Smoky Ham and Navy Bean Soup",
+      "cuisine": "Soups & Stews",
+      "servings": 6,
+      "requiredVisibleIngredients": [
+        "Cooked diced ham",
+        "Canned navy beans",
+        "Chicken broth",
+        "Carrots",
+        "Celery stalks",
+        "Yellow onion",
+        "Smoked paprika"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-099.webp",
+      "altText": "Finished Smoky Ham and Navy Bean Soup, with Cooked diced ham, Canned navy beans, Chicken broth",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Smoky Ham and Navy Bean Soup\". Its plated visual must faithfully represent the recipe; recognizable components include Cooked diced ham, Canned navy beans, Chicken broth, Carrots, Celery stalks, Yellow onion, Smoked paprika. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-100",
+      "name": "Crispy Ranch Potato Wedges with Chicken",
+      "cuisine": "American",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Chicken tenders",
+        "Russet potatoes",
+        "Ranch seasoning",
+        "Greek yogurt",
+        "Lemon juice"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-100.webp",
+      "altText": "Finished Crispy Ranch Potato Wedges with Chicken, with Chicken tenders, Russet potatoes, Ranch seasoning",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Crispy Ranch Potato Wedges with Chicken\". Its plated visual must faithfully represent the recipe; recognizable components include Chicken tenders, Russet potatoes, Ranch seasoning, Greek yogurt, Lemon juice. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-101",
+      "name": "Creamy Spinach and Artichoke Chicken Bake",
+      "cuisine": "American",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Chicken breasts",
+        "Artichoke hearts",
+        "Baby spinach",
+        "Cream cheese",
+        "Mozzarella",
+        "Parmesan"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-101.webp",
+      "altText": "Finished Creamy Spinach and Artichoke Chicken Bake, with Chicken breasts, Artichoke hearts, Baby spinach",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Creamy Spinach and Artichoke Chicken Bake\". Its plated visual must faithfully represent the recipe; recognizable components include Chicken breasts, Artichoke hearts, Baby spinach, Cream cheese, Mozzarella, Parmesan. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-102",
+      "name": "Apricot Glazed Pork Meatballs",
+      "cuisine": "Chinese & Asian",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Ground pork",
+        "Breadcrumbs",
+        "Egg",
+        "Apricot preserves",
+        "Soy sauce",
+        "Rice vinegar",
+        "Fresh ginger",
+        "Green onions"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-102.webp",
+      "altText": "Finished Apricot Glazed Pork Meatballs, with Ground pork, Breadcrumbs, Egg",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Apricot Glazed Pork Meatballs\". Its plated visual must faithfully represent the recipe; recognizable components include Ground pork, Breadcrumbs, Egg, Apricot preserves, Soy sauce, Rice vinegar, Fresh ginger, Green onions. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-103",
+      "name": "Butternut Squash Sausage Risotto",
+      "cuisine": "Italian",
+      "servings": 6,
+      "requiredVisibleIngredients": [
+        "Arborio rice",
+        "Italian sausage",
+        "Butternut squash",
+        "Chicken broth",
+        "Parmesan",
+        "Yellow onion",
+        "Fresh sage"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-103.webp",
+      "altText": "Finished Butternut Squash Sausage Risotto, with Arborio rice, Italian sausage, Butternut squash",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Butternut Squash Sausage Risotto\". Its plated visual must faithfully represent the recipe; recognizable components include Arborio rice, Italian sausage, Butternut squash, Chicken broth, Parmesan, Yellow onion, Fresh sage. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-104",
+      "name": "Honey Sesame Salmon Rice Bowls",
+      "cuisine": "Seafood",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Salmon fillets",
+        "Brown rice",
+        "Honey",
+        "Soy sauce",
+        "Sesame seeds",
+        "Cucumber",
+        "Carrots",
+        "Rice vinegar"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-104.webp",
+      "altText": "Finished Honey Sesame Salmon Rice Bowls, with Salmon fillets, Brown rice, Honey",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Honey Sesame Salmon Rice Bowls\". Its plated visual must faithfully represent the recipe; recognizable components include Salmon fillets, Brown rice, Honey, Soy sauce, Sesame seeds, Cucumber, Carrots, Rice vinegar. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-105",
+      "name": "Chicken and Corn Chowder",
+      "cuisine": "Soups & Stews",
+      "servings": 6,
+      "requiredVisibleIngredients": [
+        "Chicken breasts",
+        "Corn kernels",
+        "Yukon potatoes",
+        "Chicken broth",
+        "Milk",
+        "Yellow onion",
+        "Flour"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-105.webp",
+      "altText": "Finished Chicken and Corn Chowder, with Chicken breasts, Corn kernels, Yukon potatoes",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Chicken and Corn Chowder\". Its plated visual must faithfully represent the recipe; recognizable components include Chicken breasts, Corn kernels, Yukon potatoes, Chicken broth, Milk, Yellow onion, Flour. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-106",
+      "name": "Crispy Oven Barbecue Pork Ribs",
+      "cuisine": "American",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Pork baby back ribs",
+        "Barbecue sauce",
+        "Brown sugar",
+        "Smoked paprika",
+        "Garlic powder",
+        "Apple cider vinegar"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-106.webp",
+      "altText": "Finished Crispy Oven Barbecue Pork Ribs, with Pork baby back ribs, Barbecue sauce, Brown sugar",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Crispy Oven Barbecue Pork Ribs\". Its plated visual must faithfully represent the recipe; recognizable components include Pork baby back ribs, Barbecue sauce, Brown sugar, Smoked paprika, Garlic powder, Apple cider vinegar. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-107",
+      "name": "Cheddar Bacon Broccoli Quiche",
+      "cuisine": "Breakfast",
+      "servings": 6,
+      "requiredVisibleIngredients": [
+        "Pie crust",
+        "Eggs",
+        "Broccoli florets",
+        "Bacon",
+        "Cheddar cheese",
+        "Half and half",
+        "Yellow onion"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-107.webp",
+      "altText": "Finished Cheddar Bacon Broccoli Quiche, with Pie crust, Eggs, Broccoli florets",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Cheddar Bacon Broccoli Quiche\". Its plated visual must faithfully represent the recipe; recognizable components include Pie crust, Eggs, Broccoli florets, Bacon, Cheddar cheese, Half and half, Yellow onion. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-108",
+      "name": "Garlic Chili Noodles with Ground Pork",
+      "cuisine": "Chinese & Asian",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Ground pork",
+        "Rice noodles",
+        "Soy sauce",
+        "Chili garlic sauce",
+        "Brown sugar",
+        "Sesame oil",
+        "Green onions"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-108.webp",
+      "altText": "Finished Garlic Chili Noodles with Ground Pork, with Ground pork, Rice noodles, Soy sauce",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Garlic Chili Noodles with Ground Pork\". Its plated visual must faithfully represent the recipe; recognizable components include Ground pork, Rice noodles, Soy sauce, Chili garlic sauce, Brown sugar, Sesame oil, Green onions. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-109",
+      "name": "Cider Braised Chicken with Apples",
+      "cuisine": "American",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Bone-in chicken thighs",
+        "Apple cider",
+        "Apples",
+        "Yellow onion",
+        "Chicken broth",
+        "Dijon mustard",
+        "Fresh thyme"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-109.webp",
+      "altText": "Finished Cider Braised Chicken with Apples, with Bone-in chicken thighs, Apple cider, Apples",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Cider Braised Chicken with Apples\". Its plated visual must faithfully represent the recipe; recognizable components include Bone-in chicken thighs, Apple cider, Apples, Yellow onion, Chicken broth, Dijon mustard, Fresh thyme. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    },
+    {
+      "recipeId": "exp01-110",
+      "name": "Skillet Creamy Pesto Shrimp Gnocchi",
+      "cuisine": "Italian",
+      "servings": 4,
+      "requiredVisibleIngredients": [
+        "Potato gnocchi",
+        "Raw shrimp",
+        "Basil pesto",
+        "Heavy cream",
+        "Cherry tomatoes",
+        "Parmesan cheese"
+      ],
+      "photoPath": "assets/recipe-expansion/exp01-110.webp",
+      "altText": "Finished Skillet Creamy Pesto Shrimp Gnocchi, with Potato gnocchi, Raw shrimp, Basil pesto",
+      "generationBrief": "Produce one ORIGINAL photorealistic food photograph of the FINISHED dish \"Skillet Creamy Pesto Shrimp Gnocchi\". Its plated visual must faithfully represent the recipe; recognizable components include Potato gnocchi, Raw shrimp, Basil pesto, Heavy cream, Cherry tomatoes, Parmesan cheese. Restaurant-grade luxury dark cinematic food photography, real edible textures, elegant ceramic plate or bowl, low-key moody directional lighting, dark charcoal backdrop, natural garnishes ONLY if present in ingredients, close 3/4 angle, no hands, no lettering, no logos, no graphic labels, square composition suitable for mobile recipe cards. Do not substitute another dish.",
+      "reviewChecks": [
+        "Food visually identifiable as named dish",
+        "Visible toppings and protein match actual recipe",
+        "No tofu or invented toppings not in recipe",
+        "High-quality photorealistic image",
+        "Distinct image from every other recipe",
+        "WebP output exists at expected path and decodes",
+        "Image accessible in redesigned app"
+      ],
+      "status": "needs-original-photo",
+      "photoVerified": false
+    }
+  ]
+}

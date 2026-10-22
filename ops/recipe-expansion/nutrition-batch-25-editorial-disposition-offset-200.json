@@ -1,0 +1,103 @@
+{
+  "sourceRunId": 39685604762,
+  "sourceArtifactId": 12387095218,
+  "offset": 200,
+  "usdaCandidateRecordsRequested": 25,
+  "usdaDetailsReturned": 25,
+  "approvedInReview": [
+    "Lemon juice",
+    "Oyster sauce",
+    "Okra",
+    "Provolone cheese"
+  ],
+  "held": [
+    {
+      "ingredient": "Lemons",
+      "reason": "Bottled lemon-juice concentrate, not whole fruit"
+    },
+    {
+      "ingredient": "Long grain rice",
+      "reason": "Brown long-grain rice; recipe color/prep unspecified and cup grams unverified"
+    },
+    {
+      "ingredient": "Long grain white rice",
+      "reason": "Raw white rice has only RACC, not cup measure"
+    },
+    {
+      "ingredient": "Manicotti shells",
+      "reason": "Taco shells instead of pasta manicotti"
+    },
+    {
+      "ingredient": "Marinara",
+      "reason": "Prepared ravioli instead of marinara sauce"
+    },
+    {
+      "ingredient": "Medium zucchini",
+      "reason": "Baby zucchini instead of medium zucchini"
+    },
+    {
+      "ingredient": "Mixed salad greens",
+      "reason": "Salad dressing instead of fresh greens"
+    },
+    {
+      "ingredient": "Monterey Jack cheese",
+      "reason": "Solid cheese RACC is not ounces-per-recipe verified?"
+    },
+    {
+      "ingredient": "Orange",
+      "reason": "Marmalade instead of whole orange"
+    },
+    {
+      "ingredient": "Pearled barley",
+      "reason": "Cooked barley, recipe dry or cooked unspecified"
+    },
+    {
+      "ingredient": "Pepper jack",
+      "reason": "Plain Monterey Jack rather than pepper Jack and lacks cup portion"
+    },
+    {
+      "ingredient": "Pie crust",
+      "reason": "Chocolate cookie crust instead of pastry crust"
+    },
+    {
+      "ingredient": "Pineapple juice",
+      "reason": "Baby food orange-pineapple mixture instead of pineapple juice"
+    },
+    {
+      "ingredient": "Pitted green olives",
+      "reason": "Pimiento-stuffed olives, not necessarily plain olives; cup not measured"
+    },
+    {
+      "ingredient": "Plain Greek yogurt",
+      "reason": "Lowfat yogurt type assumed; one container not a cup measure"
+    },
+    {
+      "ingredient": "Pork baby back ribs",
+      "reason": "Beef ribs instead of pork ribs"
+    },
+    {
+      "ingredient": "Pork loin cutlets",
+      "reason": "Whole pork loin raw; cutlet trim and composition require review"
+    },
+    {
+      "ingredient": "Pork shoulder",
+      "reason": "USDA shoulder breast cut may not match recipe cut or bone status"
+    },
+    {
+      "ingredient": "Potato gnocchi",
+      "reason": "Potato bread instead of gnocchi"
+    },
+    {
+      "ingredient": "Prepared refrigerated empanada dough discs",
+      "reason": "Prepared beef empanadas instead of empty dough discs"
+    },
+    {
+      "ingredient": "Quick polenta",
+      "reason": "Quick oats instead of polenta"
+    }
+  ],
+  "totalIngredientMappingsApprovedAfterReview": 40,
+  "completeRecipesApproved": 0,
+  "publicationDecision": "HOLD",
+  "note": "Every approval is an ingredient input source and unit mapping. Search hits with wrong identity or missing edible unit amounts cannot be used to calculate certified per-serving recipe macros."
+}

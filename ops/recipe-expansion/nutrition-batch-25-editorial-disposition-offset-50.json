@@ -1,0 +1,106 @@
+{
+  "batch": "Third 25-source evidence batch",
+  "offset": 50,
+  "sourceRunId": 39683487733,
+  "sourceArtifactId": 12385506499,
+  "usdaFoodDetailsRetrieved": 25,
+  "newlyApproved": [
+    "Balsamic vinegar",
+    "Low-sodium soy sauce",
+    "Cream cheese"
+  ],
+  "totalApprovedIngredientMappings": 14,
+  "held": [
+    [
+      "Flour",
+      "First match arrowroot flour; recipe unspecified wheat type"
+    ],
+    [
+      "Fresh parsley",
+      "USDA portion measures must be tied to chopped/loose cup"
+    ],
+    [
+      "Green onions",
+      "Top source is tops only; whole scallion edible grams differ"
+    ],
+    [
+      "Large flour tortillas",
+      "No nutrient/weight data in first record; large is not standardized"
+    ],
+    [
+      "Lean ground turkey",
+      "First match specifies 85% lean; lean ratio not given in recipe"
+    ],
+    [
+      "Marinara sauce",
+      "First match prepared ravioli meal, not sauce"
+    ],
+    [
+      "Orange juice",
+      "First match baby food orange juice, not regular juice"
+    ],
+    [
+      "Parmesan",
+      "Cup measure and grated versus shredded state need source review"
+    ],
+    [
+      "Parmesan cheese",
+      "Cup measure and grated versus shredded state need source review"
+    ],
+    [
+      "Russet potatoes",
+      "First match baked; recipe preparation raw"
+    ],
+    [
+      "Salsa verde",
+      "Portion evidence 30g not verified as a cup"
+    ],
+    [
+      "Apple cider",
+      "First match vinegar, not beverage"
+    ],
+    [
+      "Barbecue sauce",
+      "Generic product formulation and cup weight need review"
+    ],
+    [
+      "Beef chuck roast",
+      "First match specific USDA grade/cut, recipe not explicit on fat trimming"
+    ],
+    [
+      "Black beans canned",
+      "First match condensed black-bean soup, not canned beans"
+    ],
+    [
+      "Boneless skinless chicken thighs",
+      "Raw USDA thigh record appears plausible but needs meat/skin state and conversion matching"
+    ],
+    [
+      "Celery stalks",
+      "First match broccoli stalks, not celery"
+    ],
+    [
+      "Chipotle peppers in adobo",
+      "First match banana peppers, not chipotle in sauce"
+    ],
+    [
+      "Dried ancho chiles",
+      "Per-chile dried mass needs size check"
+    ],
+    [
+      "Dried thyme",
+      "Leaves 1 tsp 1g vs ground 1 tsp 1.4g; recipe not specified"
+    ],
+    [
+      "Fresh thyme",
+      "Loose leaves vs sprigs and 0.4g teaspoon conversions need recipe prep review"
+    ],
+    [
+      "Grated Parmesan",
+      "Cup mass not yet linked to explicit source portion"
+    ]
+  ],
+  "publicationDecision": "HOLD",
+  "nutritionVerificationRule": "Food identity, preparation, per-100g nutrients and every used portion measure must be verified; actual cooked recipe output and servings remain separately unverified.",
+  "note": "Approved items are source-backed ingredient inputs, not certified finished-dish totals. No publication to live or redesign."
+}

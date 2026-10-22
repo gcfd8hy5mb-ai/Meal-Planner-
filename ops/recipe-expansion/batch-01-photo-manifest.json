@@ -1,0 +1,994 @@
+{
+  "batch": 1,
+  "status": "individual-photo-previews-generated-not-yet-committed",
+  "note": "Photo assets must be saved as individual high-resolution licensed/generated files and visually reviewed before any recipe is publishable. Earlier composite previews are not counted as approved individual photos.",
+  "requiredStyle": "bright, natural food photography with realistic home-cooked presentation, daylight, true-to-recipe ingredients, no text, visually distinct thumbnail suitable for iPhone",
+  "recipes": [
+    {
+      "id": "exp01-001",
+      "name": "Birria Beef Tacos",
+      "expectedAsset": "assets/meal-photos/exp01-001.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "previewGenerated": true
+    },
+    {
+      "id": "exp01-002",
+      "name": "Carne Asada Street Tacos",
+      "expectedAsset": "assets/meal-photos/exp01-002.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "previewGenerated": true
+    },
+    {
+      "id": "exp01-003",
+      "name": "Slow-Cooker Pork Carnitas",
+      "expectedAsset": "assets/meal-photos/exp01-003.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "previewGenerated": true
+    },
+    {
+      "id": "exp01-004",
+      "name": "Crispy Chicken Tostadas",
+      "expectedAsset": "assets/meal-photos/exp01-004.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "previewGenerated": true
+    },
+    {
+      "id": "exp01-005",
+      "name": "Beef Barbacoa Bowls",
+      "expectedAsset": "assets/meal-photos/exp01-005.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "previewGenerated": true
+    },
+    {
+      "id": "exp01-006",
+      "name": "Creamy Roasted Poblano Mac and Cheese",
+      "expectedAsset": "assets/meal-photos/exp01-006.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "previewGenerated": true,
+      "photoBrief": "Roasted poblano macaroni and cheese with green pepper strips and browned crunchy topping"
+    },
+    {
+      "id": "exp01-007",
+      "name": "Ground Beef Taco Skillet",
+      "expectedAsset": "assets/meal-photos/exp01-007.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "previewGenerated": true
+    },
+    {
+      "id": "exp01-008",
+      "name": "Chicken Tinga Tacos",
+      "expectedAsset": "assets/meal-photos/exp01-008.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "previewGenerated": true
+    },
+    {
+      "id": "exp01-009",
+      "name": "Steak Fajita Quesadillas",
+      "expectedAsset": "assets/meal-photos/exp01-009.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "previewGenerated": true
+    },
+    {
+      "id": "exp01-010",
+      "name": "Shrimp Fajita Rice Bowls",
+      "expectedAsset": "assets/meal-photos/exp01-010.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "previewGenerated": true
+    },
+    {
+      "id": "exp01-011",
+      "name": "Smothered Beef Burritos",
+      "expectedAsset": "assets/meal-photos/exp01-011.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "previewGenerated": true
+    },
+    {
+      "id": "exp01-012",
+      "name": "Chicken Chimichangas",
+      "expectedAsset": "assets/meal-photos/exp01-012.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "previewGenerated": true
+    },
+    {
+      "id": "exp01-013",
+      "name": "Tex-Mex Beef Stuffed Peppers",
+      "expectedAsset": "assets/meal-photos/exp01-013.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "previewGenerated": true
+    },
+    {
+      "id": "exp01-014",
+      "name": "Cheesy Taco Pasta",
+      "expectedAsset": "assets/meal-photos/exp01-014.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "previewGenerated": true
+    },
+    {
+      "id": "exp01-015",
+      "name": "Pork Chile Verde",
+      "expectedAsset": "assets/meal-photos/exp01-015.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "previewGenerated": true
+    },
+    {
+      "id": "exp01-016",
+      "name": "Pork and Hominy Green Chile Skillet",
+      "expectedAsset": "assets/meal-photos/exp01-016.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "previewGenerated": true,
+      "photoBrief": "Green chile pork and white hominy in rustic skillet with salsa verde"
+    },
+    {
+      "id": "exp01-017",
+      "name": "Chicken Pozole Verde",
+      "expectedAsset": "assets/meal-photos/exp01-017.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "previewGenerated": true
+    },
+    {
+      "id": "exp01-018",
+      "name": "Pork Pozole Rojo",
+      "expectedAsset": "assets/meal-photos/exp01-018.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "previewGenerated": true
+    },
+    {
+      "id": "exp01-019",
+      "name": "Mexican Street Corn Chicken Bowls",
+      "expectedAsset": "assets/meal-photos/exp01-019.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "previewGenerated": true
+    },
+    {
+      "id": "exp01-020",
+      "name": "Citrus Shrimp and Avocado Ceviche Cups",
+      "expectedAsset": "assets/meal-photos/exp01-020.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "previewGenerated": true,
+      "photoBrief": "Fresh chilled cooked shrimp ceviche cups with avocado cucumber citrus and cilantro"
+    },
+    {
+      "id": "exp01-021",
+      "name": "Steak Nacho Supreme",
+      "expectedAsset": "assets/meal-photos/exp01-021.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true
+    },
+    {
+      "id": "exp01-022",
+      "name": "Pulled Pork Nachos",
+      "expectedAsset": "assets/meal-photos/exp01-022.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true
+    },
+    {
+      "id": "exp01-023",
+      "name": "Beef and Potato Taquitos",
+      "expectedAsset": "assets/meal-photos/exp01-023.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true
+    },
+    {
+      "id": "exp01-024",
+      "name": "Crispy Chicken Flautas",
+      "expectedAsset": "assets/meal-photos/exp01-024.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true
+    },
+    {
+      "id": "exp01-025",
+      "name": "Mexican Picadillo",
+      "expectedAsset": "assets/meal-photos/exp01-025.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true
+    },
+    {
+      "id": "exp01-026",
+      "name": "Salsa Verde Chicken Tacos",
+      "expectedAsset": "assets/meal-photos/exp01-026.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true
+    },
+    {
+      "id": "exp01-027",
+      "name": "Beef and Cheese Empanadas",
+      "expectedAsset": "assets/meal-photos/exp01-027.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true
+    },
+    {
+      "id": "exp01-028",
+      "name": "Cornbread Crusted Turkey Tamale Pie",
+      "expectedAsset": "assets/meal-photos/exp01-028.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Cornbread topped turkey tamale pie with red beans and tomato filling visible in cut wedge"
+    },
+    {
+      "id": "exp01-029",
+      "name": "Chipotle Chicken Torta",
+      "expectedAsset": "assets/meal-photos/exp01-029.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "A toasted Mexican bolillo sandwich cut diagonally to reveal sliced grilled chicken, refried beans, melted pale Monterey Jack, avocado slices, tomato, shredded lettuce and chipotle mayonnaise; no beef, no seafood"
+    },
+    {
+      "id": "exp01-030",
+      "name": "Shrimp Veracruz",
+      "expectedAsset": "assets/meal-photos/exp01-030.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Large opaque shrimp simmered in a vivid red tomato sauce with visible green olive slices and capers, plated alongside white rice, bright lime garnish; no cheese or pasta"
+    },
+    {
+      "id": "exp01-031",
+      "name": "Steak and Pinto Bean Burritos",
+      "expectedAsset": "assets/meal-photos/exp01-031.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "A single cut-open toasted flour burrito displaying thin sliced steak, whole pinto beans, rice, sautéed bell peppers, onions, cheese and red salsa, luxury moody food photography"
+    },
+    {
+      "id": "exp01-032",
+      "name": "Poblano Chicken Rice Bake",
+      "expectedAsset": "assets/meal-photos/exp01-032.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Baked casserole in rustic dark ceramic with tender chicken pieces, fluffy rice, sliced poblano peppers, diced red tomato, melted Monterey Jack, chopped cilantro; no tortillas"
+    },
+    {
+      "id": "exp01-033",
+      "name": "Mexican Beef Stuffed Zucchini",
+      "expectedAsset": "assets/meal-photos/exp01-033.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Two baked zucchini halves filled with seasoned ground beef, rice, black beans and tomato, melted cheddar and cilantro; zucchini shells clearly visible, no tortillas"
+    },
+    {
+      "id": "exp01-034",
+      "name": "Pork Al Pastor Tacos",
+      "expectedAsset": "assets/meal-photos/exp01-034.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Three warm corn tortillas filled with caramelized marinated pork and pineapple pieces, diced white onion, cilantro and lime; pineapple clearly visible"
+    },
+    {
+      "id": "exp01-035",
+      "name": "Charred Corn and Black Bean Chicken Stuffed Poblanos",
+      "expectedAsset": "assets/meal-photos/exp01-035.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Roasted poblano boats stuffed with shredded chicken black beans corn and melted pepper jack"
+    },
+    {
+      "id": "exp01-036",
+      "name": "Beef Quesabirria",
+      "expectedAsset": "assets/meal-photos/exp01-036.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Three folded crispy red-braised beef and melted Oaxaca cheese corn tacos with cilantro and onion, hot deep-red birria consommé in a small dipping bowl beside the tacos"
+    },
+    {
+      "id": "exp01-037",
+      "name": "Tex-Mex Chili Mac",
+      "expectedAsset": "assets/meal-photos/exp01-037.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Short elbow macaroni visibly coated in hearty red beef-and-kidney-bean chili sauce topped with melting cheddar, served in rustic dark ceramic bowl"
+    },
+    {
+      "id": "exp01-038",
+      "name": "Cheesy Chorizo Breakfast Tacos",
+      "expectedAsset": "assets/meal-photos/exp01-038.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Two soft flour breakfast tacos filled with crumbled pork chorizo, yellow scrambled eggs, red-and-green sautéed peppers, shredded Monterey Jack and fresh salsa; no tofu"
+    },
+    {
+      "id": "exp01-039",
+      "name": "Chorizo and Potato Burritos",
+      "expectedAsset": "assets/meal-photos/exp01-039.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "One cut-open toasted flour burrito exposing distinct golden diced potatoes, pork chorizo crumbles, scrambled egg and melted cheddar beside salsa verde"
+    },
+    {
+      "id": "exp01-040",
+      "name": "Grilled Fish Baja Tacos",
+      "expectedAsset": "assets/meal-photos/exp01-040.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Three corn tortillas with grilled white fish fillet pieces, crunchy cabbage, fresh avocado, creamy white lime-yogurt drizzle, cilantro and lime wedges; no shrimp"
+    },
+    {
+      "id": "exp01-041",
+      "name": "Creamy Chicken Poblano Soup",
+      "expectedAsset": "assets/meal-photos/exp01-041.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Rustic dark bowl of creamy pale green poblano soup showing clearly shredded chicken, potato pieces, charred poblano strips, corn kernels, cilantro and lime; no tortillas"
+    },
+    {
+      "id": "exp01-042",
+      "name": "Mexican Beef Meatballs",
+      "expectedAsset": "assets/meal-photos/exp01-042.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Four rustic beef meatballs in bright red tomato-chipotle sauce over fluffy white rice, cilantro garnish; no spaghetti or pasta"
+    },
+    {
+      "id": "exp01-043",
+      "name": "Smoky Chipotle Turkey Chili",
+      "expectedAsset": "assets/meal-photos/exp01-043.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Deep stoneware bowl of hearty dark red turkey chili with kidney beans, black beans, crushed tomato, grated cheddar, steaming, spoon beside it"
+    },
+    {
+      "id": "exp01-044",
+      "name": "Steak Taco Salad",
+      "expectedAsset": "assets/meal-photos/exp01-044.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Luxury dark shallow salad bowl filled with romaine, thin sliced seared steak, sweet corn, black beans, diced tomatoes, avocado, red onion, cotija and creamy lime drizzle"
+    },
+    {
+      "id": "exp01-045",
+      "name": "Maple Glazed Breakfast Pork Sausage Patties",
+      "expectedAsset": "assets/meal-photos/exp01-045.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Breakfast pork sausage patties glistening with maple glaze and sage on small ceramic plate"
+    },
+    {
+      "id": "exp01-046",
+      "name": "Baked Ziti with Italian Sausage",
+      "expectedAsset": "assets/meal-photos/exp01-046.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Baked pasta casserole of tubular ziti coated in red tomato sausage sauce, bubbling mozzarella, browned cheese edges; home kitchen natural daylight"
+    },
+    {
+      "id": "exp01-047",
+      "name": "Honey Garlic Pork Chops",
+      "expectedAsset": "assets/meal-photos/exp01-047.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Two glazed golden-brown pork chops in glossy honey garlic sauce in a ceramic plate; sliced garlic visible, no breading"
+    },
+    {
+      "id": "exp01-048",
+      "name": "Creamy Tuscan Chicken Pasta",
+      "expectedAsset": "assets/meal-photos/exp01-048.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Creamy penne pasta with sliced seared chicken breast, wilted baby spinach and sun-dried tomatoes in pale Parmesan sauce"
+    },
+    {
+      "id": "exp01-049",
+      "name": "Ginger Beef and Snow Pea Noodle Bowls",
+      "expectedAsset": "assets/meal-photos/exp01-049.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Rice noodle bowl with ginger steak strips and vivid green snow peas"
+    },
+    {
+      "id": "exp01-050",
+      "name": "French Onion Potato Gratin",
+      "expectedAsset": "assets/meal-photos/exp01-050.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Bubbling golden French onion potato gratin topped with melted Gruyere and browned onions"
+    },
+    {
+      "id": "exp01-051",
+      "name": "Lemon Butter Baked Cod",
+      "expectedAsset": "assets/meal-photos/exp01-051.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Baked flaky white cod fillet in lemon butter sauce with lemon slices, garlic and chopped parsley, no salmon"
+    },
+    {
+      "id": "exp01-052",
+      "name": "BBQ Pulled Chicken Sandwiches",
+      "expectedAsset": "assets/meal-photos/exp01-052.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Soft hamburger buns filled with shredded smoky barbecue chicken and crisp creamy cabbage slaw, two sandwiches in natural daylight"
+    },
+    {
+      "id": "exp01-053",
+      "name": "Savory Cheddar Biscuit Breakfast Bake",
+      "expectedAsset": "assets/meal-photos/exp01-053.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Golden cheddar biscuit breakfast casserole with visible baked biscuit pieces ham and spinach"
+    },
+    {
+      "id": "exp01-054",
+      "name": "Turkey and Wild Rice Soup",
+      "expectedAsset": "assets/meal-photos/exp01-054.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Homey bowl of turkey and wild rice soup with shredded turkey, dark rice grains, carrots, celery and creamy golden broth"
+    },
+    {
+      "id": "exp01-055",
+      "name": "Moroccan Apricot Chicken with Couscous",
+      "expectedAsset": "assets/meal-photos/exp01-055.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Golden Moroccan chicken with chickpeas dried apricots and fluffy couscous natural-light food photograph"
+    },
+    {
+      "id": "exp01-056",
+      "name": "Garlic Parmesan Chicken Wings",
+      "expectedAsset": "assets/meal-photos/exp01-056.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Crispy oven-baked chicken wings coated in garlic butter and fine Parmesan flecks, chopped parsley, simple platter daylight"
+    },
+    {
+      "id": "exp01-057",
+      "name": "Sausage and Peppers Hoagies",
+      "expectedAsset": "assets/meal-photos/exp01-057.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Toasted hoagie roll filled with sliced Italian sausage, red and green peppers, onions, melted provolone and tomato sauce, natural daylight"
+    },
+    {
+      "id": "exp01-058",
+      "name": "One-Pot Chicken Alfredo",
+      "expectedAsset": "assets/meal-photos/exp01-058.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Creamy fettuccine Alfredo topped with juicy golden chicken strips and Parmesan, simple white ceramic bowl in daylight"
+    },
+    {
+      "id": "exp01-059",
+      "name": "Pineapple Ginger Chicken Lettuce Cups",
+      "expectedAsset": "assets/meal-photos/exp01-059.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Fresh butter lettuce cups filled with diced ginger chicken and golden pineapple pieces, bright daylight"
+    },
+    {
+      "id": "exp01-060",
+      "name": "Balsamic Steak and Roasted Grape Salad",
+      "expectedAsset": "assets/meal-photos/exp01-060.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Mixed green salad with sliced seared steak, roasted red grapes, goat cheese and walnuts in window light"
+    },
+    {
+      "id": "exp01-061",
+      "name": "Chicken Tortellini Soup",
+      "expectedAsset": "assets/meal-photos/exp01-061.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Golden chicken broth soup with plump cheese tortellini, shredded chicken, sliced carrots, celery and leafy spinach in bowl"
+    },
+    {
+      "id": "exp01-062",
+      "name": "Sheet-Pan Lemon Herb Chicken and Potatoes",
+      "expectedAsset": "assets/meal-photos/exp01-062.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Natural roasted bone-in lemon herb chicken thighs with golden baby potatoes and green beans on one baking sheet, daylight"
+    },
+    {
+      "id": "exp01-063",
+      "name": "Crispy Ginger Orange Pork Cutlets",
+      "expectedAsset": "assets/meal-photos/exp01-063.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Golden panko breaded pork cutlets with orange ginger drizzle and citrus slices"
+    },
+    {
+      "id": "exp01-064",
+      "name": "Breakfast Sausage Egg Casserole",
+      "expectedAsset": "assets/meal-photos/exp01-064.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Golden baked breakfast egg casserole cut into squares showing sausage crumbles, cheddar, bell pepper and toasted bread, natural light"
+    },
+    {
+      "id": "exp01-065",
+      "name": "Apple Cider Pork and Sweet Potato Sheet Pan",
+      "expectedAsset": "assets/meal-photos/exp01-065.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Roasted cubed pork loin with orange sweet potato pieces, golden apples and red onion on baking tray"
+    },
+    {
+      "id": "exp01-066",
+      "name": "Creole Catfish with Tomato Okra Relish",
+      "expectedAsset": "assets/meal-photos/exp01-066.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Seared Cajun catfish fillet with chunky red tomato and green okra relish"
+    },
+    {
+      "id": "exp01-067",
+      "name": "Ricotta Spinach Stuffed Portobellos",
+      "expectedAsset": "assets/meal-photos/exp01-067.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Baked large portobello caps filled with creamy ricotta spinach and sun dried tomato, golden mozzarella"
+    },
+    {
+      "id": "exp01-068",
+      "name": "Maple Mustard Roasted Salmon",
+      "expectedAsset": "assets/meal-photos/exp01-068.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Oven-baked salmon fillet with glossy maple mustard glaze, lightly browned edges and lemon wedges"
+    },
+    {
+      "id": "exp01-069",
+      "name": "Classic Chicken Noodle Casserole",
+      "expectedAsset": "assets/meal-photos/exp01-069.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Golden baked chicken noodle casserole with visible egg noodles, peas and breadcrumb top"
+    },
+    {
+      "id": "exp01-070",
+      "name": "Garlic Butter Steak Bites and Potatoes",
+      "expectedAsset": "assets/meal-photos/exp01-070.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Seared bite-size steak cubes and crisp golden baby potatoes coated in garlic butter, skillet daylight"
+    },
+    {
+      "id": "exp01-071",
+      "name": "Lemon Dill Chicken and Barley Skillet",
+      "expectedAsset": "assets/meal-photos/exp01-071.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "A natural daylight skillet meal of golden chicken pieces, plump barley grains, carrots, spinach, lemon zest and fresh dill"
+    },
+    {
+      "id": "exp01-072",
+      "name": "Baked Honey Mustard Chicken Thighs",
+      "expectedAsset": "assets/meal-photos/exp01-072.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Golden glazed baked chicken thighs with glossy honey mustard sauce and thyme on home-style plate"
+    },
+    {
+      "id": "exp01-073",
+      "name": "Creamy Tomato Basil Tortellini",
+      "expectedAsset": "assets/meal-photos/exp01-073.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Plump cheese tortellini in creamy red tomato basil sauce with grated Parmesan, natural daylight"
+    },
+    {
+      "id": "exp01-074",
+      "name": "Ground Turkey Lettuce Wraps",
+      "expectedAsset": "assets/meal-photos/exp01-074.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Fresh butter lettuce cups packed with glossy ground turkey, diced water chestnuts and green onion garnish"
+    },
+    {
+      "id": "exp01-075",
+      "name": "Smoky Sausage Cabbage and Apple Skillet",
+      "expectedAsset": "assets/meal-photos/exp01-075.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Skillet of browned sausage coins with silky green cabbage and apple wedges"
+    },
+    {
+      "id": "exp01-076",
+      "name": "Crispy Baked Fish Sticks",
+      "expectedAsset": "assets/meal-photos/exp01-076.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Homemade golden crunchy panko cod fish sticks arranged on plate with fresh lemon wedges and no commercial packaging"
+    },
+    {
+      "id": "exp01-077",
+      "name": "Broccoli Cheddar Stuffed Chicken",
+      "expectedAsset": "assets/meal-photos/exp01-077.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Sliced juicy stuffed chicken breast revealing bright broccoli florets and melted cheddar cheese filling"
+    },
+    {
+      "id": "exp01-078",
+      "name": "Slow-Cooker White Chicken Chili",
+      "expectedAsset": "assets/meal-photos/exp01-078.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Creamy white chicken chili with shredded chicken, white beans, diced mild green chiles and thick pale broth"
+    },
+    {
+      "id": "exp01-079",
+      "name": "Italian Meatball Subs",
+      "expectedAsset": "assets/meal-photos/exp01-079.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Toasted Italian sub roll overflowing with round beef meatballs in red tomato sauce and melted mozzarella"
+    },
+    {
+      "id": "exp01-080",
+      "name": "Roasted Vegetable and Chicken Orzo",
+      "expectedAsset": "assets/meal-photos/exp01-080.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Colorful orzo pasta with roast chicken chunks, zucchini, blistered cherry tomatoes, red onion and feta"
+    },
+    {
+      "id": "exp01-081",
+      "name": "Balsamic Beef Short Ribs with Polenta",
+      "expectedAsset": "assets/meal-photos/exp01-081.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Fork tender balsamic beef short ribs over creamy Parmesan polenta"
+    },
+    {
+      "id": "exp01-082",
+      "name": "Lemon Garlic Shrimp Linguine",
+      "expectedAsset": "assets/meal-photos/exp01-082.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Bright linguine with pink shrimp, garlic butter, lemon slices and chopped parsley, natural light"
+    },
+    {
+      "id": "exp01-083",
+      "name": "Ginger Scallion Beef and Cabbage Bowls",
+      "expectedAsset": "assets/meal-photos/exp01-083.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Bowl of ginger scallion ground beef with shredded cabbage on white rice, daylight natural food photograph"
+    },
+    {
+      "id": "exp01-084",
+      "name": "Ham and Cheese Breakfast Sliders",
+      "expectedAsset": "assets/meal-photos/exp01-084.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Golden breakfast mini sandwiches filled with folded eggs, sliced ham and melted Swiss on baking tray"
+    },
+    {
+      "id": "exp01-085",
+      "name": "One-Pan Creamy Garlic Chicken and Rice",
+      "expectedAsset": "assets/meal-photos/exp01-085.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Creamy garlicky rice with golden chicken thighs and spinach cooked in one black skillet"
+    },
+    {
+      "id": "exp01-086",
+      "name": "Beef and Bean Chili",
+      "expectedAsset": "assets/meal-photos/exp01-086.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Thick hearty homemade beef chili with kidney beans and chunky tomatoes in ceramic bowl"
+    },
+    {
+      "id": "exp01-087",
+      "name": "Roasted Red Pepper Turkey Burgers",
+      "expectedAsset": "assets/meal-photos/exp01-087.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Turkey burgers with visible roasted red pepper pieces feta and spinach on toasted buns"
+    },
+    {
+      "id": "exp01-088",
+      "name": "Pork Tenderloin with Apple Pan Sauce",
+      "expectedAsset": "assets/meal-photos/exp01-088.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Sliced roasted pork tenderloin medallions with golden sautéed apple slices and glossy cider sauce"
+    },
+    {
+      "id": "exp01-089",
+      "name": "Baked Chicken Parmesan Meatballs",
+      "expectedAsset": "assets/meal-photos/exp01-089.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Golden chicken Parmesan meatballs nestled in red marinara with melted mozzarella and green basil garnish"
+    },
+    {
+      "id": "exp01-090",
+      "name": "Breakfast Potato and Chorizo Hash",
+      "expectedAsset": "assets/meal-photos/exp01-090.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Rustic breakfast skillet of crispy potatoes, red chorizo, bell peppers and four fully cooked eggs"
+    },
+    {
+      "id": "exp01-091",
+      "name": "Creamy Mushroom Pork Tenderloin",
+      "expectedAsset": "assets/meal-photos/exp01-091.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Pork medallions coated in creamy mushroom sauce on a simple plate"
+    },
+    {
+      "id": "exp01-092",
+      "name": "Greek Lemon Chicken Soup",
+      "expectedAsset": "assets/meal-photos/exp01-092.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Pale yellow Greek lemon chicken and rice soup with carrot and dill"
+    },
+    {
+      "id": "exp01-093",
+      "name": "Balsamic Turkey and Roasted Beet Grain Bowls",
+      "expectedAsset": "assets/meal-photos/exp01-093.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Bright naturally photographed grain bowl showing farro, roasted ruby beets, browned ground turkey, arugula and crumbled feta"
+    },
+    {
+      "id": "exp01-094",
+      "name": "Orange Ginger Glazed Pork Tenderloin",
+      "expectedAsset": "assets/meal-photos/exp01-094.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Sliced roasted pork tenderloin in orange ginger glaze with citrus wedges"
+    },
+    {
+      "id": "exp01-095",
+      "name": "Turkey Spinach Stuffed Manicotti",
+      "expectedAsset": "assets/meal-photos/exp01-095.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Baked tubular manicotti stuffed with turkey and spinach in red marinara and mozzarella"
+    },
+    {
+      "id": "exp01-096",
+      "name": "Thai Basil Beef Rice",
+      "expectedAsset": "assets/meal-photos/exp01-096.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Thai basil ground beef with bell pepper over steamed jasmine rice"
+    },
+    {
+      "id": "exp01-097",
+      "name": "Rosemary Garlic Turkey Meatloaf",
+      "expectedAsset": "assets/meal-photos/exp01-097.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Slices of rosemary turkey meatloaf with red ketchup glaze and visible herbs"
+    },
+    {
+      "id": "exp01-098",
+      "name": "Coconut Lime Chicken Curry",
+      "expectedAsset": "assets/meal-photos/exp01-098.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Golden coconut chicken curry with bell peppers served over fluffy rice and lime"
+    },
+    {
+      "id": "exp01-099",
+      "name": "Smoky Ham and Navy Bean Soup",
+      "expectedAsset": "assets/meal-photos/exp01-099.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Chunky white navy beans with diced pink ham and carrots in golden soup broth"
+    },
+    {
+      "id": "exp01-100",
+      "name": "Crispy Ranch Potato Wedges with Chicken",
+      "expectedAsset": "assets/meal-photos/exp01-100.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Crispy oven-baked ranch potato wedges beside golden chicken tenderloins and creamy dip"
+    },
+    {
+      "id": "exp01-101",
+      "name": "Creamy Spinach and Artichoke Chicken Bake",
+      "expectedAsset": "assets/meal-photos/exp01-101.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Baked chicken breasts under creamy spinach artichoke cheesy topping in ceramic pan"
+    },
+    {
+      "id": "exp01-102",
+      "name": "Apricot Glazed Pork Meatballs",
+      "expectedAsset": "assets/meal-photos/exp01-102.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Glossy amber apricot glazed pork meatballs with sliced green onions on plate"
+    },
+    {
+      "id": "exp01-103",
+      "name": "Butternut Squash Sausage Risotto",
+      "expectedAsset": "assets/meal-photos/exp01-103.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Creamy orange butternut risotto with browned Italian sausage and flecks of sage"
+    },
+    {
+      "id": "exp01-104",
+      "name": "Honey Sesame Salmon Rice Bowls",
+      "expectedAsset": "assets/meal-photos/exp01-104.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Sticky honey sesame baked salmon over brown rice with crisp cucumber and carrot"
+    },
+    {
+      "id": "exp01-105",
+      "name": "Chicken and Corn Chowder",
+      "expectedAsset": "assets/meal-photos/exp01-105.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Thick golden chicken corn chowder with potato cubes and sweet yellow corn"
+    },
+    {
+      "id": "exp01-106",
+      "name": "Crispy Oven Barbecue Pork Ribs",
+      "expectedAsset": "assets/meal-photos/exp01-106.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Oven barbecue pork ribs with caramelized smoky red glaze and exposed bones"
+    },
+    {
+      "id": "exp01-107",
+      "name": "Cheddar Bacon Broccoli Quiche",
+      "expectedAsset": "assets/meal-photos/exp01-107.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Golden broccoli cheddar quiche slice with bacon pieces in flaky pastry crust"
+    },
+    {
+      "id": "exp01-108",
+      "name": "Garlic Chili Noodles with Ground Pork",
+      "expectedAsset": "assets/meal-photos/exp01-108.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Rice noodles tossed with spicy garlic ground pork and scallions in natural daylight"
+    },
+    {
+      "id": "exp01-109",
+      "name": "Cider Braised Chicken with Apples",
+      "expectedAsset": "assets/meal-photos/exp01-109.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Golden braised bone-in chicken thighs with softened apples and cider sauce"
+    },
+    {
+      "id": "exp01-110",
+      "name": "Skillet Creamy Pesto Shrimp Gnocchi",
+      "expectedAsset": "assets/meal-photos/exp01-110.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Soft pillowy gnocchi with shrimp, basil pesto cream and cherry tomatoes"
+    }
+  ]
+}

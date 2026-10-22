@@ -1,0 +1,98 @@
+{
+  "sourceRunId": 39684317153,
+  "offset": 100,
+  "recordsRequested": 25,
+  "recordsWithUSDAFoodDetail": 24,
+  "approved": [
+    "Maple syrup",
+    "Raw Mexican-style pork chorizo",
+    "Refrigerated cheese tortellini",
+    "Ricotta cheese",
+    "Romaine lettuce"
+  ],
+  "held": [
+    {
+      "ingredient": "Hamburger buns",
+      "reason": "Top USDA hit is an entire hamburger sandwich"
+    },
+    {
+      "ingredient": "Hoagie rolls",
+      "reason": "Top hit French roll only 38g, not named hoagie roll"
+    },
+    {
+      "ingredient": "Hominy canned, drained",
+      "reason": "USDA canned hominy includes liquid; recipe specifies drained edible portion"
+    },
+    {
+      "ingredient": "Italian sausage",
+      "reason": "Top link sweet sausage; recipe sausage type may differ"
+    },
+    {
+      "ingredient": "Large eggs",
+      "reason": "Top result egg whites only, not whole egg"
+    },
+    {
+      "ingredient": "Mozzarella",
+      "reason": "Top result restaurant fried mozzarella sticks"
+    },
+    {
+      "ingredient": "Mozzarella cheese",
+      "reason": "Top result cheese substitute, not dairy mozzarella"
+    },
+    {
+      "ingredient": "Panko breadcrumbs",
+      "reason": "No USDA first candidate returned"
+    },
+    {
+      "ingredient": "Peeled deveined raw shrimp",
+      "reason": "Top USDA hit peeled cucumber"
+    },
+    {
+      "ingredient": "Pickled jalapeño slices",
+      "reason": "Top hit pickled eggplant"
+    },
+    {
+      "ingredient": "Pineapple chunks",
+      "reason": "Top hit sweetened frozen pineapple; recipe pineapple type unclear"
+    },
+    {
+      "ingredient": "Rice noodles",
+      "reason": "Top hit cooked noodles; recipes give ounces with unknown raw/cooked state"
+    },
+    {
+      "ingredient": "Shredded mozzarella",
+      "reason": "Top hit part-skim low moisture; recipe does not specify fat content"
+    },
+    {
+      "ingredient": "Shredded Oaxaca cheese",
+      "reason": "USDA whole Oaxaca cheese record provides RACC, not shredded-cup weight"
+    },
+    {
+      "ingredient": "Sirloin steak",
+      "reason": "Top result cooked restaurant sirloin"
+    },
+    {
+      "ingredient": "Salmon fillets",
+      "reason": "Top result vegetarian substitute"
+    },
+    {
+      "ingredient": "Sun-dried tomatoes",
+      "reason": "USDA dry cup weight; recipe calls chopped and may use oil packed"
+    },
+    {
+      "ingredient": "Tomatillos",
+      "reason": "Recipe weight may include husks but USDA nutrients use edible raw tomatillo"
+    },
+    {
+      "ingredient": "Tortilla chips",
+      "reason": "Top hit nacho cheese flavored chips"
+    },
+    {
+      "ingredient": "Vegetable oil",
+      "reason": "Top hit soybean oil; recipe does not specify base oil"
+    }
+  ],
+  "approvedTotalAfterReview": 24,
+  "recipeNutritionCertified": 0,
+  "note": "Five identity-and-measurement mappings approved as ingredient inputs; remaining matches unresolved. Neither live app nor redesign data is changed."
+}
