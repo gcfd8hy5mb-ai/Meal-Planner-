@@ -299,16 +299,21 @@
       "reviewNotes": "Exact cited USDA food and recipe-unit input reference; does NOT verify individual product variation, cooking yield or final prepared recipe nutrition."
     },
     "Basil pesto": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central",
+      "foodId": "2710175",
+      "description": "Pesto sauce",
+      "state": "Prepared basil-style pesto sauce",
+      "kcalPer100g": 580,
+      "proteinPer100g": 8.61,
+      "carbsPer100g": 5.67,
+      "fatPer100g": 59.2,
+      "gramsPerUnit": {
+        "cup": 256
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/2710175/nutrients",
+      "portionSource": "Portion gram weight stated in grams; non-mass cup measures approximate.",
+      "reviewNotes": "USDA generic pesto sauce; cup weight based on 16g per tablespoon × 16; branded pesto energy ranges markedly (372-580 kcal per 100g)."
     },
     "Bay leaf": {
       "source": "Recipe preparation audit (discarded ingredient; not consumed)",
@@ -854,16 +859,21 @@
       "reviewNotes": "Two recipes explicitly drain and rinse one cup canned black beans. Reuses the verified USDA 2644285 reference; 172g per cup is an estimated edible volume weight, not a USDA-measured portion."
     },
     "Canned diced green chiles": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central",
+      "foodId": "168577",
+      "description": "Peppers, chili, green, canned",
+      "state": "Canned diced green chiles, edible pepper with liquid",
+      "kcalPer100g": 21,
+      "proteinPer100g": 0.72,
+      "carbsPer100g": 4.6,
+      "fatPer100g": 0.27,
+      "gramsPerUnit": {
+        "cup": 240
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/168577/nutrients",
+      "portionSource": "Portion gram weight stated in grams; non-mass cup measures approximate.",
+      "reviewNotes": "USDA canned green chili pepper source; cup 240g approximate; if drained, weighed mass differs."
     },
     "Canned navy beans": {
       "source": "USDA FoodData Central Foundation Foods",
@@ -1584,16 +1594,21 @@
       "reviewNotes": "Deli ham fat and water added vary by brand. This is a standard-ingredient estimate and not an exact commercial brand or cooked recipe macro."
     },
     "Diced green chiles": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central",
+      "foodId": "168577",
+      "description": "Peppers, chili, green, canned",
+      "state": "Diced canned green chile peppers, not fresh",
+      "kcalPer100g": 21,
+      "proteinPer100g": 0.72,
+      "carbsPer100g": 4.6,
+      "fatPer100g": 0.27,
+      "gramsPerUnit": {
+        "oz": 28.349523125
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/168577/nutrients",
+      "portionSource": "Portion gram weight stated in grams; non-mass cup measures approximate.",
+      "reviewNotes": "Canned chili peppers proxy for unspecified diced green chiles; ounce is mass; fresh chiles differ."
     },
     "Diced tomatoes": {
       "source": "USDA FoodData Central Foundation Foods",
@@ -3249,16 +3264,21 @@
       "reviewNotes": "All 10 recipes use 0.25–2 cups fluid milk, fat percentage unspecified. Whole milk is a declared proxy; users using skim/2% will consume fewer calories and fat. Source nutrients and USDA ID verified against USDA-derived listings."
     },
     "Mixed salad greens": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central",
+      "foodId": "2709792",
+      "description": "Mixed salad greens, raw",
+      "state": "Raw mixed salad greens",
+      "kcalPer100g": 21,
+      "proteinPer100g": 1.31,
+      "carbsPer100g": 3.43,
+      "fatPer100g": 0.21,
+      "gramsPerUnit": {
+        "cup": 35
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/2709792/nutrients",
+      "portionSource": "Portion gram weight stated in grams; non-mass cup measures approximate.",
+      "reviewNotes": "FNDDS raw mixed greens; 35g/cup is USDA sample portion; packing varies."
     },
     "Monterey Jack cheese": {
       "source": "USDA FoodData Central SR Legacy",
