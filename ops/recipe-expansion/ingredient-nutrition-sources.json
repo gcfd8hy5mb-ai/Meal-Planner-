@@ -1229,16 +1229,21 @@
       "reviewStatus": "pending"
     },
     "Cornmeal": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "169698",
+      "description": "Cornmeal, whole-grain, yellow",
+      "state": "Dry yellow whole-grain cornmeal, uncooked",
+      "kcalPer100g": 362,
+      "proteinPer100g": 8.12,
+      "carbsPer100g": 76.89,
+      "fatPer100g": 3.59,
+      "gramsPerUnit": {
+        "cup": 138
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169698/nutrients",
+      "portionSource": "Standard dry cornmeal ~138 g per cup; grain grind, brand, and packing may vary.",
+      "reviewNotes": "Single recipe use in Cornbread Crusted Turkey Tamale Pie is 1 cup. Dry cornmeal (not cooked polenta) assumed; whole-grain yellow variety is practical standard, but degermed cornmeal may have different fat and protein."
     },
     "Cornstarch": {
       "source": "USDA FoodData Central",
