@@ -120,21 +120,21 @@
       "reviewNotes": "Verified Goya Arborio Rice branded USDA FoodData Central FDC 2596371: serving 1/4 cup dry (47g), 170 kcal, 3g protein, 37g total carbs, 0g fat. Values per 100g computed directly from label; exact fractions retained for accuracy. Only use is 1.5 cups uncooked in Butternut Squash Sausage Risotto. Brand proxy for other dry Arborio products; rounded label nutrients are estimates."
     },
     "Artichoke hearts": {
-      "source": "USDA FoodData Central branded food via GetFoodFacts",
-      "foodId": "2597636",
-      "description": "Cento 5-7 Count Artichoke Hearts branded canned",
-      "state": "Canned artichoke hearts in water/brine, not oil-packed",
-      "kcalPer100g": 38,
-      "proteinPer100g": 2.5,
-      "carbsPer100g": 7.5,
+      "source": "French ANSES Ciqual food composition table (secondary presentation)",
+      "foodId": "Ciqual canned artichoke heart drained",
+      "description": "Artichoke heart, canned, drained",
+      "state": "Canned artichoke hearts drained, not marinated in oil",
+      "kcalPer100g": 26,
+      "proteinPer100g": 1.8,
+      "carbsPer100g": 2.3,
       "fatPer100g": 0,
       "gramsPerUnit": {
         "oz": 28.349523125
       },
-      "reviewStatus": "needs-review",
-      "sourceUrl": "https://getfoodfacts.com/food/5-7-count-artichoke-hearts-2597636",
-      "portionSource": "Volume/count measurements depend on actual item mass; ounce is weight ounce, not fluid ounce.",
-      "reviewNotes": "Branded USDA-derived proxy; total carbohydrates roughly inferred from label energy and may not be exact. Brands vary."
+      "reviewStatus": "approved",
+      "sourceUrl": "https://www.mealstack.io/foods/artichoke-heart-canned-drained",
+      "portionSource": "1 oz drained edible artichoke hearts by weight = 28.349523125g",
+      "reviewNotes": "Source specifically canned and drained artichoke hearts, reported from Ciqual; not USDA brand and estimates vary by packing brine or oil. Nutrient values retained as source-reported rather than guessed from rounded brand energy."
     },
     "Avocado": {
       "source": "USDA FoodData Central SR Legacy",
