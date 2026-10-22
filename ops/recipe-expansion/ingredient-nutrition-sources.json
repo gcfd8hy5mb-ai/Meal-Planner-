@@ -3959,16 +3959,21 @@
       "reviewNotes": "Four recipes measure one or two pounds. Peeling changes edible yield. Added cooking fat counted separately."
     },
     "Sage": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170935",
+      "description": "Spices, sage, ground",
+      "state": "Dried ground sage spice (explicit default for unspecified sage measured by tsp)",
+      "kcalPer100g": 315,
+      "proteinPer100g": 10.63,
+      "carbsPer100g": 60.73,
+      "fatPer100g": 12.75,
+      "gramsPerUnit": {
+        "tsp": 0.7
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170935/nutrients",
+      "portionSource": "USDA SR Legacy standard 1 teaspoon ground sage = 0.7 g",
+      "reviewNotes": "Recipe specifies sage without fresh/dried state and measures teaspoons. Assumes ground dried culinary sage; fresh sage differs, so this is an explicit estimate needing override where recipe specifies fresh sage."
     },
     "Salmon fillets": {
       "source": "",
