@@ -782,28 +782,38 @@
       "reviewNotes": "Ingredient as-purchased input only. Per-serving finished recipe nutrition not certified."
     },
     "Carrot": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170393",
+      "description": "Carrots, raw",
+      "state": "Raw carrot, edible portion without tops",
+      "kcalPer100g": 41,
+      "proteinPer100g": 0.93,
+      "carbsPer100g": 9.58,
+      "fatPer100g": 0.24,
+      "gramsPerUnit": {
+        "each": 61
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170393/nutrients",
+      "portionSource": "Standard medium raw carrot approximately 61g edible portion; recipe sizes vary.",
+      "reviewNotes": "All seven recipe occurrences of Carrot/Carrots use 'each'. Raw medium carrot is a practical default; actual carrot sizes vary."
     },
     "Carrots": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170393",
+      "description": "Carrots, raw",
+      "state": "Raw carrot, edible portion without tops",
+      "kcalPer100g": 41,
+      "proteinPer100g": 0.93,
+      "carbsPer100g": 9.58,
+      "fatPer100g": 0.24,
+      "gramsPerUnit": {
+        "each": 61
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170393/nutrients",
+      "portionSource": "Standard medium raw carrot approximately 61g edible portion; recipe sizes vary.",
+      "reviewNotes": "All seven recipe occurrences of Carrot/Carrots use 'each'. Raw medium carrot is a practical default; actual carrot sizes vary."
     },
     "Catfish fillets": {
       "source": "USDA FoodData Central SR Legacy",
