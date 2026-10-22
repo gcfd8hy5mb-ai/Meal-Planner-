@@ -3614,16 +3614,21 @@
       "reviewStatus": "pending"
     },
     "Smoked paprika": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "171329",
+      "description": "Spices, paprika",
+      "state": "Spices, paprika",
+      "kcalPer100g": 282,
+      "proteinPer100g": 14.14,
+      "carbsPer100g": 53.99,
+      "fatPer100g": 12.89,
+      "gramsPerUnit": {
+        "tsp": 2.3
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171329/nutrients",
+      "portionSource": "USDA paprika ground standard 1 tsp = 2.3g; used as an explicitly approximate weight for ground smoked paprika.",
+      "reviewNotes": "Practical standard macro estimate: ground smoked paprika approximated using USDA ground paprika; smoking changes flavor and moisture, but negligible macro effect at teaspoon quantities. Recipe unit inventory confirms tsp only. Not an exact smoked-paprika lab analysis."
     },
     "Smoked sausage": {
       "source": "",
