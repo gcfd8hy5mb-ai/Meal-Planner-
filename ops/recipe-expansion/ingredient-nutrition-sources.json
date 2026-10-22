@@ -217,16 +217,21 @@
       "reviewStatus": "pending"
     },
     "Baking powder": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "172804",
+      "description": "Leavening agents, baking powder, double-acting, sodium aluminum sulfate",
+      "state": "Dry baking powder, double acting",
+      "kcalPer100g": 53,
+      "proteinPer100g": 0,
+      "carbsPer100g": 27.7,
+      "fatPer100g": 0,
+      "gramsPerUnit": {
+        "tbsp": 13.8
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/172804/nutrients",
+      "portionSource": "USDA 1 tsp baking powder ~4.6 g; 1 tbsp = 3 tsp = 13.8g as standardized volume estimate.",
+      "reviewNotes": "The only recipe use in the 110 drafts is 1 tbsp. Standard double-acting baking powder is the practical default; exact formulation varies by brand. Ingredient macros are estimated; sodium not included."
     },
     "Balsamic vinegar": {
       "source": "USDA FoodData Central SR Legacy",
