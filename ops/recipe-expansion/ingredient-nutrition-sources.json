@@ -65,10 +65,15 @@
       "proteinPer100g": 0.26,
       "carbsPer100g": 13.81,
       "fatPer100g": 0.17,
-      "gramsPerUnit": {},
+      "gramsPerUnit": {
+        "cup, sliced": 109,
+        "cup, chopped": 125,
+        "medium": 182
+      },
       "reviewStatus": "pending",
-      "reviewNotes": "USDA-backed standard macro candidate populated for practical estimated macros. Hold final approval until all actual recipe units are inventoried and appropriate edible-portion gram mappings are recorded; do not equate whole fruit weight with edible flesh or assume every cup preparation is equivalent.",
-      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171688/nutrients"
+      "reviewNotes": "USDA reference food and reference portions now recorded. These gramsPerUnit labels are preparation-specific reference portions, not verified matches to all recipe units; pending recipe-unit inventory before approval.",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171688/nutrients",
+      "portionSource": "USDA SR Legacy FDC 171688 portions: cup slices 109g, cup quartered/chopped 125g, medium fruit 182g; https://fdc.nal.usda.gov/food-details/171688/nutrients"
     },
     "Apricot preserves": {
       "source": "",
@@ -116,10 +121,16 @@
       "proteinPer100g": 2,
       "carbsPer100g": 8.53,
       "fatPer100g": 14.66,
-      "gramsPerUnit": {},
+      "gramsPerUnit": {
+        "cup, sliced": 146,
+        "cup, cubes": 150,
+        "cup, pureed": 230,
+        "whole, edible flesh": 201
+      },
       "reviewStatus": "pending",
       "sourceUrl": "https://fdc.nal.usda.gov/food-details/171705/nutrients",
-      "reviewNotes": "USDA-backed standard macro candidate populated for practical estimated macros. Hold final approval until all actual recipe units are inventoried and appropriate edible-portion gram mappings are recorded; do not equate whole fruit weight with edible flesh or assume every cup preparation is equivalent."
+      "reviewNotes": "USDA reference food and reference portions now recorded. These gramsPerUnit labels are preparation-specific reference portions, not verified matches to all recipe units; pending recipe-unit inventory before approval.",
+      "portionSource": "USDA SR Legacy FDC 171705 portions: cup sliced 146g, cup cubes 150g, cup pureed 230g, unspecified whole fruit edible flesh 201g; https://fdc.nal.usda.gov/food-details/171705/nutrients"
     },
     "Avocados": {
       "source": "USDA FoodData Central SR Legacy",
@@ -130,10 +141,16 @@
       "proteinPer100g": 2,
       "carbsPer100g": 8.53,
       "fatPer100g": 14.66,
-      "gramsPerUnit": {},
+      "gramsPerUnit": {
+        "cup, sliced": 146,
+        "cup, cubes": 150,
+        "cup, pureed": 230,
+        "whole, edible flesh": 201
+      },
       "reviewStatus": "pending",
       "sourceUrl": "https://fdc.nal.usda.gov/food-details/171705/nutrients",
-      "reviewNotes": "USDA-backed standard macro candidate populated for practical estimated macros. Hold final approval until all actual recipe units are inventoried and appropriate edible-portion gram mappings are recorded; do not equate whole fruit weight with edible flesh or assume every cup preparation is equivalent."
+      "reviewNotes": "USDA reference food and reference portions now recorded. These gramsPerUnit labels are preparation-specific reference portions, not verified matches to all recipe units; pending recipe-unit inventory before approval.",
+      "portionSource": "USDA SR Legacy FDC 171705 portions: cup sliced 146g, cup cubes 150g, cup pureed 230g, unspecified whole fruit edible flesh 201g; https://fdc.nal.usda.gov/food-details/171705/nutrients"
     },
     "Baby arugula": {
       "source": "",
