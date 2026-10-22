@@ -361,11 +361,32 @@ const dayMeal=(week,day,slot)=>{const row=planFor(week)?.[day];return findRecipe
 const formatAmount=(n,unit)=>{const amount=Number(n);return (Number.isFinite(amount)?(Math.round(amount*100)/100):n)+' '+(unit||'')};
 const macroSummary=recipe=>recipe&&[recipe.p,recipe.c,recipe.f].every(x=>x!=null&&Number.isFinite(Number(x)))?Number(recipe.p)+'g protein · '+Number(recipe.c)+'g carbs · '+Number(recipe.f)+'g fat (est.)':'Nutrition details not available';
 const setHero=()=>{const dinner=dayMeal(account?.activePlanningWeek===2?2:1,new Date().getDay(),2);const heading=document.querySelector('.hero-copy h2'),subtitle=document.querySelector('.hero-copy .muted'),picture=document.querySelector('.hero-photo');if(!heading||!subtitle||!picture)return;heading.textContent=dinner?.name||'No dinner planned today';subtitle.textContent=dinner?recipeSummary(dinner).description+' · '+recipeSummary(dinner).time:'No dinner scheduled in your saved plan';document.querySelector('#luxuryTodayDinnerMacros').textContent=macroSummary(dinner);picture.style.backgroundImage=dinner&&photo(dinner.id)?'linear-gradient(transparent 35%,#10271ed9),url("'+photo(dinner.id)+'")':'none';const cookButton=document.querySelector('.hero .primary');if(cookButton)cookButton.onclick=()=>dinner?openRecipe(dinner):showPage('week')};
-const renderWeek=(week)=>{liveWeek=Number(week)===2?2:1;const list=document.querySelector('#days');if(!list)return;
- // Keep the visible week selector and accessibility state in sync whenever
- // the week changes, including after a replacement meal is selected.
+const renderWeek=(week)=>{
+ liveWeek=Number(week)===2?2:1;
+ const list=document.querySelector('#days');if(!list)return;
  for(const button of document.querySelectorAll('[data-week]')){const active=Number(button.dataset.week)===liveWeek;button.classList.toggle('active',active);button.setAttribute('aria-pressed',String(active))}
- list.replaceChildren();for(let day=0;day<7;day++){const meal=dayMeal(liveWeek,day,2);const card=document.createElement('div');card.className='day';const dayLabel=document.createElement('strong');dayLabel.textContent=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'][day];card.append(dayLabel);if(meal&&photo(meal.id)){const img=document.createElement('img');img.src=photo(meal.id);img.alt='';img.loading='lazy';card.append(img)}const body=document.createElement('div'),name=document.createElement('strong'),small=document.createElement('small');name.textContent=meal?.name||'No dinner planned';small.textContent=meal?(hasPreviewEdits(previewEdits)?'Preview plan · not saved':'Saved recipe'):'No meal scheduled';body.append(name,document.createElement('br'));if(meal){const details=recipeSummary(meal),desc=document.createElement('span'),time=document.createElement('small');desc.className='recipe-description';desc.textContent=details.description;time.className='recipe-time';time.textContent=details.time;body.append(desc,time)}body.append(small);card.append(body);if(meal){const button=document.createElement('button');button.className='view-recipe';button.textContent='›';button.setAttribute('aria-label','View '+meal.name);button.onclick=()=>openRecipe(meal);card.append(button)}const edit=document.createElement('button');edit.className='change-meal';edit.textContent='Change';edit.setAttribute('aria-label','Preview another dinner for '+dayLabel.textContent);edit.onclick=()=>openMealPicker(liveWeek,day);card.append(edit);list.append(card)}};
+ const planned=Array.from({length:7},(_,day)=>dayMeal(liveWeek,day,2));
+ const valid=planned.filter(r=>r&&['cal','p','c','f'].every(k=>r[k]!=null&&Number.isFinite(Number(r[k]))));
+ const totals=Object.fromEntries(['cal','p','c','f'].map(k=>[k,valid.reduce((n,r)=>n+Number(r[k]),0)]));
+ const fmt=n=>Math.round(n).toLocaleString('en-US');
+ document.querySelector('#luxuryWeekNutritionHeading').textContent='Week '+liveWeek;
+ const average=document.querySelector('#luxuryWeekNutritionAverage'),weekly=document.querySelector('#luxuryWeekNutritionTotals');
+ average.replaceChildren();
+ if(valid.length){for(const [key,label] of [['cal','Calories'],['p','Protein'],['f','Fats'],['c','Carbs']]){
+  const span=document.createElement('span');span.textContent=fmt(totals[key]/valid.length)+(key==='cal'?'':'g');
+  const small=document.createElement('small');small.textContent=label;span.append(small);average.append(span)}
+  weekly.textContent='Seven-day dinner totals (estimated): '+[['cal','calories'],['p','protein'],['f','fat'],['c','carbs']].map(([k,label])=>fmt(totals[k])+(k==='cal'?'':'g')+' '+label).join(' · ')+(valid.length<7?' · Based on '+valid.length+' dinners with complete nutrition; missing meals excluded.':'');
+ }else{average.textContent='Nutrition unavailable';weekly.textContent='No dinners with complete nutrition data.'}
+ list.replaceChildren();for(let day=0;day<7;day++){
+  const meal=planned[day],card=document.createElement('div');card.className='day';
+  const dayLabel=document.createElement('strong');dayLabel.className='calendar-day-label';dayLabel.textContent=['SUN','MON','TUE','WED','THU','FRI','SAT'][day];card.append(dayLabel);
+  const open=document.createElement('button');open.type='button';open.className='calendar-open';open.setAttribute('aria-label',meal?'View '+meal.name:'No dinner planned for '+dayLabel.textContent);open.disabled=!meal;
+  if(meal&&photo(meal.id)){const img=document.createElement('img');img.src=photo(meal.id);img.alt='';img.loading='lazy';img.className='calendar-photo';open.append(img)}
+  else{const empty=document.createElement('span');empty.className='calendar-photo-placeholder';empty.textContent='◦';open.append(empty)}
+  const name=document.createElement('span');name.className='calendar-name';name.textContent=meal?.name||'No dinner';open.append(name);if(meal)open.onclick=()=>openRecipe(meal);card.append(open);
+  const edit=document.createElement('button');edit.type='button';edit.className='change-meal';edit.textContent='Change';edit.setAttribute('aria-label','Preview another dinner for '+dayLabel.textContent);edit.onclick=()=>openMealPicker(liveWeek,day);card.append(edit);list.append(card)
+ }
+};
 // Statically off until an approved disposable two-account hosted Firebase test,
 // real-device recovery checks, and explicit release review all pass.
 // CI/static checks alone never authorize enabling cloud writes.
@@ -445,16 +466,16 @@ const refreshRecovered=()=>{
  catch{area.hidden=false;document.querySelector('#luxuryRecoverStatus').textContent='Device storage is unavailable. Do not assume unsaved data is safe.'}
 };
 document.querySelector('#discardLuxuryEdits').onclick=()=>{previewEdits={};refreshDiscard();document.querySelector('#luxuryMealPicker').hidden=true;renderWeek(liveWeek);setHero();renderIngredients();label('Preview discarded. Your saved meals are unchanged.')};
-const openMealPicker=(week,day,{fillWeek=false}={})=>{
+const openMealPicker=(week,day,{fillWeek=false,initialQuick=false}={})=>{
  if(!account)return;
  const picker=document.querySelector('#luxuryMealPicker'),options=document.querySelector('#luxuryMealChoices');
  const search=document.querySelector('#luxuryMealSearch'),tabs=document.querySelector('#luxuryMealTabs');
  const count=document.querySelector('#luxuryMealCount'),more=document.querySelector('#luxuryLoadMoreMeals');
- let category='All',limit=3,quick=false,highProtein=false,lowCarb=false;
+ let category='All',limit=3,quick=initialQuick,highProtein=false,lowCarb=false;
  search.value='';tabs.replaceChildren();
  picker.querySelector('h2').textContent=fillWeek?'Choose dinners for the whole week':'Choose Dinner';
  const quickControl=picker.querySelector('#luxuryQuickOnly'),proteinControl=picker.querySelector('#luxuryHighProtein'),carbControl=picker.querySelector('#luxuryLowCarb');
- for(const [control,update] of [[quickControl,()=>quick=!quick],[proteinControl,()=>highProtein=!highProtein],[carbControl,()=>lowCarb=!lowCarb]]){control.setAttribute('aria-pressed','false');control.onclick=()=>{update();limit=3;draw()}}
+ for(const [control,update] of [[quickControl,()=>quick=!quick],[proteinControl,()=>highProtein=!highProtein],[carbControl,()=>lowCarb=!lowCarb]]){control.setAttribute('aria-pressed',String(control===quickControl&&quick));control.onclick=()=>{update();limit=3;draw()}}
  const draw=()=>{
   const found=searchMeals(recipes,{query:search.value,category,slot:'Dinner',quick,highProtein,lowCarb,recipeDetails:reviewedRecipeDetails});
   quickControl.setAttribute('aria-pressed',String(quick));proteinControl.setAttribute('aria-pressed',String(highProtein));carbControl.setAttribute('aria-pressed',String(lowCarb));
@@ -502,6 +523,12 @@ const openMealPicker=(week,day,{fillWeek=false}={})=>{
  picker.scrollIntoView({block:'start',behavior:'instant'});
 };
 document.querySelector('#luxuryFillWeek').onclick=()=>openMealPicker(liveWeek,0,{fillWeek:true});
+document.querySelector('#luxuryQuickMealsShortcut').onclick=()=>openMealPicker(liveWeek,0,{initialQuick:true});
+document.querySelector('#luxuryPantryShortcut').onclick=()=>{
+ const panel=document.querySelector('#pantryDiscoverPanel'),toggle=document.querySelector('#pantryDiscoverToggle');
+ if(panel.hidden)toggle.click();
+ document.querySelector('.pantry-discovery').scrollIntoView({block:'start',behavior:'smooth'});
+};
 const showCookStep=()=>{const count=document.querySelector('#stepCount'),title=document.querySelector('#cookStepTitle'),body=document.querySelector('#cookStepBody');const items=currentRecipe?.steps||[];const n=items.length;count.textContent=n?'Step '+(step+1)+' of '+n:'No cooking steps available';title.textContent=currentRecipe?.name||'Select a meal';body.textContent=items[step]||'Open a saved recipe to view its cooking instructions.';document.querySelector('#previousStep').disabled=step===0;document.querySelector('#nextStep').disabled=!n;document.querySelector('#nextStep').textContent=step===n-1?'Done':'Next'};
 const openRecipe=(recipe)=>{currentRecipe=recipe;step=0;const img=document.querySelector('.cook-photo');const url=photo(recipe.id);if(url){img.src=url;img.alt=recipe.name;img.hidden=false}else img.hidden=true;showCookStep();showPage('cook')};
 const groceryExpansion={week:null,categories:{}};
