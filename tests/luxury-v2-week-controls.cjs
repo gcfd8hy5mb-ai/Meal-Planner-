@@ -1,1 +1,11 @@
-const fs=require('node:fs'),assert=require('node:assert/strict');const h=fs.readFileSync('luxury-v2/index.html','utf8'),j=fs.readFileSync('luxury-v2/live.js','utf8');assert.match(h,/#days \.day \.change-meal\{background:transparent;color:#183e31;border:1\.5px solid #bf9a52/);assert.match(h,/#days \.day \.view-recipe\{background:#f2ead9/);assert.match(h,/footer button\.active\{background:transparent/);assert.match(h,/footer button\.active::after\{/);assert.match(j,/button\.className='view-recipe';button\.textContent='›'/);assert.match(j,/edit\.className='change-meal';edit\.textContent='Change'/);console.log('PASS approved lighter week controls and underlined active tab');
+const fs=require('node:fs'),assert=require('node:assert/strict');
+const h=fs.readFileSync('luxury-v2/index.html','utf8'),j=fs.readFileSync('luxury-v2/live.js','utf8');
+assert.match(h,/\.week-calendar\{display:grid;grid-template-columns:repeat\(7,minmax\(0,1fr\)\)/,'seven-day calendar must stay compact');
+assert.match(h,/\.week-calendar \.change-meal\{/,'each day retains change action');
+assert.match(h,/footer button\.active\{background:transparent/,'nav remains luxury text-first');
+assert.match(h,/footer button\.active::after\{/,'active nav remains underlined');
+assert.match(j,/open\.className='calendar-open'/,'full recipe remains accessible from calendar meal');
+assert.match(j,/open\.onclick=\(\)=>openRecipe\(meal\)/,'opening a meal must show recipe');
+assert.match(j,/edit\.className='change-meal';edit\.textContent='Change'/,'change actions preserved');
+assert.match(j,/edit\.onclick=\(\)=>openMealPicker\(liveWeek,day\)/,'change action targets correct day and week');
+console.log('PASS approved seven-day calendar, recipe and change buttons, and underlined navigation');
