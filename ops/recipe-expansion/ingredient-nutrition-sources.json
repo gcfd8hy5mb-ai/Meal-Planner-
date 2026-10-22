@@ -2476,16 +2476,21 @@
       "reviewNotes": "All uses of Lemon/Lemons in 110 recipe drafts are each. Practical whole edible lemon estimate; recipes using only juice or zest may have different consumed fraction, so finished-dish macro estimates may slightly overcount. Typical citrus macro impact is small."
     },
     "Lime": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "168155",
+      "description": "Limes, raw",
+      "state": "Raw lime edible flesh and juice; peel excluded",
+      "kcalPer100g": 30,
+      "proteinPer100g": 0.7,
+      "carbsPer100g": 10.54,
+      "fatPer100g": 0.2,
+      "gramsPerUnit": {
+        "each": 67
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/168155/nutrients",
+      "portionSource": "USDA standard raw lime edible portion approximately 67 g per fruit (2-inch diameter).",
+      "reviewNotes": "Audited 110 recipe drafts: all 23 recipes using Lime measure in 'each'. Standard raw edible lime is a practical macro estimate. Recipes squeezing only juice or using wedges/garnish may consume less than whole edible portion; recipe-level consumption remains an estimate."
     },
     "Lime juice": {
       "source": "USDA FoodData Central SR Legacy",
