@@ -1,0 +1,1113 @@
+{
+  "recipes": 110,
+  "briefs": 110,
+  "binaryPresent": 110,
+  "validFiles": 110,
+  "duplicateFiles": 0,
+  "visualMatchesApproved": 110,
+  "complete": true,
+  "productionReleaseEnabled": false,
+  "missing": 0,
+  "photos": [
+    {
+      "recipeId": "exp01-001",
+      "recipe": "Birria Beef Tacos",
+      "path": "assets/recipe-expansion/exp01-001.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-002",
+      "recipe": "Carne Asada Street Tacos",
+      "path": "assets/recipe-expansion/exp01-002.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-003",
+      "recipe": "Slow-Cooker Pork Carnitas",
+      "path": "assets/recipe-expansion/exp01-003.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-004",
+      "recipe": "Crispy Chicken Tostadas",
+      "path": "assets/recipe-expansion/exp01-004.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-005",
+      "recipe": "Beef Barbacoa Bowls",
+      "path": "assets/recipe-expansion/exp01-005.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-006",
+      "recipe": "Creamy Roasted Poblano Mac and Cheese",
+      "path": "assets/recipe-expansion/exp01-006.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-007",
+      "recipe": "Ground Beef Taco Skillet",
+      "path": "assets/recipe-expansion/exp01-007.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-008",
+      "recipe": "Chicken Tinga Tacos",
+      "path": "assets/recipe-expansion/exp01-008.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-009",
+      "recipe": "Steak Fajita Quesadillas",
+      "path": "assets/recipe-expansion/exp01-009.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-010",
+      "recipe": "Shrimp Fajita Rice Bowls",
+      "path": "assets/recipe-expansion/exp01-010.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-011",
+      "recipe": "Smothered Beef Burritos",
+      "path": "assets/recipe-expansion/exp01-011.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-012",
+      "recipe": "Chicken Chimichangas",
+      "path": "assets/recipe-expansion/exp01-012.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-013",
+      "recipe": "Tex-Mex Beef Stuffed Peppers",
+      "path": "assets/recipe-expansion/exp01-013.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-014",
+      "recipe": "Cheesy Taco Pasta",
+      "path": "assets/recipe-expansion/exp01-014.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-015",
+      "recipe": "Pork Chile Verde",
+      "path": "assets/recipe-expansion/exp01-015.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-016",
+      "recipe": "Pork and Hominy Green Chile Skillet",
+      "path": "assets/recipe-expansion/exp01-016.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-017",
+      "recipe": "Chicken Pozole Verde",
+      "path": "assets/recipe-expansion/exp01-017.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-018",
+      "recipe": "Pork Pozole Rojo",
+      "path": "assets/recipe-expansion/exp01-018.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-019",
+      "recipe": "Mexican Street Corn Chicken Bowls",
+      "path": "assets/recipe-expansion/exp01-019.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-020",
+      "recipe": "Citrus Shrimp and Avocado Ceviche Cups",
+      "path": "assets/recipe-expansion/exp01-020.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-021",
+      "recipe": "Steak Nacho Supreme",
+      "path": "assets/recipe-expansion/exp01-021.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-022",
+      "recipe": "Pulled Pork Nachos",
+      "path": "assets/recipe-expansion/exp01-022.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-023",
+      "recipe": "Beef and Potato Taquitos",
+      "path": "assets/recipe-expansion/exp01-023.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-024",
+      "recipe": "Crispy Chicken Flautas",
+      "path": "assets/recipe-expansion/exp01-024.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-025",
+      "recipe": "Mexican Picadillo",
+      "path": "assets/recipe-expansion/exp01-025.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-026",
+      "recipe": "Salsa Verde Chicken Tacos",
+      "path": "assets/recipe-expansion/exp01-026.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-027",
+      "recipe": "Beef and Cheese Empanadas",
+      "path": "assets/recipe-expansion/exp01-027.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-028",
+      "recipe": "Cornbread Crusted Turkey Tamale Pie",
+      "path": "assets/recipe-expansion/exp01-028.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-029",
+      "recipe": "Chipotle Chicken Torta",
+      "path": "assets/recipe-expansion/exp01-029.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-030",
+      "recipe": "Shrimp Veracruz",
+      "path": "assets/recipe-expansion/exp01-030.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-031",
+      "recipe": "Steak and Pinto Bean Burritos",
+      "path": "assets/recipe-expansion/exp01-031.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-032",
+      "recipe": "Poblano Chicken Rice Bake",
+      "path": "assets/recipe-expansion/exp01-032.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-033",
+      "recipe": "Mexican Beef Stuffed Zucchini",
+      "path": "assets/recipe-expansion/exp01-033.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-034",
+      "recipe": "Pork Al Pastor Tacos",
+      "path": "assets/recipe-expansion/exp01-034.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-035",
+      "recipe": "Charred Corn and Black Bean Chicken Stuffed Poblanos",
+      "path": "assets/recipe-expansion/exp01-035.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-036",
+      "recipe": "Beef Quesabirria",
+      "path": "assets/recipe-expansion/exp01-036.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-037",
+      "recipe": "Tex-Mex Chili Mac",
+      "path": "assets/recipe-expansion/exp01-037.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-038",
+      "recipe": "Cheesy Chorizo Breakfast Tacos",
+      "path": "assets/recipe-expansion/exp01-038.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-039",
+      "recipe": "Chorizo and Potato Burritos",
+      "path": "assets/recipe-expansion/exp01-039.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-040",
+      "recipe": "Grilled Fish Baja Tacos",
+      "path": "assets/recipe-expansion/exp01-040.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-041",
+      "recipe": "Creamy Chicken Poblano Soup",
+      "path": "assets/recipe-expansion/exp01-041.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-042",
+      "recipe": "Mexican Beef Meatballs",
+      "path": "assets/recipe-expansion/exp01-042.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-043",
+      "recipe": "Smoky Chipotle Turkey Chili",
+      "path": "assets/recipe-expansion/exp01-043.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-044",
+      "recipe": "Steak Taco Salad",
+      "path": "assets/recipe-expansion/exp01-044.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-045",
+      "recipe": "Maple Glazed Breakfast Pork Sausage Patties",
+      "path": "assets/recipe-expansion/exp01-045.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-046",
+      "recipe": "Baked Ziti with Italian Sausage",
+      "path": "assets/recipe-expansion/exp01-046.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-047",
+      "recipe": "Honey Garlic Pork Chops",
+      "path": "assets/recipe-expansion/exp01-047.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-048",
+      "recipe": "Creamy Tuscan Chicken Pasta",
+      "path": "assets/recipe-expansion/exp01-048.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-049",
+      "recipe": "Ginger Beef and Snow Pea Noodle Bowls",
+      "path": "assets/recipe-expansion/exp01-049.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-050",
+      "recipe": "French Onion Potato Gratin",
+      "path": "assets/recipe-expansion/exp01-050.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-051",
+      "recipe": "Lemon Butter Baked Cod",
+      "path": "assets/recipe-expansion/exp01-051.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-052",
+      "recipe": "BBQ Pulled Chicken Sandwiches",
+      "path": "assets/recipe-expansion/exp01-052.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-053",
+      "recipe": "Savory Cheddar Biscuit Breakfast Bake",
+      "path": "assets/recipe-expansion/exp01-053.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-054",
+      "recipe": "Turkey and Wild Rice Soup",
+      "path": "assets/recipe-expansion/exp01-054.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-055",
+      "recipe": "Moroccan Apricot Chicken with Couscous",
+      "path": "assets/recipe-expansion/exp01-055.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-056",
+      "recipe": "Garlic Parmesan Chicken Wings",
+      "path": "assets/recipe-expansion/exp01-056.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-057",
+      "recipe": "Sausage and Peppers Hoagies",
+      "path": "assets/recipe-expansion/exp01-057.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-058",
+      "recipe": "One-Pot Chicken Alfredo",
+      "path": "assets/recipe-expansion/exp01-058.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-059",
+      "recipe": "Pineapple Ginger Chicken Lettuce Cups",
+      "path": "assets/recipe-expansion/exp01-059.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-060",
+      "recipe": "Balsamic Steak and Roasted Grape Salad",
+      "path": "assets/recipe-expansion/exp01-060.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-061",
+      "recipe": "Chicken Tortellini Soup",
+      "path": "assets/recipe-expansion/exp01-061.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-062",
+      "recipe": "Sheet-Pan Lemon Herb Chicken and Potatoes",
+      "path": "assets/recipe-expansion/exp01-062.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-063",
+      "recipe": "Crispy Ginger Orange Pork Cutlets",
+      "path": "assets/recipe-expansion/exp01-063.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-064",
+      "recipe": "Breakfast Sausage Egg Casserole",
+      "path": "assets/recipe-expansion/exp01-064.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-065",
+      "recipe": "Apple Cider Pork and Sweet Potato Sheet Pan",
+      "path": "assets/recipe-expansion/exp01-065.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-066",
+      "recipe": "Creole Catfish with Tomato Okra Relish",
+      "path": "assets/recipe-expansion/exp01-066.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-067",
+      "recipe": "Ricotta Spinach Stuffed Portobellos",
+      "path": "assets/recipe-expansion/exp01-067.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-068",
+      "recipe": "Maple Mustard Roasted Salmon",
+      "path": "assets/recipe-expansion/exp01-068.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-069",
+      "recipe": "Classic Chicken Noodle Casserole",
+      "path": "assets/recipe-expansion/exp01-069.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-070",
+      "recipe": "Garlic Butter Steak Bites and Potatoes",
+      "path": "assets/recipe-expansion/exp01-070.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-071",
+      "recipe": "Lemon Dill Chicken and Barley Skillet",
+      "path": "assets/recipe-expansion/exp01-071.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-072",
+      "recipe": "Baked Honey Mustard Chicken Thighs",
+      "path": "assets/recipe-expansion/exp01-072.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-073",
+      "recipe": "Creamy Tomato Basil Tortellini",
+      "path": "assets/recipe-expansion/exp01-073.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-074",
+      "recipe": "Ground Turkey Lettuce Wraps",
+      "path": "assets/recipe-expansion/exp01-074.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-075",
+      "recipe": "Smoky Sausage Cabbage and Apple Skillet",
+      "path": "assets/recipe-expansion/exp01-075.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-076",
+      "recipe": "Crispy Baked Fish Sticks",
+      "path": "assets/recipe-expansion/exp01-076.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-077",
+      "recipe": "Broccoli Cheddar Stuffed Chicken",
+      "path": "assets/recipe-expansion/exp01-077.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-078",
+      "recipe": "Slow-Cooker White Chicken Chili",
+      "path": "assets/recipe-expansion/exp01-078.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-079",
+      "recipe": "Italian Meatball Subs",
+      "path": "assets/recipe-expansion/exp01-079.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-080",
+      "recipe": "Roasted Vegetable and Chicken Orzo",
+      "path": "assets/recipe-expansion/exp01-080.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-081",
+      "recipe": "Balsamic Beef Short Ribs with Polenta",
+      "path": "assets/recipe-expansion/exp01-081.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-082",
+      "recipe": "Lemon Garlic Shrimp Linguine",
+      "path": "assets/recipe-expansion/exp01-082.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-083",
+      "recipe": "Ginger Scallion Beef and Cabbage Bowls",
+      "path": "assets/recipe-expansion/exp01-083.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-084",
+      "recipe": "Ham and Cheese Breakfast Sliders",
+      "path": "assets/recipe-expansion/exp01-084.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-085",
+      "recipe": "One-Pan Creamy Garlic Chicken and Rice",
+      "path": "assets/recipe-expansion/exp01-085.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-086",
+      "recipe": "Beef and Bean Chili",
+      "path": "assets/recipe-expansion/exp01-086.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-087",
+      "recipe": "Roasted Red Pepper Turkey Burgers",
+      "path": "assets/recipe-expansion/exp01-087.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-088",
+      "recipe": "Pork Tenderloin with Apple Pan Sauce",
+      "path": "assets/recipe-expansion/exp01-088.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-089",
+      "recipe": "Baked Chicken Parmesan Meatballs",
+      "path": "assets/recipe-expansion/exp01-089.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-090",
+      "recipe": "Breakfast Potato and Chorizo Hash",
+      "path": "assets/recipe-expansion/exp01-090.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-091",
+      "recipe": "Creamy Mushroom Pork Tenderloin",
+      "path": "assets/recipe-expansion/exp01-091.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-092",
+      "recipe": "Greek Lemon Chicken Soup",
+      "path": "assets/recipe-expansion/exp01-092.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-093",
+      "recipe": "Balsamic Turkey and Roasted Beet Grain Bowls",
+      "path": "assets/recipe-expansion/exp01-093.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-094",
+      "recipe": "Orange Ginger Glazed Pork Tenderloin",
+      "path": "assets/recipe-expansion/exp01-094.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-095",
+      "recipe": "Turkey Spinach Stuffed Manicotti",
+      "path": "assets/recipe-expansion/exp01-095.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-096",
+      "recipe": "Thai Basil Beef Rice",
+      "path": "assets/recipe-expansion/exp01-096.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-097",
+      "recipe": "Rosemary Garlic Turkey Meatloaf",
+      "path": "assets/recipe-expansion/exp01-097.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-098",
+      "recipe": "Coconut Lime Chicken Curry",
+      "path": "assets/recipe-expansion/exp01-098.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-099",
+      "recipe": "Smoky Ham and Navy Bean Soup",
+      "path": "assets/recipe-expansion/exp01-099.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-100",
+      "recipe": "Crispy Ranch Potato Wedges with Chicken",
+      "path": "assets/recipe-expansion/exp01-100.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-101",
+      "recipe": "Creamy Spinach and Artichoke Chicken Bake",
+      "path": "assets/recipe-expansion/exp01-101.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-102",
+      "recipe": "Apricot Glazed Pork Meatballs",
+      "path": "assets/recipe-expansion/exp01-102.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-103",
+      "recipe": "Butternut Squash Sausage Risotto",
+      "path": "assets/recipe-expansion/exp01-103.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-104",
+      "recipe": "Honey Sesame Salmon Rice Bowls",
+      "path": "assets/recipe-expansion/exp01-104.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-105",
+      "recipe": "Chicken and Corn Chowder",
+      "path": "assets/recipe-expansion/exp01-105.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-106",
+      "recipe": "Crispy Oven Barbecue Pork Ribs",
+      "path": "assets/recipe-expansion/exp01-106.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-107",
+      "recipe": "Cheddar Bacon Broccoli Quiche",
+      "path": "assets/recipe-expansion/exp01-107.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-108",
+      "recipe": "Garlic Chili Noodles with Ground Pork",
+      "path": "assets/recipe-expansion/exp01-108.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-109",
+      "recipe": "Cider Braised Chicken with Apples",
+      "path": "assets/recipe-expansion/exp01-109.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    },
+    {
+      "recipeId": "exp01-110",
+      "recipe": "Skillet Creamy Pesto Shrimp Gnocchi",
+      "path": "assets/recipe-expansion/exp01-110.webp",
+      "filePresent": true,
+      "binaryValid": true,
+      "visualMatchReviewed": true,
+      "ready": true,
+      "reason": "accepted for photography staging; production release remains separate"
+    }
+  ]
+}

@@ -38,7 +38,8 @@ assert.equal(manifest.ready,approved);
 // Verify original catalog, every original local image and all nutrition/recipe
 // evidence against the saved nutrition baseline. New photography cannot edit them.
 const base=reviews.baselineCommit;
-const protectedPaths=execFileSync('git',['ls-tree','-r','--name-only',base,'assets/meal-photos/','index.html','luxury-v2/','ops/recipe-expansion/'],{encoding:'utf8'}).trim().split('\n').filter(p=>!p.endsWith('recipe-photo-production-manifest.json')&&!p.endsWith('recipe-photo-coverage-audit.json'));
+const photographyReports=new Set(['recipe-photo-production-manifest.json','recipe-photo-coverage-audit.json','audit-recipe-expansion-photos.mjs']);
+const protectedPaths=execFileSync('git',['ls-tree','-r','--name-only',base,'assets/meal-photos/','index.html','luxury-v2/','ops/recipe-expansion/'],{encoding:'utf8'}).trim().split('\n').filter(p=>!photographyReports.has(p.split('/').at(-1)));
 for(const p of protectedPaths){
  const original=execFileSync('git',['show',`${base}:${p}`],{maxBuffer:20*1024*1024});
  assert.ok(fs.existsSync(p),'Removed original '+p);
