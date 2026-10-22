@@ -1265,16 +1265,21 @@
       "reviewNotes": "Four recipes use 1–4 cups corn kernels, warmed, charred, or simmered. Generic raw sweet yellow corn reference; frozen/canned corn differ in drained weight and sodium, which recipes do not specify. One-cup kernel weight is an estimate."
     },
     "Corn tortillas": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "173241",
+      "description": "Corn tortillas ready to bake or fry without added salt",
+      "state": "Corn tortilla before frying",
+      "kcalPer100g": 222,
+      "proteinPer100g": 5.7,
+      "carbsPer100g": 46.6,
+      "fatPer100g": 2.5,
+      "gramsPerUnit": {
+        "each": 26
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/173241/nutrients",
+      "portionSource": "USDA medium tortilla 26 grams; street taco size varies",
+      "reviewNotes": "11 recipes use 8 to 18 tortillas. Generic unsalted reference; brand sodium and added cooking oil differ."
     },
     "Cornmeal": {
       "source": "USDA FoodData Central SR Legacy",
