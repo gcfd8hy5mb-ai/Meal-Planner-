@@ -2263,16 +2263,21 @@
       "reviewStatus": "pending"
     },
     "Green beans": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "169961",
+      "description": "Beans, snap, green, raw",
+      "state": "Raw trimmed edible green snap beans",
+      "kcalPer100g": 31,
+      "proteinPer100g": 1.83,
+      "carbsPer100g": 6.97,
+      "fatPer100g": 0.22,
+      "gramsPerUnit": {
+        "lb": 453.59237
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169961/nutrients",
+      "portionSource": "One pound raw edible trimmed snap beans = 453.59237g. Whole purchased beans with ends removed may weigh more.",
+      "reviewNotes": "Source is raw USDA SR Legacy snap bean nutrition. Requires recipe ingredient to be raw edible input, not canned/cooked. Trim loss and final cooking yield not included."
     },
     "Green cabbage": {
       "source": "USDA FoodData Central SR Legacy",
