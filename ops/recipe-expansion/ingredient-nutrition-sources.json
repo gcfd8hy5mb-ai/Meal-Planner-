@@ -2425,16 +2425,21 @@
       "reviewStatus": "pending"
     },
     "Lemon": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "167746",
+      "description": "Lemons, raw, without peel",
+      "state": "Raw lemon edible flesh and juice; peel excluded",
+      "kcalPer100g": 29,
+      "proteinPer100g": 1.1,
+      "carbsPer100g": 9.32,
+      "fatPer100g": 0.3,
+      "gramsPerUnit": {
+        "each": 58
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/167746/nutrients",
+      "portionSource": "USDA standard lemon without peel approximately 58g edible portion per fruit (standard 2⅛-inch diameter lemon).",
+      "reviewNotes": "All uses of Lemon/Lemons in 110 recipe drafts are each. Practical whole edible lemon estimate; recipes using only juice or zest may have different consumed fraction, so finished-dish macro estimates may slightly overcount. Typical citrus macro impact is small."
     },
     "Lemon juice": {
       "source": "USDA FoodData Central SR Legacy",
@@ -2454,16 +2459,21 @@
       "reviewNotes": "Verified source-matched ingredient input; full meal nutrient yield and retained fractions not certified."
     },
     "Lemons": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "167746",
+      "description": "Lemons, raw, without peel",
+      "state": "Raw lemon edible flesh and juice; peel excluded",
+      "kcalPer100g": 29,
+      "proteinPer100g": 1.1,
+      "carbsPer100g": 9.32,
+      "fatPer100g": 0.3,
+      "gramsPerUnit": {
+        "each": 58
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/167746/nutrients",
+      "portionSource": "USDA standard lemon without peel approximately 58g edible portion per fruit (standard 2⅛-inch diameter lemon).",
+      "reviewNotes": "All uses of Lemon/Lemons in 110 recipe drafts are each. Practical whole edible lemon estimate; recipes using only juice or zest may have different consumed fraction, so finished-dish macro estimates may slightly overcount. Typical citrus macro impact is small."
     },
     "Lime": {
       "source": "",
