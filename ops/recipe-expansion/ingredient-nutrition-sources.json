@@ -485,16 +485,21 @@
       "reviewNotes": "USDA source-linked ingredient input values. Preparation yield and retained ingredient fractions still require full-recipe review."
     },
     "Bolillo rolls": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy (generic estimate)",
+      "foodId": "172795",
+      "description": "Rolls, french",
+      "state": "Plain Mexican bolillo white crusty roll",
+      "kcalPer100g": 277,
+      "proteinPer100g": 8.6,
+      "carbsPer100g": 50.2,
+      "fatPer100g": 4.3,
+      "gramsPerUnit": {
+        "each": 70
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/172795/nutrients",
+      "portionSource": "Gram conversion uses measured or estimated edible input; volume/piece weights are approximate unless verified for the exact item.",
+      "reviewNotes": "French roll is bread-type proxy, bolillo usually 55-85g; 70g per roll estimate. This is a standard-ingredient estimate and not an exact commercial brand or cooked recipe macro."
     },
     "Bone-in chicken thighs": {
       "source": "",
@@ -679,16 +684,21 @@
       "reviewNotes": "Six recipes use plain breadcrumbs. Coarse and panko varieties have different cup weights."
     },
     "Breakfast ham": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy (generic estimate)",
+      "foodId": "173864",
+      "description": "Ham, sliced, regular (approximately 11% fat)",
+      "state": "Pre-cooked sliced breakfast ham; generic regular sliced ham reference",
+      "kcalPer100g": 164,
+      "proteinPer100g": 16.6,
+      "carbsPer100g": 3.63,
+      "fatPer100g": 8.8,
+      "gramsPerUnit": {
+        "oz": 28.349523125
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/173864/nutrients",
+      "portionSource": "Gram conversion uses measured or estimated edible input; volume/piece weights are approximate unless verified for the exact item.",
+      "reviewNotes": "Ham formulation and smoke/cure vary. This is a standard-ingredient estimate and not an exact commercial brand or cooked recipe macro."
     },
     "Breakfast sausage": {
       "source": "",
@@ -1249,16 +1259,21 @@
       "reviewNotes": "Uses matching USDA food composition and recipe unit from previously approved equivalent food. Real-world product and preparation differences remain possible."
     },
     "Cooked diced ham": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy (generic estimate)",
+      "foodId": "169159",
+      "description": "Pork, cured, ham with natural juices, whole, boneless, separable lean and fat, unheated",
+      "state": "Diced cooked/ready-to-eat cured boneless ham",
+      "kcalPer100g": 112,
+      "proteinPer100g": 19.38,
+      "carbsPer100g": 1.02,
+      "fatPer100g": 3.43,
+      "gramsPerUnit": {
+        "lb": 453.59237
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169159/nutrients",
+      "portionSource": "Gram conversion uses measured or estimated edible input; volume/piece weights are approximate unless verified for the exact item.",
+      "reviewNotes": "Unheated cured ham reference serves as proxy for fully cooked diced ham; additional heating changes water content. This is a standard-ingredient estimate and not an exact commercial brand or cooked recipe macro."
     },
     "Cooked pinto beans": {
       "source": "USDA FoodData Central SR Legacy",
@@ -1542,16 +1557,21 @@
       "reviewNotes": "Two recipes specify 1 tsp cumin without form; interpreted as ground dried cumin used in seasoning. Reuses the approved ground cumin USDA cumin seed proxy. Whole seeds would weigh differently."
     },
     "Deli ham": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy (generic estimate)",
+      "foodId": "173863",
+      "description": "Ham, sliced, pre-packaged, deli meat (96% fat free, water added)",
+      "state": "Sliced deli ham, water added, not turkey ham",
+      "kcalPer100g": 107,
+      "proteinPer100g": 16.85,
+      "carbsPer100g": 0.7,
+      "fatPer100g": 4.04,
+      "gramsPerUnit": {
+        "oz": 28.349523125
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/173863/nutrients",
+      "portionSource": "Gram conversion uses measured or estimated edible input; volume/piece weights are approximate unless verified for the exact item.",
+      "reviewNotes": "Deli ham fat and water added vary by brand. This is a standard-ingredient estimate and not an exact commercial brand or cooked recipe macro."
     },
     "Diced green chiles": {
       "source": "",
@@ -2537,28 +2557,38 @@
       "reviewNotes": "Verified USDA ingredient input, not verified finished-recipe nutrition."
     },
     "Hamburger buns": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy (generic estimate)",
+      "foodId": "172796",
+      "description": "Rolls, hamburger or hotdog, plain",
+      "state": "Plain commercial hamburger bun",
+      "kcalPer100g": 279,
+      "proteinPer100g": 9.77,
+      "carbsPer100g": 50.12,
+      "fatPer100g": 3.91,
+      "gramsPerUnit": {
+        "each": 43
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/172796/nutrients",
+      "portionSource": "Gram conversion uses measured or estimated edible input; volume/piece weights are approximate unless verified for the exact item.",
+      "reviewNotes": "43g for standard bun estimate; brioche/large bakery buns differ. This is a standard-ingredient estimate and not an exact commercial brand or cooked recipe macro."
     },
     "Hawaiian dinner rolls": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy (generic estimate)",
+      "foodId": "174107",
+      "description": "Rolls, dinner, sweet",
+      "state": "Sweet dinner roll, baked",
+      "kcalPer100g": 321,
+      "proteinPer100g": 10.04,
+      "carbsPer100g": 53.58,
+      "fatPer100g": 7.37,
+      "gramsPerUnit": {
+        "each": 28
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/174107/nutrients",
+      "portionSource": "Gram conversion uses measured or estimated edible input; volume/piece weights are approximate unless verified for the exact item.",
+      "reviewNotes": "Sweet dinner roll is explicit proxy for Hawaiian-style rolls; 28g per roll estimated and branded recipes differ. This is a standard-ingredient estimate and not an exact commercial brand or cooked recipe macro."
     },
     "Heavy cream": {
       "source": "USDA FoodData Central SR Legacy",
@@ -2578,16 +2608,21 @@
       "reviewNotes": "All eight recipes use 0.5–1.5 cups liquid heavy cream stirred into savory dishes. Exact USDA SR Legacy record and fluid cup portion verified; cream fat content varies by product."
     },
     "Hoagie rolls": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy (generic estimate)",
+      "foodId": "172795",
+      "description": "Rolls, french",
+      "state": "Plain hoagie-style white bread roll",
+      "kcalPer100g": 277,
+      "proteinPer100g": 8.6,
+      "carbsPer100g": 50.2,
+      "fatPer100g": 4.3,
+      "gramsPerUnit": {
+        "each": 100
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/172795/nutrients",
+      "portionSource": "Gram conversion uses measured or estimated edible input; volume/piece weights are approximate unless verified for the exact item.",
+      "reviewNotes": "Generic French roll as proxy for hoagie roll; 100g roll estimate, size varies. This is a standard-ingredient estimate and not an exact commercial brand or cooked recipe macro."
     },
     "Hoisin sauce": {
       "source": "USDA FoodData Central",
@@ -3410,16 +3445,21 @@
       "reviewNotes": "Ingredient INPUT only; no finished-meal macros or yield/retention verified. Recipe preparation confirmation: All four recipes explicitly specify grated Parmesan."
     },
     "Pearled barley": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy (generic estimate)",
+      "foodId": "170284",
+      "description": "Barley, pearled, raw",
+      "state": "Uncooked dry pearled barley",
+      "kcalPer100g": 352,
+      "proteinPer100g": 9.91,
+      "carbsPer100g": 77.72,
+      "fatPer100g": 1.16,
+      "gramsPerUnit": {
+        "cup": 200
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170284/nutrients",
+      "portionSource": "Gram conversion uses measured or estimated edible input; volume/piece weights are approximate unless verified for the exact item.",
+      "reviewNotes": "One cup raw pearled barley assumed 200g; different kernels and packing vary. This is a standard-ingredient estimate and not an exact commercial brand or cooked recipe macro."
     },
     "Peeled deveined raw shrimp": {
       "source": "USDA FoodData Central SR Legacy",
@@ -3439,16 +3479,21 @@
       "reviewNotes": "Same edible food and preparation as previously approved 'Raw shrimp'. Actual recipe units verified (shrimp lb; shredded cheddar cup). USDA ingredient estimate; shrimp must be weighed peeled/deveined, cheese cup means shredded not block. Finished-meal macros remain estimates."
     },
     "Pepper jack": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy (generic estimate)",
+      "foodId": "170844",
+      "description": "Cheese, monterey jack",
+      "state": "Shredded pepper Jack cheese",
+      "kcalPer100g": 373,
+      "proteinPer100g": 24.48,
+      "carbsPer100g": 0.68,
+      "fatPer100g": 30.28,
+      "gramsPerUnit": {
+        "cup": 113
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170844/nutrients",
+      "portionSource": "Gram conversion uses measured or estimated edible input; volume/piece weights are approximate unless verified for the exact item.",
+      "reviewNotes": "Monterey Jack dairy base used as proxy for pepper Jack with chilies; chili additions and cheese brands differ. This is a standard-ingredient estimate and not an exact commercial brand or cooked recipe macro."
     },
     "Pickled jalapeño slices": {
       "source": "",
@@ -3463,16 +3508,21 @@
       "reviewStatus": "pending"
     },
     "Pie crust": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy (generic estimate)",
+      "foodId": "175024",
+      "description": "Pie crust, standard-type, frozen, ready-to-bake, enriched",
+      "state": "One frozen unbaked 9-inch pastry pie crust",
+      "kcalPer100g": 457,
+      "proteinPer100g": 6.16,
+      "carbsPer100g": 48.62,
+      "fatPer100g": 26.07,
+      "gramsPerUnit": {
+        "each": 198
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/175024/nutrients",
+      "portionSource": "Gram conversion uses measured or estimated edible input; volume/piece weights are approximate unless verified for the exact item.",
+      "reviewNotes": "198g per 9-inch crust is an estimate; brand, size and butter vs shortening strongly vary. This is a standard-ingredient estimate and not an exact commercial brand or cooked recipe macro."
     },
     "Pineapple chunks": {
       "source": "USDA FoodData Central SR Legacy",
@@ -3664,16 +3714,21 @@
       "reviewNotes": "Verified source-matched ingredient input; full meal nutrient yield and retained fractions not certified."
     },
     "Quick polenta": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy (generic estimate)",
+      "foodId": "168867",
+      "description": "Cornmeal, degermed, enriched, yellow",
+      "state": "Uncooked instant/quick-cooking degermed dry polenta",
+      "kcalPer100g": 370,
+      "proteinPer100g": 7.11,
+      "carbsPer100g": 79.45,
+      "fatPer100g": 1.75,
+      "gramsPerUnit": {
+        "cup": 150
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/168867/nutrients",
+      "portionSource": "Gram conversion uses measured or estimated edible input; volume/piece weights are approximate unless verified for the exact item.",
+      "reviewNotes": "Dry degermed cornmeal proxy for quick polenta; 150g dry cup estimate, brand/instant processing varies. This is a standard-ingredient estimate and not an exact commercial brand or cooked recipe macro."
     },
     "Radishes": {
       "source": "USDA FoodData Central SR Legacy",
@@ -4307,16 +4362,21 @@
       "reviewNotes": "Two recipes use this ingredient name; each measures 1–2 cups. Assumes shredded whole-milk mozzarella, not fresh water-packed or part-skim. USDA generic whole-milk mozzarella profile; cup weight estimated."
     },
     "Shredded Oaxaca cheese": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy (generic estimate)",
+      "foodId": "170845",
+      "description": "Cheese, mozzarella, whole milk",
+      "state": "Shredded Oaxaca-style semi-soft melting cheese",
+      "kcalPer100g": 300,
+      "proteinPer100g": 22.17,
+      "carbsPer100g": 2.19,
+      "fatPer100g": 22.35,
+      "gramsPerUnit": {
+        "cup": 112
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170845/nutrients",
+      "portionSource": "Gram conversion uses measured or estimated edible input; volume/piece weights are approximate unless verified for the exact item.",
+      "reviewNotes": "Whole-milk mozzarella is a *proxy* for Oaxaca string cheese, not a source analysis of Oaxaca; 112g per shredded cup estimate. This is a standard-ingredient estimate and not an exact commercial brand or cooked recipe macro."
     },
     "Sirloin steak": {
       "source": "USDA FoodData Central Foundation Foods",
