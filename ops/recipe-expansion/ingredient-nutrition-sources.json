@@ -4511,16 +4511,21 @@
       "reviewNotes": "Two recipes use 0.25 cup and 1 tbsp plain water. Zero energy and macronutrients is intrinsic to plain water; no USDA ID necessary. Added water changes cooked weight but not total input macros."
     },
     "Water chestnuts": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170067",
+      "description": "Waterchestnuts, chinese, canned, solids and liquids",
+      "state": "Canned Chinese water chestnuts, as packaged with liquid; proxy for generic ingredient label",
+      "kcalPer100g": 50,
+      "proteinPer100g": 0.88,
+      "carbsPer100g": 12.3,
+      "fatPer100g": 0.06,
+      "gramsPerUnit": {
+        "oz": 28.349523125
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170067/nutrients",
+      "portionSource": "One ounce by weight is 28.349523125g. USDA values include canned solids and liquid; drained product has a different nutritional density.",
+      "reviewNotes": "USDA canned solids-and-liquids generic proxy. For drained sliced water chestnuts, replace with a drained-solids source or label to improve accuracy; raw water chestnuts differ materially."
     },
     "White beans": {
       "source": "",
