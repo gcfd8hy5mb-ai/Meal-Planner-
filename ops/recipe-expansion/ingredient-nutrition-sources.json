@@ -3176,16 +3176,21 @@
       "reviewNotes": "Source composition and USDA tablespoon measure verified; fraction consumed in dressings, marinades, and pans must be reviewed separately."
     },
     "Orange": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "169097",
+      "description": "Oranges, raw, all commercial varieties",
+      "state": "Fresh peeled orange edible flesh; medium fruit",
+      "kcalPer100g": 47,
+      "proteinPer100g": 0.94,
+      "carbsPer100g": 11.75,
+      "fatPer100g": 0.12,
+      "gramsPerUnit": {
+        "each": 131
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169097/nutrients",
+      "portionSource": "USDA Standard Reference: 1 fruit 2-5/8 inch diameter = 131g edible portion, excludes peel",
+      "reviewNotes": "USDA raw orange composition and documented edible medium fruit standard; actual size and cultivar vary. Not applicable to orange juice or whole peel; recipe-level macros remain estimates."
     },
     "Orange juice": {
       "source": "USDA FoodData Central SR Legacy",
