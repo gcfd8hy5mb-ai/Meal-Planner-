@@ -2879,16 +2879,21 @@
       "reviewStatus": "pending"
     },
     "Marinara sauce": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central Foundation Foods",
+      "foodId": "332282",
+      "description": "Sauce, pasta, spaghetti/marinara, ready-to-serve",
+      "state": "Prepared ready-to-serve marinara pasta sauce",
+      "kcalPer100g": 45,
+      "proteinPer100g": 1.41,
+      "carbsPer100g": 8.05,
+      "fatPer100g": 1.48,
+      "gramsPerUnit": {
+        "cup": 270
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/332282/nutrients",
+      "portionSource": "USDA portion 1/2 cup = 135g; 1 cup = 270g by volume extrapolation",
+      "reviewNotes": "Four recipes use 1–4 cups ready-made marinara. USDA Foundation Foods representative sauce, not a brand-specific label; oil, sugar, meat, cheese and homemade variants differ. 1 cup weight assumes same packing density as 1/2 cup USDA portion."
     },
     "Mayonnaise": {
       "source": "USDA FoodData Central SR Legacy",
