@@ -1903,16 +1903,21 @@
       "reviewStatus": "pending"
     },
     "Fresh ginger": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "169231",
+      "description": "Ginger root, raw",
+      "state": "Raw fresh peeled/grated ginger root",
+      "kcalPer100g": 80,
+      "proteinPer100g": 1.82,
+      "carbsPer100g": 17.77,
+      "fatPer100g": 0.75,
+      "gramsPerUnit": {
+        "tbsp": 6
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169231/nutrients",
+      "portionSource": "Approximately 6g per tablespoon fresh grated ginger; preparation/packing varies.",
+      "reviewNotes": "Eight recipes measure 1–2 tbsp fresh ginger. Raw ginger root nutrient profile used for grated/minced fresh ginger; estimate assumes edible peeled root."
     },
     "Fresh Mexican chorizo": {
       "source": "",
@@ -2120,16 +2125,21 @@
       "reviewStatus": "pending"
     },
     "Green onions": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170005",
+      "description": "Onions, spring or scallions (includes tops and bulb), raw",
+      "state": "Raw scallion white and green portions",
+      "kcalPer100g": 32,
+      "proteinPer100g": 1.83,
+      "carbsPer100g": 7.34,
+      "fatPer100g": 0.19,
+      "gramsPerUnit": {
+        "each": 15
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170005/nutrients",
+      "portionSource": "Approximately 15g edible per medium scallion, including green tops.",
+      "reviewNotes": "Four recipes measure 3–5 whole scallions, chopped/sliced and used as garnish or cooked. Edible weight varies by scallion size and trimming."
     },
     "Ground beef": {
       "source": "",
