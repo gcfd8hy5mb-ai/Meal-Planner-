@@ -3,16 +3,21 @@
   "units": "Nutrients per 100 g edible ingredient; gramsPerUnit keyed by the actual recipe unit.",
   "ingredients": {
     "Achiote paste": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "El Yucateco ingredient label via retailer",
+      "foodId": "El Yucateco Achiote Paste 100g",
+      "description": "El Yucateco Achiote Paste, annatto and spices",
+      "state": "Prepared achiote paste, as sold",
+      "kcalPer100g": 188,
+      "proteinPer100g": 5.7,
+      "carbsPer100g": 35,
+      "fatPer100g": 2.8,
+      "gramsPerUnit": {
+        "tbsp": 15
+      },
+      "reviewStatus": "needs-review",
+      "sourceUrl": "https://www.ocado.com/products/el-yucateco-achiote-paste/656071011",
+      "portionSource": "15g per tbsp is provisional, not an established manufacturer serving mass.",
+      "reviewNotes": "Label per 100g verified, but recipe brand unspecified and tablespoon mass for dense paste not established. Hold before treating as precise."
     },
     "All-purpose flour": {
       "source": "USDA FoodData Central SR Legacy",
@@ -1118,8 +1123,8 @@
       },
       "reviewStatus": "needs-review",
       "sourceUrl": "https://fdc.nal.usda.gov/food-details/172390/nutrients",
-      "portionSource": "Pounds mean 453.59237g as weighed. Count-based tube shell mass is an estimate.",
-      "reviewNotes": "USDA nutrient reference is edible raw meat and skin; recipe pounds of bone-in whole wings INCLUDE BONE and MUST be adjusted by edible-yield factor before using macro calculations. This record is a proxy only, not a valid whole-wing conversion."
+      "portionSource": "A pound is 453.59237g purchased bone-in weight; edible wing meat and skin is less. Yield fraction not validated.",
+      "reviewNotes": "USDA nutrient reference is edible raw meat and skin; recipe pounds of bone-in whole wings INCLUDE BONE and MUST be adjusted by edible-yield factor before using macro calculations. This record is a proxy only, not a valid whole-wing conversion. Distinguish raw purchased weight and edible cooked portion; cannot approve until weight yield and recipe preparation are matched."
     },
     "Chickpeas": {
       "source": "USDA FoodData Central Foundation Foods",
@@ -3863,16 +3868,21 @@
       "reviewNotes": "Raw radish USDA macronutrients and medium radish edible weight; actual radish size may vary. Recipe is measured by individual radishes; not cooked or pickled."
     },
     "Ranch seasoning": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
+      "source": "Hidden Valley original ranch manufacturer product and nutrition label",
+      "foodId": "071100004434",
+      "description": "Hidden Valley Original Ranch dry salad dressing and seasoning mix",
+      "state": "Dry seasoning powder, not prepared dressing",
       "kcalPer100g": null,
       "proteinPer100g": null,
       "carbsPer100g": null,
       "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "gramsPerUnit": {
+        "tbsp": 9.333333333333334
+      },
+      "reviewStatus": "needs-review",
+      "sourceUrl": "https://www.hiddenvalley.com/products/ranch-seasonings/seasoning-mix-packets/original-ranch-seasoning-mix-packet/",
+      "portionSource": "Manufacturer: 1 oz (28g) packet approximately 3 tbsp; hence 9.33g per tbsp approximate.",
+      "reviewNotes": "Nutrition per 1/4 tsp shows rounded zero calories and macros; cannot use these zero values to infer true per-100g composition. Product variant and ingredient differences remain."
     },
     "Raw beets": {
       "source": "USDA FoodData Central SR Legacy",
