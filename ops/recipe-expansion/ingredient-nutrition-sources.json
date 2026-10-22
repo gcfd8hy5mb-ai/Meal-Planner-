@@ -191,20 +191,21 @@
       "reviewNotes": "Only recipe use is 1 cup in Balsamic Turkey and Roasted Beet Grain Bowls. USDA raw arugula SR Legacy values verified; baby arugula is proxied by raw arugula. Cup mass varies by packing, so 20g is a declared standard estimate, not an exact measurement."
     },
     "Baby potatoes": {
-      "source": "USDA FoodData Central SR Legacy (candidate; preparation requires confirmation)",
-      "foodId": "170026",
-      "description": "Potatoes, flesh and skin, raw",
-      "state": "Raw reference food; recipe preparation unspecified",
-      "kcalPer100g": 77,
-      "proteinPer100g": 2.05,
-      "carbsPer100g": 17.49,
-      "fatPer100g": 0.09,
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170027",
+      "description": "Raw potatoes with skin; russet potato proxy for unspecified baby potatoes",
+      "state": "Raw whole baby potatoes, skin on",
+      "kcalPer100g": 79,
+      "proteinPer100g": 2.14,
+      "carbsPer100g": 18.1,
+      "fatPer100g": 0.08,
       "gramsPerUnit": {
-        "lb": 453.59237
+        "lb": 453.592
       },
-      "reviewStatus": "pending",
-      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170026/nutrients",
-      "reviewNotes": "Recipe-unit audit completed: only exact mass units used in current 110 recipe drafts. Nutrition candidate needs independent food identity and preparation verification before approval; canned/drained artichoke hearts cannot automatically use raw artichoke macros."
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170027/nutrients",
+      "reviewNotes": "Two recipes each use 1.5 lb baby potatoes. Reuses approved raw russet potato USDA values as a generic potato proxy; baby potato cultivar differs. Raw mass includes skin; added butter and oil separate.",
+      "portionSource": "453.592 grams per pound; weighed raw"
     },
     "Baby spinach": {
       "source": "USDA FoodData Central SR Legacy",
@@ -2530,16 +2531,21 @@
       "reviewStatus": "pending"
     },
     "Jasmine rice": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "169756",
+      "description": "Raw white long grain rice as proxy for uncooked jasmine rice",
+      "state": "Dry uncooked jasmine rice",
+      "kcalPer100g": 365,
+      "proteinPer100g": 7.13,
+      "carbsPer100g": 79.95,
+      "fatPer100g": 0.66,
+      "gramsPerUnit": {
+        "cup": 185
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169756/nutrients",
+      "portionSource": "Approximate 185g per cup dry long-grain white rice; packing and brand vary.",
+      "reviewNotes": "Three recipes measure 1 to 1.5 cups jasmine rice before cooking. USDA generic raw long-grain white rice 169756 used as documented proxy, not jasmine-specific lab data. Assumes 185g dry rice per cup; cooked rice is not interchangeable."
     },
     "Ketchup": {
       "source": "",
