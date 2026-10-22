@@ -4079,16 +4079,21 @@
       "reviewNotes": "Exact cited USDA food and recipe-unit input reference; does NOT verify individual product variation, cooking yield or final prepared recipe nutrition."
     },
     "Sandwich bread": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "174924",
+      "description": "Bread, white, commercially prepared (includes soft bread crumbs)",
+      "state": "Commercial sliced white sandwich bread, untoasted; generic proxy for unspecified sandwich bread",
+      "kcalPer100g": 266,
+      "proteinPer100g": 8.85,
+      "carbsPer100g": 49.42,
+      "fatPer100g": 3.33,
+      "gramsPerUnit": {
+        "slice": 29
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/174924/nutrients",
+      "portionSource": "USDA reference regular white bread slice approximately 29g; loaf brands and thick-cut slices vary.",
+      "reviewNotes": "Commercial white bread used as an explicit proxy for unspecified sandwich bread; whole wheat, sourdough, gluten-free, thin-cut and artisanal breads may differ. For exact macros prefer actual product nutrition and slice mass."
     },
     "Sesame oil": {
       "source": "USDA FoodData Central SR Legacy",
