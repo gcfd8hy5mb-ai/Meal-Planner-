@@ -188,16 +188,21 @@
       "reviewNotes": "Recipe-unit audit completed: only exact mass units used in current 110 recipe drafts. Nutrition candidate needs independent food identity and preparation verification before approval; canned/drained artichoke hearts cannot automatically use raw artichoke macros."
     },
     "Baby spinach": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "168462",
+      "description": "Spinach, raw",
+      "state": "Raw loose spinach leaves; baby spinach treated as standard raw spinach for macro estimates",
+      "kcalPer100g": 23,
+      "proteinPer100g": 2.86,
+      "carbsPer100g": 3.63,
+      "fatPer100g": 0.39,
+      "gramsPerUnit": {
+        "cup": 30
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/168462/nutrients",
+      "portionSource": "USDA SR Legacy raw spinach 1 cup = 30 g; https://getfoodfacts.com/food/spinach-raw-168462",
+      "reviewNotes": "Nine recipes in 110-draft batch use baby spinach, all in cups. Raw loose-leaf spinach is a practical default for baby spinach. Cooking shrinks volume but input recipe cup is measured before cooking; packed cup and brand can vary."
     },
     "Bacon": {
       "source": "",
