@@ -1,0 +1,54 @@
+{
+  "project": "Tablewise",
+  "baseline": 166,
+  "target": 1000,
+  "batches": [
+    {
+      "number": 1,
+      "add": 250,
+      "cumulative": 416,
+      "status": "not-started"
+    },
+    {
+      "number": 2,
+      "add": 250,
+      "cumulative": 666,
+      "status": "not-started"
+    },
+    {
+      "number": 3,
+      "add": 250,
+      "cumulative": 916,
+      "status": "not-started"
+    },
+    {
+      "number": 4,
+      "add": 84,
+      "cumulative": 1000,
+      "status": "not-started"
+    }
+  ],
+  "publishingPolicy": "Each batch must have unique recipe IDs/names, measured ingredients, practical instructions, accurately matched photographs, a traceable source/license if imported, and a passing CI audit before catalog publication.",
+  "preserveExistingRecipes": true,
+  "releaseWithoutPhotos": false,
+  "allowUnverifiedImports": false,
+  "recipePreferences": {
+    "prioritize": [
+      "Chicken, beef, pork, turkey, and seafood meals",
+      "Mexican and Tex-Mex",
+      "Chinese and other Asian dishes with familiar proteins",
+      "Southern comfort food and homestyle cooking",
+      "Italian pasta, soups, stews, casseroles, and American classics"
+    ],
+    "excludeNewRecipesContaining": [
+      "tofu",
+      "tempeh",
+      "seitan",
+      "textured vegetable protein",
+      "soy curls",
+      "vegan meat substitute",
+      "plant-based meat substitute"
+    ],
+    "notes": "No tofu-focused recipes or mock-meat substitutes in new expansion batches. Soy sauce and conventional Asian seasonings are fine. Do not alter existing 166 recipes."
+  }
+}

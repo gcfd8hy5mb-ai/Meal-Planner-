@@ -28,6 +28,18 @@ jobs:
           node-version: '22'
       - name: JavaScript syntax
         run: node --check cloudflare/kroger/worker.js
+      - name: Read-only rollback verifier syntax and safety gate
+        run: |
+          node --check ops/tablewise-kroger/verify-rollback-readiness.mjs
+          node - <<'NODE'
+          const fs=require('node:fs'),assert=require('node:assert/strict');
+          const src=fs.readFileSync('ops/tablewise-kroger/verify-rollback-readiness.mjs','utf8');
+          assert.match(src,/deployAllowed:false/);
+          assert.match(src,/privateRestorableBackupVerified:false/);
+          assert.match(src,/rollbackExerciseVerified:false/);
+          assert.doesNotMatch(src,/method:\\s*['\"](?:POST|PUT|PATCH|DELETE)['\"]/);
+          console.log('Rollback verifier remains read-only and fail-closed');
+          NODE
       - name: Worker request tests
         run: node --test cloudflare/kroger/tests/*.test.mjs
       - name: Wrangler configuration shape

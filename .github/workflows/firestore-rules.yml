@@ -7,6 +7,11 @@ on:
       - 'package.json'
       - 'package-lock.json'
       - 'tests/firestore.rules.test.mjs'
+      - 'tests/authenticated-emulator.test.mjs'
+      - 'luxury-v2/save-flow.mjs'
+      - 'luxury-v2/save-transaction.mjs'
+      - 'luxury-v2/save-guard.mjs'
+      - 'luxury-v2/meal-preview.mjs'
       - '.github/workflows/firestore-rules.yml'
   pull_request:
 jobs:

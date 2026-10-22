@@ -1,0 +1,44 @@
+name: Tablewise recipe endpoint public smoke (read-only)
+on:
+  push:
+    branches:
+      - release/luxury-v2-clean-main-20261019
+    paths:
+      - 'functions/**'
+      - 'ops/recipe-search/**'
+      - 'luxury-v2/online-recipe-*'
+      - '.github/workflows/recipe-endpoint-smoke.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  probe-live-recipe-endpoint:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Probe the public Cloudflare Pages recipe route (no secrets or writes)
+        shell: bash
+        run: |
+          set -euo pipefail
+          for attempt in $(seq 1 8); do
+            echo "Attempt $attempt: checking Pages endpoint"
+            code=$(curl --silent --show-error --location --max-time 15 --output /tmp/recipe-response --write-out '%{http_code}' 'https://tablewise-luxury-preview.pages.dev/api/recipes?ingredients=chicken' || true)
+            echo "HTTP $code"
+            if [[ "$code" == "503" ]]; then
+              if grep -q 'Online recipe search is not configured' /tmp/recipe-response; then
+                echo 'PASS: the live Pages Function is mounted and safely disabled without a provider key.'
+                exit 0
+              fi
+              echo "HTTP 503 was not the expected guarded response"
+            elif [[ "$code" == "404" ]]; then
+              echo 'The route is not mounted at the published Pages address.'
+            elif [[ "$code" == "200" ]]; then
+              echo 'Unexpected successful response: check whether recipe credentials were activated before approval.'
+              exit 1
+            else
+              echo "Unexpected HTTP status or temporary deployment delay"
+            fi
+            sleep 15
+          done
+          echo 'FAIL: Public Pages route did not return its expected 503 guard.'
+          exit 1

@@ -1,0 +1,56 @@
+name: Tablewise standalone iPhone preview package
+on:
+  pull_request:
+    paths:
+      - 'luxury-v2/**'
+      - 'assets/**'
+      - 'preview-package/**'
+      - 'tests/luxury-account-approved-design.test.mjs'
+      - 'tests/luxury-grocery-week-scope.test.mjs'
+      - 'tests/luxury-pantry-discovery.test.mjs'
+      - 'tests/luxury-online-recipe-provider.test.mjs'
+      - 'tests/luxury-online-recipe-gateway.test.mjs'
+      - 'ops/recipe-search/**'
+      - 'functions/api/recipes.js'
+      - 'tests/luxury-pages-recipe-route.test.mjs'
+      - 'tests/luxury-recipe-rate-limit.test.mjs'
+      - 'tests/luxury-pages-recipe-service.test.mjs'
+      - 'tests/luxury-recipe-worker-integration.test.mjs'
+      - 'tests/luxury-ingredient-match.test.mjs'
+      - '.github/workflows/tablewise-preview-package.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  static-preview:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify preview is release-gated
+        run: |
+          node --input-type=module --check < luxury-v2/live.js
+          node --test luxury-v2/checklist-sync.test.mjs tests/luxury-account-approved-design.test.mjs tests/luxury-grocery-week-scope.test.mjs tests/luxury-pantry-discovery.test.mjs tests/luxury-online-recipe-provider.test.mjs tests/luxury-online-recipe-gateway.test.mjs tests/luxury-pages-recipe-route.test.mjs tests/luxury-recipe-rate-limit.test.mjs tests/luxury-pages-recipe-service.test.mjs tests/luxury-recipe-worker-integration.test.mjs tests/luxury-ingredient-match.test.mjs
+          node - <<'NODE'
+          const fs=require('fs'),assert=require('assert');
+          const source=fs.readFileSync('luxury-v2/live.js','utf8');
+          assert.match(source,/const LUXURY_SAVES_RELEASED=false;/);
+          const entry=fs.readFileSync('luxury-v2/index.html','utf8');
+          assert.doesNotMatch(entry,/<iframe|<link[^>]+stylesheet/i);
+          console.log('Preview cloud Save remains disabled and legacy layouts are excluded');
+          NODE
+      - name: Package isolated preview
+        run: |
+          mkdir -p preview-site/luxury-v2 preview-site/assets
+          cp -R luxury-v2/. preview-site/luxury-v2/
+          cp -R assets/. preview-site/assets/
+          cp preview-package/index.html preview-site/index.html
+          test -f preview-site/luxury-v2/live.js
+          test -f preview-site/luxury-v2/catalog.js
+      - uses: actions/upload-artifact@v4
+        with:
+          name: tablewise-luxury-iphone-preview
+          path: preview-site/
+          retention-days: 14
