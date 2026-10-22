@@ -4337,16 +4337,21 @@
       "reviewNotes": "Source-linked ingredient input reference only. Brand variation, portions before peeling, cooking yield and prepared-meal nutrition are NOT certified."
     },
     "Tomatillos": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "168566",
+      "description": "Tomatillos, raw",
+      "state": "Fresh raw tomatillos, edible fruit after removing papery husk",
+      "kcalPer100g": 32,
+      "proteinPer100g": 0.96,
+      "carbsPer100g": 5.84,
+      "fatPer100g": 1.02,
+      "gramsPerUnit": {
+        "lb": 453.59237
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/168566/nutrients",
+      "portionSource": "1 lb = 453.59237g of edible husked raw tomatillos, not gross purchased weight including husks",
+      "reviewNotes": "USDA raw tomatillo values and exact pound-to-gram conversion; husk/trimming loss and cooking yield remain separate recipe-level considerations."
     },
     "Tomato paste": {
       "source": "",
@@ -4402,16 +4407,21 @@
       "reviewNotes": "Two recipes use 1–2 tbsp generic vegetable oil. Soybean oil is a USDA proxy; blended vegetable oil fatty acid composition differs. Assumes all measured oil remains in dish, which may overstate absorbed fat for frying."
     },
     "Walnuts": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170187",
+      "description": "Nuts, walnuts, English",
+      "state": "Raw shelled English walnuts, chopped for cup measurement",
+      "kcalPer100g": 654,
+      "proteinPer100g": 15.23,
+      "carbsPer100g": 13.71,
+      "fatPer100g": 65.21,
+      "gramsPerUnit": {
+        "cup": 117
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170187/nutrients",
+      "portionSource": "Approximately 117g per cup chopped English walnut kernels; whole halves or loose pieces pack differently",
+      "reviewNotes": "USDA English walnut per-100g composition. Chopped-kernel cup mass is an estimated standard portion for unspecified walnuts; exact brand, cut and packing density affect macros. No finished-recipe certification."
     },
     "Water": {
       "source": "Standard nutritional definition (plain potable water)",
