@@ -367,7 +367,7 @@
     },
     "Bell pepper": {
       "source": "USDA FoodData Central SR Legacy",
-      "foodId": "170108",
+      "foodId": "170427",
       "description": "Peppers, sweet, green, raw",
       "state": "Raw green sweet bell pepper, stem/core/seeds excluded; color unspecified recipes use green as practical default",
       "kcalPer100g": 20,
@@ -378,13 +378,13 @@
         "each": 119
       },
       "reviewStatus": "approved",
-      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170108/nutrients",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170427/nutrients",
       "portionSource": "USDA standard 1 medium green sweet pepper, edible portion ~119g; 1 each estimate. Actual pepper size and color vary.",
-      "reviewNotes": "All 13 recipe occurrences of Bell pepper/Bell peppers in 110 recipe drafts are measured as 'each'. Unspecified color standardized to green bell pepper for estimated macros; red/yellow peppers and actual weights vary. Do not treat as exact per-pepper macros."
+      "reviewNotes": "All 13 recipe occurrences of Bell pepper/Bell peppers in 110 recipe drafts are measured as 'each'. Unspecified color standardized to green bell pepper for estimated macros; red/yellow peppers and actual weights vary. Do not treat as exact per-pepper macros. Source identity correction: 170108 identifies red sweet peppers, whereas 170427 identifies green sweet peppers in USDA SR Legacy; original green pepper nutrient values retained pending broader nutrition audit."
     },
     "Bell peppers": {
       "source": "USDA FoodData Central SR Legacy",
-      "foodId": "170108",
+      "foodId": "170427",
       "description": "Peppers, sweet, green, raw",
       "state": "Raw green sweet bell pepper, stem/core/seeds excluded; color unspecified recipes use green as practical default",
       "kcalPer100g": 20,
@@ -395,9 +395,9 @@
         "each": 119
       },
       "reviewStatus": "approved",
-      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170108/nutrients",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170427/nutrients",
       "portionSource": "USDA standard 1 medium green sweet pepper, edible portion ~119g; 1 each estimate. Actual pepper size and color vary.",
-      "reviewNotes": "All 13 recipe occurrences of Bell pepper/Bell peppers in 110 recipe drafts are measured as 'each'. Unspecified color standardized to green bell pepper for estimated macros; red/yellow peppers and actual weights vary. Do not treat as exact per-pepper macros."
+      "reviewNotes": "All 13 recipe occurrences of Bell pepper/Bell peppers in 110 recipe drafts are measured as 'each'. Unspecified color standardized to green bell pepper for estimated macros; red/yellow peppers and actual weights vary. Do not treat as exact per-pepper macros. Source identity correction: 170108 identifies red sweet peppers, whereas 170427 identifies green sweet peppers in USDA SR Legacy; original green pepper nutrient values retained pending broader nutrition audit."
     },
     "Black beans": {
       "source": "USDA FoodData Central Foundation Foods",
@@ -2715,7 +2715,7 @@
     },
     "Large bell peppers": {
       "source": "USDA FoodData Central SR Legacy",
-      "foodId": "170108",
+      "foodId": "170427",
       "description": "Peppers, sweet, green, raw",
       "state": "Raw large green bell pepper, edible portion; green used as color-unspecified default",
       "kcalPer100g": 20,
@@ -2726,9 +2726,9 @@
         "each": 164
       },
       "reviewStatus": "approved",
-      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170108/nutrients",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170427/nutrients",
       "portionSource": "Estimated 164g edible portion of a large green bell pepper (vs 119g medium bell pepper reference). Large pepper weight, trimming and color vary.",
-      "reviewNotes": "Generic USDA raw green bell pepper nutrient profile reused from approved Bell peppers; large-size 164g edible weight is a documented practical estimate rather than a weighed recipe pepper. The recipe uses each, not oz. Actual weights and color can change macros."
+      "reviewNotes": "Generic USDA raw green bell pepper nutrient profile reused from approved Bell peppers; large-size 164g edible weight is a documented practical estimate rather than a weighed recipe pepper. The recipe uses each, not oz. Actual weights and color can change macros. Source identity correction: 170108 identifies red sweet peppers, whereas 170427 identifies green sweet peppers in USDA SR Legacy; original green pepper nutrient values retained pending broader nutrition audit."
     },
     "Large eggs": {
       "source": "USDA FoodData Central SR Legacy",
