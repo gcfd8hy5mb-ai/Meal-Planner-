@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Regression suite for Tablewise staged nutrition. Intentionally leaves 7 flagged foods blocked.
+// Regression suite: 102 complete mappings plus eight explicitly estimated recipes; exact release gate stays closed.
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {spawnSync} from 'node:child_process';
@@ -17,7 +17,7 @@ for(const [name,fraction] of [['Bone-in chicken thighs',0.52],['Chicken wings',0
  assert.equal(item.reviewStatus,'needs-review','Raw nutrient profiles cannot be approved using cooked edible yields');
  assert.match(item.state,/Raw/i,'Expected raw source nutrient profile; do not silently mix states');
 }
-// Provisional estimates may exist, but must not enter the verified recipe calculator.
+// Provisional estimates must NEVER be marked verified.
 for(const name of ['Bone-in chicken thighs','Chicken wings','Beef short ribs']){
  const p=source[name].standardCookedEstimate;
  assert.ok(p?.sourceUrl&&p?.kcalPer100g>0&&p?.proteinPer100g>0&&p?.fatPer100g>0,name+' missing sourced cooked estimate');
@@ -33,21 +33,25 @@ for(const name of unresolved){
  assert.equal(source[name].reviewStatus,'needs-review',name+' must be quarantined until its source/yield is resolved');
 }
 const run=spawnSync(process.execPath,[root+'calculate-verified-nutrition.mjs'],{encoding:'utf8'});
-assert.equal(run.status,1,'the calculator must remain a failing release gate with 8 blocked recipes');
+assert.equal(run.status,0,'the calculator must return a complete estimated report');
 const report=JSON.parse(fs.readFileSync(root+'nutrition-calculation-report.json','utf8'));
 assert.equal(report.recipes,110);
 assert.equal(report.verified,102);
-assert.equal(report.blocked,8);
+assert.equal(report.estimated,8);
+assert.equal(report.blocked,0);
 for(const recipe of report.results){
  const original=recipes.find(r=>r.id===recipe.id);
  assert.ok(original,'unknown recipe in report: '+recipe.id);
  const risky=original.ingredients.filter(([name])=>unresolved.includes(name)).map(([name])=>name);
  if(risky.length){
   assert.equal(recipe.verified,false,recipe.name+' unexpectedly verified');
-  assert.equal(recipe.perServing,null,recipe.name+' must not show incomplete totals');
-  for(const name of risky)assert.ok(recipe.issues.some(issue=>issue.includes(name)),recipe.name+' missing blocker for '+name);
+  assert.equal(recipe.estimateOnly,true,recipe.name+' must be labeled estimated');
+  assert.equal(recipe.status,'estimated');
+  assert.ok(Object.values(recipe.perServing).every(n=>Number.isFinite(n)&&n>=0),recipe.name+' invalid estimated totals');
+  for(const name of risky)assert.ok(recipe.estimateWarnings.some(w=>w.ingredient===name&&w.warning),recipe.name+' missing estimation caveat for '+name);
  }else{
   assert.equal(recipe.verified,true,recipe.name+' unexpectedly blocked');
+  assert.equal(recipe.estimateOnly,false);
   assert.ok(Object.values(recipe.perServing).every(n=>Number.isFinite(n)&&n>=0),recipe.name+' invalid totals');
  }
 }
@@ -57,4 +61,4 @@ const parsed=JSON.parse(gate.stdout);
 assert.equal(parsed.ready,102);
 assert.equal(parsed.blocked,8);
 assert.deepEqual(parsed.errors,[]);
-console.log(JSON.stringify({regression:'passed',mappedIngredients:294,approved:287,flagged:7,recipesReady:102,recipesBlocked:8,releaseGate:'correctly blocks merge'},null,2));
+console.log(JSON.stringify({regression:'passed',mappedIngredients:294,approved:287,flagged:7,recipesMapped:102,recipesEstimated:8,releaseGate:'correctly prevents claiming estimates are verified'},null,2));
