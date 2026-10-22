@@ -28,16 +28,21 @@
       "reviewNotes": "Source research 2026-10-21: USDA Foods in Schools 100400 All Purpose Enriched flour sheet (https://fns-prod.azureedge.us/sites/default/files/resource-files/100400-%20Flour%20All%20Purpose%20Enriched.pdf) reports 1/2 cup = 63 g, but this is specifically enriched flour. USDA FoodData Central Foundation records 789951 (enriched unbleached) and 790018 (unenriched unbleached) differ in nutrients. HOLD pending recipe-specific flour enrichment/bleaching identity and confirmation of every recipe unit; do not assign generic nutrients or FDC ID by assumption."
     },
     "Apple cider": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy (unsweetened apple juice proxy)",
+      "foodId": "171688",
+      "description": "Apple juice, canned or bottled, unsweetened, without added ascorbic acid (proxy for sweet apple cider)",
+      "state": "Nonalcoholic sweet apple cider, liquid; not apple cider vinegar",
+      "kcalPer100g": 46,
+      "proteinPer100g": 0.1,
+      "carbsPer100g": 11.3,
+      "fatPer100g": 0.13,
+      "gramsPerUnit": {
+        "cup": 248
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/171688/nutrients",
+      "portionSource": "One US cup unsweetened apple juice approximately 248g; sweet apple cider varies by brand and sediment.",
+      "reviewNotes": "All three recipes use cups (0.5, 1, 1.5); instructions indicate sweet cider for braising/sauce, not vinegar or hard cider. Unsweetened apple juice is a documented approximate nutrition proxy; added-sugar brands differ. Sauce reduction does not remove sugar."
     },
     "Apple cider vinegar": {
       "source": "USDA FoodData Central SR Legacy",
