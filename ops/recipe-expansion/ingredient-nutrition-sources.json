@@ -334,19 +334,21 @@
       "sourceUrl": "https://fdc.nal.usda.gov/food-details/171538/nutrients"
     },
     "Beef chuck roast": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
+      "source": "USDA FoodData Central Foundation Foods",
+      "foodId": "2646174",
+      "description": "Beef, chuck, roast, boneless, choice, raw",
+      "state": "Raw boneless choice chuck roast, with its natural fat",
+      "kcalPer100g": 231.71,
+      "proteinPer100g": 18.4,
+      "carbsPer100g": 0,
+      "fatPer100g": 17.8,
       "gramsPerUnit": {
         "lb": 453.59237
       },
-      "reviewStatus": "pending",
-      "reviewNotes": "Audited all occurrences in 110 recipe drafts: only 'lb' is used. Exact conversion is 453.59237 g per pound of the weighed product. HOLD nutrition approval until USDA entry matches raw/cooked, skin, fat trimming, and bone status. Bone-in chicken thighs require an edible-yield adjustment; 1 lb bone-in purchase weight is NOT 453.59237 g edible meat. Beef cut and fat trim can materially alter macros."
+      "reviewStatus": "approved",
+      "reviewNotes": "Three recipes use 2–2.5 lb beef chuck roast. USDA Foundation 2646174 is raw boneless choice chuck; fat trimming, cut grade, and rendered fat lost during braising change finished dish macros. Recipe unspecified grade assumed choice.",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/2646174/nutrients",
+      "portionSource": "1 lb raw boneless chuck roast = 453.59237 g; assumes entire raw weight edible"
     },
     "Beef short ribs": {
       "source": "",
