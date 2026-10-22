@@ -2742,16 +2742,21 @@
       "reviewNotes": "FoodData Central canned drained solids source. Carbohydrate figure includes fiber. Cup conversion is approximate and can vary with bean size and packing; not for uncooked dry beans."
     },
     "Kidney beans, rinsed": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "174285",
+      "description": "Beans, kidney, red, mature seeds, canned, drained solids",
+      "state": "Canned kidney beans, rinsed after draining",
+      "kcalPer100g": 124,
+      "proteinPer100g": 8,
+      "carbsPer100g": 21.5,
+      "fatPer100g": 1.1,
+      "gramsPerUnit": {
+        "cup": 177
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/174285/nutrients",
+      "portionSource": "Estimated 177 grams per cup drained and rinsed; actual mass varies with packing.",
+      "reviewNotes": "USDA drained canned kidney beans used as approximate nutrient reference. Rinsing and draining can change sodium and water content; weigh the rinsed solids."
     },
     "Large bell peppers": {
       "source": "USDA FoodData Central SR Legacy",
