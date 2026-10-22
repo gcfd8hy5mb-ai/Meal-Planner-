@@ -538,14 +538,32 @@
         "lb": 453.59237
       },
       "reviewStatus": "needs-review",
-      "reviewNotes": "USDA sampled edible meat and skin values; an exact purchased bone-in thigh mass includes bone. Edible-yield factor needed; not approved. Final batch review: do not treat 453.59237g purchased with bones as 453.59237g edible; no defensible cut-specific edible-yield fraction provided. Exclude from exact per-recipe macro output until yield or weighed edible input is known. Final batch disposition (2026-10-22): Blocked: raw bone-in purchase weight cannot use USDA edible meat+skin mass without a validated edible yield. USDA standard cut distribution percentages are not edible yield. USDA FBG official cooked edible yield documented: Bone-in skin-on thighs (~4 oz each): 1 lb as purchased yields 0.52 lb cooked boned chicken meat WITH skin. Do not combine this with the currently stored raw FDC nutrients.",
+      "reviewNotes": "USDA sampled edible meat and skin values; an exact purchased bone-in thigh mass includes bone. Edible-yield factor needed; not approved. Final batch review: do not treat 453.59237g purchased with bones as 453.59237g edible; no defensible cut-specific edible-yield fraction provided. Exclude from exact per-recipe macro output until yield or weighed edible input is known. Final batch disposition (2026-10-22): Blocked: raw bone-in purchase weight cannot use USDA edible meat+skin mass without a validated edible yield. USDA standard cut distribution percentages are not edible yield. USDA FBG official cooked edible yield documented: Bone-in skin-on thighs (~4 oz each): 1 lb as purchased yields 0.52 lb cooked boned chicken meat WITH skin. Do not combine this with the currently stored raw FDC nutrients. Added fully matched cooked-state estimated reference (distinct from existing raw profile); remains unapproved for exact recipe macros.",
       "sourceUrl": "https://fdc.nal.usda.gov/food-details/2727567/nutrients",
       "portionSource": "USDA Food Buying Guide cooked boned yield for matching skin-on bone-in chicken part. Purchase lb × stated fraction = cooked edible grams. Existing per100g nutrients are RAW and MUST NOT be multiplied by this COOKED yield.",
       "nutritionValidationBlocker": "Cooked edible yield now sourced, but per-100g nutrient reference is RAW. Need matching USDA COOKED meat and skin profile and verify recipe's skin/preparation before approving; source cut is an approximate average.",
       "cookedEdibleYieldFraction": 0.52,
       "cookedEdibleYieldSource": "https://foodbuyingguide.fns.usda.gov/files/Reports/USDA_FBG_Section1_MeatsAndMeatAlternates_YieldTable.pdf",
       "cookedEdibleYieldDefinition": "Bone-in skin-on thighs (~4 oz each): 1 lb as purchased yields 0.52 lb cooked boned chicken meat WITH skin",
-      "cookedEdibleGramsPerPurchasedLb": 235.868032
+      "cookedEdibleGramsPerPurchasedLb": 235.868032,
+      "standardCookedEstimate": {
+        "source": "USDA FoodData Central SR Legacy cooked roast + USDA Food Buying Guide as-purchased yield",
+        "foodId": "173625",
+        "description": "Chicken, broilers or fryers, thigh, meat and skin, cooked, roasted",
+        "kcalPer100g": 232,
+        "proteinPer100g": 23.26,
+        "carbsPer100g": 0,
+        "fatPer100g": 14.7,
+        "sourceUrl": "https://fdc.nal.usda.gov/food-details/173625/nutrients",
+        "gramsPerUnit": {
+          "lb": 235.868032
+        },
+        "yieldFraction": 0.52,
+        "yieldSource": "https://foodbuyingguide.fns.usda.gov/files/Reports/USDA_FBG_Section1_MeatsAndMeatAlternates_YieldTable.pdf",
+        "confidence": "standard-population estimate; not meal-specific exact value",
+        "scope": "1 purchased lb bone-in skin-on mapped to USDA typical cooked boneless meat + skin yield, then matching cooked meat+skin nutritional profile",
+        "limitations": "Wings recipe uses split wings; FBG whole-wing yield differs from separated flats/drums. Thigh braised recipe may have different moisture/fat retention than roasting. Added butter/oil and drippings must be evaluated separately."
+      }
     },
     "Boneless chicken breast": {
       "source": "USDA FoodData Central Foundation",
@@ -1135,12 +1153,30 @@
       "reviewStatus": "needs-review",
       "sourceUrl": "https://fdc.nal.usda.gov/food-details/172390/nutrients",
       "portionSource": "USDA Food Buying Guide cooked boned yield for matching skin-on bone-in chicken part. Purchase lb × stated fraction = cooked edible grams. Existing per100g nutrients are RAW and MUST NOT be multiplied by this COOKED yield.",
-      "reviewNotes": "USDA nutrient reference is edible raw meat and skin; recipe pounds of bone-in whole wings INCLUDE BONE and MUST be adjusted by edible-yield factor before using macro calculations. This record is a proxy only, not a valid whole-wing conversion. Distinguish raw purchased weight and edible cooked portion; cannot approve until weight yield and recipe preparation are matched. Final batch review: do not treat 453.59237g purchased with bones as 453.59237g edible; no defensible cut-specific edible-yield fraction provided. Exclude from exact per-recipe macro output until yield or weighed edible input is known. Final batch disposition (2026-10-22): Blocked: purchased bone-in wings require a validated edible meat+skin fraction; 453.59237g purchased is not 453.59237g edible. USDA FBG official cooked edible yield documented: Whole bone-in skin-on wings (~3.1 oz each): 1 lb as purchased yields 0.34 lb cooked boned chicken meat WITH skin. Do not combine this with the currently stored raw FDC nutrients.",
+      "reviewNotes": "USDA nutrient reference is edible raw meat and skin; recipe pounds of bone-in whole wings INCLUDE BONE and MUST be adjusted by edible-yield factor before using macro calculations. This record is a proxy only, not a valid whole-wing conversion. Distinguish raw purchased weight and edible cooked portion; cannot approve until weight yield and recipe preparation are matched. Final batch review: do not treat 453.59237g purchased with bones as 453.59237g edible; no defensible cut-specific edible-yield fraction provided. Exclude from exact per-recipe macro output until yield or weighed edible input is known. Final batch disposition (2026-10-22): Blocked: purchased bone-in wings require a validated edible meat+skin fraction; 453.59237g purchased is not 453.59237g edible. USDA FBG official cooked edible yield documented: Whole bone-in skin-on wings (~3.1 oz each): 1 lb as purchased yields 0.34 lb cooked boned chicken meat WITH skin. Do not combine this with the currently stored raw FDC nutrients. Added fully matched cooked-state estimated reference (distinct from existing raw profile); remains unapproved for exact recipe macros.",
       "nutritionValidationBlocker": "Cooked edible yield now sourced, but per-100g nutrient reference is RAW. Need matching USDA COOKED meat and skin profile and verify recipe's skin/preparation before approving; source cut is an approximate average.",
       "cookedEdibleYieldFraction": 0.34,
       "cookedEdibleYieldSource": "https://foodbuyingguide.fns.usda.gov/files/Reports/USDA_FBG_Section1_MeatsAndMeatAlternates_YieldTable.pdf",
       "cookedEdibleYieldDefinition": "Whole bone-in skin-on wings (~3.1 oz each): 1 lb as purchased yields 0.34 lb cooked boned chicken meat WITH skin",
-      "cookedEdibleGramsPerPurchasedLb": 154.221406
+      "cookedEdibleGramsPerPurchasedLb": 154.221406,
+      "standardCookedEstimate": {
+        "source": "USDA FoodData Central SR Legacy cooked roast + USDA Food Buying Guide as-purchased yield",
+        "foodId": "173630",
+        "description": "Chicken, broilers or fryers, wing, meat and skin, cooked, roasted",
+        "kcalPer100g": 254,
+        "proteinPer100g": 23.79,
+        "carbsPer100g": 0,
+        "fatPer100g": 16.87,
+        "sourceUrl": "https://fdc.nal.usda.gov/food-details/173630/nutrients",
+        "gramsPerUnit": {
+          "lb": 154.221406
+        },
+        "yieldFraction": 0.34,
+        "yieldSource": "https://foodbuyingguide.fns.usda.gov/files/Reports/USDA_FBG_Section1_MeatsAndMeatAlternates_YieldTable.pdf",
+        "confidence": "standard-population estimate; not meal-specific exact value",
+        "scope": "1 purchased lb bone-in skin-on mapped to USDA typical cooked boneless meat + skin yield, then matching cooked meat+skin nutritional profile",
+        "limitations": "Wings recipe uses split wings; FBG whole-wing yield differs from separated flats/drums. Thigh braised recipe may have different moisture/fat retention than roasting. Added butter/oil and drippings must be evaluated separately."
+      }
     },
     "Chickpeas": {
       "source": "USDA FoodData Central Foundation Foods",
