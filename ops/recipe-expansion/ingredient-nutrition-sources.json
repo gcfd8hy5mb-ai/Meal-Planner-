@@ -4214,16 +4214,21 @@
       "reviewStatus": "pending"
     },
     "Snow peas": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170010",
+      "description": "Peas, edible-podded, raw",
+      "state": "Raw fresh snow peas, edible pods",
+      "kcalPer100g": 42,
+      "proteinPer100g": 2.8,
+      "carbsPer100g": 7.55,
+      "fatPer100g": 0.2,
+      "gramsPerUnit": {
+        "cup": 98
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170010/nutrients",
+      "portionSource": "USDA 1 cup chopped raw edible-podded peas = 98g; whole unchopped cup packing may differ",
+      "reviewNotes": "USDA raw edible-podded pea composition. Cup conversion is specifically chopped peas, used as a stated proxy for unspecified snow peas measured by cup; final cooked macros not certified."
     },
     "Sour cream": {
       "source": "USDA FoodData Central SR Legacy",
