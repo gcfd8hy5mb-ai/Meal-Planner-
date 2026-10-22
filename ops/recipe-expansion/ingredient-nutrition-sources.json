@@ -1139,16 +1139,21 @@
       "reviewNotes": "USDA Foundation canned drained/rinsed beans are an explicit assumed state. Dried/raw chickpeas should be mapped separately. Energy uses reported Atwater specific factors (133 kcal)."
     },
     "Chili garlic sauce": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "Huy Fong Foods label via Kroger and USDA branded entry",
+      "foodId": "1095731",
+      "description": "Huy Fong Chili Garlic Sauce",
+      "state": "Prepared chili garlic condiment as sold; Huy Fong branded estimate",
+      "kcalPer100g": 0,
+      "proteinPer100g": 0,
+      "carbsPer100g": 0,
+      "fatPer100g": 0,
+      "gramsPerUnit": {
+        "tbsp": 15
+      },
+      "reviewStatus": "needs-review",
+      "sourceUrl": "https://getfoodfacts.com/food/chili-garlic-sauce-chili-garlic-1095731",
+      "portionSource": "Retail label identifies 1 tsp = 5g; 1 tbsp=3 tsp ~=15g",
+      "reviewNotes": "Huy Fong brand USDA entry reports zero-rounded values but Kroger retail label lists up to 1g carbohydrate per 5g, so precise per-100g macros cannot be derived reliably. Kept unapproved pending nonrounded nutrient data or exact product selection."
     },
     "Chili powder": {
       "source": "USDA FoodData Central SR Legacy",
@@ -3790,16 +3795,21 @@
       "reviewNotes": "Branded product reference. Avoid cooked USDA gnocchi entry (135 kcal with fat added) because it differs from packaged raw input; brand ratios vary."
     },
     "Prepared refrigerated empanada dough discs": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "Goya Foods package label via Directions for Me (brand proxy)",
+      "foodId": "UPC 00041331091626",
+      "description": "Goya large frying empanada dough discs, uncooked",
+      "state": "Packaged prepared dough discs, thawed in refrigerator, before cooking",
+      "kcalPer100g": 315.7894736842105,
+      "proteinPer100g": 8.771929824561402,
+      "carbsPer100g": 49.122807017543856,
+      "fatPer100g": 8.771929824561402,
+      "gramsPerUnit": {
+        "each": 57
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://directionsforme.org/product/65313",
+      "portionSource": "Goya product label: 1 large dough disc = 57g; 10 discs weigh approximately 567g",
+      "reviewNotes": "Product-specific estimate, 180 kcal / 5 g protein / 28 g carbs / 5 g fat per disc. Recipe does not specify brand or size; 28g puff pastry disc variants exist. Raw dough only, cooking oil excluded. Label values rounded."
     },
     "Provolone cheese": {
       "source": "USDA FoodData Central SR Legacy",
@@ -3950,16 +3960,21 @@
       "reviewNotes": "Verified red sweet pepper food identity and reference profile; not interchangeable with green bell pepper nutrient data. Input raw pepper weight only, cooking yield not included."
     },
     "Red curry paste": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "Thai Kitchen nutrition label via Whole Foods (brand proxy)",
+      "foodId": "Thai Kitchen 4oz red curry paste",
+      "description": "Thai Kitchen Red Curry Paste",
+      "state": "Jarred Thai red curry paste, ready to use",
+      "kcalPer100g": 133.33333333333331,
+      "proteinPer100g": 6.666666666666667,
+      "carbsPer100g": 20,
+      "fatPer100g": 0,
+      "gramsPerUnit": {
+        "tbsp": 15
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://www.wholefoodsmarket.com/grocery/product/red-curry%20paste%2C%204%20oz-b000srmb3o",
+      "portionSource": "Manufacturer's published label: 1 tablespoon = 15g",
+      "reviewNotes": "Exact branded reference is Thai Kitchen, not necessarily recipe's paste brand; 20 kcal, 1g protein, 3g carbs, 0g fat per 15g. Label rounding and recipe variation apply."
     },
     "Red enchilada sauce": {
       "source": "USDA FoodData Central SR Legacy",
