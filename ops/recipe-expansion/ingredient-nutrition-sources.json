@@ -849,12 +849,12 @@
       "carbsPer100g": 56.8,
       "fatPer100g": 3.83,
       "gramsPerUnit": {
-        "tsp": 2.5
+        "tsp": 3
       },
-      "reviewStatus": "needs-review",
+      "reviewStatus": "approved",
       "sourceUrl": "https://www.webstaurantstore.com/documents/nutrition/102bd00809_nutrition.pdf",
-      "portionSource": "Estimated 2.5 g per level teaspoon; verify the selected seasoning's mass by label or weighing.",
-      "reviewNotes": "Manufacturer specifies all four macros per 100g. The recipe ingredient has no brand and tsp weight is an estimate; kept needs-review until an appropriate product and volume mass are confirmed."
+      "portionSource": "Badia ingredient marketplace specifies Cajun Seasoning (3g; 1tsp PK); use 3g/tsp for Badia product code 00809 as documented representative, not a weighed sample.",
+      "reviewNotes": "Badia Spices product 00809 nutrition analysis states 278.42 kcal, 11.9g protein, 56.8g carbohydrate, 3.83g fat per 100g. TraceGains Badia marketplace separately lists Cajun Seasoning 3g/1tsp packet. The recipe does not identify a brand; this is a branded reference proxy, not exact user-product macros."
     },
     "Canned black beans": {
       "source": "USDA FoodData Central Foundation Foods",
