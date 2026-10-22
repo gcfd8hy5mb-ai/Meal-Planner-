@@ -3996,16 +3996,21 @@
       "reviewStatus": "pending"
     },
     "White onion": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central Foundation Foods",
+      "foodId": "1104962",
+      "description": "Onions, white, raw",
+      "state": "Raw white onion edible portion",
+      "kcalPer100g": 35,
+      "proteinPer100g": 0.89,
+      "carbsPer100g": 7.68,
+      "fatPer100g": 0.13,
+      "gramsPerUnit": {
+        "each": 110
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/1104962/nutrients",
+      "portionSource": "USDA generic medium onion edible weight 110g; applied as size proxy to white onion, actual size varies.",
+      "reviewNotes": "12 recipes use whole or half white onions, unit each. Exact white onion USDA Foundation ID 1104962. Nutrient values approximate (food composition varies); edible onion weight is generic medium onion proxy, not a weighed white onion. Cooking loss does not remove onion solids; final recipe yield not verified."
     },
     "White vinegar": {
       "source": "",
