@@ -2608,7 +2608,7 @@
     },
     "Hominy": {
       "source": "USDA FoodData Central SR Legacy (documented proxy)",
-      "foodId": "169723",
+      "foodId": "169752",
       "description": "Hominy, canned, yellow",
       "state": "Canned hominy, edible solids as a generic ingredient assumption",
       "kcalPer100g": 72,
@@ -2619,13 +2619,13 @@
         "oz": 28.349523125
       },
       "reviewStatus": "approved",
-      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169723/nutrients",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169752/nutrients",
       "portionSource": "Portion masses in grams; exact mass units use standard conversion, volume and count are approximate.",
-      "reviewNotes": "USDA-style canned hominy profile used as approximate proxy for unspecified hominy; dry hominy differs, and undrained can weight includes liquid. Macros apply to ingredient input, not prepared meal."
+      "reviewNotes": "USDA-style canned hominy profile used as approximate proxy for unspecified hominy; dry hominy differs, and undrained can weight includes liquid. Macros apply to ingredient input, not prepared meal. Corrected USDA FDC ID 169752 and standardized 160 g/cup USDA portion."
     },
     "Hominy canned, drained": {
       "source": "USDA FoodData Central SR Legacy (documented proxy)",
-      "foodId": "169723",
+      "foodId": "169752",
       "description": "Hominy, canned, yellow",
       "state": "Canned yellow hominy, drained solids",
       "kcalPer100g": 72,
@@ -2633,12 +2633,12 @@
       "carbsPer100g": 14.3,
       "fatPer100g": 0.9,
       "gramsPerUnit": {
-        "cup": 165
+        "cup": 160
       },
       "reviewStatus": "approved",
-      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169723/nutrients",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169752/nutrients",
       "portionSource": "Portion masses in grams; exact mass units use standard conversion, volume and count are approximate.",
-      "reviewNotes": "USDA-style canned hominy reference is a proxy; 165g per cup drained is estimated; check brand label. Macros apply to ingredient input, not prepared meal."
+      "reviewNotes": "USDA-style canned hominy reference is a proxy; 165g per cup drained is estimated; check brand label. Macros apply to ingredient input, not prepared meal. Corrected USDA FDC ID 169752 and standardized 160 g/cup USDA portion."
     },
     "Honey": {
       "source": "USDA FoodData Central SR Legacy",
