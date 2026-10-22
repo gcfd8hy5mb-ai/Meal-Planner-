@@ -584,19 +584,21 @@
       "reviewNotes": "Ingredient as-purchased input only. Per-serving finished recipe nutrition not certified."
     },
     "Boneless pork shoulder": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "167843",
+      "description": "Pork, fresh, shoulder, whole, separable lean and fat, raw",
+      "state": "Raw boneless pork shoulder with lean and fat, not trimmed lean-only",
+      "kcalPer100g": 236,
+      "proteinPer100g": 17.2,
+      "carbsPer100g": 0,
+      "fatPer100g": 18,
       "gramsPerUnit": {
         "lb": 453.59237
       },
-      "reviewStatus": "pending",
-      "reviewNotes": "Audited all occurrences in 110 recipe drafts: only 'lb' is used. Exact conversion is 453.59237 g per pound of the weighed product. HOLD nutrition approval until USDA entry matches raw/cooked, skin, fat trimming, and bone status. Bone-in chicken thighs require an edible-yield adjustment; 1 lb bone-in purchase weight is NOT 453.59237 g edible meat. Beef cut and fat trim can materially alter macros."
+      "reviewStatus": "approved",
+      "reviewNotes": "Four recipes specify boneless shoulder by raw pound. USDA whole shoulder lean-and-fat profile is a documented proxy for boneless shoulder, since cut trim and fat cap differ. Braising fat rendered and discarded changes final macros; no cooking yield applied.",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/167843/nutrients",
+      "portionSource": "One pound raw boneless edible shoulder equals 453.59237 grams"
     },
     "Boneless skinless chicken breasts": {
       "source": "USDA FoodData Central Foundation",
