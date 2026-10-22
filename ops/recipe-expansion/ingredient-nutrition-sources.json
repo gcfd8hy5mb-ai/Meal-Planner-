@@ -645,16 +645,21 @@
       "reviewStatus": "pending"
     },
     "Broccoli florets": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170379",
+      "description": "Broccoli, raw",
+      "state": "Raw broccoli florets, chopped; stems mostly excluded",
+      "kcalPer100g": 34,
+      "proteinPer100g": 2.82,
+      "carbsPer100g": 6.64,
+      "fatPer100g": 0.37,
+      "gramsPerUnit": {
+        "cup": 91
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170379/nutrients",
+      "portionSource": "USDA standard 1 cup chopped raw broccoli ~91g; floret-only cup may vary by cut and packing.",
+      "reviewNotes": "Both recipes use 2 cups Broccoli florets. Raw broccoli used as practical proxy; floret-only density and pre-cooked versus cooked volume affect estimates."
     },
     "Brown rice": {
       "source": "",
@@ -1137,16 +1142,21 @@
       "reviewNotes": "Exact cited USDA food and recipe-unit input reference; does NOT verify individual product variation, cooking yield or final prepared recipe nutrition."
     },
     "Cooked rice": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "169756",
+      "description": "Rice, white, long-grain, regular, enriched, cooked without salt",
+      "state": "Cooked plain long-grain white rice",
+      "kcalPer100g": 130,
+      "proteinPer100g": 2.69,
+      "carbsPer100g": 28.17,
+      "fatPer100g": 0.28,
+      "gramsPerUnit": {
+        "cup": 158
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169756/nutrients",
+      "portionSource": "USDA standard 1 cup cooked long-grain white rice ~158g; preparation and packing vary.",
+      "reviewNotes": "Five recipes use Cooked rice in cups. White long-grain plain cooked rice is the default for unspecified cooked rice. Not interchangeable with uncooked rice or brown rice; sauces/oils must be accounted separately."
     },
     "Cooked shredded chicken": {
       "source": "",
