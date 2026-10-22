@@ -86,17 +86,21 @@
       "portionSource": "USDA National Nutrient Database SR26, Basic Report 09003, Apples raw with skin: 1 cup sliced 109g, 1 cup quartered/chopped 125g, medium 182g. https://resources.finalsite.net/images/v1703097875/chambersburgk12paus/mpitvq0yks6xou0i25os/apple__fresh.pdf"
     },
     "Apricot preserves": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending",
-      "reviewNotes": "Hold: USDA provides 20g per tbsp, but editorial review has not approved extrapolating full cup to 320g across apricot preserve formulations; require explicit cup measure or tested density."
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170645",
+      "description": "Jams and preserves, apricot",
+      "state": "Prepared apricot preserves; generic product",
+      "kcalPer100g": 242,
+      "proteinPer100g": 0.7,
+      "carbsPer100g": 64.4,
+      "fatPer100g": 0.2,
+      "gramsPerUnit": {
+        "cup": 320
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170645/nutrients",
+      "portionSource": "1 tbsp preserves 20g; 1 US cup = 16 tbsp = 320g estimated by volume; brands vary",
+      "reviewNotes": "USDA generic apricot jam/preserves. Cup weight inferred from 20g/tbsp; verify jar and fill density if accurate per-recipe macros required."
     },
     "Arborio rice": {
       "source": "USDA FoodData Central branded foods (Goya Arborio Rice)",
@@ -225,16 +229,21 @@
       "reviewNotes": "Nine recipes in 110-draft batch use baby spinach, all in cups. Raw loose-leaf spinach is a practical default for baby spinach. Cooking shrinks volume but input recipe cup is measured before cooking; packed cup and brand can vary."
     },
     "Bacon": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "167712",
+      "description": "Pork, cured, bacon, cooked, broiled, pan-fried or roasted, reduced sodium",
+      "state": "Cooked pan-fried bacon; reduced sodium generic proxy",
+      "kcalPer100g": 541,
+      "proteinPer100g": 37.04,
+      "carbsPer100g": 1.43,
+      "fatPer100g": 41.78,
+      "gramsPerUnit": {
+        "slice": 8
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/167712/nutrients",
+      "portionSource": "Cooked slice about 8g edible; raw uncooked slice is not equivalent",
+      "reviewNotes": "Assumes 8g fully cooked slice. Reduced-sodium cooked bacon is an explicit proxy; if recipe counts raw bacon slices, cooked weight and macros should not be applied directly. Brands and thickness vary."
     },
     "Baking powder": {
       "source": "USDA FoodData Central SR Legacy",
