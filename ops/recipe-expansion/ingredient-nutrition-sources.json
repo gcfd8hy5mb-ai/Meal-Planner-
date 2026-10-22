@@ -3360,16 +3360,21 @@
       "reviewStatus": "pending"
     },
     "Pineapple chunks": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "169124",
+      "description": "Pineapple, raw, all varieties",
+      "state": "Raw fresh pineapple chunks, edible fruit flesh, without peel or core",
+      "kcalPer100g": 50,
+      "proteinPer100g": 0.54,
+      "carbsPer100g": 13.12,
+      "fatPer100g": 0.12,
+      "gramsPerUnit": {
+        "cup": 165
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/169124/nutrients",
+      "portionSource": "USDA SR 1 cup raw pineapple chunks = 165g",
+      "reviewNotes": "Fresh raw pineapple default for unspecified pineapple chunks. Canned pineapple in juice or syrup has different values. No cooking yield or recipe serving validation implied."
     },
     "Pineapple juice": {
       "source": "USDA FoodData Central SR Legacy",
