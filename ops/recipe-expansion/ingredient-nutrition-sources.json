@@ -371,19 +371,21 @@
       "portionSource": "1 lb raw boneless chuck roast = 453.59237 g; assumes entire raw weight edible"
     },
     "Beef short ribs": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
+      "source": "USDA Retail Beef Cuts, Release 3.0",
+      "foodId": "NDB 23130",
+      "description": "Beef chuck short ribs, boneless, lean and fat, trimmed to 0 inch, raw",
+      "state": "Raw boneless beef short-rib edible meat and fat — proxy ONLY; recipe may use bone-in pieces",
+      "kcalPer100g": 227,
+      "proteinPer100g": 18,
+      "carbsPer100g": 0,
+      "fatPer100g": 17.3,
       "gramsPerUnit": {
         "lb": 453.59237
       },
-      "reviewStatus": "pending",
-      "reviewNotes": "Audited all occurrences in 110 recipe drafts: only 'lb' is used. Exact conversion is 453.59237 g per pound of the weighed product. HOLD nutrition approval until USDA entry matches raw/cooked, skin, fat trimming, and bone status. Bone-in chicken thighs require an edible-yield adjustment; 1 lb bone-in purchase weight is NOT 453.59237 g edible meat. Beef cut and fat trim can materially alter macros."
+      "reviewStatus": "needs-review",
+      "reviewNotes": "USDA beef cut report supplies boneless raw lean-and-fat composition; 1 lb measured bone-in ribs includes inedible bone. Meat yield and actual cut (chuck/plate) unresolved; NOT approved for recipe calculations.",
+      "sourceUrl": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Meat/Retail_Beef_Cuts03.pdf",
+      "portionSource": "1 lb purchased = 453.59237 g including bone; grams edible = purchased grams × measured edible yield fraction (currently unknown)."
     },
     "Bell pepper": {
       "source": "USDA FoodData Central SR Legacy",
@@ -522,19 +524,21 @@
       "reviewNotes": "French roll is bread-type proxy, bolillo usually 55-85g; 70g per roll estimate. This is a standard-ingredient estimate and not an exact commercial brand or cooked recipe macro."
     },
     "Bone-in chicken thighs": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
+      "source": "USDA FoodData Central Foundation Foods",
+      "foodId": "2727567",
+      "description": "Chicken, thigh, meat and skin, raw",
+      "state": "Raw edible thigh meat and skin, excluding bones and cartilage",
+      "kcalPer100g": 188,
+      "proteinPer100g": 17.1,
+      "carbsPer100g": 0,
+      "fatPer100g": 13.4,
       "gramsPerUnit": {
         "lb": 453.59237
       },
-      "reviewStatus": "pending",
-      "reviewNotes": "Audited all occurrences in 110 recipe drafts: only 'lb' is used. Exact conversion is 453.59237 g per pound of the weighed product. HOLD nutrition approval until USDA entry matches raw/cooked, skin, fat trimming, and bone status. Bone-in chicken thighs require an edible-yield adjustment; 1 lb bone-in purchase weight is NOT 453.59237 g edible meat. Beef cut and fat trim can materially alter macros."
+      "reviewStatus": "needs-review",
+      "reviewNotes": "USDA sampled edible meat and skin values; an exact purchased bone-in thigh mass includes bone. Edible-yield factor needed; not approved.",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/2727567/nutrients",
+      "portionSource": "1 lb purchased = 453.59237 g including bone; grams edible = purchased grams × measured edible yield fraction (currently unknown)."
     },
     "Boneless chicken breast": {
       "source": "USDA FoodData Central Foundation",
