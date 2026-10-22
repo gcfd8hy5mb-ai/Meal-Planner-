@@ -6,6 +6,7 @@ on:
       - 'ops/recipe-expansion/batch-01-recipe-drafts.json'
       - 'ops/recipe-expansion/audit-approved-ingredient-inputs.mjs'
       - 'ops/recipe-expansion/validate-premerge-nutrition.mjs'
+      - 'ops/recipe-expansion/test-nutrition-release-gate.mjs'
       - 'ops/recipe-expansion/calculate-verified-nutrition.mjs'
       - 'ops/recipe-expansion/nutrition-required-conversions.json'
       - '.github/workflows/tablewise-approved-ingredient-nutrition.yml'
@@ -22,6 +23,8 @@ jobs:
           node-version: '22'
       - name: Audit approved USDA nutrition inputs and hold incomplete meals
         run: node ops/recipe-expansion/audit-approved-ingredient-inputs.mjs
+      - name: Confirm flagged nutrition stays excluded from recipe totals
+        run: node ops/recipe-expansion/test-nutrition-release-gate.mjs
       - name: Run nutrition release gate (must block incomplete meals)
         run: node ops/recipe-expansion/validate-premerge-nutrition.mjs
       - name: Upload evidence and readiness audit
