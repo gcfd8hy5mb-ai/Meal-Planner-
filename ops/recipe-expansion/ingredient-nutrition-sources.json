@@ -2246,16 +2246,21 @@
       "reviewStatus": "pending"
     },
     "Ground turkey": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "172850",
+      "description": "Turkey ground 93 percent lean 7 percent fat raw",
+      "state": "Raw turkey assumed 93 percent lean",
+      "kcalPer100g": 150,
+      "proteinPer100g": 18.73,
+      "carbsPer100g": 0,
+      "fatPer100g": 8.34,
+      "gramsPerUnit": {
+        "lb": 453.592
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/172850/nutrients",
+      "portionSource": "One pound is 453.592 grams",
+      "reviewNotes": "93 percent lean assumption; actual product fat ratio may vary."
     },
     "Gruyere cheese": {
       "source": "",
@@ -2584,16 +2589,21 @@
       "reviewStatus": "pending"
     },
     "Lean ground turkey": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "172850",
+      "description": "Turkey ground 93 percent lean 7 percent fat raw",
+      "state": "Raw turkey assumed 93 percent lean",
+      "kcalPer100g": 150,
+      "proteinPer100g": 18.73,
+      "carbsPer100g": 0,
+      "fatPer100g": 8.34,
+      "gramsPerUnit": {
+        "lb": 453.592
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/172850/nutrients",
+      "portionSource": "One pound is 453.592 grams",
+      "reviewNotes": "93 percent lean assumption; actual product fat ratio may vary."
     },
     "Lemon": {
       "source": "USDA FoodData Central SR Legacy",
