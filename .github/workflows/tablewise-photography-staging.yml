@@ -1,0 +1,28 @@
+name: Tablewise photography staging
+on:
+  pull_request:
+    paths:
+      - 'assets/recipe-expansion/**'
+      - 'ops/recipe-expansion/recipe-photo-production-manifest.json'
+      - 'ops/recipe-expansion/photography-visual-reviews.json'
+      - 'ops/recipe-expansion/validate-photography-staging.mjs'
+      - '.github/workflows/tablewise-photography-staging.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  photography:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate real photo files, review hashes, mapping and protected baseline
+        run: node ops/recipe-expansion/validate-photography-staging.mjs
+      - name: Preserve all 166 original recipe photos and unpublished drafts
+        run: node --test tests/recipe-images.test.mjs tests/recipe-lookup.test.mjs tests/luxury-recipe-expansion-drafts.test.mjs tests/luxury-recipe-photo-pairing.test.mjs tests/luxury-recipe-image-quality.test.mjs
+      - name: Preserve eight estimated macros and closed nutrition release gate
+        run: node ops/recipe-expansion/test-nutrition-release-gate.mjs

@@ -1,0 +1,282 @@
+{
+  "baselineCommit": "5600fde2df3f0d556be3365a38973f940a820195",
+  "scope": "Photography staging only; recipes and nutrition evidence unchanged; no production release",
+  "reviewer": "Codex visual inspection against complete recipe ingredients and cooking instructions",
+  "photos": {
+    "exp01-001": {
+      "verdict": "accepted",
+      "sha256": "132a8e15b5d93e94add5d7b3595d4e118226a8f540b6184f0a079bc813470b80",
+      "recipeSha256": "d2bba74ec356e6455ee52e5b43bc3811fcf4171ce7e7b91a112ec0169bad45b9",
+      "notes": "Three crisp red chile-stained corn tacos with shredded beef, melted Oaxaca cheese, onion, cilantro, lime and separate red consommé.",
+      "generationTool": "built-in image_gen",
+      "reviewedOn": "2026-10-22",
+      "width": 960,
+      "height": 960,
+      "bytes": 131446
+    },
+    "exp01-002": {
+      "verdict": "accepted",
+      "sha256": "030d23780af64fa32e06fc961e5e193d150b4897f18d7ec6055ed049cfbb07a1",
+      "recipeSha256": "80b537e8374547d8068649eadcb56cd7a99df1740def1833f92b5eb9b8adbe20",
+      "notes": "Grilled chopped flank steak in corn tortillas with diced white onion, cilantro and lime; no cheese or unlisted toppings.",
+      "generationTool": "built-in image_gen",
+      "reviewedOn": "2026-10-22",
+      "width": 960,
+      "height": 960,
+      "bytes": 139140
+    },
+    "exp01-003": {
+      "verdict": "accepted",
+      "sha256": "ed32d613909e5be2a71ddef2204b6da9e20b12870dc0f640bf049218c6bffe8e",
+      "recipeSha256": "3767bdea277e8637c39ce7ee7ede62ae028cf2fff9f98b9e1d6c321a7929304b",
+      "notes": "Crisped shredded pork in corn tortillas with cilantro and lime. Corrected image removes raw onion; recipe cooks its onion.",
+      "generationTool": "built-in image_gen",
+      "reviewedOn": "2026-10-22",
+      "width": 960,
+      "height": 960,
+      "bytes": 149902
+    },
+    "exp01-004": {
+      "verdict": "accepted",
+      "sha256": "ccc9ac72bbffd3b3ec2eaf35de331dae57c69d2be8013629ec2a07675fe8bc4c",
+      "recipeSha256": "27881ceb8f12092d12906215c21bbf97618ad042d4ac6c79753e0d92702a3a88",
+      "notes": "Two flat crisp corn tostadas layered with refried beans, chicken strips, lettuce, tomato, Monterey Jack and sour cream; lime alongside.",
+      "generationTool": "built-in image_gen",
+      "reviewedOn": "2026-10-22",
+      "width": 960,
+      "height": 960,
+      "bytes": 129694
+    },
+    "exp01-005": {
+      "verdict": "accepted",
+      "sha256": "18c5f49051a3def6343de04e68ecdf6db6d4a9869e996933ac739943bb15bec0",
+      "recipeSha256": "ac83a1fd5f6f16cc7304ff669ab733790de90442d120013cceca5539186350df",
+      "notes": "Shredded chipotle-braised beef over rice with black beans, chopped romaine and lime; no cheese or invented sides.",
+      "generationTool": "built-in image_gen",
+      "reviewedOn": "2026-10-22",
+      "width": 960,
+      "height": 960,
+      "bytes": 143224
+    },
+    "exp01-006": {
+      "verdict": "accepted",
+      "sha256": "653457d92cf25272749fb908180b68afdad898dba4f01e30266965c7240af73b",
+      "recipeSha256": "bd97cb1c119c994da09d2314756231df1c0252d70b502e6377a68881e5da1997",
+      "notes": "Elbow macaroni in cheddar sauce with roasted poblano pieces and browned breadcrumb topping; no meat or invented herbs.",
+      "generationTool": "built-in image_gen",
+      "reviewedOn": "2026-10-22",
+      "width": 960,
+      "height": 960,
+      "bytes": 142114
+    },
+    "exp01-007": {
+      "verdict": "accepted",
+      "sha256": "9dc6ca7f909c357769ddd07084f27ca677d47709b6714c26e9031c01afc89bc1",
+      "recipeSha256": "f116c730def86524f6792ed9dd0fb36aa62c29c58604e3081cad6b4a1c47cf7f",
+      "notes": "Ground beef with cooked onion, bell pepper, black beans, tomatoes, corn and melted cheddar served in the permitted corn tortillas.",
+      "generationTool": "built-in image_gen",
+      "reviewedOn": "2026-10-22",
+      "width": 960,
+      "height": 960,
+      "bytes": 150134
+    },
+    "exp01-008": {
+      "verdict": "accepted",
+      "sha256": "23d37178ac9b83ca420e3c06f6177b457250e97211ccc37b2e9dd5781418fdf8",
+      "recipeSha256": "a5f54ce7724700515a0388e34a0d19731fd10e583aca7edac3b5a016400ba911",
+      "notes": "Shredded chicken tinga in red tomato-chipotle sauce with softened sliced onion, corn tortillas and cilantro; no cheese.",
+      "generationTool": "built-in image_gen",
+      "reviewedOn": "2026-10-22",
+      "width": 960,
+      "height": 960,
+      "bytes": 153098
+    },
+    "exp01-009": {
+      "verdict": "accepted",
+      "sha256": "4d97f2f348313e2d3de894985533f29a7ae50007d14d2e4a0b79a7de788357a9",
+      "recipeSha256": "0a32697ef41f8e25cfd1148c2f51e0d99032aa84cedfb9cd2fc17cd9f81bb36b",
+      "notes": "Golden flour quesadilla wedges reveal steak strips, cooked bell peppers and onion with melted Monterey Jack; no extra garnish.",
+      "generationTool": "built-in image_gen",
+      "reviewedOn": "2026-10-22",
+      "width": 960,
+      "height": 960,
+      "bytes": 137448
+    },
+    "exp01-010": {
+      "verdict": "accepted",
+      "sha256": "622d4c1330a4e5c8a593ddcf7ccc72287c2937358d25bd653d63beaf0623c3d5",
+      "recipeSha256": "9e91fd305cc24bdba3d0a556d16f54cbf9e00585a82cde5f7f13688d23fad7e9",
+      "notes": "Cooked peeled shrimp and seared bell pepper/red onion over long-grain rice with salsa, cilantro and lime.",
+      "generationTool": "built-in image_gen",
+      "reviewedOn": "2026-10-22",
+      "width": 960,
+      "height": 960,
+      "bytes": 143766
+    },
+    "exp01-011": {
+      "verdict": "accepted",
+      "sha256": "3aac25e16e81375156057dd77831dcd2bae44ae5f0b22184aefa42254dcbdc87",
+      "recipeSha256": "e27c574ad089c6ca01ccff31ee4b043d6a19cc7313a13b4177f0894b95875057",
+      "notes": "Flour burrito with beef, rice, beans and onion visible at open end, smothered in enchilada sauce and cheddar with sour cream.",
+      "generationTool": "built-in image_gen",
+      "reviewedOn": "2026-10-22",
+      "width": 960,
+      "height": 960,
+      "bytes": 136292
+    },
+    "exp01-012": {
+      "verdict": "accepted",
+      "sha256": "8a01f72b0388d743214a348140fdeed2cbaf91151046cdd917d5bda94e6f87cd",
+      "recipeSha256": "e48af06ef7d93d163cfd7532b038698927202c4b11911afe11516f4ff9096318",
+      "notes": "Golden baked closed flour-tortilla chicken chimichanga with Monterey Jack, salsa/green chiles, sour cream and lettuce; no extra garnish.",
+      "generationTool": "built-in image_gen",
+      "reviewedOn": "2026-10-22",
+      "width": 960,
+      "height": 960,
+      "bytes": 149726
+    },
+    "exp01-013": {
+      "verdict": "accepted",
+      "sha256": "efffa6722ac70110544ead94171baa0e19daac0088931b03559cad21401a328f",
+      "recipeSha256": "f6a7a45b1f6a52409d98ce8346e82fb98ae9f02be2108681833b7757c7daff89",
+      "notes": "Four baked upright bell peppers filled with ground beef, rice, black beans, tomato and cooked onion under melted cheddar.",
+      "generationTool": "built-in image_gen",
+      "reviewedOn": "2026-10-22",
+      "width": 960,
+      "height": 960,
+      "bytes": 130958
+    },
+    "exp01-014": {
+      "verdict": "accepted",
+      "sha256": "85795e3826e13e67dc579b3ba9d170a67fd7e72b5ddfbb2e37724bde050bcfea",
+      "recipeSha256": "2e9730e0c4fbec7ec833f846da25aac388307e894aa27fe4c2db07a1a5800de1",
+      "notes": "Elbow macaroni and ground beef with cooked onion in tomato-cheddar sauce; sour cream incorporated, no unrelated toppings.",
+      "generationTool": "built-in image_gen",
+      "reviewedOn": "2026-10-22",
+      "width": 960,
+      "height": 960,
+      "bytes": 140858
+    },
+    "exp01-015": {
+      "verdict": "accepted",
+      "sha256": "c0351f76ee24e2cf0c57940a9f339714873fa726047922bd50d7f2604d9bd10d",
+      "recipeSha256": "483188b7f7e6e77d01929e19b233d5f7e0687a343c0ec9e419c294bae11f9d9d",
+      "notes": "Tender pork chunks in green roasted tomatillo-poblano sauce. Removed fresh cilantro garnish because it is blended into sauce.",
+      "generationTool": "built-in image_gen",
+      "reviewedOn": "2026-10-22",
+      "width": 960,
+      "height": 960,
+      "bytes": 135664
+    },
+    "exp01-016": {
+      "verdict": "accepted",
+      "sha256": "97a257b5a87041d84f4f8badf098c625216f2f671600ce503c7f374afd72bc01",
+      "recipeSha256": "7a51a0c2af633abd6d46164fcb5101586e6eedd4f010a88bb5c0e7fd81ab8821",
+      "notes": "Pork cubes and hominy in cooked onion and green salsa sauce; no garnish, consistent with skillet instructions.",
+      "generationTool": "built-in image_gen",
+      "reviewedOn": "2026-10-22",
+      "width": 960,
+      "height": 960,
+      "bytes": 129880
+    },
+    "exp01-017": {
+      "verdict": "accepted",
+      "sha256": "4175b2eea3ca4a0b6347c5768553b93bb1fc35218bfcbdb8f4924349934d1b57",
+      "recipeSha256": "d67a6f09cfc242b7a9c50279aa18a0b9a6b39de654283873f8cfc7f16aa94587",
+      "notes": "Shredded chicken and hominy in green tomatillo-poblano broth with reserved raw onion, shredded cabbage, cilantro and lime.",
+      "generationTool": "built-in image_gen",
+      "reviewedOn": "2026-10-22",
+      "width": 960,
+      "height": 960,
+      "bytes": 145348
+    },
+    "exp01-018": {
+      "verdict": "accepted",
+      "sha256": "1dbd1dd2dfbdf3b1ebb5ca2e574194f274195d3614c564f39d8637315e0de673",
+      "recipeSha256": "5c9f6995b53361700ad36f4b3621da3a23b19718c38e1ade345d8884313d3d66",
+      "notes": "Pork chunks and hominy in red guajillo-ancho broth with shredded cabbage, radish slices, reserved onion and lime.",
+      "generationTool": "built-in image_gen",
+      "reviewedOn": "2026-10-22",
+      "width": 960,
+      "height": 960,
+      "bytes": 131770
+    },
+    "exp01-019": {
+      "verdict": "accepted",
+      "sha256": "c9c39d42335c5dea376f7070d1d04909c01c21077137b4d77360af17dd9c4411",
+      "recipeSha256": "2616b3c94eb748b95f3e1f08526746b3f2f10d5e9018a9191c3b14329dd44143",
+      "notes": "Sliced seasoned chicken, charred corn and white rice with creamy lime dressing, crumbled Cotija, cilantro and lime wedge.",
+      "generationTool": "built-in image_gen",
+      "reviewedOn": "2026-10-22",
+      "width": 960,
+      "height": 960,
+      "bytes": 138280
+    },
+    "exp01-020": {
+      "verdict": "accepted",
+      "sha256": "95a45ff5c1da54069d796b5f63ad1f4926f894426ed8a7a9e744d0140bcf6b8d",
+      "recipeSha256": "57a8202eb73eedaadff883ca7eb44dc6fa0893fb7aebda7d2c46579832b7e30a",
+      "notes": "Cooked shrimp, avocado, cucumber, red onion and cilantro in clear citrus dressing in glass cups. Removed orange fruit segments; recipe juices orange.",
+      "generationTool": "built-in image_gen",
+      "reviewedOn": "2026-10-22",
+      "width": 960,
+      "height": 960,
+      "bytes": 129470
+    },
+    "exp01-021": {
+      "verdict": "accepted",
+      "sha256": "100d337f6e89a3b8547348edeabfee3b50880eb099c4371c34238c1a510d8c2b",
+      "recipeSha256": "ff50e8ae6b886a476c435d0ce0ad8212b5cefe9e38e650a153e9e1c4b08782de",
+      "notes": "Sliced flank steak over tortilla chips with black beans, cheddar, tomato, jalapeños, sour cream, avocado and lime.",
+      "generationTool": "built-in image_gen",
+      "reviewedOn": "2026-10-22",
+      "width": 960,
+      "height": 960,
+      "bytes": 152554
+    },
+    "exp01-022": {
+      "verdict": "accepted",
+      "sha256": "8e21e65d50ab8d69ee73c6f92de8f8101b2df7af00aed29bf93140a0de00e97b",
+      "recipeSha256": "48742ac395f02d760704bb92fad5cbbe9b3d3f06765899f5a858177cc504b3fa",
+      "notes": "Pulled pork and barbecue sauce over tortilla chips with black beans, Monterey Jack, red onion, pickled jalapeños, sour cream, cilantro and lime.",
+      "generationTool": "built-in image_gen",
+      "reviewedOn": "2026-10-22",
+      "width": 960,
+      "height": 960,
+      "bytes": 148614
+    },
+    "exp01-023": {
+      "verdict": "accepted",
+      "sha256": "99b7211bed90b380292d7dd3c022816fe0f27867681f49e81ed8c9dc8928b629",
+      "recipeSha256": "9c28640154e6b8c2f7ac3708a9bc3a5edee6e0bf4eb229eb232f074d64002238",
+      "notes": "Three crisp corn taquitos with ground beef, potato and cheddar filling visible at ends; red salsa in a side bowl.",
+      "generationTool": "built-in image_gen",
+      "reviewedOn": "2026-10-22",
+      "width": 960,
+      "height": 960,
+      "bytes": 142348
+    },
+    "exp01-024": {
+      "verdict": "accepted",
+      "sha256": "ce5b260368e16facd218b8bf57617253e2f01abaf9f37d28971af62c2f65e48d",
+      "recipeSha256": "3f614e8270da4f39a021086b0061891c774a5942927dff569f12c1b044365d01",
+      "notes": "Three golden flour flautas with shredded chicken/Monterey Jack filling visible, topped with lettuce, tomato and sour cream.",
+      "generationTool": "built-in image_gen",
+      "reviewedOn": "2026-10-22",
+      "width": 960,
+      "height": 960,
+      "bytes": 144082
+    },
+    "exp01-025": {
+      "verdict": "accepted",
+      "sha256": "20f8c786b012362108a48b20c76b6f749868fd69552416f5c23ee9091258abe1",
+      "recipeSha256": "c1a4b7becda6090467d193fb70dd476e65e81c121b79cfe00893dab364d695c4",
+      "notes": "Ground beef picadillo with potato cubes, carrot, cooked onion, tomato sauce and peas; no invented toppings.",
+      "generationTool": "built-in image_gen",
+      "reviewedOn": "2026-10-22",
+      "width": 960,
+      "height": 960,
+      "bytes": 149290
+    }
+  }
+}
