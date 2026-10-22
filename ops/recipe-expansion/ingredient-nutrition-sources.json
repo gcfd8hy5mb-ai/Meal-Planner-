@@ -2990,28 +2990,38 @@
       "reviewStatus": "pending"
     },
     "Mozzarella": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170845",
+      "description": "Cheese, mozzarella, whole milk",
+      "state": "Whole-milk mozzarella, shredded for measured cup",
+      "kcalPer100g": 300,
+      "proteinPer100g": 22.17,
+      "carbsPer100g": 2.19,
+      "fatPer100g": 22.35,
+      "gramsPerUnit": {
+        "cup": 112
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170845/nutrients",
+      "portionSource": "Estimated 112g per loosely filled cup shredded mozzarella (4oz); brand and shred size vary",
+      "reviewNotes": "Two recipes use this ingredient name; each measures 1–2 cups. Assumes shredded whole-milk mozzarella, not fresh water-packed or part-skim. USDA generic whole-milk mozzarella profile; cup weight estimated."
     },
     "Mozzarella cheese": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170845",
+      "description": "Cheese, mozzarella, whole milk",
+      "state": "Whole-milk mozzarella, shredded for measured cup",
+      "kcalPer100g": 300,
+      "proteinPer100g": 22.17,
+      "carbsPer100g": 2.19,
+      "fatPer100g": 22.35,
+      "gramsPerUnit": {
+        "cup": 112
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170845/nutrients",
+      "portionSource": "Estimated 112g per loosely filled cup shredded mozzarella (4oz); brand and shred size vary",
+      "reviewNotes": "Two recipes use this ingredient name; each measures 1–2 cups. Assumes shredded whole-milk mozzarella, not fresh water-packed or part-skim. USDA generic whole-milk mozzarella profile; cup weight estimated."
     },
     "Okra": {
       "source": "USDA FoodData Central SR Legacy",
@@ -3952,16 +3962,21 @@
       "reviewNotes": "Eight recipes use 1–2 cups shredded cheese. USDA SR Legacy generic Monterey Jack reference used; actual pre-shredded products may include anti-caking starch and differ. Portion mass is a practical estimate; not a lab-measured cup."
     },
     "Shredded mozzarella": {
-      "source": "",
-      "foodId": "",
-      "description": "",
-      "state": "",
-      "kcalPer100g": null,
-      "proteinPer100g": null,
-      "carbsPer100g": null,
-      "fatPer100g": null,
-      "gramsPerUnit": {},
-      "reviewStatus": "pending"
+      "source": "USDA FoodData Central SR Legacy",
+      "foodId": "170845",
+      "description": "Cheese, mozzarella, whole milk",
+      "state": "Whole-milk mozzarella, shredded for measured cup",
+      "kcalPer100g": 300,
+      "proteinPer100g": 22.17,
+      "carbsPer100g": 2.19,
+      "fatPer100g": 22.35,
+      "gramsPerUnit": {
+        "cup": 112
+      },
+      "reviewStatus": "approved",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170845/nutrients",
+      "portionSource": "Estimated 112g per loosely filled cup shredded mozzarella (4oz); brand and shred size vary",
+      "reviewNotes": "Two recipes use this ingredient name; each measures 1–2 cups. Assumes shredded whole-milk mozzarella, not fresh water-packed or part-skim. USDA generic whole-milk mozzarella profile; cup weight estimated."
     },
     "Shredded Oaxaca cheese": {
       "source": "",
