@@ -1,0 +1,25 @@
+name: Tablewise isolated release smoke tests
+on:
+  pull_request:
+    paths:
+      - 'luxury-v2/**'
+      - 'tests/luxury-kroger-*.test.mjs'
+      - 'tests/luxury-grocery-collapse-persistence.test.mjs'
+      - '.github/workflows/tablewise-isolated-release.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate standalone module syntax
+        run: |
+          node --input-type=module --check < luxury-v2/live.js
+          node --input-type=module --check < luxury-v2/catalog.js
+      - name: Validate Kroger, cart and store navigation regression
+        run: node --test tests/luxury-kroger-connect.test.mjs tests/luxury-kroger-cart-validation.test.mjs tests/luxury-kroger-connection-session.test.mjs tests/luxury-grocery-collapse-persistence.test.mjs luxury-v2/quick-meal-filters.test.mjs
