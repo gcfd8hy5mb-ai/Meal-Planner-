@@ -1,0 +1,72 @@
+name: Tablewise redesign Cloudflare Pages preview
+on:
+  workflow_dispatch:
+    inputs:
+      approval:
+        description: 'Type DEPLOY-PREVIEW to publish ONLY the separate Cloudflare Pages redesign preview'
+        required: true
+        type: string
+permissions:
+  contents: read
+concurrency:
+  group: tablewise-luxury-cloudflare-preview
+  cancel-in-progress: false
+jobs:
+  deploy-preview:
+    if: ${{ github.ref_name == 'main' && inputs.approval == 'DEPLOY-PREVIEW' }}
+    runs-on: ubuntu-latest
+    environment: tablewise-preview-deploy
+    timeout-minutes: 25
+    steps:
+      - name: Checkout isolated Tablewise redesign release
+        uses: actions/checkout@v4
+        with:
+          ref: release/tablewise-v2-minimal-20261022
+          persist-credentials: false
+      - name: Verify isolated source and Cloudflare deployment scope
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f luxury-v2/index.html
+          test -f luxury-v2/live.js
+          test -d assets/meal-photos
+          node --check luxury-v2/live.js
+          grep -q 'const LUXURY_SAVES_RELEASED=true;' luxury-v2/live.js
+          echo "Redesign commit: $(git rev-parse HEAD)"
+          echo 'Destination project: tablewise-luxury-preview (not GitHub Pages or Kroger Worker)'
+      - name: Assemble allowlisted static preview
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p .tablewise-preview
+          cp -a luxury-v2 assets .tablewise-preview/
+          cat > .tablewise-preview/index.html <<'HTML'
+          <!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="refresh" content="0;url=/luxury-v2/index.html"><title>Tablewise preview</title><a href="/luxury-v2/index.html">Open Tablewise redesign preview</a></html>
+          HTML
+          test ! -e .tablewise-preview/firestore.rules
+          test ! -e .tablewise-preview/wrangler.jsonc
+          test ! -e .tablewise-preview/.github
+      - name: Validate Cloudflare Pages target exists
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -n "$CLOUDFLARE_API_TOKEN" || { echo "::error::Missing CLOUDFLARE_API_TOKEN"; exit 1; }
+          test -n "$CLOUDFLARE_ACCOUNT_ID" || { echo "::error::Missing CLOUDFLARE_ACCOUNT_ID"; exit 1; }
+          curl -fsS -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+            "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/pages/projects/tablewise-luxury-preview" > /tmp/tablewise-project.json
+          node -e "const p=require('/tmp/tablewise-project.json');if(!p.success||p.result?.name!=='tablewise-luxury-preview')process.exit(1)"
+      - name: Publish isolated Cloudflare Pages preview (never the Worker)
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx --yes wrangler@4.45.0 pages deploy .tablewise-preview --project-name tablewise-luxury-preview --branch main
+      - name: Verify public preview entry
+        run: |
+          set -euo pipefail
+          curl -fsSL --retry 5 --retry-delay 3 https://tablewise-luxury-preview.pages.dev/luxury-v2/index.html -o /tmp/tablewise-preview.html
+          grep -q 'id="luxuryPantryShortcut"' /tmp/tablewise-preview.html
+          if grep -q 'id="pantryDiscoverToggle"' /tmp/tablewise-preview.html; then echo "::error::Duplicate pantry button still published"; exit 1; fi
+          echo 'Preview entry verified. Live GitHub Pages was not deployed.'
