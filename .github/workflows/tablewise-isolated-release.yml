@@ -17,6 +17,9 @@ on:
       - 'tests/luxury-v2-recovery-diagnostic.test.mjs'
       - 'tests/luxury-v2-cold-start.cjs'
       - 'tests/luxury-v2-recovery-ui.cjs'
+      - 'tests/luxury-v2-meal-preview.test.mjs'
+      - 'tests/luxury-v2-checklist.test.mjs'
+      - 'tests/luxury-v2-groceries.test.mjs'
       - '.github/workflows/tablewise-isolated-release.yml'
   workflow_dispatch:
 permissions:
@@ -39,6 +42,8 @@ jobs:
         run: node --test tests/tablewise-expansion-photo-source.test.mjs tests/tablewise-expansion-recipe-pairing.test.mjs
       - name: Verify old-plan restoration, account recovery and safe save migration
         run: node --test tests/luxury-v2-legacy-save.test.mjs tests/luxury-v2-recovery-diagnostic.test.mjs
+      - name: Validate two-week meal edits and grocery checklist persistence
+        run: node --test tests/luxury-v2-meal-preview.test.mjs tests/luxury-v2-checklist.test.mjs tests/luxury-v2-groceries.test.mjs
       - name: Guard iPhone cold start and unsaved-edits recovery UI
         run: node tests/luxury-v2-cold-start.cjs && node tests/luxury-v2-recovery-ui.cjs
       - name: Protect existing users against premature cloud writes
