@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+const src=readFileSync(new URL('../luxury-v2/live.js',import.meta.url),'utf8');
+assert.match(src,/classifyLuxuryRecovery\(pending,fresh\.data\(\),uid\)\.status!=='already-saved'/);
+assert.match(src,/const fresh=await getDocFromServer\(doc\(db,'users',uid\)\)/);
+assert.match(src,/if\(epoch!==authEpoch\|\|auth\.currentUser\?\.uid!==uid\)return/);
+assert.match(src,/localStorage\.removeItem\('tablewise-luxury-pending-'\+uid\)/);
+assert.match(src,/Cloud plan differs from this device draft\. Backup kept/);
+assert.match(src,/recoveryVerifyButton\.hidden=classifyLuxuryRecovery\(pending,account,accountUid\)\.status!=='already-saved'/);
+console.log('PASS: old device draft cleanup requires a fresh verified cloud match');
