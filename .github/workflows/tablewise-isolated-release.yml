@@ -20,6 +20,7 @@ on:
       - 'tests/luxury-v2-meal-preview.test.mjs'
       - 'tests/luxury-v2-checklist.test.mjs'
       - 'tests/luxury-v2-groceries.test.mjs'
+      - 'tests/luxury-cook-macros.test.mjs'
       - '.github/workflows/tablewise-isolated-release.yml'
   workflow_dispatch:
 permissions:
@@ -44,6 +45,8 @@ jobs:
         run: node --test tests/luxury-v2-legacy-save.test.mjs tests/luxury-v2-recovery-diagnostic.test.mjs
       - name: Validate two-week meal edits and grocery checklist persistence
         run: node --test tests/luxury-v2-meal-preview.test.mjs tests/luxury-v2-checklist.test.mjs tests/luxury-v2-groceries.test.mjs
+      - name: Display calories and macros on every recipe open
+        run: node --test tests/luxury-cook-macros.test.mjs
       - name: Guard iPhone cold start and unsaved-edits recovery UI
         run: node tests/luxury-v2-cold-start.cjs && node tests/luxury-v2-recovery-ui.cjs
       - name: Protect existing users against premature cloud writes
