@@ -66,7 +66,7 @@ jobs:
       - name: Verify public preview entry
         run: |
           set -euo pipefail
-          curl -fsSL --retry 5 --retry-delay 3 https://tablewise-luxury-preview.pages.dev/luxury-v2/index.html -o /tmp/tablewise-preview.html
+          curl -fsSL --retry 5 --retry-delay 3 https://main.tablewise-luxury-preview.pages.dev/luxury-v2/index.html -o /tmp/tablewise-preview.html
           grep -q 'id="luxuryPantryShortcut"' /tmp/tablewise-preview.html
           if grep -q 'id="pantryDiscoverToggle"' /tmp/tablewise-preview.html; then echo "::error::Duplicate pantry button still published"; exit 1; fi
-          echo 'Preview entry verified. Live GitHub Pages was not deployed.'
+          echo 'Branch preview verified at https://main.tablewise-luxury-preview.pages.dev/luxury-v2/index.html. GitHub Pages was not deployed.'
