@@ -32,6 +32,8 @@ test('misleading weekly bulk fill removed, per-day selection and preview guard p
  assert.ok(!html.includes('luxuryFillWeek'));
  assert.ok(!script.includes('fillWeek'));
  assert.ok(script.includes('replacePreviewMeal(account,previewEdits,week,day,2,recipe.id)'));
- assert.ok(script.includes('const LUXURY_SAVES_RELEASED=false;'));
- assert.ok(script.includes('Changes are not saved to your account.'));
+ assert.ok(script.includes('const LUXURY_SAVES_RELEASED=true;'));
+ assert.ok(script.includes('commitLuxuryPreview({'));
+ assert.ok(script.includes('retainBackupUntilVerified:true'));
+ assert.ok(script.includes('Save meal changes'));
 });
