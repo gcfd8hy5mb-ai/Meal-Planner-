@@ -387,10 +387,11 @@ const renderWeek=(week)=>{
   const edit=document.createElement('button');edit.type='button';edit.className='change-meal';edit.textContent='Change';edit.setAttribute('aria-label','Preview another dinner for '+dayLabel.textContent);edit.onclick=()=>openMealPicker(liveWeek,day);card.append(edit);list.append(card)
  }
 };
-// Statically off until an approved disposable two-account hosted Firebase test,
-// real-device recovery checks, and explicit release review all pass.
-// CI/static checks alone never authorize enabling cloud writes.
-const LUXURY_SAVES_RELEASED=false;
+// Enabled only in the isolated v2 release candidate after successful disposable
+// two-account hosted Firebase test 39900597281. Production main is unchanged.
+// Saving still requires signed-in identity, local backup, transactional conflict
+// checks and server read-back verification. Do not merge before iPhone review.
+const LUXURY_SAVES_RELEASED=true;
 let luxurySaving=false;
 const saveLuxuryButton=document.querySelector('#saveLuxuryEdits');
 const refreshDiscard=()=>{const unsaved=hasPreviewEdits(previewEdits);document.querySelector('#discardLuxuryEdits').hidden=!unsaved;document.querySelector('#luxuryDraftActions').hidden=!unsaved;saveLuxuryButton.disabled=!LUXURY_SAVES_RELEASED||!unsaved||!accountUid||luxurySaving;saveLuxuryButton.textContent=LUXURY_SAVES_RELEASED?'Save meal changes':'Save changes (release testing pending)'};
