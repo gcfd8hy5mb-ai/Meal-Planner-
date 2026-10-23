@@ -449,7 +449,7 @@ document.querySelector('#exportRecoveredLuxury').onclick=()=>{
  try{const pending=readPendingLuxuryDraft(localStorage,accountUid);if(!pending||pending.unreadable){label('Previous draft cannot be read on this device. No cloud changes were made.');return}downloadLuxuryDraft(pending);label('Recovered draft prepared for download. Cloud data has not changed.')}
  catch{label('Device storage cannot be accessed. No cloud changes were made.')}
 };
-const refreshRecovered=()=>{
+let refreshRecovered=()=>{
  const area=document.querySelector('#luxuryRecoverActions');
  if(!accountUid){area.hidden=true;return}
  try{const backup=readPendingLuxuryDraft(localStorage,accountUid);area.hidden=!backup;
@@ -465,6 +465,40 @@ const refreshRecovered=()=>{
   document.querySelector('#luxuryRecoverStatus').textContent=copy[recovery.status]||'Review or export this device draft.';
  }}
  catch{area.hidden=false;document.querySelector('#luxuryRecoverStatus').textContent='Device storage is unavailable. Do not assume unsaved data is safe.'}
+};
+// A stale device backup can survive a successful Firestore commit. Never clear it
+// automatically: first require an explicit tap and a fresh server comparison.
+const recoveryVerifyButton=document.createElement('button');
+recoveryVerifyButton.type='button';
+recoveryVerifyButton.className='secondary full';
+recoveryVerifyButton.textContent='Verify cloud save and clear old warning';
+recoveryVerifyButton.hidden=true;
+document.querySelector('#luxuryRecoverActions').append(recoveryVerifyButton);
+const refreshRecoveredOriginal=refreshRecovered;
+refreshRecovered=()=>{refreshRecoveredOriginal();if(!accountUid){recoveryVerifyButton.hidden=true;return}
+ try{
+  const pending=readPendingLuxuryDraft(localStorage,accountUid);
+  recoveryVerifyButton.hidden=classifyLuxuryRecovery(pending,account,accountUid).status!=='already-saved';
+ }catch{recoveryVerifyButton.hidden=true}
+};
+recoveryVerifyButton.onclick=async()=>{
+ const uid=accountUid,epoch=authEpoch;
+ if(!uid||auth.currentUser?.uid!==uid)return;
+ recoveryVerifyButton.disabled=true;
+ try{
+  const fresh=await getDocFromServer(doc(db,'users',uid));
+  if(epoch!==authEpoch||auth.currentUser?.uid!==uid)return;
+  const pending=readPendingLuxuryDraft(localStorage,uid);
+  if(!fresh.exists()||classifyLuxuryRecovery(pending,fresh.data(),uid).status!=='already-saved'){
+   label('Cloud plan differs from this device draft. Backup kept; no changes were made.');
+   return;
+  }
+  localStorage.removeItem('tablewise-luxury-pending-'+uid);
+  account=fresh.data();
+  refreshRecovered();
+  label('Your meal plan is verified in Firebase. Old device warning cleared.');
+ }catch(error){label('Could not verify the saved plan. Your backup was kept. '+(error?.message||''))}
+ finally{recoveryVerifyButton.disabled=false}
 };
 document.querySelector('#discardLuxuryEdits').onclick=()=>{previewEdits={};refreshDiscard();document.querySelector('#luxuryMealPicker').hidden=true;renderWeek(liveWeek);setHero();renderIngredients();label('Preview discarded. Your saved meals are unchanged.')};
 const openMealPicker=(week,day,{initialQuick=false}={})=>{
