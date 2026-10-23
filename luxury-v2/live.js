@@ -21,7 +21,7 @@ import {readPendingLuxuryDraft,commitLuxuryPreview,classifyLuxuryRecovery,verify
 
 // Read-only pantry suggestions. A licensed large-catalog endpoint is not yet configured.
 const pantryPanel=document.querySelector('#pantryDiscoverPanel');
-const pantryToggle=document.querySelector('#pantryDiscoverToggle');
+const pantryToggle=document.querySelector('#luxuryPantryShortcut');
 pantryToggle.onclick=()=>{pantryPanel.hidden=!pantryPanel.hidden;pantryToggle.setAttribute('aria-expanded',String(!pantryPanel.hidden))};
 document.querySelector('#pantryFind').onclick=async()=>{
  const pantry=ingredientTokens(document.querySelector('#pantryIngredients').value);
@@ -524,11 +524,6 @@ const openMealPicker=(week,day,{initialQuick=false}={})=>{
  picker.scrollIntoView({block:'start',behavior:'instant'});
 };
 document.querySelector('#luxuryQuickMealsShortcut').onclick=()=>openMealPicker(liveWeek,0,{initialQuick:true});
-document.querySelector('#luxuryPantryShortcut').onclick=()=>{
- const panel=document.querySelector('#pantryDiscoverPanel'),toggle=document.querySelector('#pantryDiscoverToggle');
- if(panel.hidden)toggle.click();
- document.querySelector('.pantry-discovery').scrollIntoView({block:'start',behavior:'smooth'});
-};
 const renderCookMealMacros=()=>{const host=document.querySelector('#cookMealMacros');if(!host)return;host.replaceChildren();if(!currentRecipe){host.hidden=true;return}host.hidden=false;const fields=[['Calories',currentRecipe.cal,''],['Protein',currentRecipe.p,'g'],['Carbs',currentRecipe.c,'g'],['Fats',currentRecipe.f,'g']];for(const [name,value,unit] of fields){const cell=document.createElement('span'),number=document.createElement('strong'),label=document.createElement('small');number.textContent=value!=null&&Number.isFinite(Number(value))?Math.round(Number(value))+unit:'—';label.textContent=name;cell.append(number,label);host.append(cell)}host.setAttribute('aria-label','Estimated nutrition per serving for '+currentRecipe.name)};
 const showCookStep=()=>{renderCookMealMacros();const count=document.querySelector('#stepCount'),title=document.querySelector('#cookStepTitle'),body=document.querySelector('#cookStepBody');const items=currentRecipe?.steps||[];const n=items.length;count.textContent=n?'Step '+(step+1)+' of '+n:'No cooking steps available';title.textContent=currentRecipe?.name||'Select a meal';body.textContent=items[step]||'Open a saved recipe to view its cooking instructions.';document.querySelector('#previousStep').disabled=step===0;document.querySelector('#nextStep').disabled=!n;document.querySelector('#nextStep').textContent=step===n-1?'Done':'Next'};
 const openRecipe=(recipe)=>{currentRecipe=recipe;step=0;const img=document.querySelector('.cook-photo');const url=photo(recipe.id);if(url){img.src=url;img.alt=recipe.name;img.hidden=false}else img.hidden=true;showCookStep();showPage('cook')};
