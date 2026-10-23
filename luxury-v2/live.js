@@ -19,6 +19,7 @@ import {groceryKey,readSyncedChecklist,saveSyncedChecklist} from './checklist.mj
 import {replacePreviewMeal,previewAccount,hasPreviewEdits} from './meal-preview.mjs';
 import {readPendingLuxuryDraft,commitLuxuryPreview,classifyLuxuryRecovery,verifyLuxurySavedPlan} from './save-flow.mjs';
 import {compareRecoveredDinners} from './draft-comparison.mjs';
+import {compareRecoverySettings} from './recovery-settings-diagnostic.mjs';
 
 // Read-only pantry suggestions. A licensed large-catalog endpoint is not yet configured.
 const pantryPanel=document.querySelector('#pantryDiscoverPanel');
@@ -539,6 +540,10 @@ compareDraftButton.onclick=async()=>{
    item.textContent='Week '+difference.week+', '+weekday[difference.day]+': Firebase — '+mealName(difference.meal)+'; device draft — '+mealName(difference.deviceMeal);
    draftComparisonPanel.append(item);
   }
+  const settingsDifferences=compareRecoverySettings(snap.data(),backup);
+  const summary=document.createElement('p');
+  summary.textContent=settingsDifferences?.length?'Other differences found: '+settingsDifferences.join(', ')+'.':'All reviewed planning settings match the recovered draft.';
+  draftComparisonPanel.append(summary);
   const note=document.createElement('p');
   note.textContent='Read-only comparison. Your device backup and Firebase meals were not changed.';
   draftComparisonPanel.append(note);
