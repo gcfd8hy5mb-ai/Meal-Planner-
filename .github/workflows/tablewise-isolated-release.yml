@@ -7,6 +7,9 @@ on:
       - 'tests/luxury-grocery-collapse-persistence.test.mjs'
       - 'tests/tablewise-expansion-photo-source.test.mjs'
       - 'release/expansion-110-photo-inventory.json'
+      - 'release/expansion-110-recipe-drafts.json'
+      - 'assets/recipe-expansion/**'
+      - 'tests/tablewise-expansion-recipe-pairing.test.mjs'
       - '.github/workflows/tablewise-isolated-release.yml'
   workflow_dispatch:
 permissions:
@@ -26,6 +29,6 @@ jobs:
       - name: Validate Kroger, cart and store navigation regression
         run: node --test tests/luxury-kroger-connect.test.mjs tests/luxury-kroger-cart-validation.test.mjs tests/luxury-kroger-connection-session.test.mjs tests/luxury-grocery-collapse-persistence.test.mjs luxury-v2/quick-meal-filters.test.mjs
       - name: Check all 110 approved staged photo mappings
-        run: node --test tests/tablewise-expansion-photo-source.test.mjs
+        run: node --test tests/tablewise-expansion-photo-source.test.mjs tests/tablewise-expansion-recipe-pairing.test.mjs
       - name: Protect existing users against premature cloud writes
         run: node --test tests/luxury-v2-save-guard.test.mjs tests/luxury-v2-save-transaction.test.mjs tests/luxury-v2-save-flow.test.mjs && node tests/luxury-v2-cloud-write-gate.cjs
