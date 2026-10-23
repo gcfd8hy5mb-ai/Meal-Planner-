@@ -528,7 +528,8 @@ document.querySelector('#luxuryPantryShortcut').onclick=()=>{
  if(panel.hidden)toggle.click();
  document.querySelector('.pantry-discovery').scrollIntoView({block:'start',behavior:'smooth'});
 };
-const showCookStep=()=>{const count=document.querySelector('#stepCount'),title=document.querySelector('#cookStepTitle'),body=document.querySelector('#cookStepBody');const items=currentRecipe?.steps||[];const n=items.length;count.textContent=n?'Step '+(step+1)+' of '+n:'No cooking steps available';title.textContent=currentRecipe?.name||'Select a meal';body.textContent=items[step]||'Open a saved recipe to view its cooking instructions.';document.querySelector('#previousStep').disabled=step===0;document.querySelector('#nextStep').disabled=!n;document.querySelector('#nextStep').textContent=step===n-1?'Done':'Next'};
+const renderCookMealMacros=()=>{const host=document.querySelector('#cookMealMacros');if(!host)return;host.replaceChildren();if(!currentRecipe){host.hidden=true;return}host.hidden=false;const fields=[['Calories',currentRecipe.cal,''],['Protein',currentRecipe.p,'g'],['Carbs',currentRecipe.c,'g'],['Fats',currentRecipe.f,'g']];for(const [name,value,unit] of fields){const cell=document.createElement('span'),number=document.createElement('strong'),label=document.createElement('small');number.textContent=value!=null&&Number.isFinite(Number(value))?Math.round(Number(value))+unit:'—';label.textContent=name;cell.append(number,label);host.append(cell)}host.setAttribute('aria-label','Estimated nutrition per serving for '+currentRecipe.name)};
+const showCookStep=()=>{renderCookMealMacros();const count=document.querySelector('#stepCount'),title=document.querySelector('#cookStepTitle'),body=document.querySelector('#cookStepBody');const items=currentRecipe?.steps||[];const n=items.length;count.textContent=n?'Step '+(step+1)+' of '+n:'No cooking steps available';title.textContent=currentRecipe?.name||'Select a meal';body.textContent=items[step]||'Open a saved recipe to view its cooking instructions.';document.querySelector('#previousStep').disabled=step===0;document.querySelector('#nextStep').disabled=!n;document.querySelector('#nextStep').textContent=step===n-1?'Done':'Next'};
 const openRecipe=(recipe)=>{currentRecipe=recipe;step=0;const img=document.querySelector('.cook-photo');const url=photo(recipe.id);if(url){img.src=url;img.alt=recipe.name;img.hidden=false}else img.hidden=true;showCookStep();showPage('cook')};
 const groceryExpansion={week:null,categories:{}};
 const groceryExpandedKey=()=>accountUid?'tablewise:grocery-expanded:v1:'+accountUid:null;
@@ -626,7 +627,7 @@ document.querySelectorAll('[data-week]').forEach(b=>b.addEventListener('click',(
 const resetPrivateView=()=>{
  // Clear all previous account content synchronously, before any next-account fetch.
  ++krogerEpoch;++krogerActionEpoch;krogerActionPending=false;clearKrogerProducts();krogerDisplay('Sign in to Tablewise to connect your Kroger account.');
- account=null;accountUid=null;diagnosisPanel.hidden=true;diagnosisOutput.textContent='';currentRecipe=null;step=0;previewEdits={};liveWeek=1;groceryWeek='both';groceryOpenWeek=null;groceryExpansion.week=null;groceryExpansion.categories={};
+ account=null;accountUid=null;diagnosisPanel.hidden=true;diagnosisOutput.textContent='';currentRecipe=null;step=0;renderCookMealMacros();previewEdits={};liveWeek=1;groceryWeek='both';groceryOpenWeek=null;groceryExpansion.week=null;groceryExpansion.categories={};
  document.querySelector('#luxuryRecoverActions').hidden=true;
  refreshDiscard();
  const picker=document.querySelector('#luxuryMealPicker');picker.hidden=true;
