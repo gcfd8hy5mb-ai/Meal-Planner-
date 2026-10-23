@@ -20,6 +20,7 @@ import {replacePreviewMeal,previewAccount,hasPreviewEdits} from './meal-preview.
 import {readPendingLuxuryDraft,commitLuxuryPreview,classifyLuxuryRecovery,verifyLuxurySavedPlan} from './save-flow.mjs';
 import {compareRecoveredDinners} from './draft-comparison.mjs';
 import {compareRecoverySettings} from './recovery-settings-diagnostic.mjs';
+import {sideDishOnlyRecovery,archiveVerifiedSideDraft} from './side-dish-recovery.mjs';
 
 // Read-only pantry suggestions. A licensed large-catalog endpoint is not yet configured.
 const pantryPanel=document.querySelector('#pantryDiscoverPanel');
@@ -511,11 +512,19 @@ const draftComparisonPanel=document.createElement('section');
 draftComparisonPanel.hidden=true;
 draftComparisonPanel.setAttribute('aria-label','Cloud and device dinner comparison');
 document.querySelector('#luxuryRecoverActions').append(compareDraftButton,draftComparisonPanel);
+const resolveSideDishButton=document.createElement('button');
+resolveSideDishButton.type='button';
+resolveSideDishButton.className='secondary full';
+resolveSideDishButton.textContent='Keep Firebase side dishes and archive old warning';
+resolveSideDishButton.hidden=true;
+document.querySelector('#luxuryRecoverActions').append(resolveSideDishButton);
+
 const refreshRecoveredWithVerification=refreshRecovered;
 refreshRecovered=()=>{
  refreshRecoveredWithVerification();
  compareDraftButton.hidden=!accountUid||!readPendingLuxuryDraft(localStorage,accountUid);
  draftComparisonPanel.hidden=true;
+ resolveSideDishButton.hidden=true;
 };
 compareDraftButton.onclick=async()=>{
  const uid=accountUid,epoch=authEpoch;
@@ -544,11 +553,35 @@ compareDraftButton.onclick=async()=>{
   const summary=document.createElement('p');
   summary.textContent=settingsDifferences?.length?'Other differences found: '+settingsDifferences.join(', ')+'.':'All reviewed planning settings match the recovered draft.';
   draftComparisonPanel.append(summary);
+  resolveSideDishButton.hidden=!sideDishOnlyRecovery(snap.data(),backup);
+  if(!resolveSideDishButton.hidden){
+   const explanation=document.createElement('p');
+   explanation.textContent='Only Week 1 side dishes differ. The saved Firebase side dishes will be kept; an archive of the device draft will be retained. Nothing is changed unless you choose the archive option.';
+   draftComparisonPanel.append(explanation);
+  }
   const note=document.createElement('p');
   note.textContent='Read-only comparison. Your device backup and Firebase meals were not changed.';
   draftComparisonPanel.append(note);
  }catch(error){message.textContent='Unable to verify cloud meals. Backup retained. '+(error?.message||'')}
  finally{compareDraftButton.disabled=false}
+};
+resolveSideDishButton.onclick=async()=>{
+ const uid=accountUid,epoch=authEpoch;
+ if(!uid||auth.currentUser?.uid!==uid)return;
+ resolveSideDishButton.disabled=true;
+ try{
+  const fresh=await getDocFromServer(doc(db,'users',uid));
+  if(epoch!==authEpoch||auth.currentUser?.uid!==uid)return;
+  const pending=readPendingLuxuryDraft(localStorage,uid);
+  if(!fresh.exists()||!pending||!sideDishOnlyRecovery(fresh.data(),pending)){
+   label('The cloud or draft changed. No recovery records were cleared.');return;
+  }
+  archiveVerifiedSideDraft(localStorage,uid,pending);
+  account=fresh.data();
+  refreshRecovered();
+  label('Firebase meals and side dishes preserved. Device draft archived; old warning cleared.');
+ }catch(error){label('Recovery was not cleared. '+(error?.message||''))}
+ finally{resolveSideDishButton.disabled=false}
 };
 document.querySelector('#discardLuxuryEdits').onclick=()=>{previewEdits={};refreshDiscard();document.querySelector('#luxuryMealPicker').hidden=true;renderWeek(liveWeek);setHero();renderIngredients();label('Preview discarded. Your saved meals are unchanged.')};
 const openMealPicker=(week,day,{initialQuick=false}={})=>{
