@@ -10,7 +10,7 @@ assert.doesNotMatch(html,/<iframe|<link[^>]*stylesheet|<script[^>]+src="\.\.\/in
 assert.match(live,/onAuthStateChanged\(auth,async user=>\{const epoch=\+\+authEpoch;resetPrivateView\(\)/,'Private data must be cleared before each login restoration');
 assert.match(live,/const snapshot=await getDocFromServer/,'Restoration must check server, not present made-up meals');
 assert.match(html,/id="saveLuxuryEdits" disabled/,'Luxury saving must stay disabled before release');
-assert.match(live,/LUXURY_SAVES_RELEASED\s*=\s*false/,'Cloud writes must remain release gated');
+assert.match(live,/LUXURY_SAVES_RELEASED\s*=\s*true/,'Candidate enables saving after hosted verification; production main remains untouched');
 assert.match(html,/footer\{position:fixed;bottom:calc\(12px \+ env\(safe-area-inset-bottom\)\);left:50%;transform:translateX\(-50%\)/,'Luxury dock must float, not render as the old full-width bottom bar');
 assert.match(html,/footer button.active\{background:#dec797/,'Selected luxury tab must use its own gold active surface');
 assert.doesNotMatch(html,/footer\{position:fixed;bottom:0;left:0;right:0;background:#fffdf8/,'Reject old footer styling');
