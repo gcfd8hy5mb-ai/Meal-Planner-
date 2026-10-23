@@ -1,0 +1,21 @@
+name: Tablewise public recipe API smoke (development only)
+on:
+  push:
+    branches: [release/luxury-v2-clean-main-20261019]
+    paths:
+      - 'tests/luxury-recipe-provider-live-smoke.mjs'
+      - '.github/workflows/tablewise-recipe-provider-live-smoke.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  live-public-test-api:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify actual TheMealDB recipe fields using its public development test key
+        run: node tests/luxury-recipe-provider-live-smoke.mjs

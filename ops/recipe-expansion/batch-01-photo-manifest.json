@@ -1,0 +1,576 @@
+{
+  "batch": 1,
+  "status": "individual-photo-previews-generated-not-yet-committed",
+  "note": "Twenty individual recipe-specific photo previews were extracted from a newly generated luxury-style composite during the development session. They must be uploaded as real assets to GitHub, reviewed for ingredient accuracy and resolution, and approved before any draft is published. No photoReady flags are set yet.",
+  "requiredStyle": "dark cinematic luxury restaurant food photography; ingredient-accurate; no text inside image; portrait/landscape thumbnail suitable for iPhone",
+  "recipes": [
+    {
+      "id": "exp01-001",
+      "name": "Birria Beef Tacos",
+      "expectedAsset": "assets/meal-photos/exp01-001.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "previewGenerated": true
+    },
+    {
+      "id": "exp01-002",
+      "name": "Carne Asada Street Tacos",
+      "expectedAsset": "assets/meal-photos/exp01-002.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "previewGenerated": true
+    },
+    {
+      "id": "exp01-003",
+      "name": "Slow-Cooker Pork Carnitas",
+      "expectedAsset": "assets/meal-photos/exp01-003.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "previewGenerated": true
+    },
+    {
+      "id": "exp01-004",
+      "name": "Crispy Chicken Tostadas",
+      "expectedAsset": "assets/meal-photos/exp01-004.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "previewGenerated": true
+    },
+    {
+      "id": "exp01-005",
+      "name": "Beef Barbacoa Bowls",
+      "expectedAsset": "assets/meal-photos/exp01-005.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "previewGenerated": true
+    },
+    {
+      "id": "exp01-006",
+      "name": "Green Chile Chicken Enchiladas",
+      "expectedAsset": "assets/meal-photos/exp01-006.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "previewGenerated": true
+    },
+    {
+      "id": "exp01-007",
+      "name": "Ground Beef Taco Skillet",
+      "expectedAsset": "assets/meal-photos/exp01-007.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "previewGenerated": true
+    },
+    {
+      "id": "exp01-008",
+      "name": "Chicken Tinga Tacos",
+      "expectedAsset": "assets/meal-photos/exp01-008.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "previewGenerated": true
+    },
+    {
+      "id": "exp01-009",
+      "name": "Steak Fajita Quesadillas",
+      "expectedAsset": "assets/meal-photos/exp01-009.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "previewGenerated": true
+    },
+    {
+      "id": "exp01-010",
+      "name": "Shrimp Fajita Rice Bowls",
+      "expectedAsset": "assets/meal-photos/exp01-010.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "previewGenerated": true
+    },
+    {
+      "id": "exp01-011",
+      "name": "Smothered Beef Burritos",
+      "expectedAsset": "assets/meal-photos/exp01-011.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "previewGenerated": true
+    },
+    {
+      "id": "exp01-012",
+      "name": "Chicken Chimichangas",
+      "expectedAsset": "assets/meal-photos/exp01-012.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "previewGenerated": true
+    },
+    {
+      "id": "exp01-013",
+      "name": "Tex-Mex Beef Stuffed Peppers",
+      "expectedAsset": "assets/meal-photos/exp01-013.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "previewGenerated": true
+    },
+    {
+      "id": "exp01-014",
+      "name": "Cheesy Taco Pasta",
+      "expectedAsset": "assets/meal-photos/exp01-014.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "previewGenerated": true
+    },
+    {
+      "id": "exp01-015",
+      "name": "Pork Chile Verde",
+      "expectedAsset": "assets/meal-photos/exp01-015.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "previewGenerated": true
+    },
+    {
+      "id": "exp01-016",
+      "name": "Red Chile Beef Enchiladas",
+      "expectedAsset": "assets/meal-photos/exp01-016.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "previewGenerated": true
+    },
+    {
+      "id": "exp01-017",
+      "name": "Chicken Pozole Verde",
+      "expectedAsset": "assets/meal-photos/exp01-017.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "previewGenerated": true
+    },
+    {
+      "id": "exp01-018",
+      "name": "Pork Pozole Rojo",
+      "expectedAsset": "assets/meal-photos/exp01-018.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "previewGenerated": true
+    },
+    {
+      "id": "exp01-019",
+      "name": "Mexican Street Corn Chicken Bowls",
+      "expectedAsset": "assets/meal-photos/exp01-019.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "previewGenerated": true
+    },
+    {
+      "id": "exp01-020",
+      "name": "Chipotle Lime Shrimp Tacos",
+      "expectedAsset": "assets/meal-photos/exp01-020.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "previewGenerated": true
+    },
+    {
+      "id": "exp01-021",
+      "name": "Steak Nacho Supreme",
+      "expectedAsset": "assets/meal-photos/exp01-021.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true
+    },
+    {
+      "id": "exp01-022",
+      "name": "Pulled Pork Nachos",
+      "expectedAsset": "assets/meal-photos/exp01-022.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true
+    },
+    {
+      "id": "exp01-023",
+      "name": "Beef and Potato Taquitos",
+      "expectedAsset": "assets/meal-photos/exp01-023.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true
+    },
+    {
+      "id": "exp01-024",
+      "name": "Crispy Chicken Flautas",
+      "expectedAsset": "assets/meal-photos/exp01-024.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true
+    },
+    {
+      "id": "exp01-025",
+      "name": "Mexican Picadillo",
+      "expectedAsset": "assets/meal-photos/exp01-025.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true
+    },
+    {
+      "id": "exp01-026",
+      "name": "Salsa Verde Chicken Tacos",
+      "expectedAsset": "assets/meal-photos/exp01-026.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true
+    },
+    {
+      "id": "exp01-027",
+      "name": "Beef and Cheese Empanadas",
+      "expectedAsset": "assets/meal-photos/exp01-027.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true
+    },
+    {
+      "id": "exp01-028",
+      "name": "Cheesy Chicken Taco Casserole",
+      "expectedAsset": "assets/meal-photos/exp01-028.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true
+    },
+    {
+      "id": "exp01-029",
+      "name": "Chipotle Chicken Torta",
+      "expectedAsset": "assets/meal-photos/exp01-029.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "A toasted Mexican bolillo sandwich cut diagonally to reveal sliced grilled chicken, refried beans, melted pale Monterey Jack, avocado slices, tomato, shredded lettuce and chipotle mayonnaise; no beef, no seafood"
+    },
+    {
+      "id": "exp01-030",
+      "name": "Shrimp Veracruz",
+      "expectedAsset": "assets/meal-photos/exp01-030.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Large opaque shrimp simmered in a vivid red tomato sauce with visible green olive slices and capers, plated alongside white rice, bright lime garnish; no cheese or pasta"
+    },
+    {
+      "id": "exp01-031",
+      "name": "Steak and Pinto Bean Burritos",
+      "expectedAsset": "assets/meal-photos/exp01-031.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "A single cut-open toasted flour burrito displaying thin sliced steak, whole pinto beans, rice, sautéed bell peppers, onions, cheese and red salsa, luxury moody food photography"
+    },
+    {
+      "id": "exp01-032",
+      "name": "Poblano Chicken Rice Bake",
+      "expectedAsset": "assets/meal-photos/exp01-032.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Baked casserole in rustic dark ceramic with tender chicken pieces, fluffy rice, sliced poblano peppers, diced red tomato, melted Monterey Jack, chopped cilantro; no tortillas"
+    },
+    {
+      "id": "exp01-033",
+      "name": "Mexican Beef Stuffed Zucchini",
+      "expectedAsset": "assets/meal-photos/exp01-033.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Two baked zucchini halves filled with seasoned ground beef, rice, black beans and tomato, melted cheddar and cilantro; zucchini shells clearly visible, no tortillas"
+    },
+    {
+      "id": "exp01-034",
+      "name": "Pork Al Pastor Tacos",
+      "expectedAsset": "assets/meal-photos/exp01-034.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Three warm corn tortillas filled with caramelized marinated pork and pineapple pieces, diced white onion, cilantro and lime; pineapple clearly visible"
+    },
+    {
+      "id": "exp01-035",
+      "name": "Chicken Mole Enchiladas",
+      "expectedAsset": "assets/meal-photos/exp01-035.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Two rolled corn enchiladas filled with shredded chicken under a glossy dark mole sauce, melted Monterey Jack, sesame seeds, white onion and cilantro; no red tomato sauce"
+    },
+    {
+      "id": "exp01-036",
+      "name": "Beef Quesabirria",
+      "expectedAsset": "assets/meal-photos/exp01-036.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Three folded crispy red-braised beef and melted Oaxaca cheese corn tacos with cilantro and onion, hot deep-red birria consommé in a small dipping bowl beside the tacos"
+    },
+    {
+      "id": "exp01-037",
+      "name": "Tex-Mex Chili Mac",
+      "expectedAsset": "assets/meal-photos/exp01-037.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Short elbow macaroni visibly coated in hearty red beef-and-kidney-bean chili sauce topped with melting cheddar, served in rustic dark ceramic bowl"
+    },
+    {
+      "id": "exp01-038",
+      "name": "Cheesy Chorizo Breakfast Tacos",
+      "expectedAsset": "assets/meal-photos/exp01-038.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Two soft flour breakfast tacos filled with crumbled pork chorizo, yellow scrambled eggs, red-and-green sautéed peppers, shredded Monterey Jack and fresh salsa; no tofu"
+    },
+    {
+      "id": "exp01-039",
+      "name": "Chorizo and Potato Burritos",
+      "expectedAsset": "assets/meal-photos/exp01-039.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "One cut-open toasted flour burrito exposing distinct golden diced potatoes, pork chorizo crumbles, scrambled egg and melted cheddar beside salsa verde"
+    },
+    {
+      "id": "exp01-040",
+      "name": "Grilled Fish Baja Tacos",
+      "expectedAsset": "assets/meal-photos/exp01-040.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Three corn tortillas with grilled white fish fillet pieces, crunchy cabbage, fresh avocado, creamy white lime-yogurt drizzle, cilantro and lime wedges; no shrimp"
+    },
+    {
+      "id": "exp01-041",
+      "name": "Creamy Chicken Poblano Soup",
+      "expectedAsset": "assets/meal-photos/exp01-041.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Rustic dark bowl of creamy pale green poblano soup showing clearly shredded chicken, potato pieces, charred poblano strips, corn kernels, cilantro and lime; no tortillas"
+    },
+    {
+      "id": "exp01-042",
+      "name": "Mexican Beef Meatballs",
+      "expectedAsset": "assets/meal-photos/exp01-042.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Four rustic beef meatballs in bright red tomato-chipotle sauce over fluffy white rice, cilantro garnish; no spaghetti or pasta"
+    },
+    {
+      "id": "exp01-043",
+      "name": "Smoky Chipotle Turkey Chili",
+      "expectedAsset": "assets/meal-photos/exp01-043.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Deep stoneware bowl of hearty dark red turkey chili with kidney beans, black beans, crushed tomato, grated cheddar, steaming, spoon beside it"
+    },
+    {
+      "id": "exp01-044",
+      "name": "Steak Taco Salad",
+      "expectedAsset": "assets/meal-photos/exp01-044.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Luxury dark shallow salad bowl filled with romaine, thin sliced seared steak, sweet corn, black beans, diced tomatoes, avocado, red onion, cotija and creamy lime drizzle"
+    },
+    {
+      "id": "exp01-045",
+      "name": "Cilantro Lime Chicken Taquitos",
+      "expectedAsset": "assets/meal-photos/exp01-045.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Three crispy rolled corn taquitos with visible shredded chicken, Monterey Jack and cilantro, served with lime and green salsa; not flautas"
+    },
+    {
+      "id": "exp01-046",
+      "name": "Smothered Pork Chops with Onion Gravy",
+      "expectedAsset": "assets/meal-photos/exp01-046.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Golden browned boneless pork chop under silky brown gravy containing generous caramelized onion strips, on a rustic dark ceramic plate"
+    },
+    {
+      "id": "exp01-047",
+      "name": "Country Fried Steak and Cream Gravy",
+      "expectedAsset": "assets/meal-photos/exp01-047.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Crispy irregular breaded cube steak on a dark ceramic plate with thick pale pepper-speckled cream gravy, golden craggy crust still visible"
+    },
+    {
+      "id": "exp01-048",
+      "name": "Cajun Shrimp and Grits",
+      "expectedAsset": "assets/meal-photos/exp01-048.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Opaque plump Cajun-spiced shrimp and slices of browned smoked sausage over creamy pale cheddar grits, sautéed peppers and green onion garnish"
+    },
+    {
+      "id": "exp01-049",
+      "name": "Buttermilk Fried Chicken",
+      "expectedAsset": "assets/meal-photos/exp01-049.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Individual golden crunchy skin-on Southern fried chicken thighs and drumsticks on a dark ceramic platter, juicy center and crisp craggy flour crust visible; no nuggets or fries"
+    },
+    {
+      "id": "exp01-050",
+      "name": "Crispy Southern Chicken Tenders",
+      "expectedAsset": "assets/meal-photos/exp01-050.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Golden elongated breaded chicken tenderloins with flaky panko coating, cut piece showing cooked white chicken meat, served on a dark restaurant plate; no fries"
+    },
+    {
+      "id": "exp01-051",
+      "name": "Sausage Gravy and Buttermilk Biscuits",
+      "expectedAsset": "assets/meal-photos/exp01-051.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Two split tall flaky buttermilk biscuits covered in creamy white gravy with clearly visible browned breakfast sausage crumbles, dark rustic wood setting"
+    },
+    {
+      "id": "exp01-052",
+      "name": "Slow-Cooker Pot Roast and Carrots",
+      "expectedAsset": "assets/meal-photos/exp01-052.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Tender fork-shredded beef pot roast with chunky cooked carrots, Yukon Gold potatoes and glossy brown gravy in a ceramic bowl, dark cinematic homestyle plating"
+    },
+    {
+      "id": "exp01-053",
+      "name": "Beef Tips and Brown Gravy",
+      "expectedAsset": "assets/meal-photos/exp01-053.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Tender browned beef tips and sautéed mushrooms in glossy dark brown onion gravy generously spooned over fluffy mashed potatoes, dark ceramic plate, no noodles or rice"
+    },
+    {
+      "id": "exp01-054",
+      "name": "Baked Chicken and Dressing",
+      "expectedAsset": "assets/meal-photos/exp01-054.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Golden-baked Southern cornbread dressing with visible savory celery and onion, tender sliced chicken beneath, rustic ceramic casserole dish, warm restaurant lighting"
+    },
+    {
+      "id": "exp01-055",
+      "name": "Chicken Fried Chicken",
+      "expectedAsset": "assets/meal-photos/exp01-055.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "One large crisp golden breaded chicken cutlet covered partly in creamy black-pepper country gravy on a dark stoneware plate, no beef"
+    },
+    {
+      "id": "exp01-056",
+      "name": "Pulled Pork Mac and Cheese",
+      "expectedAsset": "assets/meal-photos/exp01-056.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Baked cheddar macaroni topped with smoky barbecue pulled pork and toasted panko crust in rustic black casserole dish, individual serving clearly showing both pork and pasta"
+    },
+    {
+      "id": "exp01-057",
+      "name": "Smoked Sausage Jambalaya",
+      "expectedAsset": "assets/meal-photos/exp01-057.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Dark cast-iron pan of reddish rice jambalaya, clearly sliced browned smoked sausage with green bell pepper, celery and tomato, green-onion garnish; no shrimp"
+    },
+    {
+      "id": "exp01-058",
+      "name": "Cajun Chicken and Sausage Gumbo",
+      "expectedAsset": "assets/meal-photos/exp01-058.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Deep brown Louisiana gumbo in matte black bowl with visible tender chicken pieces, sliced andouille, okra, and a mound of white rice, green onion garnish; no shrimp"
+    },
+    {
+      "id": "exp01-059",
+      "name": "Shrimp Étouffée",
+      "expectedAsset": "assets/meal-photos/exp01-059.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Large pink shrimp coated in smooth buttery light brown étouffée sauce with peppers, celery and onions, ladled over white rice with sliced green onions; no sausage"
+    },
+    {
+      "id": "exp01-060",
+      "name": "Red Beans and Sausage Rice",
+      "expectedAsset": "assets/meal-photos/exp01-060.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Creamy red kidney beans with sliced browned andouille sausage and Cajun vegetables alongside fluffy white rice, topped with finely cut green onions; no chicken"
+    },
+    {
+      "id": "exp01-061",
+      "name": "Cheddar Broccoli Chicken Bake",
+      "expectedAsset": "assets/meal-photos/exp01-061.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "A bubbling golden cheddar chicken broccoli rice casserole in a dark ceramic baking dish, clearly showing chicken cubes, green broccoli florets, rice, and crisp panko topping"
+    },
+    {
+      "id": "exp01-062",
+      "name": "Bacon Cheeseburger Tater Tot Casserole",
+      "expectedAsset": "assets/meal-photos/exp01-062.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Dark cast iron casserole topped with crispy golden tater tots, melted cheddar, bacon bits, ground beef and pickle slices, one serving spoon lifting a piece"
+    },
+    {
+      "id": "exp01-063",
+      "name": "Southern Baked Macaroni and Cheese",
+      "expectedAsset": "assets/meal-photos/exp01-063.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Rich golden baked elbow macaroni and cheese with browned bubbly cheddar crust in a dark rectangular casserole dish, no bacon or breadcrumbs"
+    },
+    {
+      "id": "exp01-064",
+      "name": "Cast-Iron Cornbread Chicken Pie",
+      "expectedAsset": "assets/meal-photos/exp01-064.webp",
+      "assetSaved": false,
+      "photoReview": "pending",
+      "pairedWithInstructions": true,
+      "photoBrief": "Golden cornbread crust in black cast-iron skillet, one spooned portion exposing creamy shredded chicken, peas, carrots and corn underneath"
+    }
+  ]
+}

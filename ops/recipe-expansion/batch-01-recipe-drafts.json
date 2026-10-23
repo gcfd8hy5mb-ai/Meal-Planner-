@@ -1,0 +1,5590 @@
+{
+  "batch": 1,
+  "status": "unpublished-photo-review-pending",
+  "recipes": [
+    {
+      "id": "exp01-001",
+      "name": "Birria Beef Tacos",
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "serv": 4,
+      "ingredients": [
+        [
+          "Beef chuck roast",
+          2,
+          "lb"
+        ],
+        [
+          "Dried guajillo chiles",
+          4,
+          "each"
+        ],
+        [
+          "Dried ancho chiles",
+          2,
+          "each"
+        ],
+        [
+          "Beef broth",
+          3,
+          "cup"
+        ],
+        [
+          "White onion",
+          1,
+          "each"
+        ],
+        [
+          "Garlic cloves",
+          4,
+          "each"
+        ],
+        [
+          "Apple cider vinegar",
+          2,
+          "tbsp"
+        ],
+        [
+          "Dried oregano",
+          1,
+          "tsp"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Corn tortillas",
+          12,
+          "each"
+        ],
+        [
+          "Shredded Oaxaca cheese",
+          1.5,
+          "cup"
+        ],
+        [
+          "Cilantro",
+          0.25,
+          "cup"
+        ],
+        [
+          "Lime",
+          2,
+          "each"
+        ]
+      ],
+      "steps": [
+        "Remove the stems and seeds from 4 guajillo and 2 ancho chiles. Cover with hot water for 15 minutes; drain and blend with half of the onion, 4 garlic cloves, 2 tbsp vinegar, 1 tsp oregano, 1 tsp cumin, and 1 cup of the beef broth until smooth.",
+        "Cut 2 lb beef chuck into large pieces and place in a heavy pot. Pour in the chile sauce and remaining 2 cups of broth. Bring to a gentle simmer, cover, and cook over low heat for 3–3½ hours, checking occasionally, until the beef shreds easily with a fork.",
+        "Transfer beef to a board, shred finely, and return a few spoonfuls of the braising liquid to keep it juicy. Skim excess fat from the top of the pot and reserve some of the reddish fat for crisping tortillas.",
+        "Warm a skillet over medium heat. Dip each of 12 corn tortillas lightly into the top of the braising liquid, place on the skillet, and add shredded beef and some of the 1½ cups Oaxaca cheese. Fold and cook 2–3 minutes per side until golden and the cheese melts.",
+        "Serve three tacos per person with diced remaining onion, ¼ cup chopped cilantro, and wedges from 2 limes. Ladle the hot strained braising liquid into small bowls for dipping."
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-002",
+      "name": "Carne Asada Street Tacos",
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "serv": 4,
+      "ingredients": [
+        [
+          "Flank steak",
+          1.5,
+          "lb"
+        ],
+        [
+          "Orange juice",
+          0.25,
+          "cup"
+        ],
+        [
+          "Lime juice",
+          0.25,
+          "cup"
+        ],
+        [
+          "Olive oil",
+          2,
+          "tbsp"
+        ],
+        [
+          "Garlic cloves",
+          3,
+          "each"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Chili powder",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          1,
+          "tsp"
+        ],
+        [
+          "Corn tortillas",
+          12,
+          "each"
+        ],
+        [
+          "White onion",
+          0.5,
+          "each"
+        ],
+        [
+          "Cilantro",
+          0.25,
+          "cup"
+        ],
+        [
+          "Lime",
+          2,
+          "each"
+        ]
+      ],
+      "steps": [
+        "Whisk ¼ cup orange juice, ¼ cup lime juice, 2 tbsp olive oil, 3 minced garlic cloves, 1 tsp cumin, 1 tsp chili powder, and 1 tsp salt in a shallow dish. Add 1½ lb flank steak, coat, cover, and refrigerate for 30 minutes to 4 hours.",
+        "Heat a clean grill or heavy skillet to medium-high. Remove steak from marinade and discard used marinade. Grill the steak 4–6 minutes per side, adjusting for thickness, until the thickest part reaches at least 145°F; rest on a board for 3 minutes.",
+        "While the steak rests, warm 12 corn tortillas on a dry skillet for 20–30 seconds per side. Finely dice half a white onion and chop ¼ cup cilantro.",
+        "Slice steak thinly against the grain, then chop into bite-sized pieces. Divide evenly among tortillas, about three tacos per serving.",
+        "Top with diced onion and cilantro and serve with wedges cut from 2 limes. Add cooking juices from the rested steak over the meat just before serving."
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-003",
+      "name": "Slow-Cooker Pork Carnitas",
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "serv": 6,
+      "ingredients": [
+        [
+          "Boneless pork shoulder",
+          3,
+          "lb"
+        ],
+        [
+          "Orange juice",
+          0.5,
+          "cup"
+        ],
+        [
+          "Chicken broth",
+          0.5,
+          "cup"
+        ],
+        [
+          "White onion",
+          1,
+          "each"
+        ],
+        [
+          "Garlic cloves",
+          4,
+          "each"
+        ],
+        [
+          "Ground cumin",
+          2,
+          "tsp"
+        ],
+        [
+          "Dried oregano",
+          2,
+          "tsp"
+        ],
+        [
+          "Salt",
+          1.5,
+          "tsp"
+        ],
+        [
+          "Lime",
+          2,
+          "each"
+        ],
+        [
+          "Corn tortillas",
+          18,
+          "each"
+        ],
+        [
+          "Cilantro",
+          0.25,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Trim large exterior fat caps from 3 lb pork shoulder and cut the meat into 3–4 big pieces. Rub evenly with 2 tsp cumin, 2 tsp oregano, and 1½ tsp salt.",
+        "Spread sliced onion and 4 crushed garlic cloves in the slow cooker. Add pork pieces, ½ cup orange juice, ½ cup chicken broth, and juice from 1 lime. Cover and cook on LOW for 8–9 hours or HIGH for 5–6 hours, until the pork is tender and reaches at least 145°F.",
+        "Lift the pork into a dish and shred with two forks, discarding large pieces of fat. Reserve ½ cup of its cooking liquid and toss it with the shredded meat.",
+        "Spread one-third of the pork on a sheet pan in a thin layer and broil 3–5 minutes until the tips begin to crisp, watching closely. Repeat with the remaining meat so it crisps instead of steaming.",
+        "Warm 18 corn tortillas. Divide carnitas among them and serve with the remaining lime cut into wedges and ¼ cup chopped cilantro. Refrigerate leftover pork promptly in shallow containers."
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-004",
+      "name": "Crispy Chicken Tostadas",
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "serv": 4,
+      "ingredients": [
+        [
+          "Boneless skinless chicken breasts",
+          1,
+          "lb"
+        ],
+        [
+          "Corn tortillas",
+          8,
+          "each"
+        ],
+        [
+          "Refried beans",
+          1,
+          "cup"
+        ],
+        [
+          "Shredded lettuce",
+          2,
+          "cup"
+        ],
+        [
+          "Roma tomatoes",
+          2,
+          "each"
+        ],
+        [
+          "Shredded Monterey Jack cheese",
+          1,
+          "cup"
+        ],
+        [
+          "Sour cream",
+          0.5,
+          "cup"
+        ],
+        [
+          "Olive oil",
+          2,
+          "tbsp"
+        ],
+        [
+          "Chili powder",
+          1,
+          "tsp"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          0.5,
+          "tsp"
+        ],
+        [
+          "Lime",
+          1,
+          "each"
+        ]
+      ],
+      "steps": [
+        "Heat the oven to 425°F. Brush 8 corn tortillas lightly with 1 tbsp olive oil, place on two baking sheets, and bake for 8–12 minutes, flipping halfway, until dry and crisp; check often so they do not burn.",
+        "Slice 1 lb chicken breasts into thin strips and toss with 1 tsp chili powder, 1 tsp cumin, and ½ tsp salt. Heat remaining 1 tbsp olive oil in a skillet over medium-high and cook chicken for 6–8 minutes, stirring, until the thickest pieces reach 165°F.",
+        "Warm 1 cup refried beans in a small saucepan over medium-low heat for 3–4 minutes, stirring, until steaming. Dice 2 tomatoes and cut 1 lime into wedges.",
+        "Spread roughly 2 tbsp hot beans over each crisp tortilla. Divide chicken across the eight tostadas and top with 2 cups shredded lettuce, tomatoes, and 1 cup Monterey Jack cheese.",
+        "Spoon ½ cup sour cream across the tostadas and finish with lime juice. Serve two tostadas per person immediately so the shells stay crisp."
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-005",
+      "name": "Beef Barbacoa Bowls",
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "serv": 6,
+      "ingredients": [
+        [
+          "Beef chuck roast",
+          2.5,
+          "lb"
+        ],
+        [
+          "Chipotle peppers in adobo",
+          2,
+          "each"
+        ],
+        [
+          "Beef broth",
+          1,
+          "cup"
+        ],
+        [
+          "Apple cider vinegar",
+          2,
+          "tbsp"
+        ],
+        [
+          "Garlic cloves",
+          4,
+          "each"
+        ],
+        [
+          "Ground cumin",
+          2,
+          "tsp"
+        ],
+        [
+          "Dried oregano",
+          2,
+          "tsp"
+        ],
+        [
+          "Salt",
+          1.5,
+          "tsp"
+        ],
+        [
+          "Long-grain rice dry",
+          1.5,
+          "cup"
+        ],
+        [
+          "Black beans canned",
+          2,
+          "cup"
+        ],
+        [
+          "Romaine lettuce",
+          3,
+          "cup"
+        ],
+        [
+          "Lime",
+          2,
+          "each"
+        ]
+      ],
+      "steps": [
+        "Blend 2 chipotle peppers, 1 cup beef broth, 2 tbsp vinegar, 4 garlic cloves, 2 tsp cumin, 2 tsp oregano, and 1½ tsp salt into a smooth sauce. Cut 2½ lb chuck roast into four large pieces.",
+        "Put the beef and sauce into a slow cooker. Cover and cook on LOW 8–9 hours until the meat is tender and pulls apart easily. Shred the beef and stir it into the cooking juices.",
+        "About 30 minutes before serving, rinse 1½ cups dry rice. Cook according to package directions with the measured water, then fluff and divide into six bowls.",
+        "Drain and rinse enough canned black beans for 2 cups. Heat beans in a small saucepan over medium heat for 4–5 minutes until steaming. Wash and chop 3 cups romaine lettuce.",
+        "Top each bowl with barbacoa, warm beans, chopped lettuce, and a squeeze of lime from 2 limes. Offer extra braising juices separately."
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-006",
+      "name": "Green Chile Chicken Enchiladas",
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "serv": 4,
+      "ingredients": [
+        [
+          "Cooked shredded chicken",
+          3,
+          "cup"
+        ],
+        [
+          "Flour tortillas",
+          8,
+          "each"
+        ],
+        [
+          "Mild green enchilada sauce",
+          2,
+          "cup"
+        ],
+        [
+          "Diced green chiles",
+          0.5,
+          "cup"
+        ],
+        [
+          "Shredded Monterey Jack cheese",
+          2,
+          "cup"
+        ],
+        [
+          "Sour cream",
+          0.5,
+          "cup"
+        ],
+        [
+          "White onion",
+          0.5,
+          "each"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tsp"
+        ]
+      ],
+      "steps": [
+        "Heat oven to 375°F and lightly grease a 9-by-13-inch baking dish with 1 tsp olive oil. Pour ½ cup green enchilada sauce across the bottom.",
+        "Mix 3 cups fully cooked shredded chicken with ½ cup diced green chiles, ½ finely diced onion, 1 tsp cumin, and ½ cup of the sauce in a bowl.",
+        "Lay out 8 tortillas and divide the chicken mixture evenly along the center of each. Sprinkle 1 cup Monterey Jack cheese among them, roll tightly, and arrange seam-side down in the prepared dish.",
+        "Pour the remaining 1 cup enchilada sauce over the rolls and sprinkle with the remaining 1 cup cheese. Cover loosely with foil and bake 15 minutes; remove foil and bake 10–12 minutes more until bubbling and the filling is at least 165°F.",
+        "Rest the enchiladas 5 minutes before serving. Dollop with ½ cup sour cream divided among four portions and serve two enchiladas per person."
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-007",
+      "name": "Ground Beef Taco Skillet",
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "serv": 4,
+      "ingredients": [
+        [
+          "Lean ground beef",
+          1,
+          "lb"
+        ],
+        [
+          "White onion",
+          1,
+          "each"
+        ],
+        [
+          "Bell pepper",
+          1,
+          "each"
+        ],
+        [
+          "Black beans canned",
+          1,
+          "cup"
+        ],
+        [
+          "Diced tomatoes canned",
+          1,
+          "cup"
+        ],
+        [
+          "Frozen corn",
+          1,
+          "cup"
+        ],
+        [
+          "Chili powder",
+          2,
+          "tsp"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          0.5,
+          "tsp"
+        ],
+        [
+          "Shredded cheddar cheese",
+          1,
+          "cup"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Corn tortillas",
+          8,
+          "each"
+        ]
+      ],
+      "steps": [
+        "Dice 1 onion and 1 bell pepper. Heat 1 tbsp olive oil in a 12-inch skillet over medium heat; cook the onion and pepper for 4–5 minutes, stirring, until softened.",
+        "Add 1 lb lean ground beef and break it into small pieces with a spoon. Cook for 7–9 minutes until no pink remains and the meat reaches 160°F; drain excess fat.",
+        "Stir in 2 tsp chili powder, 1 tsp cumin, and ½ tsp salt. Add 1 cup drained black beans, 1 cup canned diced tomatoes with their juices, and 1 cup frozen corn. Simmer uncovered 8–10 minutes, stirring occasionally, until the vegetables are hot and the sauce thickens.",
+        "Scatter 1 cup shredded cheddar over the skillet. Cover for 2–3 minutes until the cheese melts, then turn off the heat and let stand 2 minutes.",
+        "Warm 8 corn tortillas in a separate dry skillet for about 30 seconds per side. Spoon the beef mixture into tortillas, two per person, or serve in bowls."
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-008",
+      "name": "Chicken Tinga Tacos",
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "serv": 4,
+      "ingredients": [
+        [
+          "Boneless skinless chicken thighs",
+          1.5,
+          "lb"
+        ],
+        [
+          "Crushed tomatoes",
+          1.5,
+          "cup"
+        ],
+        [
+          "Chipotle pepper in adobo",
+          1,
+          "each"
+        ],
+        [
+          "White onion",
+          1,
+          "each"
+        ],
+        [
+          "Garlic cloves",
+          3,
+          "each"
+        ],
+        [
+          "Chicken broth",
+          0.5,
+          "cup"
+        ],
+        [
+          "Dried oregano",
+          1,
+          "tsp"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          0.75,
+          "tsp"
+        ],
+        [
+          "Corn tortillas",
+          12,
+          "each"
+        ],
+        [
+          "Cilantro",
+          0.25,
+          "cup"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ]
+      ],
+      "steps": [
+        "Slice 1 onion thinly and mince 3 garlic cloves. Heat 1 tbsp olive oil in a deep skillet over medium heat. Cook onion for about 5 minutes until soft, then stir in garlic for 30 seconds.",
+        "Blend 1½ cups crushed tomatoes, 1 chipotle pepper, ½ cup broth, 1 tsp oregano, 1 tsp cumin, and ¾ tsp salt. Pour the mixture into the skillet and bring to a gentle simmer.",
+        "Nestle 1½ lb chicken thighs into the sauce. Cover and simmer 18–25 minutes, turning once, until the chicken reaches 165°F and shreds easily.",
+        "Transfer the chicken to a plate, shred using two forks, and return to the sauce. Cook uncovered another 3–5 minutes to thicken, stirring so the chicken is evenly coated.",
+        "Warm 12 tortillas in a dry skillet for 20–30 seconds per side. Fill with the tinga mixture and sprinkle with ¼ cup chopped cilantro. Serve three tacos per person."
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-009",
+      "name": "Steak Fajita Quesadillas",
+      "serv": 4,
+      "ingredients": [
+        [
+          "Flank steak",
+          1.25,
+          "lb"
+        ],
+        [
+          "Flour tortillas",
+          8,
+          "each"
+        ],
+        [
+          "Bell peppers",
+          2,
+          "each"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Shredded Monterey Jack cheese",
+          2,
+          "cup"
+        ],
+        [
+          "Olive oil",
+          2,
+          "tbsp"
+        ],
+        [
+          "Lime juice",
+          2,
+          "tbsp"
+        ],
+        [
+          "Chili powder",
+          2,
+          "tsp"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Garlic powder",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          0.75,
+          "tsp"
+        ]
+      ],
+      "steps": [
+        "Slice 1¼ lb flank steak against the grain into thin strips. Toss with 2 tbsp lime juice, 2 tsp chili powder, 1 tsp cumin, 1 tsp garlic powder and ¾ tsp salt, then refrigerate while you prepare the vegetables.",
+        "Cut the 2 bell peppers and 1 onion into thin strips. Heat 1 tbsp olive oil in a wide skillet over medium-high heat and cook the vegetables for 6–8 minutes, stirring until softened and slightly browned; transfer to a plate.",
+        "Add the remaining 1 tbsp oil to the skillet. Cook the steak in two batches for about 3–5 minutes per batch, stirring occasionally, until the thickest pieces reach 145°F. Rest the steak for at least 3 minutes before assembling.",
+        "Lay out 8 flour tortillas. Sprinkle ¼ cup Monterey Jack cheese on each of four tortillas, then divide the steak and peppers evenly among them. Sprinkle the remaining cheese over the filling and cover with the other four tortillas.",
+        "Cook each quesadilla in a clean skillet over medium heat for about 2–3 minutes per side until golden and cheese melts. Slice each into wedges and serve one filled quesadilla per person."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-010",
+      "name": "Shrimp Fajita Rice Bowls",
+      "serv": 4,
+      "ingredients": [
+        [
+          "Peeled deveined raw shrimp",
+          1.25,
+          "lb"
+        ],
+        [
+          "Long-grain rice dry",
+          1,
+          "cup"
+        ],
+        [
+          "Bell peppers",
+          2,
+          "each"
+        ],
+        [
+          "Red onion",
+          1,
+          "each"
+        ],
+        [
+          "Olive oil",
+          2,
+          "tbsp"
+        ],
+        [
+          "Chili powder",
+          2,
+          "tsp"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Garlic powder",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          0.75,
+          "tsp"
+        ],
+        [
+          "Lime",
+          2,
+          "each"
+        ],
+        [
+          "Cilantro",
+          0.25,
+          "cup"
+        ],
+        [
+          "Salsa",
+          0.5,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Rinse 1 cup dry long-grain rice and cook it with the package-directed amount of water until tender, about 15–20 minutes. Keep covered off heat for 5 minutes, then fluff with a fork.",
+        "Cut 2 bell peppers and 1 red onion into strips. Toss the prepared shrimp with 2 tsp chili powder, 1 tsp cumin, 1 tsp garlic powder, and ¾ tsp salt in a separate bowl.",
+        "Heat 1 tbsp olive oil in a large skillet over medium-high heat. Cook the peppers and onion for 6–8 minutes until crisp-tender, then transfer to a plate.",
+        "Add the remaining tablespoon of oil to the skillet. Arrange the shrimp in a single layer and cook 2–3 minutes per side, turning once, until the flesh is opaque, firm, and reaches 145°F; return the vegetables to the skillet briefly to warm through.",
+        "Divide the rice among four bowls. Top evenly with shrimp and peppers, ½ cup salsa, ¼ cup chopped cilantro and lime wedges from 2 limes. Serve immediately while the shrimp are tender."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-011",
+      "name": "Smothered Beef Burritos",
+      "serv": 4,
+      "ingredients": [
+        [
+          "Lean ground beef",
+          1,
+          "lb"
+        ],
+        [
+          "Large flour tortillas",
+          4,
+          "each"
+        ],
+        [
+          "Cooked rice",
+          2,
+          "cup"
+        ],
+        [
+          "Refried beans",
+          1,
+          "cup"
+        ],
+        [
+          "Red enchilada sauce",
+          2,
+          "cup"
+        ],
+        [
+          "Shredded cheddar cheese",
+          1.5,
+          "cup"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Chili powder",
+          2,
+          "tsp"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          0.5,
+          "tsp"
+        ],
+        [
+          "Sour cream",
+          0.5,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Preheat the oven to 375°F. Dice 1 yellow onion. Warm 2 cups previously cooked rice and 1 cup refried beans separately until steaming, following safe storage and reheating instructions for cooked rice.",
+        "Heat 1 tbsp olive oil in a skillet over medium heat. Cook the onion for 4 minutes, then add 1 lb ground beef and break it up. Cook until browned and the center reaches 160°F; drain any excess fat.",
+        "Stir 2 tsp chili powder, 1 tsp cumin and ½ tsp salt into the beef. Spread ½ cup enchilada sauce across the bottom of a 9-by-13-inch baking dish.",
+        "Fill four large tortillas evenly with rice, beans, beef mixture and ½ cup shredded cheddar. Fold the sides in and roll tightly, then place seam-side down in the baking dish.",
+        "Pour the remaining 1½ cups sauce over the burritos, scatter the remaining 1 cup cheddar on top and bake uncovered 15–20 minutes until bubbling and the centers reach 165°F. Divide ½ cup sour cream across four servings."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-012",
+      "name": "Chicken Chimichangas",
+      "serv": 4,
+      "ingredients": [
+        [
+          "Cooked shredded chicken",
+          3,
+          "cup"
+        ],
+        [
+          "Large flour tortillas",
+          4,
+          "each"
+        ],
+        [
+          "Shredded Monterey Jack cheese",
+          1.5,
+          "cup"
+        ],
+        [
+          "Salsa",
+          0.5,
+          "cup"
+        ],
+        [
+          "Canned diced green chiles",
+          0.25,
+          "cup"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Chili powder",
+          1,
+          "tsp"
+        ],
+        [
+          "Olive oil",
+          2,
+          "tbsp"
+        ],
+        [
+          "Sour cream",
+          0.5,
+          "cup"
+        ],
+        [
+          "Shredded lettuce",
+          1,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Preheat the oven to 425°F. Line a baking sheet with parchment and brush lightly with 1 tsp from the measured olive oil.",
+        "In a large bowl, combine 3 cups fully cooked shredded chicken, ½ cup salsa, ¼ cup drained green chiles, 1 tsp cumin, 1 tsp chili powder and 1½ cups Monterey Jack cheese. Stir until evenly coated.",
+        "Warm four flour tortillas briefly so they bend without tearing. Place one quarter of the filling in the center of each tortilla; fold in the sides and roll into tight, closed parcels.",
+        "Put chimichangas seam-side down on the tray and brush the exposed surfaces with the remaining olive oil. Bake 18–22 minutes, turning carefully once, until crisp and golden and the fillings reach 165°F.",
+        "Allow the chimichangas to rest for 3 minutes. Serve one per person with ½ cup sour cream divided among them and 1 cup shredded lettuce."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-013",
+      "name": "Tex-Mex Beef Stuffed Peppers",
+      "serv": 4,
+      "ingredients": [
+        [
+          "Large bell peppers",
+          4,
+          "each"
+        ],
+        [
+          "Lean ground beef",
+          1,
+          "lb"
+        ],
+        [
+          "Cooked rice",
+          1.5,
+          "cup"
+        ],
+        [
+          "Black beans canned",
+          1,
+          "cup"
+        ],
+        [
+          "Diced tomatoes canned",
+          1,
+          "cup"
+        ],
+        [
+          "Shredded cheddar cheese",
+          1,
+          "cup"
+        ],
+        [
+          "Yellow onion",
+          0.5,
+          "each"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Chili powder",
+          2,
+          "tsp"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          0.5,
+          "tsp"
+        ],
+        [
+          "Water",
+          0.25,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Preheat the oven to 375°F. Slice the tops off four bell peppers, remove seeds and membranes, and place them upright in a baking dish with ¼ cup water at the bottom.",
+        "Finely dice half a yellow onion. Heat 1 tbsp olive oil in a skillet over medium heat and cook onion for 3–4 minutes. Add 1 lb ground beef, breaking it apart, and cook until the meat reaches 160°F; drain excess fat.",
+        "Mix beef and onion with 1½ cups safely reheated cooked rice, 1 cup rinsed black beans, 1 cup diced tomatoes, 2 tsp chili powder, 1 tsp cumin and ½ tsp salt. Simmer 3 minutes to combine flavors.",
+        "Divide the beef and rice mixture among the four peppers, pressing down gently. Cover the baking dish with foil and bake for 30 minutes until peppers begin to soften.",
+        "Remove foil, top evenly with 1 cup shredded cheddar and bake for another 10–15 minutes until peppers are tender, cheese melts and the centers reach 165°F. Rest 5 minutes before serving one pepper per person."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-014",
+      "name": "Cheesy Taco Pasta",
+      "serv": 6,
+      "ingredients": [
+        [
+          "Lean ground beef",
+          1,
+          "lb"
+        ],
+        [
+          "Dry elbow macaroni",
+          12,
+          "oz"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Crushed tomatoes",
+          2,
+          "cup"
+        ],
+        [
+          "Beef broth",
+          1,
+          "cup"
+        ],
+        [
+          "Shredded cheddar cheese",
+          2,
+          "cup"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Chili powder",
+          2,
+          "tsp"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Garlic powder",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          0.75,
+          "tsp"
+        ],
+        [
+          "Sour cream",
+          0.5,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Bring a large pot of salted water to a boil. Add 12 oz dry elbow macaroni and cook until just firm, following package directions; reserve ½ cup pasta water, then drain.",
+        "Meanwhile finely dice 1 yellow onion. Heat 1 tbsp olive oil in a large deep skillet over medium heat and sauté onion 4 minutes. Add 1 lb ground beef and cook 7–9 minutes until it reaches 160°F, breaking it into small pieces; drain excess fat.",
+        "Stir 2 tsp chili powder, 1 tsp cumin, 1 tsp garlic powder and ¾ tsp salt into the beef. Add 2 cups crushed tomatoes and 1 cup beef broth, then simmer uncovered for 7 minutes.",
+        "Fold cooked macaroni into the sauce and stir gently until coated. If too thick, add a few spoonfuls of the reserved pasta water. Sprinkle in 2 cups shredded cheddar in portions, stirring after each addition until melted.",
+        "Turn off heat and fold in ½ cup sour cream. Rest 3 minutes so the sauce thickens, then divide into six bowls and serve warm."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-015",
+      "name": "Pork Chile Verde",
+      "serv": 6,
+      "ingredients": [
+        [
+          "Boneless pork shoulder",
+          2.5,
+          "lb"
+        ],
+        [
+          "Tomatillos",
+          1.5,
+          "lb"
+        ],
+        [
+          "Poblano peppers",
+          2,
+          "each"
+        ],
+        [
+          "Jalapeño peppers",
+          2,
+          "each"
+        ],
+        [
+          "White onion",
+          1,
+          "each"
+        ],
+        [
+          "Garlic cloves",
+          4,
+          "each"
+        ],
+        [
+          "Chicken broth",
+          1.5,
+          "cup"
+        ],
+        [
+          "Olive oil",
+          2,
+          "tbsp"
+        ],
+        [
+          "Ground cumin",
+          1.5,
+          "tsp"
+        ],
+        [
+          "Dried oregano",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          1.5,
+          "tsp"
+        ],
+        [
+          "Cilantro",
+          0.5,
+          "cup"
+        ],
+        [
+          "Lime",
+          1,
+          "each"
+        ]
+      ],
+      "steps": [
+        "Remove papery husks from 1½ lb tomatillos and rinse thoroughly. Halve them, 2 poblanos, 2 jalapeños and 1 onion; place on a baking sheet with 4 peeled garlic cloves and broil 6–10 minutes, turning once, until lightly blistered. Remove pepper seeds for a milder sauce.",
+        "Blend the roasted vegetables with 1 cup of the chicken broth, ½ cup cilantro, 1½ tsp cumin and 1 tsp oregano until mostly smooth. Work in batches and vent the blender lid when handling hot ingredients.",
+        "Cut 2½ lb pork shoulder into roughly 2-inch cubes and season with 1½ tsp salt. Heat 2 tbsp olive oil in a heavy pot and brown the pork in two batches, 3–4 minutes per side, without crowding.",
+        "Return all pork to the pot with the green sauce and remaining ½ cup broth. Bring to a gentle simmer, cover partially and cook on low for 1½–2 hours, stirring occasionally, until the pork is tender enough to pull apart easily.",
+        "Taste the sauce and adjust seasoning if needed. Squeeze in juice of 1 lime and simmer uncovered 5 more minutes to thicken. Divide among six bowls with cooking juices and serve hot."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-016",
+      "name": "Red Chile Beef Enchiladas",
+      "serv": 4,
+      "ingredients": [
+        [
+          "Cooked shredded beef",
+          3,
+          "cup"
+        ],
+        [
+          "Corn tortillas",
+          12,
+          "each"
+        ],
+        [
+          "Red enchilada sauce",
+          2.5,
+          "cup"
+        ],
+        [
+          "Shredded Monterey Jack cheese",
+          2,
+          "cup"
+        ],
+        [
+          "White onion",
+          0.5,
+          "each"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Sour cream",
+          0.5,
+          "cup"
+        ],
+        [
+          "Cilantro",
+          0.25,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Heat oven to 375°F and grease a 9-by-13-inch baking dish with 1 tbsp olive oil. Spread ½ cup red enchilada sauce thinly across the bottom.",
+        "Combine 3 cups safely reheated cooked shredded beef with ½ finely diced white onion, 1 tsp cumin and ½ cup red enchilada sauce. Warm the filling until steaming.",
+        "Heat 12 corn tortillas one at a time in a dry skillet for 15–20 seconds per side to make them pliable. Spoon beef filling evenly along the center of each tortilla and sprinkle with half of the Monterey Jack cheese.",
+        "Roll each enchilada tightly, place seam-side down in the dish, pour the remaining 1½ cups enchilada sauce over the tops and scatter the remaining cheese across the dish.",
+        "Cover loosely with foil and bake 15 minutes, then uncover and bake 10–12 more minutes until bubbling and the centers reach 165°F. Rest 5 minutes; serve three enchiladas each with sour cream and chopped cilantro."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-017",
+      "name": "Chicken Pozole Verde",
+      "serv": 6,
+      "ingredients": [
+        [
+          "Boneless skinless chicken thighs",
+          1.5,
+          "lb"
+        ],
+        [
+          "Hominy canned, drained",
+          3,
+          "cup"
+        ],
+        [
+          "Tomatillos",
+          1,
+          "lb"
+        ],
+        [
+          "Poblano peppers",
+          2,
+          "each"
+        ],
+        [
+          "White onion",
+          1,
+          "each"
+        ],
+        [
+          "Garlic cloves",
+          3,
+          "each"
+        ],
+        [
+          "Chicken broth",
+          6,
+          "cup"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Dried oregano",
+          1,
+          "tsp"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Salt",
+          1,
+          "tsp"
+        ],
+        [
+          "Lime",
+          2,
+          "each"
+        ],
+        [
+          "Shredded cabbage",
+          2,
+          "cup"
+        ],
+        [
+          "Cilantro",
+          0.5,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Husk and rinse 1 lb tomatillos, then quarter them. Seed and chop 2 poblano peppers, dice 1 onion and mince 3 garlic cloves; keep half the diced onion for garnish.",
+        "Heat 1 tbsp olive oil in a large soup pot over medium heat. Sauté half the onion and the poblanos for 5 minutes, then add garlic for 30 seconds. Add tomatillos, 1 tsp cumin, 1 tsp oregano and 2 cups of broth; simmer 12–15 minutes until tomatillos soften.",
+        "Carefully blend the cooked vegetables with their cooking liquid until smooth, venting the blender lid for steam. Return to the pot with the other 4 cups broth, 1½ lb chicken thighs and 1 tsp salt.",
+        "Bring to a gentle simmer, cover and cook 20–25 minutes until the chicken reaches 165°F. Remove chicken, shred using forks and return it to the soup with 3 cups drained hominy.",
+        "Simmer 10 minutes more until hominy is hot. Ladle into six bowls and serve with 2 cups shredded cabbage, ½ cup cilantro, reserved diced onion and wedges from 2 limes."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-018",
+      "name": "Pork Pozole Rojo",
+      "serv": 6,
+      "ingredients": [
+        [
+          "Boneless pork shoulder",
+          2,
+          "lb"
+        ],
+        [
+          "Hominy canned, drained",
+          3,
+          "cup"
+        ],
+        [
+          "Dried guajillo chiles",
+          4,
+          "each"
+        ],
+        [
+          "Dried ancho chiles",
+          2,
+          "each"
+        ],
+        [
+          "White onion",
+          1,
+          "each"
+        ],
+        [
+          "Garlic cloves",
+          4,
+          "each"
+        ],
+        [
+          "Chicken broth",
+          7,
+          "cup"
+        ],
+        [
+          "Dried oregano",
+          2,
+          "tsp"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          1.5,
+          "tsp"
+        ],
+        [
+          "Shredded cabbage",
+          2,
+          "cup"
+        ],
+        [
+          "Radishes",
+          6,
+          "each"
+        ],
+        [
+          "Lime",
+          2,
+          "each"
+        ]
+      ],
+      "steps": [
+        "Remove stems and seeds from 4 guajillo and 2 ancho chiles. Cover them with hot water for 15 minutes until pliable, then drain; blend with 1 cup chicken broth and 4 peeled garlic cloves until smooth.",
+        "Cut 2 lb boneless pork shoulder into roughly 1½-inch cubes. Dice half a white onion and put it in a heavy soup pot with the pork, remaining 6 cups broth, 2 tsp oregano, 1 tsp cumin and 1½ tsp salt.",
+        "Bring to a gentle simmer, cover partially and cook about 60 minutes, stirring occasionally and skimming the surface, until pork begins to become tender.",
+        "Pour the blended chile sauce through a fine sieve into the pot, pressing gently to extract the sauce. Continue simmering 30–45 minutes, until pork is fork-tender, then stir in 3 cups drained hominy.",
+        "Simmer another 10–15 minutes until the hominy is hot. Taste and adjust seasoning; serve six bowls with 2 cups shredded cabbage, 6 thinly sliced radishes, the remaining finely diced onion and wedges from 2 limes."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-019",
+      "name": "Mexican Street Corn Chicken Bowls",
+      "serv": 4,
+      "ingredients": [
+        [
+          "Boneless skinless chicken breasts",
+          1.25,
+          "lb"
+        ],
+        [
+          "Long-grain rice dry",
+          1,
+          "cup"
+        ],
+        [
+          "Corn kernels",
+          2,
+          "cup"
+        ],
+        [
+          "Cotija cheese",
+          0.5,
+          "cup"
+        ],
+        [
+          "Mayonnaise",
+          0.25,
+          "cup"
+        ],
+        [
+          "Sour cream",
+          0.25,
+          "cup"
+        ],
+        [
+          "Lime",
+          2,
+          "each"
+        ],
+        [
+          "Chili powder",
+          2,
+          "tsp"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Garlic powder",
+          1,
+          "tsp"
+        ],
+        [
+          "Olive oil",
+          2,
+          "tbsp"
+        ],
+        [
+          "Salt",
+          0.75,
+          "tsp"
+        ],
+        [
+          "Cilantro",
+          0.25,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Cook 1 cup dry rice according to its package directions until tender. Let rest covered for 5 minutes, then fluff and set aside while the chicken and corn finish.",
+        "Mix 1 tsp chili powder, 1 tsp cumin, 1 tsp garlic powder and ¾ tsp salt. Rub the mixture over 1¼ lb chicken breasts. Heat 1 tbsp olive oil in a skillet over medium heat and cook chicken 5–7 minutes per side, depending on thickness, until the center reaches 165°F; rest 5 minutes before slicing.",
+        "Heat the remaining tablespoon of olive oil in a large skillet over medium-high heat. Add 2 cups corn kernels and cook 5–7 minutes, stirring occasionally, until hot and lightly charred.",
+        "Whisk ¼ cup mayonnaise, ¼ cup sour cream, juice of 1 lime and remaining 1 tsp chili powder. Toss the hot corn with half this sauce and ½ cup crumbled Cotija cheese.",
+        "Divide rice into four bowls, top with sliced chicken and dressed corn and drizzle the remaining sauce over each serving. Finish with ¼ cup chopped cilantro and wedges from the second lime."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-020",
+      "name": "Chipotle Lime Shrimp Tacos",
+      "serv": 4,
+      "ingredients": [
+        [
+          "Peeled deveined raw shrimp",
+          1.25,
+          "lb"
+        ],
+        [
+          "Corn tortillas",
+          12,
+          "each"
+        ],
+        [
+          "Chipotle pepper in adobo",
+          1,
+          "each"
+        ],
+        [
+          "Lime",
+          3,
+          "each"
+        ],
+        [
+          "Olive oil",
+          2,
+          "tbsp"
+        ],
+        [
+          "Garlic cloves",
+          2,
+          "each"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          0.75,
+          "tsp"
+        ],
+        [
+          "Shredded cabbage",
+          2,
+          "cup"
+        ],
+        [
+          "Sour cream",
+          0.5,
+          "cup"
+        ],
+        [
+          "Cilantro",
+          0.25,
+          "cup"
+        ],
+        [
+          "Honey",
+          1,
+          "tsp"
+        ]
+      ],
+      "steps": [
+        "Finely chop 1 chipotle pepper and mince 2 garlic cloves. In a bowl whisk chipotle, garlic, 1 tbsp olive oil, juice from 1 lime, 1 tsp cumin and ¾ tsp salt; toss with 1¼ lb peeled shrimp and refrigerate for 10–15 minutes.",
+        "Whisk ½ cup sour cream with juice from a second lime and 1 tsp honey to make a drizzle. Finely chop ¼ cup cilantro and prepare 2 cups shredded cabbage.",
+        "Warm 12 corn tortillas in a dry skillet for 20–30 seconds on each side, then wrap in a clean towel to keep them pliable.",
+        "Heat the remaining 1 tbsp olive oil in a skillet over medium-high heat. Add shrimp in a single layer, discarding any leftover raw marinade, and cook 2–3 minutes per side until opaque, firm and 145°F in the thickest pieces.",
+        "Divide shrimp evenly among the tortillas, about three per person. Top with shredded cabbage, sour-cream drizzle, cilantro and wedges from the remaining lime; serve immediately."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-021",
+      "name": "Steak Nacho Supreme",
+      "serv": 4,
+      "ingredients": [
+        [
+          "Flank steak",
+          1.25,
+          "lb"
+        ],
+        [
+          "Tortilla chips",
+          8,
+          "oz"
+        ],
+        [
+          "Shredded cheddar cheese",
+          1.5,
+          "cup"
+        ],
+        [
+          "Canned black beans",
+          1,
+          "cup"
+        ],
+        [
+          "Roma tomatoes",
+          2,
+          "each"
+        ],
+        [
+          "Pickled jalapeño slices",
+          0.25,
+          "cup"
+        ],
+        [
+          "Sour cream",
+          0.5,
+          "cup"
+        ],
+        [
+          "Avocado",
+          1,
+          "each"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Chili powder",
+          1,
+          "tsp"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          0.5,
+          "tsp"
+        ],
+        [
+          "Lime",
+          1,
+          "each"
+        ]
+      ],
+      "steps": [
+        "Heat oven to 400°F and line a large baking sheet with parchment. Drain and rinse 1 cup black beans, dice 2 tomatoes, slice 1 avocado, and cut 1 lime into wedges.",
+        "Pat 1¼ lb flank steak dry and season with 1 tsp chili powder, 1 tsp cumin, and ½ tsp salt. Heat 1 tbsp oil in a heavy skillet over medium-high heat and sear steak roughly 4–6 minutes per side, depending on thickness, until the center reaches 145°F; rest for at least 3 minutes.",
+        "Slice the rested steak thinly against the grain. Spread 8 oz tortilla chips in a single layer on the prepared sheet and scatter the drained beans, steak slices, and 1½ cups cheddar evenly over the chips.",
+        "Bake 7–10 minutes, until the chips are hot and the cheese melts, checking frequently to prevent burning. Remove the pan from the oven and place it on a heat-safe surface.",
+        "Scatter diced tomato and ¼ cup pickled jalapeños over the nachos. Add avocado and dollops from ½ cup sour cream, then divide into four portions and serve immediately with lime wedges."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-022",
+      "name": "Pulled Pork Nachos",
+      "serv": 4,
+      "ingredients": [
+        [
+          "Fully cooked pulled pork",
+          1.5,
+          "lb"
+        ],
+        [
+          "Tortilla chips",
+          8,
+          "oz"
+        ],
+        [
+          "Shredded Monterey Jack cheese",
+          1.5,
+          "cup"
+        ],
+        [
+          "Canned black beans",
+          1,
+          "cup"
+        ],
+        [
+          "Barbecue sauce",
+          0.5,
+          "cup"
+        ],
+        [
+          "Red onion",
+          0.5,
+          "each"
+        ],
+        [
+          "Pickled jalapeño slices",
+          0.25,
+          "cup"
+        ],
+        [
+          "Sour cream",
+          0.5,
+          "cup"
+        ],
+        [
+          "Cilantro",
+          0.25,
+          "cup"
+        ],
+        [
+          "Lime",
+          1,
+          "each"
+        ]
+      ],
+      "steps": [
+        "Preheat the oven to 400°F and line a large rimmed sheet pan with parchment. Drain and rinse 1 cup black beans, thinly dice half a red onion, and chop ¼ cup fresh cilantro.",
+        "Put 1½ lb fully cooked pulled pork into a saucepan with ½ cup barbecue sauce and 2 tbsp water. Heat over medium-low for 6–8 minutes, stirring occasionally, until the meat is steaming and reaches 165°F.",
+        "Spread 8 oz tortilla chips over the sheet pan in an even layer. Distribute the hot pulled pork and drained black beans evenly over the chips and sprinkle 1½ cups Monterey Jack cheese over everything.",
+        "Bake 6–9 minutes, just until the cheese melts and the nachos are heated through; watch closely because exposed chips can brown quickly.",
+        "Remove from the oven and top with diced onion, ¼ cup pickled jalapeños, ½ cup sour cream, and chopped cilantro. Cut 1 lime into wedges and serve the nachos in four portions while crisp."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-023",
+      "name": "Beef and Potato Taquitos",
+      "serv": 4,
+      "ingredients": [
+        [
+          "Lean ground beef",
+          0.75,
+          "lb"
+        ],
+        [
+          "Russet potatoes",
+          1,
+          "lb"
+        ],
+        [
+          "Corn tortillas",
+          12,
+          "each"
+        ],
+        [
+          "Yellow onion",
+          0.5,
+          "each"
+        ],
+        [
+          "Shredded cheddar cheese",
+          1,
+          "cup"
+        ],
+        [
+          "Olive oil",
+          3,
+          "tbsp"
+        ],
+        [
+          "Chili powder",
+          1,
+          "tsp"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Garlic powder",
+          0.5,
+          "tsp"
+        ],
+        [
+          "Salt",
+          0.75,
+          "tsp"
+        ],
+        [
+          "Salsa",
+          0.5,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Peel and cut 1 lb russet potatoes into small cubes. Put them in a saucepan, cover with water, bring to a simmer, and cook 10–12 minutes until fork-tender; drain thoroughly and roughly mash.",
+        "Dice half a yellow onion. Heat 1 tbsp olive oil in a skillet over medium heat and cook onion for 3 minutes. Add ¾ lb ground beef, breaking it apart, and cook until it reaches 160°F; drain excess fat.",
+        "Stir 1 tsp chili powder, 1 tsp cumin, ½ tsp garlic powder and ¾ tsp salt into the beef. Combine with mashed potatoes and 1 cup shredded cheddar until evenly mixed.",
+        "Heat the oven to 425°F and brush a baking sheet with 1 tbsp olive oil. Warm 12 corn tortillas between damp paper towels briefly until pliable, divide filling among them, roll tightly, and arrange seam-side down.",
+        "Brush the tops of the rolls with remaining 1 tbsp olive oil. Bake 16–20 minutes, turning halfway, until crisp and hot through. Serve three taquitos per person with ½ cup salsa divided among the four plates."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-024",
+      "name": "Crispy Chicken Flautas",
+      "serv": 4,
+      "ingredients": [
+        [
+          "Cooked shredded chicken",
+          3,
+          "cup"
+        ],
+        [
+          "Flour tortillas, fajita size",
+          12,
+          "each"
+        ],
+        [
+          "Shredded Monterey Jack cheese",
+          1,
+          "cup"
+        ],
+        [
+          "Salsa verde",
+          0.5,
+          "cup"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Chili powder",
+          1,
+          "tsp"
+        ],
+        [
+          "Olive oil",
+          3,
+          "tbsp"
+        ],
+        [
+          "Shredded lettuce",
+          2,
+          "cup"
+        ],
+        [
+          "Roma tomatoes",
+          2,
+          "each"
+        ],
+        [
+          "Sour cream",
+          0.5,
+          "cup"
+        ],
+        [
+          "Salt",
+          0.25,
+          "tsp"
+        ]
+      ],
+      "steps": [
+        "Preheat oven to 425°F and lightly grease a large baking sheet with 1 tbsp olive oil. Dice 2 tomatoes and wash and dry 2 cups shredded lettuce for the topping.",
+        "Mix 3 cups fully cooked shredded chicken with ½ cup salsa verde, 1 cup Monterey Jack cheese, 1 tsp cumin, 1 tsp chili powder and ¼ tsp salt until the filling is evenly moistened.",
+        "Warm 12 fajita-size flour tortillas until pliable. Place an even strip of the chicken mixture near one edge of each tortilla and roll as tightly as possible into narrow tubes.",
+        "Place flautas seam-side down on the sheet without touching. Brush the tops and sides with the remaining 2 tbsp olive oil, then bake 16–20 minutes, turning once after about 10 minutes, until deep golden and the centers reach 165°F.",
+        "Allow the flautas to cool for 2 minutes so the crisp shells set. Divide into four portions of three, and top each with shredded lettuce, diced tomato and a share of ½ cup sour cream."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-025",
+      "name": "Mexican Picadillo",
+      "serv": 4,
+      "ingredients": [
+        [
+          "Lean ground beef",
+          1,
+          "lb"
+        ],
+        [
+          "Yukon Gold potatoes",
+          1,
+          "lb"
+        ],
+        [
+          "Carrot",
+          2,
+          "each"
+        ],
+        [
+          "Roma tomatoes",
+          3,
+          "each"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Garlic cloves",
+          3,
+          "each"
+        ],
+        [
+          "Beef broth",
+          1,
+          "cup"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Dried oregano",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          0.75,
+          "tsp"
+        ],
+        [
+          "Black pepper",
+          0.25,
+          "tsp"
+        ],
+        [
+          "Frozen peas",
+          0.5,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Scrub and peel 1 lb potatoes, then dice into ½-inch cubes. Peel and dice 2 carrots, finely chop 1 yellow onion and 3 garlic cloves, and cut 3 Roma tomatoes into small pieces.",
+        "Heat 1 tbsp olive oil in a large deep skillet over medium heat. Cook onion and carrot for 4 minutes, stirring occasionally, then add garlic and cook 30 seconds.",
+        "Add 1 lb ground beef, break it into small crumbles, and cook 7–9 minutes until no pink remains and a thermometer reads 160°F. Drain excess fat if necessary.",
+        "Stir in potatoes, tomatoes, 1 cup beef broth, 1 tsp cumin, 1 tsp oregano, ¾ tsp salt and ¼ tsp pepper. Bring to a gentle simmer, cover, and cook for 15–20 minutes, stirring occasionally, until potatoes are tender.",
+        "Add ½ cup frozen peas and simmer uncovered for another 4–5 minutes, until the vegetables are heated through and the sauce thickens slightly. Divide evenly among four plates or bowls and serve hot."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-026",
+      "name": "Salsa Verde Chicken Tacos",
+      "serv": 4,
+      "ingredients": [
+        [
+          "Boneless skinless chicken thighs",
+          1.5,
+          "lb"
+        ],
+        [
+          "Salsa verde",
+          1.5,
+          "cup"
+        ],
+        [
+          "Chicken broth",
+          0.5,
+          "cup"
+        ],
+        [
+          "White onion",
+          0.5,
+          "each"
+        ],
+        [
+          "Garlic cloves",
+          2,
+          "each"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Salt",
+          0.5,
+          "tsp"
+        ],
+        [
+          "Corn tortillas",
+          12,
+          "each"
+        ],
+        [
+          "Cilantro",
+          0.25,
+          "cup"
+        ],
+        [
+          "Lime",
+          2,
+          "each"
+        ],
+        [
+          "Shredded lettuce",
+          1,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Finely dice half a white onion and mince 2 garlic cloves. Heat 1 tbsp olive oil in a heavy skillet over medium heat, then sauté onion for 3–4 minutes until softened and stir in garlic for 30 seconds.",
+        "Add 1½ lb chicken thighs to the skillet and sprinkle with 1 tsp cumin and ½ tsp salt. Pour 1½ cups salsa verde and ½ cup chicken broth around the chicken; bring to a gentle simmer.",
+        "Cover and cook 18–25 minutes, turning the chicken halfway through, until the thickest pieces reach 165°F and shred easily. Remove the chicken to a cutting board, shred using two forks and return the meat to its sauce.",
+        "Simmer the shredded chicken uncovered 3–5 minutes until coated with a slightly thickened sauce. Warm 12 corn tortillas in a dry skillet for 20–30 seconds per side.",
+        "Divide the chicken among the tortillas, three tacos per person. Top with 1 cup shredded lettuce, ¼ cup chopped cilantro and wedges from 2 limes, then serve while hot."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-027",
+      "name": "Beef and Cheese Empanadas",
+      "serv": 6,
+      "ingredients": [
+        [
+          "Lean ground beef",
+          1,
+          "lb"
+        ],
+        [
+          "Prepared refrigerated empanada dough discs",
+          12,
+          "each"
+        ],
+        [
+          "Shredded Monterey Jack cheese",
+          1,
+          "cup"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Red bell pepper",
+          1,
+          "each"
+        ],
+        [
+          "Garlic cloves",
+          2,
+          "each"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Smoked paprika",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          0.75,
+          "tsp"
+        ],
+        [
+          "Egg",
+          1,
+          "each"
+        ],
+        [
+          "Water",
+          1,
+          "tbsp"
+        ]
+      ],
+      "steps": [
+        "Heat 1 tbsp olive oil in a large skillet over medium heat. Finely dice 1 onion and 1 red bell pepper and sauté for 5–6 minutes until soft; add 2 minced garlic cloves for the final 30 seconds.",
+        "Add 1 lb lean ground beef and break into fine crumbles. Cook about 7–9 minutes until browned and at least 160°F, then drain excess liquid and season with 1 tsp cumin, 1 tsp smoked paprika and ¾ tsp salt.",
+        "Transfer the filling to a bowl and let it cool until no longer steaming. Stir in 1 cup shredded Monterey Jack cheese. Heat the oven to 400°F and line two baking sheets with parchment.",
+        "Place 12 empanada dough discs on a clean surface. Spoon about 2 tablespoons filling in the center of each disc, fold each one into a half-moon shape, and seal the edges tightly with fork tines.",
+        "Beat 1 egg with 1 tbsp water and brush lightly over each empanada. Bake 20–25 minutes, switching tray positions halfway through, until deeply golden and the filling is heated through; serve two per person after resting 5 minutes."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-028",
+      "name": "Cheesy Chicken Taco Casserole",
+      "serv": 6,
+      "ingredients": [
+        [
+          "Fully cooked shredded chicken",
+          3,
+          "cup"
+        ],
+        [
+          "Corn tortillas",
+          12,
+          "each"
+        ],
+        [
+          "Red enchilada sauce",
+          2,
+          "cup"
+        ],
+        [
+          "Canned black beans",
+          1.5,
+          "cup"
+        ],
+        [
+          "Frozen corn",
+          1,
+          "cup"
+        ],
+        [
+          "Shredded cheddar cheese",
+          2,
+          "cup"
+        ],
+        [
+          "Sour cream",
+          0.5,
+          "cup"
+        ],
+        [
+          "Diced green chiles",
+          0.25,
+          "cup"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Chili powder",
+          1,
+          "tsp"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tsp"
+        ],
+        [
+          "Green onion",
+          3,
+          "each"
+        ]
+      ],
+      "steps": [
+        "Heat oven to 375°F and grease a 9-by-13-inch baking dish with 1 tsp olive oil. Drain and rinse 1½ cups black beans and slice 3 green onions.",
+        "In a large mixing bowl combine 3 cups fully cooked shredded chicken, drained beans, 1 cup frozen corn, ¼ cup diced green chiles, 1 tsp cumin and 1 tsp chili powder. Stir in ½ cup red enchilada sauce.",
+        "Spread ½ cup enchilada sauce on the bottom of the dish. Tear 6 corn tortillas into large pieces and arrange in a single overlapping layer. Top with half the chicken mixture and ¾ cup shredded cheddar.",
+        "Repeat with the remaining 6 tortillas, the other half of the chicken mixture and another ¾ cup cheese. Pour the remaining 1 cup enchilada sauce over the top and sprinkle the last ½ cup cheese evenly over the dish.",
+        "Cover loosely with foil and bake 20 minutes, then uncover and bake another 10–15 minutes until bubbling and the center reaches 165°F. Rest for 8 minutes before dividing into six servings; finish with ½ cup sour cream and sliced green onions."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-029",
+      "name": "Chipotle Chicken Torta",
+      "serv": 4,
+      "ingredients": [
+        [
+          "Boneless skinless chicken breasts",
+          1.25,
+          "lb"
+        ],
+        [
+          "Bolillo rolls",
+          4,
+          "each"
+        ],
+        [
+          "Chipotle peppers in adobo",
+          2,
+          "each"
+        ],
+        [
+          "Mayonnaise",
+          0.25,
+          "cup"
+        ],
+        [
+          "Refried beans",
+          1,
+          "cup"
+        ],
+        [
+          "Monterey Jack cheese",
+          4,
+          "oz"
+        ],
+        [
+          "Avocado",
+          1,
+          "each"
+        ],
+        [
+          "Roma tomatoes",
+          2,
+          "each"
+        ],
+        [
+          "Shredded lettuce",
+          1,
+          "cup"
+        ],
+        [
+          "Lime juice",
+          2,
+          "tbsp"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          0.75,
+          "tsp"
+        ]
+      ],
+      "steps": [
+        "Finely chop 2 chipotle peppers and whisk with ¼ cup mayonnaise and 2 tbsp lime juice to make the spread. Slice 2 tomatoes and 1 avocado, rinse the lettuce, and split 4 bolillo rolls lengthwise.",
+        "Pat 1¼ lb chicken breasts dry, then season with 1 tsp cumin and ¾ tsp salt. Heat 1 tbsp olive oil in a skillet over medium heat and cook the breasts for 5–7 minutes per side, depending on thickness, until a thermometer reads 165°F.",
+        "Transfer the chicken to a clean cutting board and rest for 5 minutes, then slice thinly across the grain. Meanwhile warm 1 cup refried beans in a saucepan until thoroughly steaming.",
+        "Place the split rolls cut-side up on a baking sheet, spread the lower halves with warm beans and top with equal portions of chicken and 1 oz Monterey Jack per sandwich. Broil for 1–2 minutes, watching continuously, until the cheese melts and the bread edges toast.",
+        "Spread the chipotle mayonnaise on the upper roll halves; layer the warm chicken with sliced avocado, tomatoes and 1 cup shredded lettuce. Close each torta, press gently and serve immediately."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-030",
+      "name": "Shrimp Veracruz",
+      "serv": 4,
+      "ingredients": [
+        [
+          "Peeled deveined raw shrimp",
+          1.5,
+          "lb"
+        ],
+        [
+          "Crushed tomatoes",
+          2,
+          "cup"
+        ],
+        [
+          "White onion",
+          1,
+          "each"
+        ],
+        [
+          "Garlic cloves",
+          3,
+          "each"
+        ],
+        [
+          "Pitted green olives",
+          0.5,
+          "cup"
+        ],
+        [
+          "Capers, drained",
+          2,
+          "tbsp"
+        ],
+        [
+          "Jalapeño",
+          1,
+          "each"
+        ],
+        [
+          "Olive oil",
+          2,
+          "tbsp"
+        ],
+        [
+          "Dried oregano",
+          1,
+          "tsp"
+        ],
+        [
+          "Bay leaf",
+          1,
+          "each"
+        ],
+        [
+          "Salt",
+          0.5,
+          "tsp"
+        ],
+        [
+          "Lime",
+          1,
+          "each"
+        ],
+        [
+          "Long-grain rice dry",
+          1,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Cook 1 cup dry long-grain rice according to its package instructions. While it cooks, dice 1 onion, mince 3 garlic cloves, thinly slice ½ cup green olives, and finely chop 1 jalapeño, removing seeds if milder heat is desired.",
+        "Heat 2 tbsp olive oil in a deep skillet over medium heat and cook the onion for 5–6 minutes until softened. Stir in garlic and jalapeño for 30 seconds without browning the garlic.",
+        "Add 2 cups crushed tomatoes, ½ cup sliced olives, 2 tbsp drained capers, 1 tsp oregano, one bay leaf and ½ tsp salt. Bring to a gentle simmer and cook uncovered 10–12 minutes, stirring occasionally, until slightly thickened.",
+        "Pat 1½ lb raw shrimp dry and nestle them into the simmering tomato sauce. Cook for about 4–6 minutes, turning halfway, until shrimp are opaque and firm and the thickest shrimp reaches 145°F; discard the bay leaf.",
+        "Squeeze juice from 1 lime into the sauce and stir gently. Divide rice among four plates and spoon shrimp and Veracruz-style tomato-olive sauce evenly over each portion."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-031",
+      "name": "Steak and Pinto Bean Burritos",
+      "serv": 4,
+      "ingredients": [
+        [
+          "Flank steak",
+          1.25,
+          "lb"
+        ],
+        [
+          "Large flour tortillas",
+          4,
+          "each"
+        ],
+        [
+          "Cooked rice",
+          1.5,
+          "cup"
+        ],
+        [
+          "Cooked pinto beans",
+          1.5,
+          "cup"
+        ],
+        [
+          "Shredded cheddar cheese",
+          1,
+          "cup"
+        ],
+        [
+          "Bell pepper",
+          1,
+          "each"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Salsa",
+          0.5,
+          "cup"
+        ],
+        [
+          "Olive oil",
+          2,
+          "tbsp"
+        ],
+        [
+          "Chili powder",
+          2,
+          "tsp"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          0.75,
+          "tsp"
+        ],
+        [
+          "Lime",
+          1,
+          "each"
+        ]
+      ],
+      "steps": [
+        "Thinly slice 1¼ lb flank steak against the grain and toss with 2 tsp chili powder, 1 tsp cumin, ¾ tsp salt and juice from 1 lime. Slice 1 bell pepper and 1 onion into thin strips.",
+        "Heat 1 tbsp olive oil in a large skillet over medium-high heat and sauté the sliced pepper and onion for about 6–8 minutes until softened and lightly browned; transfer vegetables to a plate.",
+        "Add the remaining tablespoon of oil to the skillet and cook steak strips in batches so the pan does not crowd, about 3–5 minutes per batch, until the thickest pieces reach 145°F; rest at least 3 minutes before serving.",
+        "Heat 1½ cups previously cooked rice and 1½ cups cooked pinto beans separately until steaming; use properly refrigerated rice and reheat to 165°F. Warm 4 large flour tortillas briefly on a dry skillet until pliable.",
+        "Divide rice, beans, steak, sautéed vegetables, 1 cup shredded cheddar and ½ cup salsa evenly among tortillas. Fold the sides inward, roll each burrito tightly and serve warm."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-032",
+      "name": "Poblano Chicken Rice Bake",
+      "serv": 6,
+      "ingredients": [
+        [
+          "Boneless skinless chicken breasts",
+          1.5,
+          "lb"
+        ],
+        [
+          "Long-grain rice dry",
+          1.5,
+          "cup"
+        ],
+        [
+          "Poblano peppers",
+          3,
+          "each"
+        ],
+        [
+          "Chicken broth",
+          3,
+          "cup"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Garlic cloves",
+          3,
+          "each"
+        ],
+        [
+          "Diced tomatoes, drained",
+          1,
+          "cup"
+        ],
+        [
+          "Shredded Monterey Jack cheese",
+          1.5,
+          "cup"
+        ],
+        [
+          "Olive oil",
+          2,
+          "tbsp"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Chili powder",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          1,
+          "tsp"
+        ],
+        [
+          "Cilantro",
+          0.25,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Preheat oven to 375°F and grease a deep 9-by-13-inch baking dish lightly. Seed and dice 3 poblano peppers, dice 1 onion, mince 3 garlic cloves and cut 1½ lb chicken breasts into even bite-size pieces.",
+        "Heat 1 tbsp olive oil in a skillet over medium heat, then cook onion and poblano peppers for 5–6 minutes until starting to soften. Add garlic for 30 seconds and transfer the vegetables to the prepared baking dish.",
+        "Add remaining 1 tbsp oil to the skillet, then sear chicken pieces in two batches for 2 minutes per side to build color; the chicken will finish cooking in the oven. Season chicken with 1 tsp cumin, 1 tsp chili powder and 1 tsp salt.",
+        "Add 1½ cups dry long-grain rice, 1 cup drained tomatoes, chicken and vegetables to the baking dish, and stir evenly. Pour over 3 cups hot chicken broth, cover tightly with foil and bake 35 minutes.",
+        "Carefully remove foil and check rice for tenderness and liquid absorption; cook covered 5–10 minutes more if needed. Verify every chicken piece reaches 165°F, sprinkle 1½ cups Monterey Jack over the dish, and return uncovered for 5 minutes to melt the cheese. Rest 5 minutes and finish with ¼ cup chopped cilantro before serving six portions."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-033",
+      "name": "Mexican Beef Stuffed Zucchini",
+      "serv": 4,
+      "ingredients": [
+        [
+          "Medium zucchini",
+          4,
+          "each"
+        ],
+        [
+          "Lean ground beef",
+          1,
+          "lb"
+        ],
+        [
+          "Yellow onion",
+          0.5,
+          "each"
+        ],
+        [
+          "Garlic cloves",
+          2,
+          "each"
+        ],
+        [
+          "Cooked rice",
+          1,
+          "cup"
+        ],
+        [
+          "Black beans, drained",
+          1,
+          "cup"
+        ],
+        [
+          "Diced tomatoes, drained",
+          1,
+          "cup"
+        ],
+        [
+          "Shredded cheddar cheese",
+          1,
+          "cup"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Chili powder",
+          2,
+          "tsp"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          0.5,
+          "tsp"
+        ],
+        [
+          "Cilantro",
+          0.25,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Preheat the oven to 400°F. Slice 4 zucchini lengthwise and use a spoon to scoop out the soft centers, leaving sturdy ¼-inch shells. Arrange the eight halves cut-side up in a lightly oiled baking dish and chop the scooped flesh.",
+        "Finely dice half an onion and mince 2 garlic cloves. Heat 1 tbsp olive oil in a skillet over medium heat and sauté onion for 3 minutes; add the chopped zucchini flesh and garlic and cook 2 minutes more.",
+        "Add 1 lb lean ground beef, breaking it apart with a wooden spoon, and cook 7–9 minutes until fully browned and the center reaches 160°F. Drain excess fat, then add 2 tsp chili powder, 1 tsp cumin and ½ tsp salt.",
+        "Stir in 1 cup cooked rice, 1 cup drained black beans and 1 cup drained diced tomatoes. Heat the mixture until steaming, then spoon evenly into the eight zucchini boats. Cover tightly with foil and bake 20 minutes.",
+        "Remove foil, sprinkle 1 cup shredded cheddar evenly over the boats and bake another 8–12 minutes until the zucchini is fork-tender, the cheese melts and the filling reaches 165°F. Rest 3 minutes and garnish with ¼ cup chopped cilantro before serving two halves per person."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-034",
+      "name": "Pork Al Pastor Tacos",
+      "serv": 6,
+      "ingredients": [
+        [
+          "Boneless pork shoulder",
+          2,
+          "lb"
+        ],
+        [
+          "Pineapple chunks",
+          1,
+          "cup"
+        ],
+        [
+          "Pineapple juice",
+          0.5,
+          "cup"
+        ],
+        [
+          "Achiote paste",
+          2,
+          "tbsp"
+        ],
+        [
+          "Dried guajillo chiles",
+          3,
+          "each"
+        ],
+        [
+          "White vinegar",
+          2,
+          "tbsp"
+        ],
+        [
+          "Garlic cloves",
+          3,
+          "each"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Dried oregano",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          1,
+          "tsp"
+        ],
+        [
+          "Corn tortillas",
+          18,
+          "each"
+        ],
+        [
+          "White onion",
+          1,
+          "each"
+        ],
+        [
+          "Cilantro",
+          0.5,
+          "cup"
+        ],
+        [
+          "Lime",
+          2,
+          "each"
+        ]
+      ],
+      "steps": [
+        "Remove stems and seeds from 3 dried guajillo chiles, cover with hot water and soak for 15 minutes; drain. Blend softened chiles with ½ cup pineapple juice, 2 tbsp achiote paste, 2 tbsp vinegar, 3 garlic cloves, 1 tsp cumin, 1 tsp oregano and 1 tsp salt until smooth.",
+        "Trim visible excess fat from 2 lb pork shoulder and slice into ½-inch strips. Coat thoroughly with the prepared marinade in a covered dish and refrigerate at least 2 hours, preferably overnight; keep raw meat and its marinade refrigerated.",
+        "Heat oven to 375°F. Arrange pork in a roasting pan in a shallow, even layer, cover tightly with foil and roast about 45–60 minutes, until the pieces are tender and reach at least 145°F. Rest 3 minutes and reserve only fully cooked pan juices.",
+        "Uncover the pan, stir in 1 cup pineapple chunks and broil 3–5 minutes, watching continuously, until the edges of the pork and pineapple begin to caramelize. Chop the cooked pork and pineapple into small taco-size pieces.",
+        "Warm 18 corn tortillas in a dry skillet, about 20 seconds per side. Divide pork and pineapple across the tortillas; finish with diced white onion, ½ cup chopped cilantro and lime wedges, giving each person three tacos."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-035",
+      "name": "Chicken Mole Enchiladas",
+      "serv": 6,
+      "ingredients": [
+        [
+          "Cooked shredded chicken",
+          3,
+          "cup"
+        ],
+        [
+          "Corn tortillas",
+          12,
+          "each"
+        ],
+        [
+          "Mole poblano paste, prepared",
+          0.75,
+          "cup"
+        ],
+        [
+          "Chicken broth",
+          2,
+          "cup"
+        ],
+        [
+          "Shredded Monterey Jack cheese",
+          1.5,
+          "cup"
+        ],
+        [
+          "White onion",
+          0.5,
+          "each"
+        ],
+        [
+          "Sesame seeds",
+          2,
+          "tbsp"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Salt",
+          0.25,
+          "tsp"
+        ],
+        [
+          "Cilantro",
+          0.25,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Preheat oven to 375°F and grease a 9-by-13-inch baking dish with 1 tbsp olive oil. Dice half a white onion and chop ¼ cup cilantro; reserve both for the finished enchiladas.",
+        "Whisk ¾ cup commercially prepared mole poblano paste and 2 cups chicken broth together in a saucepan over medium-low heat, adding the broth a little at a time to prevent lumps. Simmer for 5–8 minutes until smooth and pourable, checking the mole package for any additional preparation directions.",
+        "Warm 3 cups fully cooked shredded chicken in a skillet with ½ cup prepared mole sauce until steaming and the chicken reaches 165°F. Taste before adding any of the optional ¼ tsp salt because prepared mole may already be seasoned.",
+        "Briefly heat 12 corn tortillas in a dry skillet until pliable, then divide the chicken filling among them. Roll the tortillas tightly and arrange seam-side down in the baking dish; pour the remaining mole sauce evenly over them.",
+        "Sprinkle 1½ cups shredded Monterey Jack over the enchiladas. Cover with foil and bake 15 minutes; uncover and bake another 8–10 minutes until bubbling and the centers reach 165°F. Rest 5 minutes, sprinkle with 2 tbsp sesame seeds, onion and cilantro, and serve two enchiladas per person."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-036",
+      "name": "Beef Quesabirria",
+      "serv": 6,
+      "ingredients": [
+        [
+          "Beef chuck roast",
+          2.5,
+          "lb"
+        ],
+        [
+          "Dried guajillo chiles",
+          4,
+          "each"
+        ],
+        [
+          "Dried ancho chiles",
+          2,
+          "each"
+        ],
+        [
+          "Beef broth",
+          3,
+          "cup"
+        ],
+        [
+          "White onion",
+          1,
+          "each"
+        ],
+        [
+          "Garlic cloves",
+          4,
+          "each"
+        ],
+        [
+          "Apple cider vinegar",
+          2,
+          "tbsp"
+        ],
+        [
+          "Dried oregano",
+          1,
+          "tsp"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          1.5,
+          "tsp"
+        ],
+        [
+          "Corn tortillas",
+          18,
+          "each"
+        ],
+        [
+          "Shredded Oaxaca cheese",
+          2,
+          "cup"
+        ],
+        [
+          "Cilantro",
+          0.5,
+          "cup"
+        ],
+        [
+          "Lime",
+          2,
+          "each"
+        ]
+      ],
+      "steps": [
+        "Remove stems and seeds from 4 guajillo and 2 ancho chiles, cover with hot water and soak 15 minutes. Drain and blend with half an onion, 4 garlic cloves, 2 tbsp vinegar, 1 tsp oregano, 1 tsp cumin and 1 cup beef broth until very smooth.",
+        "Cut 2½ lb chuck roast into large chunks and season with 1½ tsp salt. Put beef, chile sauce and remaining 2 cups beef broth in a heavy covered pot; simmer gently for 3–4 hours, turning meat occasionally, until it shreds easily with two forks.",
+        "Lift beef out, shred finely and stir in several spoonfuls of hot cooking liquid. Skim a little of the orange-red fat from the surface of the braising broth into a shallow bowl and keep the remaining broth hot to serve as consommé.",
+        "Heat a heavy nonstick skillet over medium heat. Lightly dip each of 18 corn tortillas in the skimmed broth fat, lay flat in the skillet, sprinkle with the measured Oaxaca cheese and a share of shredded beef, fold and cook 2–3 minutes per side until crisp and the cheese melts.",
+        "Serve three quesabirria tacos per person with diced remaining onion, ½ cup chopped cilantro, lime wedges and small bowls of hot strained braising broth for dipping. Refrigerate leftover beef and consommé promptly."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-037",
+      "name": "Tex-Mex Chili Mac",
+      "slot": "Dinner",
+      "serv": 6,
+      "ingredients": [
+        [
+          "Lean ground beef",
+          1,
+          "lb"
+        ],
+        [
+          "Dry elbow macaroni",
+          12,
+          "oz"
+        ],
+        [
+          "Diced tomatoes",
+          2,
+          "cup"
+        ],
+        [
+          "Kidney beans, rinsed",
+          1.5,
+          "cup"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Garlic cloves",
+          3,
+          "each"
+        ],
+        [
+          "Beef broth",
+          1.5,
+          "cup"
+        ],
+        [
+          "Tomato paste",
+          2,
+          "tbsp"
+        ],
+        [
+          "Chili powder",
+          2,
+          "tsp"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Smoked paprika",
+          1,
+          "tsp"
+        ],
+        [
+          "Shredded cheddar",
+          1.5,
+          "cup"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Salt",
+          0.5,
+          "tsp"
+        ]
+      ],
+      "steps": [
+        "Dice 1 onion and mince 3 garlic cloves; drain and rinse 1½ cups kidney beans, measure 12 oz dry elbow macaroni and set out the remaining ingredients.",
+        "Heat 1 tbsp olive oil in a deep skillet or Dutch oven over medium heat; sauté onion for 4–5 minutes, add garlic for 30 seconds, then add 1 lb ground beef and cook while breaking it apart until it reaches 160°F; drain excess fat.",
+        "Stir in 2 tbsp tomato paste, 2 tsp chili powder, 1 tsp cumin, 1 tsp smoked paprika and ½ tsp salt; cook for 1 minute, then add 2 cups diced tomatoes, 1½ cups broth and the beans.",
+        "Bring a separate large pot of water to a boil, cook the 12 oz macaroni according to package directions until barely al dente, reserve ½ cup cooking water, and drain; meanwhile simmer the beef mixture uncovered for 8–10 minutes.",
+        "Fold macaroni into the chili mixture, adding reserved pasta water a spoonful at a time if necessary; sprinkle with 1½ cups cheddar, cover for 2 minutes until melted and divide into six warm portions."
+      ],
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-038",
+      "name": "Cheesy Chorizo Breakfast Tacos",
+      "slot": "Breakfast",
+      "serv": 4,
+      "ingredients": [
+        [
+          "Raw Mexican-style pork chorizo",
+          12,
+          "oz"
+        ],
+        [
+          "Large eggs",
+          8,
+          "each"
+        ],
+        [
+          "Small flour tortillas",
+          8,
+          "each"
+        ],
+        [
+          "Shredded Monterey Jack cheese",
+          1,
+          "cup"
+        ],
+        [
+          "Yellow onion",
+          0.5,
+          "each"
+        ],
+        [
+          "Bell pepper",
+          1,
+          "each"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tsp"
+        ],
+        [
+          "Salsa",
+          0.5,
+          "cup"
+        ],
+        [
+          "Cilantro",
+          0.25,
+          "cup"
+        ],
+        [
+          "Salt",
+          0.25,
+          "tsp"
+        ]
+      ],
+      "steps": [
+        "Finely dice half an onion and 1 bell pepper, chop ¼ cup cilantro, and crack 8 eggs into a bowl; whisk with ¼ tsp salt until whites and yolks are combined.",
+        "Heat 1 tsp olive oil in a large nonstick skillet over medium heat, sauté the onion and pepper for 4–5 minutes, and transfer them to a clean plate.",
+        "Add 12 oz raw Mexican-style chorizo to the skillet, breaking it into small crumbles; cook thoroughly for 7–9 minutes until the pork chorizo reaches 160°F, then drain excess rendered fat if needed.",
+        "Lower the heat to medium-low, return the vegetables to the skillet and add the beaten eggs; stir slowly until eggs are softly set and fully cooked to 160°F, taking care not to dry them out.",
+        "Warm 8 tortillas in a dry skillet for 20 seconds on each side, divide the chorizo-egg mixture among them, add 1 cup Monterey Jack cheese and top with ½ cup salsa and cilantro; serve two tacos per person."
+      ],
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-039",
+      "name": "Chorizo and Potato Burritos",
+      "slot": "Dinner",
+      "serv": 4,
+      "ingredients": [
+        [
+          "Raw Mexican-style pork chorizo",
+          12,
+          "oz"
+        ],
+        [
+          "Russet potatoes",
+          1,
+          "lb"
+        ],
+        [
+          "Large flour tortillas",
+          4,
+          "each"
+        ],
+        [
+          "Shredded cheddar",
+          1,
+          "cup"
+        ],
+        [
+          "Large eggs",
+          4,
+          "each"
+        ],
+        [
+          "Yellow onion",
+          0.5,
+          "each"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Ground cumin",
+          0.5,
+          "tsp"
+        ],
+        [
+          "Salt",
+          0.5,
+          "tsp"
+        ],
+        [
+          "Salsa verde",
+          0.5,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Peel 1 lb russet potatoes and cut into even ½-inch cubes, then dice half a yellow onion; pat the potatoes dry to help them brown instead of steaming.",
+        "Heat 1 tbsp olive oil in a wide skillet over medium heat and cook potato cubes and onion with ½ tsp cumin and ½ tsp salt, covered for the first 8 minutes then uncovered for another 8–10 minutes, until potatoes are tender and browned.",
+        "Transfer the potatoes to a plate; crumble 12 oz raw pork chorizo into the skillet, cook over medium heat for 7–9 minutes until it reaches 160°F and drain excess grease.",
+        "Beat 4 eggs and pour them into the cooked chorizo over medium-low heat, stirring until the eggs are fully cooked; return potatoes to the pan and toss briefly with the chorizo and eggs.",
+        "Warm four large tortillas until pliable, divide the filling evenly, sprinkle with 1 cup cheddar and spoon on ½ cup salsa verde; fold sides inward and roll tightly, then toast the wrapped burritos seam-side down for 1–2 minutes before serving."
+      ],
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-040",
+      "name": "Grilled Fish Baja Tacos",
+      "slot": "Dinner",
+      "serv": 4,
+      "ingredients": [
+        [
+          "Skinless white fish fillets",
+          1.5,
+          "lb"
+        ],
+        [
+          "Corn tortillas",
+          12,
+          "each"
+        ],
+        [
+          "Shredded cabbage",
+          2,
+          "cup"
+        ],
+        [
+          "Plain Greek yogurt",
+          0.5,
+          "cup"
+        ],
+        [
+          "Lime",
+          2,
+          "each"
+        ],
+        [
+          "Olive oil",
+          2,
+          "tbsp"
+        ],
+        [
+          "Chili powder",
+          1,
+          "tsp"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Garlic powder",
+          0.5,
+          "tsp"
+        ],
+        [
+          "Salt",
+          0.75,
+          "tsp"
+        ],
+        [
+          "Cilantro",
+          0.25,
+          "cup"
+        ],
+        [
+          "Avocado",
+          1,
+          "each"
+        ]
+      ],
+      "steps": [
+        "Pat dry 1½ lb skinless white fish fillets and cut into roughly eight even pieces; whisk 1 tbsp olive oil with 1 tsp chili powder, 1 tsp cumin, ½ tsp garlic powder and ¾ tsp salt, then coat the fish.",
+        "Whisk ½ cup plain Greek yogurt with juice from 1 lime and 1 tbsp water to make a pourable sauce; prepare 2 cups shredded cabbage, dice 1 avocado and chop ¼ cup cilantro.",
+        "Preheat a clean, lightly oiled grill pan over medium-high heat; brush with the remaining tablespoon of olive oil and lay the fish pieces in a single layer without crowding.",
+        "Cook fish about 3–5 minutes per side, depending on thickness, until opaque, flaky and 145°F in the thickest part; use a wide spatula to keep the pieces intact and transfer to a clean platter.",
+        "Warm 12 corn tortillas on a dry skillet, divide fish into tortillas, top with cabbage, avocado and cilantro, and drizzle with lime-yogurt sauce; serve three tacos per person with wedges from the remaining lime."
+      ],
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-041",
+      "name": "Creamy Chicken Poblano Soup",
+      "serv": 6,
+      "ingredients": [
+        [
+          "Boneless skinless chicken breasts",
+          1.25,
+          "lb"
+        ],
+        [
+          "Poblano peppers",
+          3,
+          "each"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Garlic cloves",
+          3,
+          "each"
+        ],
+        [
+          "Chicken broth",
+          5,
+          "cup"
+        ],
+        [
+          "Heavy cream",
+          0.75,
+          "cup"
+        ],
+        [
+          "Russet potatoes",
+          1,
+          "lb"
+        ],
+        [
+          "Frozen corn",
+          1,
+          "cup"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          1,
+          "tsp"
+        ],
+        [
+          "Black pepper",
+          0.5,
+          "tsp"
+        ],
+        [
+          "Lime",
+          1,
+          "each"
+        ],
+        [
+          "Cilantro",
+          0.25,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Set oven to broil and place 3 whole poblanos on a foil-lined sheet pan. Broil 4–6 minutes per side until the skins blister, then cover the peppers in a bowl for 10 minutes, peel away loose blackened skin, discard the seeds and chop the flesh.",
+        "Dice 1 onion and 1 lb peeled potatoes, and mince 3 garlic cloves. Heat 1 tbsp olive oil over medium heat in a large soup pot, cook the onion for 4 minutes, add the garlic for 30 seconds and stir in 1 tsp cumin.",
+        "Pour 5 cups chicken broth into the pot and add potatoes, roasted poblano strips and 1¼ lb chicken breasts. Bring to a gentle simmer, cover partially and cook 18–25 minutes until the potatoes are tender and the chicken reaches 165°F.",
+        "Lift chicken onto a clean board and shred with two forks. Mash several pieces of potato directly in the pot to thicken the soup naturally, then return chicken and add 1 cup frozen corn. Simmer for 5 minutes until the corn is fully heated.",
+        "Lower the heat and stir in ¾ cup heavy cream, 1 tsp salt and ½ tsp pepper; warm gently for 3 minutes without hard boiling. Finish with the juice of 1 lime and ¼ cup chopped cilantro, then divide into six bowls."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-042",
+      "name": "Mexican Beef Meatballs",
+      "serv": 6,
+      "ingredients": [
+        [
+          "Lean ground beef",
+          1.5,
+          "lb"
+        ],
+        [
+          "Egg",
+          1,
+          "each"
+        ],
+        [
+          "Dry breadcrumbs",
+          0.5,
+          "cup"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Garlic cloves",
+          3,
+          "each"
+        ],
+        [
+          "Ground cumin",
+          2,
+          "tsp"
+        ],
+        [
+          "Chili powder",
+          2,
+          "tsp"
+        ],
+        [
+          "Salt",
+          1.25,
+          "tsp"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Crushed tomatoes",
+          2,
+          "cup"
+        ],
+        [
+          "Beef broth",
+          1,
+          "cup"
+        ],
+        [
+          "Chipotle pepper in adobo",
+          1,
+          "each"
+        ],
+        [
+          "Cilantro",
+          0.25,
+          "cup"
+        ],
+        [
+          "Cooked rice",
+          3,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Finely grate half of 1 onion and mince 1 garlic clove. In a bowl gently combine 1½ lb ground beef, 1 egg, ½ cup breadcrumbs, grated onion, garlic, 1 tsp cumin, 1 tsp chili powder and ¾ tsp salt, mixing just until the ingredients hold together.",
+        "Form approximately 24 equal meatballs with lightly moistened hands and arrange on a clean plate. Heat 1 tbsp olive oil in a large skillet over medium heat and brown meatballs in batches for about 4 minutes, turning to color the surfaces; they will finish cooking in the sauce.",
+        "Finely dice the remaining half onion and mince 2 garlic cloves. Add them to the skillet and cook for 3 minutes, then add 2 cups crushed tomatoes, 1 cup beef broth, 1 chopped chipotle pepper, the remaining 1 tsp cumin, 1 tsp chili powder and ½ tsp salt.",
+        "Return meatballs to the sauce, cover and simmer gently for 15–20 minutes, turning once, until their centers reach 160°F. If the sauce becomes too thick, stir in water by the tablespoon; keep the meatballs partly submerged.",
+        "Reheat 3 cups previously cooked rice until steaming and 165°F, following safe cooled-rice storage practices. Divide rice among six plates, spoon four meatballs and tomato-chile sauce onto each, and garnish with ¼ cup chopped cilantro."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-043",
+      "name": "Smoky Chipotle Turkey Chili",
+      "serv": 6,
+      "ingredients": [
+        [
+          "Ground turkey",
+          1.5,
+          "lb"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Bell pepper",
+          1,
+          "each"
+        ],
+        [
+          "Garlic cloves",
+          3,
+          "each"
+        ],
+        [
+          "Kidney beans, canned drained",
+          2,
+          "cup"
+        ],
+        [
+          "Black beans, canned drained",
+          1,
+          "cup"
+        ],
+        [
+          "Crushed tomatoes",
+          3,
+          "cup"
+        ],
+        [
+          "Chicken broth",
+          1,
+          "cup"
+        ],
+        [
+          "Chipotle peppers in adobo",
+          2,
+          "each"
+        ],
+        [
+          "Chili powder",
+          2,
+          "tbsp"
+        ],
+        [
+          "Ground cumin",
+          2,
+          "tsp"
+        ],
+        [
+          "Smoked paprika",
+          1,
+          "tsp"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Salt",
+          1,
+          "tsp"
+        ],
+        [
+          "Shredded cheddar",
+          0.75,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Dice 1 onion and 1 bell pepper and mince 3 garlic cloves. Drain and rinse enough canned kidney and black beans to make 2 cups kidney beans and 1 cup black beans.",
+        "Heat 1 tbsp olive oil in a heavy pot over medium heat. Add onion and bell pepper and cook 5 minutes until softened, then stir in the garlic for 30 seconds.",
+        "Add 1½ lb ground turkey, break into small pieces and cook 7–9 minutes until no pink remains and the turkey reaches 165°F. Stir in 2 tbsp chili powder, 2 tsp cumin, 1 tsp smoked paprika and 1 tsp salt.",
+        "Finely mince 2 canned chipotle peppers and add them with 3 cups crushed tomatoes, 1 cup chicken broth and the drained beans. Bring to a low simmer, cover partly and cook 25–30 minutes, stirring occasionally so the bottom does not scorch.",
+        "Taste and adjust seasoning, then simmer uncovered an additional 5 minutes if you prefer a thicker chili. Ladle into six bowls and top each with about 2 tbsp shredded cheddar from the measured ¾ cup."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-044",
+      "name": "Steak Taco Salad",
+      "serv": 4,
+      "ingredients": [
+        [
+          "Flank steak",
+          1.25,
+          "lb"
+        ],
+        [
+          "Romaine lettuce",
+          8,
+          "cup"
+        ],
+        [
+          "Corn kernels",
+          1,
+          "cup"
+        ],
+        [
+          "Black beans, canned drained",
+          1,
+          "cup"
+        ],
+        [
+          "Roma tomatoes",
+          2,
+          "each"
+        ],
+        [
+          "Avocado",
+          1,
+          "each"
+        ],
+        [
+          "Red onion",
+          0.5,
+          "each"
+        ],
+        [
+          "Crumbled cotija cheese",
+          0.5,
+          "cup"
+        ],
+        [
+          "Lime",
+          2,
+          "each"
+        ],
+        [
+          "Olive oil",
+          3,
+          "tbsp"
+        ],
+        [
+          "Chili powder",
+          2,
+          "tsp"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          0.75,
+          "tsp"
+        ],
+        [
+          "Sour cream",
+          0.25,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Pat 1¼ lb flank steak dry and rub with 2 tsp chili powder, 1 tsp cumin, ¾ tsp salt and 1 tbsp olive oil. Let sit for 10 minutes while you prepare the remaining salad ingredients.",
+        "Rinse and dry 8 cups chopped romaine lettuce. Drain and rinse 1 cup black beans, dice 2 tomatoes, finely slice half a red onion and cube 1 avocado; keep avocado aside with a small squeeze of lime to limit browning.",
+        "Heat a grill pan over medium-high heat and cook the steak 4–6 minutes per side, according to thickness, until the thickest part reaches 145°F. Rest for at least 3 minutes, then slice thinly against the grain.",
+        "Warm 1 cup corn kernels in a dry skillet for 4–5 minutes, stirring until thoroughly hot and slightly browned. Whisk remaining 2 tbsp olive oil with juice of the limes and ¼ cup sour cream to make a pourable dressing.",
+        "Divide romaine, beans, corn, tomato, onion and avocado among four large salad bowls. Top evenly with sliced steak and ½ cup cotija cheese; drizzle the lime dressing on each salad just before serving."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-045",
+      "name": "Cilantro Lime Chicken Taquitos",
+      "serv": 4,
+      "slot": "Dinner",
+      "cuisine": "Mexican & Tex-Mex",
+      "ingredients": [
+        [
+          "Boneless skinless chicken breast",
+          1.25,
+          "lb"
+        ],
+        [
+          "Corn tortillas",
+          12,
+          "each"
+        ],
+        [
+          "Monterey Jack cheese",
+          1,
+          "cup"
+        ],
+        [
+          "Chopped cilantro",
+          0.5,
+          "cup"
+        ],
+        [
+          "Lime juice",
+          3,
+          "tbsp"
+        ],
+        [
+          "Garlic cloves",
+          2,
+          "each"
+        ],
+        [
+          "Ground cumin",
+          1,
+          "tsp"
+        ],
+        [
+          "Chili powder",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          0.75,
+          "tsp"
+        ],
+        [
+          "Olive oil",
+          3,
+          "tbsp"
+        ],
+        [
+          "Salsa verde",
+          0.5,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Heat oven to 425°F and line a sheet pan with parchment. Rub 1¼ lb chicken breast with 1 tsp cumin, 1 tsp chili powder and ¾ tsp salt, and place in a lightly oiled ovenproof dish.",
+        "Bake chicken 18–25 minutes, depending on thickness, until the thickest section reaches 165°F. Rest for 5 minutes on a clean board and shred with two forks.",
+        "Toss chicken with ½ cup cilantro, 3 tbsp lime juice, 2 minced garlic cloves, 1 cup Monterey Jack and ½ cup salsa verde until the filling is evenly coated.",
+        "Warm 12 corn tortillas under a damp towel until pliable. Divide filling evenly, roll each tightly, place seam-side down and brush with the 3 tbsp olive oil.",
+        "Bake for 15–20 minutes, turning halfway through, until crispy and the filling reaches 165°F. Rest 2 minutes and serve three taquitos per person."
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-046",
+      "name": "Smothered Pork Chops with Onion Gravy",
+      "serv": 4,
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "ingredients": [
+        [
+          "Boneless pork chops",
+          4,
+          "each"
+        ],
+        [
+          "Yellow onions",
+          2,
+          "each"
+        ],
+        [
+          "All-purpose flour",
+          0.5,
+          "cup"
+        ],
+        [
+          "Chicken broth",
+          2,
+          "cup"
+        ],
+        [
+          "Whole milk",
+          0.5,
+          "cup"
+        ],
+        [
+          "Olive oil",
+          2,
+          "tbsp"
+        ],
+        [
+          "Unsalted butter",
+          2,
+          "tbsp"
+        ],
+        [
+          "Garlic powder",
+          1,
+          "tsp"
+        ],
+        [
+          "Paprika",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          1,
+          "tsp"
+        ],
+        [
+          "Black pepper",
+          0.5,
+          "tsp"
+        ],
+        [
+          "Fresh thyme",
+          1,
+          "tsp"
+        ]
+      ],
+      "steps": [
+        "Pat four pork chops dry and season with 1 tsp salt, ½ tsp pepper, 1 tsp garlic powder and 1 tsp paprika. Put ½ cup flour in a shallow dish and dust both sides, setting aside flour that has not touched raw pork.",
+        "Heat 2 tbsp oil in a skillet over medium-high and brown chops for 3–4 minutes on each side. Transfer to a clean plate; they will finish cooking in the gravy.",
+        "Thinly slice two onions. Lower heat to medium, melt 2 tbsp butter and sauté onions for 12–15 minutes, stirring until softened and browned. Sprinkle in 2 tbsp safely reserved flour and stir one minute.",
+        "Slowly whisk in 2 cups chicken broth, scraping the pan, followed by ½ cup milk and 1 tsp thyme. Simmer 4–5 minutes, stirring until the gravy is smooth and thickened.",
+        "Return chops and any juices to gravy, cover loosely and simmer 6–10 minutes until the thickest pork reaches 145°F. Rest for at least 3 minutes, then serve with hot onion gravy."
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-047",
+      "name": "Country Fried Steak and Cream Gravy",
+      "serv": 4,
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "ingredients": [
+        [
+          "Beef cube steaks",
+          4,
+          "each"
+        ],
+        [
+          "All-purpose flour",
+          1.25,
+          "cup"
+        ],
+        [
+          "Buttermilk",
+          1,
+          "cup"
+        ],
+        [
+          "Egg",
+          1,
+          "each"
+        ],
+        [
+          "Whole milk",
+          2,
+          "cup"
+        ],
+        [
+          "Vegetable oil",
+          0.5,
+          "cup"
+        ],
+        [
+          "Paprika",
+          1,
+          "tsp"
+        ],
+        [
+          "Garlic powder",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          1.5,
+          "tsp"
+        ],
+        [
+          "Black pepper",
+          1,
+          "tsp"
+        ],
+        [
+          "Unsalted butter",
+          2,
+          "tbsp"
+        ]
+      ],
+      "steps": [
+        "Pat four cube steaks dry. Combine 1 cup flour with 1 tsp paprika, 1 tsp garlic powder, 1 tsp salt and ½ tsp pepper in a bowl. In another bowl, whisk one egg with 1 cup buttermilk.",
+        "Coat each steak in the seasoned flour, dip in buttermilk, then coat in flour again, pressing gently until the coating adheres. Rest on a wire rack while heating the oil.",
+        "Heat ½ cup vegetable oil to about 350°F in a wide skillet and fry steaks in batches for 3–5 minutes per side until golden and at least 145°F internally. Rest at least 3 minutes on a clean rack.",
+        "Discard used coating mixtures, safely pour off excess frying oil, and melt 2 tbsp butter in the skillet. Add remaining ¼ cup unused flour and whisk for 1–2 minutes until pale golden.",
+        "Gradually add 2 cups milk while whisking, then simmer for 4–6 minutes until thick. Season with remaining salt and pepper and spoon hot cream gravy over each steak."
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-048",
+      "name": "Cajun Shrimp and Grits",
+      "serv": 4,
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "ingredients": [
+        [
+          "Peeled deveined raw shrimp",
+          1.5,
+          "lb"
+        ],
+        [
+          "Quick-cooking grits",
+          1,
+          "cup"
+        ],
+        [
+          "Chicken broth",
+          2,
+          "cup"
+        ],
+        [
+          "Water",
+          2,
+          "cup"
+        ],
+        [
+          "Sharp cheddar",
+          1,
+          "cup"
+        ],
+        [
+          "Unsalted butter",
+          3,
+          "tbsp"
+        ],
+        [
+          "Fully cooked smoked sausage",
+          6,
+          "oz"
+        ],
+        [
+          "Bell pepper",
+          1,
+          "each"
+        ],
+        [
+          "Green onions",
+          4,
+          "each"
+        ],
+        [
+          "Garlic cloves",
+          3,
+          "each"
+        ],
+        [
+          "Cajun seasoning",
+          2,
+          "tsp"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Lemon",
+          1,
+          "each"
+        ]
+      ],
+      "steps": [
+        "Bring 2 cups chicken broth and 2 cups water to a boil. Slowly whisk in 1 cup grits, lower the heat and simmer following the package timing, whisking frequently until tender and thick.",
+        "Stir 2 tbsp butter and 1 cup shredded sharp cheddar into grits until smooth; cover over very low heat. Add warm water by the spoonful if they become too thick.",
+        "Slice 6 oz smoked sausage into coins, dice the bell pepper, slice four green onions and mince three garlic cloves. Dry the shrimp and toss with 2 tsp Cajun seasoning.",
+        "Heat 1 tbsp oil in a skillet over medium-high. Brown sausage for 3–4 minutes, sauté the bell pepper for 3 more minutes and garlic for 30 seconds, then arrange shrimp in a single layer.",
+        "Cook shrimp about 2–3 minutes per side until opaque, firm and 145°F in the thickest part. Melt in the remaining tbsp butter, squeeze in one lemon and stir in the green onions; serve over four portions of hot cheddar grits."
+      ],
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-049",
+      "name": "Buttermilk Fried Chicken",
+      "serv": 6,
+      "ingredients": [
+        [
+          "Bone-in chicken thighs and drumsticks",
+          3,
+          "lb"
+        ],
+        [
+          "Buttermilk",
+          2,
+          "cup"
+        ],
+        [
+          "All-purpose flour",
+          2,
+          "cup"
+        ],
+        [
+          "Cornstarch",
+          0.5,
+          "cup"
+        ],
+        [
+          "Paprika",
+          2,
+          "tsp"
+        ],
+        [
+          "Garlic powder",
+          2,
+          "tsp"
+        ],
+        [
+          "Onion powder",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          2,
+          "tsp"
+        ],
+        [
+          "Black pepper",
+          1,
+          "tsp"
+        ],
+        [
+          "Cayenne pepper",
+          0.25,
+          "tsp"
+        ],
+        [
+          "Neutral frying oil",
+          6,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Whisk 2 cups buttermilk with 1 tsp salt and ½ tsp black pepper in a large food-safe bowl. Add 3 lb chicken pieces, turn to coat, cover and refrigerate at least 4 hours or overnight, keeping raw chicken separate from ready-to-eat food.",
+        "Mix 2 cups flour, ½ cup cornstarch, 2 tsp paprika, 2 tsp garlic powder, 1 tsp onion powder, the remaining 1 tsp salt, ½ tsp pepper and ¼ tsp cayenne in a wide dish. Lift chicken from the marinade, letting excess drip off, then dredge thoroughly in the seasoned flour; discard used marinade.",
+        "Pour neutral oil into a deep, heavy pot to a depth of about 2 inches without filling the pot more than halfway; the measured 6 cups is an allowance, and the exact amount depends on pot size. Heat to 325°F using a deep-fry thermometer and keep water away from hot oil.",
+        "Lower two or three chicken pieces into the oil carefully without crowding. Fry about 12–18 minutes depending on piece size, turning occasionally and keeping oil near 325°F, until the thickest parts reach at least 165°F without the probe touching bone; repeat with remaining chicken.",
+        "Transfer cooked chicken to a rack over a baking sheet rather than stacking it on towels, so the crust stays crisp. Rest 5 minutes before dividing the pieces among six servings and discard frying oil safely after it has completely cooled."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-050",
+      "name": "Crispy Southern Chicken Tenders",
+      "serv": 4,
+      "ingredients": [
+        [
+          "Raw chicken tenderloins",
+          1.5,
+          "lb"
+        ],
+        [
+          "Buttermilk",
+          1,
+          "cup"
+        ],
+        [
+          "All-purpose flour",
+          1.5,
+          "cup"
+        ],
+        [
+          "Panko breadcrumbs",
+          1,
+          "cup"
+        ],
+        [
+          "Eggs",
+          2,
+          "each"
+        ],
+        [
+          "Paprika",
+          1,
+          "tsp"
+        ],
+        [
+          "Garlic powder",
+          1,
+          "tsp"
+        ],
+        [
+          "Onion powder",
+          0.5,
+          "tsp"
+        ],
+        [
+          "Salt",
+          1,
+          "tsp"
+        ],
+        [
+          "Black pepper",
+          0.5,
+          "tsp"
+        ],
+        [
+          "Neutral frying oil",
+          3,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Pat 1½ lb raw chicken tenderloins dry and place in a shallow dish with 1 cup buttermilk. Cover and refrigerate for 30 minutes while you arrange a clean breading station.",
+        "In one shallow bowl whisk 2 eggs; in another mix 1½ cups flour, 1 tsp paprika, 1 tsp garlic powder, ½ tsp onion powder, 1 tsp salt and ½ tsp pepper; place 1 cup panko in a third shallow bowl.",
+        "Remove each tender from buttermilk and let the excess drip away. Coat first in seasoned flour, then egg and finally panko, pressing crumbs gently onto all sides; discard remaining raw-chicken marinade and used breading.",
+        "Heat about 1 inch of neutral frying oil in a heavy skillet to 350°F, using up to 3 cups depending on pan size and keeping the skillet less than half full. Fry tenders in small batches for about 3–5 minutes per side, adjusting for thickness and oil temperature, until golden and the centers reach 165°F.",
+        "Move finished tenders to a wire rack so the coating stays crunchy. Let rest 3 minutes, divide evenly into four portions and serve hot; refrigerate leftovers promptly."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-051",
+      "name": "Sausage Gravy and Buttermilk Biscuits",
+      "serv": 6,
+      "ingredients": [
+        [
+          "All-purpose flour",
+          3.25,
+          "cup"
+        ],
+        [
+          "Baking powder",
+          1,
+          "tbsp"
+        ],
+        [
+          "Baking soda",
+          0.5,
+          "tsp"
+        ],
+        [
+          "Cold unsalted butter",
+          0.5,
+          "cup"
+        ],
+        [
+          "Buttermilk",
+          1.25,
+          "cup"
+        ],
+        [
+          "Salt",
+          1.25,
+          "tsp"
+        ],
+        [
+          "Ground breakfast pork sausage",
+          1,
+          "lb"
+        ],
+        [
+          "Whole milk",
+          3,
+          "cup"
+        ],
+        [
+          "Black pepper",
+          1,
+          "tsp"
+        ],
+        [
+          "Unsalted butter for gravy",
+          1,
+          "tbsp"
+        ]
+      ],
+      "steps": [
+        "Heat oven to 425°F and line a baking sheet with parchment. In a mixing bowl whisk 2½ cups flour, 1 tbsp baking powder, ½ tsp baking soda and ¾ tsp salt; cut in ½ cup cold butter until the mixture resembles coarse crumbs.",
+        "Pour in 1¼ cups cold buttermilk and fold gently until a shaggy dough forms. Turn onto a lightly floured surface using the remaining ½ cup flour as needed; fold the dough over itself three times, pat to about ¾ inch thick and cut 12 biscuits with a floured cutter.",
+        "Arrange biscuits on the sheet with sides nearly touching and bake 13–17 minutes until tall and golden brown. Meanwhile place 1 lb breakfast sausage in a heavy skillet over medium heat, breaking into crumbles and cooking for about 8–10 minutes until it reaches 160°F.",
+        "Add 1 tbsp butter to the sausage if the pan is dry, then sprinkle over ¼ cup flour from the measured 3¼ cups total, stirring for 1 minute. Gradually whisk in 3 cups whole milk, scraping browned bits from the bottom and stirring until smooth.",
+        "Simmer the gravy for 4–6 minutes until thick enough to coat a spoon; season with remaining ½ tsp salt and 1 tsp black pepper, tasting before adding all the salt if the sausage is salty. Split two warm biscuits onto each of six plates and spoon hot sausage gravy over them."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-052",
+      "name": "Slow-Cooker Pot Roast and Carrots",
+      "serv": 6,
+      "ingredients": [
+        [
+          "Beef chuck roast",
+          3,
+          "lb"
+        ],
+        [
+          "Carrots",
+          1.5,
+          "lb"
+        ],
+        [
+          "Yukon Gold potatoes",
+          1.5,
+          "lb"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Garlic cloves",
+          4,
+          "each"
+        ],
+        [
+          "Beef broth",
+          2,
+          "cup"
+        ],
+        [
+          "Tomato paste",
+          2,
+          "tbsp"
+        ],
+        [
+          "Worcestershire sauce",
+          2,
+          "tbsp"
+        ],
+        [
+          "Olive oil",
+          2,
+          "tbsp"
+        ],
+        [
+          "Dried thyme",
+          1,
+          "tsp"
+        ],
+        [
+          "Dried rosemary",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          1.5,
+          "tsp"
+        ],
+        [
+          "Black pepper",
+          1,
+          "tsp"
+        ],
+        [
+          "Cornstarch",
+          2,
+          "tbsp"
+        ]
+      ],
+      "steps": [
+        "Pat 3 lb chuck roast dry and season on all sides with 1½ tsp salt and 1 tsp black pepper. Heat 2 tbsp olive oil in a large skillet over medium-high heat and brown the roast 3–4 minutes per side; transfer to a slow cooker.",
+        "Cut 1½ lb carrots into 2-inch pieces, halve 1½ lb Yukon Gold potatoes and cut 1 onion into thick wedges. Arrange vegetables around the beef and add 4 smashed garlic cloves.",
+        "Whisk together 2 cups beef broth, 2 tbsp tomato paste, 2 tbsp Worcestershire sauce, 1 tsp thyme and 1 tsp rosemary until smooth, then pour the liquid around the roast. Cover and cook on LOW for 8–9 hours or HIGH for 5–6 hours until the beef is fork-tender.",
+        "Transfer the roast and vegetables to a platter and cover loosely to stay warm. Pour 1 cup of cooking liquid into a saucepan; whisk 2 tbsp cornstarch with 2 tbsp cool water and gradually stir into the hot liquid, simmering 2–3 minutes until the gravy thickens.",
+        "Slice or pull apart the beef, removing any large pieces of fat. Divide the roast, carrots and potatoes into six portions and spoon the hot gravy over each plate. Refrigerate leftovers promptly in shallow containers."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-053",
+      "name": "Beef Tips and Brown Gravy",
+      "serv": 6,
+      "ingredients": [
+        [
+          "Beef sirloin tips",
+          2,
+          "lb"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Cremini mushrooms",
+          8,
+          "oz"
+        ],
+        [
+          "Beef broth",
+          3,
+          "cup"
+        ],
+        [
+          "Worcestershire sauce",
+          2,
+          "tbsp"
+        ],
+        [
+          "All-purpose flour",
+          3,
+          "tbsp"
+        ],
+        [
+          "Unsalted butter",
+          2,
+          "tbsp"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Garlic cloves",
+          3,
+          "each"
+        ],
+        [
+          "Dried thyme",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          1,
+          "tsp"
+        ],
+        [
+          "Black pepper",
+          0.5,
+          "tsp"
+        ],
+        [
+          "Mashed potatoes, prepared",
+          4,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Pat 2 lb beef sirloin tips dry and cut into 1½-inch pieces. Season with 1 tsp salt and ½ tsp pepper. Slice 1 onion and 8 oz mushrooms and mince 3 garlic cloves.",
+        "Heat 1 tbsp olive oil and 1 tbsp butter in a heavy skillet over medium-high heat. Sear the beef in two batches for 2–3 minutes per side until browned; move to a clean plate, reserving the browned bits in the pan.",
+        "Reduce heat to medium, melt the remaining 1 tbsp butter, and cook onion and mushrooms 6–7 minutes until softened. Add garlic and thyme for 30 seconds, then sprinkle 3 tbsp flour across the vegetables and stir continuously for 1 minute.",
+        "Slowly whisk in 3 cups beef broth and 2 tbsp Worcestershire sauce, scraping the pan to lift the browned bits. Return beef and any resting juices, bring to a gentle simmer, and cook covered for 15–20 minutes until tender and at least 145°F in the center; let stand 3 minutes.",
+        "If the gravy is thin, simmer uncovered 3–5 minutes, stirring until it coats a spoon. Heat 4 cups prepared mashed potatoes thoroughly, divide among six plates, and spoon beef tips, onions, mushrooms, and brown gravy over each portion."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-054",
+      "name": "Baked Chicken and Dressing",
+      "serv": 6,
+      "ingredients": [
+        [
+          "Boneless skinless chicken breasts",
+          1.5,
+          "lb"
+        ],
+        [
+          "Prepared cornbread, crumbled",
+          5,
+          "cup"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Celery stalks",
+          3,
+          "each"
+        ],
+        [
+          "Chicken broth",
+          2.5,
+          "cup"
+        ],
+        [
+          "Large eggs",
+          2,
+          "each"
+        ],
+        [
+          "Unsalted butter",
+          4,
+          "tbsp"
+        ],
+        [
+          "Dried rubbed sage",
+          1.5,
+          "tsp"
+        ],
+        [
+          "Dried thyme",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          1,
+          "tsp"
+        ],
+        [
+          "Black pepper",
+          0.5,
+          "tsp"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ]
+      ],
+      "steps": [
+        "Heat the oven to 375°F and grease a 9-by-13-inch baking dish. Dice the onion and 3 celery stalks. Cut 1½ lb chicken breasts into 1-inch pieces, keeping raw poultry on a separate cutting surface.",
+        "Melt 4 tbsp butter in a skillet over medium heat and cook onion and celery for 7–8 minutes until soft. Stir in 1½ tsp sage, 1 tsp thyme, 1 tsp salt, and ½ tsp pepper for 30 seconds, then set aside to cool slightly.",
+        "In a large bowl, combine 5 cups crumbled cooked cornbread and the sautéed vegetables. Whisk 2 eggs with 2½ cups chicken broth in a separate bowl, pour over the cornbread, and fold gently until evenly moistened but not soupy.",
+        "Heat 1 tbsp olive oil in the skillet, briefly sear the chicken pieces for 2–3 minutes, then transfer to the baking dish. Spread the moistened dressing evenly over and around the chicken. Cover the dish tightly with foil.",
+        "Bake covered for 30 minutes, uncover and bake another 15–20 minutes until the center of the chicken and dressing reaches 165°F. Rest 5 minutes, then divide into six portions with a spoon so each contains chicken and dressing."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-055",
+      "name": "Chicken Fried Chicken",
+      "serv": 4,
+      "ingredients": [
+        [
+          "Boneless skinless chicken breasts",
+          1.5,
+          "lb"
+        ],
+        [
+          "Buttermilk",
+          1,
+          "cup"
+        ],
+        [
+          "All-purpose flour",
+          1.5,
+          "cup"
+        ],
+        [
+          "Large egg",
+          1,
+          "each"
+        ],
+        [
+          "Paprika",
+          1,
+          "tsp"
+        ],
+        [
+          "Garlic powder",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          1.5,
+          "tsp"
+        ],
+        [
+          "Black pepper",
+          1,
+          "tsp"
+        ],
+        [
+          "Vegetable oil",
+          0.75,
+          "cup"
+        ],
+        [
+          "Whole milk",
+          2,
+          "cup"
+        ],
+        [
+          "Unsalted butter",
+          2,
+          "tbsp"
+        ]
+      ],
+      "steps": [
+        "Slice 1½ lb chicken breasts horizontally into four even cutlets and gently pound to about ½ inch thick. Whisk 1 cup buttermilk with 1 egg in a shallow bowl, and in a second bowl combine 1½ cups flour, 1 tsp paprika, 1 tsp garlic powder, 1 tsp salt, and ½ tsp pepper.",
+        "Dip each chicken cutlet in the buttermilk mixture, dredge thoroughly in seasoned flour, shake off excess, then let the coated pieces rest on a rack for 5 minutes. Set aside 3 tbsp of unused seasoned flour for the gravy; discard flour or buttermilk touched by raw chicken.",
+        "Pour ¾ cup vegetable oil into a deep, heavy skillet and heat over medium to about 350°F. Fry the cutlets in batches for roughly 4–6 minutes per side, turning carefully, until golden and the thickest part reaches 165°F. Transfer to a clean rack and keep warm.",
+        "Carefully remove frying oil to an appropriate heat-safe container, leaving about 1 tbsp clean-looking drippings in the skillet. Melt 2 tbsp butter over medium-low heat, whisk in 3 tbsp reserved unused flour, and cook for 1 minute until bubbling.",
+        "Gradually whisk in 2 cups milk, scraping any flavorful browned bits. Simmer 3–5 minutes, whisking, until thick; season with the remaining ½ tsp salt and ½ tsp pepper. Serve one crisp cutlet per person with warm peppered cream gravy spooned over the top."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-056",
+      "name": "Pulled Pork Mac and Cheese",
+      "serv": 6,
+      "ingredients": [
+        [
+          "Fully cooked pulled pork",
+          1.25,
+          "lb"
+        ],
+        [
+          "Dry elbow macaroni",
+          12,
+          "oz"
+        ],
+        [
+          "Sharp cheddar cheese, shredded",
+          2,
+          "cup"
+        ],
+        [
+          "Monterey Jack cheese, shredded",
+          1,
+          "cup"
+        ],
+        [
+          "Whole milk",
+          2.5,
+          "cup"
+        ],
+        [
+          "Unsalted butter",
+          3,
+          "tbsp"
+        ],
+        [
+          "All-purpose flour",
+          3,
+          "tbsp"
+        ],
+        [
+          "Barbecue sauce",
+          0.5,
+          "cup"
+        ],
+        [
+          "Smoked paprika",
+          0.5,
+          "tsp"
+        ],
+        [
+          "Salt",
+          0.75,
+          "tsp"
+        ],
+        [
+          "Black pepper",
+          0.5,
+          "tsp"
+        ],
+        [
+          "Panko breadcrumbs",
+          0.5,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Preheat oven to 375°F and grease a 9-by-13-inch baking dish. Bring salted water to a boil, cook 12 oz dry elbow macaroni 1 minute less than package directions, then drain and set aside.",
+        "Place 1¼ lb fully cooked pulled pork with ½ cup barbecue sauce in a saucepan over medium heat and warm until the pork reaches 165°F, stirring to coat evenly; set aside.",
+        "Melt 3 tbsp butter in a large saucepan over medium heat. Whisk in 3 tbsp flour and cook 1 minute. Slowly pour in 2½ cups milk, whisking constantly, then simmer 4–5 minutes until slightly thickened.",
+        "Reduce the heat to low and gradually stir in 2 cups sharp cheddar and 1 cup Monterey Jack until melted. Add ½ tsp smoked paprika, ¾ tsp salt, and ½ tsp pepper, then fold in the cooked macaroni until thoroughly coated.",
+        "Spread half the macaroni into the baking dish, layer the warm barbecue pork over it, and top with the remaining macaroni. Scatter ½ cup panko on top and bake 20–25 minutes until bubbling and the casserole reaches 165°F; rest 5 minutes and serve six portions."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-057",
+      "name": "Smoked Sausage Jambalaya",
+      "serv": 6,
+      "ingredients": [
+        [
+          "Fully cooked smoked pork sausage",
+          1,
+          "lb"
+        ],
+        [
+          "Long-grain white rice, dry",
+          1.5,
+          "cup"
+        ],
+        [
+          "Chicken broth",
+          3,
+          "cup"
+        ],
+        [
+          "Diced tomatoes, canned",
+          1.5,
+          "cup"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Green bell pepper",
+          1,
+          "each"
+        ],
+        [
+          "Celery stalks",
+          2,
+          "each"
+        ],
+        [
+          "Garlic cloves",
+          3,
+          "each"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Cajun seasoning",
+          2,
+          "tsp"
+        ],
+        [
+          "Smoked paprika",
+          1,
+          "tsp"
+        ],
+        [
+          "Dried thyme",
+          0.5,
+          "tsp"
+        ],
+        [
+          "Bay leaf",
+          1,
+          "each"
+        ],
+        [
+          "Green onions",
+          0.25,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Dice 1 onion, 1 green bell pepper and 2 celery stalks, and mince 3 garlic cloves. Cut 1 lb fully cooked smoked sausage into ¼-inch rounds and measure 1½ cups dry rice; keep the raw vegetables separate from any cooked-meat utensils.",
+        "Heat 1 tbsp olive oil in a heavy pot over medium-high heat and brown the sausage slices for 4–5 minutes. Remove them with a slotted spoon and set aside, leaving the flavored oil in the pot.",
+        "Add onion, bell pepper and celery and cook for 5–6 minutes until soft, stirring to loosen browned bits. Add garlic, 2 tsp Cajun seasoning, 1 tsp smoked paprika and ½ tsp thyme, cooking 30 seconds until fragrant.",
+        "Stir in 1½ cups uncooked rice, 3 cups chicken broth, 1½ cups canned diced tomatoes with juices, the sausage and 1 bay leaf. Bring to a boil, reduce to low, cover tightly and simmer about 18–22 minutes until the rice is tender and the liquid is absorbed, using the rice package's timing as a guide.",
+        "Remove from heat and leave covered for 5 minutes. Discard the bay leaf, fluff the jambalaya and check that the sausage and rice are steaming hot throughout; garnish six bowls with ¼ cup sliced green onions."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-058",
+      "name": "Cajun Chicken and Sausage Gumbo",
+      "serv": 8,
+      "ingredients": [
+        [
+          "Boneless skinless chicken thighs",
+          1.5,
+          "lb"
+        ],
+        [
+          "Fully cooked smoked andouille sausage",
+          12,
+          "oz"
+        ],
+        [
+          "All-purpose flour",
+          0.5,
+          "cup"
+        ],
+        [
+          "Neutral oil",
+          0.5,
+          "cup"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Green bell pepper",
+          1,
+          "each"
+        ],
+        [
+          "Celery stalks",
+          3,
+          "each"
+        ],
+        [
+          "Garlic cloves",
+          4,
+          "each"
+        ],
+        [
+          "Chicken broth",
+          6,
+          "cup"
+        ],
+        [
+          "Dried thyme",
+          1,
+          "tsp"
+        ],
+        [
+          "Cajun seasoning",
+          2,
+          "tsp"
+        ],
+        [
+          "Bay leaves",
+          2,
+          "each"
+        ],
+        [
+          "Frozen sliced okra",
+          2,
+          "cup"
+        ],
+        [
+          "Cooked white rice",
+          4,
+          "cup"
+        ],
+        [
+          "Green onions",
+          0.5,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Dice the onion, green pepper and 3 celery stalks; mince 4 garlic cloves. Cut 1½ lb raw chicken thighs into bite-size pieces on a separate board and slice 12 oz fully cooked andouille into rounds.",
+        "In a heavy-bottomed large pot over medium-low heat, whisk together ½ cup neutral oil and ½ cup flour. Stir continuously for about 20–30 minutes until the roux turns deep milk-chocolate brown; lower heat immediately if it smokes or develops black flecks and do not leave unattended.",
+        "Carefully stir onion, pepper and celery into the hot roux and cook for 5 minutes, then add garlic for 30 seconds. Pour 6 cups chicken broth in gradually while stirring until the mixture is smooth.",
+        "Add raw chicken, sliced sausage, 1 tsp thyme, 2 tsp Cajun seasoning and 2 bay leaves. Bring to a gentle simmer, cover partially and cook 25–30 minutes, stirring occasionally, until chicken reaches 165°F.",
+        "Stir in 2 cups frozen okra and simmer another 10 minutes until tender. Remove bay leaves and serve eight portions over 4 cups safely reheated cooked white rice, adding ½ cup sliced green onions just before eating."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-059",
+      "name": "Shrimp Étouffée",
+      "serv": 6,
+      "ingredients": [
+        [
+          "Peeled deveined raw shrimp",
+          1.5,
+          "lb"
+        ],
+        [
+          "Unsalted butter",
+          5,
+          "tbsp"
+        ],
+        [
+          "All-purpose flour",
+          0.33,
+          "cup"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Green bell pepper",
+          1,
+          "each"
+        ],
+        [
+          "Celery stalks",
+          2,
+          "each"
+        ],
+        [
+          "Garlic cloves",
+          3,
+          "each"
+        ],
+        [
+          "Seafood stock",
+          3,
+          "cup"
+        ],
+        [
+          "Tomato paste",
+          1,
+          "tbsp"
+        ],
+        [
+          "Cajun seasoning",
+          2,
+          "tsp"
+        ],
+        [
+          "Smoked paprika",
+          0.5,
+          "tsp"
+        ],
+        [
+          "Worcestershire sauce",
+          1,
+          "tsp"
+        ],
+        [
+          "Green onions",
+          0.25,
+          "cup"
+        ],
+        [
+          "Cooked white rice",
+          3,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Dice 1 onion, 1 bell pepper and 2 celery stalks into small even pieces; mince 3 garlic cloves. Pat 1½ lb peeled shrimp dry and keep refrigerated until the sauce is ready.",
+        "Melt 5 tbsp butter in a heavy skillet or Dutch oven over medium heat. Sprinkle in ⅓ cup flour while whisking and cook for 5–7 minutes, stirring constantly, until the roux becomes light caramel brown.",
+        "Add the onion, pepper and celery and stir for 5–6 minutes until softened. Stir in the garlic for 30 seconds, then add 1 tbsp tomato paste, 2 tsp Cajun seasoning and ½ tsp smoked paprika.",
+        "Gradually whisk in 3 cups seafood stock until smooth, add 1 tsp Worcestershire sauce and simmer uncovered for 10 minutes until the sauce thickens enough to coat a spoon; stir to keep the roux from sticking.",
+        "Add shrimp in one layer and gently simmer 4–6 minutes, turning once, until fully opaque and reaching 145°F. Reheat 3 cups cooked white rice until steaming and 165°F, then divide into six bowls, ladle étouffée on top and sprinkle with ¼ cup sliced green onions."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-060",
+      "name": "Red Beans and Sausage Rice",
+      "serv": 6,
+      "ingredients": [
+        [
+          "Fully cooked smoked andouille sausage",
+          1,
+          "lb"
+        ],
+        [
+          "Red kidney beans, canned, drained",
+          3,
+          "cup"
+        ],
+        [
+          "Long-grain white rice, dry",
+          1.5,
+          "cup"
+        ],
+        [
+          "Chicken broth",
+          2,
+          "cup"
+        ],
+        [
+          "Water",
+          1,
+          "cup"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Green bell pepper",
+          1,
+          "each"
+        ],
+        [
+          "Celery stalks",
+          2,
+          "each"
+        ],
+        [
+          "Garlic cloves",
+          3,
+          "each"
+        ],
+        [
+          "Olive oil",
+          1,
+          "tbsp"
+        ],
+        [
+          "Cajun seasoning",
+          2,
+          "tsp"
+        ],
+        [
+          "Dried thyme",
+          1,
+          "tsp"
+        ],
+        [
+          "Bay leaves",
+          2,
+          "each"
+        ],
+        [
+          "Green onions",
+          0.25,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Rinse 1½ cups dry white rice and cook separately according to package instructions while preparing the beans. Dice 1 onion, 1 green bell pepper and 2 celery stalks, mince 3 garlic cloves, and slice 1 lb fully cooked andouille sausage.",
+        "Heat 1 tbsp olive oil in a large saucepan over medium heat and brown sausage rounds for 4–5 minutes. Transfer the sausage to a plate, leaving the flavored oil in the pan.",
+        "Add onion, pepper and celery and cook for 6–7 minutes until softened. Stir in the garlic for 30 seconds, then add 2 tsp Cajun seasoning and 1 tsp dried thyme.",
+        "Pour in 2 cups chicken broth and 1 cup water, followed by 3 cups drained canned kidney beans, the browned sausage and 2 bay leaves. Simmer uncovered for 20–25 minutes, stirring occasionally; mash about ½ cup beans against the side of the pot to thicken the sauce.",
+        "Discard the bay leaves and confirm the sausage-and-bean mixture is thoroughly hot. Fluff the rice, divide it into six bowls and spoon the beans and sausage over each serving, finishing with ¼ cup chopped green onions."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-061",
+      "name": "Cheddar Broccoli Chicken Bake",
+      "serv": 6,
+      "ingredients": [
+        [
+          "Boneless skinless chicken breasts",
+          1.5,
+          "lb"
+        ],
+        [
+          "Broccoli florets",
+          4,
+          "cup"
+        ],
+        [
+          "Cooked rice",
+          3,
+          "cup"
+        ],
+        [
+          "Shredded sharp cheddar",
+          2,
+          "cup"
+        ],
+        [
+          "Whole milk",
+          1.5,
+          "cup"
+        ],
+        [
+          "All-purpose flour",
+          3,
+          "tbsp"
+        ],
+        [
+          "Unsalted butter",
+          3,
+          "tbsp"
+        ],
+        [
+          "Garlic powder",
+          1,
+          "tsp"
+        ],
+        [
+          "Dijon mustard",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          1,
+          "tsp"
+        ],
+        [
+          "Black pepper",
+          0.5,
+          "tsp"
+        ],
+        [
+          "Panko breadcrumbs",
+          0.5,
+          "cup"
+        ]
+      ],
+      "steps": [
+        "Heat oven to 375°F and lightly grease a 9-by-13-inch baking dish. Cut 1½ lb chicken breasts into bite-size pieces, season with ½ tsp salt and ½ tsp black pepper, and spread evenly in the dish.",
+        "Steam 4 cups broccoli florets for 3–4 minutes until bright green but still slightly firm. Drain well and mix with 3 cups safely cooked rice and the chicken in the baking dish.",
+        "Melt 3 tbsp butter in a saucepan over medium heat. Whisk in 3 tbsp flour and cook for 1 minute, then slowly whisk in 1½ cups milk until smooth. Simmer for 3–4 minutes, stirring constantly, until thick enough to coat a spoon.",
+        "Remove sauce from heat and stir in 1½ cups cheddar, 1 tsp garlic powder, 1 tsp Dijon mustard and the remaining ½ tsp salt. Pour evenly over the chicken, broccoli and rice, mixing gently so the sauce reaches the bottom.",
+        "Cover tightly with foil and bake 25 minutes. Uncover, scatter remaining ½ cup cheddar and ½ cup panko over the top, then bake 15–20 minutes more until golden and all chicken pieces reach 165°F. Rest 5 minutes before serving six portions."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-062",
+      "name": "Bacon Cheeseburger Tater Tot Casserole",
+      "serv": 6,
+      "ingredients": [
+        [
+          "Lean ground beef",
+          1.5,
+          "lb"
+        ],
+        [
+          "Frozen tater tots",
+          28,
+          "oz"
+        ],
+        [
+          "Bacon",
+          6,
+          "slice"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Shredded cheddar cheese",
+          2,
+          "cup"
+        ],
+        [
+          "Diced tomatoes, drained",
+          1,
+          "cup"
+        ],
+        [
+          "Dill pickle slices",
+          0.5,
+          "cup"
+        ],
+        [
+          "Ketchup",
+          0.25,
+          "cup"
+        ],
+        [
+          "Yellow mustard",
+          2,
+          "tbsp"
+        ],
+        [
+          "Worcestershire sauce",
+          1,
+          "tbsp"
+        ],
+        [
+          "Salt",
+          0.75,
+          "tsp"
+        ],
+        [
+          "Black pepper",
+          0.5,
+          "tsp"
+        ]
+      ],
+      "steps": [
+        "Preheat oven to 400°F and lightly grease a 9-by-13-inch baking dish. Cook 6 bacon slices in a skillet over medium heat until crisp, then transfer to paper towels and crumble; carefully discard all but about 1 tbsp bacon drippings.",
+        "Dice 1 yellow onion and sauté it in the skillet for 4 minutes. Add 1½ lb ground beef, break into small pieces and cook until it reaches 160°F; drain excess fat.",
+        "Stir ¼ cup ketchup, 2 tbsp yellow mustard, 1 tbsp Worcestershire sauce, ¾ tsp salt and ½ tsp pepper into the beef. Add 1 cup well-drained diced tomatoes and simmer 2 minutes to reduce excess moisture.",
+        "Spread the beef mixture in the prepared dish, sprinkle with 1 cup cheddar and the crumbled bacon, then arrange 28 oz frozen tater tots evenly across the top in a single layer.",
+        "Bake uncovered 30–35 minutes until tots are crisp and the casserole reaches 165°F. Sprinkle remaining 1 cup cheddar over the tots and bake 3–5 minutes to melt. Rest 5 minutes, then top with ½ cup pickle slices just before serving."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-063",
+      "name": "Southern Baked Macaroni and Cheese",
+      "serv": 8,
+      "ingredients": [
+        [
+          "Dry elbow macaroni",
+          1,
+          "lb"
+        ],
+        [
+          "Sharp cheddar cheese, shredded",
+          3,
+          "cup"
+        ],
+        [
+          "Monterey Jack cheese, shredded",
+          2,
+          "cup"
+        ],
+        [
+          "Whole milk",
+          2,
+          "cup"
+        ],
+        [
+          "Evaporated milk",
+          1,
+          "cup"
+        ],
+        [
+          "Large eggs",
+          2,
+          "each"
+        ],
+        [
+          "Unsalted butter",
+          4,
+          "tbsp"
+        ],
+        [
+          "Dry mustard powder",
+          1,
+          "tsp"
+        ],
+        [
+          "Paprika",
+          1,
+          "tsp"
+        ],
+        [
+          "Salt",
+          1,
+          "tsp"
+        ],
+        [
+          "Black pepper",
+          0.5,
+          "tsp"
+        ]
+      ],
+      "steps": [
+        "Preheat oven to 350°F and butter a deep 9-by-13-inch baking dish with 1 tbsp of the measured butter. Bring a large pot of water to a boil, cook 1 lb elbow macaroni 1–2 minutes less than package directions, then drain thoroughly.",
+        "In a large bowl whisk 2 cups whole milk, 1 cup evaporated milk, 2 eggs, 1 tsp dry mustard, 1 tsp paprika, 1 tsp salt and ½ tsp black pepper until the eggs are fully incorporated.",
+        "Melt the remaining 3 tbsp butter and toss with the drained warm pasta. Combine 3 cups cheddar and 2 cups Monterey Jack in a separate bowl; reserve 1 cup of the mixed cheese for the top.",
+        "Layer half the macaroni in the prepared dish, sprinkle with half the cheese that was not reserved, then repeat with the remaining macaroni and cheese. Pour the milk-and-egg mixture evenly over the layers and press gently so liquid reaches the bottom.",
+        "Cover loosely with foil and bake 25 minutes. Remove foil, sprinkle the reserved cup of cheese over the top and bake 15–20 minutes longer until the center is set, reaches 160°F and the edges bubble. Let rest 10 minutes before cutting into eight portions."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    },
+    {
+      "id": "exp01-064",
+      "name": "Cast-Iron Cornbread Chicken Pie",
+      "serv": 6,
+      "ingredients": [
+        [
+          "Cooked shredded chicken",
+          3,
+          "cup"
+        ],
+        [
+          "Frozen mixed vegetables",
+          2,
+          "cup"
+        ],
+        [
+          "Yellow onion",
+          1,
+          "each"
+        ],
+        [
+          "Chicken broth",
+          1.5,
+          "cup"
+        ],
+        [
+          "Whole milk",
+          0.5,
+          "cup"
+        ],
+        [
+          "All-purpose flour",
+          3,
+          "tbsp"
+        ],
+        [
+          "Unsalted butter",
+          3,
+          "tbsp"
+        ],
+        [
+          "Cornmeal",
+          1,
+          "cup"
+        ],
+        [
+          "All-purpose flour for topping",
+          0.75,
+          "cup"
+        ],
+        [
+          "Baking powder",
+          2,
+          "tsp"
+        ],
+        [
+          "Large egg",
+          1,
+          "each"
+        ],
+        [
+          "Buttermilk",
+          1,
+          "cup"
+        ],
+        [
+          "Vegetable oil",
+          2,
+          "tbsp"
+        ],
+        [
+          "Salt",
+          1,
+          "tsp"
+        ],
+        [
+          "Black pepper",
+          0.5,
+          "tsp"
+        ]
+      ],
+      "steps": [
+        "Preheat oven to 400°F. Dice 1 yellow onion. In a 10- or 12-inch oven-safe cast-iron skillet melt 3 tbsp butter over medium heat, cook onion for 4 minutes, then whisk in 3 tbsp all-purpose flour and cook for 1 minute.",
+        "Slowly whisk 1½ cups chicken broth and ½ cup milk into the skillet until smooth. Simmer 3–5 minutes until the gravy thickens; add 3 cups fully cooked shredded chicken, 2 cups frozen mixed vegetables, ½ tsp salt and ½ tsp pepper. Stir and heat until steaming.",
+        "In a separate bowl whisk 1 cup cornmeal, ¾ cup flour, 2 tsp baking powder and the remaining ½ tsp salt. In another bowl whisk 1 egg, 1 cup buttermilk and 2 tbsp vegetable oil until combined.",
+        "Fold wet ingredients into dry just until no pockets of flour remain; do not overmix. Spread the cornbread batter gently over the hot chicken filling, leaving a little space around the skillet edge for bubbling.",
+        "Transfer the oven-safe skillet carefully to the oven and bake 22–28 minutes until the cornbread top is golden, a toothpick inserted into the topping comes out clean, and the filling reaches 165°F. Rest 10 minutes before spooning into six bowls."
+      ],
+      "slot": "Dinner",
+      "cuisine": "Southern & Comfort",
+      "stage": "recipe-draft",
+      "ingredientsReady": true,
+      "instructionsReady": true,
+      "photoReady": false,
+      "photoReview": "pending",
+      "photo": null,
+      "source": {
+        "type": "original draft",
+        "license": "Tablewise original recipe instructions, pending editorial review"
+      }
+    }
+  ]
+}

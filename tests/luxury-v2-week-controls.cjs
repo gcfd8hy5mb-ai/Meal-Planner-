@@ -1,0 +1,12 @@
+const fs=require('node:fs'),assert=require('node:assert/strict');
+const h=fs.readFileSync('luxury-v2/index.html','utf8'),j=fs.readFileSync('luxury-v2/live.js','utf8');
+assert.match(h,/footer button\.active\{background:transparent/);
+assert.match(h,/footer button\.active::after\{/);
+for(const id of ['luxuryWeekNutrition','luxuryWeekNutritionAverage','luxuryWeekNutritionTotals','luxuryQuickMealsShortcut','luxuryPantryShortcut'])assert.ok(h.includes('id="'+id+'"'),id);
+assert.match(h,/#days\.week-calendar\{display:grid;grid-template-columns:repeat\(7,minmax\(0,1fr\)\)/);
+assert.match(j,/edit\.className='change-meal';edit\.textContent='Change'/);
+assert.match(j,/open\.className='calendar-open'/);
+assert.match(j,/openMealPicker\(liveWeek,0,\{initialQuick:true\}\)/);
+assert.match(j,/totals\[key\]\/valid\.length/);
+assert.match(j,/const LUXURY_SAVES_RELEASED=false/);
+console.log('PASS approved seven-day preview calendar, quick meals, nutrition, protected cloud save');

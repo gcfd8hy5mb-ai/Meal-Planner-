@@ -1,0 +1,31 @@
+name: Tablewise recipe Worker compile (no deploy)
+on:
+  push:
+    branches:
+      - release/luxury-v2-clean-main-20261019
+    paths:
+      - 'ops/recipe-search/**'
+      - 'luxury-v2/online-recipe-provider.mjs'
+      - '.github/workflows/tablewise-recipe-worker-build.yml'
+  pull_request:
+    paths:
+      - 'ops/recipe-search/**'
+      - 'luxury-v2/online-recipe-provider.mjs'
+      - '.github/workflows/tablewise-recipe-worker-build.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  wrangler-dry-run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Compile dedicated recipe Worker; never deploy or read Cloudflare tokens
+        run: |
+          npx --yes wrangler@4 deploy --config ops/recipe-search/wrangler.recipe.jsonc --dry-run --outdir /tmp/tablewise-recipe-worker-build
+          test -f /tmp/tablewise-recipe-worker-build/worker.js
+          echo 'PASS: dedicated recipe Worker compiled without deployment.'
