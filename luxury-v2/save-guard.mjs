@@ -1,9 +1,16 @@
 // Pure cloud-save preflight. Never imports UI or performs writes.
 // Current production uses whole-document setDoc without a version field.
 // A transaction must read and compare the original plan before applying edits.
+// Firestore may return map fields in canonical key order instead of the user's
+// original insertion order. Compare content, not JavaScript object-key order.
+const canonicalize=value=>{
+  if(Array.isArray(value))return value.map(canonicalize);
+  if(value&&typeof value==='object')return Object.fromEntries(Object.keys(value).sort().map(key=>[key,canonicalize(value[key])]));
+  return value;
+};
 export function selectedPlanSnapshot(account) {
   if(!account || typeof account !== 'object') throw new Error('Plan not loaded');
-  return JSON.stringify({
+  return JSON.stringify(canonicalize({
     plan:account.plan??null,
     alternateWeek:account.alternateWeek??null,
     activePlanningWeek:account.activePlanningWeek??1,
@@ -11,7 +18,7 @@ export function selectedPlanSnapshot(account) {
     dinnerSides:account.dinnerSides??null,
     servings:account.servings??null,
     mealTypes:account.mealTypes??null
-  });
+  }));
 }
 export function checkPlanConflict(original,current) {
   if(!original || !current) return {ok:false,reason:'Plan unavailable'};
