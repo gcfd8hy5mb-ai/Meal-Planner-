@@ -18,6 +18,7 @@ import {ONLINE_RECIPE_SEARCH_ENABLED,requestOnlineRecipes} from './online-recipe
 import {groceryKey,readSyncedChecklist,saveSyncedChecklist} from './checklist.mjs';
 import {replacePreviewMeal,previewAccount,hasPreviewEdits} from './meal-preview.mjs';
 import {readPendingLuxuryDraft,commitLuxuryPreview,classifyLuxuryRecovery,verifyLuxurySavedPlan} from './save-flow.mjs';
+import {compareRecoveredDinners} from './draft-comparison.mjs';
 
 // Read-only pantry suggestions. A licensed large-catalog endpoint is not yet configured.
 const pantryPanel=document.querySelector('#pantryDiscoverPanel');
@@ -499,6 +500,50 @@ recoveryVerifyButton.onclick=async()=>{
   label('Your meal plan is verified in Firebase. Old device warning cleared.');
  }catch(error){label('Could not verify the saved plan. Your backup was kept. '+(error?.message||''))}
  finally{recoveryVerifyButton.disabled=false}
+};
+// Read-only conflict inspection. This never restores, clears, or writes a plan.
+const compareDraftButton=document.createElement('button');
+compareDraftButton.type='button';
+compareDraftButton.className='secondary full';
+compareDraftButton.textContent='Compare cloud and device meals';
+const draftComparisonPanel=document.createElement('section');
+draftComparisonPanel.hidden=true;
+draftComparisonPanel.setAttribute('aria-label','Cloud and device dinner comparison');
+document.querySelector('#luxuryRecoverActions').append(compareDraftButton,draftComparisonPanel);
+const refreshRecoveredWithVerification=refreshRecovered;
+refreshRecovered=()=>{
+ refreshRecoveredWithVerification();
+ compareDraftButton.hidden=!accountUid||!readPendingLuxuryDraft(localStorage,accountUid);
+ draftComparisonPanel.hidden=true;
+};
+compareDraftButton.onclick=async()=>{
+ const uid=accountUid,epoch=authEpoch;
+ if(!uid||auth.currentUser?.uid!==uid)return;
+ compareDraftButton.disabled=true;
+ draftComparisonPanel.hidden=false;
+ draftComparisonPanel.replaceChildren();
+ const message=document.createElement('p');
+ message.textContent='Checking saved dinners directly with Firebase…';
+ draftComparisonPanel.append(message);
+ try{
+  const snap=await getDocFromServer(doc(db,'users',uid));
+  if(epoch!==authEpoch||auth.currentUser?.uid!==uid)return;
+  const backup=readPendingLuxuryDraft(localStorage,uid);
+  if(!snap.exists()||!backup||backup.unreadable){message.textContent='Cloud plan or device draft unavailable. Nothing was changed.';return}
+  const differences=compareRecoveredDinners(snap.data(),backup);
+  message.textContent=differences.length?'Different dinners (Firebase vs recovered draft):':'All 14 dinner slots match. Other saved settings may differ.';
+  const weekday=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  const mealName=id=>recipes.find(recipe=>recipe.id===id)?.name||(id===null?'No dinner':String(id));
+  for(const difference of differences){
+   const item=document.createElement('p');
+   item.textContent='Week '+difference.week+', '+weekday[difference.day]+': Firebase — '+mealName(difference.meal)+'; device draft — '+mealName(difference.deviceMeal);
+   draftComparisonPanel.append(item);
+  }
+  const note=document.createElement('p');
+  note.textContent='Read-only comparison. Your device backup and Firebase meals were not changed.';
+  draftComparisonPanel.append(note);
+ }catch(error){message.textContent='Unable to verify cloud meals. Backup retained. '+(error?.message||'')}
+ finally{compareDraftButton.disabled=false}
 };
 document.querySelector('#discardLuxuryEdits').onclick=()=>{previewEdits={};refreshDiscard();document.querySelector('#luxuryMealPicker').hidden=true;renderWeek(liveWeek);setHero();renderIngredients();label('Preview discarded. Your saved meals are unchanged.')};
 const openMealPicker=(week,day,{initialQuick=false}={})=>{
