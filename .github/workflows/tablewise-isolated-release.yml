@@ -15,6 +15,8 @@ on:
       - 'tests/luxury-release-audit.test.mjs'
       - 'tests/luxury-v2-legacy-save.test.mjs'
       - 'tests/luxury-v2-recovery-diagnostic.test.mjs'
+      - 'tests/luxury-v2-cold-start.cjs'
+      - 'tests/luxury-v2-recovery-ui.cjs'
       - '.github/workflows/tablewise-isolated-release.yml'
   workflow_dispatch:
 permissions:
@@ -37,5 +39,7 @@ jobs:
         run: node --test tests/tablewise-expansion-photo-source.test.mjs tests/tablewise-expansion-recipe-pairing.test.mjs
       - name: Verify old-plan restoration, account recovery and safe save migration
         run: node --test tests/luxury-v2-legacy-save.test.mjs tests/luxury-v2-recovery-diagnostic.test.mjs
+      - name: Guard iPhone cold start and unsaved-edits recovery UI
+        run: node tests/luxury-v2-cold-start.cjs && node tests/luxury-v2-recovery-ui.cjs
       - name: Protect existing users against premature cloud writes
         run: node --test tests/luxury-v2-save-guard.test.mjs tests/luxury-v2-save-transaction.test.mjs tests/luxury-v2-save-flow.test.mjs && node tests/luxury-v2-cloud-write-gate.cjs
