@@ -11,6 +11,7 @@ on:
       - 'assets/recipe-expansion/**'
       - 'tests/tablewise-expansion-recipe-pairing.test.mjs'
       - 'tests/luxury-v2-iphone-journey.test.mjs'
+      - 'tests/kroger-account-switch-race.test.mjs'
       - 'tests/luxury-v2-legacy-save.test.mjs'
       - 'tests/luxury-v2-recovery-diagnostic.test.mjs'
       - '.github/workflows/tablewise-isolated-release.yml'
