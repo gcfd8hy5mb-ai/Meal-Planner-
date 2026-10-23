@@ -1,0 +1,67 @@
+import assert from 'node:assert/strict';
+import {previewAccount} from '../luxury-v2/meal-preview.mjs';
+import {commitLuxuryPreview,readPendingLuxuryDraft,pendingKey,classifyLuxuryRecovery,verifyLuxurySavedPlan} from '../luxury-v2/save-flow.mjs';
+const uid='test-user', original={activePlanningWeek:1,plan:{0:[null,null,'tacos',null]},alternateWeek:{plan:{}},preferences:{style:'Anything'}},preview={'1-0-2':'sushi'};
+function harness({failBackup=false,failTransaction=false,failCleanup=false,changed=false}={}){
+ const map=new Map(),calls=[];
+ const storage={getItem:key=>map.get(key)??null,setItem:(key,val)=>{if(failBackup)throw Error('storage full');map.set(key,val)},removeItem:key=>{if(failCleanup)throw Error('locked');map.delete(key)}};
+ const transaction={get:async()=>({exists:()=>true,data:()=>changed?{...original,plan:{0:[null,null,'other',null]}}:original}),update:(ref,fields)=>calls.push(fields)};
+ const runTransaction=async cb=>{if(failTransaction)throw Error('network error');return cb(transaction)};
+ return {map,calls,storage,runTransaction,uid,original,preview,documentRef:{id:uid},getAuthenticatedUid:()=>uid};
+}
+let h=harness();let r=await commitLuxuryPreview(h);
+assert.equal(r.saved,true);assert.equal(r.confirmed,true);assert.equal(h.calls.length,1);assert.equal(readPendingLuxuryDraft(h.storage,uid),null);
+h=harness({failBackup:true});
+await assert.rejects(commitLuxuryPreview(h),/Could not back up edits/);assert.equal(h.calls.length,0,'No write without backup');
+h=harness({failTransaction:true});
+await assert.rejects(commitLuxuryPreview(h),/network error/);assert.equal(h.calls.length,0);assert.deepEqual(readPendingLuxuryDraft(h.storage,uid).preview,preview,'Failed network write preserves draft');
+await assert.rejects(commitLuxuryPreview(h),/unsaved luxury draft/,'Unresolved backup cannot be overwritten');
+h=harness({changed:true});
+await assert.rejects(commitLuxuryPreview(h),/Saved plan changed/);assert.equal(h.calls.length,0);assert.ok(readPendingLuxuryDraft(h.storage,uid),'Stale cloud conflict leaves exportable draft');
+h=harness({failCleanup:true});
+r=await commitLuxuryPreview(h);assert.equal(r.saved,true);assert.equal(r.confirmed,false);assert.ok(r.cleanupWarning);assert.ok(readPendingLuxuryDraft(h.storage,uid));
+h=harness();h.getAuthenticatedUid=()=> 'other-account';
+await assert.rejects(commitLuxuryPreview(h),/Account changed/);assert.equal(h.calls.length,0);assert.equal(h.map.size,0);
+h=harness();h.storage.setItem(pendingKey(uid),'{bad json');
+assert.equal(readPendingLuxuryDraft(h.storage,uid).unreadable,true);
+await assert.rejects(commitLuxuryPreview(h),/unsaved luxury draft/);
+// Simulate a full app restart: a new controller reads persisted backup from the same device storage.
+h=harness({failTransaction:true});
+await assert.rejects(commitLuxuryPreview(h),/network error/);
+const recoveredStorage={getItem:key=>h.map.get(key)??null,setItem:(key,value)=>h.map.set(key,value),removeItem:key=>h.map.delete(key)};
+assert.deepEqual(readPendingLuxuryDraft(recoveredStorage,uid)?.preview,preview,'Restart can recover previous unsaved meal choice');
+await assert.rejects(commitLuxuryPreview({...h,storage:recoveredStorage,runTransaction:async()=>{throw Error('Unexpected overwrite')}}),/unsaved luxury draft/,'Recovered draft blocks new writes until reviewed');
+const savedForSomeoneElse={version:1,uid:'different-account',original,preview};
+h.map.set(pendingKey(uid),JSON.stringify(savedForSomeoneElse));
+assert.equal(readPendingLuxuryDraft(recoveredStorage,uid)?.unreadable,true,'Mismatched account backup must not disappear silently');
+await assert.rejects(commitLuxuryPreview({...h,storage:recoveredStorage}),/unsaved luxury draft/,'Mismatched backup blocks cloud mutation');
+h.map.set(pendingKey(uid),JSON.stringify({version:1,uid,preview}));
+assert.equal(readPendingLuxuryDraft(recoveredStorage,uid)?.unreadable,true,'Malformed backup must trigger recovery warning, not silently clear');
+h.map.set(pendingKey(uid),JSON.stringify({version:1,uid,original,preview:[]}));
+assert.equal(readPendingLuxuryDraft(recoveredStorage,uid)?.unreadable,true,'Array payload is not a valid set of meal edits');
+console.log('Luxury staged save flow: backup, conflict, network, switching, cleanup safeguards passed');
+
+const pending={version:1,uid,original,preview};
+assert.equal(classifyLuxuryRecovery(null,original,uid).status,'none');
+assert.equal(classifyLuxuryRecovery(pending,original,uid).status,'unsaved','Interrupted transaction retains unsaved draft');
+const desired=previewAccount(original,preview);
+assert.equal(classifyLuxuryRecovery(pending,desired,uid).status,'already-saved','Failed backup cleanup must not mislabel cloud commit');
+assert.equal(classifyLuxuryRecovery(pending,{...original,plan:{0:[null,null,'ramen',null]}},uid).status,'conflict','Second-device update must not be overwritten');
+assert.equal(classifyLuxuryRecovery(pending,null,uid).status,'cloud-missing');
+assert.equal(classifyLuxuryRecovery({...pending,uid:'different'},original,uid).status,'unreadable');
+assert.equal(classifyLuxuryRecovery({version:0,uid,unreadable:true},original,uid).status,'unreadable');
+
+h=harness();
+r=await commitLuxuryPreview({...h,retainBackupUntilVerified:true});
+assert.equal(r.awaitingServerVerification,true,'Transaction success alone cannot clear recovery data');
+assert.equal(r.confirmed,false);
+assert.ok(readPendingLuxuryDraft(h.storage,uid),'Backup survives before server verification');
+assert.equal(classifyLuxuryRecovery(readPendingLuxuryDraft(h.storage,uid),previewAccount(original,preview),uid).status,'already-saved');
+h.storage.removeItem(pendingKey(uid));
+assert.equal(readPendingLuxuryDraft(h.storage,uid),null,'Explicit cleanup occurs only after verification');
+console.log('Luxury server-verification backup retention passed');
+
+assert.equal(verifyLuxurySavedPlan(original,preview,previewAccount(original,preview)),true,'Verified server snapshot matches intended dinner change');
+assert.throws(()=>verifyLuxurySavedPlan(original,preview,original),/differs from submitted changes/,'Old server data cannot clear backup');
+assert.throws(()=>verifyLuxurySavedPlan(original,preview,null),/could not be reloaded/,'Missing server document cannot clear backup');
+console.log('PASS: server read-back must match saved plan before backup cleanup');
