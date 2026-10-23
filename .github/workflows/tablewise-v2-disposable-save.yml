@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       approval:
-        description: 'Type yes to authorize disposable test-only writes'
+        description: 'Type yes to authorize writes to disposable tablewise-ci accounts only'
         required: true
         type: string
 permissions:
@@ -13,28 +13,34 @@ concurrency:
   cancel-in-progress: false
 jobs:
   disposable-save:
-    if: ${{ github.ref_name == 'release/tablewise-v2-minimal-20261022' && inputs.approval == 'yes' && vars.TABLEWISE_HOSTED_TEST_APPROVED == 'yes' }}
+    if: ${{ inputs.approval == 'yes' && vars.TABLEWISE_HOSTED_TEST_APPROVED == 'yes' }}
     runs-on: ubuntu-latest
     environment: tablewise-hosted-test
     timeout-minutes: 20
     steps:
-      - uses: actions/checkout@v4
+      - name: Check out isolated release candidate (never production main)
+        uses: actions/checkout@v4
+        with:
+          ref: release/tablewise-v2-minimal-20261022
+          persist-credentials: false
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Confirm scoped disposable accounts only
+      - name: Verify disposable test scope and credentials
         env:
           TABLEWISE_FIREBASE_PROJECT_ID: ${{ secrets.TABLEWISE_FIREBASE_PROJECT_ID }}
           TABLEWISE_TEST_A_EMAIL: ${{ secrets.TABLEWISE_TEST_A_EMAIL }}
           TABLEWISE_TEST_B_EMAIL: ${{ secrets.TABLEWISE_TEST_B_EMAIL }}
+        shell: bash
         run: |
+          set -euo pipefail
           [[ "$TABLEWISE_FIREBASE_PROJECT_ID" == "meal-planner-a478e" ]] || exit 1
           [[ "$TABLEWISE_TEST_A_EMAIL" == tablewise-ci-* ]] || exit 1
           [[ "$TABLEWISE_TEST_B_EMAIL" == tablewise-ci-* ]] || exit 1
           [[ "$TABLEWISE_TEST_A_EMAIL" != "$TABLEWISE_TEST_B_EMAIL" ]] || exit 1
       - name: Install test dependencies
         run: npm install --no-audit --no-fund --fetch-retries=1 --fetch-timeout=30000
-      - name: Verify isolated Firebase transactions and read-back
+      - name: Verify scoped Firebase saves and isolation
         env:
           TABLEWISE_HOSTED_TEST_APPROVED: 'yes'
           TABLEWISE_FIREBASE_API_KEY: ${{ secrets.TABLEWISE_FIREBASE_API_KEY }}
