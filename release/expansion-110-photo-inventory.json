@@ -1,0 +1,777 @@
+{
+  "sourceBranch": "photos/expansion-110-staging-20261022",
+  "sourceBaseline": "5600fde2df3f0d556be3365a38973f940a820195",
+  "scope": "Staging photography mapping only; never release recipe entries without matching verified data",
+  "photos": [
+    {
+      "recipeId": "exp01-001",
+      "name": "Birria Beef Tacos",
+      "path": "assets/recipe-expansion/exp01-001.webp",
+      "sha256": "132a8e15b5d93e94add5d7b3595d4e118226a8f540b6184f0a079bc813470b80",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-002",
+      "name": "Carne Asada Street Tacos",
+      "path": "assets/recipe-expansion/exp01-002.webp",
+      "sha256": "030d23780af64fa32e06fc961e5e193d150b4897f18d7ec6055ed049cfbb07a1",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-003",
+      "name": "Slow-Cooker Pork Carnitas",
+      "path": "assets/recipe-expansion/exp01-003.webp",
+      "sha256": "ed32d613909e5be2a71ddef2204b6da9e20b12870dc0f640bf049218c6bffe8e",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-004",
+      "name": "Crispy Chicken Tostadas",
+      "path": "assets/recipe-expansion/exp01-004.webp",
+      "sha256": "ccc9ac72bbffd3b3ec2eaf35de331dae57c69d2be8013629ec2a07675fe8bc4c",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-005",
+      "name": "Beef Barbacoa Bowls",
+      "path": "assets/recipe-expansion/exp01-005.webp",
+      "sha256": "18c5f49051a3def6343de04e68ecdf6db6d4a9869e996933ac739943bb15bec0",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-006",
+      "name": "Creamy Roasted Poblano Mac and Cheese",
+      "path": "assets/recipe-expansion/exp01-006.webp",
+      "sha256": "653457d92cf25272749fb908180b68afdad898dba4f01e30266965c7240af73b",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-007",
+      "name": "Ground Beef Taco Skillet",
+      "path": "assets/recipe-expansion/exp01-007.webp",
+      "sha256": "9dc6ca7f909c357769ddd07084f27ca677d47709b6714c26e9031c01afc89bc1",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-008",
+      "name": "Chicken Tinga Tacos",
+      "path": "assets/recipe-expansion/exp01-008.webp",
+      "sha256": "23d37178ac9b83ca420e3c06f6177b457250e97211ccc37b2e9dd5781418fdf8",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-009",
+      "name": "Steak Fajita Quesadillas",
+      "path": "assets/recipe-expansion/exp01-009.webp",
+      "sha256": "4d97f2f348313e2d3de894985533f29a7ae50007d14d2e4a0b79a7de788357a9",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-010",
+      "name": "Shrimp Fajita Rice Bowls",
+      "path": "assets/recipe-expansion/exp01-010.webp",
+      "sha256": "622d4c1330a4e5c8a593ddcf7ccc72287c2937358d25bd653d63beaf0623c3d5",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-011",
+      "name": "Smothered Beef Burritos",
+      "path": "assets/recipe-expansion/exp01-011.webp",
+      "sha256": "3aac25e16e81375156057dd77831dcd2bae44ae5f0b22184aefa42254dcbdc87",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-012",
+      "name": "Chicken Chimichangas",
+      "path": "assets/recipe-expansion/exp01-012.webp",
+      "sha256": "8a01f72b0388d743214a348140fdeed2cbaf91151046cdd917d5bda94e6f87cd",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-013",
+      "name": "Tex-Mex Beef Stuffed Peppers",
+      "path": "assets/recipe-expansion/exp01-013.webp",
+      "sha256": "efffa6722ac70110544ead94171baa0e19daac0088931b03559cad21401a328f",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-014",
+      "name": "Cheesy Taco Pasta",
+      "path": "assets/recipe-expansion/exp01-014.webp",
+      "sha256": "85795e3826e13e67dc579b3ba9d170a67fd7e72b5ddfbb2e37724bde050bcfea",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-015",
+      "name": "Pork Chile Verde",
+      "path": "assets/recipe-expansion/exp01-015.webp",
+      "sha256": "c0351f76ee24e2cf0c57940a9f339714873fa726047922bd50d7f2604d9bd10d",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-016",
+      "name": "Pork and Hominy Green Chile Skillet",
+      "path": "assets/recipe-expansion/exp01-016.webp",
+      "sha256": "97a257b5a87041d84f4f8badf098c625216f2f671600ce503c7f374afd72bc01",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-017",
+      "name": "Chicken Pozole Verde",
+      "path": "assets/recipe-expansion/exp01-017.webp",
+      "sha256": "4175b2eea3ca4a0b6347c5768553b93bb1fc35218bfcbdb8f4924349934d1b57",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-018",
+      "name": "Pork Pozole Rojo",
+      "path": "assets/recipe-expansion/exp01-018.webp",
+      "sha256": "1dbd1dd2dfbdf3b1ebb5ca2e574194f274195d3614c564f39d8637315e0de673",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-019",
+      "name": "Mexican Street Corn Chicken Bowls",
+      "path": "assets/recipe-expansion/exp01-019.webp",
+      "sha256": "c9c39d42335c5dea376f7070d1d04909c01c21077137b4d77360af17dd9c4411",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-020",
+      "name": "Citrus Shrimp and Avocado Ceviche Cups",
+      "path": "assets/recipe-expansion/exp01-020.webp",
+      "sha256": "95a45ff5c1da54069d796b5f63ad1f4926f894426ed8a7a9e744d0140bcf6b8d",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-021",
+      "name": "Steak Nacho Supreme",
+      "path": "assets/recipe-expansion/exp01-021.webp",
+      "sha256": "100d337f6e89a3b8547348edeabfee3b50880eb099c4371c34238c1a510d8c2b",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-022",
+      "name": "Pulled Pork Nachos",
+      "path": "assets/recipe-expansion/exp01-022.webp",
+      "sha256": "8e21e65d50ab8d69ee73c6f92de8f8101b2df7af00aed29bf93140a0de00e97b",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-023",
+      "name": "Beef and Potato Taquitos",
+      "path": "assets/recipe-expansion/exp01-023.webp",
+      "sha256": "99b7211bed90b380292d7dd3c022816fe0f27867681f49e81ed8c9dc8928b629",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-024",
+      "name": "Crispy Chicken Flautas",
+      "path": "assets/recipe-expansion/exp01-024.webp",
+      "sha256": "ce5b260368e16facd218b8bf57617253e2f01abaf9f37d28971af62c2f65e48d",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-025",
+      "name": "Mexican Picadillo",
+      "path": "assets/recipe-expansion/exp01-025.webp",
+      "sha256": "20f8c786b012362108a48b20c76b6f749868fd69552416f5c23ee9091258abe1",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-026",
+      "name": "Salsa Verde Chicken Tacos",
+      "path": "assets/recipe-expansion/exp01-026.webp",
+      "sha256": "355a6337d09ebe7ca728b2064df2e8241362bc42ceb3a7030f3e13828159ea24",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-027",
+      "name": "Beef and Cheese Empanadas",
+      "path": "assets/recipe-expansion/exp01-027.webp",
+      "sha256": "af9f123403d08bc45a034e595c55eda8e3c12514d7055384954064fd90aa62ee",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-028",
+      "name": "Cornbread Crusted Turkey Tamale Pie",
+      "path": "assets/recipe-expansion/exp01-028.webp",
+      "sha256": "4fd90b25881074c725974979c133ce6c09a8b235ed0f2e90d706712cc8ae773e",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-029",
+      "name": "Chipotle Chicken Torta",
+      "path": "assets/recipe-expansion/exp01-029.webp",
+      "sha256": "9e4747a02c56dcd524479a4b4f52ab0d3941a804e742084744330b1c1651d7bc",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-030",
+      "name": "Shrimp Veracruz",
+      "path": "assets/recipe-expansion/exp01-030.webp",
+      "sha256": "aac2f214b2ec5a15b6833b0b440ac95acc5e1145a3169e52067e3aa66451ebd1",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-031",
+      "name": "Steak and Pinto Bean Burritos",
+      "path": "assets/recipe-expansion/exp01-031.webp",
+      "sha256": "68e991164e0c52bff9cbd158d7c233148b4b3f18877674da4944a6902023024a",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-032",
+      "name": "Poblano Chicken Rice Bake",
+      "path": "assets/recipe-expansion/exp01-032.webp",
+      "sha256": "3cf504da5bf96c1017dfd94af40195a4f795b3c88c29ae254b8f2285c34a7394",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-033",
+      "name": "Mexican Beef Stuffed Zucchini",
+      "path": "assets/recipe-expansion/exp01-033.webp",
+      "sha256": "c2bcdf4117a368451b30b4470c4108c9a9061315ff7ce49c3fbd37c2612679c6",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-034",
+      "name": "Pork Al Pastor Tacos",
+      "path": "assets/recipe-expansion/exp01-034.webp",
+      "sha256": "dc78c42d750ec6695d742012e02f8915e6d92c1bcc64397090c0e322dd34e732",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-035",
+      "name": "Charred Corn and Black Bean Chicken Stuffed Poblanos",
+      "path": "assets/recipe-expansion/exp01-035.webp",
+      "sha256": "61dc5c32f9c4e4c268b7b60ea467a2cbaa027b0820f82f6f3988efe2728b4075",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-036",
+      "name": "Beef Quesabirria",
+      "path": "assets/recipe-expansion/exp01-036.webp",
+      "sha256": "c5bee4ec014e74a33da8a2a4e30326acf794c9208b1131e2fc0d18a9ceb186a2",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-037",
+      "name": "Tex-Mex Chili Mac",
+      "path": "assets/recipe-expansion/exp01-037.webp",
+      "sha256": "c0aa4153a674413a75e1629aa762840e9b5798bc59299e43ef04067bc8b2ac12",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-038",
+      "name": "Cheesy Chorizo Breakfast Tacos",
+      "path": "assets/recipe-expansion/exp01-038.webp",
+      "sha256": "5ddc2b5146ffd4adee99ef5c06073d70ce084af3906824d1c98bfb00435b91e9",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-039",
+      "name": "Chorizo and Potato Burritos",
+      "path": "assets/recipe-expansion/exp01-039.webp",
+      "sha256": "684515c8ceb770719be2a4b719ca15e32f897787da179730f4efd0d68efcbc24",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-040",
+      "name": "Grilled Fish Baja Tacos",
+      "path": "assets/recipe-expansion/exp01-040.webp",
+      "sha256": "391585daf869d66fdbf4d0fb35de9c52b97c392735a77892e18c9c37bb0e70b9",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-041",
+      "name": "Creamy Chicken Poblano Soup",
+      "path": "assets/recipe-expansion/exp01-041.webp",
+      "sha256": "3258f774f63e56ad01421cf2387760cb64c5f5304a3e10dfbd954b9400596e50",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-042",
+      "name": "Mexican Beef Meatballs",
+      "path": "assets/recipe-expansion/exp01-042.webp",
+      "sha256": "9d2d3a3f50b35ade6ff3335af5aa256d7b7a5194e34f4c3040e611b0e9ddc288",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-043",
+      "name": "Smoky Chipotle Turkey Chili",
+      "path": "assets/recipe-expansion/exp01-043.webp",
+      "sha256": "702ab30df220e4f5a91089d783187751701b4ff9155ade51abfb7213f55ac902",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-044",
+      "name": "Steak Taco Salad",
+      "path": "assets/recipe-expansion/exp01-044.webp",
+      "sha256": "e541ec72c4157d0839aaee6496fcf21dc65809fe133112ee2cee170f7ff8f192",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-045",
+      "name": "Maple Glazed Breakfast Pork Sausage Patties",
+      "path": "assets/recipe-expansion/exp01-045.webp",
+      "sha256": "4db8bd534d5efe33432208ad515777698ef054a73fa80d998e17670a7b887b23",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-046",
+      "name": "Baked Ziti with Italian Sausage",
+      "path": "assets/recipe-expansion/exp01-046.webp",
+      "sha256": "114e305e4f1a6cdf8293a02adda7a0198ed787c4f6abfb045fd8b20ec22c23c2",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-047",
+      "name": "Honey Garlic Pork Chops",
+      "path": "assets/recipe-expansion/exp01-047.webp",
+      "sha256": "9004de007601d2e6823aedf6c650f7a5fbf693da41729085018439875c77b3b5",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-048",
+      "name": "Creamy Tuscan Chicken Pasta",
+      "path": "assets/recipe-expansion/exp01-048.webp",
+      "sha256": "ba08729340c208708878cff267d4876a7a679c80c1ec9092b9e5988ac7455e17",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-049",
+      "name": "Ginger Beef and Snow Pea Noodle Bowls",
+      "path": "assets/recipe-expansion/exp01-049.webp",
+      "sha256": "bc629f6fc16a425c0e32cc8217e57896b3c5f1064c569a5e535a5ddb23c4d7ff",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-050",
+      "name": "French Onion Potato Gratin",
+      "path": "assets/recipe-expansion/exp01-050.webp",
+      "sha256": "f68b5c64ecefdd714f13809f0b1b830e70304171d0b5a44430b5f05568f2c80d",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-051",
+      "name": "Lemon Butter Baked Cod",
+      "path": "assets/recipe-expansion/exp01-051.webp",
+      "sha256": "86e9037712846f38af30c1f04da788eb81ec36ea4b6961842bf67aa01d322117",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-052",
+      "name": "BBQ Pulled Chicken Sandwiches",
+      "path": "assets/recipe-expansion/exp01-052.webp",
+      "sha256": "6bb6d72f1432bd70b6dd4a8c35bbebb5a89e01edb88ef14138fa2fe74b734e35",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-053",
+      "name": "Savory Cheddar Biscuit Breakfast Bake",
+      "path": "assets/recipe-expansion/exp01-053.webp",
+      "sha256": "4f086cd2683d3548f93c50302956e791a43b15e62c531a43056937e62f200282",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-054",
+      "name": "Turkey and Wild Rice Soup",
+      "path": "assets/recipe-expansion/exp01-054.webp",
+      "sha256": "a75ec3f73145b39a5318650ebfb9c718c6c79ebc19d21cb1add0aada0a9bb37a",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-055",
+      "name": "Moroccan Apricot Chicken with Couscous",
+      "path": "assets/recipe-expansion/exp01-055.webp",
+      "sha256": "00370c040b05bc5090e16ae2a51e0e81f24f796657df8d5480a35c9281a22841",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-056",
+      "name": "Garlic Parmesan Chicken Wings",
+      "path": "assets/recipe-expansion/exp01-056.webp",
+      "sha256": "590916b07971b4c155850125da220cd3e3d73bdbdce393340122ee1954f0c22a",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-057",
+      "name": "Sausage and Peppers Hoagies",
+      "path": "assets/recipe-expansion/exp01-057.webp",
+      "sha256": "567f7ed68a8d1552f05eb7ca65192671d4a2cccd09f20bf940335e7b322c3cb9",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-058",
+      "name": "One-Pot Chicken Alfredo",
+      "path": "assets/recipe-expansion/exp01-058.webp",
+      "sha256": "a694c25f09a1a77a2a8f3378b6fe8c3aefb8a8269dce20e4ae791e531e165ddd",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-059",
+      "name": "Pineapple Ginger Chicken Lettuce Cups",
+      "path": "assets/recipe-expansion/exp01-059.webp",
+      "sha256": "32b218f3351501baac01c9942e12d2b93fd7a7fc8e0e7a174cc8de719151838e",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-060",
+      "name": "Balsamic Steak and Roasted Grape Salad",
+      "path": "assets/recipe-expansion/exp01-060.webp",
+      "sha256": "af6b4d75fef479d7989bbeb0b2ac11a9ca29f6ecef492f0c942fc414a792c3d8",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-061",
+      "name": "Chicken Tortellini Soup",
+      "path": "assets/recipe-expansion/exp01-061.webp",
+      "sha256": "9e9776860cdfa5b3dd970e4cf19f4813bd6b0568eca475e487c5f3cf1d96670f",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-062",
+      "name": "Sheet-Pan Lemon Herb Chicken and Potatoes",
+      "path": "assets/recipe-expansion/exp01-062.webp",
+      "sha256": "02df1471bdca00e591d7c14ad4bee2f2c93f84e5182cf7f571275fb51844f50c",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-063",
+      "name": "Crispy Ginger Orange Pork Cutlets",
+      "path": "assets/recipe-expansion/exp01-063.webp",
+      "sha256": "0682090a6c905308fcee17c640a6aa64450dc10a837d3e9766900da45c28746c",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-064",
+      "name": "Breakfast Sausage Egg Casserole",
+      "path": "assets/recipe-expansion/exp01-064.webp",
+      "sha256": "891d6ceb6555ce6a5cca79b86e4be40d7193c2cf2912eb950c403bfd48624a1b",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-065",
+      "name": "Apple Cider Pork and Sweet Potato Sheet Pan",
+      "path": "assets/recipe-expansion/exp01-065.webp",
+      "sha256": "2d78fba43c8d569077b640dadc30b9a9761dee375befc13cb860d100090cf050",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-066",
+      "name": "Creole Catfish with Tomato Okra Relish",
+      "path": "assets/recipe-expansion/exp01-066.webp",
+      "sha256": "8465d447e82d62db4e0e4802deaee819f3859664e01bf75e5803957f967bfec2",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-067",
+      "name": "Ricotta Spinach Stuffed Portobellos",
+      "path": "assets/recipe-expansion/exp01-067.webp",
+      "sha256": "3ceb3f299edf15d1d4eea8437e2a62f31b89381d550181e0611f61e692061f97",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-068",
+      "name": "Maple Mustard Roasted Salmon",
+      "path": "assets/recipe-expansion/exp01-068.webp",
+      "sha256": "a979cc85d45a3581ab8ca3d88480982a6b2b3fd7415069bf112360cde39a2bf3",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-069",
+      "name": "Classic Chicken Noodle Casserole",
+      "path": "assets/recipe-expansion/exp01-069.webp",
+      "sha256": "6e8ad700e012e94321ee94c3ab8b8a0adef8252674b0e7b355c4cca4e9123a25",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-070",
+      "name": "Garlic Butter Steak Bites and Potatoes",
+      "path": "assets/recipe-expansion/exp01-070.webp",
+      "sha256": "454c650252e342b10e66a9d0a8264723b586954482ca174f54373baa5e545e0d",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-071",
+      "name": "Lemon Dill Chicken and Barley Skillet",
+      "path": "assets/recipe-expansion/exp01-071.webp",
+      "sha256": "80bc838d2d759289d68c9e4e5a82d20ed54a9bd557a528ba40ffdca94d6e134b",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-072",
+      "name": "Baked Honey Mustard Chicken Thighs",
+      "path": "assets/recipe-expansion/exp01-072.webp",
+      "sha256": "649581245f99511503784e7e76732de24d3111e323f79c9e449606cba561cfde",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-073",
+      "name": "Creamy Tomato Basil Tortellini",
+      "path": "assets/recipe-expansion/exp01-073.webp",
+      "sha256": "b47e1ae9f71e0eebfd26038dd8302c0996be4ef8f318970f811e058f40489ada",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-074",
+      "name": "Ground Turkey Lettuce Wraps",
+      "path": "assets/recipe-expansion/exp01-074.webp",
+      "sha256": "8b75fdd9c65cfb8d32b3939123c3dad87f0a394954604430e95116935695c520",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-075",
+      "name": "Smoky Sausage Cabbage and Apple Skillet",
+      "path": "assets/recipe-expansion/exp01-075.webp",
+      "sha256": "ee7f6f08b2215f503bf329275e36085eda403b02e14e693cf15c2a3fb1362a21",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-076",
+      "name": "Crispy Baked Fish Sticks",
+      "path": "assets/recipe-expansion/exp01-076.webp",
+      "sha256": "06a7c4824b9db3e928b05e0e614534a1683f0017580a97799cdd9e4afb7568b0",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-077",
+      "name": "Broccoli Cheddar Stuffed Chicken",
+      "path": "assets/recipe-expansion/exp01-077.webp",
+      "sha256": "c8d6570f847a3954849c29f8282a1aa5409ad0036edddc1d2f168bb1b7a595c0",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-078",
+      "name": "Slow-Cooker White Chicken Chili",
+      "path": "assets/recipe-expansion/exp01-078.webp",
+      "sha256": "1e7696555fc594e2dc4fc7588c498b61c0cf3b0855bc7e11406ce7eae7102421",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-079",
+      "name": "Italian Meatball Subs",
+      "path": "assets/recipe-expansion/exp01-079.webp",
+      "sha256": "173e7bf12cf1f7b524ee1926ed2f0d0b8d8d6dcb8be8e89190f3878b560322c7",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-080",
+      "name": "Roasted Vegetable and Chicken Orzo",
+      "path": "assets/recipe-expansion/exp01-080.webp",
+      "sha256": "335c154134692136b0a1d63b4f00c8ba2949ca6d062402d56e7e5f4d381ca6f7",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-081",
+      "name": "Balsamic Beef Short Ribs with Polenta",
+      "path": "assets/recipe-expansion/exp01-081.webp",
+      "sha256": "36e3068931386a670c947764fa907a5bdd4eb447fef9e659ef2744c649cbd9d2",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-082",
+      "name": "Lemon Garlic Shrimp Linguine",
+      "path": "assets/recipe-expansion/exp01-082.webp",
+      "sha256": "c14e8092901fdbb0921a24144244ef8e331d808a0e3ad9d40b98788e989cf5d7",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-083",
+      "name": "Ginger Scallion Beef and Cabbage Bowls",
+      "path": "assets/recipe-expansion/exp01-083.webp",
+      "sha256": "6fd463153a2e7b54cc4873a8395af83d8d96cadeb0a77381b4a2dbf2e2f2fe24",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-084",
+      "name": "Ham and Cheese Breakfast Sliders",
+      "path": "assets/recipe-expansion/exp01-084.webp",
+      "sha256": "771a56e5423c97bb1a4b9dcadbecf3301b70b638541dc674fb1b5f8e827aa3af",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-085",
+      "name": "One-Pan Creamy Garlic Chicken and Rice",
+      "path": "assets/recipe-expansion/exp01-085.webp",
+      "sha256": "cb84a6467df487308215bc2f3a0ef07912e2f742e7cce11a6dbd76aa02b67ce8",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-086",
+      "name": "Beef and Bean Chili",
+      "path": "assets/recipe-expansion/exp01-086.webp",
+      "sha256": "bf35fa1e4b316325e1e855d2f91af04434246ee7f944e0a83cab2b2d95350b60",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-087",
+      "name": "Roasted Red Pepper Turkey Burgers",
+      "path": "assets/recipe-expansion/exp01-087.webp",
+      "sha256": "bedd7cd5f4d24ca6b224aed5b1e51e7ed64c75fd9a2ed7c31aed0932fc4be9bc",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-088",
+      "name": "Pork Tenderloin with Apple Pan Sauce",
+      "path": "assets/recipe-expansion/exp01-088.webp",
+      "sha256": "0021c76680583cedecddf2fc5e173f45226705d27c241af2342cc2f7dda0f72f",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-089",
+      "name": "Baked Chicken Parmesan Meatballs",
+      "path": "assets/recipe-expansion/exp01-089.webp",
+      "sha256": "1cec951b19a99cc648631b61783b493894e8db8453724a25f80148d5b8da8191",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-090",
+      "name": "Breakfast Potato and Chorizo Hash",
+      "path": "assets/recipe-expansion/exp01-090.webp",
+      "sha256": "621123340d1c175e80a9624930c9f8e554e03806b8b6f807f39efac337ed4cf1",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-091",
+      "name": "Creamy Mushroom Pork Tenderloin",
+      "path": "assets/recipe-expansion/exp01-091.webp",
+      "sha256": "92c93b6d2eda0a3992fbc75392be3fe5bdd037bd369de24984e1d712d6e16304",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-092",
+      "name": "Greek Lemon Chicken Soup",
+      "path": "assets/recipe-expansion/exp01-092.webp",
+      "sha256": "d048a0e1b87278904a63b6c9b9f918e0283ff883c54493b9695f30446b97d49a",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-093",
+      "name": "Balsamic Turkey and Roasted Beet Grain Bowls",
+      "path": "assets/recipe-expansion/exp01-093.webp",
+      "sha256": "b9fec96bf3ab557a92ddb768edf2cfea456d44edfcef7077e247bb1bf2359a27",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-094",
+      "name": "Orange Ginger Glazed Pork Tenderloin",
+      "path": "assets/recipe-expansion/exp01-094.webp",
+      "sha256": "c4f857ccfea3e6d58e75ffcac12370745f2846bc083a3d4015f16768bbb0e6ac",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-095",
+      "name": "Turkey Spinach Stuffed Manicotti",
+      "path": "assets/recipe-expansion/exp01-095.webp",
+      "sha256": "1759d6914cdb0f2689400bff3080fbc08ab02923e8fe79eb0a2a634001d845ab",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-096",
+      "name": "Thai Basil Beef Rice",
+      "path": "assets/recipe-expansion/exp01-096.webp",
+      "sha256": "0ef6bf6b020368db0a6c353026ea285dd0944db1a11c48160e42ddcdc2aa7262",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-097",
+      "name": "Rosemary Garlic Turkey Meatloaf",
+      "path": "assets/recipe-expansion/exp01-097.webp",
+      "sha256": "e57f645476beba89fa1f890cdff5d8f53e2f6a6814a60dd538afc7a850c51d7e",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-098",
+      "name": "Coconut Lime Chicken Curry",
+      "path": "assets/recipe-expansion/exp01-098.webp",
+      "sha256": "8d5df11bb5c64f526377036727baea0c64c2b43d308434527682b6f83726584f",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-099",
+      "name": "Smoky Ham and Navy Bean Soup",
+      "path": "assets/recipe-expansion/exp01-099.webp",
+      "sha256": "8525a2737e4522a54e62a3ebaaf11b7e92f2c89ad8464a795b2f0d188abd7f9e",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-100",
+      "name": "Crispy Ranch Potato Wedges with Chicken",
+      "path": "assets/recipe-expansion/exp01-100.webp",
+      "sha256": "205e60f3404e9eb2a4b04334cecb73a68501a1b8d4d95fbb1f2b0cf80a6f8621",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-101",
+      "name": "Creamy Spinach and Artichoke Chicken Bake",
+      "path": "assets/recipe-expansion/exp01-101.webp",
+      "sha256": "237a9a42b3b129645454e87efef2d80970469027ac3f1dd37d952253e2a09e59",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-102",
+      "name": "Apricot Glazed Pork Meatballs",
+      "path": "assets/recipe-expansion/exp01-102.webp",
+      "sha256": "ce872069cc4ee8dbd9cc15057a33401dd315e1a74ed8eb9879dd4e73b26ab3f9",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-103",
+      "name": "Butternut Squash Sausage Risotto",
+      "path": "assets/recipe-expansion/exp01-103.webp",
+      "sha256": "2eb4f579f4382997cb397136e84bf5c6861bbfa7667322dbf6efee335a6e2987",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-104",
+      "name": "Honey Sesame Salmon Rice Bowls",
+      "path": "assets/recipe-expansion/exp01-104.webp",
+      "sha256": "0b8d5aca2e130c99d1bd8d078b851c9c2db906a9819cf8a22ce162bdee434efd",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-105",
+      "name": "Chicken and Corn Chowder",
+      "path": "assets/recipe-expansion/exp01-105.webp",
+      "sha256": "74cedcf37ef692ce3b22d2406df8e529bedec311e5e3d43902a6f823e9033417",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-106",
+      "name": "Crispy Oven Barbecue Pork Ribs",
+      "path": "assets/recipe-expansion/exp01-106.webp",
+      "sha256": "2e4360096a87cf5a1fd33df10e12f98675de103562ea4957a8ce5935c00914e5",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-107",
+      "name": "Cheddar Bacon Broccoli Quiche",
+      "path": "assets/recipe-expansion/exp01-107.webp",
+      "sha256": "e80d67a49676a1e25f7aa64ef8b91264f6b7d570f9784a033da597d2d5f0eaca",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-108",
+      "name": "Garlic Chili Noodles with Ground Pork",
+      "path": "assets/recipe-expansion/exp01-108.webp",
+      "sha256": "a5bb531caf09a0eddd829f0e67814c5082222abc6ba1db1fa3e0ab2d9ed4b4ac",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-109",
+      "name": "Cider Braised Chicken with Apples",
+      "path": "assets/recipe-expansion/exp01-109.webp",
+      "sha256": "06d81b4814499049eaa28c880b1a6a02eae12484bfed12ca095216467c1f3cfa",
+      "status": "accepted-staging-only"
+    },
+    {
+      "recipeId": "exp01-110",
+      "name": "Skillet Creamy Pesto Shrimp Gnocchi",
+      "path": "assets/recipe-expansion/exp01-110.webp",
+      "sha256": "38db82eb590f58cdbda93c6d312b1d6c7ad3acb2b9b0efb400660b1d210ddb52",
+      "status": "accepted-staging-only"
+    }
+  ]
+}

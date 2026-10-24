@@ -1,0 +1,15 @@
+import assert from 'node:assert/strict';
+import {sideDishOnlyRecovery,archiveVerifiedSideDraft} from '../luxury-v2/side-dish-recovery.mjs';
+const original={activePlanningWeek:1,plan:{0:[null,null,'old',null]},alternateWeek:{plan:{}},dinnerSides:{0:['rice']}};
+const pending={version:1,uid:'tester',original,preview:{'1-0-2':'new'}};
+const cloud={...original,plan:{0:[null,null,'new',null]},dinnerSides:{0:['beans']}};
+assert.equal(sideDishOnlyRecovery(cloud,pending),true);
+assert.equal(sideDishOnlyRecovery({...cloud,servings:4},pending),false);
+assert.equal(sideDishOnlyRecovery({...cloud,plan:original.plan},pending),false);
+const records=new Map([['tablewise-luxury-pending-tester',JSON.stringify(pending)]]);
+const storage={getItem:k=>records.get(k)??null,setItem:(k,v)=>records.set(k,v),removeItem:k=>records.delete(k)};
+assert.equal(archiveVerifiedSideDraft(storage,'tester',pending),true);
+assert.equal(storage.getItem('tablewise-luxury-pending-tester'),null);
+assert.equal(JSON.parse(storage.getItem('tablewise-luxury-side-recovery-archive-tester')).original.dinnerSides[0][0],'rice');
+assert.throws(()=>archiveVerifiedSideDraft(storage,'tester',pending));
+console.log('PASS: side-dish-only verification keeps permanent local backup and never writes Firebase');

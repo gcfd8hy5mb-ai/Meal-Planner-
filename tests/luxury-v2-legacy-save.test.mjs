@@ -1,0 +1,38 @@
+import assert from 'node:assert/strict';
+import {guardedLegacySave,StaleDocumentError,snapshotFingerprint} from '../luxury-v2/legacy-safe-save.mjs';
+const baseline={plan:{0:[null,null,'chicken',null]},alternateWeek:{plan:{}},custom:'[]',preferences:{style:'Any'},servings:2};
+const copy=()=>structuredClone(baseline);
+const harness=(cloud=copy(),uid='account-A')=>{
+ const writes=[];const ref={id:'account-A'};
+ const tx={get:async r=>{assert.equal(r,ref);return {exists:()=>cloud!==null,data:()=>cloud}},
+  set:(r,data)=>{assert.equal(r,ref);writes.push(data)}};
+ return {writes,documentRef:ref,getAuthenticatedUid:()=>uid,runTransaction:async f=>f(tx)};
+};
+assert.equal(snapshotFingerprint({b:2,a:1}),snapshotFingerprint({a:1,b:2}),'Key order must not cause spurious conflicts');
+let h=harness();
+let output=await guardedLegacySave({...h,lastConfirmedDocument:copy(),nextDocument:{...copy(),servings:3}});
+assert.equal(output.saved,true);
+assert.equal(h.writes[0].servings,3);
+assert.equal(h.writes[0].preferences.style,'Any');
+h=harness({...copy(),plan:{0:[null,null,'changed-elsewhere',null]}});
+await assert.rejects(guardedLegacySave({...h,lastConfirmedDocument:copy(),nextDocument:{...copy(),servings:3}}),StaleDocumentError);
+assert.equal(h.writes.length,0,'Concurrent plan edits must not be overwritten');
+h=harness({...copy(),preferences:{style:'Vegan'}});
+await assert.rejects(guardedLegacySave({...h,lastConfirmedDocument:copy(),nextDocument:{...copy(),servings:3}}),StaleDocumentError);
+assert.equal(h.writes.length,0,'Concurrent preference edits must not be overwritten');
+h=harness({...copy(),custom:'[{"id":"new"}]'});
+await assert.rejects(guardedLegacySave({...h,lastConfirmedDocument:copy(),nextDocument:{...copy(),servings:3}}),StaleDocumentError);
+assert.equal(h.writes.length,0,'Concurrent recipe edits must not be overwritten');
+h=harness(null);
+await assert.rejects(guardedLegacySave({...h,lastConfirmedDocument:copy(),nextDocument:copy()}),StaleDocumentError);
+assert.equal(h.writes.length,0,'Deleted account must not be recreated');
+h=harness();
+await assert.rejects(guardedLegacySave({...h,lastConfirmedDocument:null,nextDocument:copy()}),StaleDocumentError);
+assert.equal(h.writes.length,0,'Missing baseline cannot blindly overwrite');
+h=harness(copy(),'account-B');
+await assert.rejects(guardedLegacySave({...h,lastConfirmedDocument:copy(),nextDocument:copy()}),/Account mismatch/);
+assert.equal(h.writes.length,0,'Different user cannot save');
+h=harness({...copy(),serverAddedField:'keep'});
+await assert.rejects(guardedLegacySave({...h,lastConfirmedDocument:copy(),nextDocument:copy()}),StaleDocumentError);
+assert.equal(h.writes.length,0,'Unknown concurrent fields also cause a safe conflict');
+console.log('Legacy migration transaction simulations passed; no Firebase writes performed');

@@ -1,0 +1,52 @@
+name: Import approved 110 Tablewise photos
+on:
+  push:
+    branches:
+      - release/tablewise-v2-minimal-20261022
+    paths:
+      - '.github/workflows/tablewise-import-approved-photos.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  transfer:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Copy ONLY approved photo assets from staging
+        run: |
+          git fetch origin photos/expansion-110-staging-20261022
+          git checkout origin/photos/expansion-110-staging-20261022 -- assets/recipe-expansion/
+      - name: Independently verify 110 files and review SHA256 hashes
+        run: |
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          import crypto from 'node:crypto';
+          import assert from 'node:assert/strict';
+          const inventory=JSON.parse(fs.readFileSync('release/expansion-110-photo-inventory.json','utf8'));
+          assert.equal(inventory.photos.length,110);
+          const actual=fs.readdirSync('assets/recipe-expansion').filter(n=>n.endsWith('.webp')).sort();
+          assert.deepEqual(actual,inventory.photos.map(p=>p.recipeId+'.webp').sort());
+          for(const p of inventory.photos){
+            const data=fs.readFileSync(p.path);
+            assert.ok(data.length>10000,p.recipeId+' empty or placeholder');
+            assert.equal(crypto.createHash('sha256').update(data).digest('hex'),p.sha256,p.recipeId+' hash mismatch');
+          }
+          console.log('PASS 110 approved individual photographs with exact source review hashes');
+          NODE
+      - name: Commit image files to isolated release branch only
+        run: |
+          if git diff --cached --quiet; then
+            echo 'Photos already copied; no changes.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Import 110 approved Tablewise food photos only'
+          git push origin HEAD:release/tablewise-v2-minimal-20261022

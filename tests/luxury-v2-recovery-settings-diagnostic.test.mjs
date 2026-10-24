@@ -1,0 +1,12 @@
+import assert from 'node:assert/strict';
+import {compareRecoverySettings} from '../luxury-v2/recovery-settings-diagnostic.mjs';
+const original={activePlanningWeek:1,plan:{0:[null,null,'tacos',null]},alternateWeek:{plan:{}},servings:2,preferences:{style:'Anything'},groceryQuantities:{rice:2}};
+const pending={original,preview:{'1-0-2':'burger'}};
+const saved={...original,plan:{0:[null,null,'burger',null]}};
+assert.deepEqual(compareRecoverySettings(saved,pending),[]);
+assert.deepEqual(compareRecoverySettings({...saved,groceryQuantities:{rice:3}},pending),['Week 1 grocery quantities']);
+assert.deepEqual(compareRecoverySettings({...saved,servings:3},pending),['household servings']);
+assert.deepEqual(compareRecoverySettings({...saved,plan:{0:[null,null,'tacos',null]}},pending),['Week 1 meals']);
+assert.equal(original.plan[0][2],'tacos');
+assert.equal(compareRecoverySettings(null,pending),null);
+console.log('PASS: non-destructive settings conflict diagnosis');

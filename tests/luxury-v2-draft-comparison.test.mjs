@@ -1,0 +1,15 @@
+import assert from 'node:assert/strict';
+import {compareRecoveredDinners} from '../luxury-v2/draft-comparison.mjs';
+const week=(id)=>({plan:{0:[null,null,id,null]},activePlanningWeek:1,alternateWeek:{plan:{}}});
+const original=week('goulash');
+const cloud=week('goulash');
+const backup={original,preview:{'1-0-2':'burger'}};
+assert.deepEqual(compareRecoveredDinners(cloud,backup),[{week:1,day:0,meal:'goulash',deviceMeal:'burger'}]);
+assert.equal(compareRecoveredDinners(week('burger'),backup).length,0);
+assert.equal(original.plan[0][2],'goulash');
+assert.equal(cloud.plan[0][2],'goulash');
+assert.equal(compareRecoveredDinners(cloud,null).length,0);
+const differentWeek={...original,alternateWeek:{plan:{0:[null,null,'tacos',null]}}};
+const week2Backup={original:differentWeek,preview:{'2-0-2':'fajitas'}};
+assert.deepEqual(compareRecoveredDinners(differentWeek,week2Backup),[{week:2,day:0,meal:'tacos',deviceMeal:'fajitas'}]);
+console.log('PASS: read-only recovery comparison of two planner weeks');
