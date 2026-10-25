@@ -1,3 +1,5 @@
+import {generateRenewalCandidates} from './renewal-generator.mjs';
+import {prepareRenewal,renewalEligibility} from './renewal-safety.mjs';
 import {ensureCloudCalendar} from './cloud-calendar.mjs';
 import {readCalendarAnchor,calendarPeriod,calendarWeekStart,addDays,dateLabel,dateKey,weekRangeLabel} from './calendar-weeks.mjs';
 // Luxury v2 adapter: cloud saves remain release-gated until hosted Firebase validation.
@@ -375,6 +377,8 @@ const renderWeek=(week)=>{
  const calendarState=calendarPeriod(calendarAnchor,new Date(),calendarInitialWeek);
  const status=document.querySelector('#luxuryCalendarStatus');
  status.hidden=!(calendarState?.complete);
+ const renewalPanel=document.querySelector('#luxuryRenewalPanel');
+ renewalPanel.hidden=!(calendarState?.complete&&account&&renewalEligibility(account).ready);
  if(calendarState?.complete)status.textContent='This two-week calendar period has ended. Your previous meals are preserved for reference, but Tablewise has not generated a new plan. Choose meals for your next dates before using them as today’s menu.';
  for(const button of document.querySelectorAll('[data-week]')){const active=Number(button.dataset.week)===liveWeek;button.classList.toggle('active',active);button.setAttribute('aria-pressed',String(active));button.textContent='Week '+button.dataset.week+' · '+weekRangeLabel(calendarWeekStart(calendarAnchor,Number(button.dataset.week),calendarInitialWeek))}
  const planned=Array.from({length:7},(_,day)=>dayMeal(liveWeek,day,2));
@@ -815,6 +819,23 @@ document.querySelector('#previousStep').onclick=()=>{step=Math.max(0,step-1);sho
 document.querySelector('#nextStep').onclick=()=>{if(step+1>=(currentRecipe?.steps?.length||0)){showPage('today');return}step++;showCookStep()};
 document.querySelector('section[data-page="cook"] > button.primary.full').onclick=()=>{renderIngredients('recipe');showPage('groceries')};
 document.querySelectorAll('[data-nav="groceries"]').forEach(b=>b.addEventListener('click',()=>renderIngredients()));
+document.querySelector('#luxuryRenewalPreviewButton').addEventListener('click',()=>{
+ const preview=document.querySelector('#luxuryRenewalPreview');
+ preview.replaceChildren();
+ if(!account||hasPreviewEdits(previewEdits)){preview.textContent='Save or discard current meal edits before previewing a new plan.';return}
+ try{
+  const candidate=generateRenewalCandidates(account,[...baseRecipes.values(),...customRecipes()]);
+  const proposed=prepareRenewal(account,candidate);
+  if(!proposed.ok)throw Error(proposed.reason);
+  const heading=document.createElement('p');heading.textContent='Preview only — no meals have been saved or replaced.';preview.append(heading);
+  for(const [name,week] of [['Next week',candidate.week1],['Following week',candidate.week2]]){
+   const title=document.createElement('strong');title.textContent=name;preview.append(title);
+   const items=document.createElement('p');items.textContent=Array.from({length:7},(_,day)=>findRecipe(week[day][2])?.name||'Unknown dinner').join(' · ');preview.append(items);
+  }
+  if(candidate.repeatedFromPrevious){const note=document.createElement('p');note.textContent='Some meals also appeared in your previous plan.';preview.append(note)}
+  const note=document.createElement('p');note.textContent='Saving a replacement plan is not enabled yet. Your existing weeks remain unchanged.';preview.append(note);
+ }catch(error){preview.textContent='Could not create a safe plan preview: '+(error?.message||'Unknown issue')}
+});
 document.querySelectorAll('[data-week]').forEach(b=>b.addEventListener('click',()=>{if(account)renderWeek(b.dataset.week)}));
 document.addEventListener('visibilitychange',()=>{if(!document.hidden&&account&&!hasPreviewEdits(previewEdits)){const period=calendarPeriod(calendarAnchor,new Date(),calendarInitialWeek);if(period&&!period.complete){liveWeek=period.activeWeek;renderWeek(liveWeek)}setHero()}});
 const resetPrivateView=()=>{
