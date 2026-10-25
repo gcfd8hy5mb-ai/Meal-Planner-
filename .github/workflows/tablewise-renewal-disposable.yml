@@ -1,0 +1,50 @@
+name: Tablewise renewal disposable Firebase verification
+on:
+  workflow_dispatch:
+    inputs:
+      approval:
+        description: 'Type RENEWAL_DISPOSABLE_ONLY for isolated CI test accounts'
+        required: true
+        type: string
+permissions:
+  contents: read
+concurrency:
+  group: tablewise-renewal-disposable-test
+  cancel-in-progress: false
+jobs:
+  verify-renewal:
+    if: ${{ inputs.approval == 'RENEWAL_DISPOSABLE_ONLY' && vars.TABLEWISE_HOSTED_TEST_APPROVED == 'yes' }}
+    runs-on: ubuntu-latest
+    environment: tablewise-hosted-test
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feature/tablewise-renewal-safety-20261025
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify disposable-only scope
+        env:
+          TABLEWISE_FIREBASE_PROJECT_ID: ${{ secrets.TABLEWISE_FIREBASE_PROJECT_ID }}
+          TABLEWISE_TEST_A_EMAIL: ${{ secrets.TABLEWISE_TEST_A_EMAIL }}
+          TABLEWISE_TEST_B_EMAIL: ${{ secrets.TABLEWISE_TEST_B_EMAIL }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          [[ "$TABLEWISE_FIREBASE_PROJECT_ID" == "meal-planner-a478e" ]]
+          [[ "$TABLEWISE_TEST_A_EMAIL" == tablewise-ci-* ]]
+          [[ "$TABLEWISE_TEST_B_EMAIL" == tablewise-ci-* ]]
+          [[ "$TABLEWISE_TEST_A_EMAIL" != "$TABLEWISE_TEST_B_EMAIL" ]]
+      - run: npm install --no-audit --no-fund --ignore-scripts
+      - name: Verify two-week renewal and Firebase archive
+        env:
+          TABLEWISE_HOSTED_TEST_APPROVED: 'yes'
+          TABLEWISE_FIREBASE_API_KEY: ${{ secrets.TABLEWISE_FIREBASE_API_KEY }}
+          TABLEWISE_FIREBASE_PROJECT_ID: ${{ secrets.TABLEWISE_FIREBASE_PROJECT_ID }}
+          TABLEWISE_TEST_A_EMAIL: ${{ secrets.TABLEWISE_TEST_A_EMAIL }}
+          TABLEWISE_TEST_A_PASSWORD: ${{ secrets.TABLEWISE_TEST_A_PASSWORD }}
+          TABLEWISE_TEST_B_EMAIL: ${{ secrets.TABLEWISE_TEST_B_EMAIL }}
+          TABLEWISE_TEST_B_PASSWORD: ${{ secrets.TABLEWISE_TEST_B_PASSWORD }}
+        run: node --test tests/hosted-firebase-renewal-disposable.test.mjs
