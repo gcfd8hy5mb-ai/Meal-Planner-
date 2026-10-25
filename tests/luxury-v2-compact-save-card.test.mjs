@@ -1,0 +1,17 @@
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+const html=readFileSync(new URL('../luxury-v2/index.html',import.meta.url),'utf8');
+const live=readFileSync(new URL('../luxury-v2/live.js',import.meta.url),'utf8');
+assert.match(html,/id="luxuryDraftActions"/);
+assert.match(html,/id="luxurySaveSuccess"/);
+assert.match(html,/id="discardLuxuryEdits"/);
+assert.match(html,/id="exportLuxuryEdits" hidden/);
+assert.equal((html.match(/id="discardLuxuryEdits"/g)||[]).length,1);
+assert.match(html,/class="luxury-save-card"/);
+assert.match(html,/class="luxury-save-success"/);
+assert.match(live,/exportButton.hidden=!\(unsaved&&\(luxurySaveFailed\|\|luxuryCloudWriteAwaitingVerification\)\)/);
+assert.match(live,/success.hidden=unsaved\|\|!luxurySaveVerified/);
+assert.match(live,/luxurySaveVerified=true;\s*account=cloud.data\(\);previewEdits=\{\}/);
+assert.match(live,/verifyLuxurySavedPlan\(original,preview,cloud.data\(\),result.savedFields\)/);
+assert.match(live,/luxurySaveFailed=true/);
+console.log('PASS compact luxury card preserves verified save and recovery-only export');
