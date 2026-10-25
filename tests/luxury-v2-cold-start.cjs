@@ -7,7 +7,7 @@ assert.match(html,/<style>[\s\S]*?\[hidden\]\s*\{display:none!important\}/i,'Hid
 assert.match(html,/<main>[\s\S]*<section data-page="today"[\s\S]*<section data-page="week" hidden[\s\S]*<section data-page="groceries" hidden[\s\S]*<section data-page="cook" hidden/i,'Only first destination is visible before startup');
 assert.match(html,/<script type="module" src="\.\/live\.js"><\/script>/,'The v2 adapter must be standalone');
 assert.doesNotMatch(html,/<iframe|<link[^>]*stylesheet|<script[^>]+src="\.\.\/index\.html"|window\.location\s*=\s*['"][^'"]*index\.html/i,'No embedded or redirected legacy page');
-assert.match(live,/onAuthStateChanged\(auth,async user=>\{const epoch=\+\+authEpoch;resetPrivateView\(\)/,'Private data must be cleared before each login restoration');
+assert.ok(live.includes('if(user&&accountUid===user.uid&&account){return;}const epoch=++authEpoch;resetPrivateView()'),'Same-account refresh preserves edits while new-account restoration clears private data');
 assert.match(live,/const snapshot=await getDocFromServer/,'Restoration must check server, not present made-up meals');
 assert.match(html,/id="saveLuxuryEdits" disabled/,'Luxury saving must stay disabled before release');
 assert.match(live,/LUXURY_SAVES_RELEASED\s*=\s*true/,'Candidate enables saving after hosted verification; production main remains untouched');
