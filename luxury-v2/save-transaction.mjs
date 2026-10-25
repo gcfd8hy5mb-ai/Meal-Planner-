@@ -19,6 +19,6 @@ export async function savePreviewTransaction({runTransaction,documentRef,origina
     if(!prepared.ok) throw new PlanConflictError(prepared.reason);
     if(getAuthenticatedUid?.()!==intendedUid) throw Error('Account changed before transaction write');
     transaction.update(documentRef,prepared.fields);
-    return {saved:true};
+    return {saved:true,savedFields:prepared.fields};
   });
 }
