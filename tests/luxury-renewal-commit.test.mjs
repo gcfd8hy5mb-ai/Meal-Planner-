@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import {commitCalendarRenewal} from '../luxury-v2/renewal-commit.mjs';
-const start={calendarWeekAnchor:'2026-10-25',calendarInitialWeek:1,activePlanningWeek:1,plan:{0:['oats','sandwich','chicken',null]},alternateWeek:{plan:{0:['eggs','salad','tacos',null]}},mealServings:{'0-0':2,'0-2':5},dinnerSides:{0:['corn']}};
+const start={calendarWeekAnchor:'2026-10-25',calendarInitialWeek:1,activePlanningWeek:1,plan:{0:['oats','sandwich','chicken',null]},alternateWeek:{plan:{0:['eggs','salad','tacos',null]},mealServings:{'0-0':3,'0-2':6},dinnerSides:{0:['beans']}},mealServings:{'0-0':2,'0-2':5},dinnerSides:{0:['corn']}};
 const recipeIds=Array.from({length:14},(_,i)=>'new-'+i);
 const generated={week1:Object.fromEntries(Array.from({length:7},(_,i)=>[i,['oats','sandwich',recipeIds[i],null]])),week2:Object.fromEntries(Array.from({length:7},(_,i)=>[i,['eggs','salad',recipeIds[i+7],null]]))};
 const userRef={id:'alice'},archiveRef={id:'2026-10-25'},uid='alice',now=new Date(2026,10,8,12);
@@ -23,6 +23,9 @@ assert.equal(account.plan[0][0],'oats','Do not delete breakfast');
 assert.equal(account.mealServings['0-0'],2,'Preserve breakfast portion');
 assert.equal(account.mealServings['0-2'],undefined,'Old dinner overrides must not carry over');
 assert.deepEqual(account.dinnerSides,{});
+assert.equal(account.alternateWeek.mealServings['0-0'],3,'Preserve second-week breakfast portions');
+assert.equal(account.alternateWeek.mealServings['0-2'],undefined,'Remove old second-week dinner portions');
+assert.deepEqual(account.alternateWeek.dinnerSides,{},'Remove old second-week dinner sides');
 await assert.rejects(commitCalendarRenewal(args),/already been archived/);
 await assert.rejects(commitCalendarRenewal({...args,getAuthenticatedUid:()=> 'other'}),/mismatch/);
 console.log('PASS atomic archive and plan, saved breakfast/lunch, stale servings, duplicate rejection and account isolation');
