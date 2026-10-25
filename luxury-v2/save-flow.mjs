@@ -52,7 +52,16 @@ export function classifyLuxuryRecovery(pending,current,uid){
 }
 
 /** Assert that a fresh server read contains the intended planning changes. */
-export function verifyLuxurySavedPlan(original,preview,serverAccount){
+export function verifyLuxurySavedPlan(original,preview,serverAccount,savedFields=null){
+ if(savedFields){
+  const canonical=value=>Array.isArray(value)?value.map(canonical):value&&typeof value==='object'?Object.fromEntries(Object.keys(value).sort().map(key=>[key,canonical(value[key])])):value;
+  if(!serverAccount)throw Error('Saved plan could not be reloaded');
+  for(const [field,expected] of Object.entries(savedFields)){
+   if(JSON.stringify(canonical(serverAccount[field]??null))!==JSON.stringify(canonical(expected??null)))throw Error('Server did not confirm saved '+field+'; recovery backup retained');
+  }
+  return true;
+ }
+
  if(!serverAccount)throw Error('Saved plan could not be reloaded');
  const expected=selectedPlanSnapshot(previewAccount(original,preview));
  if(selectedPlanSnapshot(serverAccount)!==expected)throw Error('Server meal plan differs from submitted changes; recovery backup retained');
