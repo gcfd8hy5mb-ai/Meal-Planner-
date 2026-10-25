@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';
+import {verifyRenewalReadback} from '../luxury-v2/renewal-verify.mjs';
+const old={calendarWeekAnchor:'2026-10-25',plan:{0:['oats','lunch','chicken',null]},alternateWeek:{plan:{0:['eggs','soup','tacos',null]}}};
+const expected={calendarWeekAnchor:'2026-11-08',calendarInitialWeek:1,plan:{0:['oats','lunch','beef',null]},alternateWeek:{plan:{0:['eggs','soup','fish',null]}}};
+const archive={start:old.calendarWeekAnchor,plan:structuredClone(old.plan),alternateWeek:structuredClone(old.alternateWeek)};
+assert.equal(verifyRenewalReadback(expected,archive,expected,old),true);
+assert.equal(verifyRenewalReadback({...expected,alternateWeek:{plan:{0:['eggs','soup','tacos',null]}}},archive,expected,old),false,'Must verify second week');
+assert.equal(verifyRenewalReadback(expected,{...archive,plan:{0:['oats','lunch','wrong',null]}},expected,old),false,'Must verify archive');
+assert.equal(verifyRenewalReadback(expected,null,expected,old),false,'Missing archive is not success');
+console.log('PASS both-week and archived-plan server verification');
