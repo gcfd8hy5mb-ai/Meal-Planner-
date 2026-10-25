@@ -25,7 +25,17 @@ export function krogerPromotionCoverage(products){
 }
 
 const tokens=name=>new Set(String(name||'').toLowerCase().split(/[^a-z0-9]+/).filter(word=>word.length>2));
+// Ingredient-use guard: keyword matches are not enough for fresh cooking meat.
+const freshMeat=/\b(beef|steak|chicken|pork|turkey|lamb|veal|ground beef|fajita meat|stir.fry meat)\b/i;
+const preparedSnack=/\b(jerky|jerkies|air.dried|dried beef|beef sticks?|meat sticks?|snack sticks?|biltong|slim jim|pepperoni|salami|summer sausage|deli meat|lunch meat|ready.to.eat|smoked snack)\b/i;
+export function krogerIngredientCompatible(ingredient,product){
+ const sought=String(ingredient||'');
+ const name=String(product?.name||'');
+ if(freshMeat.test(sought)&&!preparedSnack.test(sought)&&preparedSnack.test(name))return false;
+ return true;
+}
 export function krogerIngredientRelevance(ingredient,product){
+ if(!krogerIngredientCompatible(ingredient,product))return 0;
  const wanted=tokens(ingredient),found=tokens(product?.name);
  return wanted.size?[...wanted].filter(word=>found.has(word)).length/wanted.size:0;
 }
