@@ -62,7 +62,7 @@ jobs:
           const html=readFileSync('luxury-v2/index.html','utf8');
           const app=readFileSync('luxury-v2/live.js','utf8');
           assert.ok(root.includes("location.replace(new URL('./luxury-v2/index.html'"));
-          assert.match(html,/src="\.\/live\.js"/);
+          assert.match(html,/src="\.\/live\.js\?v=compact-save-20261025"/);
           assert.match(app,/onAuthStateChanged\(auth/);
           assert.match(app,/getDocFromServer/);
           assert.match(app,/verifyLuxurySavedPlan/);
