@@ -1,0 +1,56 @@
+name: Tablewise isolated release smoke tests
+on:
+  pull_request:
+    paths:
+      - 'luxury-v2/**'
+      - 'tests/luxury-kroger-*.test.mjs'
+      - 'tests/luxury-grocery-collapse-persistence.test.mjs'
+      - 'tests/tablewise-expansion-photo-source.test.mjs'
+      - 'release/expansion-110-photo-inventory.json'
+      - 'release/expansion-110-recipe-drafts.json'
+      - 'assets/recipe-expansion/**'
+      - 'tests/tablewise-expansion-recipe-pairing.test.mjs'
+      - 'tests/luxury-v2-iphone-journey.test.mjs'
+      - 'tests/kroger-account-switch-race.test.mjs'
+      - 'tests/luxury-release-audit.test.mjs'
+      - 'tests/luxury-v2-legacy-save.test.mjs'
+      - 'tests/luxury-v2-recovery-diagnostic.test.mjs'
+      - 'tests/luxury-v2-cold-start.cjs'
+      - 'tests/luxury-v2-recovery-ui.cjs'
+      - 'tests/luxury-v2-meal-preview.test.mjs'
+      - 'tests/luxury-v2-checklist.test.mjs'
+      - 'tests/luxury-v2-groceries.test.mjs'
+      - 'tests/luxury-cook-macros.test.mjs'
+      - 'tests/luxury-v2-firestore-order.test.mjs'
+      - '.github/workflows/tablewise-isolated-release.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate standalone module syntax
+        run: |
+          node --input-type=module --check < luxury-v2/live.js
+          node --input-type=module --check < luxury-v2/catalog.js
+      - name: Validate Kroger, cart and store navigation regression
+        run: node --test tests/luxury-kroger-connect.test.mjs tests/luxury-kroger-cart-validation.test.mjs tests/luxury-kroger-connection-session.test.mjs tests/luxury-grocery-collapse-persistence.test.mjs luxury-v2/quick-meal-filters.test.mjs
+      - name: Check all 110 approved staged photo mappings
+        run: node --test tests/tablewise-expansion-photo-source.test.mjs tests/tablewise-expansion-recipe-pairing.test.mjs
+      - name: Verify old-plan restoration, account recovery and safe save migration
+        run: node --test tests/luxury-v2-legacy-save.test.mjs tests/luxury-v2-recovery-diagnostic.test.mjs
+      - name: Validate two-week meal edits and grocery checklist persistence
+        run: node --test tests/luxury-v2-meal-preview.test.mjs tests/luxury-v2-checklist.test.mjs tests/luxury-v2-groceries.test.mjs
+      - name: Verify Firebase read-back key ordering and conflict detection
+        run: node --test tests/luxury-v2-firestore-order.test.mjs
+      - name: Display calories and macros on every recipe open
+        run: node --test tests/luxury-cook-macros.test.mjs
+      - name: Guard iPhone cold start and unsaved-edits recovery UI
+        run: node tests/luxury-v2-cold-start.cjs && node tests/luxury-v2-recovery-ui.cjs
+      - name: Protect existing users against premature cloud writes
+        run: node --test tests/luxury-v2-save-guard.test.mjs tests/luxury-v2-save-transaction.test.mjs tests/luxury-v2-save-flow.test.mjs && node tests/luxury-v2-cloud-write-gate.cjs

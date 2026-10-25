@@ -1,0 +1,72 @@
+import assert from 'node:assert/strict';
+import { groceryTotals } from '../luxury-v2/groceries.mjs';
+const recipes=new Map([['meal',{id:'meal',ingredients:[['Rice',1,'cup'],['Salt',0.5,'tsp']]}]]);
+const lookup=id=>recipes.get(id);
+const account={
+ activePlanningWeek:1,servings:2,mealTypes:['Dinner'],
+ plan:{0:[null,null,'meal',null]},mealServings:{},dinnerSides:{0:['mashedpotatoes']},
+ alternateWeek:{plan:{1:[null,null,'meal',null]},mealServings:{'1-2':3},dinnerSides:{}}
+};
+const rows=groceryTotals(account,lookup,[1,2]);
+const find=(name,unit)=>rows.find(r=>r.name===name&&r.unit===unit)?.quantity;
+assert.equal(find('Rice','cup'),5,'Both saved weeks and serving override must combine');
+assert.equal(find('Salt','tsp'),2.5,'Recipe ingredient quantities multiply by servings');
+assert.equal(find('Potatoes','cup'),2,'Saved dinner side contributes ingredients');
+assert.equal(groceryTotals(account,lookup,[1]).find(x=>x.name==='Rice')?.quantity,2,'Week filter works');
+assert.deepEqual(groceryTotals(null,lookup,[1,2]),[],'Signed-out state has no phantom groceries');
+account.mealTypes=['Lunch'];
+assert.deepEqual(groceryTotals(account,lookup,[1,2]),[],'Unselected meal slots do not contribute');
+console.log('Two-week luxury grocery aggregation checks passed');
+
+// The plan may store Week 2 as active, with Week 1 in alternateWeek.
+account.mealTypes=['Dinner'];
+account.activePlanningWeek=2;
+account.plan={1:[null,null,'meal',null]};
+account.mealServings={'1-2':3};
+account.dinnerSides={};
+account.alternateWeek={plan:{0:[null,null,'meal',null]},mealServings:{},dinnerSides:{0:['mashedpotatoes']}};
+assert.equal(groceryTotals(account,lookup,[1]).find(x=>x.name==='Rice')?.quantity,2, 'Inactive Week 1 must map to alternate bundle');
+assert.equal(groceryTotals(account,lookup,[2]).find(x=>x.name==='Rice')?.quantity,3, 'Active Week 2 must map to current bundle');
+assert.equal(groceryTotals(account,lookup,[1,2]).find(x=>x.name==='Rice')?.quantity,5, 'Both weeks must combine regardless of which is active');
+
+const repeatedWeeks=groceryTotals(account,lookup,[1,1,2,2]);
+assert.equal(repeatedWeeks.find(x=>x.name==='Rice')?.quantity,5,'Duplicate week filters must not double grocery quantities');
+assert.equal(groceryTotals(account,lookup,[0,3]).length,0,'Invalid weeks must not silently include alternate week');
+assert.equal(groceryTotals(account,lookup,[2,2]).find(x=>x.name==='Rice')?.quantity,3,'Week 2 may be selected repeatedly without doubling');
+const repeatAccount={
+ activePlanningWeek:1,servings:2,mealTypes:['Dinner'],
+ plan:{0:[null,null,'meal',null],1:[null,null,'meal',null]},
+ mealServings:{'1-2':4},dinnerSides:{0:['mashedpotatoes'],1:['mashedpotatoes']},
+ alternateWeek:{plan:{0:[null,null,'meal',null]},mealServings:{'0-2':3},dinnerSides:{0:['mashedpotatoes']}}
+};
+const repeatRows=groceryTotals(repeatAccount,lookup,[1,2]);
+assert.equal(repeatRows.find(x=>x.name==='Rice')?.quantity,9,'Repeated meals sum quantities across dates and both weeks');
+assert.equal(repeatRows.find(x=>x.name==='Potatoes')?.quantity,9,'Sides repeat with their parent meal servings');
+assert.equal(repeatRows.find(x=>x.name==='Salt')?.quantity,4.5,'Fractional ingredient units multiply with per-meal servings');
+
+repeatAccount.dinnerSides[0]=['mashedpotatoes','mashedpotatoes'];
+assert.equal(groceryTotals(repeatAccount,lookup,[1,2]).find(x=>x.name==='Potatoes')?.quantity,9,'Duplicate side IDs within a dinner cannot double grocery totals');
+
+const changingRecipes=new Map([
+ ['mealA',{ingredients:[['Rice',1,'cup'],['Chicken',5,'oz']]}],
+ ['mealB',{ingredients:[['Potatoes',2,'cup'],['Beef',4,'oz']]}]
+]);
+const changingLookup=id=>changingRecipes.get(id);
+const changingAccount={activePlanningWeek:1,servings:2,mealTypes:['Dinner'],plan:{0:[null,null,'mealA',null]},mealServings:{},dinnerSides:{},alternateWeek:{plan:{0:[null,null,'mealA',null]},mealServings:{},dinnerSides:{}}};
+const qty=(weeks,name)=>groceryTotals(changingAccount,changingLookup,weeks).find(x=>x.name===name)?.quantity||0;
+assert.equal(qty([1,2],'Rice'),4,'Both weeks initially contain a two-serving rice meal');
+changingAccount.mealServings['0-2']=3;
+assert.equal(qty([1,2],'Rice'),5,'Changing meal servings immediately recalculates both weeks');
+changingAccount.plan[0][2]='mealB';
+assert.equal(qty([1,2],'Rice'),2,'Replacing a recipe removes its old ingredient totals');
+assert.equal(qty([1,2],'Potatoes'),6,'Replacing a recipe adds new ingredients at the current serving count');
+changingAccount.alternateWeek.plan[0][2]='mealB';
+assert.equal(qty([1,2],'Rice'),0,'Replacing meals in both weeks removes all unused ingredients');
+assert.equal(qty([1,2],'Potatoes'),10,'New meal ingredients aggregate across active and alternate weeks');
+changingAccount.activePlanningWeek=2;
+[changingAccount.plan,changingAccount.alternateWeek.plan]=[changingAccount.alternateWeek.plan,changingAccount.plan];
+[changingAccount.mealServings,changingAccount.alternateWeek.mealServings]=[changingAccount.alternateWeek.mealServings||{},changingAccount.mealServings];
+assert.equal(qty([1],'Potatoes'),6,'Switching active weeks retains Week 1 quantities');
+assert.equal(qty([2],'Potatoes'),4,'Switching active weeks retains Week 2 quantities');
+changingAccount.alternateWeek.plan[0][2]=null;
+assert.equal(qty([1,2],'Potatoes'),4,'Removing a planned meal removes its ingredient contribution');

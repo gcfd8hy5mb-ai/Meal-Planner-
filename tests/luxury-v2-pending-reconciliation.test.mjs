@@ -1,0 +1,15 @@
+import assert from 'node:assert/strict';
+import {isVerifiedCompletedDraft,archiveCompletedDraft} from '../luxury-v2/pending-reconciliation.mjs';
+const original={activePlanningWeek:1,plan:{3:[null,null,'old',null]},alternateWeek:{plan:{}},dinnerSides:{3:['rice']}};
+const pending={uid:'test',version:1,original,preview:{'1-3-2':'new'}};
+const cloud={...original,plan:{3:[null,null,'new',null]},dinnerSides:{}};
+assert.equal(isVerifiedCompletedDraft(cloud,pending),true);
+assert.equal(isVerifiedCompletedDraft({...cloud,plan:original.plan},pending),false);
+assert.equal(isVerifiedCompletedDraft({...cloud,servings:4},pending),false);
+const records=new Map([['tablewise-luxury-pending-test',JSON.stringify(pending)],['tablewise-luxury-verified-archive-test-1','older']]);
+const storage={getItem:key=>records.get(key)??null,setItem:(key,val)=>records.set(key,val),removeItem:key=>records.delete(key)};
+assert.equal(archiveCompletedDraft(storage,'test',pending),'tablewise-luxury-verified-archive-test-2');
+assert.equal(records.get('tablewise-luxury-verified-archive-test-1'),'older');
+assert.equal(JSON.parse(records.get('tablewise-luxury-verified-archive-test-2')).preview['1-3-2'],'new');
+assert.equal(records.has('tablewise-luxury-pending-test'),false);
+console.log('PASS: prior verified meal save archives safely before next save');
