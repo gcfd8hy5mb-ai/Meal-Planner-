@@ -1,0 +1,13 @@
+import assert from 'node:assert/strict';
+import {krogerIngredientRelevance,krogerIngredientCompatible,sortKrogerIngredientMatches} from '../luxury-v2/kroger-pricing.mjs';
+const jerky={name:'JL3 Original Beef Air Dried Steak Strips Jerky',promo:5,regular:6.49};
+const fajita={name:'Kroger Beef Fajita Strips With Bell Peppers and Onions',promo:6,regular:10};
+assert.equal(krogerIngredientRelevance('Beef strips',jerky),0);
+assert.equal(krogerIngredientCompatible('Beef strips',jerky),false);
+assert.ok(krogerIngredientRelevance('Beef strips',fajita)>0);
+assert.equal(sortKrogerIngredientMatches('Beef strips',[jerky,fajita])[0],fajita);
+assert.equal(krogerIngredientRelevance('Chicken breast',{name:'Chicken Breast Jerky'}),0);
+assert.equal(krogerIngredientRelevance('Pork strips',{name:'Pork Snack Sticks'}),0);
+assert.ok(krogerIngredientRelevance('Beef jerky',{name:'Original Beef Jerky'})>0,'Intentional jerky ingredient remains allowed');
+assert.ok(krogerIngredientRelevance('Breadcrumbs',{name:'Plain Breadcrumbs'})>0);
+console.log('PASS fresh cooking meat excludes jerky and snack products');
