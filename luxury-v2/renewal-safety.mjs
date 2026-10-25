@@ -15,5 +15,5 @@ export function prepareRenewal(existing,generated,now=new Date()){
  if(!generated?.week1||!generated?.week2||!Array.from({length:7},(_,i)=>i).every(i=>Array.isArray(generated.week1[i])&&Array.isArray(generated.week2[i])))return {ok:false,reason:'Two complete generated weeks required'};
  // An explicit confirmation and archival write are required before applying this patch.
  const archive={start:existing.calendarWeekAnchor,end:dateKey(addDays(parseDateKey(existing.calendarWeekAnchor),13)),plan:structuredClone(existing.plan),alternateWeek:structuredClone(existing.alternateWeek),activePlanningWeek:existing.activePlanningWeek};
- return {ok:true,requiresConfirmation:true,archive,proposed:{calendarWeekAnchor:gate.nextAnchor,calendarInitialWeek:1,activePlanningWeek:1,plan:structuredClone(generated.week1),alternateWeek:{...existing.alternateWeek,plan:structuredClone(generated.week2)}}};
+ return {ok:true,requiresConfirmation:true,archive,proposed:{calendarWeekAnchor:gate.nextAnchor,calendarInitialWeek:1,activePlanningWeek:1,plan:structuredClone(generated.week1),alternateWeek:{...existing.alternateWeek,plan:structuredClone(generated.week2),mealServings:Object.fromEntries(Object.entries(existing.alternateWeek?.mealServings||{}).filter(([key])=>!/^[0-6]-2$/.test(key))),dinnerSides:{}}}};
 }
