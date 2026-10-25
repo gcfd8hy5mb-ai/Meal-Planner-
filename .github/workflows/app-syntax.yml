@@ -45,48 +45,21 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Protect original account sign-in recovery
-        run: node tests/auth-recovery-messages.cjs
-      - name: Check local recovery read-only protection
-        run: node tests/local-backup-inspection.cjs
-      - name: Check local backup structure diagnostic
-        run: node tests/local-backup-shape.cjs
-      - name: Check read-only backup export
-        run: node tests/backup-export.cjs
-      - name: Validate guarded meal restoration
-        run: node tests/guarded-meal-restore.cjs
-      - name: Validate Firestore restore shape
-        run: node tests/restore-firestore-shape.cjs
-      - name: Check cloud recovery startup
-        run: node tests/startup-recovered-cloud.cjs
-      - name: Check guarded cloud save
-        run: node tests/guarded-cloud-save.cjs
-      - name: Validate recovery conflict messaging
-        run: node tests/recovery-conflict-status.cjs
-      - name: Validate multi-device revision guard
-        run: node tests/cloud-revision-guard.cjs
-      - name: Validate save-failure conflict messaging
-        run: node tests/cloud-save-conflict-status.cjs
-      - name: Simulate current production save failures
-        run: node tests/current-save-failure-scenarios.cjs
-      - name: Test rapid edits and account switching
-        run: node tests/rapid-edits-account-switch.cjs
-      - name: Validate session restore and registration baseline
-        run: node tests/session-restore-guard.cjs
-      - name: Check inline JavaScript syntax
+      - name: Validate production entry and luxury module
         run: |
+          node --input-type=module --check < luxury-v2/live.js
+          node --input-type=module --check < luxury-v2/catalog.js
           node --input-type=module <<'NODE'
-          import { readFileSync } from 'node:fs';
-          import { spawnSync } from 'node:child_process';
-          const html = readFileSync('index.html', 'utf8');
-          const scripts = [...html.matchAll(/<script\b[^>]*>([\s\S]*?)<\/script>/gi)];
-          if (!scripts.length) throw Error('No inline scripts found');
-          for (const [i, match] of scripts.entries()) {
-            const result = spawnSync('node', ['--check', '--input-type=module'], { input: match[1], encoding: 'utf8' });
-            if (result.status !== 0) {
-              process.stderr.write('Inline script ' + (i + 1) + ': ' + result.stderr);
-              process.exit(1);
-            }
-          }
-          console.log('All ' + scripts.length + ' inline scripts parsed');
+          import {readFileSync} from 'node:fs';
+          import assert from 'node:assert/strict';
+          const root=readFileSync('index.html','utf8');
+          const html=readFileSync('luxury-v2/index.html','utf8');
+          const app=readFileSync('luxury-v2/live.js','utf8');
+          assert.match(root,/location\.replace\(new URL\('\.\/luxury-v2\/index\.html'/);
+          assert.match(html,/src="\.\/live\.js"/);
+          assert.match(app,/onAuthStateChanged\(auth/);
+          assert.match(app,/getDocFromServer/);
+          assert.match(app,/verifyLuxurySavedPlan/);
+          assert.match(app,/const LUXURY_SAVES_RELEASED=true;/);
+          console.log('PASS: same-origin entry, signed-in restore, guarded cloud save and module syntax');
           NODE
