@@ -20,6 +20,7 @@ import {replacePreviewMeal,previewAccount,hasPreviewEdits} from './meal-preview.
 import {readPendingLuxuryDraft,commitLuxuryPreview,classifyLuxuryRecovery,verifyLuxurySavedPlan} from './save-flow.mjs';
 import {compareRecoveredDinners} from './draft-comparison.mjs';
 import {compareRecoverySettings} from './recovery-settings-diagnostic.mjs';
+import {isVerifiedCompletedDraft,archiveCompletedDraft} from './pending-reconciliation.mjs';
 import {sideDishOnlyRecovery,archiveVerifiedSideDraft,confirmedWednesdayCloudRecovery} from './side-dish-recovery.mjs';
 
 // Read-only pantry suggestions. A licensed large-catalog endpoint is not yet configured.
@@ -404,6 +405,18 @@ saveLuxuryButton.onclick=async()=>{
  luxurySaving=true;refreshDiscard();label('Saving your meal changes securely…');
  let transactionResult=null;
  try{
+  // Resolve only a previous write whose intended dinners are already on the
+  // server. Archive before clearing; any unresolved conflict still blocks writes.
+  const previous=readPendingLuxuryDraft(localStorage,uid);
+  if(previous){
+   const current=await getDocFromServer(doc(db,'users',uid));
+   if(authEpoch!==epoch||auth.currentUser?.uid!==uid)return;
+   if(!current.exists()||!isVerifiedCompletedDraft(current.data(),previous)){
+    throw Error('An earlier draft still differs from Firebase. Compare and export it before saving another change.');
+   }
+   archiveCompletedDraft(localStorage,uid,previous);
+   account=current.data();
+  }
   const result=await commitLuxuryPreview({
    storage:localStorage,uid,original,preview,
    runTransaction:callback=>runTransaction(db,callback),
