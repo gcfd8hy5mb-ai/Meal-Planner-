@@ -31,3 +31,9 @@ If sign-in, account isolation, saves, existing plans, recipe photos, or Kroger c
 
 ## Scope of this PR
 Documentation only. No code changes to the public app, Firebase, Cloudflare, Kroger Worker, DNS, or GitHub Pages.
+
+## Additional Home Screen assessment (2026-10-25)
+- Inspected `main/index.html` and standalone `luxury-v2/index.html`: neither referenced a web-app manifest or `navigator.serviceWorker` / `serviceWorker.register` in the checked content.
+- Common root-level manifest/service-worker filenames (`manifest.webmanifest`, `manifest.json`, `sw.js`, `service-worker.js`) were not found on `main`. This **does not rule out** external caching, files in alternate directories, or iOS standalone bookmark behavior.
+- iPhone "Add to Home Screen" links may remain pinned to their original URL/origin. **Do not assume** replacing GitHub Pages with a separate Cloudflare URL updates the installed shortcut or carries localStorage over. Firebase data is account-based and may be shared only after validating auth origin and access.
+- Production release decision remains blocked until the canonical destination URL and iPhone shortcut migration behavior are verified in staging, including existing user accounts and local grocery-checklist state.
