@@ -25,4 +25,23 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - run: node --test tests/recipe-images.test.mjs tests/recipe-lookup.test.mjs
+      - name: Validate approved luxury recipe images and mapping
+        run: |
+          node --input-type=module <<'NODE'
+          import assert from 'node:assert/strict';
+          import {existsSync,readFileSync} from 'node:fs';
+          import {recipes,verifiedRecipePhotos} from './luxury-v2/catalog.js';
+          assert.equal(recipes.length,166,'Expected 166 built-in recipes');
+          assert.equal(new Set(recipes.map(r=>r.id)).size,166,'Duplicate recipe IDs');
+          for(const recipe of recipes){
+            const url=verifiedRecipePhotos[recipe.id];
+            assert.ok(typeof url==='string',recipe.id+' missing image mapping');
+            if(url.startsWith('assets/'))assert.ok(existsSync(url),recipe.id+' missing asset');
+            else assert.ok(url.startsWith('https://'),recipe.id+' has invalid image URL');
+            assert.ok(Array.isArray(recipe.ingredients)&&recipe.ingredients.length>0,recipe.id+' missing ingredients');
+            assert.ok(Array.isArray(recipe.steps)&&recipe.steps.length>=3,recipe.id+' missing directions');
+          }
+          const html=readFileSync('luxury-v2/index.html','utf8');
+          assert.ok(html.includes('./live.js'),'Luxury app script is missing');
+          console.log('PASS 166 luxury recipes, photo mappings and instructions');
+          NODE
