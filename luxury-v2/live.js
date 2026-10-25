@@ -1,3 +1,4 @@
+import {verifyRenewalReadback} from './renewal-verify.mjs';
 import {commitCalendarRenewal} from './renewal-commit.mjs';
 import {generateRenewalCandidates} from './renewal-generator.mjs';
 import {prepareRenewal,renewalEligibility} from './renewal-safety.mjs';
@@ -860,7 +861,9 @@ document.querySelector('#luxuryRenewalConfirmButton').addEventListener('click',a
   });
   if(authEpoch!==epoch||auth.currentUser?.uid!==uid)return;
   const fresh=await getDocFromServer(doc(db,'users',uid));
-  if(!fresh.exists()||fresh.data().calendarWeekAnchor!==result.anchor||fresh.data().plan?.[0]?.[2]!==pending.candidate.week1[0][2])throw Error('Firebase committed renewal but verification is pending. Do not retry until your account is checked.');
+  const archived=await getDocFromServer(doc(db,'users',uid,'calendarArchives',result.archiveStart));
+  const expected=prepareRenewal(pending.original,pending.candidate);
+  if(!expected.ok||!fresh.exists()||!archived.exists()||!verifyRenewalReadback(fresh.data(),archived.data(),expected.proposed,pending.original))throw Error('Firebase committed renewal but full verification is pending. Do not retry until your account is checked.');
   account=fresh.data();calendarAnchor=readCalendarAnchor(localStorage,uid);
   const parsed=readCalendarAnchor({getItem:()=>result.anchor,setItem:()=>{}},uid);
   if(parsed)calendarAnchor=parsed;
