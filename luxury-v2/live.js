@@ -398,11 +398,13 @@ const renderWeek=(week)=>{
 const LUXURY_SAVES_RELEASED=true;
 let luxurySaving=false;
 const saveLuxuryButton=document.querySelector('#saveLuxuryEdits');
-const refreshDiscard=()=>{const unsaved=hasPreviewEdits(previewEdits);document.querySelector('#discardLuxuryEdits').hidden=!unsaved;document.querySelector('#luxuryDraftActions').hidden=!unsaved;saveLuxuryButton.disabled=!LUXURY_SAVES_RELEASED||!unsaved||!accountUid||luxurySaving;saveLuxuryButton.textContent=LUXURY_SAVES_RELEASED?'Save meal changes':'Save changes (release testing pending)'};
+let luxuryCloudWriteAwaitingVerification=false;
+const refreshDiscard=()=>{const unsaved=hasPreviewEdits(previewEdits);document.querySelector('#discardLuxuryEdits').hidden=!unsaved;document.querySelector('#luxuryDraftActions').hidden=!unsaved;saveLuxuryButton.disabled=!LUXURY_SAVES_RELEASED||!unsaved||!accountUid||luxurySaving;saveLuxuryButton.textContent=LUXURY_SAVES_RELEASED?'Save meal changes':'Save changes (release testing pending)';const panel=document.querySelector('#luxuryDraftActions');if(unsaved){panel.setAttribute('aria-label',luxuryCloudWriteAwaitingVerification?'Cloud save awaiting verification':'Unsaved plan changes');panel.querySelector('strong').textContent=luxuryCloudWriteAwaitingVerification?'Cloud save completed — verification pending':'Unsaved meal changes';document.querySelector('#luxuryDraftStatus').textContent=luxuryCloudWriteAwaitingVerification?'Firebase accepted the save, but a fresh server check did not confirm it yet. Keep this recovery copy; do not discard it.':'These meal changes haven\'t been saved. Save them to your account or export a backup.'}};
 saveLuxuryButton.onclick=async()=>{
  if(!LUXURY_SAVES_RELEASED||luxurySaving||!accountUid||!account||!hasPreviewEdits(previewEdits))return;
  const uid=accountUid,epoch=authEpoch,preview={...previewEdits};
  let original=account;
+ luxuryCloudWriteAwaitingVerification=false;
  luxurySaving=true;refreshDiscard();label('Saving your meal changes securely…');
  let transactionResult=null;
  try{
@@ -429,11 +431,13 @@ saveLuxuryButton.onclick=async()=>{
   if(authEpoch!==epoch||auth.currentUser?.uid!==uid)return;
   // A committed transaction must not be reported as an unsaved draft if its reload fails.
   transactionResult=result;
+  luxuryCloudWriteAwaitingVerification=true;
   // A fresh server document becomes the next verified baseline.
   const cloud=await getDocFromServer(doc(db,'users',uid));
   if(authEpoch!==epoch||auth.currentUser?.uid!==uid)return;
   if(!cloud.exists())throw Error('Saved plan could not be reloaded');
   verifyLuxurySavedPlan(original,preview,cloud.data(),result.savedFields);
+  luxuryCloudWriteAwaitingVerification=false;
   account=cloud.data();previewEdits={};renderWeek(liveWeek);setHero();renderIngredients();
   let cleanupWarning='';
   try{localStorage.removeItem('tablewise-luxury-pending-'+uid)}
@@ -443,7 +447,7 @@ saveLuxuryButton.onclick=async()=>{
  }catch(error){
   if(authEpoch===epoch&&auth.currentUser?.uid===uid){
    if(transactionResult){
-    label('Cloud write completed, but the server reload could not be verified. Check your saved plan after reconnecting before making another change. '+(error?.message||''));
+    label('Firebase accepted your save, but verification is still pending. Your device backup is preserved; do not discard it. '+(error?.message||''));
    }else{
     label('Save was not confirmed. Review the device recovery options before retrying. '+(error?.message||'Check your connection.'));
    }
