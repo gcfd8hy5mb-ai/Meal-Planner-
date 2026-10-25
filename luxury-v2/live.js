@@ -382,7 +382,7 @@ const renderWeek=(week)=>{
  const renewalPanel=document.querySelector('#luxuryRenewalPanel');
  renewalPanel.hidden=!(calendarState?.complete&&account&&renewalEligibility(account).ready);
  if(calendarState?.complete)status.textContent='This two-week calendar period has ended. Your previous meals are preserved for reference, but Tablewise has not generated a new plan. Choose meals for your next dates before using them as today’s menu.';
- for(const button of document.querySelectorAll('[data-week]')){const active=Number(button.dataset.week)===liveWeek;button.classList.toggle('active',active);button.setAttribute('aria-pressed',String(active));button.textContent='Week '+button.dataset.week+' · '+weekRangeLabel(calendarWeekStart(calendarAnchor,Number(button.dataset.week),calendarInitialWeek))}
+ for(const button of document.querySelectorAll('[data-week]')){const active=Number(button.dataset.week)===liveWeek;button.classList.toggle('active',active);button.setAttribute('aria-pressed',String(active));button.replaceChildren();const title=document.createElement('span');title.className='week-tab-title';title.textContent='Week '+button.dataset.week;const dates=document.createElement('small');dates.className='week-tab-dates';dates.textContent=weekRangeLabel(calendarWeekStart(calendarAnchor,Number(button.dataset.week),calendarInitialWeek));button.append(title,dates)}
  const planned=Array.from({length:7},(_,day)=>dayMeal(liveWeek,day,2));
  const valid=planned.filter(r=>r&&['cal','p','c','f'].every(k=>r[k]!=null&&Number.isFinite(Number(r[k]))));
  const totals=Object.fromEntries(['cal','p','c','f'].map(k=>[k,valid.reduce((n,r)=>n+Number(r[k]),0)]));
@@ -397,7 +397,7 @@ const renderWeek=(week)=>{
  }else{average.textContent='Nutrition unavailable';weekly.textContent='No dinners with complete nutrition data.'}
  list.replaceChildren();for(let day=0;day<7;day++){
   const meal=planned[day],card=document.createElement('div');card.className='day';
-  const dayLabel=document.createElement('strong');dayLabel.className='calendar-day-label';dayLabel.textContent=['SUN','MON','TUE','WED','THU','FRI','SAT'][day]+(calendarStart?' · '+dateLabel(addDays(calendarStart,day)):'');card.append(dayLabel);
+  const dayLabel=document.createElement('strong');dayLabel.className='calendar-day-label';dayLabel.textContent=['SUN','MON','TUE','WED','THU','FRI','SAT'][day]+(calendarStart?' '+addDays(calendarStart,day).getDate():'');card.append(dayLabel);
   const open=document.createElement('button');open.type='button';open.className='calendar-open';open.setAttribute('aria-label',meal?'View '+meal.name:'No dinner planned for '+dayLabel.textContent);open.disabled=!meal;
   if(meal&&photo(meal.id)){const img=document.createElement('img');img.src=photo(meal.id);img.alt='';img.loading='lazy';img.className='calendar-photo';open.append(img)}
   else{const empty=document.createElement('span');empty.className='calendar-photo-placeholder';empty.textContent='◦';open.append(empty)}
