@@ -47,6 +47,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Reject jerky for fresh meat ingredients
+        run: node tests/kroger-fresh-meat-match.test.mjs
       - name: Check real calendar weeks and Sunday rollover
         run: node tests/luxury-calendar-weeks.test.mjs && node tests/luxury-cloud-calendar.test.mjs && node tests/luxury-renewal-safety.test.mjs && node tests/luxury-renewal-generator.test.mjs && node tests/luxury-renewal-commit.test.mjs && node tests/luxury-renewal-verify.test.mjs
       - name: Verify compact save card and recovery protection
