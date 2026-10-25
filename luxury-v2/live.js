@@ -401,7 +401,8 @@ const saveLuxuryButton=document.querySelector('#saveLuxuryEdits');
 const refreshDiscard=()=>{const unsaved=hasPreviewEdits(previewEdits);document.querySelector('#discardLuxuryEdits').hidden=!unsaved;document.querySelector('#luxuryDraftActions').hidden=!unsaved;saveLuxuryButton.disabled=!LUXURY_SAVES_RELEASED||!unsaved||!accountUid||luxurySaving;saveLuxuryButton.textContent=LUXURY_SAVES_RELEASED?'Save meal changes':'Save changes (release testing pending)'};
 saveLuxuryButton.onclick=async()=>{
  if(!LUXURY_SAVES_RELEASED||luxurySaving||!accountUid||!account||!hasPreviewEdits(previewEdits))return;
- const uid=accountUid,epoch=authEpoch,original=account,preview={...previewEdits};
+ const uid=accountUid,epoch=authEpoch,preview={...previewEdits};
+ let original=account;
  luxurySaving=true;refreshDiscard();label('Saving your meal changes securely…');
  let transactionResult=null;
  try{
@@ -416,6 +417,7 @@ saveLuxuryButton.onclick=async()=>{
    }
    archiveCompletedDraft(localStorage,uid,previous);
    account=current.data();
+   original=account;
   }
   const result=await commitLuxuryPreview({
    storage:localStorage,uid,original,preview,
