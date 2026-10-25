@@ -1,0 +1,17 @@
+import assert from 'node:assert/strict';
+import {sundayOf,dateKey,readCalendarAnchor,calendarPeriod,calendarWeekStart,addDays,weekRangeLabel} from '../luxury-v2/calendar-weeks.mjs';
+const oct25=new Date(2026,9,25,12),nov1=new Date(2026,10,1,12),nov8=new Date(2026,10,8,12);
+assert.equal(dateKey(sundayOf(new Date(2026,9,30))), '2026-10-25');
+const records=new Map(),storage={getItem:k=>records.get(k)??null,setItem:(k,v)=>records.set(k,v)};
+const anchor=readCalendarAnchor(storage,'account-a',oct25);
+assert.equal(dateKey(anchor),'2026-10-25');
+assert.equal(weekRangeLabel(anchor),'Oct 25 – Oct 31');
+assert.equal(dateKey(calendarWeekStart(anchor,2,1)),'2026-11-01');
+assert.equal(dateKey(addDays(calendarWeekStart(anchor,2,1),6)),'2026-11-07');
+assert.deepEqual(calendarPeriod(anchor,oct25,1),{elapsed:0,activeWeek:1,complete:false,firstWeek:1,secondWeek:2});
+assert.deepEqual(calendarPeriod(anchor,nov1,1),{elapsed:1,activeWeek:2,complete:false,firstWeek:1,secondWeek:2});
+assert.equal(calendarPeriod(anchor,nov8,1).complete,true,'Do not silently reuse the first week after 14 days');
+assert.equal(calendarPeriod(anchor,nov1,2).activeWeek,1,'Honor original alternate-week slot');
+assert.equal(dateKey(readCalendarAnchor(storage,'account-a',nov1)),'2026-10-25','Returning app preserves original calendar anchor');
+assert.equal(dateKey(readCalendarAnchor(storage,'account-b',nov1)),'2026-11-01','Different accounts have independent calendar anchors');
+console.log('PASS month boundary, automatic week-two selection, expired plan and account isolation');
