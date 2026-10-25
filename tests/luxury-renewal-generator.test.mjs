@@ -3,7 +3,7 @@ import {generateRenewalCandidates} from '../luxury-v2/renewal-generator.mjs';
 import {prepareRenewal} from '../luxury-v2/renewal-safety.mjs';
 const saved={calendarWeekAnchor:'2026-10-25',activePlanningWeek:1,plan:{0:[null,null,'meal-00',null]},alternateWeek:{plan:{0:[null,null,'meal-01',null]}}};
 const before=JSON.stringify(saved);
-const recipes=Array.from({length:20},(_,i)=>({id:'meal-'+String(i).padStart(2,'0'),name:'Dinner '+i,ingredients:['ingredient'],instructions:['Cook meal']}));
+const recipes=Array.from({length:20},(_,i)=>({id:'meal-'+String(i).padStart(2,'0'),name:'Dinner '+i,slot:'Dinner',ingredients:['ingredient'],steps:['Cook meal']}));
 const generated=generateRenewalCandidates(saved,recipes);
 assert.equal(generated.selectedIds.length,14);
 assert.equal(new Set(generated.selectedIds).size,14);
