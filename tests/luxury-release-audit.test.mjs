@@ -14,8 +14,8 @@ test('all live direct ID selectors exist in the standalone luxury shell',()=>{
  for(const id of referenced)assert.ok(htmlIds.includes(id),'missing interactive element #'+id);
  assert.ok(referenced.length>=75,'test unexpectedly skipped most selectors');
 });
-test('production cloud-save release gate remains disabled in guarded preview',()=>{
- assert.match(live,/const LUXURY_SAVES_RELEASED=false;/);
+test('cloud saving is enabled only in the isolated luxury preview with authenticated guard',()=>{
+ assert.match(live,/const LUXURY_SAVES_RELEASED=true;/);
  assert.match(live,/if\(!LUXURY_SAVES_RELEASED\|\|luxurySaving/);
 });
 test('catalog contains 166 unique recipes with instructions and usable photo mappings',()=>{
