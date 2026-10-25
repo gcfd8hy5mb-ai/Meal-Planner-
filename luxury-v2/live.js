@@ -371,6 +371,10 @@ const renderWeek=(week)=>{
  liveWeek=Number(week)===2?2:1;
  const list=document.querySelector('#days');if(!list)return;
  const calendarStart=calendarWeekStart(calendarAnchor,liveWeek,calendarInitialWeek);
+ const calendarState=calendarPeriod(calendarAnchor,new Date(),calendarInitialWeek);
+ const status=document.querySelector('#luxuryCalendarStatus');
+ status.hidden=!(calendarState?.complete);
+ if(calendarState?.complete)status.textContent='This two-week calendar period has ended. Your previous meals are preserved for reference, but Tablewise has not generated a new plan. Choose meals for your next dates before using them as today’s menu.';
  for(const button of document.querySelectorAll('[data-week]')){const active=Number(button.dataset.week)===liveWeek;button.classList.toggle('active',active);button.setAttribute('aria-pressed',String(active));button.textContent='Week '+button.dataset.week+' · '+weekRangeLabel(calendarWeekStart(calendarAnchor,Number(button.dataset.week),calendarInitialWeek))}
  const planned=Array.from({length:7},(_,day)=>dayMeal(liveWeek,day,2));
  const valid=planned.filter(r=>r&&['cal','p','c','f'].every(k=>r[k]!=null&&Number.isFinite(Number(r[k]))));
@@ -811,6 +815,7 @@ document.querySelector('#nextStep').onclick=()=>{if(step+1>=(currentRecipe?.step
 document.querySelector('section[data-page="cook"] > button.primary.full').onclick=()=>{renderIngredients('recipe');showPage('groceries')};
 document.querySelectorAll('[data-nav="groceries"]').forEach(b=>b.addEventListener('click',()=>renderIngredients()));
 document.querySelectorAll('[data-week]').forEach(b=>b.addEventListener('click',()=>{if(account)renderWeek(b.dataset.week)}));
+document.addEventListener('visibilitychange',()=>{if(!document.hidden&&account&&!hasPreviewEdits(previewEdits)){const period=calendarPeriod(calendarAnchor,new Date(),calendarInitialWeek);if(period&&!period.complete){liveWeek=period.activeWeek;renderWeek(liveWeek)}setHero()}});
 const resetPrivateView=()=>{
  // Clear all previous account content synchronously, before any next-account fetch.
  ++krogerEpoch;++krogerActionEpoch;krogerActionPending=false;clearKrogerProducts();krogerDisplay('Sign in to Tablewise to connect your Kroger account.');
