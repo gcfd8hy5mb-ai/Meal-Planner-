@@ -1,3 +1,4 @@
+import {walmartIntegrationStatus} from './walmart-integration.mjs';
 import {verifyRenewalReadback} from './renewal-verify.mjs';
 import {commitCalendarRenewal} from './renewal-commit.mjs';
 import {generateRenewalCandidates} from './renewal-generator.mjs';
@@ -85,6 +86,15 @@ const krogerDisplay=(message,connected=false)=>{
  krogerDisconnectButton.hidden=!connected;
  krogerDisconnectButton.disabled=!auth.currentUser||!connected;
  krogerConnectButton.disabled=!auth.currentUser||connected;
+};
+const groceryWalmartToggle=document.querySelector('#groceryWalmartToggle');
+const groceryWalmartDrawer=document.querySelector('#groceryWalmartDrawer');
+document.querySelector('#walmartIntegrationMessage').textContent=walmartIntegrationStatus().message;
+groceryWalmartToggle.onclick=()=>{
+ const opening=groceryWalmartDrawer.hidden;
+ groceryWalmartDrawer.hidden=!opening;
+ groceryWalmartToggle.setAttribute('aria-expanded',String(opening));
+ if(opening)groceryWalmartDrawer.scrollIntoView({behavior:'smooth',block:'nearest'});
 };
 const groceryKrogerToggle=document.querySelector('#groceryKrogerToggle');
 const groceryKrogerDrawer=document.querySelector('#groceryKrogerDrawer');
