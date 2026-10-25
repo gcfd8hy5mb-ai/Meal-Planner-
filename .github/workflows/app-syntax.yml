@@ -48,7 +48,7 @@ jobs:
         with:
           node-version: '22'
       - name: Check real calendar weeks and Sunday rollover
-        run: node tests/luxury-calendar-weeks.test.mjs && node tests/luxury-cloud-calendar.test.mjs
+        run: node tests/luxury-calendar-weeks.test.mjs && node tests/luxury-cloud-calendar.test.mjs && node tests/luxury-renewal-safety.test.mjs
       - name: Verify compact save card and recovery protection
         run: node tests/luxury-v2-compact-save-card.test.mjs
       - name: Verify live luxury save confirmation states
