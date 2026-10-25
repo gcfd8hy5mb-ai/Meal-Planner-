@@ -20,7 +20,7 @@ import {replacePreviewMeal,previewAccount,hasPreviewEdits} from './meal-preview.
 import {readPendingLuxuryDraft,commitLuxuryPreview,classifyLuxuryRecovery,verifyLuxurySavedPlan} from './save-flow.mjs';
 import {compareRecoveredDinners} from './draft-comparison.mjs';
 import {compareRecoverySettings} from './recovery-settings-diagnostic.mjs';
-import {sideDishOnlyRecovery,archiveVerifiedSideDraft} from './side-dish-recovery.mjs';
+import {sideDishOnlyRecovery,archiveVerifiedSideDraft,confirmedWednesdayCloudRecovery} from './side-dish-recovery.mjs';
 
 // Read-only pantry suggestions. A licensed large-catalog endpoint is not yet configured.
 const pantryPanel=document.querySelector('#pantryDiscoverPanel');
@@ -518,6 +518,13 @@ resolveSideDishButton.className='secondary full';
 resolveSideDishButton.textContent='Keep Firebase side dishes and archive old warning';
 resolveSideDishButton.hidden=true;
 document.querySelector('#luxuryRecoverActions').append(resolveSideDishButton);
+const keepCloudWednesday=document.createElement('button');
+keepCloudWednesday.type='button';
+keepCloudWednesday.className='secondary full';
+keepCloudWednesday.textContent='Keep Bacon Ranch Chicken Bake and archive older draft';
+keepCloudWednesday.hidden=true;
+document.querySelector('#luxuryRecoverActions').append(keepCloudWednesday);
+
 
 const refreshRecoveredWithVerification=refreshRecovered;
 refreshRecovered=()=>{
@@ -525,6 +532,7 @@ refreshRecovered=()=>{
  compareDraftButton.hidden=!accountUid||!readPendingLuxuryDraft(localStorage,accountUid);
  draftComparisonPanel.hidden=true;
  resolveSideDishButton.hidden=true;
+ keepCloudWednesday.hidden=true;
 };
 compareDraftButton.onclick=async()=>{
  const uid=accountUid,epoch=authEpoch;
@@ -554,6 +562,7 @@ compareDraftButton.onclick=async()=>{
   summary.textContent=settingsDifferences?.length?'Other differences found: '+settingsDifferences.join(', ')+'.':'All reviewed planning settings match the recovered draft.';
   draftComparisonPanel.append(summary);
   resolveSideDishButton.hidden=!sideDishOnlyRecovery(snap.data(),backup);
+  keepCloudWednesday.hidden=!confirmedWednesdayCloudRecovery(snap.data(),backup,'southBaconRanchBake');
   if(!resolveSideDishButton.hidden){
    const explanation=document.createElement('p');
    explanation.textContent='Only Week 1 side dishes differ. The saved Firebase side dishes will be kept; an archive of the device draft will be retained. Nothing is changed unless you choose the archive option.';
@@ -582,6 +591,24 @@ resolveSideDishButton.onclick=async()=>{
   label('Firebase meals and side dishes preserved. Device draft archived; old warning cleared.');
  }catch(error){label('Recovery was not cleared. '+(error?.message||''))}
  finally{resolveSideDishButton.disabled=false}
+};
+keepCloudWednesday.onclick=async()=>{
+ const uid=accountUid,epoch=authEpoch;
+ if(!uid||auth.currentUser?.uid!==uid)return;
+ keepCloudWednesday.disabled=true;
+ try{
+  const snap=await getDocFromServer(doc(db,'users',uid));
+  if(epoch!==authEpoch||auth.currentUser?.uid!==uid)return;
+  const pending=readPendingLuxuryDraft(localStorage,uid);
+  if(!snap.exists()||!confirmedWednesdayCloudRecovery(snap.data(),pending,'southBaconRanchBake')){
+   label('Saved meals or settings changed. Old draft preserved.');return;
+  }
+  archiveVerifiedSideDraft(localStorage,uid,pending);
+  account=snap.data();
+  refreshRecovered();
+  label('Bacon Ranch Chicken Bake is preserved in Firebase. Older draft archived; warning cleared.');
+ }catch(error){label('Recovery was not cleared. '+(error?.message||''))}
+ finally{keepCloudWednesday.disabled=false}
 };
 document.querySelector('#discardLuxuryEdits').onclick=()=>{previewEdits={};refreshDiscard();document.querySelector('#luxuryMealPicker').hidden=true;renderWeek(liveWeek);setHero();renderIngredients();label('Preview discarded. Your saved meals are unchanged.')};
 const openMealPicker=(week,day,{initialQuick=false}={})=>{

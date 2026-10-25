@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';
+import {confirmedWednesdayCloudRecovery} from '../luxury-v2/side-dish-recovery.mjs';
+const original={activePlanningWeek:1,plan:{3:[null,null,'southBaconBurger',null]},alternateWeek:{plan:{}},dinnerSides:{3:['fries']}};
+const pending={version:1,uid:'test',original,preview:{'1-3-2':'southBaconBurger'}};
+const cloud={...original,plan:{3:[null,null,'southBaconRanchBake',null]},dinnerSides:{}};
+assert.equal(confirmedWednesdayCloudRecovery(cloud,pending,'southBaconRanchBake'),true);
+assert.equal(confirmedWednesdayCloudRecovery(cloud,pending,'southBaconBurger'),false);
+assert.equal(confirmedWednesdayCloudRecovery({...cloud,servings:4},pending,'southBaconRanchBake'),false);
+assert.equal(confirmedWednesdayCloudRecovery({...cloud,plan:{2:[null,null,'other',null],3:[null,null,'southBaconRanchBake',null]}},pending,'southBaconRanchBake'),false);
+assert.equal(original.plan[3][2],'southBaconBurger');
+console.log('PASS: confirmed cloud Wednesday guard only accepts matching meal and no other changes');
