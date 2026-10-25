@@ -23,7 +23,7 @@ export async function commitCalendarRenewal({original,generated,uid,now=new Date
   tx.set(archiveRef,{...checked.archive,archivedAt:new Date().toISOString(),savedMealServings:current.mealServings??{},savedDinnerSides:current.dinnerSides??{}});
   tx.update(userRef,{
     ...checked.proposed,
-    mealServings:{},
+    mealServings:Object.fromEntries(Object.entries(current.mealServings||{}).filter(([key])=>!/^[0-6]-2$/.test(key))),
     dinnerSides:{}
   });
   return {anchor:checked.proposed.calendarWeekAnchor,archiveStart:checked.archive.start};
