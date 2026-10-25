@@ -1,10 +1,10 @@
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-const s=readFileSync(new URL('../luxury-v2/live.js',import.meta.url),'utf8');
-assert.ok(s.includes('let luxuryCloudWriteAwaitingVerification=false;'));
-assert.ok(s.includes("luxuryCloudWriteAwaitingVerification?'Cloud save completed — verification pending':'Unsaved meal changes'"));
-assert.ok(s.includes('transactionResult=result;\n  luxuryCloudWriteAwaitingVerification=true;'));
-assert.ok(s.includes('luxuryCloudWriteAwaitingVerification=false;\n  account=cloud.data();previewEdits={}'));
-assert.ok(s.includes('Firebase accepted your save, but verification is still pending.'));
-assert.ok(s.includes('verifyLuxurySavedPlan(original,preview,cloud.data(),result.savedFields)'));
-console.log('PASS: live cloud-write status keeps recovery backup until verified');
+const source=readFileSync(new URL('../luxury-v2/live.js',import.meta.url),'utf8');
+assert.ok(source.includes('let luxuryCloudWriteAwaitingVerification=false;'));
+assert.ok(source.includes("luxuryCloudWriteAwaitingVerification?'Save verification pending'"));
+assert.ok(source.includes('transactionResult=result;\n  luxuryCloudWriteAwaitingVerification=true;'));
+assert.ok(source.includes('luxuryCloudWriteAwaitingVerification=false;\n  luxurySaveFailed=false;\n  luxurySaveVerified=true;\n  account=cloud.data();previewEdits={}'));
+assert.ok(source.includes('Firebase accepted your save, but verification is still pending.'));
+assert.ok(source.includes('verifyLuxurySavedPlan(original,preview,cloud.data(),result.savedFields)'));
+console.log('PASS: save status and recovery backup are verified before displaying Saved');

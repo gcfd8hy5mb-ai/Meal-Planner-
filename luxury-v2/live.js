@@ -399,12 +399,34 @@ const LUXURY_SAVES_RELEASED=true;
 let luxurySaving=false;
 const saveLuxuryButton=document.querySelector('#saveLuxuryEdits');
 let luxuryCloudWriteAwaitingVerification=false;
-const refreshDiscard=()=>{const unsaved=hasPreviewEdits(previewEdits);document.querySelector('#discardLuxuryEdits').hidden=!unsaved;document.querySelector('#luxuryDraftActions').hidden=!unsaved;saveLuxuryButton.disabled=!LUXURY_SAVES_RELEASED||!unsaved||!accountUid||luxurySaving;saveLuxuryButton.textContent=LUXURY_SAVES_RELEASED?'Save meal changes':'Save changes (release testing pending)';const panel=document.querySelector('#luxuryDraftActions');if(unsaved){panel.setAttribute('aria-label',luxuryCloudWriteAwaitingVerification?'Cloud save awaiting verification':'Unsaved plan changes');panel.querySelector('strong').textContent=luxuryCloudWriteAwaitingVerification?'Cloud save completed — verification pending':'Unsaved meal changes';document.querySelector('#luxuryDraftStatus').textContent=luxuryCloudWriteAwaitingVerification?'Firebase accepted the save, but a fresh server check did not confirm it yet. Keep this recovery copy; do not discard it.':'These meal changes haven\'t been saved. Save them to your account or export a backup.'}};
+let luxurySaveFailed=false;
+let luxurySaveVerified=false;
+const refreshDiscard=()=>{
+ const unsaved=hasPreviewEdits(previewEdits);
+ if(unsaved)luxurySaveVerified=false;
+ const panel=document.querySelector('#luxuryDraftActions');
+ const success=document.querySelector('#luxurySaveSuccess');
+ panel.hidden=!unsaved;
+ success.hidden=unsaved||!luxurySaveVerified;
+ saveLuxuryButton.disabled=!LUXURY_SAVES_RELEASED||!unsaved||!accountUid||luxurySaving;
+ saveLuxuryButton.textContent=luxurySaveFailed&&!luxuryCloudWriteAwaitingVerification?'Try again':'Save changes';
+ const exportButton=document.querySelector('#exportLuxuryEdits');
+ exportButton.hidden=!(unsaved&&(luxurySaveFailed||luxuryCloudWriteAwaitingVerification));
+ const discard=document.querySelector('#discardLuxuryEdits');
+ discard.disabled=luxurySaving;
+ panel.setAttribute('aria-label',luxuryCloudWriteAwaitingVerification?'Cloud save awaiting verification':luxurySaveFailed?'Save not confirmed':'Unsaved plan changes');
+ panel.querySelector('strong').textContent=luxuryCloudWriteAwaitingVerification?'Save verification pending':luxurySaveFailed?'Couldn’t confirm save':'Unsaved changes';
+ const count=Object.keys(previewEdits).length;
+ document.querySelector('#luxuryDraftStatus').textContent=luxuryCloudWriteAwaitingVerification?'Firebase accepted your changes, but we could not confirm the server copy. Your backup is preserved.':luxurySaveFailed?'Your changes are still here. Try again or export a backup.':count+' meal'+(count===1?'':'s')+' updated. Save to keep '+(count===1?'this change':'these changes')+' on your account.';
+};
+
 saveLuxuryButton.onclick=async()=>{
  if(!LUXURY_SAVES_RELEASED||luxurySaving||!accountUid||!account||!hasPreviewEdits(previewEdits))return;
  const uid=accountUid,epoch=authEpoch,preview={...previewEdits};
  let original=account;
  luxuryCloudWriteAwaitingVerification=false;
+ luxurySaveFailed=false;
+ luxurySaveVerified=false;
  luxurySaving=true;refreshDiscard();label('Saving your meal changes securely…');
  let transactionResult=null;
  try{
@@ -438,6 +460,8 @@ saveLuxuryButton.onclick=async()=>{
   if(!cloud.exists())throw Error('Saved plan could not be reloaded');
   verifyLuxurySavedPlan(original,preview,cloud.data(),result.savedFields);
   luxuryCloudWriteAwaitingVerification=false;
+  luxurySaveFailed=false;
+  luxurySaveVerified=true;
   account=cloud.data();previewEdits={};renderWeek(liveWeek);setHero();renderIngredients();
   let cleanupWarning='';
   try{localStorage.removeItem('tablewise-luxury-pending-'+uid)}
@@ -446,6 +470,7 @@ saveLuxuryButton.onclick=async()=>{
   label(cleanupWarning||'Meal changes saved to your account.');
  }catch(error){
   if(authEpoch===epoch&&auth.currentUser?.uid===uid){
+   luxurySaveFailed=true;
    if(transactionResult){
     label('Firebase accepted your save, but verification is still pending. Your device backup is preserved; do not discard it. '+(error?.message||''));
    }else{
@@ -629,7 +654,7 @@ keepCloudWednesday.onclick=async()=>{
  }catch(error){label('Recovery was not cleared. '+(error?.message||''))}
  finally{keepCloudWednesday.disabled=false}
 };
-document.querySelector('#discardLuxuryEdits').onclick=()=>{previewEdits={};refreshDiscard();document.querySelector('#luxuryMealPicker').hidden=true;renderWeek(liveWeek);setHero();renderIngredients();label('Preview discarded. Your saved meals are unchanged.')};
+document.querySelector('#discardLuxuryEdits').onclick=()=>{luxurySaveFailed=false;luxurySaveVerified=false;luxuryCloudWriteAwaitingVerification=false;previewEdits={};refreshDiscard();document.querySelector('#luxuryMealPicker').hidden=true;renderWeek(liveWeek);setHero();renderIngredients();label('Preview discarded. Your saved meals are unchanged.')};
 const openMealPicker=(week,day,{initialQuick=false}={})=>{
  if(!account)return;
  const picker=document.querySelector('#luxuryMealPicker'),options=document.querySelector('#luxuryMealChoices');

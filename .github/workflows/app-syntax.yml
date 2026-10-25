@@ -47,6 +47,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Verify compact save card and recovery protection
+        run: node tests/luxury-v2-compact-save-card.test.mjs
       - name: Verify live luxury save confirmation states
         run: node tests/luxury-v2-save-confirmation-status.test.mjs
       - name: Validate production entry and luxury module
