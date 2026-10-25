@@ -18,3 +18,18 @@ export function archiveVerifiedSideDraft(storage,uid,pending){
  storage.removeItem(source);
  return true;
 }
+
+/** Strict recovery of the user-confirmed Wednesday dinner:
+ * Week 1 Wednesday must be the ONLY changed dinner; all other saved settings
+ * except Week 1 sides must match. Firebase is never modified.
+ */
+export function confirmedWednesdayCloudRecovery(cloud,pending,keepRecipeId){
+ if(!keepRecipeId||!pending?.original)return false;
+ const changed=compareRecoveredDinners(cloud,pending);
+ const differences=compareRecoverySettings(cloud,pending);
+ return changed.length===1&&changed[0].week===1&&changed[0].day===3
+  &&changed[0].meal===keepRecipeId
+  &&Array.isArray(differences)
+  &&differences.every(x=>x==='Week 1 meals'||x==='Week 1 side dishes')
+  &&differences.includes('Week 1 meals');
+}
