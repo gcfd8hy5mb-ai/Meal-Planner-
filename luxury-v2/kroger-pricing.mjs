@@ -28,9 +28,11 @@ const tokens=name=>new Set(String(name||'').toLowerCase().split(/[^a-z0-9]+/).fi
 // Ingredient-use guard: keyword matches are not enough for fresh cooking meat.
 const freshMeat=/\b(beef|steak|chicken|pork|turkey|lamb|veal|ground beef|fajita meat|stir.fry meat)\b/i;
 const preparedSnack=/\b(jerky|jerkies|air.dried|dried beef|beef sticks?|meat sticks?|snack sticks?|biltong|slim jim|pepperoni|salami|summer sausage|deli meat|lunch meat|ready.to.eat|smoked snack)\b/i;
+const petFood=/(?:\b(?:dog|cat|puppy|kitten|pet)\b.{0,35}\b(?:food|treats?|snacks?|chews?|biscuits?)\b|\b(?:food|treats?|snacks?|chews?|biscuits?)\b.{0,35}\b(?:dog|cat|puppy|kitten|pet)\b|\bbeggin['’]?\s*strips\b|\b(?:pedigree|milk-bone|temptations|greenies)\b)/i;
 export function krogerIngredientCompatible(ingredient,product){
  const sought=String(ingredient||'');
  const name=String(product?.name||'');
+ if(petFood.test(name))return false;
  if(freshMeat.test(sought)&&!preparedSnack.test(sought)&&preparedSnack.test(name))return false;
  return true;
 }

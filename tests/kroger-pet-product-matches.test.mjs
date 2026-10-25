@@ -1,0 +1,13 @@
+import assert from 'node:assert/strict';
+import {krogerIngredientRelevance,krogerIngredientCompatible,sortKrogerIngredientMatches} from '../luxury-v2/kroger-pricing.mjs';
+const dog={name:"Beggin' Strips With Real Meat Dog Treats With Bacon and Beef Flavors",regular:11.49};
+const beef={name:'Kroger Beef Fajita Strips With Bell Peppers and Onions',regular:10,promo:6};
+assert.equal(krogerIngredientCompatible('Beef strips',dog),false);
+assert.equal(krogerIngredientRelevance('Beef strips',dog),0);
+assert.equal(krogerIngredientRelevance('Chicken breast',{name:'Chicken Dog Food'}),0);
+assert.equal(krogerIngredientRelevance('Beef',{name:'Beef Flavored Pet Treats'}),0);
+assert.equal(krogerIngredientRelevance('Beef strips',{name:'Kroger Beef Jerky'}),0);
+assert.ok(krogerIngredientRelevance('Beef strips',beef)>0);
+assert.deepEqual(sortKrogerIngredientMatches('Beef strips',[dog,beef]).filter(p=>krogerIngredientRelevance('Beef strips',p)>0),[beef]);
+assert.ok(krogerIngredientRelevance('Breadcrumbs',{name:'Plain Breadcrumbs'})>0);
+console.log('PASS pet food and jerky rejected; real groceries retained');
