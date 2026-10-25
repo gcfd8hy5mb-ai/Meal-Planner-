@@ -1,3 +1,4 @@
+import {commitCalendarRenewal} from './renewal-commit.mjs';
 import {generateRenewalCandidates} from './renewal-generator.mjs';
 import {prepareRenewal,renewalEligibility} from './renewal-safety.mjs';
 import {ensureCloudCalendar} from './cloud-calendar.mjs';
@@ -819,7 +820,9 @@ document.querySelector('#previousStep').onclick=()=>{step=Math.max(0,step-1);sho
 document.querySelector('#nextStep').onclick=()=>{if(step+1>=(currentRecipe?.steps?.length||0)){showPage('today');return}step++;showCookStep()};
 document.querySelector('section[data-page="cook"] > button.primary.full').onclick=()=>{renderIngredients('recipe');showPage('groceries')};
 document.querySelectorAll('[data-nav="groceries"]').forEach(b=>b.addEventListener('click',()=>renderIngredients()));
+let pendingRenewal=null,renewalBusy=false;
 document.querySelector('#luxuryRenewalPreviewButton').addEventListener('click',()=>{
+ pendingRenewal=null;document.querySelector('#luxuryRenewalConfirmButton').hidden=true;
  const preview=document.querySelector('#luxuryRenewalPreview');
  preview.replaceChildren();
  if(!account||hasPreviewEdits(previewEdits)){preview.textContent='Save or discard current meal edits before previewing a new plan.';return}
@@ -833,8 +836,39 @@ document.querySelector('#luxuryRenewalPreviewButton').addEventListener('click',(
    const items=document.createElement('p');items.textContent=Array.from({length:7},(_,day)=>findRecipe(week[day][2])?.name||'Unknown dinner').join(' · ');preview.append(items);
   }
   if(candidate.repeatedFromPrevious){const note=document.createElement('p');note.textContent='Some meals also appeared in your previous plan.';preview.append(note)}
-  const note=document.createElement('p');note.textContent='Saving a replacement plan is not enabled yet. Your existing weeks remain unchanged.';preview.append(note);
+  const note=document.createElement('p');note.textContent='Your existing two-week plan will be archived. Confirming saves these 14 dinners and advances the calendar. Breakfast, lunch and snacks will remain selected as they were. Please review both weeks before confirming.';preview.append(note);
+  pendingRenewal={candidate,original:account,uid:accountUid,epoch:authEpoch};
+  document.querySelector('#luxuryRenewalConfirmButton').hidden=false;
  }catch(error){preview.textContent='Could not create a safe plan preview: '+(error?.message||'Unknown issue')}
+});
+document.querySelector('#luxuryRenewalConfirmButton').addEventListener('click',async()=>{
+ const button=document.querySelector('#luxuryRenewalConfirmButton'),output=document.querySelector('#luxuryRenewalPreview');
+ const pending=pendingRenewal;
+ if(!pending||renewalBusy||hasPreviewEdits(previewEdits)||!accountUid||pending.uid!==accountUid||pending.epoch!==authEpoch){output.textContent='Plan preview expired. Preview the next two weeks again before confirming.';button.hidden=true;pendingRenewal=null;return}
+ renewalBusy=true;button.disabled=true;button.textContent='Saving new plan…';
+ const uid=pending.uid,epoch=pending.epoch;
+ try{
+  if(readPendingLuxuryDraft(localStorage,uid))throw Error('An unfinished meal backup needs review before renewing. Your meals remain unchanged.');
+  const archiveStart=pending.original.calendarWeekAnchor;
+  if(!/^\\d{4}-\\d{2}-\\d{2}$/.test(archiveStart||''))throw Error('Calendar date unavailable');
+  const result=await commitCalendarRenewal({
+   original:pending.original,generated:pending.candidate,uid,
+   getAuthenticatedUid:()=>authEpoch===epoch&&auth.currentUser?.uid===uid?uid:null,
+   runTransaction:callback=>runTransaction(db,callback),
+   userRef:doc(db,'users',uid),
+   archiveRef:doc(db,'users',uid,'calendarArchives',archiveStart)
+  });
+  if(authEpoch!==epoch||auth.currentUser?.uid!==uid)return;
+  const fresh=await getDocFromServer(doc(db,'users',uid));
+  if(!fresh.exists()||fresh.data().calendarWeekAnchor!==result.anchor||fresh.data().plan?.[0]?.[2]!==pending.candidate.week1[0][2])throw Error('Firebase committed renewal but verification is pending. Do not retry until your account is checked.');
+  account=fresh.data();calendarAnchor=readCalendarAnchor(localStorage,uid);
+  const parsed=readCalendarAnchor({getItem:()=>result.anchor,setItem:()=>{}},uid);
+  if(parsed)calendarAnchor=parsed;
+  calendarInitialWeek=1;liveWeek=1;pendingRenewal=null;
+  renderWeek(1);setHero();output.textContent='New two-week plan saved and verified. Your previous plan was archived.';
+  button.hidden=true;document.querySelector('#luxuryRenewalPanel').hidden=false;
+ }catch(error){if(authEpoch===epoch&&auth.currentUser?.uid===uid)output.textContent='Renewal not confirmed: '+(error?.message||'Unknown error')+'. Review your cloud plan before attempting again.';pendingRenewal=null;button.hidden=true}
+ finally{renewalBusy=false;button.disabled=false;button.textContent='Confirm new two-week plan'}
 });
 document.querySelectorAll('[data-week]').forEach(b=>b.addEventListener('click',()=>{if(account)renderWeek(b.dataset.week)}));
 document.addEventListener('visibilitychange',()=>{if(!document.hidden&&account&&!hasPreviewEdits(previewEdits)){const period=calendarPeriod(calendarAnchor,new Date(),calendarInitialWeek);if(period&&!period.complete){liveWeek=period.activeWeek;renderWeek(liveWeek)}setHero()}});
