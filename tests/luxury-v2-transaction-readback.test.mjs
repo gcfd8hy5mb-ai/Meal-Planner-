@@ -1,0 +1,15 @@
+import assert from 'node:assert/strict';
+import {verifyLuxurySavedPlan} from '../luxury-v2/save-flow.mjs';
+import {savePreviewTransaction} from '../luxury-v2/save-transaction.mjs';
+const original={activePlanningWeek:1,plan:{3:[null,null,'southBaconRanchBake',null]},alternateWeek:{plan:{}},dinnerSides:{3:['rice']},preferences:{style:'Anything'}};
+let updated=null;
+const tx={get:async()=>({exists:()=>true,data:()=>original}),update:(_ref,fields)=>{updated=fields}};
+const runTransaction=fn=>fn(tx);
+const result=await savePreviewTransaction({runTransaction,documentRef:{id:'user1'},original,preview:{'1-3-2':'bakedSpaghetti'},getAuthenticatedUid:()=> 'user1'});
+assert.equal(result.saved,true);
+assert.deepEqual(result.savedFields,updated);
+const cloud={...original,...updated,preferences:{style:'Mexican'}};
+assert.equal(verifyLuxurySavedPlan(original,{'1-3-2':'bakedSpaghetti'},cloud,result.savedFields),true);
+assert.throws(()=>verifyLuxurySavedPlan(original,{'1-3-2':'bakedSpaghetti'},{...cloud,plan:original.plan},result.savedFields),/Server did not confirm saved plan/);
+assert.throws(()=>verifyLuxurySavedPlan(original,{'1-3-2':'bakedSpaghetti'},null,result.savedFields),/could not be reloaded/);
+console.log('PASS: verified transaction fields, unrelated cloud updates do not cause false recovery');

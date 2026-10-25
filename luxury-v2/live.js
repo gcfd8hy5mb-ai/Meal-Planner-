@@ -418,7 +418,7 @@ saveLuxuryButton.onclick=async()=>{
   const cloud=await getDocFromServer(doc(db,'users',uid));
   if(authEpoch!==epoch||auth.currentUser?.uid!==uid)return;
   if(!cloud.exists())throw Error('Saved plan could not be reloaded');
-  verifyLuxurySavedPlan(original,preview,cloud.data());
+  verifyLuxurySavedPlan(original,preview,cloud.data(),result.savedFields);
   account=cloud.data();previewEdits={};renderWeek(liveWeek);setHero();renderIngredients();
   let cleanupWarning='';
   try{localStorage.removeItem('tablewise-luxury-pending-'+uid)}
