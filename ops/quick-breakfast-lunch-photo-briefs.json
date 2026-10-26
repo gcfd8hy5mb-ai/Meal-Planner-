@@ -1,0 +1,362 @@
+[
+  {
+    "sequence": 1,
+    "recipeId": "quick-breakfast-01",
+    "recipe": "Cinnamon Apple Oatmeal",
+    "mealType": "Breakfast",
+    "asset": "assets/meal-photos/quick-breakfast-01.webp",
+    "brief": "Photorealistic high-end restaurant-quality food photography of Cinnamon Apple Oatmeal. Accurately show quick oats, milk, apple, cinnamon. Use approved Tablewise dark cinematic luxury food photography, appetizing realistic serving, no text, no labels, no unrelated garnishes, no substitute food.",
+    "status": "pending"
+  },
+  {
+    "sequence": 2,
+    "recipeId": "quick-breakfast-02",
+    "recipe": "Peanut Butter Banana Toast",
+    "mealType": "Breakfast",
+    "asset": "assets/meal-photos/quick-breakfast-02.webp",
+    "brief": "Photorealistic high-end restaurant-quality food photography of Peanut Butter Banana Toast. Accurately show whole-grain bread, peanut butter, banana. Use approved Tablewise dark cinematic luxury food photography, appetizing realistic serving, no text, no labels, no unrelated garnishes, no substitute food.",
+    "status": "pending"
+  },
+  {
+    "sequence": 3,
+    "recipeId": "quick-breakfast-03",
+    "recipe": "Egg & Cheese English Muffin",
+    "mealType": "Breakfast",
+    "asset": "assets/meal-photos/quick-breakfast-03.webp",
+    "brief": "Photorealistic high-end restaurant-quality food photography of Egg & Cheese English Muffin. Accurately show english muffin, eggs, cheddar cheese. Use approved Tablewise dark cinematic luxury food photography, appetizing realistic serving, no text, no labels, no unrelated garnishes, no substitute food.",
+    "status": "pending"
+  },
+  {
+    "sequence": 4,
+    "recipeId": "quick-breakfast-04",
+    "recipe": "Greek Yogurt Granola Bowl",
+    "mealType": "Breakfast",
+    "asset": "assets/meal-photos/quick-breakfast-04.webp",
+    "brief": "Photorealistic high-end restaurant-quality food photography of Greek Yogurt Granola Bowl. Accurately show plain greek yogurt, granola, strawberries, honey. Use approved Tablewise dark cinematic luxury food photography, appetizing realistic serving, no text, no labels, no unrelated garnishes, no substitute food.",
+    "status": "pending"
+  },
+  {
+    "sequence": 5,
+    "recipeId": "quick-breakfast-05",
+    "recipe": "Ham & Egg Breakfast Wrap",
+    "mealType": "Breakfast",
+    "asset": "assets/meal-photos/quick-breakfast-05.webp",
+    "brief": "Photorealistic high-end restaurant-quality food photography of Ham & Egg Breakfast Wrap. Accurately show flour tortilla, eggs, cooked ham, cheddar cheese. Use approved Tablewise dark cinematic luxury food photography, appetizing realistic serving, no text, no labels, no unrelated garnishes, no substitute food.",
+    "status": "pending"
+  },
+  {
+    "sequence": 6,
+    "recipeId": "quick-breakfast-06",
+    "recipe": "Cottage Cheese Pineapple Bowl",
+    "mealType": "Breakfast",
+    "asset": "assets/meal-photos/quick-breakfast-06.webp",
+    "brief": "Photorealistic high-end restaurant-quality food photography of Cottage Cheese Pineapple Bowl. Accurately show low-fat cottage cheese, pineapple chunks, walnuts. Use approved Tablewise dark cinematic luxury food photography, appetizing realistic serving, no text, no labels, no unrelated garnishes, no substitute food.",
+    "status": "pending"
+  },
+  {
+    "sequence": 7,
+    "recipeId": "quick-breakfast-07",
+    "recipe": "Strawberry Banana Smoothie",
+    "mealType": "Breakfast",
+    "asset": "assets/meal-photos/quick-breakfast-07.webp",
+    "brief": "Photorealistic high-end restaurant-quality food photography of Strawberry Banana Smoothie. Accurately show banana, frozen strawberries, plain greek yogurt, milk. Use approved Tablewise dark cinematic luxury food photography, appetizing realistic serving, no text, no labels, no unrelated garnishes, no substitute food.",
+    "status": "pending"
+  },
+  {
+    "sequence": 8,
+    "recipeId": "quick-breakfast-08",
+    "recipe": "Microwave Egg Mug",
+    "mealType": "Breakfast",
+    "asset": "assets/meal-photos/quick-breakfast-08.webp",
+    "brief": "Photorealistic high-end restaurant-quality food photography of Microwave Egg Mug. Accurately show eggs, milk, spinach, shredded cheddar. Use approved Tablewise dark cinematic luxury food photography, appetizing realistic serving, no text, no labels, no unrelated garnishes, no substitute food.",
+    "status": "pending"
+  },
+  {
+    "sequence": 9,
+    "recipeId": "quick-breakfast-09",
+    "recipe": "Bagel & Cream Cheese with Fruit",
+    "mealType": "Breakfast",
+    "asset": "assets/meal-photos/quick-breakfast-09.webp",
+    "brief": "Photorealistic high-end restaurant-quality food photography of Bagel & Cream Cheese with Fruit. Accurately show whole-grain bagel, cream cheese, grapes. Use approved Tablewise dark cinematic luxury food photography, appetizing realistic serving, no text, no labels, no unrelated garnishes, no substitute food.",
+    "status": "pending"
+  },
+  {
+    "sequence": 10,
+    "recipeId": "quick-breakfast-10",
+    "recipe": "Turkey Sausage Breakfast Sandwich",
+    "mealType": "Breakfast",
+    "asset": "assets/meal-photos/quick-breakfast-10.webp",
+    "brief": "Photorealistic high-end restaurant-quality food photography of Turkey Sausage Breakfast Sandwich. Accurately show english muffin, fully cooked turkey sausage patty, egg, cheddar cheese. Use approved Tablewise dark cinematic luxury food photography, appetizing realistic serving, no text, no labels, no unrelated garnishes, no substitute food.",
+    "status": "pending"
+  },
+  {
+    "sequence": 11,
+    "recipeId": "quick-breakfast-11",
+    "recipe": "Blueberry Almond Overnight Oats",
+    "mealType": "Breakfast",
+    "asset": "assets/meal-photos/quick-breakfast-11.webp",
+    "brief": "Photorealistic high-end restaurant-quality food photography of Blueberry Almond Overnight Oats. Accurately show rolled oats, milk, plain greek yogurt, blueberries, sliced almonds. Use approved Tablewise dark cinematic luxury food photography, appetizing realistic serving, no text, no labels, no unrelated garnishes, no substitute food.",
+    "status": "pending"
+  },
+  {
+    "sequence": 12,
+    "recipeId": "quick-breakfast-12",
+    "recipe": "Breakfast Quesadilla",
+    "mealType": "Breakfast",
+    "asset": "assets/meal-photos/quick-breakfast-12.webp",
+    "brief": "Photorealistic high-end restaurant-quality food photography of Breakfast Quesadilla. Accurately show flour tortilla, eggs, shredded cheddar, salsa. Use approved Tablewise dark cinematic luxury food photography, appetizing realistic serving, no text, no labels, no unrelated garnishes, no substitute food.",
+    "status": "pending"
+  },
+  {
+    "sequence": 13,
+    "recipeId": "quick-breakfast-13",
+    "recipe": "Peanut Butter Apple Wrap",
+    "mealType": "Breakfast",
+    "asset": "assets/meal-photos/quick-breakfast-13.webp",
+    "brief": "Photorealistic high-end restaurant-quality food photography of Peanut Butter Apple Wrap. Accurately show whole-wheat tortilla, peanut butter, apple. Use approved Tablewise dark cinematic luxury food photography, appetizing realistic serving, no text, no labels, no unrelated garnishes, no substitute food.",
+    "status": "pending"
+  },
+  {
+    "sequence": 14,
+    "recipeId": "quick-breakfast-14",
+    "recipe": "Cheesy Spinach Scramble",
+    "mealType": "Breakfast",
+    "asset": "assets/meal-photos/quick-breakfast-14.webp",
+    "brief": "Photorealistic high-end restaurant-quality food photography of Cheesy Spinach Scramble. Accurately show eggs, spinach, shredded cheddar, whole-grain bread. Use approved Tablewise dark cinematic luxury food photography, appetizing realistic serving, no text, no labels, no unrelated garnishes, no substitute food.",
+    "status": "pending"
+  },
+  {
+    "sequence": 15,
+    "recipeId": "quick-breakfast-15",
+    "recipe": "Chocolate Banana Protein Shake",
+    "mealType": "Breakfast",
+    "asset": "assets/meal-photos/quick-breakfast-15.webp",
+    "brief": "Photorealistic high-end restaurant-quality food photography of Chocolate Banana Protein Shake. Accurately show milk, banana, chocolate protein powder, peanut butter. Use approved Tablewise dark cinematic luxury food photography, appetizing realistic serving, no text, no labels, no unrelated garnishes, no substitute food.",
+    "status": "pending"
+  },
+  {
+    "sequence": 16,
+    "recipeId": "quick-breakfast-16",
+    "recipe": "Turkey & Cheese Breakfast Toast",
+    "mealType": "Breakfast",
+    "asset": "assets/meal-photos/quick-breakfast-16.webp",
+    "brief": "Photorealistic high-end restaurant-quality food photography of Turkey & Cheese Breakfast Toast. Accurately show whole-grain bread, cooked turkey slices, swiss cheese. Use approved Tablewise dark cinematic luxury food photography, appetizing realistic serving, no text, no labels, no unrelated garnishes, no substitute food.",
+    "status": "pending"
+  },
+  {
+    "sequence": 17,
+    "recipeId": "quick-breakfast-17",
+    "recipe": "Bacon Egg & Cheese Biscuit",
+    "mealType": "Breakfast",
+    "asset": "assets/meal-photos/quick-breakfast-17.webp",
+    "brief": "Photorealistic high-end restaurant-quality food photography of Bacon Egg & Cheese Biscuit. Accurately show refrigerated biscuit, egg, fully cooked bacon, cheddar cheese. Use approved Tablewise dark cinematic luxury food photography, appetizing realistic serving, no text, no labels, no unrelated garnishes, no substitute food.",
+    "status": "pending"
+  },
+  {
+    "sequence": 18,
+    "recipeId": "quick-breakfast-18",
+    "recipe": "Banana Pancakes",
+    "mealType": "Breakfast",
+    "asset": "assets/meal-photos/quick-breakfast-18.webp",
+    "brief": "Photorealistic high-end restaurant-quality food photography of Banana Pancakes. Accurately show banana, eggs, all-purpose flour, baking powder. Use approved Tablewise dark cinematic luxury food photography, appetizing realistic serving, no text, no labels, no unrelated garnishes, no substitute food.",
+    "status": "pending"
+  },
+  {
+    "sequence": 19,
+    "recipeId": "quick-breakfast-19",
+    "recipe": "Sausage & Egg Breakfast Bowl",
+    "mealType": "Breakfast",
+    "asset": "assets/meal-photos/quick-breakfast-19.webp",
+    "brief": "Photorealistic high-end restaurant-quality food photography of Sausage & Egg Breakfast Bowl. Accurately show fully cooked breakfast sausage, eggs, frozen diced potatoes, shredded cheddar. Use approved Tablewise dark cinematic luxury food photography, appetizing realistic serving, no text, no labels, no unrelated garnishes, no substitute food.",
+    "status": "pending"
+  },
+  {
+    "sequence": 20,
+    "recipeId": "quick-breakfast-20",
+    "recipe": "Cinnamon Raisin Bagel with Peanut Butter",
+    "mealType": "Breakfast",
+    "asset": "assets/meal-photos/quick-breakfast-20.webp",
+    "brief": "Photorealistic high-end restaurant-quality food photography of Cinnamon Raisin Bagel with Peanut Butter. Accurately show cinnamon raisin bagel, peanut butter. Use approved Tablewise dark cinematic luxury food photography, appetizing realistic serving, no text, no labels, no unrelated garnishes, no substitute food.",
+    "status": "pending"
+  },
+  {
+    "sequence": 21,
+    "recipeId": "quick-lunch-21",
+    "recipe": "Chicken Caesar Wrap",
+    "mealType": "Lunch",
+    "asset": "assets/meal-photos/quick-lunch-21.webp",
+    "brief": "Photorealistic high-end restaurant-quality food photography of Chicken Caesar Wrap. Accurately show fully cooked chicken breast, flour tortilla, romaine lettuce, caesar dressing, parmesan cheese. Use approved Tablewise dark cinematic luxury food photography, appetizing realistic serving, no text, no labels, no unrelated garnishes, no substitute food.",
+    "status": "pending"
+  },
+  {
+    "sequence": 22,
+    "recipeId": "quick-lunch-22",
+    "recipe": "Classic Ham & Cheese Sandwich",
+    "mealType": "Lunch",
+    "asset": "assets/meal-photos/quick-lunch-22.webp",
+    "brief": "Photorealistic high-end restaurant-quality food photography of Classic Ham & Cheese Sandwich. Accurately show whole-grain bread, cooked ham, cheddar cheese, lettuce, mayonnaise. Use approved Tablewise dark cinematic luxury food photography, appetizing realistic serving, no text, no labels, no unrelated garnishes, no substitute food.",
+    "status": "pending"
+  },
+  {
+    "sequence": 23,
+    "recipeId": "quick-lunch-23",
+    "recipe": "Buffalo Chicken Wrap",
+    "mealType": "Lunch",
+    "asset": "assets/meal-photos/quick-lunch-23.webp",
+    "brief": "Photorealistic high-end restaurant-quality food photography of Buffalo Chicken Wrap. Accurately show fully cooked chicken breast, flour tortilla, buffalo sauce, ranch dressing, romaine lettuce. Use approved Tablewise dark cinematic luxury food photography, appetizing realistic serving, no text, no labels, no unrelated garnishes, no substitute food.",
+    "status": "pending"
+  },
+  {
+    "sequence": 24,
+    "recipeId": "quick-lunch-24",
+    "recipe": "Tuna Salad Sandwich",
+    "mealType": "Lunch",
+    "asset": "assets/meal-photos/quick-lunch-24.webp",
+    "brief": "Photorealistic high-end restaurant-quality food photography of Tuna Salad Sandwich. Accurately show canned tuna in water, mayonnaise, celery, whole-grain bread. Use approved Tablewise dark cinematic luxury food photography, appetizing realistic serving, no text, no labels, no unrelated garnishes, no substitute food.",
+    "status": "pending"
+  },
+  {
+    "sequence": 25,
+    "recipeId": "quick-lunch-25",
+    "recipe": "Turkey Bacon Ranch Wrap",
+    "mealType": "Lunch",
+    "asset": "assets/meal-photos/quick-lunch-25.webp",
+    "brief": "Photorealistic high-end restaurant-quality food photography of Turkey Bacon Ranch Wrap. Accurately show flour tortilla, ready-to-eat turkey slices, fully cooked bacon, ranch dressing, lettuce. Use approved Tablewise dark cinematic luxury food photography, appetizing realistic serving, no text, no labels, no unrelated garnishes, no substitute food.",
+    "status": "pending"
+  },
+  {
+    "sequence": 26,
+    "recipeId": "quick-lunch-26",
+    "recipe": "Grilled Cheese & Tomato Soup",
+    "mealType": "Lunch",
+    "asset": "assets/meal-photos/quick-lunch-26.webp",
+    "brief": "Photorealistic high-end restaurant-quality food photography of Grilled Cheese & Tomato Soup. Accurately show whole-grain bread, cheddar cheese, butter, canned tomato soup. Use approved Tablewise dark cinematic luxury food photography, appetizing realistic serving, no text, no labels, no unrelated garnishes, no substitute food.",
+    "status": "pending"
+  },
+  {
+    "sequence": 27,
+    "recipeId": "quick-lunch-27",
+    "recipe": "Chicken Quesadilla",
+    "mealType": "Lunch",
+    "asset": "assets/meal-photos/quick-lunch-27.webp",
+    "brief": "Photorealistic high-end restaurant-quality food photography of Chicken Quesadilla. Accurately show flour tortilla, fully cooked chicken breast, shredded cheddar, salsa. Use approved Tablewise dark cinematic luxury food photography, appetizing realistic serving, no text, no labels, no unrelated garnishes, no substitute food.",
+    "status": "pending"
+  },
+  {
+    "sequence": 28,
+    "recipeId": "quick-lunch-28",
+    "recipe": "BBQ Chicken Sandwich",
+    "mealType": "Lunch",
+    "asset": "assets/meal-photos/quick-lunch-28.webp",
+    "brief": "Photorealistic high-end restaurant-quality food photography of BBQ Chicken Sandwich. Accurately show fully cooked shredded chicken, bbq sauce, hamburger bun, coleslaw mix. Use approved Tablewise dark cinematic luxury food photography, appetizing realistic serving, no text, no labels, no unrelated garnishes, no substitute food.",
+    "status": "pending"
+  },
+  {
+    "sequence": 29,
+    "recipeId": "quick-lunch-29",
+    "recipe": "BLT Sandwich",
+    "mealType": "Lunch",
+    "asset": "assets/meal-photos/quick-lunch-29.webp",
+    "brief": "Photorealistic high-end restaurant-quality food photography of BLT Sandwich. Accurately show whole-grain bread, fully cooked bacon, tomato, lettuce, mayonnaise. Use approved Tablewise dark cinematic luxury food photography, appetizing realistic serving, no text, no labels, no unrelated garnishes, no substitute food.",
+    "status": "pending"
+  },
+  {
+    "sequence": 30,
+    "recipeId": "quick-lunch-30",
+    "recipe": "Taco Rice Bowl",
+    "mealType": "Lunch",
+    "asset": "assets/meal-photos/quick-lunch-30.webp",
+    "brief": "Photorealistic high-end restaurant-quality food photography of Taco Rice Bowl. Accurately show fully cooked taco-seasoned ground beef, microwave rice, salsa, shredded cheddar, lettuce. Use approved Tablewise dark cinematic luxury food photography, appetizing realistic serving, no text, no labels, no unrelated garnishes, no substitute food.",
+    "status": "pending"
+  },
+  {
+    "sequence": 31,
+    "recipeId": "quick-lunch-31",
+    "recipe": "Italian Sub Sandwich",
+    "mealType": "Lunch",
+    "asset": "assets/meal-photos/quick-lunch-31.webp",
+    "brief": "Photorealistic high-end restaurant-quality food photography of Italian Sub Sandwich. Accurately show sub roll, deli turkey, deli ham, provolone cheese, lettuce, tomato, italian dressing. Use approved Tablewise dark cinematic luxury food photography, appetizing realistic serving, no text, no labels, no unrelated garnishes, no substitute food.",
+    "status": "pending"
+  },
+  {
+    "sequence": 32,
+    "recipeId": "quick-lunch-32",
+    "recipe": "Chicken Salad Croissant",
+    "mealType": "Lunch",
+    "asset": "assets/meal-photos/quick-lunch-32.webp",
+    "brief": "Photorealistic high-end restaurant-quality food photography of Chicken Salad Croissant. Accurately show fully cooked chicken breast, mayonnaise, celery, croissant. Use approved Tablewise dark cinematic luxury food photography, appetizing realistic serving, no text, no labels, no unrelated garnishes, no substitute food.",
+    "status": "pending"
+  },
+  {
+    "sequence": 33,
+    "recipeId": "quick-lunch-33",
+    "recipe": "Cheeseburger Wrap",
+    "mealType": "Lunch",
+    "asset": "assets/meal-photos/quick-lunch-33.webp",
+    "brief": "Photorealistic high-end restaurant-quality food photography of Cheeseburger Wrap. Accurately show ground beef, flour tortilla, american cheese, lettuce, tomato, ketchup. Use approved Tablewise dark cinematic luxury food photography, appetizing realistic serving, no text, no labels, no unrelated garnishes, no substitute food.",
+    "status": "pending"
+  },
+  {
+    "sequence": 34,
+    "recipeId": "quick-lunch-34",
+    "recipe": "Turkey & Swiss Panini",
+    "mealType": "Lunch",
+    "asset": "assets/meal-photos/quick-lunch-34.webp",
+    "brief": "Photorealistic high-end restaurant-quality food photography of Turkey & Swiss Panini. Accurately show whole-grain bread, ready-to-eat turkey slices, swiss cheese, butter. Use approved Tablewise dark cinematic luxury food photography, appetizing realistic serving, no text, no labels, no unrelated garnishes, no substitute food.",
+    "status": "pending"
+  },
+  {
+    "sequence": 35,
+    "recipeId": "quick-lunch-35",
+    "recipe": "Pepperoni Pizza Bagel",
+    "mealType": "Lunch",
+    "asset": "assets/meal-photos/quick-lunch-35.webp",
+    "brief": "Photorealistic high-end restaurant-quality food photography of Pepperoni Pizza Bagel. Accurately show plain bagel, pizza sauce, mozzarella cheese, pepperoni. Use approved Tablewise dark cinematic luxury food photography, appetizing realistic serving, no text, no labels, no unrelated garnishes, no substitute food.",
+    "status": "pending"
+  },
+  {
+    "sequence": 36,
+    "recipeId": "quick-lunch-36",
+    "recipe": "Loaded Baked Potato with Chicken",
+    "mealType": "Lunch",
+    "asset": "assets/meal-photos/quick-lunch-36.webp",
+    "brief": "Photorealistic high-end restaurant-quality food photography of Loaded Baked Potato with Chicken. Accurately show microwaveable baking potato, fully cooked chicken breast, shredded cheddar, sour cream. Use approved Tablewise dark cinematic luxury food photography, appetizing realistic serving, no text, no labels, no unrelated garnishes, no substitute food.",
+    "status": "pending"
+  },
+  {
+    "sequence": 37,
+    "recipeId": "quick-lunch-37",
+    "recipe": "Egg Salad Sandwich",
+    "mealType": "Lunch",
+    "asset": "assets/meal-photos/quick-lunch-37.webp",
+    "brief": "Photorealistic high-end restaurant-quality food photography of Egg Salad Sandwich. Accurately show hard-boiled eggs, mayonnaise, mustard, whole-grain bread. Use approved Tablewise dark cinematic luxury food photography, appetizing realistic serving, no text, no labels, no unrelated garnishes, no substitute food.",
+    "status": "pending"
+  },
+  {
+    "sequence": 38,
+    "recipeId": "quick-lunch-38",
+    "recipe": "Chicken & Cheese Burrito",
+    "mealType": "Lunch",
+    "asset": "assets/meal-photos/quick-lunch-38.webp",
+    "brief": "Photorealistic high-end restaurant-quality food photography of Chicken & Cheese Burrito. Accurately show flour tortilla, fully cooked chicken breast, microwave rice, shredded cheddar, salsa. Use approved Tablewise dark cinematic luxury food photography, appetizing realistic serving, no text, no labels, no unrelated garnishes, no substitute food.",
+    "status": "pending"
+  },
+  {
+    "sequence": 39,
+    "recipeId": "quick-lunch-39",
+    "recipe": "Ham & Cheddar Quesadilla",
+    "mealType": "Lunch",
+    "asset": "assets/meal-photos/quick-lunch-39.webp",
+    "brief": "Photorealistic high-end restaurant-quality food photography of Ham & Cheddar Quesadilla. Accurately show flour tortilla, cooked ham, shredded cheddar, salsa. Use approved Tablewise dark cinematic luxury food photography, appetizing realistic serving, no text, no labels, no unrelated garnishes, no substitute food.",
+    "status": "pending"
+  },
+  {
+    "sequence": 40,
+    "recipeId": "quick-lunch-40",
+    "recipe": "Teriyaki Chicken Rice Bowl",
+    "mealType": "Lunch",
+    "asset": "assets/meal-photos/quick-lunch-40.webp",
+    "brief": "Photorealistic high-end restaurant-quality food photography of Teriyaki Chicken Rice Bowl. Accurately show fully cooked chicken breast, microwave rice, frozen broccoli, teriyaki sauce. Use approved Tablewise dark cinematic luxury food photography, appetizing realistic serving, no text, no labels, no unrelated garnishes, no substitute food.",
+    "status": "pending"
+  }
+]
