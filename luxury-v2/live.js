@@ -6,7 +6,7 @@ import {ensureCloudCalendar} from './cloud-calendar.mjs';
 import {readCalendarAnchor,calendarPeriod,calendarWeekStart,addDays,dateLabel,dateKey,weekRangeLabel} from './calendar-weeks.mjs';
 // Luxury v2 adapter: cloud saves remain release-gated until hosted Firebase validation.
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js';
-import { getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut } from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js';
+import { getAuth, onAuthStateChanged, signInWithEmailAndPassword, sendPasswordResetEmail, signOut } from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js';
 import { getFirestore, getDoc, getDocFromServer, doc, runTransaction } from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js';
 import { recipes, verifiedRecipePhotos } from './catalog.js';
 import {recipeSummary,reviewedRecipeDetails} from './recipe-details.mjs';
@@ -309,6 +309,19 @@ krogerDisconnectButton.onclick=async()=>{
  finally{if(actionEpoch===krogerActionEpoch)krogerActionPending=false;}
 };
 
+const refreshOptionalMeals=()=>{
+ if(!account)return;
+ const period=calendarPeriod(calendarAnchor,new Date(),calendarInitialWeek);
+ const active=period?.activeWeek??(account.activePlanningWeek===2?2:1);
+ for(const [slot,type] of [[0,'Breakfast'],[1,'Lunch']]){
+  const row=document.querySelector('[data-optional-meal="'+type.toLowerCase()+'"]');
+  if(!row)continue;
+  const recipe=dayMeal(active,new Date().getDay(),slot);
+  row.querySelector('small').textContent=recipe?.name||'Not planned — tap to add';
+  row.querySelector('.optional-macros').textContent=recipe?macroSummary(recipe):'';
+  row.onclick=()=>{showPage('week');renderWeek(active);openMealPicker(active,new Date().getDay(),{slot})};
+ }
+};
 const optionalToggle=document.querySelector('#luxuryOptionalToggle'),optionalDetails=document.querySelector('#luxuryOptionalDetails');
 const setOptionalExpanded=expanded=>{optionalDetails.hidden=!expanded;optionalToggle.setAttribute('aria-expanded',String(expanded))};
 optionalToggle.onclick=()=>setOptionalExpanded(optionalDetails.hidden);
@@ -338,6 +351,15 @@ const accountPanel=document.querySelector('#luxuryAccountPanel');
 const authMessage=document.querySelector('#luxuryAuthMessage');
 const authForm=document.querySelector('#luxurySignInForm');
 const authPassword=document.querySelector('#luxuryPassword');
+document.querySelector('#luxuryForgotPassword').onclick=async()=>{
+ const email=document.querySelector('#luxuryEmail').value.trim();
+ if(!email){authMessage.textContent='Enter your account email first, then tap Forgot password.';document.querySelector('#luxuryEmail').focus();return}
+ const button=document.querySelector('#luxuryForgotPassword');button.disabled=true;
+ try{await sendPasswordResetEmail(auth,email);authMessage.textContent='If this email belongs to a Tablewise account, a password-reset link will arrive in your inbox. Check spam if needed.'}
+ catch(error){authMessage.textContent=error?.code==='auth/invalid-email'?'Enter a valid email address.':'Could not send the reset link right now. Check your connection and try again.'}
+ finally{button.disabled=false}
+};
+
 document.querySelector('.profile').onclick=()=>{accountPanel.hidden=!accountPanel.hidden;diagnosisPanel.hidden=true;document.querySelector('#luxuryAccountIdentity').hidden=!auth.currentUser;authForm.hidden=!!auth.currentUser;document.querySelector('#luxurySignOut').hidden=!auth.currentUser;authMessage.textContent=auth.currentUser?'You’re signed in. Your saved meals are available in this preview.':'Sign in to load your saved Tablewise account.';if(!accountPanel.hidden)accountPanel.scrollIntoView({block:'start'})};
 document.querySelector('#luxuryCloseAccount').onclick=()=>{accountPanel.hidden=true;diagnosisPanel.hidden=true;authPassword.value=''};
 authForm.onsubmit=async event=>{
@@ -476,7 +498,7 @@ saveLuxuryButton.onclick=async()=>{
   luxuryCloudWriteAwaitingVerification=false;
   luxurySaveFailed=false;
   luxurySaveVerified=true;
-  account=cloud.data();previewEdits={};renderWeek(liveWeek);setHero();renderIngredients();
+  account=cloud.data();previewEdits={};renderWeek(liveWeek);setHero();renderIngredients();refreshOptionalMeals();
   let cleanupWarning='';
   try{localStorage.removeItem('tablewise-luxury-pending-'+uid)}
   catch{cleanupWarning='Saved and verified in the cloud, but the recovery backup remains on this device.'}
@@ -669,35 +691,36 @@ keepCloudWednesday.onclick=async()=>{
  finally{keepCloudWednesday.disabled=false}
 };
 document.querySelector('#discardLuxuryEdits').onclick=()=>{luxurySaveFailed=false;luxurySaveVerified=false;luxuryCloudWriteAwaitingVerification=false;previewEdits={};refreshDiscard();document.querySelector('#luxuryMealPicker').hidden=true;renderWeek(liveWeek);setHero();renderIngredients();label('Preview discarded. Your saved meals are unchanged.')};
-const openMealPicker=(week,day,{initialQuick=false}={})=>{
+const openMealPicker=(week,day,{initialQuick=false,slot=2}={})=>{
  if(!account)return;
  const picker=document.querySelector('#luxuryMealPicker'),options=document.querySelector('#luxuryMealChoices');
  const search=document.querySelector('#luxuryMealSearch'),tabs=document.querySelector('#luxuryMealTabs');
  const count=document.querySelector('#luxuryMealCount'),more=document.querySelector('#luxuryLoadMoreMeals');
  let category='All',limit=3,quick=initialQuick,highProtein=false,lowCarb=false;
  search.value='';tabs.replaceChildren();
- picker.querySelector('h2').textContent='Choose Dinner';
+ const mealType=['Breakfast','Lunch','Dinner','Snack'][slot]||'Dinner';
+ picker.querySelector('h2').textContent='Choose '+mealType;
  const quickControl=picker.querySelector('#luxuryQuickOnly'),proteinControl=picker.querySelector('#luxuryHighProtein'),carbControl=picker.querySelector('#luxuryLowCarb');
  for(const [control,update] of [[quickControl,()=>quick=!quick],[proteinControl,()=>highProtein=!highProtein],[carbControl,()=>lowCarb=!lowCarb]]){control.setAttribute('aria-pressed',String(control===quickControl&&quick));control.onclick=()=>{update();limit=3;draw()}}
  const draw=()=>{
-  const found=searchMeals(recipes,{query:search.value,category,slot:'Dinner',quick,highProtein,lowCarb,recipeDetails:reviewedRecipeDetails});
+  const found=searchMeals(recipes,{query:search.value,category,slot:mealType,quick,highProtein,lowCarb,recipeDetails:reviewedRecipeDetails});
   quickControl.setAttribute('aria-pressed',String(quick));proteinControl.setAttribute('aria-pressed',String(highProtein));carbControl.setAttribute('aria-pressed',String(lowCarb));
   options.replaceChildren();
   for(const recipe of found.slice(0,limit)){
    const button=document.createElement('button');button.type='button';button.className='grocery-item';
    const photoUrl=photo(recipe.id);if(photoUrl){const image=document.createElement('img');image.className='picker-meal-photo';image.src=photoUrl;image.alt='';image.loading='lazy';button.append(image)}
    const content=document.createElement('div');content.className='picker-meal-copy';const heading=document.createElement('strong');heading.textContent=recipe.name;
-   const details=document.createElement('small');const time=reviewedRecipeDetails[recipe.id]||{};const mins=Number(recipe.prepMinutes??time.prepMinutes)+Number(recipe.cookMinutes??time.cookMinutes);details.textContent=[recipe.cuisine||'Dinner',Number.isFinite(mins)?mins+' min (approx.)':'Time not reviewed',recipe.cal!=null?recipe.cal+' cal (est.)':''].filter(Boolean).join(' · ');
+   const details=document.createElement('small');const time=reviewedRecipeDetails[recipe.id]||{};const mins=Number(recipe.prepMinutes??time.prepMinutes)+Number(recipe.cookMinutes??time.cookMinutes);details.textContent=[recipe.cuisine||mealType,Number.isFinite(mins)?mins+' min (approx.)':'Time not reviewed',recipe.cal!=null?recipe.cal+' cal (est.)':''].filter(Boolean).join(' · ');
    const nutrition=document.createElement('small');nutrition.className='picker-macros';nutrition.textContent=[recipe.p!=null?recipe.p+'g protein':'',recipe.c!=null?recipe.c+'g carbs':'',recipe.f!=null?recipe.f+'g fat':''].filter(Boolean).join(' · ');
    content.append(heading,details,nutrition);
    const add=document.createElement('span');add.className='picker-meal-add';add.textContent='+';add.setAttribute('aria-hidden','true');
    button.append(content,add);
-   button.onclick=()=>{previewEdits=replacePreviewMeal(account,previewEdits,week,day,2,recipe.id);picker.hidden=true;refreshDiscard();renderWeek(week);setHero();renderIngredients();
+   button.onclick=()=>{previewEdits=replacePreviewMeal(account,previewEdits,week,day,slot,recipe.id);picker.hidden=true;refreshDiscard();renderWeek(week);setHero();renderIngredients();refreshOptionalMeals();
    // Return directly to the edited day rather than leaving the user at the
    // now-hidden picker above the week. Never imply this preview is cloud-saved.
    const editedDay=document.querySelector('#days')?.children[day];
    if(editedDay){editedDay.setAttribute('tabindex','-1');editedDay.focus({preventScroll:true});editedDay.scrollIntoView({block:'center'});}
-   label('Dinner preview updated for '+['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'][day]+'. Grocery quantities recalculated. Changes are not saved to your account.');
+   label(mealType+' preview updated for '+['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'][day]+'. Grocery quantities recalculated. Changes are not saved to your account.');
   };
    options.append(button);
   }
@@ -709,7 +732,7 @@ const openMealPicker=(week,day,{initialQuick=false}={})=>{
  for(const name of ['All','Mexican','Chicken','Beef','Pork',...mealCategories.filter(name=>!['All','Mexican','Chicken','Beef','Pork'].includes(name))]){const button=document.createElement('button');button.type='button';button.textContent=name;if(['All','Mexican','Chicken','Beef','Pork'].includes(name)){
   button.className='picker-featured-tab';
   if(name!=='All'){
-   const exemplar=searchMeals(recipes,{category:name,slot:'Dinner'}).find(item=>photo(item.id));
+   const exemplar=searchMeals(recipes,{category:name,slot:mealType}).find(item=>photo(item.id));
    const url=exemplar&&photo(exemplar.id);
    if(url){const image=document.createElement('img');image.className='picker-category-photo';image.src=url;image.alt='';image.loading='lazy';button.prepend(image)}
   }
@@ -928,4 +951,4 @@ onAuthStateChanged(auth,async user=>{if(user&&accountUid===user.uid&&account){re
   if(epoch!==authEpoch)return;
   calendarSyncWarning='Calendar dates could not be synchronized with your account. Your meals remain unchanged. '+(error?.message||'');
  }
- restoreGroceryExpansion();groceryOpenWeek=groceryExpansion.week;refreshRecovered();label(calendarSyncWarning|| (needsPreferencesRecovery?'Your preferences may need recovery. Existing saved meals are shown read-only where available; nothing will be written to Firebase. Check your original Tablewise app before changing your plan.':null));liveWeek=calendarPeriod(calendarAnchor,new Date(),calendarInitialWeek)?.activeWeek??calendarInitialWeek;document.querySelectorAll('[data-week]').forEach(b=>b.classList.toggle('active',Number(b.dataset.week)===liveWeek));setHero();renderWeek(liveWeek);const weekHint=document.querySelector('[data-page="week"]>.muted');if(weekHint)weekHint.textContent='Choose Change to preview a different dinner. Preview changes are not saved.';const meals=document.querySelectorAll('[data-optional-meal]');let hasOptionalMeal=false;for(let i=0;i<meals.length;i++){const recipe=dayMeal(liveWeek,new Date().getDay(),i);const small=meals[i].querySelector('small');if(small)small.textContent=recipe?.name||'Not planned';const macros=meals[i].querySelector('.optional-macros');if(macros)macros.textContent=recipe?macroSummary(recipe):'';if(recipe)hasOptionalMeal=true;meals[i].onclick=()=>recipe?openRecipe(recipe):showPage('week')}optionalToggle.hidden=hasOptionalMeal;setOptionalExpanded(hasOptionalMeal);renderIngredients()}catch(error){if(epoch!==authEpoch)return;label('Could not read your saved plan. No changes were made. Check your connection and try again.');console.error('Luxury preview read failed',error)}});
+ restoreGroceryExpansion();groceryOpenWeek=groceryExpansion.week;refreshRecovered();label(calendarSyncWarning|| (needsPreferencesRecovery?'Your preferences may need recovery. Existing saved meals are shown read-only where available; nothing will be written to Firebase. Check your original Tablewise app before changing your plan.':null));liveWeek=calendarPeriod(calendarAnchor,new Date(),calendarInitialWeek)?.activeWeek??calendarInitialWeek;document.querySelectorAll('[data-week]').forEach(b=>b.classList.toggle('active',Number(b.dataset.week)===liveWeek));setHero();renderWeek(liveWeek);const weekHint=document.querySelector('[data-page="week"]>.muted');if(weekHint)weekHint.textContent='Choose Change to preview a different dinner. Preview changes are not saved.';const meals=document.querySelectorAll('[data-optional-meal]');let hasOptionalMeal=false;for(let i=0;i<meals.length;i++){const recipe=dayMeal(liveWeek,new Date().getDay(),i);const small=meals[i].querySelector('small');if(small)small.textContent=recipe?.name||'Not planned';const macros=meals[i].querySelector('.optional-macros');if(macros)macros.textContent=recipe?macroSummary(recipe):'';if(recipe)hasOptionalMeal=true;meals[i].onclick=()=>{showPage('week');renderWeek(liveWeek);openMealPicker(liveWeek,new Date().getDay(),{slot:i})}}optionalToggle.hidden=false;setOptionalExpanded(hasOptionalMeal);refreshOptionalMeals();renderIngredients()}catch(error){if(epoch!==authEpoch)return;label('Could not read your saved plan. No changes were made. Check your connection and try again.');console.error('Luxury preview read failed',error)}});
