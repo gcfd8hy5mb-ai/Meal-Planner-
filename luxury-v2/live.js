@@ -498,7 +498,7 @@ saveLuxuryButton.onclick=async()=>{
   luxuryCloudWriteAwaitingVerification=false;
   luxurySaveFailed=false;
   luxurySaveVerified=true;
-  account=cloud.data();previewEdits={};renderWeek(liveWeek);setHero();renderIngredients();
+  account=cloud.data();previewEdits={};renderWeek(liveWeek);setHero();renderIngredients();refreshOptionalMeals();
   let cleanupWarning='';
   try{localStorage.removeItem('tablewise-luxury-pending-'+uid)}
   catch{cleanupWarning='Saved and verified in the cloud, but the recovery backup remains on this device.'}
