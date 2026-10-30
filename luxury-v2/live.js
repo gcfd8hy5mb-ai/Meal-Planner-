@@ -6,7 +6,7 @@ import {ensureCloudCalendar} from './cloud-calendar.mjs';
 import {readCalendarAnchor,calendarPeriod,calendarWeekStart,addDays,dateLabel,dateKey,weekRangeLabel} from './calendar-weeks.mjs';
 // Luxury v2 adapter: cloud saves remain release-gated until hosted Firebase validation.
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js';
-import { getAuth, onAuthStateChanged, signInWithEmailAndPassword, sendPasswordResetEmail, signOut } from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js';
+import { getAuth, onAuthStateChanged, signInWithEmailAndPassword, createUserWithEmailAndPassword, sendPasswordResetEmail, signOut } from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js';
 import { getFirestore, getDoc, getDocFromServer, doc, runTransaction } from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js';
 import { recipes, verifiedRecipePhotos } from './catalog.js';
 import {recipeSummary,reviewedRecipeDetails} from './recipe-details.mjs';
@@ -351,6 +351,52 @@ const accountPanel=document.querySelector('#luxuryAccountPanel');
 const authMessage=document.querySelector('#luxuryAuthMessage');
 const authForm=document.querySelector('#luxurySignInForm');
 const authPassword=document.querySelector('#luxuryPassword');
+const signupForm=document.querySelector('#luxurySignupForm');
+const signupEmail=document.querySelector('#luxurySignupEmail');
+const signupPassword=document.querySelector('#luxurySignupPassword');
+const signupConfirm=document.querySelector('#luxurySignupConfirm');
+const showSignup=()=>{authForm.hidden=true;signupForm.hidden=false;signupEmail.value=document.querySelector('#luxuryEmail').value.trim();authMessage.textContent='Create your own Tablewise account to plan meals and save groceries.';signupEmail.focus()};
+document.querySelector('#luxuryShowSignup').onclick=showSignup;
+document.querySelector('#luxuryBackToSignIn').onclick=()=>{signupForm.hidden=true;authForm.hidden=false;document.querySelector('#luxuryEmail').value=signupEmail.value.trim();signupPassword.value='';signupConfirm.value='';authMessage.textContent='Sign in to load your saved Tablewise account.'};
+signupForm.onsubmit=async event=>{
+ event.preventDefault();
+ const email=signupEmail.value.trim(),password=signupPassword.value;
+ if(password.length<6){authMessage.textContent='Use a password with at least 6 characters.';return}
+ if(password!==signupConfirm.value){authMessage.textContent='Passwords do not match.';return}
+ const button=document.querySelector('#luxurySignupSubmit');button.disabled=true;
+ authMessage.textContent='Creating your account securely…';
+ let accountCreated=false;
+ try{
+  const credential=await createUserWithEmailAndPassword(auth,email,password);
+  accountCreated=true;
+  const uid=credential.user.uid,ref=doc(db,'users',uid);
+  await runTransaction(db,async tx=>{
+   const existing=await tx.get(ref);
+   if(existing.exists())return; // Never reset a preexisting meal plan.
+   const emptyWeek=()=>Object.fromEntries(Array.from({length:7},(_,i)=>[i,[null,null,null,null]]));
+   const today=new Date(),sunday=new Date(today.getFullYear(),today.getMonth(),today.getDate()-today.getDay());
+   tx.set(ref,{
+    activePlanningWeek:1,calendarInitialWeek:1,calendarWeekAnchor:dateKey(sunday),
+    plan:emptyWeek(),alternateWeek:{plan:emptyWeek(),mealServings:{},dinnerSides:{}},
+    mealServings:{},dinnerSides:{},preferences:{},onboardingInitialized:true,
+    custom:[],profile:{},checked:{}
+   });
+  });
+  const checked=await getDocFromServer(ref);
+  if(!checked.exists()||!checked.data().plan)throw Error('Your new account could not be verified.');
+  signupPassword.value='';signupConfirm.value='';
+  authMessage.textContent='Account created. Opening your meal planner…';
+  location.reload();
+ }catch(error){
+  authMessage.textContent=accountCreated
+   ?'Your sign-in was created, but the meal planner setup did not finish. Do not create another account; sign back in or contact support.'
+   :error?.code==='auth/email-already-in-use'?'That email already has an account. Use Sign in or Forgot password.'
+   :error?.code==='auth/weak-password'?'Please choose a stronger password.'
+   :error?.code==='auth/invalid-email'?'Enter a valid email address.'
+   :'Could not create your account. Check your connection and try again.';
+ }finally{button.disabled=false}
+};
+
 document.querySelector('#luxuryForgotPassword').onclick=async()=>{
  const email=document.querySelector('#luxuryEmail').value.trim();
  if(!email){authMessage.textContent='Enter your account email first, then tap Forgot password.';document.querySelector('#luxuryEmail').focus();return}
@@ -360,8 +406,8 @@ document.querySelector('#luxuryForgotPassword').onclick=async()=>{
  finally{button.disabled=false}
 };
 
-document.querySelector('.profile').onclick=()=>{accountPanel.hidden=!accountPanel.hidden;diagnosisPanel.hidden=true;document.querySelector('#luxuryAccountIdentity').hidden=!auth.currentUser;authForm.hidden=!!auth.currentUser;document.querySelector('#luxurySignOut').hidden=!auth.currentUser;authMessage.textContent=auth.currentUser?'You’re signed in. Your saved meals are available in this preview.':'Sign in to load your saved Tablewise account.';if(!accountPanel.hidden)accountPanel.scrollIntoView({block:'start'})};
-document.querySelector('#luxuryCloseAccount').onclick=()=>{accountPanel.hidden=true;diagnosisPanel.hidden=true;authPassword.value=''};
+document.querySelector('.profile').onclick=()=>{accountPanel.hidden=!accountPanel.hidden;diagnosisPanel.hidden=true;document.querySelector('#luxuryAccountIdentity').hidden=!auth.currentUser;authForm.hidden=!!auth.currentUser;signupForm.hidden=true;document.querySelector('#luxurySignOut').hidden=!auth.currentUser;authMessage.textContent=auth.currentUser?'You’re signed in. Your saved meals are available in this preview.':'Sign in to load your saved Tablewise account.';if(!accountPanel.hidden)accountPanel.scrollIntoView({block:'start'})};
+document.querySelector('#luxuryCloseAccount').onclick=()=>{accountPanel.hidden=true;diagnosisPanel.hidden=true;authPassword.value='';signupPassword.value='';signupConfirm.value=''};
 authForm.onsubmit=async event=>{
  event.preventDefault();
  const button=document.querySelector('#luxurySignIn');
