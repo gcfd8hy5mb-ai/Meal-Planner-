@@ -1,0 +1,14 @@
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+const html=readFileSync(new URL('../luxury-v2/index.html',import.meta.url),'utf8');
+const js=readFileSync(new URL('../luxury-v2/live.js',import.meta.url),'utf8');
+for(const id of ['luxurySignupForm','luxurySignupEmail','luxurySignupPassword','luxurySignupConfirm','luxurySignupSubmit','luxuryShowSignup','luxuryBackToSignIn'])assert.match(html,new RegExp('id="'+id+'"'));
+assert.match(js,/createUserWithEmailAndPassword\(auth,email,password\)/);
+assert.match(js,/password!==signupConfirm\.value/);
+assert.match(js,/await runTransaction\(db,async tx=>/);
+assert.match(js,/if\(existing\.exists\(\)\)return/);
+assert.match(js,/Array\.from\(\{length:7\}/);
+assert.match(js,/calendarWeekAnchor:dateKey\(sunday\)/);
+assert.match(js,/await getDocFromServer\(ref\)/);
+assert.match(js,/auth\/email-already-in-use/);
+console.log('PASS account creation UI and non-overwriting account initialization');
